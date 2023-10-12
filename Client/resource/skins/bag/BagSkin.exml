@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BagSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  height="930">
+	<w:Config id="1586b349dbe"/>
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" top="44" bottom="155" scale9Grid="19,12,10,20"/>
+
+	<e:Image horizontalCenter="0" verticalCenter="-100" alpha="0.8" source="tongyongditu_png"/>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" right="0" left="0" currentState="nohead" className="RoleSelectPanel"/>
+	<e:Image source="tongyongjiaoguang_png" y="55" horizontalCenter="100" touchEnabled="false" width="349" height="421"/>
+
+	<e:ViewStack id="viewStack" width="570" selectedIndex="0" horizontalCenter="0" top="55" bottom="160">
+		<e:Group name="装备" top="0" bottom="0" left="0" right="0">
+			<e:Group id="dinghong0" width="556" height="92" bottom="1" horizontalCenter="0">
+				<e:Image top="0" bottom="0" source="bantoumingkuang3" left="0"/>
+				<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" />
+			</e:Group>
+
+			<e:Button id="smeltBtn" label="熔  炼" icon="bag_99" right="50" skinName="Btn1Skin" bottom="16" width="156" height="60"/>
+			<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" right="42" bottom="57" visible="false"/>
+			<e:Image width="150" height="35" scale9Grid="6,6,3,3" bottom="28" x="97" source="shuzibg"/>
+			<e:Button id="addBtn" icon="btnadd" skinName="Btn0Skin" x="256" bottom="20"/>
+			<e:Label text="容量" size="24" x="33" bottom="34" textColor="0x9f946d"/>
+			<e:Label id="itemCount" text="100" size="24" width="130" textAlign="center" bottom="33" x="106" textColor="0x9f946d"/>
+			<e:Scroller id="itemScroller" left="0" right="0" top="0" bottom="98">
+			<e:List id="itemList" x="0" y="0" itemRendererSkinName="ItemSkin" scrollEnabled="true" top="0" bottom="90">
+				<e:layout>
+				<e:TileLayout paddingLeft="22" requestedColumnCount="5" rowAlign="top" paddingTop="18" horizontalGap="20" verticalGap="5"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+
+		</e:Group>
+		<e:Group name="道具" left="0" right="0" top="0" bottom="6" visible="false">
+			<e:Scroller id="itemGoodsScroller" left="0" right="0" top="0" bottom="0">
+			<e:List id="itemListGoods" x="12" y="12" itemRendererSkinName="ItemSkin" scrollEnabled="true" top="0" bottom="0">
+				<e:layout>
+				<e:TileLayout requestedColumnCount="5" verticalGap="5" horizontalGap="20" paddingLeft="22" paddingTop="18" rowAlign="top"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+		</e:Group>
+		<e:Group name="战纹" left="0" right="0" top="0" bottom="6" visible="false">
+			<e:Scroller top="0" bottom="0" left="0" right="0">
+			<e:List id="itemListRune" x="12" y="12" itemRendererSkinName="ItemSkin" scrollEnabled="true" top="0" bottom="0">
+				<e:layout>
+				<e:TileLayout requestedColumnCount="5" verticalGap="5" horizontalGap="20" paddingLeft="22" paddingTop="18"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+		</e:Group>
+		<ns1:BaseComponent id="reinComposePanel" name="合成" skinName="ReinComposeSkin" className="ComposePanel" left="0" right="0" top="0" bottom="0" visible="false"/>
+	</e:ViewStack>
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}" bottom="112" horizontalCenter="0">
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:TabBar>
+	<e:Group id="redPointGroup" horizontalCenter="37" bottom="139" touchEnabled="false">
+		<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" x="0" y="0"/>
+		<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" x="163" y="0"/>
+		<e:Image id="redPoint2" touchEnabled="false" source="zjmhongdian" x="243" y="0"/>
+		<e:Image id="redPoint3" source="zjmhongdian" touchEnabled="false" x="357" y="0"/>
+		<e:layout>
+			<e:HorizontalLayout gap="98"/>
+		</e:layout>
+	</e:Group>
+	<!--<e:Group id="redPoint2" touchEnabled="false" touchChildren="false" bottom="139" horizontalCenter="169">
+		<e:Image source="zjmhongdian" locked="true"/>
+	</e:Group>
+	<e:Group id="redPoint1" touchEnabled="false" touchChildren="false" bottom="139" horizontalCenter="45">
+		<e:Image source="zjmhongdian" locked="true"/>
+	</e:Group>
+	<e:Group id="redPoint0" touchEnabled="false" touchChildren="false" bottom="139" horizontalCenter="-75">
+		<e:Image source="zjmhongdian" locked="true"/>
+	</e:Group>-->
+	<e:Image y="6" horizontalCenter="-155" source="biaoti_beibao_png"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" horizontalCenter="266" scaleX="0.8" scaleY="0.8"/>
+
+</e:Skin>

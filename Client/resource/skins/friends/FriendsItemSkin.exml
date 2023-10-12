@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FriendsItemSkin" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" width="520">
+	<e:Rect fillAlpha="0.2" left="0" right="0" top="0" bottom="0" touchEnabled="true"/>
+	<e:Image bottom="0" source="tongyongline" height="2" left="0" right="0"/>
+	<e:Group x="10" verticalCenter="0" width="70" height="70">
+		<e:Image id="img_userIcon" source="{data.userIcon}" horizontalCenter="0" verticalCenter="0" width="60" height="60"/>
+		<e:Image id="headBg" source="touxiangkuang1" scale9Grid="5,5,3,3" left="0" right="0" top="0" bottom="0"/>
+	</e:Group>
+	<e:Label id="label_name" text="{data.name}" size="20" y="10" x="90" textColor="0xd1c28f"/>
+	<e:Label id="labelGuild" text="帮会名" size="18" y="40" x="90" textColor="0x20cb30"/>
+	<e:Label id="label_power" size="16"   textColor="0xF7B910" left="90" top="32" bottom="10" right="60" text="{data.power}" visible="false"/>
+	<e:Label id="label_lastLogin" size="18" text="{data.lastLogin}" textAlign="right" verticalAlign="middle" verticalCenter="-20" textColor="0xb5b5b5" horizontalCenter="190"/>
+	<e:Button id="btn_bg" label="私聊" skinName="Btn1Skin"     left="2" right="2" top="2" bottom="2" alpha="0.01"/>
+<e:Group id="group_friend" verticalCenter="6" right="28">
+		<e:Button id="btn_chat" label="私聊" icon="friends_10" skinName="Btn7Skin" right="0" visible="false"/>
+	<e:Button id="btn_delete" label="删好友" icon="friends_10" right="0" verticalCenter="6" width="80" skinName="Btn6Skin" height="40"/>
+		<e:Button id="btn_blackList" label="屏蔽" icon="friends_10" skinName="Btn7Skin" right="0" visible="false"/>
+	</e:Group>
+	
+</e:Skin>

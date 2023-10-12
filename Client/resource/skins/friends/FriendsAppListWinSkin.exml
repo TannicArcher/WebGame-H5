@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FriendsAppListWinSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="310">
+	<e:Group top="0" left="0" right="0" bottom="0">
+		<e:Group id="group_shenqing" horizontalCenter="0" verticalCenter="0" visible="false">
+			<e:Label text="暂时没有任何申请" textColor="0xDFD1B5" size="20"/>
+		</e:Group>
+		<e:Group left="10" right="10" top="0" bottom="44">
+			<e:Scroller>
+				<e:List id="list_appList" itemRendererSkinName="FriendsAppListItemSkin">
+					<e:layout>
+						<e:VerticalLayout gap="2"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+			<e:Button id="btn_allYes" label="一键同意" skinName="Btn1Skin" visible="false"/>
+<e:Button id="btn_allNo" label="一键拒绝" skinName="Btn1Skin" visible="false"/>
+		</e:Group>
+		<e:Label text="GM不会以任何形式询问玩家帐号和密码，或私聊发布中奖信息。" x="39" textColor="0x444134" size="18" bottom="12" y="280"  />
+		<e:Image source="gantanhao" x="12" bottom="12" y="278"  />
+	</e:Group>
+</e:Skin>

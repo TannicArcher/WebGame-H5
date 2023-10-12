@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FDProjectItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  width="410" height="90" states="normal,done" >
+	<e:Image source="recharge_headbg_png" right="0" left="0" top="0" bottom="0"/>
+	<e:Label id="pName" text="累计登录1天" size="20" bold="true" fontFamily="SimHei" verticalCenter="10" textColor="0xffd93f" left="7"/>
+	<e:List id="list" x="158" anchorOffsetY="0" itemRendererSkinName="ItemSkin" verticalCenter="0.5" scaleX="0.8" scaleY="0.8">
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object reward="null"/>
+				<e:Object reward="null"/>
+			</e:Array>
+		</e:ArrayCollection>
+
+		<e:layout>
+			<e:HorizontalLayout gap="-4" paddingLeft="0"/>
+		</e:layout>
+	</e:List>
+	<e:Button id="actBtn" label="领  取" x="301" y="15" skinName="Btn15Skin" visible.done="false" x.normal="301" y.normal="15"/>
+	<e:Label id="scedule" text="10000/10000" includeIn="normal" size="16" right="12" verticalCenter="25" width="94" verticalAlign="middle" textAlign="center"/>
+	<e:Image includeIn="done" x="310" source="yilingqu" rotation="-25" verticalCenter="-1.5"/>
+	<e:Image id="redpoint" source="zjmhongdian" scaleX="0.8" scaleY="0.8" includeIn="normal" x="386" y="11"/>
+	<e:Image x="0" y="3" source="fd_titlebg_png"/>
+	<e:Group y="8" left="9">
+		<e:Label id="score" text="20" x="0" y="0" size="26" textColor="0xf8b141" fontFamily="SimHei" bold="true"/>
+		<e:Label text="狂欢值" x="37" y="0" size="26" bold="true" textColor="0xd1c28f" fontFamily="SimHei"/>
+		<e:layout>
+			<e:HorizontalLayout gap="2" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>	
+</e:Skin>

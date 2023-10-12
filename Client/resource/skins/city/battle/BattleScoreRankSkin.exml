@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleScoreRankSkin" width="554" height="668" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="554" height="668" y="0" x="0">
+		<e:Image source="tongyongkuang3bg" scale9Grid="10,5,28,31" left="0" right="0" top="0" bottom="0" x="-277" y="-334" scaleX="1" scaleY="1"/>
+		<e:Image y="4" width="520" horizontalCenter="0" source="pailietoubg2" scale9Grid="8,0,26,40" x="17" scaleX="1" scaleY="1"/>
+		<e:Image x="107" y="9" source="pailietouline2" height="30" scaleX="1" scaleY="1"/>
+		<e:Image y="9" x="405" source="pailietouline2" height="30" scaleX="1" scaleY="1"/>
+		<e:Image y="9" x="247" source="pailietouline2" height="30" scaleX="1" scaleY="1"/>
+		<e:Label y="13" text="排名" size="20" x="51" textColor="0x444134" scaleX="1" scaleY="1"/>
+		<e:Label y="13" text="名字" size="20" x="152" textColor="0x444134" scaleX="1" scaleY="1"/>
+		<e:Label y="13" text="行会" size="20" x="297" textColor="0x444134" scaleX="1" scaleY="1"/>
+		<e:Label y="13" text="积分" size="20" x="444" textColor="0x444134" scaleX="1" scaleY="1"/>
+		<e:Scroller horizontalCenter="0" top="45" bottom="80" scrollPolicyH="off" x="2" y="45" scaleX="1" scaleY="1" width="520">
+			<e:List id="list" x="-3" y="30" itemRendererSkinName="BattleScoreRankItem">
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Image height="80" source="bantoumingkuang3" bottom="0" left="0" right="0" scale9Grid="134,34,7,6" x="0" y="588" scaleX="1" scaleY="1"/>
+		<e:Label id="myRank" text="我的排名：100" size="20" textColor="0x9F946D" left="115" bottom="30" x="115" y="618" scaleX="1" scaleY="1"/>
+		<e:Group bottom="30" horizontalCenter="115">
+			<e:Label text="我的积分：" size="20" textColor="0xFFB92D" horizontalCenter="115" bottom="30" x="6" y="12" scaleX="1" scaleY="1"/>
+			<e:Label id="myScore" text="10000" size="20" textColor="0xFFB92D" horizontalCenter="115" bottom="30" x="28" y="12" scaleX="1" scaleY="1"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

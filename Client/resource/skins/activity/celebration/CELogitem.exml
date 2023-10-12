@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CELogitem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseComponent id="item" className="SevenDayIconBase" skinName="ItemSkin"  horizontalCenter="0" y="4" visible="false"/>
+	<e:Image verticalCenter="0" horizontalCenter="0" source="ce_denglong1" />
+	<e:Image id="select" horizontalCenter="0" verticalCenter="0" source="ce_denglong2"  visible="false"/>
+	<e:Image id="checkedMask" horizontalCenter="0" verticalCenter="0" source="ce_denglong3"  visible="false"/>
+	<e:Image id="checked" source="duoxuangou" verticalCenter="-14.5" horizontalCenter="3.5" height="42" width="42" visible="false"/>
+</e:Skin>

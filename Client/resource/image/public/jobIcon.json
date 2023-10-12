@@ -1,0 +1,10 @@
+{"file":"jobIcon.png","frames":{
+"job1Item":{"x":80,"y":174,"w":37,"h":31,"offX":0,"offY":0,"sourceW":37,"sourceH":31},
+"job3Item":{"x":41,"y":144,"w":37,"h":31,"offX":0,"offY":0,"sourceW":37,"sourceH":31},
+"cjsc_11":{"x":104,"y":0,"w":39,"h":85,"offX":0,"offY":0,"sourceW":39,"sourceH":85},
+"cjsc_10":{"x":0,"y":144,"w":39,"h":85,"offX":0,"offY":0,"sourceW":39,"sourceH":85},
+"job2Item":{"x":41,"y":177,"w":36,"h":31,"offX":0,"offY":0,"sourceW":37,"sourceH":31},
+"cjsc_09":{"x":104,"y":87,"w":39,"h":85,"offX":0,"offY":0,"sourceW":39,"sourceH":85},
+"cjsc_06":{"x":0,"y":0,"w":102,"h":46,"offX":0,"offY":0,"sourceW":102,"sourceH":46},
+"cjsc_07":{"x":0,"y":48,"w":102,"h":46,"offX":0,"offY":0,"sourceW":102,"sourceH":46},
+"cjsc_08":{"x":0,"y":96,"w":102,"h":46,"offX":0,"offY":0,"sourceW":102,"sourceH":46}}}

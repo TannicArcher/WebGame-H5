@@ -1,0 +1,14 @@
+{"file":"richman.png","frames":{
+"richman_blank":{"x":358,"y":65,"w":54,"h":64,"offX":0,"offY":0,"sourceW":54,"sourceH":64},
+"richman_shadow":{"x":458,"y":65,"w":33,"h":15,"offX":0,"offY":0,"sourceW":33,"sourceH":15},
+"richman_dice2":{"x":298,"y":65,"w":58,"h":63,"offX":4,"offY":2,"sourceW":66,"sourceH":66},
+"richiman_teleport":{"x":183,"y":0,"w":53,"h":74,"offX":0,"offY":0,"sourceW":53,"sourceH":74},
+"richman_dice5":{"x":238,"y":65,"w":58,"h":63,"offX":4,"offY":2,"sourceW":66,"sourceH":66},
+"richman_dice4":{"x":238,"y":0,"w":58,"h":63,"offX":4,"offY":2,"sourceW":66,"sourceH":66},
+"richman_rewardunder":{"x":0,"y":0,"w":88,"h":102,"offX":0,"offY":0,"sourceW":88,"sourceH":102},
+"richman_title":{"x":90,"y":83,"w":104,"h":26,"offX":0,"offY":0,"sourceW":104,"sourceH":26},
+"richman_reward":{"x":90,"y":0,"w":91,"h":81,"offX":0,"offY":0,"sourceW":91,"sourceH":81},
+"richman_dice6":{"x":418,"y":0,"w":58,"h":63,"offX":4,"offY":2,"sourceW":66,"sourceH":66},
+"richman_dice1":{"x":298,"y":0,"w":58,"h":63,"offX":4,"offY":2,"sourceW":66,"sourceH":66},
+"richman_dice3":{"x":358,"y":0,"w":58,"h":63,"offX":4,"offY":2,"sourceW":66,"sourceH":66},
+"richiman_random":{"x":414,"y":65,"w":42,"h":64,"offX":11,"offY":0,"sourceW":64,"sourceH":64}}}

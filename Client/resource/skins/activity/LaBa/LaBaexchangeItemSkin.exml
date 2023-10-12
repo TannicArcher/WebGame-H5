@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LaBaexchangeItemSkin" width="540" height="130" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="scitembg" left="0" right="0" top="0" bottom="0" x="0" y="0"   scale9Grid="65,27,1,2"/>
+		<e:Group id="slimit" y="4" width="230" visible="false">
+			<e:Image source="bantoutiaoboss" left="0" right="0" top="0" bottom="0"/>
+			<e:Label id="limitchange0" text="今日全服可兑换次数：100" size="18" textColor="0xD1C28F" x="6" verticalCenter="0"/>
+		</e:Group>
+		<e:List id="reward" itemRendererSkinName="ItemIconSkin" left="11" top="28">
+			<e:layout>
+				<e:HorizontalLayout gap="14"/>
+			</e:layout>
+
+		</e:List>
+
+		<e:Label id="limitchange1" text="每日限购:10/10" y="92" size="18" textColor="0x00ff00" right="5"/>
+		<e:Label id="limitchange2" text="总量限购:10/10" y="92" size="18" textColor="0x00FF00" horizontalCenter="203.5" visible="false"/>
+		<e:Button id="get" label="兑换" y="40" skinName="Btn14Skin" width="110" right="11"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" y="40" right="11"/>
+		<e:Image id="add1" y="50" source="exchangePlus" left="94"/>
+		<e:Image id="add2" y="50" source="exchangePlus" left="198"/>
+		<e:Image id="equal" y="55" source="rein_equal" horizontalCenter="47"/>
+		<ns1:BaseComponent id="result" skinName="ItemSkin" className="ItemBase" horizontalCenter="102" top="28"/>
+	</e:Group>		
+</e:Skin>

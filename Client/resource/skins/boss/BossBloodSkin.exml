@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BossBloodSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+	xmlns:euiextension="euiextension.*" xmlns:ns1="*" width="580" height="930">
+	<w:Config id="15ab14fc7ea"/>
+	<e:Group id="cd" width="213" height="36" right="10" bottom="190" visible="false">
+		<e:Image left="0" right="0" top="0" bottom="0" source="bantoutiaobg" scale9Grid="40,15,160,10"/>
+		<e:Label id="timeLable" text="复活倒数：60秒" size="16" textColor="0xE9B14F" verticalCenter="0" right="67"/>
+		<e:Button id="clearBtn" label="清除" icon="xzsboss_13" verticalCenter="0" right="2" width="60" height="30" skinName="Btn6Skin"/>
+	</e:Group>
+	<e:Group id="see" width="278" height="40" right="10" bottom="138" visible="false">
+		<e:Image left="0" right="0" top="0" bottom="0" source="bantoutiaobg" scale9Grid="41,15,159,12"/>
+		<e:Button id="seeRewardBtn" label="查看\n奖励" icon="btn50" verticalCenter="1" right="2" width="50" height="46" skinName="Btn7Skin"/>
+		<e:CheckBox id="clearRole" label="屏蔽他人" skinName="CheckBox0" scaleX="0.6" scaleY="0.6" verticalCenter="0" right="148"/>
+		<e:CheckBox id="autoClear" label="自动复活" skinName="CheckBox0" scaleX="0.6" scaleY="0.6" verticalCenter="0" right="56"/>
+	</e:Group>
+	<e:Group id="tongtianta" width="200" height="190" x="0" bottom="138" visible="false">
+		<e:Label text="通关倒计时：" x="10" y="10" size="16"/>
+		<e:Label text="下级所需等级：" x="10" y="30" size="16"/>
+		<e:Label text="3:00" x="120" y="10" size="16"/>
+		<e:Label text="20转200级" x="120" y="30" size="16"/>
+		<e:Label text="通关奖励" y="57" size="20" horizontalCenter="0"/>
+		<e:Group y="80" horizontalCenter="0">
+			<ns1:BaseComponent id="itemicon2" y="0" skinName="ItemSkin" x="0"/>
+			<ns1:BaseComponent id="itemicon1" y="0" skinName="ItemSkin" x="100"/>
+			<e:layout>
+				<e:HorizontalLayout gap="2" horizontalAlign="center"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="barGroup" y="20" horizontalCenter="24">
+		<e:Group y="0" width="480" x="0">
+			<e:Rect height="20" y="50" left="112" right="28" fillColor="0x111010"/>
+			<e:Rect width="82" height="82" x="19" y="19" ellipseWidth="82" ellipseHeight="82" fillColor="0x111010"/>
+			<e:Image id="grayImg" y="52" source="bosshp2" width="340" x="110"/>
+			<e:ProgressBar id="bloodBar" y="52" value="100" left="110" right="30" skinName="bar7Skin"/>
+			<e:Image id="head" y="19" x="19" width="82" height="82" source=""/>
+			<e:Image left="0" right="0" scale9Grid="148,0,10,122" source="bosstouxiangk"/>
+			<e:Label id="nameTxt" y="26" size="20" text="祖玛教主" textColor="0xF15A25" x="150" bold="true"/>
+		</e:Group>
+		<e:Group id="hudun" width="310" height="16" y="74" x="117">
+			<e:Rect left="13" right="13" top="0" bottom="10" fillColor="0x111010"/>
+			<e:ProgressBar id="hudunbloodBar" value="100" skinName="bar6Skin" left="13" right="13" top="0" bottom="10"/>
+			<e:Image source="zdbosshudunxuetiaobg" left="0" right="0" top="0" bottom="0" scale9Grid="18,0,7,16"/>
+			<e:Label id="proLab" text="护盾归0时触发抽奖" y="12" size="16" textColor="0xDFD1B5" horizontalCenter="0"/>
+		</e:Group>
+		<ns1:BaseComponent id="dropDown" y="95" skinName="DropDownSkin" className="DropDown" right="-16"/>
+		<e:Label id="myTxt" y="30" size="16" text="自己：10" textColor="0xFFB92D" x="324"/>
+		<ns1:BaseComponent id="currewards" className="BossRewardsItem" skinName="ChuangtianguanBossReward"   verticalCenter="29" horizontalCenter="18.5"/>
+	</e:Group>
+	<e:Button id="tipBtn0" label="奖励" y="122" horizontalCenter="-155.5" icon="bosstouxiangbtn" skinName="Btn18Skin"/>
+	</e:Skin>

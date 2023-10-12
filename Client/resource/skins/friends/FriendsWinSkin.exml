@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FriendsWinSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="930">
+	<e:Rect left="0" right="0" top="-79" bottom="79" fillAlpha="0.4"/>
+	<e:Group height="370" left="0" right="0" bottom="0">
+		<e:Image left="0" right="0" bottom="0" top="0" alpha="0.9" source="chatbg2" scale9Grid="2,2,6,4"/>
+		<e:Image source="chatbg1" left="0" right="0" bottom="0" scale9Grid="1,4,8,5" height="96"/>
+		<e:Image source="chatlight" left="0" right="0" bottom="96"/>
+		<e:Image source="chatfenge1" height="34" bottom="10" horizontalCenter="-277"/>
+		<e:Image source="chatding" y="0" left="0" right="0" scale9Grid="14,1,4,9"/>
+		<e:Image source="tongyongline" bottom="53" width="556" horizontalCenter="0"/>
+		<e:Group id="group_recent" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Label text="暂时没有任何消息" size="20" textColor="0x9f946d" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group_lianxiren" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Label text="暂时没有添加好友" size="20" horizontalCenter="0" textColor="0x9f946d"/>
+		</e:Group>
+		<e:Group height="310" bottom="50" left="6" right="6" visible="false">
+		<e:Group id="group_0" top="0" bottom="0" width="90" x="0" visible="false">
+			<e:Scroller scrollPolicyV="on" scrollPolicyH="off">
+			<e:List id="list_recent" itemRendererSkinName="FriendsRecentItemSkin">
+				<e:layout>
+					<e:VerticalLayout gap="2"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+		</e:Group>
+		<e:Group top="0" bottom="0" id="group_1" left="0" right="0" visible="false">
+			<e:Group width="560" top="0" bottom="0" horizontalCenter="0">
+			<e:Scroller scrollPolicyV="on" scrollPolicyH="off" left="0" right="0" top="0" bottom="0">
+				<e:List id="list_friends" itemRendererSkinName="FriendsItemSkin" x="0">
+					<e:layout>
+						<e:VerticalLayout gap="2"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+			</e:Group>
+		</e:Group>
+			<e:Group top="0" bottom="0" id="group_2" left="0" right="0" visible="false">
+				<e:Group width="560" top="0" bottom="0" horizontalCenter="0">
+				<e:Scroller scrollPolicyV="on" scrollPolicyH="off" left="0" right="0" top="0" bottom="0">
+					<e:List id="list_friends0" itemRendererSkinName="FriendsItemSkin" x="0">
+					<e:layout>
+						<e:VerticalLayout gap="2"/>
+					</e:layout>
+					</e:List>
+				</e:Scroller>
+				</e:Group>
+			</e:Group>
+			<e:Group top="0" bottom="0" id="group_3" left="0" right="0" visible="false">
+				<e:Group width="560" top="0" bottom="0" horizontalCenter="0">
+				<e:Scroller scrollPolicyV="on" scrollPolicyH="off" left="0" right="0" top="0" bottom="0">
+					<e:List id="list_friends1" x="0" itemRendererSkinName="FriendsAppListItemSkin">
+					<e:layout>
+						<e:VerticalLayout gap="2"/>
+					</e:layout>
+					</e:List>
+				</e:Scroller>
+				</e:Group>
+			</e:Group>
+		<e:Group id="group_chat"   top="0"   bottom="0" left="0" right="0" visible="false">
+			<e:Scroller id="scroller_chat" top="35" bottom="50" y="0" width="430" horizontalCenter="0">
+			<e:List id="list_chat" itemRendererSkinName="FriendsChatItemSkin">
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="contentJustify" verticalAlign="middle" gap="20"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+			<e:Group left="0" right="0" bottom="0" height="50">
+			<e:Button id="btn_send" label="发送" skinName="Btn1Skin" verticalCenter="1.5" width="90" height="35" x="335"/>
+			<e:Group verticalCenter="0" left="10" height="30" width="310">
+				<e:Image top="0" bottom="0" left="0" right="0" source="shuzibg" scale9Grid="6,3,13,18"/>
+				<e:EditableText id="editText_input" text="" prompt="请输入" left="5" right="5" top="5" bottom="5" size="18" textAlign="left" verticalAlign="middle"/>
+			</e:Group>
+			</e:Group>
+			<e:Group y="9" horizontalCenter="0">
+			<e:Label text="正在与" horizontalCenter="0" x="220" y="0" size="16"/>
+			<e:Label id="label_name" text="川普" horizontalCenter="-9" x="230" y="10" size="16" textColor="0xFFD631"/>
+			<e:Label text="进行聊天" horizontalCenter="0" x="240" y="20" size="16"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center"/>
+			</e:layout>
+			</e:Group>
+		</e:Group>
+		</e:Group>
+		<e:Image id="redPoint0" source="zjmhongdian" x="70" bottom="30" visible="false"/>
+		<e:Image id="redPoint1" source="zjmhongdian" x="156" bottom="30" visible="false"/>
+	</e:Group>
+	<e:ViewStack id="viewStack" left="0" right="0" bottom="51" selectedIndex="4" height="310">
+		<ns1:BaseComponent id="friendChatPanel" name="最近" skinName="FriendChatSkin" className="FriendChatPanel" top="0" bottom="0" left="0" right="0"/>
+		<ns1:BaseComponent id="friendPanel" name="好友" skinName="FriendInfoSkin" className="FriendListPanel" top="0" bottom="0" horizontalCenter="0" visible="false"/>
+		<ns1:BaseComponent id="friendAppListPanel" name="申请" skinName="FriendsAppListWinSkin" className="FriendsAppListWin" top="0" bottom="0" horizontalCenter="0" visible="false"/>
+		<ns1:BaseComponent id="blackListPanel" name="屏蔽" skinName="BlackListWinSkin" className="BlackListWin" top="0" bottom="0" horizontalCenter="0" visible="false"/>
+		<ns1:BaseComponent id="mailPanel" name="邮件" skinName="MailSkin" className="MailWin" top="0" bottom="0" horizontalCenter="0" visible="false"/>
+	</e:ViewStack>
+	<e:TabBar id="tab" dataProvider="{viewStack}"
+	          selectedIndex="0" bottom="8" itemRendererSkinName="BtnTab5Skin" horizontalCenter="0">
+		<e:layout>
+			<e:HorizontalLayout gap="0" />
+		</e:layout>
+	</e:TabBar>
+	<e:Button id="btnClose" skinName="Btn0Skin" label="按钮" icon="chatclose" right="2" bottom="316"/>
+	<e:Image id="applyRedPoint" source="zjmhongdian" horizontalCenter="46" bottom="34" visible="false"/>
+	<e:Image id="mailRedPoint" source="zjmhongdian" horizontalCenter="270" bottom="34" visible="false"/>
+</e:Skin>

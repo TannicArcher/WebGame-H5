@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SelectMemberRewardSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15c3ed136aa"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Button id="closeBtn0" label="按钮" x="435" y="53" skinName="Btn0Skin" visible="false"/>
+	<e:Button id="closeBtn" label="按钮" x="407" y="620" skinName="Btn0Skin" visible="false"/>
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="0" width="450" height="750">
+		<e:Image source="tongyongkuang3bg"   scale9Grid="18,14,12,20" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,271,47" y="0" left="0" right="0"/>
+		<e:Group id="dinghong" width="438" height="68" bottom="6" horizontalCenter="0">
+			<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" width="219"/>
+			<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" width="219"/>
+		</e:Group>
+		<e:Group  width="443" x="4" y="40">
+			<e:Image scale9Grid="16,0,4,11" width="280" source="jinengline1" y="34" horizontalCenter="-78.5"/>
+			<e:Image scale9Grid="16,0,4,11" width="280" scaleX="-1" y="34" source="jinengline1" horizontalCenter="76.5"/>
+			<e:Image source="tielian" y="0" horizontalCenter="-166.5"/>
+			<e:Image y="0" source="tielian" horizontalCenter="165.5"/>
+		</e:Group>
+		<e:Label text="奖励分配" size="22" y="10" textColor="0xa67d44" horizontalCenter="0"/>
+		<e:Label id="rankLabel" text="本次龙城争霸行会排名：第3名" size="18" textColor="0x9f946d" y="52" horizontalCenter="0"/>
+
+		<e:Scroller width="436" height="588" y="86" horizontalCenter="0">
+			<e:List id="list" itemRendererSkinName="SelectRewardItemSkin" x="0">
+				<e:layout>
+					<e:VerticalLayout gap="0"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Button id="sendReward" label="分配奖励" skinName="Btn1Skin" horizontalCenter="0" bottom="10"/>
+		<e:Label text="奖励详情" size="16" textColor="0x9f946d" x="193" y="94" visible="false"/>
+	</e:Group>	
+</e:Skin>

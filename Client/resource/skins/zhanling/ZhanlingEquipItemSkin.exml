@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ZhanlingEquipItemSkin" width="400" height="110" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="tongyonglabbg" scale9Grid="62,32,5,3" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="content" x="4" y="7">
+		<ns1:BaseComponent id="need" y="0" skinName="ItemSkin" className="ItemBase" x="11"/>
+		<ns1:BaseComponent id="target" x="204" y="0" skinName="ItemSkin" className="ItemBase"/>
+		<e:Label id="num" text="2" size="20" textColor="0x00ff00" bold="true" x="138" y="32"/>
+		<e:Button id="compose" label="合 成" height="50" width="100" x="292" y="17" skinName="Btn3Skin"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" x="368" y="17"/>
+		<e:Image source="rein_mulit" x="100" y="27"/>
+		<e:Image source="rein_equal" x="170" y="32"/>
+	</e:Group>
+</e:Skin>

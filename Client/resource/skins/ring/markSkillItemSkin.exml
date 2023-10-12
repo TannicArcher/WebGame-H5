@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="markSkillItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:PriceIcon="PriceIcon.*" xmlns:ns1="*"  width="80"  height="94">
+	<w:Config id="15a177a4c02"/>
+	<e:Image horizontalCenter="0" top="0" scale9Grid="8,8,12,46" source="lym_kuang"/>
+
+	<e:Image id="skillImg" width="64" height="64" source="ability_1N" horizontalCenter="0" top="4"/>
+	<e:Label id="skillName" text="技能名称" size="18" bold="true" horizontalCenter="0" textColor="0xd1c28f" bottom="0"/>
+
+	<e:Rect id="lock" left="4" top="2" right="4" bottom="23" fillAlpha="0.6" visible="false"/>
+	<e:Image id="redpoint" source="zjmhongdian" right="-6" top="-6" visible="false"/>
+</e:Skin>

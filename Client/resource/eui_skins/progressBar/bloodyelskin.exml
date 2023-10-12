@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="bloodyelskin" width="60" height="4" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="boolBg_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="thumb" fillMode="scale" left="1" right="1" source="boolyel_png" top="1" bottom="1"/>
+	<e:Label id="labelDisplay" textAlign="center" verticalAlign="middle"
+	         size="12" fontFamily="黑体"
+	         horizontalCenter="0" verticalCenter="-14" textColor="0xFFFFFF" stroke="1" strokeColor="0x000000"/>
+</e:Skin>

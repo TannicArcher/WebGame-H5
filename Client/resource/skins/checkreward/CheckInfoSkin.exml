@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CheckInfoSkin" currentState="map0" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" width="580" height="930">
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Image source="tongyongmianbanbg2" width="580" horizontalCenter="0" top="26" bottom="0" scale9Grid="15,12,2,3" />
+	<e:Scroller id="mapScroller" bounces="false" top="50" bottom="141" width="555" horizontalCenter="-0.5"  >
+		<e:Group id="map"  x="0" y="70" >
+			<e:Image id="bg" source="worldMap_jpg"/>
+		</e:Group>
+	</e:Scroller>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" width="580" horizontalCenter="0" currentState="nohead"/>
+	<e:Group id="guanqia" width="180" height="115" y="58"  x="380">
+		<e:Image id="gold" source="szjinbi" horizontalCenter="-64" verticalCenter="-2"/>
+		<e:Image id="exp" source="szexp" scaleX="1.2" scaleY="1.2" horizontalCenter="-64.5" verticalCenter="29.5"/>
+		<e:Label id="goldTxt2" text="9999999/小时" size="20" textAlign="right" width="129"  textColor="0xd1c28f" horizontalCenter="15.5" verticalCenter="-1.5"/>
+		<e:Label id="goldTxt0" text="+10%" size="16" right="8" y="41" textColor="0x9FCC66" visible="false"/>
+		<e:Label id="expTxt2" text="9999999/小时" size="20" textAlign="right" width="128" rotation="359.99"  textColor="0xd1c28f" horizontalCenter="16" verticalCenter="35.5"/>
+		<e:Label id="expTxt0" text="+10%" size="16" right="8" y="65" textColor="0x9FCC66" visible="false"/>
+		<e:Image id="guanqiatitle" y="-7" horizontalCenter="0" source="worldMapskin_json.mapshuaguai"/>
+		<e:Label id="chapterTxt" text="第9999关" size="20" bold="true" y="15" verticalAlign="middle" width="180" textAlign="center"  height="21" textColor="0x7e6437" horizontalCenter="0"/>
+	</e:Group>
+	<!-- 地图组 -->
+	<e:Image scale9Grid="32,32,5,6" touchEnabled="false"   source="biaoti_shijie" horizontalCenter="-163.5" top="12"/>
+	<e:Button id="backtobig" label="Button" skinName="Btn0Skin" icon="zjmshijie" horizontalCenter="233" bottom="156"/>
+	<e:Group id="rewordBtnGroup" y="689" x="410">
+		<e:Button id="getRewordBtn" label=" 领  取 "   skinName="Btn0Skin" icon="baoxiang_5" scaleX="0.4" scaleY="0.4" x="0" y="0"/>
+		<e:Group id="redPoint0" touchEnabled="false" touchChildren="false" x="46" y="20">
+		<e:Image source="zjmhongdian" locked="true"/>
+		</e:Group>
+	</e:Group>
+	<!-- 名字组 -->
+	<!--<e:Image id="barBg4" x="297" y="202" scale9Grid="25,10,7,4" width="98" x.map1="235" y.map1="199"
+	             y.map0="311" x.map0="303" includeIn="map0" />
+	-->
+	<!-- 进度条组 -->
+	<!-- 箱子组 -->
+</e:Skin>

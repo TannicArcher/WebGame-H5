@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FBCountDownSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="bigTimeGroup" horizontalCenter="20.5" top="270">
+		<e:Image verticalCenter="0" y="10" source="mojibg_png" left="0"/>
+		<e:Image id="bgImg" verticalCenter="6" source="peakness_start_fight" left="74"/>
+		<e:BitmapLabel id="countDown" scaleX="1" scaleY="1" text="3" font="num_9_fnt" letterSpacing="-10" left="19" verticalCenter="4.5"/>
+		<e:layout>
+		<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

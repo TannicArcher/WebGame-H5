@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="shenshouEquipItem" width="90" height="96" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586b362dfe"/>
+	<e:Label id="nameTxt" size="16" textColor="0xDFD1B5" textAlign="center" text="name" strokeColor="0x111111" bottom="0" horizontalCenter="0" stroke="1"/>
+	<e:Image id="imgBg" source="quality0" scale9Grid="9,9,46,46" width="76" height="76" verticalCenter="-10" horizontalCenter="0"/>
+	<e:Image id="imgIcon" verticalCenter="-10" horizontalCenter="0" width="62" height="62" source="ss_equip4"/>
+	<e:Image id="tag" source="rein_soul_tag" y="6" x="14" visible="false"/>
+	<e:Group id="redPoint" y="0" right="0" visible="false">
+		<e:Image source="zjmhongdian"/>
+	</e:Group>
+	<e:Label id="equipLv" text="+100" size="14" textColor="0xf8b141" bold="true" textAlign="right" width="32" horizontalCenter="15" verticalCenter="15"/>
+</e:Skin>

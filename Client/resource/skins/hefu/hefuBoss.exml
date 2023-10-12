@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="hefuBoss" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image id="bg" source="quanminbossbg_png" width="554" horizontalCenter="0" top="0" bottom="0"/>
+		<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+		<e:Image y="0" horizontalCenter="0" source="biaoti_hefuboss"/>
+		<e:Group id="Boss" horizontalCenter="-120" bottom="412">
+			<e:Image id="bossImg" source=""/>
+		</e:Group>
+		<e:Group id="infoBg" y="40" horizontalCenter="0" width="540">
+		<e:Image source="shuxingbg"   scale9Grid="77,5,15,34" left="0" right="0" top="0" bottom="0"/>
+		<e:Label text="剩余时间：" x="14" y="12" size="18" textColor="0xf8b141"/>
+		<e:Label id="actTime" text="6天23小时55分" x="104" y="12" size="18" textColor="0x00FF00"/>
+		<e:Label id="actInfo" text="活动期间成功击杀BOSS可以获得BOSS礼包。" x="104" y="32" size="18" width="344" bottom="12" top="32" left="104" right="14" textColor="0xdfd1b5"/>
+		<e:Label text="活动说明：" x="14" y="32" size="18" textColor="0xf8b141"/>
+		</e:Group>
+
+
+
+
+
+
+		<e:Button id="goBtn" label="前往击杀" skinName="Btn1Skin" horizontalCenter="0" bottom="30"/>
+		<e:Label id="time" text="7月1日 20:30 开启" size="20" horizontalCenter="0" bottom="94" textColor="0xd1c28f"/>
+		<e:Label id="successBtn" text="已击杀" textColor="0x00ff00" size="20" horizontalCenter="0" bottom="45" bold="true" visible="false"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian"   horizontalCenter="70" bottom="73" visible="false"/>
+		<e:Image width="540" bottom="118" source="shuxingbg" horizontalCenter="0" height="90" scale9Grid="30,5,105,34"/>
+		<e:Label text="必定\n掉落" size="22" horizontalCenter="-228" bottom="148" textColor="0xf8b141"/>
+
+		<e:List id="rewardList" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8" bottom="122" horizontalCenter="28">
+			<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="-10"/>
+			</e:layout>
+		</e:List>
+	</e:Group>		
+</e:Skin>

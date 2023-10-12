@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MemberApplySkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="15d0765be3c"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group width="500" height="480" horizontalCenter="0" verticalCenter="-106">
+		<e:Group horizontalCenter="0" bottom="-100">
+			<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" touchEnabled="false" y="0" x="0"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" touchEnabled="false" y="5" x="48"/>
+		</e:Group>
+		<e:Image scale9Grid="18,14,12,20" source="tongyongkuang3bg"   left="0" right="0" height="544" y="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,271,47" y="0" left="0" right="0"/>
+		<e:Image width="142" height="39" source="shuzibg" scale9Grid="5,5,15,14" left="140" bottom="-48"/>
+		<e:CheckBox id="checkBoxs" skinName="CheckBox0" left="442" bottom="-51"/>
+		<e:Label text="战斗力大于" size="20" textColor="0xa67d44"   left="28" bottom="-40"/>
+		<e:Label text="自动同意入会" size="20" textColor="0xA67D44" left="315" bottom="-40"/>
+		<e:Scroller width="490" height="430"   y="48" horizontalCenter="0">
+			<e:List id="list" x="-38" y="-186" itemRendererSkinName="MemberApplyItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Label text="申请列表" size="24" y="11" horizontalCenter="0" textColor="0xa67d44"/>
+		<e:TextInput id="attrNum" width="142" height="39" left="140" bottom="-48"/>
+	</e:Group>
+
+
+</e:Skin>

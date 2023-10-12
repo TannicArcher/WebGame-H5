@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="teamFbItem" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="149" width="540" states="normal,zhankai"  height.zhankai="298">
+	<e:Group id="zhankai" y="0" horizontalCenter="0" height="149" width="520" horizontalCenter.zhankai="0" y.zhankai="150" visible.normal="false">
+		<e:Image source="tongyongkuang3bg" scale9Grid="25,8,1,2" left="0" top="0" bottom="0" right="0"/>
+		<e:Label id="done" text="已通关" size="26" textColor="0x00ff00" verticalCenter="0" bold="true" right="15"/>
+		<e:Button id="createRoomBtn" label="挑  战" skinName="Btn3Skin" verticalCenter="0.5" right="10"/>
+		<e:Image id="head" width="86" height="86" x="33" verticalCenter="-11.5" source="monhead10002_png"/>
+		<e:Image source="bosstouxiangk2" width="138" height="127" x="7" y="3"/>
+		<e:Image source="teshuwenzibg2" horizontalCenter="-183.5" bottom="8"/>
+		<e:Label id="nameTxt" text="触龙神大神" size="20" bottom="12" horizontalCenter="-184" textColor="0x7E6437" bold="true"/>
+		<e:Label text="奖励预览" x="146" y="10" size="24" bold="true" textColor="0xf8b141"/>
+		<e:Image x="148" y="42" source="tongyongline2" scale9Grid="15,0,3,4" width="245"/>
+		<e:List id="Rewardlist" x="147" y="54" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8" anchorOffsetX="0" width="322.5">
+		<e:layout>
+			<e:HorizontalLayout paddingLeft="-8" gap="-8"/>
+		</e:layout>
+		</e:List>
+	</e:Group>
+	<e:Group id="base" width="540" height="149" y="0" x="0">
+		<e:Image id="fbImg" source="tfb_bg1_png" left="0" top="0" bottom="0" right="0" touchEnabled="true"/>
+		<e:Image id="unlock" source="tjyijihuo" x="481" y="3" touchEnabled="false"/>
+		<e:Image id="lock" source="tjweijihuo" x="481" y="3" touchEnabled="false"/>
+		<e:Image scale9Grid="48,26,2,1" left="0" top="0" bottom="0" right="0" touchEnabled="false" source="bossbgkuang"/>
+
+		<e:Label id="fbDesc" text="这里需要调用数据表中相关的数据，总之就是用来装逼的" size="20" width="419" textAlign="left" verticalAlign="middle" anchorOffsetY="0" anchorOffsetX="0" lineSpacing="4" x="106" y="91" touchEnabled="false" textColor="0xf8b141" lineSpacing.zhankai="6" y.zhankai="90"/>
+		<e:Image id="redPoint" source="zjmhongdian" width="20" height="20" x="520" y="3" touchEnabled="false"/>
+		<e:Image id="nameImg" x="37" y="20" source=""/>
+		<e:Label id="gonglveTxt" text="查看攻略" x="257" y="28" size="20" bold="true" textColor="0x00ff00" touchEnabled.normal="true"/>
+	</e:Group>
+</e:Skin>

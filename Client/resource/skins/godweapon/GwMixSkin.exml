@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GwMixSkin" currentState="mix" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="556" height="716" states="mix,ultramix" >
+	<e:Group name="圣物合成" left="0" right="0" top="0" bottom="0">
+		<e:Image id="BG" height="684" width="556" horizontalCenter="0" source="gwmixBg_png" verticalCenter="-5" horizontalCenter.mix="0" verticalCenter.mix="-5"/>
+		<e:Image width="500" height="120" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" bottom="119" source.mix="shuxingbg" scale9Grid.mix="75,11,17,24" width.mix="520" source="shuxingbg" scale9Grid="79,11,16,24" horizontalCenter.ultramix="0" bottom.ultramix="97"/>
+		<e:Image width="520" height="120" anchorOffsetX="0" anchorOffsetY="0" source="shuxingbg" horizontalCenter="0" bottom="119" includeIn="mix" scaleY="-1" scale9Grid="76,11,17,24"/>
+		<e:Image id="ultramixLine0" includeIn="ultramix" source="gwmix_line3" x="187" verticalCenter="-84.5"/>
+		<e:Image id="ultramixLine1" includeIn="ultramix" source="gwmix_line3" scaleX="-1" x="371" verticalCenter="-84.5"/>
+		<e:Group id="buttonEff" width="13" height="154" includeIn="ultramix" verticalCenter="-79" horizontalCenter="-1.5"/>
+		<e:Group id="rightEff" width="94" height="12" x="372" rotation="180" includeIn="ultramix" verticalCenter="-163"/>
+		<e:Group id="leftEff" width="94" height="12" x="185" includeIn="ultramix" verticalCenter="-162"/>
+		<e:Image id="mixline0" includeIn="mix" x="168" source="gwmix_line1" verticalCenter="-89"/>
+		<e:Image id="mixline1" includeIn="mix" x="392" source="gwmix_line1" scaleX="-1" verticalCenter="-89"/>
+		<e:Image id="mixline0Effect" includeIn="mix" x="168" source="gwmix_line2" verticalCenter="-90" visible="false"/>
+		<e:Image id="mixline1Effect" includeIn="mix" x="392" source="gwmix_line2" scaleX="-1" verticalCenter="-90" visible="false"/>
+		<e:Button id="leftButton" label="Button" skinName="Btn0Skin" icon="jiantouxuan" left="6" bottom="155" left.ultramix="6" bottom.ultramix="133"/>
+		<e:Button id="rightButton" label="Button" skinName="Btn0Skin" icon="jiantouxuan" scaleX="-1" right="6" bottom="155" right.ultramix="6" bottom.ultramix="133"/>
+		<e:List id="list" itemRendererSkinName="GwMixItemSkin" horizontalCenter="0" height="100" width="478" bottom="129" anchorOffsetX.mix="0" horizontalCenter.mix="0" bottom.mix="129" width.mix="478" horizontalCenter.ultramix="0" bottom.ultramix="107">
+			<e:layout>
+			<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" paddingTop="-4" paddingLeft.mix="0" gap.mix="6" paddingLeft="0" gap.ultramix="6"/>
+			</e:layout>
+		</e:List>
+		<e:Group id="mix1" verticalCenter.mix="-222" horizontalCenter.mix="0" horizontalCenter.ultramix="-133" verticalCenter.ultramix="-146">
+			<e:Image id="mix1Bg" y="-4" source="gwmix_kuang" horizontalCenter="0"/>
+			<e:Image id="mix1add" y="19" source="tongyongadd2" horizontalCenter="0"/>
+			<e:Image id="mix1Img" y="-2" width="90" height="90" horizontalCenter="0" source.ultramix="" horizontalCenter.ultramix="0" y.ultramix="-2" source.mix=""/>
+			<e:Image id="mix1NameBg" y="61" source="gwmix_name" horizontalCenter="0"/>
+			<e:Label id="mix1Name" text="" y="80" size="14" horizontalCenter="0"/>
+			<e:Image includeIn="ultramix" y="103" source="gwmix_main" horizontalCenter="0.5"/>
+		</e:Group>
+		<e:Group id="mix2" verticalCenter.mix="5" horizontalCenter.mix="-141" horizontalCenter.ultramix="137" verticalCenter.ultramix="-146">
+			<e:Image id="mix2Bg" y="-4" source="gwmix_kuang" horizontalCenter="0"/>
+			<e:Image id="mix2add" y="19" source="tongyongadd2" horizontalCenter="0"/>
+			<e:Image id="mix2Img" y="-2" width="90" height="90" horizontalCenter="0" y.ultramix="-2" source.ultramix="" source.mix=""/>
+			<e:Image id="mix2NameBg" y="61" source="gwmix_name" horizontalCenter="0"/>
+			<e:Label id="mix2Name" text="" y="80" size="14" horizontalCenter="0"/>
+			<e:Image includeIn="ultramix" y="103" source="gwmix_minor" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="mixMaterial" horizontalCenter="138" verticalCenter="57.5" includeIn="ultramix">
+			<e:Image id="mixMaterialBg" y="-4" source="gwmix_kuang" horizontalCenter="0"/>
+			<e:Image id="mixMaterialImg" y="1" horizontalCenter="-1" source="200333_png" width="80" height="80"/>
+			<e:Image id="mixMaterialNameBg" y="61" source="gwmix_name" horizontalCenter="0"/>
+			<e:Label id="mixlabel" text="圣魂精华" y="80" size="14" horizontalCenter="0" textColor="0xd1c28f"/>
+			<e:Label id="descTxt" text="100%成功率" y="107" size="14" horizontalCenter="0" textColor="0xf8b141"/>
+		</e:Group>
+		<e:Group id="mix3" verticalCenter="5" horizontalCenter="141" includeIn="mix">
+			<e:Image id="mix3Bg" y="-4" source="gwmix_kuang" horizontalCenter="0"/>
+			<e:Image id="mix3add" y="19" source="tongyongadd2" horizontalCenter="0"/>
+			<e:Image id="mix3Img" width="90" height="90" horizontalCenter="0" source="" y="-2"/>
+			<e:Image id="mix3NameBg" y="61" source="gwmix_name" horizontalCenter="0"/>
+			<e:Label id="mix3Name" text="" y="80" size="14" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="targetGroup" horizontalCenter.mix="0" verticalCenter.mix="-67" horizontalCenter.ultramix="0" verticalCenter.ultramix="49">
+			<e:Image id="targetBg" y="-4" source="gwmix_kuang" horizontalCenter="0"/>
+			<e:Image id="targetadd" y="19" source="tongyongadd2" horizontalCenter="0" visible.mix="false" visible.ultramix="false"/>
+			<e:Image id="targetRandom" includeIn="mix" y="5" source="gwmix_random" horizontalCenter="0"/>
+			<e:Image id="targetImg" y="-2" width="90" height="90" horizontalCenter="0" y.ultramix="-2"/>
+			<e:Image id="targetNameBg" y="61" horizontalCenter="0" source="gwmix_name"/>
+			<e:Label id="targetLabel" text="随机圣物" y="80" size="14" textColor="0xd1c28f" bold="true" horizontalCenter="0"/>
+		</e:Group>
+		<e:Button id="mix" label="合  成" skinName="Btn1Skin" horizontalCenter="0" bottom="31" label.ultramix="融   合" horizontalCenter.ultramix="0" bottom.ultramix="23"/>
+		<e:Group id="bottomDesc" horizontalCenter="0" top="12">
+			<e:Image x="0" y="0" source="gantanhao"/>
+			<e:Image x="0" y="30" source="gantanhao"/>
+			<e:Image id="materialTxtImg" x="0" y="60" source="gantanhao" includeIn="ultramix"/>
+			<e:Label text="消耗三个同品质圣物可随机合成一个新圣物" x="26" y="2" size="18" bold="true" textColor="0xf8b141" text.ultramix="同神兵单技能神品圣物可以进行融合"/>
+			<e:Label text="合成圣物时有几率提升为更高品质的圣物" x="26" y="32" size="18" bold="true" textColor="0xF8B141" text.ultramix="融合成功将获得包含主副圣物技能的新圣物"/>
+			<e:Label id="materialTxt" text="融合成功几率为25%，失败时副圣魂将被摧毁" x="26" y="62" size="18" bold="true" textColor="0xF8B141" includeIn="ultramix"/>
+		</e:Group>
+		<e:Label id="turn"  x="392" textColor="0x00ff00" size="20" bottom="51" bold="true" text=""/>
+		<e:Label id="noItemDesc" text="背包内没有可融合的圣物" size="24" horizontalCenter="0" bottom="164" textColor="0xd1c28f" bold="true" text.mix="背包内没有可合成的圣物" horizontalCenter.ultramix="0" bottom.ultramix="145"/>
+	</e:Group>
+</e:Skin>

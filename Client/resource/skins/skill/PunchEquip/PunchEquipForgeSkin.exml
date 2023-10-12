@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PunchEquipForgeSkin" width="560" height="770" currentState="full" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="normal,full" >
+	<w:Config id="15acfe56d68"/>
+	<e:Group id="PunchForge" top="52" bottom="0" width="560" horizontalCenter="0">
+		<e:Image source="hejibg1_png" y="0" left="0" right="0" height="490"/>
+		<e:Image source="hejibg2_png" y="20" horizontalCenter="0" touchEnabled="false"/>
+		<e:Image source="shuxingbg2" x="10" y="460" scale9Grid="187,0,8,32" width="270"/>
+		<e:Image source="shuxingbg2" y="460" scale9Grid="187,0,8,32" width="270" right="10" scaleX="-1"/>
+		<e:Image left="0" right="0" bottom="2" top="492" scale9Grid="50,5,65,34" source="shuxingbg"/>
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" y="433" horizontalCenter="0"/>
+		<e:Group x="103" y="68">
+			<e:Image id="pEquip0" y="-1" source="punchselect_png" scaleX="1" rotation="90" x="247"/>
+			<e:Image id="pEquip1" x="353" y="102" source="punchselect_png" scaleX="1" rotation="135"/>
+			<e:Image id="pEquip2" x="354" y="249" source="punchselect_png" scaleX="1" rotation="180"/>
+			<e:Image id="pEquip3" x="250.67000000000007" y="352.98" source="punchselect_png" scaleX="1" rotation="225"/>
+			<e:Image id="pEquip4" y="354" source="punchselect_png" rotation="270" x="104"/>
+			<e:Image id="pEquip5" x="0" y="251.67" source="punchselect_png" scaleX="1" rotation="315"/>
+			<e:Image id="pEquip6" x="-1" y="105" source="punchselect_png" scaleX="1"/>
+			<e:Image id="pEquip7" x="101" y="0" source="punchselect_png" scaleX="1" rotation="45"/>
+		</e:Group>
+		<e:Group x="108" y="73" horizontalCenter.normal="-1.5" verticalCenter.normal="-116">
+			<e:Label id="pELv0" text="+99" y="0" size="18" textColor="0x5186fd" width="41" verticalAlign="middle" textAlign="center" x="150"/>
+			<e:Label text="+99" x="257" y="54" size="18" id="pELv1" textColor="0x5186fd" width="41" verticalAlign="middle" textAlign="center"/>
+			<e:Label text="+99" x="300" y="165" size="18" textColor="0x5186FD" id="pELv2" width="41" verticalAlign="middle" textAlign="center"/>
+			<e:Label text="+99" x="257" y="273" size="18" textColor="0x5186FD" id="pELv3" width="41" verticalAlign="middle" textAlign="center"/>
+			<e:Label text="+99" x="150" y="322" size="18" textColor="0x5186FD" id="pELv4" width="41" verticalAlign="middle" textAlign="center"/>
+			<e:Label text="+99" x="41" y="273" size="18" textColor="0x5186FD" id="pELv5" width="41" verticalAlign="middle" textAlign="center"/>
+			<e:Label text="+99" x="0" size="18" textColor="0x5186FD" id="pELv6" width="41" verticalAlign="middle" textAlign="center" y="165"/>
+			<e:Label text="+99" x="41" y="54" size="18" textColor="0x5186FD" id="pELv7" verticalAlign="middle" textAlign="center" width="41"/>
+		</e:Group>
+		<e:Group width="353" height="353" includeIn="normal" x="108" y="73">
+			<e:Group id="eff0" x="170" y="40"/>
+			<e:Group id="eff1" x="263" y="77"/>
+			<e:Group id="eff2" x="306" y="170"/>
+			<e:Group id="eff3" x="259" y="258"/>
+			<e:Group id="eff4" x="171" y="303"/>
+			<e:Group id="eff5" x="77" y="263"/>
+			<e:Group id="eff6" x="39" y="168"/>
+			<e:Group id="eff7" x="75" y="78"/>
+		</e:Group>
+		<e:Image source="shuxingbg" scale9Grid="36,6,113,39" left="20" right="20" height="68" verticalCenter="213"/>
+		<e:Group x="80" verticalCenter="202">
+			<e:Label id="attr0" text="攻击+10000" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			<e:Image id="arrow0" x="139" y="1" rotation="90" source="tongyongup" visible.full="false"/>
+			<e:Label id="addAttr0" text="22222" size="18" textAlign="center" x="124" textColor="0x32FF00" y="0" visible.full="false"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="300" verticalCenter="202">
+			<e:Label id="attr1" text="生命+10000" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			<e:Image id="arrow1" source="tongyongup" x="139" y="1" rotation="90" visible.full="false"/>
+			<e:Label id="addAttr1" text="222222" size="18" textAlign="center" textColor="0x32FF00" x="126" y="0" visible.full="false"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="80" verticalCenter="226">
+			<e:Label id="attr2" text="魔防 +100" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			<e:Image id="arrow2" source="tongyongup" x="139" y="1" rotation="90" visible.full="false"/>
+			<e:Label id="addAttr2" text="2222" size="18" textAlign="center" textColor="0x32FF00" x="124" y="0" visible.full="false"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="300" verticalCenter="226">
+			<e:Label id="attr3" text="物防 +100" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			<e:Image id="arrow3" source="tongyongup" x="139" y="1" rotation="90" visible.full="false"/>
+			<e:Label id="addAttr3" text="2222" size="18" textAlign="center" textColor="0x32FF00" x="126" y="0" visible.full="false"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+
+		<e:Button id="btn" label="注   灵" skinName="Btn1Skin" horizontalCenter="0" verticalCenter="316" visible.full="false"/>
+		<e:Image id="redPoint" source="zjmhongdian" touchEnabled="false" horizontalCenter="68" verticalCenter="298" visible.full="false"/>
+		<e:Group id="costGroup" horizontalCenter="0.5" verticalCenter="267" visible.full="false">
+			<e:Label id="cosedesc" text="消耗：" x="0" y="0" size="20" textColor="0xd1c28f" bold="true"/>
+			<e:Image id="costicon" x="82" y="5" source="hejisuipian"/>
+			<e:Label id="costcount" text="10000/500" x="114" y="0" size="20" textColor="0xd1c28f"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Group verticalCenter="157" horizontalCenter.full="0" horizontalCenter="0">
+			<e:Image x="16" source="zhulingdashi"/>
+
+			<e:Label id="exattr0" text="合击伤害减免 5%" size="18" textAlign="center" x="115" y="3" textColor="0xd1c28f"/>
+			<e:Image id="arrow4" x="272.98" y="5.5" rotation="90" source="tongyongup" includeIn="normal"/>
+			<e:Label id="exattr1" text="6%" size="18" textAlign="center" x="282" y="3" textColor="0x32ff00" includeIn="normal"/>
+
+			<e:Label id="exattr2" text="(全部位等级达到 20/40)" x="315" y="3" size="18" textColor="0xd1c28f" includeIn="normal"/>
+			<e:layout>
+				<e:HorizontalLayout gap="2" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group includeIn="normal" verticalCenter="317" horizontalCenter="162">
+			<e:Label id="getItemTxt" text="获取道具" textColor="0x32ff00" bold="true" size="20" verticalCenter.full="317" x.normal="-42" scaleX.normal="1" scaleY.normal="1" y.normal="-10" y="0" x="0"/>
+		</e:Group>
+		<e:Label text="已满级" includeIn="full" size="24" textColor="0xf8b141" bold="true" horizontalCenter="0" verticalCenter="299"/>
+	</e:Group>
+	<!--<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin"   width="640" horizontalCenter="0" currentState="nohead"/>-->
+</e:Skin>

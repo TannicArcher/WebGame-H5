@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LiLianTipsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="400" width="350">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+
+
+
+
+
+
+	<e:Group id="group" width="350" height="400" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" width="400"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-30" textColor="0x7E6437"/>
+		<e:Image source="tongyongtip1" scale9Grid="6,6,11,9" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,17,4,7" left="0" right="0" top="0" bottom="0"/>
+		<e:Image y="46" width="70" height="70" horizontalCenter="0" source="quality0"/>
+		<e:Image id="skillIcon" y="53" horizontalCenter="0" width="55" height="55"/>
+		<e:Image height="30" y="11" source="teshuwenzibg" horizontalCenter="0"/>
+		<e:Label id="skillName" text="幸运一击" y="13" bold="true" size="24" textColor="0xa67d44" horizontalCenter="0"/>
+		<e:Label text="当前属性" y="131" bold="true" size="20" x="20" textColor="0xa67d44"/>
+		<e:Label id="currTrainName" text="·平民" y="131" bold="true" size="20" textColor="0xa67d44" x="105"/>
+		<e:Label text="下阶属性" y="261" bold="true" size="20" x="20" textColor="0xa67d44"/>
+		<e:Label id="nextTrainName" text="·公爵" y="261" bold="true" size="20" textColor="0xa67d44" x="105"/>
+		<e:Label id="cruDesc" text="30%" x="30" y="161" size="20" width="300" height="80" multiline="true" wordWrap="true" verticalAlign="middle" textColor="0x35e62d"/>
+		<e:Label id="nextDesc" text="的几率对" x="30" size="20" width="300" height="80" wordWrap="true" multiline="true" verticalAlign="middle" y="302" textColor="0xd1c28f"/>
+		<e:Image source="tongyongline" y="121" left="0" right="0"/>
+	</e:Group>
+
+</e:Skin>

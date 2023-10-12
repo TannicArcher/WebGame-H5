@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LiLianItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="40" width="550">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.2"/>
+	<e:Label id="nameTxt" text="宝石副本" size="20" x="22" touchEnabled="false" textColor="0xDFD1B5" verticalCenter="0" textAlign="center"/>
+	<e:Label id="descTxt" text="5/5" size="20" touchEnabled="false" textColor="0xDFD1B5" verticalCenter="0" textAlign="center" x="196"/>
+	<e:Label id="liLianNumTxt" text="10历练" size="20" touchEnabled="false" textColor="0xFFB82A" verticalCenter="0" textAlign="center" x="330"/>
+	<e:Label id="goOnTxt" text="点击前往" size="20" textColor="0x23CA23" verticalCenter="0" right="20" visible="false"/>
+	<e:Label id="sureImg" text="已完成" size="20" verticalCenter="0" right="20" textColor="0xf8b141" bold="true"/>
+
+
+</e:Skin>

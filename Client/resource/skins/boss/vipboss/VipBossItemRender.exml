@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="VipBossItemRender" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="540" height="140">
+	<e:Image id="bg"  left="0" right="0" top="0" bottom="0" source="tongyonglabbg" scale9Grid="40,22,56,38" alpha="0.6"/>
+
+	<e:List id="list" bottom="12" x="151" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8">
+		<e:layout>
+		<e:HorizontalLayout horizontalAlign="center" gap="6"/>
+		</e:layout>
+	</e:List>
+
+	<!--<e:Label id="timeTxt" text="01:01:55后重生" size="18" textAlign="center"
+	         textColor="0xFFB92D"  y="22" horizontalCenter="190.5" visible="false"/>-->
+	<e:Label id="infoTxt0" text="查看击杀记录" size="20" x="150" lineSpacing="0" textColor="0x00FF00" y="16" visible="false"/>
+
+
+	<e:Group x="10" verticalCenter="0" height="127" width="372">
+		<e:Rect width="86" height="86" ellipseWidth="82" ellipseHeight="82" fillColor="0x000000" fillAlpha="0.6" x="23" verticalCenter="-2"/>
+		<e:Rect height="16" width="223" fillColor="0x000000" x="143" y="14"/>
+		<e:Image id="head" source="" width="86" height="86" x="26" verticalCenter="-3"/>
+		<e:Image source="bosstouxiangk2" width="138" height="127"/>
+		<e:ProgressBar id="bar" value="100" width="223" height="16" skinName="bar3Skin" x="143" y="14"/>
+		<e:Image id="barBg" x="136" width="235" y="10" source="jingyantiao6" scale9Grid="21,3,17,19"/>
+		<e:Image source="teshuwenzibg2" horizontalCenter="-116" bottom="0"/>
+		<e:Label id="nameTxt" text="触龙神大神" size="20" bottom="2" horizontalCenter="-116" textColor="0x7e6437" bold="true"/>
+	</e:Group>
+	<e:Group id="needLv" horizontalCenter="190" y="78" visible="false">
+		<e:Image id="completeImg" scale9Grid="0,5,238,35" left="0" right="0" top="0" bottom="0" source=""/>
+		<e:Label id="levelRequire" text="70级开放" size="22" textColor="0xF15A25" textAlign="center" x="0" y="0"/>
+	</e:Group>
+	<e:Image source="bantoutiaoboss" x="-1" y="22" scale9Grid="7,3,44,18" height="26"/>
+	<e:Label id="nameTxt0" text="1转" size="22" textAlign="center" x="6" y="25" textColor="0xd1c28f"/>
+	<!--<e:Label id="infoTxt" text="争夺：0人" size="18" lineSpacing="0" y="22" textColor="0x9f946d" horizontalCenter="190"/>-->
+	<e:Button id="challengeBtn" label="挑战" verticalCenter="20" skinName="Btn3Skin" width="116" height="48" horizontalCenter="190"/>
+	<e:Button id="boxBtn" label="Button" x="140" skinName="Btn0Skin" icon="200123_png" y="60" visible="false"/>
+</e:Skin>

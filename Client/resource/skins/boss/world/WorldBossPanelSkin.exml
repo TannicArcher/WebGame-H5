@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WorldBossPanelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="554" height="716">
+	<w:Config id="15c3988fec3"/>
+	<e:Image source="worldbossbg_png" left="0" right="0" top="0" bottom="0"/>
+
+
+	<e:Image source="tielian" x="430" y="6"/>
+	<e:Image source="tielian" x="494" y="6"/>
+
+	<e:Scroller top="50" bottom="50" width="160" right="10">
+		<e:List id="list" y="-1" x="1" itemRendererSkinName="worldBossItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="4"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Button id="challengeBtn" label="参与挑战" skinName="Btn1Skin" bottom="12" horizontalCenter="-70"/>
+	<e:Image source="teshuwenzibg" y="100" horizontalCenter="-70" width="200"/>
+	<e:Group y="52" horizontalCenter="-70">
+		<e:Label text="上次归属：" y="0" size="18" textColor="0x9F946D" x="0"/>
+		<e:Label id="playerNameTxt" text="玩家名六个字（公会名六个字）" y="0" size="18" x="90" textAlign="left" textColor="0xf8b141"/>
+	</e:Group>
+	<e:Label id="nameTxt" text="BOSS名字（70级）" y="105" horizontalCenter="-68" size="24" textColor="0xbd600d"/>
+	<e:Group id="bossGroup" width="200" height="200" x="124" bottom="216"/>
+	<e:Label text="参与奖励" y="522" size="18" horizontalCenter="-195" textColor="0xf8b141" visible="false"/>
+	<e:Image width="360" bottom="92" source="shuxingbg" horizontalCenter="-70" height="107" scale9Grid="30,5,105,34"/>
+	<e:Label text="BOSS掉落" size="18" textColor="0xf8b141" x="161" bottom="176"/>
+
+	<e:List id="dropRewardList" scaleX="0.8" scaleY="0.8"  itemRendererSkinName="ItemSkin" bottom="94" horizontalCenter="-70">
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="13"/>
+		</e:layout>
+	</e:List>
+	<e:Label id="leftText" text="总剩余挑战次数：1次" size="18" horizontalCenter="-70" textColor="0xd1c28f" bottom="70"/>
+	<e:Group id="juan" height="19" horizontalCenter="68" bottom="70">
+		<e:Image id="jicon" scaleX="1" scaleY="1" source="200156_png" width="24" height="24" x="22" y="0"/>
+		<e:Label text="（" size="18" scaleX="1" scaleY="1" textColor="0x21C629" x="4" y="0" bold="true"/>
+		<e:Label id="jcount" text="111" size="18" scaleX="1" scaleY="1" textColor="0x21C629" x="52" y="0"/>
+		<e:Label text="）" size="18" scaleX="1" scaleY="1" textColor="0x21C629" x="14" y="10" bold="true"/>
+		<e:layout>
+			<e:HorizontalLayout gap="-1" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+
+	<e:Image source="" x="57" y="410"/>
+
+	<e:Image id="stateImage" source="zdbossskin_json.zdbosskejisha" x="272" bottom="226"/>
+	<e:Label id="leftCDText" text="挑战CD:999秒" size="16"    bottom="30" textColor="0xf8b141" horizontalCenter="-70"/>
+	<e:Label id="getItemTxt" text="购买次数" size="20" textColor="0x00FF00"   x="290" bottom="30"/>
+</e:Skin>

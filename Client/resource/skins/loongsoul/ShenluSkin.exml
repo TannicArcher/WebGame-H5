@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShenluSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        xmlns:tween="egret.tween.*" states="open" includeIn="normalWithPrompt,disabledWithPrompt" width="580"
+        height="930">
+	<w:Declarations></w:Declarations>
+	<w:Config id="158995f2c90"></w:Config>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" />
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" scale9Grid="15,12,2,3" width="580" horizontalCenter="0" />
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30" width="570" horizontalCenter="0" top="44" bottom="120" />
+	<e:Image source="longhunbg_png" y="111" horizontalCenter="0" />
+	<e:Image source="longhunbg2_png" y="478" width="270" height="180" horizontalCenter="0" />
+	<e:Group width="554" top="135" bottom="128" horizontalCenter="0">
+		<e:Label id="vipLabel" text="VIP14加成" x="82" y="613" size="16" textColor="0x00ff00"  visible="false"/>
+		<e:Group id="maxGroup" horizontalCenter="0" bottom="10">
+			<e:Label id="material" text="消耗：998/9999" size="20" y="198" textColor="0xd1c28f" horizontalCenter="0" />
+			<e:Group width="460" height="90" x="30" y="0">
+				<e:Image id="nextAttBG"   source="shuxingbg" left="0" right="0" top="0" bottom="0"
+				         scale9Grid="50,5,65,34" />
+				<e:Label id="nextAtt" text="攻击：8000" size="18" textColor="0x2ECA22"  height="80" 
+				         width="160" textAlign="left" verticalAlign="middle" verticalCenter="0" horizontalCenter="140" />
+				<e:Image id="cursor" source="jiantouyou" verticalCenter="0" horizontalCenter="0" />
+				<e:Label id="curAtt" text="攻击：8000" size="18" height="80" width="160" textAlign="left" verticalAlign="middle"
+				         horizontalCenter="-100" verticalCenter="0" textColor="0x9f946d" />
+			</e:Group>
+			<e:Group width="500" height="60" id="starGroup" scaleX="0.8" scaleY="0.8" x="36" y="112" />
+			<e:Button id="upgradeBtn" label="升  级" skinName="Btn1Skin" width="180" height="60" x="170" y="220" />
+			<e:Group id="expGroup" width="520" x="0" y="151"></e:Group>
+		</e:Group>
+		<e:Group id="maxShowGroup" x="17" bottom="200" visible="false">
+			<e:Group width="460" height="90" x="30" y="0">
+				<e:Label id="maxCurAtt" text="攻击：8000" size="18" height="80" width="160" textAlign="left" verticalAlign="middle"
+				         textColor="0x9f946d"  x="150" y="5"/>
+			</e:Group>
+		</e:Group>
+		<e:Image id="icon" y="59" horizontalCenter="0" source="longhun_01_png" />
+		<e:Group id="maxLevel" width="158" height="40" horizontalCenter="0" bottom="22" visible="false">
+			<e:Image source="bantoutiaobg" left="0" right="0" top="0" bottom="0" />
+			<e:Label textColor="0xFFD862" text="已满级" size="20" width="144" height="84" verticalAlign="middle" textAlign="center"
+			         horizontalCenter="0" verticalCenter="0" />
+		</e:Group>
+		<ns1:BaseComponent id="stairImg" width="40" height="109" x="26" y="6" skinName="jiejiSkin" className="LevelImage"/>
+	</e:Group>
+	<!--<e:Group id="powerGroup" y="137" horizontalCenter="0.5" locked="true">
+	<e:Image source="zhandoulibg" x="0" y="9" />
+	<e:Image source="zjmzhandouli" />
+</e:Group>
+-->
+<e:Group y="130" horizontalCenter="0">
+	<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin"  className="PowerPanel"/>
+</e:Group>
+<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" width="580" horizontalCenter="0" />
+<e:Image source="juese_json.biaoti_longhun" y="5" horizontalCenter="-155" />
+<e:Group id="activeGroup" bottom="160" horizontalCenter="0" height="160">
+	<e:Label id="sysDescText" text="开启龙魂获得大量攻击防御\n\n46级可开启" textAlign="center" touchEnabled="false" horizontalCenter="0"
+	         y="0" textColor="0xf8b141" size="22" bold="true"  text.open="开启龙魂获得大量攻击防御 \n \n 46级可开启"/>
+	<e:Button id="activeBtn" label="激  活" skinName="Btn1Skin"  x.open="51" verticalCenter="40" horizontalCenter="0" height="60" width="180"/>
+	<e:Image id="redPoint" width="20" height="20"   source="zjmhongdian" horizontalCenter="83" verticalCenter="15"/>
+	<e:Group id="activeBtnMc" width="180" height="60" horizontalCenter="0" verticalCenter="40"/>
+</e:Group>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+</e:Skin>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuneSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="930" width="580" >
+	<w:Config id="1586b1c98a7"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="155"/>
+	<e:ViewStack id="viewStack" width="554" horizontalCenter="0" top="52" bottom="162" selectedIndex="2">
+		<ns1:BaseComponent id="runePanel" skinName="RuneSkinUp" name="镶嵌" className="RunePanel" left="0" right="0" top="0" bottom="0"/>
+		<ns1:BaseComponent id="decomPanel" skinName="DecomposeruneSkin" name="分解" className="RuneDecomposePanel" left="0" right="0" top="0" bottom="0" visible="false"/>
+	</e:ViewStack>
+	<e:TabBar id="tab" dataProvider="{viewStack}" bottom="112" itemRendererSkinName="BtnTab0Skin" horizontalCenter="0">
+		<e:layout>
+			<e:HorizontalLayout gap="0" />
+		</e:layout>
+	</e:TabBar>
+	<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" horizontalCenter="-13" bottom="139" visible="false"/>
+	<e:Image id="redPoint2" touchEnabled="false" source="zjmhongdian" horizontalCenter="109" bottom="140" visible="false"/>
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  y="0" width="580" horizontalCenter="0"/>
+	<e:Image source="rune_json.biaoti_zhanwen" y="5" horizontalCenter="-155"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+</e:Skin>

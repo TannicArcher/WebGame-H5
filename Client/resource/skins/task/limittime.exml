@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="limittime" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="580" height="930">
+	<w:Config id="15c43009529"/>
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" scale9Grid="15,12,2,3" width="580" horizontalCenter="0"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image source="tongyongkuang3bg" scale9Grid="20,17,8,11"  width="580"    horizontalCenter="0" top="45" bottom="120" visible="false"/>
+	<e:Image source="zhandoulibg"     width="555" horizontalCenter="0" top="46" bottom="120" scale9Grid="0,16,302,3"/>
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  width="580" horizontalCenter="0" currentState="nohead" top="0"/>
+	<e:Image source="biaoti_xianshi_png" horizontalCenter="-155" top="5"/>
+	<e:Image source="tielian" horizontalCenter="193" y="65"/>
+	<e:Image source="tielian" y="65" horizontalCenter="-193"/>
+	<e:Image source="shuxingline" y="104" scale9Grid="16,8,4,2" width="280" horizontalCenter="-140" visible="false"/>
+	<e:Image source="shuxingline" y="103" scale9Grid="16,8,4,2" width="280" scaleX="-1" horizontalCenter="140" visible="false"/>
+	<e:Group width="554" horizontalCenter="0" height="400" y="78">
+		<e:Image source="shuxingbg" left="0" right="0" top="29" bottom="5" scale9Grid="20,5,125,34"/>
+		<e:Image source="fengexian" scale9Grid="16,0,9,11" bottom="0" left="0" right="0"/>
+		<e:Image y="0" x="0" width="277" source="shuxingbg2" scale9Grid="186,0,6,32"/>
+		<e:Image source="shuxingbg2" width="277" scale9Grid="186,0,6,32" right="0" scaleX="-1"/>
+		<e:Image source="hejibg2_png" touchEnabled="false" scaleX="0.53" scaleY="0.53" y="70" x="0"/>
+		<e:Button id="viewBtn" label="查看符文" skinName="Btn3Skin" width="116" height="46" y="335"   horizontalCenter="0"/>
+		<e:Group width="249" height="180" y="138" x="294.01">
+			<e:Label text="符文套装效果（三角色时）" y="10" textColor="0xFF750F" size="20" x="0" bold="true"  />
+			<e:Label id="link2" text="1转" y="10" size="20" bold="true" x="16" textColor="0xf8b141" visible="false"/>
+			<e:Label id="link13" text="符文套装效果" y="10" size="20" bold="true" x="61" textColor="0xf8b141" visible="false"/>
+			<e:Label id="link9" text="+400%" x="500" y="20" size="20" textColor="0x444134" visible="false"/>
+			<e:Label id="link10" text="+40%" x="500" y="44" size="20" textColor="0x444134" visible="false"/>
+			<e:Label id="link11" text="+20%" x="500" y="68" size="20" textColor="0x444134" visible="false"/>
+			<e:Label id="link3" text="集齐3块符文" x="20" y="39" size="18" textColor="0xbd600d"/>
+			<e:Label id="link4" text="合击技能对玩家伤害" x="5" y="60" size="16" textColor="0xd1c28f"/>
+			<e:Label id="link5" text="集齐5块符文" x="20" y="89" size="18" textColor="0xbd600d"/>
+			<e:Label id="link6" text="合击技能对怪物伤害提高到2400%" x="5" y="110" size="16" textColor="0xd1c28f"/>
+			<e:Label id="link7" text="集齐8块符文" x="20" y="139" size="18" textColor="0xbd600d"/>
+			<e:Label id="link8" text="怒气恢复速度" x="5" y="160" size="16" textColor="0xd1c28f"/>
+			<e:Image source="tongyongdian2" x="0" y="41"/>
+			<e:Image source="tongyongdian2" x="0" y="91"/>
+			<e:Image source="tongyongdian2" x="0" y="141"/>
+		</e:Group>
+		<e:Label text="符文收集进度" y="75" size="20" x="298" textColor="0xff750f" bold="true"/>
+		<e:Image source="gantanhao" y="40" x="111"   visible="false"/>
+		<e:Label id="link" text="任务剩余时间:" y="40" size="20" x="140" textColor="0xd1c28f" visible="false"/>
+		<e:Label id="link12" text="23小时30分钟59秒" y="40" size="20" textAlign="center" x="276" textColor="0xd1c28f" visible="false"/>
+		<e:Group id="EffectGroup" width="352" height="351" scaleX="0.53" scaleY="0.53" y="99.27" x="41.870000000000005">
+			<ns1:BaseComponent id="item0" x="103" y="-1" skinName="PunchEquipItemSkin" className="PunchEquipItemBase" currentState="1"/>
+			<ns1:BaseComponent id="item1" x="175" y="1" skinName="PunchEquipItemSkin" className="PunchEquipItemBase" currentState="2"/>
+			<ns1:BaseComponent id="item2" x="173" y="103" skinName="PunchEquipItemSkin" className="PunchEquipItemBase" currentState="3"/>
+			<ns1:BaseComponent id="item3" x="175" y="175" skinName="PunchEquipItemSkin" className="PunchEquipItemBase" currentState="4"/>
+			<ns1:BaseComponent id="item4" x="101" y="173" skinName="PunchEquipItemSkin" className="PunchEquipItemBase" currentState="5"/>
+			<ns1:BaseComponent id="item5" x="-3" y="175" skinName="PunchEquipItemSkin" className="PunchEquipItemBase" currentState="6"/>
+			<ns1:BaseComponent id="item6" x="-3" y="103" skinName="PunchEquipItemSkin" className="PunchEquipItemBase" currentState="7"/>
+			<ns1:BaseComponent id="item7" x="0" y="0" skinName="PunchEquipItemSkin" className="PunchEquipItemBase" currentState="8"/>
+		</e:Group>
+		<e:Group y="1.5" horizontalCenter="0" visible="false">
+			<e:Label id="link0" text="2转" x="0" y="0" size="20" bold="true" textColor="0xf8b141"/>
+			<e:Label id="link1" text="符文收集" x="30" y="0.5" size="20"   bold="true" textColor="0xf8b141"/>
+			<e:layout>
+				<e:HorizontalLayout gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:ProgressBar id="expBar" width="180" height="13" y="109.3" value="100" scaleX="0.92"  skinName="bar0Skin" horizontalCenter="139"/>
+		<e:Image id="progress" x="298" y="101" width="260" scaleX="0.9" source="jingyantiao1" scaleY="0.8" scale9Grid="53,2,17,17"/>
+		<e:Image source="fengexian" y="89" scale9Grid="15,1,12,9" width="207" rotation="90" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="timeGroup" width="350" height="50"   top="104" horizontalCenter="0">
+		<e:Image id="bg" source="shuxingbg4"   scale9Grid="65,6,42,38" width="302" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image id="right" source="anwen1"  scaleX="-1" verticalCenter="0" right="0"/>
+		<e:Image id="left" source="anwen1"   verticalCenter="0" left="0"/>
+		<e:Group id="deadLine" width="228" height="20" verticalCenter="0" horizontalCenter="0">
+			<e:Label id="title" text="任务剩余时间：" x="-2" y="0"   size="20" textColor="0xd1c28f"/>
+			<e:Label id="time" text="119:19:19" x="132" y="0"   size="20" textColor="0x35e62d"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0" horizontalAlign="center"/>
+			</e:layout>
+		</e:Group>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Scroller width="554" height="313" horizontalCenter="0" verticalCenter="172">
+		<e:List id="list" itemRendererSkinName="LimitTimeItem" y="16"  height="294" horizontalCenter="0">
+		<e:layout>
+			<e:TileLayout horizontalGap="4" verticalGap="4"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group height="240" name="视图" width="560" horizontalCenter="0" y="634" visible="false">
+	</e:Group>
+
+	<e:Group id="title0" height="25" horizontalCenter="0" top="58">
+		<e:Label text="有了"   italic="true" size="22" textColor="0xf8b141" x="22" verticalCenter="0"/>
+		<e:Label text="全套" x="65"   italic="true" size="25" textColor="0x35e62d" bold="true" verticalCenter="0"/>
+		<e:Label text=" 60符文，整个游戏的" italic="true" size="22" textColor="0xF8B141" x="22" verticalCenter="0"/>
+		<e:Label text="BOSS" x="328" italic="true" size="25" textColor="0x35E62D" bold="true" verticalCenter="0"/>
+		<e:Label text="都被承包了！" italic="true" size="22" textColor="0xF8B141" x="22" verticalCenter="0"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0" verticalAlign="bottom"/>
+		</e:layout>
+
+	</e:Group>
+	<e:Group id="title1" height="25" horizontalCenter="0" top="58" visible="false">
+		<e:Label text="全套" italic="true" size="22" textColor="0xF8B141" x="22" verticalCenter="0"/>
+		<e:Label text="1转" x="65" italic="true" size="25" textColor="0x35E62D" bold="true" verticalCenter="0"/>
+		<e:Label text="符文，PK打怪无压力！" italic="true" size="22" textColor="0xF8B141" x="22" verticalCenter="0"/>
+		<e:Label text="合击加成" x="328" italic="true" size="25" textColor="0x35E62D" bold="true" verticalCenter="0"/>
+		<e:Label text="带你飞！" italic="true" size="22" textColor="0xF8B141" x="22" verticalCenter="0"/>
+		<e:layout>
+		<e:HorizontalLayout gap="0" verticalAlign="bottom"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="title2" height="25" horizontalCenter="0" top="58" visible="false">
+		<e:Label text="全套" italic="true" size="22" textColor="0xF8B141" x="22" verticalCenter="0"/>
+		<e:Label text="3转" x="65" italic="true" size="25" textColor="0x35E62D" bold="true" verticalCenter="0"/>
+		<e:Label text="符文，合击技能" italic="true" size="22" textColor="0xF8B141" x="22" verticalCenter="0"/>
+		<e:Label text="UP" x="328" italic="true" size="25" textColor="0x35E62D" bold="true" verticalCenter="0"/>
+		<e:Label text="！体验一击制敌的快感！" italic="true" size="22" textColor="0xF8B141" x="22" verticalCenter="0"/>
+		<e:layout>
+		<e:HorizontalLayout gap="0" verticalAlign="bottom"/>
+		</e:layout>
+	</e:Group>
+
+
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+</e:Skin>

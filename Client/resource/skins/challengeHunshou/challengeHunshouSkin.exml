@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="challengeHunshouSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="554" height="710">
+	<w:Config id="15a98a3982e"/>
+	<e:Image id="BG" horizontalCenter="0" top="0" source="challengeHunshouBG_png"/>
+	<e:Group id="Boss" horizontalCenter="0" top="338">
+
+	</e:Group>
+	<e:Label id="zsLimit" text="挑战要求：人物9转" size="20" horizontalCenter="1" top="55" textColor="0xC41200" visible="false"/>
+	<e:Label id="max" text="当前已通关" size="20" horizontalCenter="1" top="55" textColor="0x20CB30"/>
+	<e:Image id="bossName" horizontalCenter="0.5" top="14" x="10" y="10" source="hunshouName1_png"/>
+
+	<e:Label text="通关奖励" size="20" horizontalCenter="0" bold="true" bottom="242" textColor="0xF8B141"/>
+	<e:Group width="480" height="135" bottom="124" horizontalCenter="0">
+		<e:Image source="shuxingbg" left="0" right="0" scale9Grid="70,6,19,25" height="135" y="479"/>
+		<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="240" y="-7" x="0"/>
+		<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="480" scaleX="-1" y="-7" right="0"/>
+
+
+	</e:Group>
+
+
+	<e:Scroller id="itemScroller" horizontalCenter="0" height="104" bottom="124">
+		<e:List id="itemList" itemRendererSkinName="ItemSkin" y="0" useVirtualLayout="false" width="450" height="206" horizontalCenter="0">
+		<e:layout>
+			<e:TileLayout verticalGap="0" requestedColumnCount="5" horizontalGap="15" horizontalAlign="center"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group id="dinghong0" width="556" height="121" horizontalCenter="0" bottom="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0"/>
+	</e:Group>
+	<e:Button id="btnChallenge" label="挑  战" skinName="Btn1Skin" width="160" height="55" horizontalCenter="109" bottom="26"/>
+	<e:Button id="btnSweep" label="扫  荡" skinName="Btn1Skin" width="160" height="55" horizontalCenter="-101" bottom="26"/>
+	<e:Label text="剩余奖励次数：" size="20" horizontalCenter="0" textColor="0x20CB30" bottom="84"/>
+	<e:Label id="lbTime" text="10" size="20" horizontalCenter="77.5" textColor="0x20CB30" bottom="84"/>
+		<e:Scroller id="notice" horizontalCenter="-149" bottom="257">
+
+		</e:Scroller>
+	<e:Label id="sweepInfo" text="18" size="18" horizontalCenter="-56.5" bottom="3" textColor="0x20CB30"/>
+	<e:Label id="sweepInfoText" text="（扫荡第    层，可获得魂玉精华）" size="18" horizontalCenter="0" bottom="3" textColor="0x7E6437"/>
+
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="wpkResultRenderSkin" height="18" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="250">
+	<e:Image id="paihang" source="tongyong2_json.paihangs1" x="0" verticalCenter="1"/>
+	<e:Label id="nameTxt" text="玩家名六个字" x="30" y="0" size="20" textColor="0x2cc2f8"/>
+	<e:Label id="valueTxt" text="10000000" x="158" y="0" size="20" textColor="0x9F946D"/>
+</e:Skin>

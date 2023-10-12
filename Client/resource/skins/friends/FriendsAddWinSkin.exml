@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FriendsAddWinSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="shadow" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group id="anigroup" width="350" height="200" horizontalCenter="0" verticalCenter="50">
+		<e:Image source="tongyongtip1" left="0" right="0" top="0" bottom="0" scale9Grid="7,8,10,7"/>
+		<e:Image left="0" right="0" top="0" bottom="0" source="tongyongtip2" scale9Grid="19,19,3,3"/>
+		<e:Label text="添加好友" size="24" y="16" horizontalCenter="0" textColor="0xa67d44" bold="true"/>
+		<e:Button id="closeBtn0" label="按钮" x="335" y="218" skinName="Btn0Skin" visible="false"/>
+		<e:Group width="280" y="61" horizontalCenter="0">
+			<e:Button id="btn_add" label="添加" skinName="Btn1Skin" y="55" horizontalCenter="0"/>
+			<e:Label text="输入姓名" size="18" textColor="0xA89C88" y="6"/>
+			<e:Group x="80" width="200" height="30">
+				<e:Image width="200" height="30" source="shuzibg" scale9Grid="5,6,10,9"/>
+				<e:EditableText id="editText_name" prompt=" 请输入玩家名" size="18" textAlign="center" verticalAlign="middle" height="30" width="200"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

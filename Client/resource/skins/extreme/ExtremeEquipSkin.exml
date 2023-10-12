@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ExtremeEquipSkin" width="580" height="712" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image source="extreme_bg_png" top="0" width="580" horizontalCenter="0"/>
+	<e:Group id="extreme_eff_bottom" horizontalCenter="-100" top="460"/>
+	<e:Group id="extreme_eff" top="500" horizontalCenter="-100"/>
+	<e:Group id="attrGroup0" right="6" verticalCenter="-9" width="210">
+		<e:Image source="zhuakuang2" scale9Grid="41,30,9,2" width="100" top="0" horizontalCenter="-50" touchEnabled="false" bottom="-10"/>
+		<e:Image source="zhuakuang2" scale9Grid="41,30,9,2" width="100" scaleX="-1" top="0" horizontalCenter="50" touchEnabled="false" bottom="-10"/>
+
+
+
+
+		<e:Group top="10" left="6" width="204" bottom="0">
+			<e:Group id="group0" x="0" y="0" touchEnabled="false">
+				<ns1:BaseComponent id="powerPanel0" skinName="PowerPanelSkin" className="PowerPanel" scaleX="0.75" scaleY="0.785" y="0" x="0"/>
+				<e:Label id="attr0" text="攻击：10110\n物防：1100\n魔防：1000000\n生命：10000000" y="51" size="18" lineSpacing="5" verticalAlign="top" textAlign="left" scaleX="1" scaleY="1" textColor="0xd1c28f" x="26"/>
+				<e:Group id="skill_0_1" x="11" y="207" touchEnabled="false">
+					<e:Image source="quality0" x="0" y="0" width="61" height="61" scaleX="0.8" scaleY="0.8"/>
+					<e:Image id="chainImg0" x="6" y="6" width="50" height="50" source="skill_extreme_chain" scaleX="0.8" scaleY="0.8"/>
+					<e:Label id="skillChain0" text="灵魂锁链 Lv.99" x="62" size="18" verticalCenter="0.5" textColor="0xffff00"/>
+				</e:Group>
+				<e:Group id="skill_0_0" x="11" y="141" touchEnabled="false">
+				<e:Image source="quality0" x="0" y="0" width="61" height="61" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.8" scaleY="0.8"/>
+				<e:Image id="skillIcon0" x="6" y="6" anchorOffsetX="0" width="50" anchorOffsetY="0" height="50" source="skill_extreme_kill" scaleX="0.8" scaleY="0.8"/>
+				<e:Label id="skillName0" text="杀戮 Lv.99" x="62" size="18" verticalCenter="0.5" textColor="0xffff00"/>
+				</e:Group>
+
+				<e:layout>
+					<e:VerticalLayout gap="0"/>
+				</e:layout>
+			</e:Group>
+			<e:Image id="arrow" source="jiantouyou" y="268" rotation="90" x="144" scaleX="0.7" scaleY="0.7"/>
+			<e:Group id="group1" x="0" y="301" touchEnabled="false">
+				<ns1:BaseComponent id="powerPanel1" skinName="PowerPanelSkin" className="PowerPanel" scaleX="0.75" scaleY="0.785" y="0" x="0"/>
+				<e:Label id="attr1" text="攻击：1100\n物防：1010\n魔防：1000\n生命：10000000" y="51" size="18" lineSpacing="5" verticalAlign="top" textAlign="left" scaleX="1" scaleY="1" textColor="0x00FF00" x="26"/>
+				<e:Group id="skill_1_1" x="11" y="202" touchEnabled="false">
+					<e:Image source="quality0" x="0" y="0" width="61" height="61" scaleX="0.8" scaleY="0.8"/>
+					<e:Image id="chainImg1" x="6" y="6" width="50" height="50" source="skill_extreme_chain" scaleX="0.8" scaleY="0.8"/>
+					<e:Label id="skillChain1" text="灵魂锁链 Lv.99" x="62" size="18" verticalCenter="0.5" textColor="0xffff00"/>
+				</e:Group>
+				<e:Group id="skill_1_0" x="11" y="141" touchEnabled="false">
+				<e:Image source="quality0" x="0" y="0" width="61" height="61" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.8" scaleY="0.8"/>
+				<e:Image id="skillIcon1" x="6" y="6" anchorOffsetX="0" width="50" anchorOffsetY="0" height="50" source="skill_extreme_kill" scaleX="0.8" scaleY="0.8"/>
+				<e:Label id="skillName1" text="杀戮 Lv.99" x="62" size="18" verticalCenter="0.5" textColor="0xffff00"/>
+				</e:Group>
+
+				<e:layout>
+					<e:VerticalLayout gap="0"/>
+				</e:layout>
+			</e:Group>
+			<e:layout>
+				<e:VerticalLayout gap="0" horizontalAlign="center"/>
+			</e:layout>
+		</e:Group>
+
+
+
+
+	</e:Group>
+	<e:Group id="attrGroup1" right="6" verticalCenter="-54" width="210" visible="false">
+		<e:Image source="zhuakuang2" scale9Grid="41,30,9,2" width="100" top="0" bottom="-10" horizontalCenter="-50" touchEnabled="false"/>
+		<e:Image source="zhuakuang2" scale9Grid="41,30,9,2" width="100" scaleX="-1" top="0" bottom="-10" horizontalCenter="50" touchEnabled="false"/>
+		<e:Group id="group3" left="6" top="10" bottom="10">
+			<ns1:BaseComponent id="powerPanel2" skinName="PowerPanelSkin" className="PowerPanel" scaleX="0.75" scaleY="0.785" y="0" x="0"/>
+			<e:Label id="attr2" text="攻击：1010\n物防：10100\n魔防：110\n生命：10000000" y="51" size="18" lineSpacing="5" verticalAlign="top" textAlign="left" scaleX="1" scaleY="1" textColor="0x00FF00" x="26"/>
+			<e:Group id="skill_2_0" x="11" y="141" touchEnabled="false">
+				<e:Image source="quality0" x="0" y="0" width="61" height="61" anchorOffsetX="0" anchorOffsetY="0" scaleX="0.8" scaleY="0.8"/>
+				<e:Image id="skillIcon2" x="6" y="6" anchorOffsetX="0" width="50" anchorOffsetY="0" height="50" source="skill_extreme_kill" scaleX="0.8" scaleY="0.8"/>
+				<e:Label id="skillName2" text="杀戮 Lv.99" x="62" size="18" verticalCenter="0.5" textColor="0xffff00"/>
+			</e:Group>
+			<e:Group id="skill_2_1" x="11" y="202" touchEnabled="false">
+				<e:Image source="quality0" x="0" y="0" width="61" height="61" scaleX="0.8" scaleY="0.8"/>
+				<e:Image id="chainImg2" x="6" y="6" width="50" height="50" source="skill_extreme_chain" scaleX="0.8" scaleY="0.8"/>
+				<e:Label id="skillChain2" text="灵魂锁链 Lv.99" x="62" size="20" verticalCenter="0.5" textColor="0xffff00"/>
+			</e:Group>
+			<e:layout>
+				<e:VerticalLayout gap="5"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="dinghong" width="560" height="100" bottom="0" horizontalCenter="0">
+		<e:Image width="280" x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+		<e:Image width="280" scaleX="-1" top="0" bottom="0" right="0" source="bantoumingkuang3"/>
+	</e:Group>
+	<e:Group id="leftGroup" horizontalCenter="-253" bottom="33">
+		<e:Button id="leftBtn" label="" icon="jiantouxuan" skinName="Btn0Skin" scaleX="1" scaleY="1" x="0" y="0"/>
+		<e:Image id="leftRed" x="20" y="-8" source="zjmhongdian" touchEnabled="false" visible="false"/>
+	</e:Group>
+	<e:Group id="rightGroup" horizontalCenter="253" bottom="33">
+		<e:Button id="rightBtn" label="" icon="jiantouxuan" skinName="Btn0Skin" scaleX="-1" scaleY="1" y="0" x="39"/>
+		<e:Image id="rightRed" x="19" y="-8" source="zjmhongdian" touchEnabled="false" visible="false"/>
+	</e:Group>
+	<e:Scroller id="menuScroller" scrollPolicyV="off" scrollPolicyH="on" height="82" horizontalCenter="0" bottom="9" width="450">
+		<e:List id="menuList" y="74" horizontalCenter="0" scrollEnabled="false" itemRendererSkinName="ExtremeEquipItemSkin">
+		<e:layout>
+			<e:HorizontalLayout gap="10" paddingLeft="0" horizontalAlign="center"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+
+
+
+
+	<e:Image id="extremeName" horizontalCenter="-210.5" top="72" source="extreme_name_00"/>
+
+
+	<e:Label id="already" text="已满级" horizontalCenter="-105" size="20" textColor="0x00ff00" bottom="154"/>
+	<e:Button id="updateBtn" label="激 活" skinName="Btn1Skin" horizontalCenter="-105" bottom="135"/>
+	<e:Image id="redPoint" source="zjmhongdian" touchEnabled="false" horizontalCenter="-39" bottom="171"/>
+	<e:Group horizontalCenter="-105" bottom="201">
+		<e:Label text="消耗" x="0" y="0" size="20" textColor="0xd1c28f"/>
+		<e:Label id="cost" text="焚天神剑" x="10" y="10" size="20" textColor="0xd1c28f"/>
+		<e:Label text="：" x="20" y="20" size="20" textColor="0xd1c28f"/>
+		<e:Label id="numLabel" text="0/1" x="20" y="20" textColor="0xff0000" size="20"/>
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+
+
+
+
+
+
+
+ 
+</e:Skin>

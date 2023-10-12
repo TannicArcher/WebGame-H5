@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TiantiRankItem" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="520">
+	<w:Config id="15acbad1218"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image source="tongyongline" bottom="0" height="2" left="0" right="0" scale9Grid="27,0,166,3"/>
+	<e:Image id="rankImg" x="30" verticalCenter="0" source="paihang1"/>
+	<e:Label id="rank" text="1" size="20" x="40" verticalCenter="0" textColor="0x9f946d"/>
+	<e:Label id="nameLabel" text="狂拽酷炫叼去" size="20" textAlign="left" verticalCenter="0" x="220" textColor="0xd1c28f"/>
+	<e:Label id="winNum" size="20" text="100场" textAlign="center" width="100" textColor="0xFFB92D" verticalCenter="0" right="20"/>
+	<e:Group x="140" verticalCenter="0" width="58" height="50">
+		<e:Image id="dwImg" scaleX="0.4" scaleY="0.4" horizontalCenter="0" verticalCenter="0" source="ladder_rank_3"/>
+		<e:Image id="levelBg" y="30" x="6" source="" visible="false"/>
+		<e:Image id="level" source="laddergradnum_5" scaleX="0.6" scaleY="0.6" horizontalCenter="0" verticalCenter="-2"/>
+	</e:Group> 
+</e:Skin>

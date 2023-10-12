@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MineNpcHeadSkin" width="200" height="90" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="none,mine" >
+	<e:Group id="contentGroup" left="0" right="0" top="0" bottom="0" touchEnabled="false">
+		<e:Image source="npcnamebg" scale9Grid="41,18,4,5" width="91" height="25" horizontalCenter="0" bottom="3"/>
+		<e:Label id="nameTxt" text="矿洞使者" size="14"   textColor="0xffffcc" horizontalCenter="0" bottom="8"/>
+		<e:Group id="titleGroup" bottom="22" includeIn="none" horizontalCenter="0.5">
+			<e:Image source="wordsbg" verticalCenter="0" left="21" scale9Grid="21,0,21,29" right="-7"/>
+			<e:Image id="titleImg" source="npc_title"   verticalCenter="0.5" left="47"/>
+			<e:Image id="icon" y="0"   left="0" source="icon_wakuang" width="50" height="54"/>
+		</e:Group>
+		<e:Label id="timeTxt" text="30分00秒" size="14" horizontalCenter="1" bottom="25" visible.none="false" textColor="0x00ff00"/>
+		<e:Group id="stateGroup" bottom="43" horizontalCenter="0" x="50"   touchEnabled="false" includeIn="mine" width="72" height="21">
+			<e:Image id="workerState" source="kuanggong_title" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

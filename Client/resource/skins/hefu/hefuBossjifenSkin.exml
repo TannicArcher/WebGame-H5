@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="hefuBossjifenSkin" currentState="hefu" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="hefu,lyring" >
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group verticalCenter="-50" horizontalCenter="0" width="520" height="720">
+		<e:Image  source="tongyongkuang3bg" scale9Grid="7,3,34,37" left="0" right="0" top="2" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="74,5,261,37" left="0" right="0"/>
+		<e:Label text="积分兑换" y="12" size="24" horizontalCenter="0" bold="true" textColor="0xbd600d"/>
+		<e:Image source="tongyongtip1" width="378" height="610" y="44" scale9Grid="5,5,15,15" x="6" anchorOffsetX.lyring="0" width.lyring="508"/>
+		<e:Scroller width="368" height="600" y="48" x="10" anchorOffsetX.lyring="0" width.lyring="504" x.lyring="8">
+			<e:List id="exchangelist" x="265" y="2" itemRendererSkinName="hefuBossItemSkin" anchorOffsetX.lyring="0" width.lyring="367" scaleX.lyring="1" scaleY.lyring="1" itemRendererSkinName.lyring="ringBossItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="0" horizontalAlign.lyring="center"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Scroller width="141" height="600" y="48" x="369" includeIn="hefu">
+			<e:List id="equiplist" x="24.24" y="-22.73" itemRendererSkinName="hefuBossBtnSkin">
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Group bottom="5" left="5" right="5" height="61" x="0" y="699" scaleX="1" scaleY="1">
+			<e:Image top="0" bottom="0" source="bantoumingkuang3" left="0" right="255"/>
+			<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" left="255" right="0" x="10" y="10"/>
+
+			<e:Group scaleX="1" scaleY="1" x="30" y="20">
+
+				<e:Label text="BOSS积分：" size="22" x="163" scaleX="1" scaleY="1" verticalCenter="0.5" y="-12" textColor="0xd1c28f"/>
+				<e:Label id="suipian" text="2000" size="22" x="173" textColor="0xF8B141" scaleX="1" scaleY="1" verticalCenter="0.5" y="-2"/>
+				<e:layout>
+				<e:HorizontalLayout gap="0" verticalAlign="bottom"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="0" scaleX="0.9" scaleY="0.9" right="0"/>
+	</e:Group>
+</e:Skin>

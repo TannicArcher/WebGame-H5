@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GwSkillSkin" width="556" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  height="633">
+	<w:Config id="1586b349dbe"/>
+	<e:Group id="skill_wp1" width="556" height="633" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="weapon1" source="godweapon_weaponBG1_png" verticalCenter="0" horizontalCenter="0" width="556" height="556"/>
+		<e:Group id="wp1_line0" x="365" y="432" rotation="20" width="70" height="10">
+			<e:Image id="wp1_lock0" source="godweapon_line0" left="0" right="0" top="3" bottom="3"/>
+			<e:Image id="wp1_unlock0" left="0" right="0" top="0" bottom="0" source="godweapon_line1" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line1" x="368" y="367" rotation="99" width="50">
+			<e:Image id="wp1_lock1" source="godweapon_line0" left="0" bottom="3" top="3" right="0"/>
+			<e:Image id="wp1_unlock1" source="godweapon_line1" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line2" x="337" y="302" rotation="60" width="50">
+			<e:Image id="wp1_lock2" source="godweapon_line0" left="0" right="0" top="3" bottom="3"/>
+			<e:Image id="wp1_unlock2" source="godweapon_line1" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line3" x="279" y="399" rotation="22" width="70">
+			<e:Image id="wp1_lock3" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp1_unlock3" source="godweapon_line1" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line4" x="253" y="412" rotation="153" width="50">
+			<e:Image id="wp1_lock4" source="godweapon_line0" left="0" top="3" right="0" bottom="3"/>
+			<e:Image id="wp1_unlock4" source="godweapon_line1" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line5" x="118" y="399" rotation="23" width="70">
+			<e:Image id="wp1_lock5" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp1_unlock5" source="godweapon_line1" left="0" top="0" right="0" bottom="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line6" rotation="89" scaleX="1" x="107" y="328" width="50">
+			<e:Image id="wp1_lock6" source="godweapon_line0" left="0" top="3" right="0" bottom="3"/>
+			<e:Image id="wp1_unlock6" source="godweapon_line1" left="0" top="0" right="0" bottom="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line7" x="317" y="303" rotation="170" width="100">
+			<e:Image id="wp1_lock7" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp1_unlock7" source="godweapon_line1" left="0" top="0" bottom="0" right="0" scale9Grid="1,4,8,2" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line8" x="110" y="307" rotation="3" width="80">
+			<e:Image id="wp1_lock8" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp1_unlock8" source="godweapon_line1" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line9" x="251" y="246" rotation="120" width="70">
+			<e:Image id="wp1_lock9" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp1_unlock9" source="godweapon_line1" left="0" top="0" right="0" bottom="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line10" x="339" y="194" rotation="152" width="80">
+			<e:Image id="wp1_lock10" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp1_unlock10" source="godweapon_line1" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line11" x="167" y="233" rotation="62" width="80">
+			<e:Image id="wp1_lock11" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp1_unlock11" source="godweapon_line1" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line12" x="240" y="150" rotation="136" width="100">
+			<e:Image id="wp1_lock12" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp1_unlock12" source="godweapon_line1" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line13" x="369" y="121" rotation="169" width="110">
+			<e:Image id="wp1_lock13" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp1_unlock13" source="godweapon_line1" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line14" x="480.55" y="180.7" rotation="177" width="130">
+			<e:Image id="wp1_lock14" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp1_unlock14" source="godweapon_line1" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp1_line15" x="387" y="109" rotation="30" width="100">
+			<e:Image id="wp1_lock15" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp1_unlock15" source="godweapon_line1" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<ns1:BaseComponent id="wp1_skill0" x="391" y="417" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill12" x="314" y="396" skinName="GwItemSkin" scaleX="0.8" scaleY="0.8" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+		<ns1:BaseComponent id="wp1_skill1" x="318" y="313" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill2" x="278" y="250" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill3" x="224" y="356" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill4" x="147" y="388" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill5" x="59" y="355" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill6" x="55" y="266" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill13" x="168" y="278" skinName="GwItemSkin" scaleX="0.8" scaleY="0.8" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+		<ns1:BaseComponent id="wp1_skill7" x="207" y="191" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill8" x="303" y="139" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill9" x="111" y="177" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill10" x="202" y="97" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill11" x="330" y="69" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp1_skill14" x="447" y="136" skinName="GwItemSkin" scaleX="0.8" scaleY="0.8" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+		<ns1:BaseComponent id="wp1_skill15" x="372" y="212" skinName="GwItemSkin" scaleX="1.1" scaleY="1.1" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+	</e:Group>
+	<e:Group id="skill_wp2" width="556" height="633" horizontalCenter="0" verticalCenter="0" visible="false">
+		<e:Image id="weapon2" source="godweapon_weaponBG2_png" width="556" height="556" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group id="wp2_line0" x="462" y="155" rotation="140" width="60">
+			<e:Image id="wp2_lock0" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock0" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line1" x="284" y="132" rotation="31" width="120">
+			<e:Image id="wp2_lock1" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock1" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line2" x="267" y="150" rotation="140" width="110">
+			<e:Image id="wp2_lock2" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock2" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line3" x="405" y="225" rotation="71" width="50">
+			<e:Image id="wp2_lock3" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock3" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line4" x="437" y="286" rotation="10" width="50">
+			<e:Image id="wp2_lock4" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock4" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line5" x="497" y="315" rotation="118" width="80">
+			<e:Image id="wp2_lock5" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock5" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line6" x="437" y="403" rotation="157" width="110">
+			<e:Image id="wp2_lock6" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock6" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line7" x="167" y="247" rotation="92" width="200">
+			<e:Image id="wp2_lock7" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock7" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line8" x="314" y="451" rotation="176" width="150">
+			<e:Image id="wp2_lock8" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock8" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line9" x="269" y="387" rotation="145" width="120">
+			<e:Image id="wp2_lock9" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock9" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line10" x="362" y="360" rotation="164" width="80">
+			<e:Image id="wp2_lock10" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock10" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line11" x="200" y="376" rotation="115" width="80">
+			<e:Image id="wp2_lock11" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock11" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line12" x="226" y="299" rotation="107" width="60">
+			<e:Image id="wp2_lock12" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock12" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line13" x="290" y="234" rotation="138" width="70">
+			<e:Image id="wp2_lock13" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock13" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line14" x="331" y="306" rotation="40" width="50">
+			<e:Image id="wp2_lock14" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock14" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp2_line15" x="309" y="233" rotation="84" width="50">
+			<e:Image id="wp2_lock15" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp2_unlock15" x="0" y="0" source="godweapon_line2" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<ns1:BaseComponent id="wp2_skill0" x="428" y="96" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill12" x="356" y="168" skinName="GwItemSkin" scaleX="0.8" scaleY="0.8" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+		<ns1:BaseComponent id="wp2_skill1" x="235" y="93" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill2" x="119" y="181" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill3" x="376" y="242" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill4" y="257" skinName="GwItemSkin" className= "GwWeaponSkillIcon" x="456" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill5" x="399" y="350" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill6" x="277" y="399" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill13" x="119" y="421" skinName="GwItemSkin" scaleX="0.8" scaleY="0.8" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+		<ns1:BaseComponent id="wp2_skill7" x="227" y="336" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill8" x="327" y="305" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill9" x="154" y="320" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill10" x="180" y="241" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill11" x="256" y="176" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp2_skill14" x="281" y="259" skinName="GwItemSkin" scaleX="0.8" scaleY="0.8" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+		<ns1:BaseComponent id="wp2_skill15" x="34" y="270" skinName="GwItemSkin" scaleX="1.1" scaleY="1.1" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+	</e:Group>
+	<e:Group id="skill_wp3" width="556" height="633" verticalCenter="0" horizontalCenter="0" visible="false">
+		<e:Image id="weapon3" source="godweapon_weaponBG3_png" horizontalCenter="0" verticalCenter="0" width="556" height="556"/>
+		<e:Group id="wp3_line0" x="105" y="246" rotation="48" width="70">
+			<e:Image id="wp3_lock0" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock0" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line1" x="92" y="267" rotation="98" width="80">
+			<e:Image id="wp3_lock1" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock1" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line2" x="94" y="370" rotation="39" width="60">
+			<e:Image id="wp3_lock2" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock2" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line3" x="184" y="163" rotation="137" width="100">
+			<e:Image id="wp3_lock3" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock3" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line4" x="325" y="137" rotation="173" width="120">
+			<e:Image id="wp3_lock4" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock4" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line5" x="351" y="127" rotation="19" width="150">
+			<e:Image id="wp3_lock5" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock5" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line6" x="493" y="193" rotation="168" width="130">
+			<e:Image id="wp3_lock6" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock6" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line7" x="345" y="229" rotation="154" width="80">
+			<e:Image id="wp3_lock7" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock7" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line8" x="247" y="285" rotation="121" width="160">
+			<e:Image id="wp3_lock8" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock8" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line9" x="269" y="271" width="160">
+			<e:Image id="wp3_lock9" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock9" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line10" x="434" y="291" rotation="122" width="50">
+			<e:Image id="wp3_lock10" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock10" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line11" x="254" y="293" rotation="94" width="80">
+			<e:Image id="wp3_lock11" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock11" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line12" x="308" y="359" rotation="150" width="60">
+			<e:Image id="wp3_lock12" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock12" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line13" x="313" y="373" rotation="104" width="70">
+			<e:Image id="wp3_lock13" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock13" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line14" x="358" y="450" rotation="174" width="60">
+			<e:Image id="wp3_lock14" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock14" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<e:Group id="wp3_line15" x="394" y="365" rotation="101" width="60">
+			<e:Image id="wp3_lock15" x="0" y="0" source="godweapon_line0" left="0" top="3" bottom="3" right="0"/>
+			<e:Image id="wp3_unlock15" x="0" y="0" source="godweapon_line3" left="0" top="0" bottom="0" right="0" visible="false"/>
+		</e:Group>
+		<ns1:BaseComponent id="wp3_skill0" x="110" y="262" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill12" x="57" y="203" skinName="GwItemSkin" scaleX="0.8" scaleY="0.8" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+		<ns1:BaseComponent id="wp3_skill1" x="28" y="317" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill2" x="111" y="379" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill3" x="148" y="106" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill4" x="290" y="84" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill5" x="453" y="141" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill6" x="314" y="171" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill13" x="216" y="238" skinName="GwItemSkin" scaleX="0.8" scaleY="0.8" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+		<ns1:BaseComponent id="wp3_skill7" x="390" y="237" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill8" x="349" y="298" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill9" x="197" y="343" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill10" x="271" y="306" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill11" x="242" y="406" skinName="GwItemSkin" className= "GwWeaponSkillIcon" currentState="skillicon1"/>
+		<ns1:BaseComponent id="wp3_skill14" x="336" y="403" skinName="GwItemSkin" scaleX="0.8" scaleY="0.8" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+		<ns1:BaseComponent id="wp3_skill15" x="432" y="338" skinName="GwItemSkin" scaleX="1.1" scaleY="1.1" className= "GwWeaponSkillIcon" currentState="skillicon2"/>
+	</e:Group>
+</e:Skin>

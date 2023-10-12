@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="teamFbFightSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580"
+        height="930">
+	<e:Group id="teamFbMember" width="106" height="234" y="260" right="0" anchorOffsetY="0">
+		<e:Image width="123" height="30" source="teshuwenzibg" scale9Grid="76,21,28,9" horizontalCenter="0"/>
+		<e:Label text="队伍成员" size="16" y="6" horizontalCenter="0" bold="true" textColor="0xd1c28f"/>
+		<ns1:BaseComponent id="member1" y="33" horizontalCenter="0" skinName="teamFbMemberSkin" className="TeamFbMemberItemRender"/>
+		<ns1:BaseComponent id="member2" y="134" horizontalCenter="0" skinName="teamFbMemberSkin" className="TeamFbMemberItemRender"/>
+	</e:Group>
+	<e:Group id="teamFbTarget" anchorOffsetY="0" horizontalCenter="0" bottom="206">
+		<ns1:BaseComponent id="target1" y="33" horizontalCenter="0" scaleX="0.8" scaleY="0.8" skinName="teamFbTargetSkin" className="TeamFbTargetItemRender"/>
+		<ns1:BaseComponent id="target2" y="134" horizontalCenter="0" scaleX="0.8" scaleY="0.8" skinName="teamFbTargetSkin" className="TeamFbTargetItemRender"/>
+		<ns1:BaseComponent id="boss" y="134" horizontalCenter="0" skinName="teamFbTargetSkin" className="TeamFbTargetItemRender"/>
+		<ns1:BaseComponent id="target3" y="134" horizontalCenter="0" scaleX="0.8" scaleY="0.8" skinName="teamFbTargetSkin" className="TeamFbTargetItemRender"/>
+		<ns1:BaseComponent id="target4" y="134" horizontalCenter="0" scaleX="0.8" scaleY="0.8" skinName="teamFbTargetSkin" className="TeamFbTargetItemRender"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="4" horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="teamFbTime" anchorOffsetY="0" height="37" anchorOffsetX="0" width="186" top="100" horizontalCenter="182">
+		<e:Image source="bantoutiaobg2" scale9Grid="11,2,70,17" anchorOffsetX="0" anchorOffsetY="0" left="0" top="0" bottom="0" right="0"/>
+		<e:Label id="leftTimeTxt" text="04分59秒" size="20" verticalCenter="0.5" horizontalCenter="45.5" textColor="0xf8b141"/>
+		<e:Label text="剩余时间 :" size="20" verticalCenter="0.5" horizontalCenter="-43" textColor="0xd1c28f"/>
+	</e:Group>
+	<e:Image id="teamFbName" source="tfb_title1" top="14" horizontalCenter="183"/>
+	<e:Image source="shuxingbg4" horizontalCenter="191" top="134" width="180" height="55" touchEnabled="false"/>
+	<e:Label id="gonglveTxt" text="查看攻略" size="24" bold="true" textColor="0x00ff00" top="149" horizontalCenter="184" touchEnabled="true"/>
+</e:Skin>

@@ -1,0 +1,11 @@
+{"file":"kffield.png","frames":{
+"kf_field_ladder":{"x":0,"y":0,"w":180,"h":170,"offX":0,"offY":0,"sourceW":180,"sourceH":170},
+"kf_function_boss":{"x":337,"y":0,"w":46,"h":160,"offX":0,"offY":0,"sourceW":46,"sourceH":160},
+"kf_function_invasion":{"x":291,"y":0,"w":46,"h":160,"offX":0,"offY":0,"sourceW":46,"sourceH":160},
+"kf_function_ladder":{"x":383,"y":0,"w":46,"h":160,"offX":0,"offY":0,"sourceW":46,"sourceH":160},
+"kf_function_lock":{"x":180,"y":123,"w":102,"h":103,"offX":0,"offY":0,"sourceW":102,"sourceH":103},
+"kf_function_none":{"x":429,"y":72,"w":30,"h":104,"offX":0,"offY":0,"sourceW":30,"sourceH":104},
+"zjmkffield":{"x":429,"y":0,"w":70,"h":72,"offX":0,"offY":0,"sourceW":70,"sourceH":72},
+"biaoti_kuafuzhanchang":{"x":0,"y":226,"w":134,"h":26,"offX":0,"offY":4,"sourceW":134,"sourceH":34},
+"dropTop":{"x":134,"y":170,"w":44,"h":37,"offX":0,"offY":0,"sourceW":44,"sourceH":37},
+"kf_field_invasion":{"x":180,"y":0,"w":111,"h":123,"offX":0,"offY":0,"sourceW":111,"sourceH":123}}}

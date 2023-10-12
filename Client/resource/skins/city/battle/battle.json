@@ -1,0 +1,4 @@
+{"file":"battle.png","frames":{
+"battle_result_title":{"x":1,"y":1,"w":440,"h":98,"offX":0,"offY":2,"sourceW":440,"sourceH":100},
+"battle_camp":{"x":1,"y":101,"w":383,"h":99,"offX":0,"offY":0,"sourceW":383,"sourceH":99},
+"npc_xzbq":{"x":1,"y":202,"w":117,"h":22,"offX":1,"offY":0,"sourceW":118,"sourceH":22}}}

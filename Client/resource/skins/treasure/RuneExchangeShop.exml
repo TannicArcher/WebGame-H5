@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RuneExchangeShop" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="115"/>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" currentState="nohead" width="580" horizontalCenter="0"/>
+
+
+
+	<e:ViewStack id="viewStack" width="560" selectedIndex="0" horizontalCenter="0" bottom="120" top="50">
+		<ns1:BaseComponent id="runeShop" skinName="RuneSkinExchange" name="碎片商店" left="0" right="0" top="0" bottom="0" className="RuneExchangePanel"/>
+	</e:ViewStack>
+	<e:Group width="582" top="38" bottom="155" horizontalCenter="0" touchEnabled="false" touchThrough="true" visible="false">
+		<e:Image source="shop_json.shang_2" x="0" y="-22"/>
+		<e:Image source="shop_json.shang_2" y="-22" scaleX="-1" right="0"/>
+		<e:Image source="shop_json.shang_1" y="-27" horizontalCenter="0"/>
+		<e:Image rotation="90" x="17" y="45" source="shang_3"/>
+		<e:Image source="shang_3" rotation="90" y="45" scaleY="-1" right="-3"/>
+		<e:Image x="-1" source="shang_10" bottom="-9"/>
+		<e:Image bottom="92" source="shang_9" top="202" scale9Grid="1,3,9,10"/>
+		<e:Image source="shang_10" bottom="-9" right="-1" scaleX="-1"/>
+		<e:Image source="shang_9" bottom="92" top="202" scale9Grid="1,3,9,10" right="0" scaleX="-1"/>
+		<e:Image x="16" bottom="0" source="shang_8" scale9Grid="60,4,7,24" width="275"/>
+		<e:Image bottom="0" source="shang_8" scale9Grid="60,4,7,24" width="275" scaleX="-1" right="16"/>
+		<e:Image x="11" bottom="-6" source="shang_5" touchEnabled="false"/>
+		<e:Image bottom="-2" source="shang_6" right="11" touchEnabled="false"/>
+	</e:Group>
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}" selectedIndex="0" horizontalCenter="0" bottom="108" visible="false">
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:TabBar>
+	<e:Image horizontalCenter="-169" top="6" source="biaoti_suipian"/>
+</e:Skin>

@@ -1,0 +1,10 @@
+{"file":"rune.png","frames":{
+"zhanwenjiacheng":{"x":98,"y":259,"w":98,"h":90,"offX":0,"offY":0,"sourceW":98,"sourceH":90},
+"zwfwbg":{"x":1,"y":359,"w":96,"h":96,"offX":0,"offY":0,"sourceW":96,"sourceH":96},
+"zwfwbg2":{"x":99,"y":351,"w":60,"h":70,"offX":18,"offY":13,"sourceW":96,"sourceH":96},
+"zwfwline1":{"x":161,"y":402,"w":18,"h":12,"offX":0,"offY":3,"sourceW":18,"sourceH":18},
+"zwfwline2":{"x":161,"y":382,"w":18,"h":18,"offX":0,"offY":0,"sourceW":18,"sourceH":18},
+"zwxuanzhong":{"x":1,"y":259,"w":95,"h":98,"offX":0,"offY":0,"sourceW":95,"sourceH":98},
+"biaoti_zhanwen":{"x":99,"y":423,"w":84,"h":26,"offX":9,"offY":5,"sourceW":103,"sourceH":34},
+"zhanwencailiao":{"x":161,"y":351,"w":26,"h":29,"offX":0,"offY":0,"sourceW":26,"sourceH":29},
+"zhanwenbg2":{"x":1,"y":1,"w":223,"h":256,"offX":0,"offY":0,"sourceW":223,"sourceH":256}}}

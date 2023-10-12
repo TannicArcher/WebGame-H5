@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CityBossSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" height="750" width="554">
+	<e:Rect top="0" bottom="0" left="0" right="0" visible="false"/>
+	<e:Image source="worldbossbg_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="bossGroup" width="200" height="200" horizontalCenter="-46" verticalCenter="72"/>
+
+	<e:Group right="40" bottom="0" top="0" width="100">
+		<e:Image x="0" top="0" source="tielian"/>
+		<e:Image y="0" right="0" source="tielian"/>
+		<e:Image x="0" bottom="0" source="tielian"/>
+		<e:Image bottom="0" right="0" source="tielian"/>
+		<e:Rect width="166" horizontalCenter="0" top="44" bottom="44" fillAlpha="0.2"/>
+		<e:Image source="zhuakuang2" scale9Grid="41,30,9,2" width="100" left="-50" top="36" bottom="34"/>
+		<e:Image source="zhuakuang2" scale9Grid="41,30,9,2" width="100" top="36" bottom="34" right="-50" scaleX="-1"/>
+	</e:Group>
+
+
+	<e:Image width="176" right="2" top="40" bottom="42" source="tongyongmianbanbg" scale9Grid="19,11,10,27"/>
+	<e:Scroller top="50" bottom="52" width="180" right="10">
+		<e:List id="list" y="11.33" x="1" useVirtualLayout="false" itemRendererSkinName="CityBossItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Button id="challengeBtn" label="挑战" skinName="Btn1Skin" horizontalCenter="-82" bottom="12"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" horizontalCenter="-16" bottom="48"/>
+	<e:Image source="teshuwenzibg" horizontalCenter="-82" width="200" top="58"/>
+	<e:Label id="nameTxt" text="BOSS名字（70级）" horizontalCenter="-82" size="24" textColor="0xbd600d" top="61"/>
+	<e:Label id="canChallengeTxt" text="80级可挑战" horizontalCenter="-79.5" size="24" textColor="0xbd600d" bottom="30" visible="false"/>
+	<e:Group y="30" horizontalCenter="-70" visible="false">
+		<e:Label text="上次归属：" y="0" size="18" textColor="0x9F946D" x="0"/>
+		<e:Label text="玩家名六个字（公会名六个字）" y="0" size="18" x="90" textColor="0xd1c28f"/>
+	</e:Group>
+	<e:Image width="384" bottom="76" source="shuxingbg" horizontalCenter="-82" height="132" scale9Grid="30,5,105,34" anchorOffsetY="0" anchorOffsetX="0"/>
+
+	<e:Group horizontalCenter="-82" bottom="173">
+		<e:Label text="必定掉落" size="22" bold="true" textColor="0xffff00"/>
+
+
+	</e:Group>
+	<e:List id="rewardList" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8" bottom="87" horizontalCenter="-82">
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="-14"/>
+		</e:layout>
+
+	</e:List>
+
+	<e:Label id="leftText" text="总剩余挑战次数：1次" size="18" horizontalCenter="-81.5" textColor="0xd1c28f" bottom="70" visible="false"/>
+
+
+
+	<e:Image id="stateImage" source="zdbosskejisha" top="412" horizontalCenter="34"/>
+	<e:Group horizontalCenter="-81" top="115">
+		<e:Label text="击杀" size="18" horizontalCenter="-81.5" textColor="0xff00ff" top="140" x="-170" y="0"/>
+		<e:Label id="bossName" text="猪妖王" size="18" horizontalCenter="-81.5" top="140" x="-160" y="10" textColor="0x00ff00"/>
+		<e:Label text="达到目标数量可在主城刷新" size="18" horizontalCenter="-81.5" textColor="0xFF00FF" top="140" x="-150" y="20"/>
+		<e:layout>
+			<e:HorizontalLayout gap="3"/>
+		</e:layout>
+	</e:Group>
+
+	<e:ProgressBar id="killProgressBar" width="238" skinName="bar0Skin" value="0" top="145" horizontalCenter="-82"/>
+	<e:Image source="jingyantiao6" width="240" scale9Grid="27,0,2,23" horizontalCenter="-82" top="140"/>
+	<e:Image source="yuangu_xianshihuodong" horizontalCenter="-82" top="10"/>
+	<e:Label id="nextTime" text="最快将于2018年12月12日（周二） 12:12刷新" size="18" textColor="0x00ff00" horizontalCenter="-81.5" top="166"/>
+
+
+
+
+
+</e:Skin>

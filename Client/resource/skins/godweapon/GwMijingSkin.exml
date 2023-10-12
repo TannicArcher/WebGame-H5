@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GwMijingSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="556" height="716">
+	<e:Group name="桃源秘境" left="0" right="0" top="0" bottom="0">
+		<e:Image id="BG" source="GwmijingBG_jpg" height="684" width="556" y="0" horizontalCenter="0"/>
+		<e:Image id="nameBg" y="31" source="godweapon_mijingtitle" x="278"/>
+		<e:Group id="rank" y="81" anchorOffsetX="0" width="250" anchorOffsetY="0" height="133" right="30">
+			<e:Image id="rankbg" source="godweapon_paihangbg" scale9Grid="3,7,18,47" anchorOffsetX="0" anchorOffsetY="0" left="0" top="0" bottom="0" right="0"/>
+			<e:Image id="rankbg0" source="godweapon_paihangbg" scale9Grid="3,7,18,47" anchorOffsetX="0" anchorOffsetY="0" left="0" top="0" bottom="0" right="0" scaleY="-1"/>
+			<e:Label id="checkRank" text="查看排行" y="107" size="18" textColor="0x35e62d" bold="true" horizontalCenter="0.5"/>
+			<e:Image id="rank1Img" x="17" y="14" source="paihangs1"/>
+			<e:Label id="player1Name" text="玩家名字六字" x="50" y="16" size="16" bold="true" textColor="0x9f946d"/>
+			<e:Label id="player1Rank" text="1层" y="16" size="16" textColor="0x9F946D" bold="true" right="59"/>
+			<e:Label id="player1Time" text="07:59" x="202" y="16" size="16" textColor="0x9F946D" bold="true"/>
+			<e:Image id="rank2Img" x="17" y="44" source="paihangs2"/>
+			<e:Label id="player2Name" text="玩家名字六字" x="50" y="46" size="16" textColor="0x9F946D" bold="true"/>
+			<e:Label id="player2Rank" text="1层" y="46" size="16" textColor="0x9F946D" bold="true" right="59"/>
+			<e:Label id="player2Time" text="07:59" x="202" y="46" size="16" textColor="0x9F946D" bold="true"/>
+			<e:Image id="rank3Img" x="17" y="74" source="paihangs3"/>
+			<e:Label id="player3Name" text="玩家名字六字" x="50" y="76" size="16" textColor="0x9F946D" bold="true"/>
+			<e:Label id="player3Rank" text="1层" y="76" size="16" textColor="0x9F946D" bold="true" right="59"/>
+			<e:Label id="player3Time" text="07:59" x="202" y="76" size="16" textColor="0x9F946D" bold="true"/>
+		</e:Group>
+		<e:Button id="challenge" label="挑  战" skinName="Btn1Skin" horizontalCenter="0" bottom="60"/>
+		<e:Label id="countText" text="今日挑战次数： 2" horizontalCenter="0" bottom="25" size="20" textColor="0x40df38" bold="true"/>
+		<e:Label id="buyCount" text="购买次数" horizontalCenter="0" bottom="25" size="20" bold="true" textColor="0x40df38" visible="false"/>
+		<e:Scroller horizontalCenter="0" verticalCenter="75" scaleX="0.9" scaleY="0.9">
+			<e:List id="list" itemRendererSkinName="GwMijingItemSkin" height="340" anchorOffsetY="0">
+				<e:layout>
+					<e:VerticalLayout gap="5"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Group id="info" horizontalCenter="0" verticalCenter="-106.5">
+			<e:Image id="infoImg1" x="0" y="0" source="gantanhao"/>
+			<e:Image id="infoImg2" x="0" y="25" source="gantanhao"/>
+			<e:Label id="infoText1" text="S评价通关可以解锁下一层挑战" x="28" y="2" size="18" textColor="0xf8b141"/>
+			<e:Label id="infoText2" text="通关评价越高奖励越丰厚" x="28" y="27" size="18" textColor="0xf8b141"/>
+		</e:Group>
+	</e:Group>
+	<e:Image id="rpImg" x="338" source="zjmhongdian" bottom="101"/>
+</e:Skin>

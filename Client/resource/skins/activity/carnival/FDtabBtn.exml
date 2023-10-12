@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FDtabBtn" currentState="unselect" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"   width="135" states="select,unselect" >
+	<e:Image source="sd_projecttitle1" left="0" right="0" top="0" bottom="0" scale9Grid="60,15,6,9" source.unselect="sd_projecttitle2" touchEnabled="true"/>
+	<e:Label id="tabName" text="野外BOSS" textColor="0xd1c28f" fontFamily="SimHei" size="20" horizontalCenter="0.5" verticalCenter="0" touchEnabled="false"/>
+	<e:Image id="redpoint" source="zjmhongdian" right="0" top="0" scaleX="0.8" scaleY="0.8" visible="false"/>		
+</e:Skin>

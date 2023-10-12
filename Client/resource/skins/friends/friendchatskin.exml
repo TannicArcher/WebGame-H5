@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FriendChatSkin" width="580" height="310" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bantoutiaobg" rotation="90" x="90" width="300" height="90" scale9Grid="50,5,137,35" bottom="0" visible="false"/>
+	<e:Image source="chatfenge2" x="88" top="0" bottom="44" scale9Grid="6,7,18,3"/>
+	<e:Scroller width="90" bottom="50" top="4">
+		<e:List id="listFriend" x="-161" y="266"
+		        itemRendererSkinName="FriendsRecentItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="0" />
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Scroller id="scroller"   top="0" bottom="50" left="90" right="0" height="260">
+		
+			<e:List id="listChat"
+			        itemRendererSkinName="FriendsChatItemSkin" left="0" right="0" top="0" bottom="0">
+				<e:layout>
+					<e:VerticalLayout gap="0"/>
+				</e:layout>
+			</e:List>
+		
+	</e:Scroller>
+	<e:Group bottom="2" height="40" left="12" right="12">
+		<e:Group left="0" right="0" bottom="0" height="40">
+			<e:Image bottom="0" left="0" right="0"  source="chatlight" scale9Grid="3,3,4,18" visible="false"/>
+			<e:EditableText id="input" text="" prompt="请输入" left="5" right="159" size="18" textAlign="left"
+			                verticalAlign="middle"  verticalCenter="0"/>
+		</e:Group>
+		<e:Button id="btnSend" label="发 送" right="0" bottom="1" skinName="Btn3Skin" width="100" height="40"/>
+	</e:Group>
+</e:Skin>

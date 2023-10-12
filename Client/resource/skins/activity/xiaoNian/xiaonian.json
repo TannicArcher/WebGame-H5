@@ -1,0 +1,12 @@
+{"file":"xiaonian.png","frames":{
+"biaoti_xiaonian":{"x":351,"y":77,"w":138,"h":26,"offX":0,"offY":0,"sourceW":138,"sourceH":26},
+"icon_wingup":{"x":351,"y":0,"w":78,"h":75,"offX":2,"offY":2,"sourceW":80,"sourceH":80},
+"icon_hongbao":{"x":431,"y":0,"w":76,"h":75,"offX":2,"offY":2,"sourceW":80,"sourceH":80},
+"wingup_toptext":{"x":0,"y":0,"w":349,"h":121,"offX":0,"offY":0,"sourceW":349,"sourceH":121},
+"biaoti_hongbao":{"x":0,"y":123,"w":426,"h":34,"offX":0,"offY":0,"sourceW":426,"sourceH":34},
+"wingup_bottomtext":{"x":0,"y":159,"w":225,"h":65,"offX":0,"offY":0,"sourceW":225,"sourceH":65},
+"biaoti_wingup":{"x":0,"y":304,"w":368,"h":33,"offX":0,"offY":0,"sourceW":368,"sourceH":33},
+"xn_hongbaoUnder":{"x":491,"y":77,"w":12,"h":141,"offX":0,"offY":0,"sourceW":12,"sourceH":141},
+"xn_hongbaoarrow":{"x":0,"y":339,"w":165,"h":75,"offX":0,"offY":0,"sourceW":165,"sourceH":75},
+"xn_wingup2":{"x":0,"y":226,"w":184,"h":76,"offX":3,"offY":4,"sourceW":189,"sourceH":85},
+"xn_wingup5":{"x":227,"y":159,"w":186,"h":77,"offX":2,"offY":2,"sourceW":190,"sourceH":82}}}

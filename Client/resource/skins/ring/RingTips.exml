@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RingTips" currentState="lock" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*" width="580" height="930" states="lock,active,actived">
+	<w:Config id="1586b3502a7" />
+	<e:Rect id="bgClose" fillAlpha="0.8" top="0" left="0" right="0" bottom="0" />
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" top="0" horizontalCenter="0" visible="false" className="RoleSelectPanel"/>
+	<e:Group id="group"  horizontalCenter="0" verticalCenter="0">
+		<e:Group id="mcGroup" y="0" horizontalCenter="0">
+			<e:Image id="background" source="tongyongtip1" scale9Grid="7,6,11,12" left="0" right="0"  
+			         top="0" bottom="0" />
+			<e:Image source="wingbg4_png" width="350" y.lock="13"   scale9Grid="1,355,393,157" top="5" bottom="5" horizontalCenter="0" right="5" left="5"/>
+			<e:Image id="qualityImg" left="0" right="0" source="quali3" top="2" x="0" y="2"  
+			         y.lock="2" scale9Grid="9,1,10,1" />
+			<e:Image source="tongyongtip2" left="0" right="0" scale9Grid="18,18,2,4" top="0" bottom="0"  
+			          source.actived="tongyongtip2"/>
+			<e:Label id="nameLabel" text="麻痹戒指" size="30" textAlign="left" bold="true" textColor="0xFF0000" top="10" y="20"
+			           horizontalCenter.actived="0" horizontalCenter.active="0" textColor.lock="0xff0000"
+			         top.lock="14" size.lock="30" horizontalCenter.lock="0" horizontalCenter="0.5"/>
+			<e:Image y="278" scale9Grid="85,1,6,1" width="340" horizontalCenter.actived="-4" horizontalCenter.active="-4"
+			         source="bantoutiaobg" x="5"   scale9Grid.lock="120,1,16,1" width.lock="325" x.lock="0" />
+			<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" y="268" x="-13"   className="PowerPanel"/>
+			<e:Image id="tips" y="0"  source="tjyijihuo" scaleX="1.2" scaleY="1.2" right="-2" source.lock="tjweijihuo" source.active="tjweijihuo"/>
+			<e:Group y="338" horizontalCenter="0.5">
+				<e:Group y="0"    width="325" horizontalCenter="0" x="0">
+					<e:Label y="0" text="加成属性" size="20" x="0" bold="true"   textColor.lock="0xff9900"
+					         textColor="0xff9900" />
+					<e:Label id="attr0" y="25" text="攻       击：" size="18" verticalAlign="justify" x="0" textAlign="left" 
+					          textColor="0xFFFFCC" />
+					<e:Label id="value0" y="25" text="+1000" size="18" verticalAlign="justify" x="90" textAlign="left" 
+					          textColor="0x00FF00" />
+					<e:Label id="value2" y="50" text="+1000" size="18" verticalAlign="justify" x="90" textAlign="left" 
+					          textColor="0x00FF00"  x.active="90"/>
+					<e:Label id="value1" y="25" text="+1000" size="18" verticalAlign="justify" x="265" textAlign="left" 
+					          textColor="0x00FF00"  x.active="265"/>
+					<e:Label id="value3" y="50" text="+1000" size="18" verticalAlign="justify" x="265" textAlign="left" 
+					          textColor="0x00FF00"  x.active="265"/>
+					<e:Label id="attr2" y="50" text="法       防：" size="18" verticalAlign="justify" x="0" textAlign="left" 
+					          textColor="0xFFFFCC" />
+					<e:Label id="attr1" y="25" text="物       防：" size="18" verticalAlign="justify" textAlign="left" textColor="0xFFFFCC"
+					           x="175" />
+					<e:Label id="attr3" y="50" text="生       命：" size="18" verticalAlign="justify" textAlign="left" textColor="0xFFFFCC"
+					           x="175" />
+					<e:Image source="tongyongline" y="73"   scale9Grid="109,0,12,3" width="289"
+					         horizontalCenter="0" />
+				</e:Group>
+				<e:Group y="70"    width="325" horizontalCenter="0" x="0">
+					<e:Label id="specialAttr" y="25" text="角色攻击时，有几率触发麻痹效果，使目标无法攻击、移动，持续2秒。" size="18" verticalAlign="justify" x="0" textAlign="left"
+					         textColor="0xFFFFCC"   text.lock="角色攻击时，有几率触发麻痹效果，使目标无法攻击、移动，持续2秒。" width.lock="324"  width="324"/>
+					<e:Label y="0" text="极品效果" size="20" x="0" bold="true"   textColor.lock="0xff0000"
+					         textColor="0xff0000" />
+				</e:Group>
+				<e:Group height="59" y="124" horizontalCenter="0" x="105"   includeIn="active">
+					<e:Button id="btnUse" label="激活" skinName="Btn1Skin" includeIn="active"   verticalCenter="0"
+					          horizontalCenter="0" />
+				</e:Group>
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" gap="6" />
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group id="gainListGroup" y="300" width="350" x="0"  includeIn="lock">
+			<e:Group x="0" width="350">
+				<e:Label text="获取途径" size="20" bold="true" textColor="0x7E6437" y="15" horizontalCenter="0" />
+				<e:Image source="tongyongline" scale9Grid="27,0,166,3" width="272.222" y="0" horizontalCenter="0"
+				         visible="false" />
+				<e:Image source="tielian" x="40.444"   y="3" />
+				<e:Image source="tielian" x="283.111" y="3" />
+				<e:Image source="shuxingline" scale9Grid="18,8,2,1" width="175" y="35"  left="0"/>
+				<e:Image source="shuxingline" scale9Grid="18,8,2,1" width="175" scaleX="-1" y="35"  right="0"/>
+			</e:Group>
+			<e:List id="gainList0" itemRendererSkinName="RuneGainTipsItemSkin" x="0" y="50">
+				<e:layout>
+					<e:VerticalLayout gap="0" horizontalAlign="contentJustify" paddingLeft="0" paddingRight="0" />
+				</e:layout>
+			</e:List>
+		</e:Group>
+		<e:Group y="218" horizontalCenter="0" height="35">
+			<e:Image source="bantoutiaobg" height="30" touchEnabled="false"  
+			         scale9Grid="128,2,15,41" width="300" y="5" />
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" touchEnabled="false" y="10" 
+			           x="48"/>
+		</e:Group>
+		<!--<e:Group id="powerGroup" x="32" y="143"  height="41" locked="true">
+		<e:Image source="zjmzhandouli" />
+	</e:Group>
+	-->
+	<e:layout>
+		<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="0" />
+	</e:layout>
+</e:Group>
+</e:Skin>

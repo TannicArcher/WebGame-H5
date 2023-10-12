@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ISCostRewardSkin" width="560" height="570" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="infoBg" left="10" right="10" x="10" y="2" height="110">
+		<e:Image left="0" right="0" top="0" bottom="0" source="activity_headbg0_png"/>
+		<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="15" bottom="15" visible="false"/>
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actInfo" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+	</e:Group>
+	<e:Scroller top="115" bottom="0" left="0" right="0">
+		<e:List id="list" y="0" x="45.45" itemRendererSkinName="ISCostRewardItemSkin">
+		<e:layout>
+			<e:VerticalLayout gap="0"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

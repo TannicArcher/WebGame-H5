@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="wpkBossSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group width="450" height="600" horizontalCenter="0" verticalCenter="-40">
+
+		<e:Group horizontalCenter="0" bottom="-40">
+			<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300"/>
+			<e:Label text="点击空白区域关闭窗口" size="18" bold="true" textColor="0x7E6437" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Image source="tongyongkuang3bg" scale9Grid="9,4,32,37" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="bossbg_png" left="6" right="6" top="0" bottom="6"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0" y="0" scale9Grid="67,0,274,47"/>
+		<e:Label text="世界BOSS" size="24" y="11" horizontalCenter="0" textColor="0xbd600d" bold="true"/>
+
+		<e:Button id="closeBtn0" label="按钮" skinName="Btn0Skin" right="2" y="0" visible="false"/>
+		<e:Group id="boss" y="133" horizontalCenter="0">
+			<e:Image id="bossImg" source=""/>
+		</e:Group>
+		<e:Group id="blood" y="360" horizontalCenter="0" width="300">
+			<e:Rect height="16" fillColor="0x000000" y="4" left="2" right="2"/>
+			<e:ProgressBar id="bar" value="100" height="16" skinName="bar3Skin" y="4" left="6" right="6"/>
+			<e:Image id="barBg" y="0" source="jingyantiao6" scale9Grid="21,3,17,19" left="0" right="0"/>
+		</e:Group>
+		<e:List id="list" itemRendererSkinName="ItemSkin" horizontalCenter="0" bottom="110">
+			<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="6"/>
+			</e:layout>
+		</e:List>
+		<e:Button id="enter" label="进入战场" skinName="Btn1Skin" width="156" height="60" horizontalCenter="0" bottom="34"/>
+		<e:Label text="每日19点30分开启" horizontalCenter="0" size="20" bottom="10" textColor="0xd1c28f"/>
+		<e:Label id="nameTxt" text="BOSS名字" horizontalCenter="0" size="22" y="60" textColor="0xf8b141" bold="true"/>
+		<e:Group id="tips" horizontalCenter="0" y="60" visible="false">
+			<e:Label text="你可以进入" size="18" textColor="0x9F946D" x="50" y="0"/>
+			<e:Label id="level0" text="初级战场" size="18" x="59" y="0" textColor="0xf8b141"/>
+			<e:Label id="level1" text="（3转可进入中级战场）" size="18" textColor="0x9F946D" x="0" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Image id="help" x="400" y="50" source="wenhao"/>
+	</e:Group>
+
+</e:Skin>

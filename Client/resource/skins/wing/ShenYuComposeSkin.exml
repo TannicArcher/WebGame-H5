@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShenYuComposeSkin" width="554" height="716" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15dbfa8e636"/>
+
+
+
+
+	<e:Group id="skillGroup" width="362" height="235" horizontalCenter="-81" anchorOffsetY="0" bottom="114">
+
+		<e:Image left="0" right="0" bottom="0" source="shuxingbg" scale9Grid="50,5,65,34" top="31"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="240" left="-50"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="240" scaleX="-1" right="-50"/>
+		<e:Label id="attr0" text="攻击：1000000000" size="18" textAlign="left" y="110" width="170" anchorOffsetX="0" textColor="0x9F946D" x="110"/>
+		<e:Label id="power0" text="战斗力：10000" y="76" size="20" textColor="0xFF9900" bold="true" x="110"/>
+		<e:Label id="state0" text="合成预览" y="45" textColor="0xFF750F" bold="true" size="20" horizontalCenter="0"/>
+		<e:Label id="attr1" text="攻击：100\n物防：1000\n魔防：1000\n闪避：20%\n命中：1.2%" size="18" textAlign="left" textColor="0x9F946D" y="110" width="170" anchorOffsetX="0" x="10" visible="false"/>
+		<e:Label id="power1" text="战斗力：5" x="10" y="76" size="20" textColor="0xFF9900" visible="false"/>
+		<e:Label text="升阶前" x="10" y="45" textColor="0xFF750F" bold="true" size="20" id="state1" visible="false"/>
+		<e:Label id="attr2" text="攻击：1000000000" size="18" textAlign="left" y="110" width="170" anchorOffsetX="0" textColor="0x00FF00" x="211" visible="false"/>
+		<e:Label id="power2" text="战斗力：10000" x="211" y="76" size="20" textColor="0xFF9900" bold="true" visible="false"/>
+		<e:Label text="升阶后" x="211" y="45" textColor="0xFF750F" bold="true" size="20" id="state2" visible="false"/>
+
+
+
+
+
+
+
+
+
+
+	</e:Group>
+	<e:Image left="0" right="0" top="0" anchorOffsetY="0" height="140" source="tongyongtip1" scale9Grid="13,11,1,1"/>
+	<e:Group y="145" x="379">
+		<e:Image left="0" right="0" top="0" anchorOffsetY="0" source="tongyongtip1" scale9Grid="13,11,1,1" bottom="0"/>
+
+
+
+
+
+		<e:Scroller top="15" left="10" width="165" bottom="20" height="531">
+		<e:List id="list" y="11.33" x="1" useVirtualLayout="true" itemRendererSkinName="ShenYuComposeItem">
+			<e:layout>
+			<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group horizontalCenter="0" top="24">
+		<ns1:BaseComponent id="item0" className="GodWingItem" y="21" x="15" scaleX="1" scaleY="1" skinName="ShenYuItem"/>
+		<ns1:BaseComponent id="item1" className="GodWingItem" y="31" x="25" scaleX="1" scaleY="1" skinName="ShenYuItem"/>
+		<ns1:BaseComponent id="item2" className="GodWingItem" y="41" x="35" scaleX="1" scaleY="1" skinName="ShenYuItem"/>
+		<ns1:BaseComponent id="item3" className="GodWingItem" y="51" x="45" scaleX="1" scaleY="1" skinName="ShenYuItem"/>
+		<e:layout>
+		<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+
+	<e:Button id="compose" label="合 成" skinName="Btn1Skin" width="130" height="50" horizontalCenter="-77" bottom="10"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" horizontalCenter="-24" bottom="36"/>
+
+
+	<ns1:BaseComponent id="now" className="GodWingItem" y="176" scaleX="1" scaleY="1" skinName="ShenYuItem" horizontalCenter="-158"/>
+	<ns1:BaseComponent id="next" className="GodWingItem" y="176" scaleX="1" scaleY="1" skinName="ShenYuItem" horizontalCenter="2"/>
+
+	<e:Label id="number" text="2/20" size="20" textAlign="left" textColor="0xD1C28F" y="278" horizontalCenter="-158"/>
+	<e:Image source="jiantouyou" horizontalCenter="-77" x="150" y="183"/>
+
+
+
+</e:Skin>

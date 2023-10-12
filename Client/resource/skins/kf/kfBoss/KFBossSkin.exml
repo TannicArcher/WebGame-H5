@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="KFBossSkin" width="580" height="930" currentState="5" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" xmlns:euiextension="euiextension.*" states="5,6,7" >
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="120"/>
+	<e:Image horizontalCenter="0" top="52" source="kf_boss_bg_jpg"/>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  width="580" horizontalCenter="0" currentState="nohead"/>
+	<e:Image y="6"  horizontalCenter="-155" source="biaoti_kuafuboss"/>
+
+
+
+
+
+
+	<e:Button id="seeRule" label="按钮" icon="wenhao" skinName="Btn0Skin" horizontalCenter="-246" y="8" scaleX="0.9" scaleY="0.9"/>
+
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+	<e:Group width="560" height="80" horizontalCenter="0" bottom="125">
+		<e:Image width="280" x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+		<e:Image width="280" scaleX="-1" top="0" bottom="0" right="0" source="bantoumingkuang3"/>
+		<e:Label text="剩余采旗次数：" size="20" textColor="0x9f946d" left="30" verticalCenter="0"/>
+		<e:Label id="flagTimes" text="6" size="20" textColor="0x00ff00" left="170" verticalCenter="0"/>
+		<e:Label text="剩余BOSS归属次数：" size="20" textColor="0x9F946D" left="300" verticalCenter="0"/>
+		<e:Label id="bossTimes" text="6" size="20" textColor="0x00FF00" left="496" verticalCenter="0"/>
+	</e:Group>
+	<e:Image top="123" horizontalCenter="13" source="kf_boss_line_seven_png" source.5="kf_boss_line_five_png" source.6="kf_boss_line_six_png"/>
+	<ns1:BaseComponent id="island8" skinName="KFBossItemSkin" y="284" x="190" horizontalCenter.5="0" top.5="254" top.6="254" horizontalCenter.6="0" top.7="254" horizontalCenter.7="0"/>
+	<ns1:BaseComponent id="island5" skinName="KFBossItemSkin" y="384" x="370" top.5="384" horizontalCenter.5="180" top.6="384" horizontalCenter.6="180" top.7="414" horizontalCenter.7="180"/>
+	<ns1:BaseComponent id="island4" skinName="KFBossItemSkin" y="484" x="180" top.5="484" horizontalCenter.5="-10" top.6="484" horizontalCenter.6="-10" top.7="484" horizontalCenter.7="-10"/>
+	<ns1:BaseComponent id="island3" skinName="KFBossItemSkin" y="434" x="-10" top.5="434" horizontalCenter.5="-200" top.6="434" horizontalCenter.6="-200" top.7="434" horizontalCenter.7="-200"/>
+	<ns1:BaseComponent id="island2" skinName="KFBossItemSkin" top.5="104" horizontalCenter.5="-180" top.6="164" horizontalCenter.6="-200" top.7="164" horizontalCenter.7="-200"/>
+	<ns1:BaseComponent id="island1" skinName="KFBossItemSkin" top.5="92" horizontalCenter.5="150" top.6="42" horizontalCenter.6="-10" top.7="52" horizontalCenter.7="-100"/>
+	<ns1:BaseComponent id="island7" skinName="KFBossItemSkin" y.5="54" x.5="330" includeIn="7" top.6="94" horizontalCenter.6="180" top.7="53" horizontalCenter.7="87"/>
+	<ns1:BaseComponent id="island6" skinName="KFBossItemSkin" includeIn="6,7" top="214" horizontalCenter="190" horizontalCenter.6="190" top.6="144" horizontalCenter.7="200" top.7="213"/>
+	<e:Image source="kf_boss_island" top="252" horizontalCenter="-78.5" horizontalCenter.6="-78.5" top.6="271"/>
+</e:Skin>

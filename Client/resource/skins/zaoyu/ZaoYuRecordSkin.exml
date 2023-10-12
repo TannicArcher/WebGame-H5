@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ZaoYuRecordSkin" width="720" height="1135" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Button skinName="Btn0Skin" y="94" icon="beibao_05" x="690" label="按钮" id="closeBtn"/>
+	<e:Scroller width="693" height="568" x="13" y="128"  >
+			<e:List id="list" width="733" height="603" itemRendererSkinName="ZaoYuRecordInfoSkin"   verticalCenter="0" horizontalCenter="156">
+			</e:List>
+	</e:Scroller>
+	<e:Button skinName="Btn0Skin" y="702" x="663" label="按钮" id="closeBtn0"/>
+
+
+
+
+</e:Skin>

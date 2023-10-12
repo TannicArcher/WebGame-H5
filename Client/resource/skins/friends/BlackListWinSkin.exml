@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BlackListWinSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="310">
+	<e:Group     left="0" right="0" top="0" bottom="0">
+		<e:Group id="group_pingbi" horizontalCenter="0" verticalCenter="0" visible="false">
+			<e:Label text="你的黑名单里居然没有人，真幸福！" textColor="0xDFD1B5" size="20"/>
+		</e:Group>
+		<e:Button id="closeBtn0" skinName="Btn0Skin" label="按钮" y="8" x="424"   visible="false"/>
+		<e:Button id="closeBtn" skinName="Btn0Skin" label="按钮" y="581" x="401"   visible="false"/>
+		<e:Group   left="0" right="0" top="0" bottom="0">
+			<e:Label id="label_num" text="xx/xxx" x="102" y="214" size="16"   textColor="0xDFD1B5" fontFamily="黑体" visible="false"/>
+			<e:Label id="label" text="屏蔽数量:" x="16" y="214" size="16"   textColor="0xDFD1B5" fontFamily="黑体" visible="false"/>
+			<e:Scroller left="10" top="0" bottom="44"   right="10">
+			<e:List id="list_blackList" itemRendererSkinName="BlackListItemSkin" x="0" y="0">
+				<e:layout>
+					<e:VerticalLayout gap="2"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+		</e:Group>
+		<e:Label text="GM不会以任何形式询问玩家帐号和密码，或私聊发布中奖信息。" x="39" textColor="0x444134" size="18" bottom="12" y="280"  />
+		<e:Image source="gantanhao" x="12" bottom="12" y="278"  />
+	</e:Group>
+</e:Skin>

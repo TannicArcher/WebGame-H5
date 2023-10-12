@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="jyjiangli" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="554" height="710"       >
+	<w:Config id="15a98a3982e"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.4"/>
+	<e:Group id="mainGroup" width="350" height="300" horizontalCenter="0" verticalCenter="0">
+		<e:Image     top="0" bottom="0" left="0" right="0" width="360" source="tongyongtip3" scale9Grid="12,9,5,9"/>
+		<e:Button id="btnGet" label="前往领取（10）" skinName="Btn1Skin"  width="177"   horizontalCenter="0" bottom="50"/>
+
+		<e:Image source="chuangtianguan_json.fbljjy" y="30" horizontalCenter="0"/>
+		<e:Image source="num_json.r09_png" verticalCenter="-12" horizontalCenter="0" visible="false"/>
+		<e:Label text="点击前往经验副本领取经验" size="16" textColor="0x7e6437" horizontalCenter="0" bottom="20"/>
+		<e:Label text="经验副本" y="5" textColor="0xf8b141" size="28" horizontalCenter="0" visible="false"/>
+	</e:Group>
+</e:Skin>

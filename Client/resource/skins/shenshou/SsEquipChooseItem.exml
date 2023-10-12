@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SsEquipChooseItem" width="450" height="114" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image left="0" right="0" top="0" source="tongyonglabbg" scale9Grid="42,20,48,41" bottom="0"/>
+	<e:Group x="95" y="39" width="250">
+		<e:Label id="attr0" y="0" text="攻击：100" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x9F946D"/>
+		<e:Image id="betterArrow0" x="90" y="1" source="tongyongup"/>
+		<e:Label id="forgeAttr0" y="0" text="+1000" size="18" verticalAlign="justify" x="10" textAlign="left" textColor="0x00FF00"/>
+		<e:layout>
+		<e:HorizontalLayout verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group x="95" y="61" width="250">
+		<e:Label id="attr1" y="0" text="攻击：100" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x9F946D"/>
+		<e:Image x="90" y="1" source="tongyongup" id="betterArrow1"/>
+		<e:Label id="forgeAttr1" y="10" text="+1000" size="18" verticalAlign="justify" x="10" textAlign="left" textColor="0x00FF00"/>
+		<e:layout>
+		<e:HorizontalLayout verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group x="95" y="83" width="250">
+		<e:Label id="attr2" y="0" text="攻击：100" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x9F946D"/>
+		<e:Image x="90" y="1" source="tongyongup" id="betterArrow2"/>
+		<e:Label id="forgeAttr2" y="10" text="+1000" size="18" verticalAlign="justify" x="10" textAlign="left" textColor="0x00FF00"/>
+		<e:layout>
+		<e:HorizontalLayout verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Label text="品质：" x="95" y="15" size="18" textColor="0xd1c28f"/>
+	<e:Label id="quality" text="凡品" x="149" y="14" size="18" bold="true"/>
+
+	<e:Label id="power" text="评分：999999" size="20" y="11" textColor="0xf8b141" x="310"/>
+
+	<e:Button id="changeBtn" label="更 换" name="changeBtn" x="326" skinName="Btn3Skin" y="38"/>
+	<ns1:BaseComponent id="itemIcon" skinName="ItemSkin" className="ItemBase" y="10" horizontalCenter="-179"/>
+	<e:Image id="best" y="32" touchEnabled="false" right="6" source="tuijian2" scaleX="0.8" scaleY="0.8" visible="false"/>
+	<e:Group id="now" x="382" y="45" visible="false">
+		<e:Image source="xiejiaotiao" scale9Grid="20,2,2,15" rotation="135" width="79" scaleX="1.6" scaleY="1.6" x="89" y="0"/>
+		<e:Label text="当前装备" size="20" bold="true" rotation="-45" textColor="0xd1c28f" x="-2" y="54"/>
+	</e:Group>
+</e:Skin>

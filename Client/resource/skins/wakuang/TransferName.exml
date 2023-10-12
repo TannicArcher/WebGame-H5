@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Trans" width="140" height="21" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group horizontalCenter="0" verticalCenter="0" width="126">
+		<e:Image source="bantoutiaobg2"   scale9Grid="45,0,4,21" left="0" right="0" top="0" bottom="0" width="126"/>
+		<e:Group horizontalCenter="0" verticalCenter="0">
+			<e:Image source="biqikuangdong"   horizontalCenter="0" verticalCenter="0" x="-118" y="-80"/>
+			<e:BitmapLabel id="num" x="75" y="12" text="12" font="kuangdongfont_fnt" letterSpacing="0"/>
+			<e:layout>
+			<e:HorizontalLayout gap="3"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

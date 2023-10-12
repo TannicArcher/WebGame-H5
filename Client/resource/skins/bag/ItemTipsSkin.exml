@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemTipsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<w:Config id="1586b36a128"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group id="anigroup" horizontalCenter="0" width="350" verticalCenter="-23">
+		<e:Image id="BG" top="0" bottom="0" left="0" right="0" source="tongyongtip3" scale9Grid="11,10,9,10"/>
+		<e:Image source="tongyongtip2" left="0" right="0" top="0" bottom="0" scale9Grid="18,18,2,4"/>
+		<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" x="20" y="52"/>
+		<e:Label id="nameLabel" text="羽毛" size="24" x="20" y="20" textColor="0x90f490" bold="true"/>
+		<e:Label text="数量：" size="20" x="120" y="90" textColor="0x966e5a"/>
+		<e:Label id="num" text="9" size="20" x="180" y="90" bold="true" textColor="0xffd9b5"/>
+		<e:Label text="等级：" size="20" x="120" y="66" textColor="0x966e5a"/>
+		<e:Group x="15" y="160">
+			<e:Label id="description" text="使用后获得1000万角色经验值" size="18" width="320" y="0" textAlign="left" horizontalCenter="0" textColor="0xd1c28f" x="0"  />
+			<e:Group height="15" x="188" y="-3"/>
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="lv" text="1级" size="20" x="180" y="66" bold="true" textColor="0xffd9b5"/>
+		<e:Image scale9Grid="85,1,6,1" width="340" y="140" horizontalCenter="0" source="tongyongline"/>
+		<e:Label id="power" text="评分：999999" size="20" y="20" textColor="0xffbc00" textAlign="right" width="200" right="10"/>
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-30" textColor="0x7E6437"/>
+	</e:Group>
+</e:Skin>

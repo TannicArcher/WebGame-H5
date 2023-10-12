@@ -1,0 +1,57 @@
+
+<e:Skin class="weaponSoulSkinState" width="560" height="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"   states="4,6,8" >
+	<w:Config id="15dbfb4ddfb"/>
+	<e:Group id="effgroup" x.4="275" y.4="285" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="weaponImg" touchEnabled="false" scaleX="1.5" scaleY="1.5" source="weapsdao_png" x="0" y="16"/>
+		<e:Image id="effpos" x="70" y="337" rotation="120"  />
+	</e:Group>
+	<e:Group id="lianjiexian0" x="165" y="109" touchEnabled="false" x.4="144" y.4="166" x.6="160" y.6="124">
+		<e:Image source="duanzao_json.qianghuaxian" x="0" y="4" scale9Grid="1,1,6,6" width="84" rotation="359.97"/>
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" rotation="90.47"/>
+		<e:Image x="75" y="-12"   source="wps3"/>
+	</e:Group>
+	<e:Group id="lianjiexian1" x="302" y="85" touchEnabled="false" x.4="308" y.4="181" x.6="309" y.6="131">
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" rotation="359.97" width="61" x="56"/>
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" rotation="359.97" width="41" x="16" y="81"/>
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" width="84" rotation="90.47" y="3" x="60.8"/>
+		<e:Image x="-5" y="66" source="wps3"/>
+	</e:Group>
+	<e:Group id="lianjiexian2" x="105" y="229" touchEnabled="false" y.4="350" x.4="119" x.6="109" y.6="280">
+		<e:Image source="duanzao_json.qianghuaxian" x="0" y="4" scale9Grid="1,1,6,6" width="119" rotation="359.97"/>
+		<e:Image x="104" y="-13"   source="wps3"/>
+	</e:Group>
+	<e:Group id="lianjiexian3" x="327" y="203" touchEnabled="false" x.4="310" y.4="390" x.6="334" y.6="301">
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" rotation="359.97" width="76" x="56" width.4="128" x.4="0" x.6="0" width.6="127"/>
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" rotation="359.97" width="51" x="6" y="43" visible.4="false" visible.6="false"/>
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" width="46" rotation="90.47" y="3" x="60.8" visible.4="false" visible.6="false"/>
+		<e:Image x="-21" y="26"   source="wps3" x.4="-25" y.4="-16" x.6="-24" y.6="-17"/>
+	</e:Group>
+	<e:Group id="lianjiexian4" x="123" y="333" touchEnabled="false" visible.4="false" x.6="130" y.6="413">
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" width="121"  rotation="359.97"/>
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" width="64" rotation="90.47" visible="false"/>
+		<e:Image source="wps3" x="103" y="-17"/>
+	</e:Group>
+	<e:Group id="lianjiexian5" x="331" y="335" touchEnabled="false" visible.4="false" x.6="311" y.6="452">
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" width="126" rotation="359.97"/>
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" rotation="90.47" visible="false"/>
+		<e:Image x="-19" y="-16" source="wps3"/>
+	</e:Group>
+	<e:Group id="lianjiexian6" x="168" y="439" touchEnabled="false" visible.4="false" visible.6="false">
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" width="84" rotation="359.97"/>
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" width="64" rotation="90.47" visible="false"/>
+		<e:Image x="65" y="-16"   source="wps3"/>
+	</e:Group>
+	<e:Group id="lianjiexian7" x="307" y="415" touchEnabled="false" visible.4="false" visible.6="false">
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" width="118" rotation="359.97" y="47"/>
+		<e:Image source="duanzao_json.qianghuaxian" scale9Grid="1,1,6,6" rotation="90.47"/>
+		<e:Image source="wps3" x="-10" y="32"/>
+	</e:Group>
+	<ns1:BaseComponent id="item0" x="90" y="81" skinName="weaponSoulitem" className="WeaponSoulItem" x.4="69" y.4="138" x.6="85" y.6="96"/>
+	<ns1:BaseComponent id="item1" y="48.5" skinName="weaponSoulitem" className="WeaponSoulItem" right="72" right.4="66" y.4="144.5" right.6="65" y.6="94.5"/>
+	<ns1:BaseComponent id="item2" x="34" y="192" skinName="weaponSoulitem" className="WeaponSoulItem" y.4="313" x.4="48" x.6="38" y.6="243"/>
+	<ns1:BaseComponent id="item3" y="166" skinName="weaponSoulitem" className="WeaponSoulItem" right="32" right.4="49" y.4="353" right.6="25" y.6="264"/>
+	<ns1:BaseComponent id="item4" x="55" y="299" skinName="weaponSoulitem" className="WeaponSoulItem" visible.4="false" x.6="62" y.6="379"/>
+	<ns1:BaseComponent id="item5" y="298" skinName="weaponSoulitem" className="WeaponSoulItem" right="32" visible.4="false" right.6="52" y.6="415"/>
+	<ns1:BaseComponent id="item6" x="101" y="411" skinName="weaponSoulitem" className="WeaponSoulItem" visible.4="false" visible.6="false"/>
+	<ns1:BaseComponent id="item7" y="424" skinName="weaponSoulitem" className="WeaponSoulItem" right="65" visible.4="false" visible.6="false"/>
+</e:Skin>

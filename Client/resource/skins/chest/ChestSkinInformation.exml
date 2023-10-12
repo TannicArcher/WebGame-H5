@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="ChestInformationSkin" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  width="490" height="100">
+	<w:Config id="15a6a784557"/>
+	<e:Image source="shuxingbg"  width="490"  height="100" scale9Grid="23,8,140,36" horizontalCenter="1" verticalCenter="1"/>
+	<e:Label id="information" text="恭喜获得XX宝箱" size="20" verticalCenter="5.5" width="300" height="33" textColor="0xf8b141"  horizontalCenter="86"/>
+	<e:Image id="box" source="baoxiang_1" scaleX="0.5" scaleY="0.5" horizontalCenter="-116" verticalCenter="-8"/>
+</e:Skin>

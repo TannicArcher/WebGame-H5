@@ -1,0 +1,13 @@
+[UPDATEFILELIST]
+FileIndex0=libcurl.dll
+FileCheckNum0=992fe09a86da9f13b12fe3f6d7076777
+FileIndex1=libmysql.dll
+FileCheckNum1=01a2117f1bddf31fefd5274a196e6866
+FileIndex2=ServiceCore.dll
+FileCheckNum2=b7cd30e8646a35ac556b651482629451
+FileIndex3=Msvcr71.dll
+FileCheckNum3=86f1895ae8c5e8b17d99ece768a70732
+FileIndex4=wke.dll
+FileCheckNum4=cd3c60a62ee896818e69527b20cff31a
+UPDATEFILECOUNT=2
+FILENETADDRESS=http://api.php.cn/runtime/phpcn_box/New_DownLoad/Client/Plaza

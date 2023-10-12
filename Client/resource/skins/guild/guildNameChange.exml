@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="guildNameChange" width="480" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>	
+	<e:Group id="anigroup" height="300" width="350" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="tongyongkuang3bg" scale9Grid="8,3,27,39" left="0" right="0" top="2" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0" scale9Grid="65,0,274,47"/>
+		<e:Label y="12" text="修改行会名" size="24" horizontalCenter="0" textColor="0xbd600d" bold="true"/>
+		<e:Label id="txt" y="100" text="由于合服重名,可免费改名一次." size="20" textColor="0xFFB82A" horizontalCenter="0" textAlign="center"/>
+		<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" right="4" bottom="-66" visible="false"/>
+		<e:Button id="sureBtn" skinName="Btn1Skin" label="确定修改" horizontalCenter="0" bottom="30"/>
+		<e:Image y="136" scale9Grid="6,6,3,3" width="250" height="40" source="shuzibg" horizontalCenter="0"/>
+		<e:EditableText id="input" width="230" prompt="单击此处输入名字" maxChars="6" size="20" promptColor="0x878787" multiline="false" textAlign="center" verticalAlign="middle" horizontalCenter="0" y="140"/>
+	</e:Group>
+</e:Skin>

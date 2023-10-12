@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GwSkillTipSkin" width="580" height="930" currentState="lock" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,lock,fullLv,max" >
+	<e:Rect id="bgClose" left="0" top="0" bottom="0" right="0" fillAlpha="0.9"/>
+	<e:Group horizontalCenter="0" anchorOffsetX="0" width="414" anchorOffsetY="0" height="460" height.max="568" top="170">
+		<e:Image id="Bg" y="12" source="tongyongtip1" anchorOffsetY="0" height="396" anchorOffsetX="0" width="383" scale9Grid="5,5,15,15" horizontalCenter="0" height.max="504"/>
+		<e:Image id="left" y="0" source="zhuakuang2" scale9Grid="41,28,6,3" height="420" width="207" left="0" anchorOffsetX="0" anchorOffsetY="0" height.max="528"/>
+		<e:Image id="right" y="0" source="zhuakuang2" scale9Grid="41,28,6,3" scaleX="-1" height="420" width="207" right="0" anchorOffsetX="0" height.max="528"/>
+		<e:Image id="nameBg" y="9" source="shuxingbg4" horizontalCenter="0" anchorOffsetX="0" width="190" height="50"/>
+		<e:Label id="skillName" text="狮子吼" y="24" size="24" horizontalCenter="0" bold="true" textColor="0xf8b141"/>
+		<e:Image id="skillFrame" y="53" source="godweapon_skillicon2" scaleX="1.1" scaleY="1.1" horizontalCenter="0"/>
+		<e:Image id="skillImg" y="67" width="66" height="66" horizontalCenter="0" source=""/>
+		<e:Image id="lvBg" y="120" horizontalCenter="0.5" source="godweapon_skillframe" scaleX="1.1" scaleY="1.1"/>
+		<e:Label id="lvCount" text="0/0" y="124" size="16" horizontalCenter="0" width="60" verticalAlign="middle" textAlign="center" textColor="0xe5b613"/>
+		<e:Image width="330" height="62" y="166" source="zjmqipao" scale9Grid="6,6,10,10" horizontalCenter="0" horizontalCenter.lock="0" y.lock="184" horizontalCenter.normal="0" y.normal="166" horizontalCenter.max="0" y.max="181" height.max="80" height.lock="98" anchorOffsetY.lock="0"/>
+		<e:Label id="nowskillTitle" text="当前属性：" x="44" y="145" size="20" bold="true" y.max="160" visible.lock="false" textColor="0xffd93f"/>
+		<e:Label id="nowskillDesc" text="这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多" y="169" anchorOffsetX="0" width="324" anchorOffsetY="0" height="54" size="18" verticalAlign="middle" textAlign="center" horizontalCenter="0" horizontalCenter.lock="0" y.lock="187" horizontalCenter.normal="0" y.normal="169" horizontalCenter.max="0" y.max="184" height.max="72" text.max="这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多" height.lock="92" textColor="0xd1c28f"/>
+		<e:Image width="330" height="62" y="257" source="zjmqipao" scale9Grid="6,6,10,10" horizontalCenter="0" height.max="80" horizontalCenter.max="0" y.max="286" visible.lock="false"/>
+		<e:Label id="nextskillTitle" text="下一级属性：" x="44" y="234" size="20" bold="true" y.max="263" visible.lock="false" textColor="0xffd93f"/>
+		<e:Label id="nextskillDesc" text="这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多" y="261" anchorOffsetX="0" width="324" anchorOffsetY="0" height="54" size="18" verticalAlign="middle" textAlign="center" horizontalCenter="0" height.max="72" text.max="这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多" horizontalCenter.max="0" y.max="290" visible.lock="false" textColor="0xd1c28f"/>
+		<e:Button id="update" label="升 级" y="326" horizontalCenter="1" skinName="Btn3Skin" includeIn="normal,max" horizontalCenter.max="1" y.max="439"/>
+		<e:Label id="pointCount" text="当前可用技能点： 1" y="381" size="14" horizontalCenter="0.5" textColor="0x35e62d" includeIn="normal,max" horizontalCenter.max="1" y.max="494"/>
+		<e:Group horizontalCenter="0" height="35" x="25" scaleX="1" scaleY="1" bottom="0">
+			<e:Image source="bantoutiaobg" height="30" touchEnabled="false" scale9Grid="128,2,15,41" width="300" y="5"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" touchEnabled="false" y="10" x="48"/>
+		</e:Group>
+		<e:Label id="unlockDesc" text="攻击强化达到5级解锁" y="333" size="16" horizontalCenter="2" textColor="0xE5B613" verticalAlign="middle" textAlign="center" height="32" width="180" anchorOffsetY.lock="0" horizontalCenter.lock="2" height.lock="58" text.lock="攻击强化达到5级" y.lock="334" includeIn="lock,max" horizontalCenter.max="2" y.max="472"/>
+		<e:Label id="unlcokTitle" text="解锁条件：" includeIn="lock,max" y="327" size="22" textColor="0xBD600D" x="160" y.max="449" y.lock="317"/>
+		<e:Label id="ultraskillTitle" text="神兵威压" includeIn="max" y="152" size="20" bold="true" textColor="0xe5b613" horizontalCenter="0" visible="false"/>
+		<e:Image includeIn="max" y="378" width="350" height="50" horizontalCenter="0" source="zjmqipao" scale9Grid="11,11,1,1"/>
+		<e:Label id="ultraskillDesc" text="这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多这里的文本茫茫多" y="384" anchorOffsetX="0" width="342" anchorOffsetY="0" height="36" size="18" verticalAlign="middle" textAlign="center" horizontalCenter="0" includeIn="max" textColor="0xd1c28f"/>
+		<e:Label id="fullLvDesc" text="镶嵌圣物可继续提升技能等级" includeIn="fullLv" y="348" horizontalCenter="0" size="22" textColor="0xbd600d" bold="true"/>
+	</e:Group>
+</e:Skin>

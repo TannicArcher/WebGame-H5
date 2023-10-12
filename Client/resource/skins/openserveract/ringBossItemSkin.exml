@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ringBossItemSkin" width="500" height="110" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15a59527d66"/>
+	<e:Image  left="0" right="0" top="0" bottom="0" source="scitembg" scale9Grid="52,25,4,3"/>
+	<e:Image source="shuzibg" x="161" y="60" width="110" scale9Grid="12,11,1,1" height="30"/>
+	<e:Label id="descLab" text="99999" x="166" y="66" size="18" verticalAlign="middle" textAlign="center" textColor="0xd1c28f" width="100"/>
+	<e:Label text="需积分" x="106" y="66" size="18" verticalAlign="middle" textColor="0x9f946d"/>
+	<e:Label id="nameLab" text="装备名字" x="106" y="24" size="18" textColor="0xd1c28f"/>
+
+	<ns1:BaseComponent id="itemIcon0" className="ItemBase" x="18" verticalCenter="11" scaleX="1" scaleY="1" skinName="ItemSkin"/>
+	<e:Image x="107" y="49" source="tongyongline2"/>
+	<e:Group x="350" verticalCenter="0">
+		<e:Button id="goBtn" label="兑换" skinName="Btn1Skin" width="100" height="50" x="0" y="0"/>
+		<e:Label id="count" text="剩余300份" y="55" size="16" textColor="0x00ff00" width="100" textAlign="center" verticalAlign="middle" x="0"/>
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+	<e:Image id="redPoint" source="zjmhongdian" y="20" x="433" visible="false"/>
+</e:Skin>

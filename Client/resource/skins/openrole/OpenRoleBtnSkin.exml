@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OpenRoleBtnSkin" states="up,down,disabled"
+        xmlns:e="http://ns.egret.com/eui">
+	<e:Image x="0" y="0" x.down="0" y.down="0" alpha.disabled="0.7" scaleX.down="0.95" scaleY.down="0.95" anchorOffsetX.down="71" anchorOffsetY.down="22" anchorOffsetX.up="71" anchorOffsetY.up="22" scale9Grid="28,4,91,35" source=""/>
+	<e:Image x.down="0" y.down="0" x.disabled="49" y="12" alpha.disabled="0.7" scaleY.down="0.95" scaleX.down="0.95" anchorOffsetX.down="22.5" anchorOffsetY.down="9.5" anchorOffsetX.up="22.5" anchorOffsetY.up="9.5" x.up="0" y.up="0" x="42" source=""/>
+</e:Skin>

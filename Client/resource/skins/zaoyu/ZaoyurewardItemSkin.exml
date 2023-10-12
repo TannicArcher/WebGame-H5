@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ZaoyurewardItemSkin" width="500" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15acbac88a0"/>
+	<e:Image left="0" right="0" height="2" source="tongyongline" bottom="0"/>
+	<e:Label id="rank" text="第1名" size="24" verticalCenter="0" textColor="0xf8b141" bold="true" width="255" x="18" textAlign="center"/>
+	<ns1:BaseComponent id="item0" scaleX="0.8" scaleY="0.8" className="ItemBase" skinName="ItemSkin" right="130" verticalCenter="0"/>
+	<ns1:BaseComponent id="item1" scaleX="0.8" scaleY="0.8" className="ItemBase" skinName="ItemSkin" right="40" verticalCenter="0"/> 
+</e:Skin>

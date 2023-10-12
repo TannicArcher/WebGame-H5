@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SignupSkin" width="580" height="730" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="knockoutGroup" left="0" right="0" top="0" bottom="0">
+		<e:Image source="tongyongmianbanbg" scaleX="1" scaleY="1" scale9Grid="23,22,2,1" left="0" right="0" top="0" bottom="0"/>
+		<e:Group id="dinghong" height="70" bottom="5" width="570" horizontalCenter="0">
+			<e:Image top="0" bottom="0" source="bantoumingkuang3" left="0" width="300"/>
+			<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" width="300"/>
+		</e:Group>
+		<e:Group id="state1" bottom="48" horizontalCenter="0">
+		<e:Label id="eliminateInfoLabel" text="当前淘汰赛第1轮，剩余88人，我的战绩：8胜1负" x="0" y="0" size="16" textColor="0x00FF00"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+		</e:Group>
+		<e:Group id="state2" horizontalCenter="0" bottom="22">
+		<e:Label id="info" text="淘汰赛负5场出局，每场间隔5分钟" x="0" y="0" size="16" textColor="0xff9900" bold="true"/>
+		<e:Label text="；下场开始倒计时" x="108" y="1" size="16" textColor="0x00FF00"/>
+		<e:Label id="nextStartCountdownLabel" text=" 04分39秒" x="118" y="11" size="16" textColor="0x00FF00"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+		</e:Group>
+		<e:Scroller id="eliminateListScroller" horizontalCenter="0" top="40" bottom="80" scrollPolicyH="off" x="2" y="45" scaleX="1" scaleY="1" width="560" height="610">
+		<e:List id="eliminateInfoList" x="18" y="1" itemRendererSkinName="KnockoutListItemSkin">
+			<e:layout>
+			<e:VerticalLayout gap="0"/>
+			</e:layout>
+		</e:List>
+		</e:Scroller>
+		<e:Group y="0" left="5" right="5">
+			<e:Image y="0" source="pailietoubg2" scale9Grid="21,0,2,40" left="0" right="0"/>
+			<e:Image y="5" source="pailietouline2" height="30" x="210"/>
+			<e:Image y="5" source="pailietouline2" height="30" x="370"/>
+			<e:Label y="9" text="场 次" size="20" x="87" textColor="0x9f946d"/>
+			<e:Label y="9" text="对 手" size="20" x="267" textColor="0x9f946d"/>
+			<e:Label y="9" text="胜 负" size="20" x="447" textColor="0x9f946d"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="signGroup" left="0" right="0" top="0" bottom="0">
+		<e:Image source="peakness_bg_png" top="0" horizontalCenter="0" scale9Grid="275,347,17,17" height="651"/>
+		<e:Label id="signUpRuleTxt" text="Label" size="20" anchorOffsetY="0" left="40" right="40" top="70" lineSpacing="7" textColor="0xd1c28f"/>
+		<e:List id="rewardList" itemRendererSkinName="ItemSkin" left="40" right="40" top="540">
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+		</e:List>
+		<e:Label id="signed" text="已报名" bottom="25" horizontalCenter="0" textColor="0x00FF00" visible="false"/>
+		<e:Group id="btnGroup" bottom="10" horizontalCenter="0">
+		<e:Button id="signUpBtn" label="报名参赛" skinName="Btn1Skin" x="0" y="0"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" x="132" y="0"/>
+		</e:Group>
+		<e:Image x="48" y="15" source="peakness_rules"/>
+		<e:Image source="hongbaoline" y="55" scale9Grid="163,0,7,2" horizontalCenter="0" width="505"/>
+		<e:Image x="30" y="25" source="tongyongdian2"/>
+		<e:Image x="48" y="475" source="peakness_champion_rewards"/>
+		<e:Image source="hongbaoline" y="515" width="505" horizontalCenter="0.5"/>
+		<e:Image source="tongyongdian2" x="30" y="485"/>
+	</e:Group>
+</e:Skin>

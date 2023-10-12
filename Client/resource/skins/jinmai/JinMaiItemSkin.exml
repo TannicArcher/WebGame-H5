@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="JinMaiItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="110" height="110" states="open,select,dark" >
+	<w:Config id="159bef2916a"/>
+	<e:Image id="guang" source="jineng_json.jinmaiguang" visible.open="false" visible.dark="false" anchorOffsetX="55" anchorOffsetY="55" horizontalCenter="0" verticalCenter="0" scaleX.select="0.8" scaleY.select="0.8" scaleX="0.8" scaleY="0.8" visible="false"/>
+	<e:Image id="bgImg" verticalCenter="0" horizontalCenter="0" source="jingmaizhuzi2" visible.open="false" visible.select="false" width="30" height="30"/>
+	<e:Image id="item" visible.dark="false" horizontalCenter="0" verticalCenter="0" source="jingmaizhuzi1" visible="false"/>
+</e:Skin>

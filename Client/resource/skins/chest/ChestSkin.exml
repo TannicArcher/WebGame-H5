@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChestSkin" width="554" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" xmlns:tween="egret.tween.*"  height="716">
+	<w:Declarations>
+	</w:Declarations>
+	<w:Config id="1586b349dbe"/>
+	<e:Rect top="0" bottom="0" left="0" right="0" fillAlpha="0.6"  height="731"/>
+	<e:Image id="image" left="0" right="0"  top="0" bottom="490" source="baoxiangbg_png"/>
+	<e:Image source="mianfeibaoxiang" x="185" verticalCenter="-334"/>
+	<e:Label id="freeNum" text="(1/2)" x="303" size="20" textColor="0xf8b141" verticalCenter="-333"/>
+	<ns1:BaseComponent id="box2" x="368" skinName="ChestSkinReward2" className="BoxFreeItemRenderer" bottom="498"/>
+	<ns1:BaseComponent id="box1" x="229" skinName="ChestSkinReward2" className="BoxFreeItemRenderer"   bottom="498"/>
+	<e:Image source="biaoti_baoxiang" horizontalCenter="-155" y="-47"/>
+	<e:Scroller id="scrollerRoom" left="0" right="0" bottom="0" height="494">
+		<e:List id="listBox" x="0" y="18.53" scrollEnabled="true" itemRendererSkinName="ChestSkinState1" scaleX="0.8" scaleY="0.8"  width="665"  height="595">
+		<e:layout>
+			<e:TileLayout paddingBottom="0" horizontalGap="4" paddingLeft="2" paddingTop="3" verticalGap="6"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Label text="BOSS宝箱，解锁获得大量奖励！" y="196" size="24" bold="true" horizontalCenter="0" textColor="0xd1c28f" visible="false"/>
+	<e:Group x="30" bottom="526">
+		<e:Label text="免费宝箱两小时领1次" x="16" y="0" size="20" textColor="0x9f946d"/>
+		<e:Label text="免费宝箱可累积两个" x="16" y="30" size="20" textColor="0x9f946d"/>
+		<e:Label text="下面宝箱通过击杀BOSS获得" x="16" y="60" size="20" textColor="0x9F946D" width="168"/>
+		<e:Image source="tongyongdian2" x="0" y="2"/>
+		<e:Image source="tongyongdian2" x="0" y="32"/>
+		<e:Image source="tongyongdian2" x="0" y="62"/>
+	</e:Group>
+</e:Skin>

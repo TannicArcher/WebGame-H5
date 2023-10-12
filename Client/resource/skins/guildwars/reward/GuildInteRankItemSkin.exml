@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildInteRankItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="510" height="40">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.2"/>	
+	<e:Label id="rank" text="1" size="20" x="40" verticalCenter="0" textColor="0x9f946d"/>
+	<e:Label id="guildName" text="玩家名六个字" size="20" verticalCenter="0" textColor="0xd1c28f" horizontalCenter="-95"/>
+	<e:Label id="guildOwn" text="行会名六个字" size="20" verticalCenter="0" textColor="0x9f946d" horizontalCenter="45"/>
+	<e:Label id="point" size="20" text="9999999" verticalCenter="0" textColor="0x9f946d" horizontalCenter="184"/>
+</e:Skin>

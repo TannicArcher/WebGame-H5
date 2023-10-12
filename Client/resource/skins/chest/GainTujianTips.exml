@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GainTujianTips" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586bddbcf0"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>	
+	<e:Group id="bgGroup" height="520" width="450" horizontalCenter="5" verticalCenter="0">
+		<e:Image id="frame" source="tongyongkuang3bg" scale9Grid="9,5,30,27"  height="524" y="0"  left="0" right="0"/>
+		<e:Image id="tou" y="0" source="tongyongkuang3tou" left="0" right="0" scale9Grid="66,0,269,47"/>
+		<e:Label id="titleTxt" horizontalCenter="0" y="12" text="材料不足" size="22" x="20" bold="true" textColor="0xa67d44"/>
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" y="525" horizontalCenter="0">
+			<e:Image source="bantoutiaobg" height="30" width="300" y="0" scale9Grid="129,2,10,41" horizontalCenter="0"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7e6437" y="5" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="listGroup" touchEnabled="false" width="450" x="0">
+			<ns1:BaseComponent id="itemIcon" y="97" skinName="ItemIconSkin" className="ItemIcon" horizontalCenter="0"/>
+			<e:Label id="nameTxt" text="触龙神" y="205" size="22" textAlign="left" bold="true" textColor="0x9f946d" horizontalCenter="0.5"/>
+			
+			<e:Group id="gainListGroup" y="352" width="450" x="0" >
+				<e:Group x="6">
+					<e:Label text="获取途径" size="20" bold="true" textColor="0x7e6437" x="177" y="15"/>
+					<e:Image source="tongyongline" scale9Grid="27,0,166,3" width="350" x="44" y="0"/>
+					<e:Image source="tielian" x="52"   y="3"/>
+					<e:Image source="tielian" x="364" y="3"/>
+					<e:Image source="shuxingline" x="0" scale9Grid="18,8,2,1" width="220" y="35"/>
+					<e:Image source="shuxingline" scale9Grid="18,8,2,1" width="220" scaleX="-1" x="438" y="35"/>
+				</e:Group>
+				<e:List id="gainList" itemRendererSkinName="GainGoodsItemSkin" x="10" y="50">
+					<e:layout>
+					<e:VerticalLayout gap="2"/>
+					</e:layout>
+				</e:List>
+			</e:Group>
+			
+		</e:Group>
+		<e:Button id="closeBtn" label="按钮" y="523" skinName="Btn0Skin" right="0" visible="false"/>
+	</e:Group>
+</e:Skin>

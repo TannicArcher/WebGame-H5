@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="heirloomDownItem" width="420" height="100" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="1586bdf2708"/>
+	<e:Image  source="tongyonglabbg" left="0" right="0" top="0" bottom="0" scale9Grid="40,20,50,42"/>
+	<ns1:BaseComponent id="itemicon" x="7.34" className="HeirloomItem" skinName="heirloomItemSkin" y="14"/>
+	<e:Label id="equipName" y="16" textColor="0xDFD1B5" text="装备名称" size="20" x="102"/>
+	<e:Label id="tip" y="16" text="推荐分解" size="20" x="200" textColor="0x2ECA22"/>
+	<e:Label y="42" textColor="0xDFD1B5" text="分解获得：" size="18" x="102"/>
+	<e:Label id="desc" y="66" textColor="0xFF6A21" text="传世宝钻 x100" size="18" x="102"/>
+	<e:Button id="breakDown" skinName="Btn1Skin" label="分  解" name="breakDown" right="10" verticalCenter="0" width="110"/>
+	
+	
+</e:Skin>

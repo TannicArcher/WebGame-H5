@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GwMijingRankSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+<e:Rect id="bgClose" height="930" verticalCenter="0" horizontalCenter="0" width="580" fillAlpha="0.6" />
+	<e:Group id="anigroup" width="488" height="560" horizontalCenter="0" verticalCenter="-22.5"  anchorOffsetY="0">
+		<e:Image id="bg" source="tongyongkuang3bg" scale9Grid="5,6,40,38" left="0" right="0" top="0" bottom="0" />
+		<e:Image id="titlebg" y="0" source="tongyongkuang3tou" scale9Grid="66,18,271,12" left="0" right="0" />
+		<e:Label id="title" text="秘境通关排行" size="24" y="11" horizontalCenter="0" textColor="0x7e6437" bold="true" />
+		<e:Group x="8" y="45" width="470" height="41">
+			<e:Image id="titlebar" y="0" left="0" right="0"  source="pailietoubg2" scale9Grid="11,0,17,40"/>
+			<e:Image id="departline0" source="leibeifengexian" verticalCenter="0.5" height="30"  horizontalCenter="-131.5"/>
+			<e:Label id="titlerank" text="排名" size="20" y="11" textColor="0x7e6437" bold="true"  horizontalCenter="-184.5"/>
+			<e:Image id="departline1"   source="leibeifengexian" height="30"
+			         verticalCenter="0.5"  horizontalCenter="26.5"/>
+			<e:Label id="titlename" text="挑战者" size="20" y="11" textColor="0x7e6437" bold="true"  horizontalCenter="-49"/>
+			<e:Image id="departline2" source="leibeifengexian" height="30" verticalCenter="0.5" horizontalCenter="158.5"/>
+			<e:Label id="titleStorey" text="S级通关层数" size="20" y="11" textColor="0x7e6437" bold="true"  horizontalCenter="92"/>
+			<e:Label id="titletime" text="时间" size="20" y="11" textColor="0x7E6437" bold="true" horizontalCenter="191.5"/>
+		</e:Group>
+		<e:Scroller width="470" height="460" x="9" y="90"   scrollPolicyH="off" anchorOffsetY="0">
+			<e:List id="list" width="470" height="460"   itemRendererSkinName="GwMijingRankItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Group horizontalCenter="0" height="35" x="25" scaleX="1" scaleY="1" bottom="-35">
+			<e:Image source="bantoutiaobg" height="30" touchEnabled="false" scale9Grid="128,2,15,41" width="300" y="5"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" touchEnabled="false" y="10" x="48"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

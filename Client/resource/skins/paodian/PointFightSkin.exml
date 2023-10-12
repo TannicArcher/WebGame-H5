@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PointFightSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+<e:Group scaleX="1" scaleY="1" width="200" left="5" top="124">
+		<e:Image scale9Grid="6,5,12,12" scaleX="1" scaleY="1" source="tongyongtip3" left="0" right="0" top="0" bottom="0"/>
+		<e:Label text="倒计时:" size="18" scaleX="1" scaleY="1" textColor="0xFF9900" verticalCenter="0" left="51"/>
+	<e:Button id="help" label="按钮" skinName="Btn0Skin" icon="wenhao" scaleX="0.9" scaleY="0.9" left="7" verticalCenter="0"/>
+		<e:Label id="wholeLeftTime" text="14分59秒" size="18" scaleX="1" scaleY="1" textColor="0xFF0000" verticalCenter="0" left="113" textAlign="left" width="80"/>
+		<e:layout>
+		<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Button id="currentArea" bottom="140" right="5" rotation="360" anchorOffsetX="0" width="109" anchorOffsetY="0" height="49" skinName="PointCurrentButtonSkin"/>
+	<e:Image source="jqpd_bantoumingkuang" scale9Grid="2,57,2,3" width="552" top="5" horizontalCenter="0" height="118"/>
+	<e:Group top="10" horizontalCenter="0">
+		<e:Group x="158" y="38" scaleX="1" scaleY="1">
+			<e:Button id="area0"  rotation="360" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="3">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jqpd_3"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label id="name0" text="布拉格の冷血" y="67" size="14" horizontalCenter="0" textColor="0xd1c28f"/>
+			<e:Label id="guild0" text="布拉格の行会" y="84" size="14" horizontalCenter="0" textColor="0x5186fd"/>
+			<e:Label id="occupy0" text="点击占领" y="76" size="14" textColor="0x00FF00" bold="true" scaleX="1" scaleY="1" horizontalCenter="0" visible="false"/>
+		</e:Group>
+		<e:Group x="-81" y="48" scaleX="1" scaleY="1">
+			<e:Button id="area1"  rotation="360" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="3">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jqpd_3"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label id="name1" text="布拉格の冷血" y="67" size="14" horizontalCenter="0" textColor="0xd1c28f"/>
+			<e:Label id="guild1" text="布拉格の行会" y="84" size="14" horizontalCenter="0" textColor="0x5186fd"/>
+			<e:Label id="occupy1" text="点击占领" y="76" size="14" textColor="0x00FF00" bold="true" scaleX="1" scaleY="1" horizontalCenter="0" visible="false"/>
+		</e:Group>
+		<e:Group x="-71" y="58" scaleX="1" scaleY="1">
+			<e:Button id="area2" rotation="360" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jqpd_5"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label id="name2" text="布拉格の冷血" y="67" size="14" horizontalCenter="0" textColor="0xd1c28f"/>
+			<e:Label id="guild2" text="布拉格の行会" y="84" size="14" horizontalCenter="0" textColor="0x5186fd"/>
+			<e:Label id="occupy2" text="点击占领" y="76" size="14" textColor="0x00FF00" bold="true" scaleX="1" scaleY="1" horizontalCenter="0" visible="false"/>
+		</e:Group>
+		<e:Group x="-61" y="68" scaleX="1" scaleY="1">
+			<e:Button id="area3" rotation="360" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="3">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jqpd_3"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label id="name3" text="布拉格の冷血" y="67" size="14" horizontalCenter="0" textColor="0xd1c28f"/>
+			<e:Label id="guild3" text="布拉格の行会" y="84" size="14" horizontalCenter="0" textColor="0x5186fd"/>
+			<e:Label id="occupy3" text="点击占领" y="76" size="14" textColor="0x00FF00" bold="true" scaleX="1" scaleY="1" horizontalCenter="0" visible="false"/>
+		</e:Group>
+		<e:Group x="-51" y="78" scaleX="1" scaleY="1">
+			<e:Button id="area4" rotation="360" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="3">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="jqpd_3"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label id="name4" text="布拉格の冷血" y="67" size="14" horizontalCenter="0" textColor="0xd1c28f"/>
+			<e:Label id="guild4" text="布拉格の行会" y="84" size="14" horizontalCenter="0" textColor="0x5186fd"/>
+			<e:Label id="occupy4" text="点击占领" y="76" size="14" textColor="0x00FF00" bold="true" scaleX="1" scaleY="1" horizontalCenter="0" visible="false"/>
+		</e:Group>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

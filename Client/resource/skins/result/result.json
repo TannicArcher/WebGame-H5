@@ -1,0 +1,13 @@
+{"file":"result.png","frames":{
+"ZSgold":{"x":157,"y":213,"w":44,"h":40,"offX":3,"offY":5,"sourceW":50,"sourceH":50},
+"lost_02":{"x":1,"y":1,"w":165,"h":90,"offX":1,"offY":0,"sourceW":167,"sourceH":90},
+"ZSshengwang":{"x":53,"y":181,"w":50,"h":48,"offX":0,"offY":0,"sourceW":50,"sourceH":50},
+"win_02":{"x":1,"y":93,"w":155,"h":86,"offX":1,"offY":0,"sourceW":157,"sourceH":87},
+"ZSexp":{"x":203,"y":213,"w":40,"h":39,"offX":5,"offY":5,"sourceW":50,"sourceH":50},
+"ZSlingpo":{"x":209,"y":159,"w":31,"h":37,"offX":10,"offY":6,"sourceW":50,"sourceH":50},
+"ZShonor":{"x":168,"y":1,"w":55,"h":59,"offX":5,"offY":3,"sourceW":64,"sourceH":64},
+"ZSprestige":{"x":158,"y":93,"w":64,"h":64,"offX":0,"offY":0,"sourceW":64,"sourceH":64},
+"ZScoin":{"x":105,"y":181,"w":50,"h":38,"offX":0,"offY":10,"sourceW":50,"sourceH":50},
+"ZSguildgx":{"x":105,"y":221,"w":26,"h":26,"offX":0,"offY":0,"sourceW":26,"sourceH":26},
+"ZSguildfund":{"x":1,"y":181,"w":50,"h":50,"offX":0,"offY":0,"sourceW":50,"sourceH":50},
+"ZSchip":{"x":158,"y":159,"w":49,"h":52,"offX":8,"offY":6,"sourceW":64,"sourceH":64}}}

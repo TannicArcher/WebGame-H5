@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WJBattleDataItemSkin" width="475" height="37" currentState="data" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="data,result" >
+	<e:Image id="bg" width="475" height="37" x="0" y="0" source="wj_data_item_bg1"/>
+	<e:Label id="nickLabel" text="名字最多六字" x="18" y="7" size="22" fontFamily="黑体" textColor="0x3de218" width="141"/>
+	<e:Label id="numLabel" text="11/10/16" x="225" y="7" size="22" fontFamily="黑体" x.data="212" textColor="0xFFFFFF" x.result="177" anchorOffsetX="0" width="118" anchorOffsetY="0" height="29.5" textAlign="center"/>
+	<e:Label id="collectFlagLabel" text="5" x="349" y="7" size="22" fontFamily="黑体" anchorOffsetX="0" width="33" textAlign="center" x.data="409" textColor="0xFFF303" x.result="329"/>
+	<e:Label id="honorLabel" text="100" x="412" y="7" size="22" fontFamily="黑体" anchorOffsetX="0" width="51" anchorOffsetY="0" height="27" textAlign="center" textColor="0xFFFFFF" visible.data="false" x.result="381" width.result="90"/>
+	<e:Image id="mvpImg" source="wjBattle_json.wj_mvp_green" x="-30" y="-7" visible.data="false" x.result="-11"/>
+	<e:Image id="firstKillImg" source="wjBattle_json.wj_first_kill_icon" x="199" y="3" x.result="162" y.result="6" visible.data="false" visible.result="false"/>
+</e:Skin>

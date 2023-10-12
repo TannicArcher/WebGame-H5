@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="ChestSkinState" minHeight="50" minWidth="100" currentState="Tips" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="Tips,box,room"  width="210" height="200">
+	<w:Config id="15a6a784557"/>
+	<e:Image source="tongyonglabbg" x="1" y="2"  width="210"  height="200"   scale9Grid="38,20,52,42"/>
+	<e:Image id="imgBox" y.room="0" y.Tips="0" pixelHitTest="true" visible.room="false" source.box="chest1_png" scaleX.box="0.8" scaleY.box="0.8" horizontalCenter.box="0" verticalCenter.box="0" source="chest1_png" scaleX="0.8" scaleY="0.8" verticalCenter="0" horizontalCenter="0" visible.Tips="false"/>
+	<e:Image id="quality" source="runequal5_1_png" x="0" y="0" touchEnabled="false" pixelHitTest="true" visible.room="false" visible.box="false"/>
+	<e:Label id="labelTips" text="等级达到X转开启"  width="129" textAlign="center" size="20" visible.box="false" visible.room="false" verticalCenter="0" horizontalCenter="0"/>
+	<e:Label id="labelName" text="Label" x="75.5" y="174" visible.Tips="false" visible.room="false" size="20"/>
+</e:Skin>

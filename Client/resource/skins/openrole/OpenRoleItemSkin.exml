@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OpenRoleItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="420" width="450">
+	<e:Image touchEnabled="false" pixelHitTest="true" horizontalCenter="0" source="optaizi" y="360"/>
+	<e:Image id="weapon" y="114" scaleX="0.6" scaleY="0.6" touchEnabled="false" pixelHitTest="true" horizontalCenter="-141" source="weapon104_0_c_png" visible="false"/>
+	<e:Image id="body" touchEnabled="false" pixelHitTest="true" horizontalCenter="-37" source="op_zs0_png" y="40"/>
+
+
+	<e:Image id="job" y="20" pixelHitTest="true" touchEnabled="false" horizontalCenter="0" source="op_1"/>
+	<e:Image id="openedImg" y="224" touchEnabled="false" pixelHitTest="true" horizontalCenter="0" source="opyikaiqi" visible="false"/>
+</e:Skin>

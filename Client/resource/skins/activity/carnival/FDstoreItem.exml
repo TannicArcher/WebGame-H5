@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FDstoreItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="180" height="180">
+	<w:Config id="1586bde13e1"/>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scitembg" scale9Grid="54,26,4,1"/>
+	<e:Image height="24" y="83" source="bantoutiaobg2" scale9Grid="44,4,2,8" width="112" horizontalCenter="0"/>
+	<ns1:BaseComponent id="itemIcon" verticalCenter="-35" horizontalCenter="4" skinName="ItemSkin" className="ItemBase"/>
+	<e:Button id="buyBtn" label="购 买" name="buy" x="41" y="135" skinName="Btn15Skin" height="40" width="102"/>
+	<e:Group id="discount" x="15" y="1">
+		<e:Image y="0" source="activityStoreDiscountIcon" horizontalCenter="0" anchorOffsetY="0" height="100"/>
+		<e:Label id="limitCount" text="5" x="11" y="43" textColor="0x00ff00" size="20"/>
+
+	</e:Group>
+	<e:Group id="cost" y="110" horizontalCenter="0.5">
+		<e:Image id="costIcon" x="0" y="0" source="200334_png" width="26" height="26"/>
+		<e:Label id="money" text="X1111" y="0" size="22" x="0" textColor="0xf8b141"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0" horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+
+</e:Skin>

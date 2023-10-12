@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UIshowDropNoticeSkin" width="350" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="18">
+	<w:Config id="158bee9d011"/>
+	<e:Group id="textGroup" left="2" width="350" verticalCenter="0">
+
+
+		<e:Label id="showText" x="0" textColor="0xd1c28f" size="16" text="xxxxxxxxxxxxxxx" verticalAlign="middle"/>
+	</e:Group>
+	
+	
+</e:Skin>

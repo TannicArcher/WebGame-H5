@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CheckMapItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="150" height="150">
+	<e:Group width="150" height="150">
+		<e:Group id="chapter" x="0" width="150" height="150" y="0">
+			<e:Image id="box" source="map_01" x="10" y="0"/>
+			<e:Rect width="150" height="48" strokeAlpha="0.4" fillAlpha="0.2" y="102" x="0"/>
+			<e:Image id="bg" height="50" source="bantoutiaobg2" scale9Grid="0,4,92,12" width="150"  x="0" y="100"/>
+			<e:Image id="leftpoint" source="tongyongdian2" y="107" x="2"/>
+			<e:Image id="rightpoint" source="tongyongdian2" y="107" x="133"/>
+			<e:Label id="nameTxt" text="9.东毒蛇山谷" y="106" size="18" bold="true" textAlign="center" verticalAlign="middle" textColor="0xd1c28f" x="21"/>
+			<e:Image id="departline" source="tongyongline" width="150" height="3" x="0" y="126"/>
+			<e:Label id="chapterCount" text="1000-7000关" size="16" bold="true" textAlign="center" verticalAlign="middle" width="100" height="14" bottom="4" textColor="0x7e6437" x="25"/>
+			<e:Group id="rewardGroup" y="-30" width="64" height="64" x="43">
+				<e:Image id="arrow" y="64" rotation="90" horizontalCenter="0" source="jiantouyou2"/>
+				<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" scaleX="0.88" scaleY="0.88" horizontalCenter="-0.5" verticalCenter="1.5"/>
+			</e:Group>
+			<e:Image id="passImg" source="zdbosstongguan" horizontalCenter="0" verticalCenter="12" scaleX="1.1" scaleY="1.1" visible="false"/>
+		</e:Group>
+		<!--<e:Group id="reward" x="150" width="200" height="150" verticalCenter="0" touchEnabled="false">
+			<e:Image source="worldMap_json.mapdajiantou" x="-34" width="34" height="88" verticalCenter="0"/>
+			<e:Image   source="tongyongtip3" scale9Grid="9,9,11,10" left="0" right="0" top="0" bottom="0"/>-->
+			<!--<ns1:BaseComponent id="item0" y="46" className="ItemBase" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" x="64"/>-->
+
+			<!--<e:Image source="teshuwenzibg" y="4" horizontalCenter="0"/>
+			<e:Label id="title" text="通关奖励" y="12" size="20" textColor="0xEDB107" bold="true" horizontalCenter="0"/>
+			<e:Label id="rew" text="距离毒蛇山谷还差9999关" size="16" horizontalCenter="0" bottom="14" textColor="0x9f946d"/>
+			<e:Button id="rewardBtn" label="领取" horizontalCenter="0" bottom="8" skinName="Btn6Skin" height="30" width="70" visible="false"/>
+		</e:Group>-->
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="XNHongBaoItem" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*"
+        xmlns:w="http://ns.egret.com/wing" width="527" height="247"  states="10,100,1000" >
+	<w:Config id="15a98a3982e" />
+	<e:Label text="发放大红包消耗100点红包积分，本服玩家可抢" size="20" horizontalCenter="0" textColor="0x7e6437" bold="true" bottom="2" text.1000="发放超级红包消耗1000点红包积分，战区内玩家可抢" text.10="发放小红包消耗10点红包积分，本服玩家可抢" text.100="发放大红包消耗100点红包积分，本服玩家可抢" textColor.1000="0xd1c28f" textColor.100="0xd1c28f" textColor.10="0xd1c28f"/>
+	<e:Image anchorOffsetX="0" anchorOffsetY="0" top="47" left="36" source="xn_yuanbao2_png" source.10="xn_yuanbao1_png" top.10="20" left.10="7" source.1000="xn_yuanbao3_png" top.1000="30" left.1000="19" left.100="22" top.100="30"/>
+	<e:Image x="185" y="11" source="xn_hongbaoarrow" y.1000="11" x.1000="185" y.10="20"/>
+</e:Skin>

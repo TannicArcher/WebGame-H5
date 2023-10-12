@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Zaoyurewardskin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" >
+	<w:Config id="159b5e0f988"/>
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/> 
+	<e:Group name="上周" height="620" width="530" horizontalCenter="0" verticalCenter="-55">
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-38" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-32" textColor="0x7E6437"/>
+		<e:Image     source="tongyongkuang3bg" scale9Grid="10,5,28,31" left="0" right="0" top="0" bottom="0"/>
+		<e:Image y="0" source="tongyongkuang3tou" left="0" right="0" scale9Grid="74,9,265,38"/>
+		<e:Group id="dinghong" height="41" bottom="4" left="6" right="6">
+
+			<e:Image width="259" x="0" top="0" bottom="0" source="bantoumingkuang3" />
+			<e:Image width="259" scaleX="-1" top="0" bottom="0" right="0" source="bantoumingkuang3" />
+		</e:Group>
+		<e:Image source="gantanhao" bottom="14" right="185"/>
+		<e:Label text="每日0点结算" size="20" textColor="0x7e6437" bottom="14" right="63"/>
+		<e:Label y="10" text="PK每日奖励说明" size="24" horizontalCenter="0" textColor="0xa67d44" bold="true"/>
+		<e:Image y="48" width="500" horizontalCenter="0" source="bantoutiaobg" scale9Grid="29,5,180,35"/>
+		<e:Label y="61" text="排    名" size="20" x="128" bold="true" textColor="0x444134"/>
+		<e:Label y="61" text="奖    励" size="20" x="362" bold="true" textColor="0x444134"/>
+		<e:Image source="pailietouline" x="280" y="56"/>
+		<e:Label id="myRankText" text="我的当前排名：123" size="20" bottom="14" textColor="0xd1c28f" x="71"/>
+		<e:Scroller width="500" horizontalCenter="0" height="482" y="93">
+		<e:List id="list0" x="-3" y="29" itemRendererSkinName="ZaoyurewardItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="0" horizontalAlign="center"/>
+			</e:layout>
+		</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

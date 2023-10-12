@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DoneRecordItemSkin" width="420" height="30" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15a59527d66"/>
+	<e:Label id="des0" text="布拉格の沉默掠夺了我的黑铁矿" size="18" verticalAlign="middle" textColor="0xd1c28f"   verticalCenter="0" left="15"/>
+	<e:Image source="tongyongline" scale9Grid="105,0,10,3" left="0" right="0" bottom="3" visible="false"/>
+</e:Skin>

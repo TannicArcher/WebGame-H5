@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SkillItem" width="540" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1586b22db6d"/>
+	<e:Image id="bg"   left="0" top="0" bottom="0" right="0" source="tongyonglabbg" scale9Grid="36,21,51,39"/>
+	<e:Image id="iconBG" source="quality0" x="22" width="72" height="72" verticalCenter="0" scale9Grid="8,8,48,48"/>
+	<e:Image id="icon" x="29" verticalCenter="0" width="58" height="58"/>
+	<e:Label id="skillName" y="14" text="技能名字" size="20" x="117" textAlign="left" bold="true" textColor="0xd1c28f"/>
+	<e:Image id="select" width="76" height="76" x="20" verticalCenter="0" source="xuanzhongkuang2" scale9Grid="4,4,8,8" visible="false"/>
+	<e:Label id="lv" text="Lv.100" y="14" size="20" x="245" bold="true" textColor="0xd1c28f"/>
+	<e:Label id="lock" text="00级开启" x="34" width="50" size="20" textAlign="center" verticalAlign="middle" height="50" strokeColor="0x000000" verticalCenter="0" bold="true" stroke="1" textColor="0xef626b"/>
+	<e:Label id="skillDesc" y="42" text="技能效果技能效果技能效果技能效果技能效果技能效果技能效果" size="18" height="54" x="110" width="290" textColor="0x8e764d"/>
+	<e:Label id="costAll" y="13" size="18" text="100000" x="441" textAlign="center" width="87" bold="true" textColor="0xd1c28f"/>
+	<e:Image id="coinIcon1" x="416" y="12" source="szjinbi"/>
+	<e:Button id="grewUpAllBtn" y="40" label="升级" skinName="Btn3Skin" right="22"/>
+	<e:Image source="jineng_json.jinengline2" x="112" y="35"/>
+</e:Skin>

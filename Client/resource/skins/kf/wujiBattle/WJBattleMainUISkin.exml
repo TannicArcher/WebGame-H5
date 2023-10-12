@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WJBattleMainUISkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group anchorOffsetY="0" height="76" right="2" top="0">
+		<e:Image source="wjBattle_json.wj_panel_bg" x="1" y="0" scale9Grid="125,8,58,55" anchorOffsetX="0" width="195"/>
+		<e:Image source="wjBattle_json.wj_panel_bg" x="372" y="0" scale9Grid="125,8,58,55" scaleX="-1" anchorOffsetX="0" width="177.5"/>
+		<e:Label id="overTimerLabel" text="00:50:41" x="291" y="42" size="18" bold="true" textColor="0xE3D784" fontFamily="黑体"/>
+		<e:Image source="wjBattle_json.wj_act_timer" x="285" y="9"/>
+		<e:Label id="winTermLabel" text="积分率先达到10000获胜" x="51" y="9" size="18" fontFamily="黑体" textColor="0xE3D784"/>
+		<e:Group id="jifenjindu" anchorOffsetY="0" height="36" width="280" y="35" x="0" scaleX="1" scaleY="1">
+			<e:Image anchorOffsetX="0" source="wj_per_bg" x="2" y="-26" width="140" scale9Grid="53,1,1,0" visible="false"/>
+			<e:Image anchorOffsetX="0" x="30" y="7" source="wj_green_bar" width="110" scale9Grid="2,18,1,1" height="22" visible="false"/>
+			<e:Image x="280" y="-26" scaleX="-1" anchorOffsetX="0" source="wj_per_bg" width="140" scale9Grid="50,1,1,0" visible="false"/>
+			<e:Image anchorOffsetX="0" x="142" y="7" width="110" height="22" source="wj_red_bar" scale9Grid="17,18,1,1" visible="false"/>
+			<e:ProgressBar id="myScoreBar" y="-25" value="70" left="0" right="140" skinName="battleScorebarSkin"/>
+			<e:ProgressBar id="enemyScoreBar" y="-25" value="40" left="141" right="-1" skinName="battleScorebarSkin" scaleX="-1"/>
+			<e:Label id="enemyScoreLabel" text="585" x="161" y="9" size="18" fontFamily="黑体" textColor="0xE3D784" anchorOffsetX="0" width="74" anchorOffsetY="0" height="18" textAlign="center"/>
+			<e:Label id="myScoreLabel" text="5555" x="50" y="9" size="18" fontFamily="黑体" textColor="0xE3D784" textAlign="center" anchorOffsetX="0" width="81"/>
+			<e:Image x="13" y="2" anchorOffsetX="0" source="wj_me"/>
+			<e:Image x="235" y="2" anchorOffsetX="0" source="wj_enemy"/>
+		</e:Group>
+	</e:Group>
+
+	<e:Group horizontalCenter="19.5" bottom="8">
+		<e:Image x="0" y="0" anchorOffsetX="0" width="353" anchorOffsetY="0" height="128" source="wjBattle_json.wj_chat_panel_bg" scale9Grid="62,49,10,4"/>
+		<e:Label text="我的战绩：" x="19" y="10" size="20" fontFamily="黑体" textColor="0xb5b1a6"/>
+		<e:Image source="wjBattle_json.wj_xiaojian" x="134" y="10"/>
+		<e:Label id="killTxt" text="5" x="166" y="10" size="20" fontFamily="黑体" textColor="0xB5B1A6" anchorOffsetX="0" width="33"/>
+		<e:Image source="wjBattle_json.wj_quantou" x="239" y="10"/>
+		<e:Label id="deadTxt" text="5" x="218" y="10" size="20" fontFamily="黑体" textColor="0xB5B1A6" anchorOffsetX="0" width="33"/>
+		<e:Image source="wjBattle_json.wj_xiaoqizi" x="288" y="10"/>
+		<e:Label id="assistsTxt" text="5" x="270" y="10" size="20" fontFamily="黑体" textColor="0xB5B1A6" anchorOffsetX="0" width="33"/>
+		<e:Image source="wjBattle_json.wj_kulou" x="190" y="10"/>
+		<e:Label id="collectTxt" text="5" x="316" y="10" size="20" fontFamily="黑体" textColor="0xB5B1A6" anchorOffsetX="0" width="33"/>
+		<e:List id="chatList" width="353" height="91" x="1" y="35" anchorOffsetY="0" anchorOffsetX="0" itemRendererSkinName="WJBattleMainUIChatItem1Skin">
+		</e:List>
+		<e:Button id="flag1" label="按钮" skinName="Btn0Skin" icon="wjBattle_json.wj_red_flag" x="30" y="130.5" scaleX="1" scaleY="1"/>
+		<e:Button id="flag2" label="按钮" skinName="Btn0Skin" icon="wjBattle_json.wj_green_flag" x="137.5" y="130.5" scaleX="1" scaleY="1"/>
+		<e:Button id="flag3" label="按钮" skinName="Btn0Skin" icon="wjBattle_json.wj_gray_flag" x="245.5" y="130.5" scaleX="1" scaleY="1"/>
+		<e:Label text="占领旗子后，每隔一段时间增加积分" x="33" y="212" size="18" fontFamily="黑体" scaleX="1" scaleY="1" textColor="0xF6D788"/>
+		<e:Rect id="viewArea" width="345" height="29" x="4" y="5" anchorOffsetX="0" anchorOffsetY="0" fillAlpha="0"/>
+	</e:Group>
+	<ns1:BaseComponent id="minMap" width="200" height="200" skinName="SmallMapSkin" className="SmallMapPanel" top="0" left="0"/>
+	<e:Button id="sChatBtn" skinName="Btn0Skin" icon="zjmyoujian" scaleX="1.2" scaleY="1.2" right="26" bottom="190"/>
+	<e:Group id="sChatGroup" bottom="230" right="4" visible="false">
+		<e:Image source="tongyong_json.chatbg2" x="0" y="0" scale9Grid="1,1,8,8" anchorOffsetX="0" width="210" anchorOffsetY="0" height="297"/>
+		<e:Scroller width="200" height="285" x="5" y="9" anchorOffsetY="0">
+		<e:List id="sChatList" width="200" height="276" x="2" y="-13" anchorOffsetY="0" anchorOffsetX="0" itemRendererSkinName="WJBattleMainUIChatItemSkin" scaleX="1" scaleY="1">
+		</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

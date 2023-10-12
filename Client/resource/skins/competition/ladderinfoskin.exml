@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ladderinfoskin" width="560" height="716" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" >
+	<w:Config id="159b5e0f988"/>
+	<e:Image width="554" height="400" horizontalCenter="0" source="ladderbg_png" bottom="54"/>
+	<e:Group width="554" height="230" horizontalCenter="0" top="42">
+		<e:Image source="tielian" x="46" y="-42"/>
+		<e:Image source="tielian" y="-42" right="46"/>
+		<e:Image left="0" right="0" top="0" bottom="0" source="shitouban" scale9Grid="21,18,10,13"/>
+		<e:Image source="bantoutiaobg2" x="179" width="360" height="190" scale9Grid="0,3,92,13" verticalCenter="0"/>
+		<e:Image source="tongyongline" x="217" y="80" width="260"/>
+		<e:Group id="pipeiPlus" x="20" verticalCenter="0">
+			<ns1:BaseComponent id="starInfo" skinName="LadderSratListSkin" className="LadderStarListView"/>
+		</e:Group>
+		<e:Image source="anwen2" x="252" y="111" height="20" width="40"/>
+		<e:Image source="anwen2" x="252" y="140" height="20" width="40"/>
+		<e:Image id="winImg" y="-4" scale9Grid="25,23,9,22" x="438" source="jjliansheng"/>
+		<e:Label text="我的段位" x="258" y="52" size="20" textColor="0xd1c28f"/>
+		<e:Label text="我的排名" x="300" y="112" size="18" textColor="0x9f946d"/>
+		<e:Label text="净胜场次" x="300" y="141" size="18" textColor="0x9f946d"/>
+		<e:Label id="winNum" text="100" x="388" y="141" size="18" textColor="0x9f946d"/>
+		<e:Label id="winNum0" text="100" x="388" y="112" size="18" textColor="0x9F946D"/>
+		<e:Label id="duanwei" text="青铜四段" x="350" y="52" size="20" textColor="0xf8b141"/>
+		<e:Label id="showNomber" text="当前排名" x="450" y="180" size="20" textColor="0x35e62d"/>
+		<e:Label id="showNomber0" text="上周排名" x="350" y="180" size="20" textColor="0x35E62D"/>
+	</e:Group>
+	<e:Image horizontalCenter="0" bottom="396" source="jjbiaoti"/>
+	<e:Label text="段位奖励预览" size="20" horizontalCenter="0.5" bottom="410" bold="true" textColor="0xbd600d"/>
+
+
+
+	<e:Scroller horizontalCenter="0" bottom="251">
+		<e:List id="rewardList" itemRendererSkinName="ItemSkin">
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+
+	<e:Label id="showReward" text="更多段位奖励" size="20" textColor="0x35e62d" horizontalCenter="0" bottom="210"/>
+	<e:Image source="bantoutiaobg" horizontalCenter="0" width="500" bottom="100" scale9Grid="50,5,136,35" height="26"/>
+	<e:Label id="truceIng" text="竞技时间:周一10:00 -周日22:00 （周日22:30结算）" size="18" horizontalCenter="20.5" textColor="0x7e6437" bottom="103"/>
+	<e:Image source="gantanhao" bottom="101" horizontalCenter="-198"/>
+	<e:Group id="dinghong0" width="556" height="100" bottom="0" horizontalCenter="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0"/>
+	</e:Group>
+	<e:Group id="openInfo" horizontalCenter="0" bottom="10">
+		<e:Button id="flowPlayer" label="匹配对手" skinName="Btn1Skin" y="22" horizontalCenter="0"/>
+		<e:Label id="lastNum" text="剩余次数：5次" y="0" size="20" bold="true" textColor="0x9f946d" horizontalCenter="0"/>
+		<e:Label id="buyTime" text="购买匹配次数" size="20" textColor="0x35e62d"   bottom="20" horizontalCenter="170"/>
+	</e:Group>
+	<e:Label id="noOpenDesc" text="活动结算中" width="291" horizontalCenter="0" textAlign="center" size="24" textColor="0xd1c28f" bottom="65" visible="false"/> 
+</e:Skin>

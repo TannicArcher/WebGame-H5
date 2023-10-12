@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="heartmethodTips" currentState="lock" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*" width="580" height="930">
+	<w:Config id="1586b3502a7" />
+	<e:Rect id="bgClose" fillAlpha="0.8" top="0" left="0" right="0" bottom="0" />
+
+	<e:Group id="group" horizontalCenter="0" verticalCenter="0">
+		<e:Group id="mcGroup" y="0" horizontalCenter="0">
+		<e:Image id="background" source="tongyongtip1" scale9Grid="7,6,11,12" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="wingbg4_png" width="350" scale9Grid="1,355,393,157" top="5" bottom="5" horizontalCenter="0" right="5" left="5"/>
+		<e:Image id="qualityImg" left="0" right="0" source="quali3" top="2" x="0" y="2" scale9Grid="9,1,10,1"/>
+		<e:Image source="tongyongtip2" left="0" right="0" scale9Grid="18,18,2,4" top="0" bottom="0"/>
+		<e:Label id="nameLabel" text="无影·上篇" size="30" textAlign="left" bold="true" top="10" y="20" horizontalCenter="0.5" textColor="0xFFFDFD"/>
+			<e:Group width="500" height="60" id="starGroup" scaleX="0.8" scaleY="0.8" horizontalCenter="0" top="47"/>
+		<e:Image y="278" scale9Grid="85,1,6,1" width="340" source="bantoutiaobg" x="5"/>
+			<e:Group id="ModelGroup" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-113">
+				<e:Image id="icon" source="wydbigicon1_png" horizontalCenter="0" verticalCenter="0"/>
+				<e:Group id="effGroup" verticalCenter="-4.5" horizontalCenter="2.5"/>
+			</e:Group>
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" y="268" x="51" className="PowerPanel"/>
+		<e:Group y="338" horizontalCenter="0.5">
+			<e:Group y="0" width="325" horizontalCenter="0" x="0" height="116">
+			<e:Label id="attr" text="生       命：\n攻       击：\n物       防：\n魔       防：" size="18" verticalAlign="justify" x="41" textAlign="left" textColor="0xFFFFCC" verticalCenter="0"/>
+			<e:Label id="value" text="+1000\n+2000\n+3000\n+4000" size="18" verticalAlign="justify" x="131" textAlign="left" textColor="0x00FF00" verticalCenter="0"/>
+
+
+
+
+
+
+			<e:Image source="tongyongline" y="117" width="289" horizontalCenter="0" scale9Grid="109,0,12,3"/>
+			</e:Group>
+			<e:Group y="70" width="325" horizontalCenter="0" x="0" height="30">
+			<e:Label id="cost" y="0" text="消耗 xxx x1" size="18" x="0" textColor="0xFFFFCC"/>
+
+
+
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="bottom"/>
+			</e:layout>
+			</e:Group>
+			<e:layout>
+			<e:VerticalLayout horizontalAlign="center" gap="6"/>
+			</e:layout>
+		</e:Group>
+			<e:Group id="btn" width="326" height="70" y="496" horizontalCenter="0">
+				<e:Button id="addStar" label="升星" icon="xb_25" skinName="Btn1Skin" width="130" height="50" horizontalCenter="-98" y="0"/>
+				<e:Image id="redPoint1" source="zjmhongdian" horizontalCenter="-42" y="-5"/>
+				<e:Button id="replace" label="替 换" icon="xb_26" skinName="Btn1Skin" width="130" height="50" x="195" y="0"/>
+				<e:Image id="redPoint2" source="zjmhongdian" horizontalCenter="153" verticalCenter="-28"/>
+
+			</e:Group>
+		</e:Group>
+		<e:Group y="218" horizontalCenter="0" height="35">
+		<e:Image source="bantoutiaobg" height="30" touchEnabled="false" scale9Grid="128,2,15,41" width="300" y="5"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" touchEnabled="false" y="10" x="48"/>
+		</e:Group>
+		<e:layout>
+		<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="0"/>
+		</e:layout>
+	</e:Group>
+
+</e:Skin>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuneEquipChangeSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="equip" >
+	<w:Config id="15a6a432acd"/>
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Group width="500" height="700" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="tongyongkuang3bg" scale9Grid="9,4,34,37" left="0" right="0" top="2" bottom="0"/>
+		<e:Image width="500" source="tongyongkuang3tou" scale9Grid="66,0,273,47"/>
+		<e:Label text="更    换"   size="24" bold="true" textColor="0xF4C127" y="12" horizontalCenter="0"/>
+		<e:Scroller id="scroll" width="480" height="520" y="170" horizontalCenter="0">
+			<e:List id="list" width="580" height="629"  useVirtualLayout="false" horizontalCenter="0" verticalCenter="0" itemRendererSkinName="RuneEquipChangeSkinItem">
+			</e:List>
+		</e:Scroller>
+		<e:Group id="itemGroup" width="479"  height="116"  x="10" y="49"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildWarMemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" height="930" width="580">
+	<e:Rect id="bgClose" fillAlpha="0.6" right="0" left="0" top="0" bottom="0"/>
+
+
+	
+	<e:Group width="450" height="666" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,271,47" y="0" left="0" right="0"/>
+		<e:Label text="查看行会成员状态" size="22" textColor="0xa67d44" x="137" y="13"/>
+		<e:Scroller width="430" height="610" y="45" horizontalCenter="0">
+			<e:List id="list" y="2" itemRendererSkinName="WarMemSkin" x="0">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Button id="closeBtn0" label="按钮" x="434" y="50" skinName="Btn0Skin" visible="false"/>
+	<e:Button id="closeBtn" label="按钮" x="408" y="617" skinName="Btn0Skin" visible="false"/>
+	
+</e:Skin>

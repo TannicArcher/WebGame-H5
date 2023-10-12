@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="hunshouSweepSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" width="400" height="300">
+		<e:Image source="tongyongkuang3bg" left="0" right="0" top="2" bottom="0" scale9Grid="12,6,21,25"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0" scale9Grid="225,45,13,2"/>
+		<e:Group id="sweepTips" width="375" height="169" y="44" horizontalCenter="0.5">
+			<e:Label id="sweepFb" size="20" text="扫荡副本：" horizontalCenter="-117.5" bold="true" textColor="0xBD600D" y="10"/>
+			<e:Label id="fbName" size="20" text="第100层 魂" y="10" textAlign="left" textColor="0x04FE13" left="123"/>
+			<e:Label id="rewardTimes" size="20" text="剩余次数：" horizontalCenter="-117.5" y="33" bold="true" textColor="0xBD600D"/>
+			<e:Label id="times" size="20" text="1" y="33" textColor="0x04FE13" textAlign="center" horizontalCenter="-41.5"/>
+			<e:Label id="timesText" size="20" text="次" y="33" textColor="0x04FE13" textAlign="left" horizontalCenter="-22.5"/>
+			<e:Label id="title4" size="20" text="获得奖励：" horizontalCenter="-117.5" y="55" bold="true" textColor="0xBD600D"/>
+			<e:List id="reward" y="90" horizontalCenter="0.5" itemRendererSkinName="ItemSkin">
+				<e:layout>
+				<e:HorizontalLayout/>
+				</e:layout>
+			</e:List>
+		</e:Group>
+		<e:Label id="title" size="24" text="扫荡成功" horizontalCenter="0" y="11" bold="true" textColor="0xBD600D"/>
+		<e:Button id="closeBtn" label="关闭" width="120" height="50" skinName="Btn3Skin" bottom="20" horizontalCenter="80"/>
+		<e:Button id="nextBtn" label="继续扫荡" bottom="20" horizontalCenter="-80" width="120" height="50" skinName="Btn3Skin"/>
+	</e:Group>
+</e:Skin>

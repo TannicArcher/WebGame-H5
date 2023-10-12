@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="chuangtianguanDayReward" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15a98a3982e" />
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6" width="460" 
+	         height="610" />
+	<e:Group width="450" height="600" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="tongyongkuang3bg" scale9Grid="23,24,3,2"   
+		           left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyonglabbg" y="40" height="368" scale9Grid="13,9,102,51"
+		          left="6" right="6"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="71,5,267,37"   left="0" right="0"/>
+		<e:Label text="恭喜您获得" size="24" y="10" textColor="0xbd600d" bold="true"  horizontalCenter="0"/>
+		<!--<e:List id="cruList" y="74" itemRendererSkinName="ItemSkin"  width="389"  height="321" x="39">
+		<e:layout>
+			<e:TileLayout/>
+		</e:layout>
+	</e:List>
+	-->
+	<e:Group id="listCon" width="390" height="320" horizontalCenter="0" y="60">
+		<e:layout>
+			<e:TileLayout verticalGap="2" requestedRowCount="3" requestedColumnCount="4" horizontalGap="10"
+			              horizontalAlign="center" />
+		</e:layout>
+	</e:Group>
+		<e:Image y="416" source="chest1_png" width="130" height="120" horizontalCenter="0"/>
+		<e:Button id="GetRewardBtn0" label=" 领取奖励（9）" skinName="Btn1Skin" width="160" horizontalCenter="0" bottom="10"/>
+</e:Group>
+</e:Skin>

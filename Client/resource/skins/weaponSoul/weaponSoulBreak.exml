@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="weaponSoulBreak" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15dc1d89cd5"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="0" height="600" width="450">
+		<e:Image source="tongyongkuang3bg" scale9Grid="6,6,38,38" bottom="0" left="0" top="0" right="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="67,5,272,37" y="0" left="0" right="0"/>
+		<e:Image source="weapsbg2_png" left="6" right="6" top="48" bottom="88"/>
+		<e:Label id="title" text="激活" size="24" y="11" horizontalCenter="0" textColor="0xf8b141" bold="true"/>
+		<e:Group width="440" height="88" bottom="0" horizontalCenter="0">
+			<e:Image width="220" top="0" bottom="0" source="bantoumingkuang3" />
+			<e:Image width="220" scaleX="-1" top="0" bottom="0" right="0" source="bantoumingkuang3" />
+		</e:Group>
+		<e:Group id="star" y="55" width="278" height="278" horizontalCenter="0">
+			<e:Image id="cirimg" source="wepsyuan_png" width="260" height="260" horizontalCenter="0" verticalCenter="0"/>
+			<ns1:BaseComponent id="item1" skinName="ItemIconSkin" className="ItemIcon" horizontalCenter="0" verticalCenter="0"/>
+			<e:Group id="star0" y="0" horizontalCenter="0">
+			<e:Image source="wps1" verticalCenter="0" horizontalCenter="0"/>
+			<e:Image source="wps2" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image id="s0" source="wps3" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+			<e:Group id="star1" horizontalCenter="80" verticalCenter="-88">
+				<e:Image source="wps1" verticalCenter="0" horizontalCenter="0"/>
+				<e:Image source="wps2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="s1" source="wps3" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+			<e:Group id="star2" verticalCenter="-18" right="0">
+				<e:Image source="wps1" verticalCenter="0" horizontalCenter="0"/>
+				<e:Image source="wps2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="s2" source="wps3" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+			<e:Group horizontalCenter="106" id="star3" verticalCenter="58">
+				<e:Image source="wps1" verticalCenter="0" horizontalCenter="0"/>
+				<e:Image source="wps2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="s3" source="wps3" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+			<e:Group horizontalCenter="46" id="star4" bottom="6">
+				<e:Image source="wps1" verticalCenter="0" horizontalCenter="0"/>
+				<e:Image source="wps2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="s4" source="wps3" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+			<e:Group horizontalCenter="-48" id="star5" bottom="8">
+				<e:Image source="wps1" verticalCenter="0" horizontalCenter="0"/>
+				<e:Image source="wps2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="s5" source="wps3" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+			<e:Group id="star6" verticalCenter="58" horizontalCenter="-106">
+				<e:Image source="wps1" verticalCenter="0" horizontalCenter="0"/>
+				<e:Image source="wps2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="s6" source="wps3" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+			<e:Group id="star7" verticalCenter="-18" x="0">
+				<e:Image source="wps1" verticalCenter="0" horizontalCenter="0"/>
+				<e:Image source="wps2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="s7" source="wps3" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+			<e:Group horizontalCenter="-80" id="star8" verticalCenter="-88">
+				<e:Image source="wps1" verticalCenter="0" horizontalCenter="0"/>
+				<e:Image source="wps2" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image id="s8" source="wps3" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="jihuo" width="400" height="240" horizontalCenter="0" bottom="16" visible="false">
+			<e:Image source="shuxingbg" left="0" right="0" height="136" y="30" scale9Grid="50,5,65,34"/>
+			<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="230" left="-30"/>
+			<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="230" scaleX="-1" right="-30"/>
+			<e:Group id="attr" horizontalCenter="16.5" verticalCenter="-19">
+				<e:Label id="jhattr0" text="攻击+10000" size="22" textColor="0x9F946D" y="0" horizontalCenter="0" x="-59" scaleX="1" scaleY="1"/>
+				<e:Label id="jhattr1" text="攻击+10000" size="22" textColor="0x9F946D" y="10" horizontalCenter="0" x="-49" scaleX="1" scaleY="1"/>
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+			<e:Label id="name1" text="兵魂名称" y="6" size="24" textColor="0xf66006" horizontalCenter="0"/>
+			<ns1:BaseComponent id="material1" skinName="weaponSoulbreakitem" className="WeaponSoulbreakItem" horizontalCenter="-104.5" scaleX="0.9" scaleY="0.9" verticalCenter="-19"/>
+			<e:Button id="btnjihuo" label="激  活" skinName="Btn1Skin" horizontalCenter="0" bottom="0" width="156" height="60"/>
+		</e:Group>
+		<e:Group id="lianhua" height="228" width="350" horizontalCenter="0" bottom="16" visible="false">
+			<e:Label id="name2" text="兵魂名称" size="22" textColor="0xF66006" horizontalCenter="0"/>
+			<e:Group y="25" left="0" right="0" height="96">
+				<e:Image source="shuxingbg" left="0" right="0" scale9Grid="50,5,65,34" scaleX="1" scaleY="1" top="0" bottom="0"/>
+				<e:Group scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="2">
+					<e:Group id="attr0" x="6" y="8" scaleX="1" scaleY="1">
+					<e:Label id="lhattr0" text="等级" size="18" x="0" textColor="0x9F946D" y="-20" scaleX="1" scaleY="1"/>
+					<e:Group x="60" y="-20" scaleX="1" scaleY="1">
+						<e:Label id="lhattr3" text="6" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+						<e:Image id="lhright1" x="80" y="2" rotation="89.12" width="13" source="tongyongup"/>
+						<e:Label id="lhattr4" text="7" size="18" textAlign="center" x="100" y="0" textColor="0x20CB30"/>
+						<e:layout>
+						<e:HorizontalLayout verticalAlign="middle"/>
+						</e:layout>
+					</e:Group>
+					<e:layout>
+						<e:HorizontalLayout gap="20"/>
+					</e:layout>
+					</e:Group>
+					<e:Group id="attr1" x="6" y="28" scaleX="1" scaleY="1">
+					<e:layout>
+						<e:HorizontalLayout gap="20"/>
+					</e:layout>
+					<e:Label id="lhattr1" text="攻击" size="18" x="0" textColor="0x9F946D" y="6" scaleX="1" scaleY="1"/>
+					<e:Group x="60" y="6" scaleX="1" scaleY="1">
+						<e:Label id="lhattr5" text="10000" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+						<e:Image id="lhright0" x="80" y="2" rotation="89.12" width="13" source="tongyongup"/>
+						<e:Label id="lhattr6" text="99999" size="18" textAlign="center" x="100" y="0" textColor="0x20CB30"/>
+						<e:layout>
+						<e:HorizontalLayout verticalAlign="middle"/>
+						</e:layout>
+					</e:Group>
+					</e:Group>
+					<e:Group id="attr2" x="6" y="65" scaleX="1" scaleY="1">
+					<e:Label id="lhattr2" text="攻击" size="18" x="17" textColor="0x9F946D" y="28" scaleX="1" scaleY="1"/>
+					<e:Group x="95" y="29" scaleX="1" scaleY="1">
+						<e:Label id="lhattr7" text="10000" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+						<e:Image id="lhright2" x="80" y="2" rotation="89.12" width="13" source="tongyongup"/>
+						<e:Label id="lhattr8" text="99999" size="18" textAlign="center" x="100" y="0" textColor="0x20CB30"/>
+						<e:layout>
+						<e:HorizontalLayout verticalAlign="middle"/>
+						</e:layout>
+					</e:Group>
+					<e:layout>
+						<e:HorizontalLayout gap="20"/>
+					</e:layout>
+					</e:Group>
+					<e:layout>
+					<e:VerticalLayout gap="10" horizontalAlign="left"/>
+					</e:layout>
+				</e:Group>
+			</e:Group>
+			<e:Group id="costgroup0" horizontalCenter="0.5" bottom="74">
+				<e:Label text="消耗: " size="20" x="0" y="2" textColor="0xD1C28F"/>
+				<e:Image id="micon0" x="64" width="30" height="30" y="-14" source="200167_png"/>
+				<e:Label id="countLabel1" text="120/100" size="20" x="108" y="2" textColor="0xD1C28F"/>
+				<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+				</e:layout>
+			</e:Group>
+			<e:Button id="btnlianhua" label="炼 化" skinName="Btn1Skin" horizontalCenter="0" bottom="0"/>
+			<e:Label id="maxdesc0" text="已满级" size="22" horizontalCenter="0" bottom="16" textColor="0xf8b141" bold="true" visible="false"/>
+		</e:Group>
+		<e:Group id="tupo" width="400" height="224" horizontalCenter="0" bottom="16">
+			<e:Image source="shuxingbg" left="0" right="0" height="120" y="30" scale9Grid="50,5,65,34"/>
+			<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="230" left="-30"/>
+			<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="230" scaleX="-1" right="-30"/>
+			<e:Label id="name3" text="兵魂名称" y="6" size="24" textColor="0xF66006" horizontalCenter="0"/>
+			<e:Group horizontalCenter="-44" top="54">
+				<e:Group id="g0" y="20" x="11" scaleX="1" scaleY="1">
+					<e:Label text="突破等级上限" size="20" x="40" y="50" bold="true" textColor="0xe5b613"/>
+					<e:Label id="tpattr1" text="20" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0" scaleX="1" scaleY="1"/>
+					<e:Image id="tpright0" x="48.33000000000004" y="2" rotation="89.12" source="tongyongup"/>
+					<e:Label id="tpattr2" text="30" size="20" textAlign="center" x="52.500000000000114" y="0" textColor="0x20cb30"/>
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+					</e:layout>
+				</e:Group>
+				<e:Group id="g1" y="60" x="11" scaleX="1" scaleY="1">
+					<e:Label id="tpattr0" text="攻击" size="20" x="40" textColor="0x9F946D" y="100" bold="true"/>
+					<e:Label id="tpattr3" text="10000" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0" scaleX="1" scaleY="1"/>
+					<e:Image id="tpright1" x="65.33000000000004" y="3.5" rotation="89.12" source="tongyongup"/>
+					<e:Label id="tpattr4" text="99999" size="20" textAlign="center" x="75.00000000000011" y="1" textColor="0x20cb30"/>
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+					</e:layout>
+				</e:Group>
+				<e:Group id="g2" y="70" x="21" scaleX="1" scaleY="1">
+					<e:Label id="tpattr5" text="攻击" size="20" x="40" textColor="0x9F946D" y="100" bold="true"/>
+					<e:Label id="tpattr6" text="10000" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0" scaleX="1" scaleY="1"/>
+					<e:Image id="tpright2" x="65.33000000000004" y="3.5" rotation="89.12" source="tongyongup"/>
+					<e:Label id="tpattr7" text="99999" size="20" textAlign="center" x="75.00000000000011" y="1" textColor="0x20CB30"/>
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+					</e:layout>
+				</e:Group>
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="left" gap="10"/>
+				</e:layout>
+			</e:Group>
+		<ns1:BaseComponent id="material" skinName="weaponSoulbreakitem" scaleX="0.9" scaleY="0.9" className="WeaponSoulbreakItem" bottom="90" horizontalCenter="130"/>
+		<e:Button id="btntupo" label="突  破" skinName="Btn1Skin" horizontalCenter="0" bottom="0" width="156" height="60"/>
+		</e:Group>
+		<e:Image id="lock" source="weapssuo_png" y="102" horizontalCenter="-0.5" scaleX="1.12" scaleY="1.12" visible="false"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SevenDayLogItemSkin" width="540" height="140" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Button id="sureBtn" label="领  取" skinName="Btn14Skin" verticalCenter="10" right="30"/>
+	<e:Image id="sureImg" source=""/>
+	<e:Image y="0" horizontalCenter="0" source="qiandaobg2"/>
+	<e:Label id="dayTxt" text="第一天" y="12" size="20" horizontalCenter="0" textColor="0xEAA51B" bold="true"/>
+	<e:Scroller x="40" verticalCenter="16" width="334" height="87">
+		<e:List id="awardsList" x="30" y="60" itemRendererSkinName="ItemSkin" scaleX="0.9" scaleY="0.9">
+			<e:layout>
+				<e:HorizontalLayout gap="2"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

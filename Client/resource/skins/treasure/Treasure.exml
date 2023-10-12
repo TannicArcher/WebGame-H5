@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Treasure" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*" width="554" height="714">
+	<e:Scroller id="barList" width="550" horizontalCenter="0" bottom="100" top="360" bounces="false">
+		<e:List id="list" x="0" y="0" itemRendererSkinName="HuntListRendererSkin">
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group id="sm" y="12" horizontalCenter="0">
+		<ns1:BaseComponent id="item12" y="0" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="480" />
+		<ns1:BaseComponent id="item13" y="130" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="480" />
+		<ns1:BaseComponent id="item14" y="260" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="480" />
+		<ns1:BaseComponent id="item9" y="0" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="360" />
+		<ns1:BaseComponent id="item10" y="130" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="0" />
+		<ns1:BaseComponent id="item11" y="260" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="360" />
+		<ns1:BaseComponent id="item6" y="0" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="120" />
+		<ns1:BaseComponent id="item7" y="260" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="240" />
+		<ns1:BaseComponent id="item8" y="260" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="120" />
+		<ns1:BaseComponent id="item3" y="0" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="0" />
+		<ns1:BaseComponent id="item4" y="0" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="240" />
+		<ns1:BaseComponent id="item5" y="260" scaleX="0.8" scaleY="0.8" skinName="ItemSkin" className="ItemBase" x="0" />
+	</e:Group>
+	<e:Group id="chuanqi" y="105" horizontalCenter="0">
+		<e:Image id="bg2" y="0" source="xxunbao_07_png" x="160" />
+		<e:Image id="bg1" y="0" source="xxunbao_07_png" x="0" />
+		<e:Image y="119" source="chuanqi1" x="19" />
+		<e:Image y="119" source="chuanqi2" x="180" />
+		<e:Image source="quality5" y="33" x="23" />
+		<e:Image source="quality5" y="35" x="183" />
+		<e:Image id="icon1" y="39" x="29"  source="rx_weapon"/>
+		<e:Image id="icon2" y="41" x="188"  source="rx_body"/>
+	</e:Group>
+	<e:Group id="cz" horizontalCenter="0" bottom="16">
+		<e:Image source="szyuanbao" x="186" y="0" />
+		<e:Label id="num10" text="1000" size="20" textColor="0xDFD1B5" x="220" y="1" />
+		<e:Image source="szyuanbao" x="18" y="0" />
+		<e:Label id="num1" text="1000" size="20" textColor="0xDFD1B5" x="51" y="1" />
+		<e:Button id="buy1" label="购买1个" icon="xb_25" skinName="Btn1Skin" x="0" y="27" />
+		<e:Button id="buy10" label="购买10个" icon="xb_26" skinName="Btn1Skin" x="160" y="27" />
+		<e:Button id="outBag" label="仓 库" skinName="Btn1Skin" x="320" y="27" />
+	</e:Group>
+</e:Skin>

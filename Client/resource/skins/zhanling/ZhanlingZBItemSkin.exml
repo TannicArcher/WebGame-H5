@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ZhanlingZBItemSkin" width="78" height="78" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="icon" horizontalCenter="0" verticalCenter="0" source="zl_skin_7"/>
+	<e:Image id="select" source="xuanzhongyuan1" verticalCenter="0" horizontalCenter="0" touchEnabled="false"/>
+	<e:Image id="state" source="zl_state_0" y="3" horizontalCenter="3.5"/>
+	<e:BitmapLabel id="label" font="num_xvip_4_fnt" text="12" right="13" bottom="11" scaleX="0.8" scaleY="0.8" letterSpacing="0"/>
+	<e:Image id="redPoint" source="zjmhongdian" touchEnabled="false" right="0" top="0"/>
+</e:Skin>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CreateRolSkin" width="580" height="930" currentState="0" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="0,1,2,3,4,5" >
+	<e:Rect left="0" right="0" top="0" bottom="0" strokeColor="0x030306" fillColor="0x030306"/>
+	<e:Image source="createbg_png" width="581" height="581" y="90" horizontalCenter="0"/>
+	<e:Image horizontalCenter="100" bottom="74" source="cr_3" scaleX="-1"/>
+	<e:Image horizontalCenter="239" source="cr_3" bottom="148" scaleY="-1"/>
+	<e:Image horizontalCenter="193" source="cr_3" bottom="20"/>
+	<e:Image horizontalCenter="-62" source="cr_3" bottom="32" scaleY="-1"/>
+	<e:Image horizontalCenter="-185" source="cr_3" bottom="83"/>
+	<e:Image horizontalCenter="0" source="cr_4" bottom="0" width="580" height="80"/>
+	<e:Label text="角色名字不超过6个字，不能包含空格和敏感字" size="18" horizontalCenter="0" bottom="272" textColor="0x444134"/>
+	<e:Image y="128" horizontalCenter="-3.5" source="cr_1"/>
+	<e:Image source="cr_6" y="505" horizontalCenter="-173.5"/>
+	<e:Image y="505" source="cr_7" horizontalCenter="1"/>
+	<e:Image y="505" source="cr_8" horizontalCenter="175"/>
+	<e:Image id="j0" y="230" pixelHitTest="true" horizontalCenter="-215" alpha.2="0.7" alpha.3="0.7" alpha.4="0.7" alpha.5="0.7" source="cr_zs0" alpha.1="0.7" y.0="200"/>
+	<e:Image id="j1" y="230" pixelHitTest="true" horizontalCenter="-135" alpha.0="0.7" alpha.4="0.7" alpha.5="0.7" source="cr_zs1" alpha.3="0.7" alpha.2="0.7" y.1="200"/>
+	<e:Image id="j2" y="230" pixelHitTest="true" horizontalCenter="-40" alpha.0="0.7" alpha.1="0.7" alpha.3="0.7" source="cr_fs0" alpha.5="0.7" alpha.4="0.7" y.2="200"/>
+	<e:Image id="j3" y="230" pixelHitTest="true" horizontalCenter="40" source="cr_fs1" alpha.0="0.7" alpha.5="0.7" alpha.4="0.7" alpha.2="0.7" alpha.1="0.7" y.3="200"/>
+	<e:Image id="j4" y="230" pixelHitTest="true" horizontalCenter="135" source="cr_ds0" alpha.0="0.7" alpha.5="0.7" alpha.3="0.7" alpha.2="0.7" alpha.1="0.7" y.4="200"/>
+	<e:Image id="j5" y="230" pixelHitTest="true" horizontalCenter="215" source="cr_ds1" alpha.0="0.7" alpha.4="0.7" alpha.3="0.7" alpha.2="0.7" alpha.1="0.7" y.5="200"/>
+	<e:Image id="select" horizontalCenter="-215" y="240" source="crxuanzhong" rotation="90" width="300" height="88" horizontalCenter.1="-135" horizontalCenter.2="-40" horizontalCenter.3="40" horizontalCenter.4="135" horizontalCenter.5="215" horizontalCenter.0="-215"/>
+	<e:Image y="492" rotation="45" source="crxuanzhong2" width="60" height="60" horizontalCenter="-174" horizontalCenter.2="1" horizontalCenter.3="1" horizontalCenter.4="175" horizontalCenter.5="175" alpha="0.8"/>
+	<e:Label id="timeLab" text="剩余15秒" size="22" horizontalCenter="200" textColor="0xff750f" bottom="191"/>
+	<e:Label id="desc" text="只需体验两分钟，你就会跟我一样，爱上这款游戏！" size="22" horizontalCenter="0" textColor="0xFF750F" bottom="123"/>
+	<e:Group horizontalCenter="0" width="420" bottom="300">
+		<e:Image x="0" verticalCenter="0" source="cr_2"/>
+		<e:Image y="0" horizontalCenter="0" source="crshuru" scale9Grid="29,5,10,32" width="230"/>
+		<e:Image y="11" horizontalCenter="0.5" width="173" source="cr_4"/>
+		<e:TextInput id="nameInput" y="5" width="170" horizontalCenter="0" height="33"/>
+	</e:Group>
+	<e:Group bottom="150" horizontalCenter="0" width="300" height="100">
+		<e:Button id="createBtn" label="按钮" y="17" skinName="Btn0Skin" icon="crbtn" width="282" height="60" horizontalCenter="0"/>
+		<e:Image id="imgA" y="16" horizontalCenter="-115" source="" visible="false"/>
+	</e:Group>
+	<e:Button id="diceBtn" label="按钮" skinName="Btn0Skin" icon="cr_5" horizontalCenter="145" bottom="300"/>
+	<e:Group id="enterGroup" left="0" top="0" bottom="0" right="0" visible="false">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+		<e:Rect height="30" y="450" left="0" right="0" strokeColor="0x030306" fillAlpha="0.6"/>
+		<e:Label id="loadText" text="正在进入游戏（50%）" size="20" horizontalCenter="0" verticalCenter="0" textColor="0xd1c28f"/>
+	</e:Group>
+	<e:Scroller id="scroller" width="300" height="99" y="20" horizontalCenter="0">
+		<e:List id="list" x="1" y="3" itemRendererSkinName="CreateRolItemSkin">
+		<e:layout>
+			<e:VerticalLayout gap="5" paddingTop="2"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+
+</e:Skin>

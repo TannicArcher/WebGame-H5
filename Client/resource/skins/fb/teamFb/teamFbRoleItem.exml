@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="teamFbRoleItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="420" width="450">
+
+
+	<e:Image id="wing" touchEnabled="false" scaleX="0.7" scaleY="0.7" source="wing01_png" horizontalCenter="41" verticalCenter="-56"/>
+	<e:Image id="weapon" scaleX="0.7" scaleY="0.7" touchEnabled="false" pixelHitTest="true" horizontalCenter="-161" source="weapon101_0_c_png" verticalCenter="81"/>
+	<e:Image id="body" touchEnabled="true" pixelHitTest="true" horizontalCenter="0.5" source="body001_0_c_png" scaleX="0.7" scaleY="0.7" verticalCenter="-32"/>
+	<e:Image id="nomember" y="79" source="tfb_nomember_png" horizontalCenter="16" scaleX="1.2" scaleY="1.2" touchEnabled="true" visible="false"/>
+	<e:Image id="invite" x="201" y="157" touchEnabled="true" source="tfb_add" scaleX="1.2" scaleY="1.2" visible="false"/>
+	<e:Image y="40" horizontalCenter="26" anchorOffsetY="0" anchorOffsetX="0" source="tfb_memberbg1" width="138"/>
+	<e:Label id="roleName" text="玩家名字六字" y="43" size="18" horizontalCenter="14" textColor="0xd1c28f"/>
+	<e:Label id="onlineLabel" text="离线" y="43" size="18" horizontalCenter="7.5" textColor="0x20f909" bold="true" visible="false"/>
+	<e:Image id="position" x="154" y="39" source="tfb_leader" touchEnabled="false"/>
+
+
+</e:Skin>

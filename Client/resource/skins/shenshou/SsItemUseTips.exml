@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SsItemUseTips" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*" >
+	<w:Config id="1586b37c599" />
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8" />
+	<e:Group id="anigroup" horizontalCenter="0" width="400" anchorOffsetY="0" height="289" verticalCenter="0">
+		<e:Image id="BG" left="0" right="0" top="0" bottom="0"  source="tongyongtip3" scale9Grid="11,8,9,12"/>
+		<e:Image left="0" right="0" top="0" source="tongyongtip2" scale9Grid="18,18,2,4" bottom="0" />
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,273,47" left="0" right="0"/>
+		<e:Label text="增加出战上限" size="24" bold="true" y="10" horizontalCenter="0.5" textColor="0xf8b141"/>
+
+
+		<e:Button id="useBtn" label="使 用" horizontalCenter="80" x="100" bottom="15" skinName="Btn3Skin"/>
+		<e:Button id="cancelBtn" skinName="Btn3Skin" label="取 消" horizontalCenter="-80" x="100" bottom="15"/>
+		<e:Group horizontalCenter="0" touchEnabled="false" touchChildren="false" bottom="-40">
+			<e:Image source="bantoutiaobg" height="30" width="400" y="0" x="0" />
+			<e:Label text="点击空白区域关闭窗口" size="18" x="105" bold="true" textColor="0x7E6437" y="7" />
+		</e:Group>
+		<e:Group x="68.5" y="71">
+			<e:Label text="消耗：" size="24" x="0" y="24" bold="true" textColor="0xd1c28f"/>
+			<ns1:BaseComponent id="itemIcon" skinName="ItemSkin" className="ItemBase" x="79.5" y="0"/>
+			<e:Label id="ownCount" text="(当前拥有10个）" x="169.5" y="25" size="18" textColor="0x00ff00"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Label text="当前兽神已达到出战上限，消耗3个兽神契约增加上限" x="11" y="187" size="16" textColor="0xf8b141"/>
+	</e:Group>
+</e:Skin>

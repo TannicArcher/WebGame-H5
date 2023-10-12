@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HideBossBtnSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Button id="hideBossBtn" label="Button" skinName="Btn24Skin" bottom="241" horizontalCenter="0"/>
+	<e:Group id="eff_dragon" touchThrough="true" touchChildren="false" bottom="320" horizontalCenter="0"/>
+	<e:Label id="lbTime" text="00:00:00" bottom="229" size="20" horizontalCenter="0" textColor="0x00ff00"/>
+</e:Skin>

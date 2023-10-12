@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameFightSceneSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580"
+        height="930">
+	<e:Button id="pkBossBtn" label="按钮" x="441" y="490" skinName="Btn0Skin" width="117" height="124"  visible="false"/>
+
+
+
+	<e:Image id="stateImg" touchEnabled="false"  horizontalCenter="0" verticalCenter="-170" source=""/>
+	<e:Button id="escBtn" label="按钮" skinName="Btn0Skin" icon="tuichu"
+	           x="10" bottom="128"/>
+	<e:Group id="guildBossGroup" width="200" height="75" bottom="160" horizontalCenter="0" visible="false">
+		<e:Image  height="75" source="bantoutiaobg2" y="0" scale9Grid="41,5,7,12" width="200" horizontalCenter="0"/>
+		<e:Image id="leftTimeImg" y="4" horizontalCenter="3.5" source=""/>
+	</e:Group>
+	<e:Group id="bgMcGroup"  height="247" left="0" top="0"></e:Group>
+	<e:Group id="flyExpGroup" width="300" height="110" horizontalCenter="0" y="70" visible="false">
+		<e:Image  source="bantoutiaobg2" scale9Grid="41,5,7,12" left="0" right="0" top="10" bottom="-30"/>
+
+
+
+
+		<e:Image id="totleExp" y="20" horizontalCenter="0.5" source=""/>
+	</e:Group>
+	<e:Group id="flyExpGroup1" width="300" height="32"   horizontalCenter="0" y="174" visible="false">
+		<e:Image  source="bantoutiaobg2" scale9Grid="41,5,7,12" left="0" right="0" top="0" bottom="0" visible="false"/>
+
+		<e:Image id="killNumImg" y="6" horizontalCenter="-50" scaleX="0.6" scaleY="0.6" source=""/>
+		<e:Label id="lbNum" text="100/100" y="5" size="20" horizontalCenter="57"/>
+	</e:Group>
+	<e:Group id="GwRankGroup" bottom="175" horizontalCenter="15.5" anchorOffsetX="0" width="321" visible="false">
+
+		<e:Image id="rankbg" left="0" verticalCenter="0" scale9Grid="180,12,7,78" right="0" source=""/>
+		<e:Image id="rank" verticalCenter="1.5" left="22" scaleX="0.8" scaleY="0.8" source=""/>
+		<e:Image id="schedule" left="5" verticalCenter="0" width="87" height="86" source=""/>
+		<e:Label id="requireTime" text="4" x="102" y="21" size="16" bold="true" textColor="0xf8b141"/>
+
+		<e:Label text="奖励神兵经验:" x="102" y="44" size="16" bold="true"/>
+
+		<e:Label id="rewardExp" text="10000000" x="208" y="44" size="16" bold="true" textColor="0xF8B141"/>
+		<e:Label id="time" text="00:00:00" x="102" y="67" size="16" bold="true" textColor="0xf70404"/>
+	</e:Group>
+	<e:Group id="riseupBtn" y="551" right="11" visible="false">
+		<e:Button id="riseup" label="Button" x="11" y="20" skinName="Btn0Skin" icon="guwu" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label id="addLabel" text="鼓舞    攻击+10%" x="0" y="0" size="12" textColor="0x35e26d"/>
+	</e:Group>
+</e:Skin>

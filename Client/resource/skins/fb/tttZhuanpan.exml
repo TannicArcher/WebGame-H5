@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="tttZhuanpan" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*"
+        xmlns:w="http://ns.egret.com/wing" width="580" height="930">
+	<w:Config id="15a98a3982e" />
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.7" width="460" 
+	         height="610" />
+	<e:Group horizontalCenter="0" verticalCenter="0" width="512" height="604">
+		<e:Image scale9Grid="23,24,3,2"   
+		           source="tttluckybg_png"/>
+
+
+		<e:Group y="-59" width="280" height="60" horizontalCenter="0">
+			<e:Image source="tongyonghd_json.bantoutiaobg" left="0" right="0" top="10" bottom="10" scale9Grid="29,5,180,35"/>
+			<e:Image source="zhuakuang2" x="0" scale9Grid="41,30,5,1" top="0" bottom="0" width="140"/>
+			<e:Image source="zhuakuang2" scale9Grid="41,30,5,1" top="0" bottom="0" width="140" scaleX="-1" right="0"/>
+			<e:Label text="通天塔幸运转盘" size="26" bold="true" textColor="0xf8b141" horizontalCenter="0" y="17"/>
+		</e:Group>
+		<e:Group y="105" horizontalCenter="2" width="430" height="385">
+			<ns1:BaseComponent id="item0" y="0" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" horizontalCenter="0" scaleX="0.9" scaleY="0.9"/>
+			<ns1:BaseComponent id="item1" y="32" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="85"/>
+			<ns1:BaseComponent id="item2" y="112" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="148"/>
+			<ns1:BaseComponent id="item3" y="200" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="148"/>
+			<ns1:BaseComponent id="item4" y="278" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="85"/>
+			<ns1:BaseComponent id="item5" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" horizontalCenter="0" bottom="0" scaleX="0.9" scaleY="0.9"/>
+			<ns1:BaseComponent id="item6" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" y="278" scaleX="0.9" scaleY="0.9" horizontalCenter="-85"/>
+			<ns1:BaseComponent id="item7" y="200" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="-148"/>
+			<ns1:BaseComponent id="item8" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" y="112" horizontalCenter="-148"/>
+			<ns1:BaseComponent id="item9" y="32" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="-85"/>
+		</e:Group>
+		<e:Group y="361" horizontalCenter="0">
+			<e:Label text="可抽次数：" size="18" y="0" textColor="0x20CB30" x="0"/>
+			<e:Label id="num" text="1" size="18" y="0" textColor="0x20CB30" x="46"/>
+			<e:layout>
+			<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+
+
+		<e:Image id="tttzhi" source="tttluckyzz" x="259" y="297" touchEnabled="false" anchorOffsetX="76" anchorOffsetY="126"/>
+		<e:Image y="497.33" source="bantoutiaobg2" width="420" height="30" scale9Grid="30,2,32,17" horizontalCenter="0"/>
+		<e:Label text="每通关10层，即可拿走奖池内的1个奖励！" size="20" bold="true" horizontalCenter="0.5" y="501.33" textColor="0x20cb30"/>
+		<e:Button id="choujiangBtn" skinName="Btn0Skin" icon="tttluckybtn" horizontalCenter="3" verticalCenter="-5.5"/>
+		<e:Button id="closeBtn" skinName="Btn0Skin" icon="fanhui" right="0" y="530" visible="false"/>
+
+</e:Group>
+</e:Skin>

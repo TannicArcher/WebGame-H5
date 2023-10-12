@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ladderresultwinskin" width="580" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group id="container" horizontalCenter="0" verticalCenter="-49">
+		<e:Image id="bg" width="562" height="788"   source="win_png"/>
+		<e:Scroller width="360" height="180"     x="101" y="509">
+			<e:List id="list" itemRenderer="ItemBase" height="141"  width="361" horizontalCenter="2" verticalCenter="2">
+			<e:layout>
+				<e:TileLayout/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Image id="result" y="111.77" source="win_02"   horizontalCenter="0"/>
+		<ns1:BaseComponent id="starList" y="200" skinName="LadderSratListSkin" className="LadderStarListView" horizontalCenter="0"/>
+		<e:Label text="挑战奖励：" y="476" fontFamily="黑体" size="20" horizontalCenter="-130"/>
+		<e:Button id="sureBtn" label="领取奖励(10s)" skinName="Btn1Skin" width="160" horizontalCenter="0" y="643"/>
+		<e:Group id="upStar" width="237" height="50" y="412"   horizontalCenter="-61.5">
+			<e:Label text="星级奖励：" x="0" y="17" size="20" fontFamily="黑体"/>
+			<ns1:BaseComponent id="star1" x="96" y="4" className="LadderStarView" skinName="LadderSratSkin"/>
+			<ns1:BaseComponent id="star2" x="136" y="4" className="LadderStarView" skinName="LadderSratSkin"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

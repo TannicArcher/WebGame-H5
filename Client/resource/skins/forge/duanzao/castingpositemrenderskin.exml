@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="castingpositemrenderskin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="60" height="60" states="open,select,dark" >
+	<w:Config id="159bef2916a"/>
+	<e:Image id="bgImg" verticalCenter="0" horizontalCenter="0" source="zjmhongdian"/>
+	<e:Image id="item" visible.select="false" visible.dark="false" horizontalCenter="0" verticalCenter="0" source="zjmhongdian"/>
+	<e:Image source="" x="12" y="18" visible.open="false" visible="false"/>
+</e:Skin>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuneSkinDecompose" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="716" width="554" >
+	<w:Config id="1586b1c98a7"/>
+	<e:Group id="Rune" visible="false">
+	</e:Group>
+	<e:Group id="Runei" bottom="0" horizontalCenter="0" height="130" width="554">
+		<e:Image source="shuxingbg" y="0" left="0" right="0" height="56" scale9Grid="50,5,65,34"/>
+		<e:Label text="橙" x="176" size="28"   bottom="86" bold="true" textColor="0xf7a362"/>
+		<e:Label text="紫" x="276" size="28"   bottom="86" bold="true" textColor="0xc87adb"/>
+		<e:Label text="蓝" x="376" size="28"   bottom="86" bold="true" textColor="0x5eaee0"/>
+		<e:Label text="绿" x="476" size="28"   bottom="86" textColor="0x97e570"/>
+		<e:Label text="红" x="76" size="28"   bottom="86" bold="true" textColor="0xf47a86"/>
+		<e:CheckBox id="cb1" x="430" skinName="CheckBox0" bottom="80"/>
+		<e:CheckBox id="cb2" x="330" skinName="CheckBox0" bottom="80"/>
+		<e:CheckBox id="cb3" x="230" skinName="CheckBox0" bottom="80"/>
+		<e:CheckBox id="cb4" x="130" skinName="CheckBox0"  width="53.68" bottom="80"/>
+		<e:CheckBox id="cb0" x="30" skinName="CheckBox0" bottom="80"/>
+		<e:Label id="curLab" text="999" x="200" size="20" bottom="30" textColor="0xd1c28f"/>
+		<e:Label id="addLab" text="+99999" x="260" size="20" textColor="0x59FF00" bottom="30"/>
+		<e:Image id="specialShatter" x="173" width="20" height="20" bottom="30" source="500007_png"/>
+		<e:Button id="decomposeBtn" label="一键分解" x="370" skinName="Btn1Skin" bottom="20"/>
+	</e:Group>
+	<e:Scroller id="menuScro0ller" width="540" horizontalCenter="0" top="102" bottom="140">
+		<e:List id="menulist" top="0" right="0" left="0" bottom="0">
+			<e:layout>
+				<e:TileLayout horizontalGap="50" requestedColumnCount="3" horizontalAlign="center"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChuangtianguangOutItemSkin" width="79" height="82" currentState="up" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="up,down">
+	<w:Config id="15a98bee0ab"/>
+	<e:Image id="iconBg" source="quality0"  x="1" y="1"/>
+	<e:Image id="select" source="forge_09" visible.up="false" x="-6" y="-6" touchEnabled="false" width="86" height="86"/>
+	<e:Image id="icon" fillMode="scale" source="suo_01" verticalCenter="-5" horizontalCenter="-3" />
+	<e:Label id="count" size="14" textAlign="right" width="44" fontFamily="黑体" y="57" right="11" text=""
+	         />
+</e:Skin>

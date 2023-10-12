@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="auctionItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="540" height="130">
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--<e:Label id="infoTxt" text="争夺：0人" size="18" lineSpacing="0" y="22" textColor="0x9f946d" horizontalCenter="190"/>-->
+	<e:Group x="0" y="0">
+		<e:Image id="bg" alpha="0.7" scale9Grid="36,22,60,38" source="tongyonglabbg" width="540" x="0" height="130" y="0"/>
+		<e:Group x="0" height="127" width="125" y="1">
+
+			<e:Image id="labelStudy" x="108" y="11" source="point" visible="false"/>
+			<e:Image id="labelMy" x="0" y="0" source="labelMy"/>
+			<ns1:BaseComponent id="item" y="21" skinName="ItemSkin" horizontalCenter="6.5" className="ItemBase"/>
+		</e:Group>
+		<e:Image source="pailietouline" horizontalCenter="-137.5" verticalCenter="0" height="110"/>
+		<e:Image source="pailietouline" horizontalCenter="20.5" verticalCenter="0" height="110"/>
+		<e:Label id="jingjiazhong" text="竞价中" size="20" textAlign="center" y="24" stroke="1" textColor="0x20CB30" horizontalCenter="-59"/>
+		<e:Label id="my" text="我最高" size="20" textAlign="center" y="24" stroke="1" horizontalCenter="-52" textColor="0x20CB30" visible="false"/>
+		<e:Label id="auctionTime" text="00:00:00结束" size="20" textAlign="center" y="84" textColor="0xD1C28F" stroke="1" horizontalCenter="-51" visible="false"/>
+		<e:Label id="showTime" text="00:00:00后开始" size="20" textAlign="center" y="84" stroke="1" textColor="0xFFD93F" horizontalCenter="-58"/>
+
+		<e:Label id="zb1" text="49800" size="20" textColor="0xF8B141" y="55" scaleX="1" scaleY="1" horizontalCenter="-40"/>
+		<e:Image source="szyuanbao" width="30" y="53" scaleX="1" scaleY="1" horizontalCenter="-88"/>
+
+		<e:Group y="27" width="230" horizontalCenter="147">
+			<e:Group id="btn1" y="0" horizontalCenter="-61">
+				<e:Button id="yikoujia" x="0" y="0" skinName="Btn0Skin" icon="btn_with_extra"/>
+				<e:Label id="zb0" text="50000" size="20" textColor="0xF8B141" y="44" scaleX="1" scaleY="1" horizontalCenter="16.5" touchEnabled="false"/>
+				<e:Image source="szyuanbao" width="30" y="43" scaleX="1" scaleY="1" horizontalCenter="-27" touchEnabled="false"/>
+				<e:Label id="btnText1" text="一口价" size="20" y="11" scaleX="1" scaleY="1" textColor="0xD1C28F" horizontalCenter="0" touchEnabled="false"/>
+			</e:Group>
+			<e:Group id="btn2" y="0" horizontalCenter="60">
+				<e:Button id="yikoujia0" x="0" y="0" skinName="Btn0Skin" icon="btn_with_extra"/>
+				<e:Label id="jingjia" text="10000" size="20" textColor="0xF8B141" y="44" scaleX="1" scaleY="1" horizontalCenter="15" touchEnabled="false"/>
+				<e:Image source="szyuanbao" width="30" y="43" scaleX="1" scaleY="1" horizontalCenter="-28" touchEnabled="false"/>
+				<e:Label id="btnText2" text="竞  价" size="20" textColor="0xD1C28F" y="11" scaleX="1" scaleY="1" horizontalCenter="0" touchEnabled="false"/>
+			</e:Group>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+
+		</e:Group>
+	</e:Group>
+
+</e:Skin>

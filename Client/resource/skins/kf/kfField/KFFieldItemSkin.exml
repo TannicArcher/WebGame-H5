@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KFFieldItemSkin" width="200" height="222" currentState="unlock" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="lock,unlock" >
+	<e:Image id="locked" x="16" y="79" source="kf_function_none" includeIn="lock"/>
+	<e:Image id="island" horizontalCenter="0" source.lock="kf_function_lock" verticalCenter="16" source="kf_field_ladder"/>
+	<e:Group id="boossGroup" x="93" y="156" scaleX.unlock="-1" scaleX="-1"/>
+	<e:Image id="title" source="kf_function_boss" y="0" x="141" includeIn="unlock"/>
+	<e:Image id="redPoint" source="zjmhongdian" x="109" y="60" includeIn="unlock" visible="false"/>
+</e:Skin>

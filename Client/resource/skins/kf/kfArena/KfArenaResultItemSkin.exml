@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KfArenaResultItemSkin" width="550" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="rankTxt" text="1" size="18" verticalCenter="0" horizontalCenter="-259.5"/>
+	<e:Label id="nameTxt" text="玩家的长名字" size="18" verticalCenter="0" horizontalCenter="-180"/>
+	<e:Label id="kaTxt" text="500/100" x="161" size="18" verticalCenter="0"/>
+	<e:Label id="collectionTxt" text="100" x="236" size="18" verticalCenter="0"/>
+	<e:Label id="scoreTxt" text="1000" x="286" size="18" verticalCenter="0"/>
+	<e:Image id="mvp" x="330" verticalCenter="0.5" source="wjBattle_json.wj_mvp_green"/>
+	<e:Label id="arenaPointTxt" text="200" x="384" size="18" verticalCenter="0"/>
+	<e:Label id="arenaScoreTxt" text="2000+20" x="434" size="18" verticalCenter="0"/>
+	<e:Image id="tags" source="xvip_v2_png" x="507" verticalCenter="0.5"/>
+	<e:Image id="firstBloodImg" x="200" verticalCenter="0.5" source="wjBattle_json.wj_first_kill_icon"/>
+	<e:Image id="firstCollectionImg" source="xvip_v2_png" x="260" verticalCenter="0.5"/>
+</e:Skin>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CityFunSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:ToggleButton id="attState" label="" bottom="130" right="9">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_peace" source.down="btn_attack"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:PriceIcon="PriceIcon.*"/>
+			</e:Skin>
+		</e:skinName>
+	</e:ToggleButton>
+	<e:Button id="quit" label="" bottom="130" height="64" width="62" left="9">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_guaji"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:PriceIcon="PriceIcon.*"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button id="npcBtn" icon="btn_npc" skinName="MainBtn2" bottom="255" right="0" visible="false"/>
+</e:Skin>

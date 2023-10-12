@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CastingZBItemSkin" width="76" height="76" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group id="zbItem" horizontalCenter="0" verticalCenter="0">
+		<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" horizontalCenter="0" verticalCenter="0" x="0" y="0"  />
+		<e:Group id="lv" width="76" height="24" horizontalCenter="0" verticalCenter="-25" x="0" y="0"  >
+			<e:Image id="add" source="num_json.lv_+_png" x="1" y="0"  />
+			<e:Image id="num0" x="12.66" y="0"   source="num_json.lv_8_png" visible="false"/>
+			<e:Image id="num1" x="24.339999999999996" y="0"   source="num_json.lv_0_png" visible="false"/>
+		</e:Group>
+		<e:Group id="unlock"   y="30" width="76" horizontalCenter="0" height="38">
+			<e:Group id="unlock1" y="9.5"    x="38">
+				<e:layout>
+					<e:HorizontalLayout gap="0" horizontalAlign="center" verticalAlign="middle" paddingLeft="10" paddingRight="10"/>
+				</e:layout>
+			</e:Group>
+			<e:Image source="duanzao_json.zzkaiqi" y="19"   horizontalCenter="0.5"/>
+		</e:Group>
+		<e:Image id="state" source="duanzao_json.zzcan" y="54" horizontalCenter="0.5" visible="false"/>
+		<e:Image id="select" source="zzxuanzhong" width="86" height="86" horizontalCenter="0" verticalCenter="0" visible="false"/>
+	</e:Group>
+</e:Skin>

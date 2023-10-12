@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CECostSkin" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+		<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_leijichongzhi"/>
+		<e:Group top="40" left="0" right="0" bottom="0">
+			<e:Group id="infoBg" left="3" right="3" x="10" y="-4" height="116">
+				<e:Image left="0" right="0" top="0" bottom="0" source="ny_curtain_png"/>
+				<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="15" bottom="15" visible="false"/>
+				<e:Group left="28" y="30">
+					<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+					<e:Label id="actTime0" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+					<e:Label id="actInfo0" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xdfd1b5" scaleX="1" scaleY="1"/>
+					<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+				</e:Group>
+			</e:Group>
+			<e:Scroller scrollPolicyH="off" scrollPolicyV="on" horizontalCenter="0" width="540" top="118" bottom="6">
+				<e:List id="content" y="549" horizontalCenter="-43" x="0" useVirtualLayout="false" itemRendererSkinName="CECostItemSkin">
+				<e:layout>
+					<e:VerticalLayout gap="2"/>
+				</e:layout>
+				</e:List>
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+	<e:Label id="attr" text="我的装备总评分：" size="22" x="-7" textColor="0x9F946D" scaleX="1" scaleY="1" verticalCenter="0.5" y="-12" visible="false"/>
+	<e:Label id="myAttrValue" text="30" size="22" x="163" textColor="0xF8B141" scaleX="1" scaleY="1" verticalCenter="0.5" y="-12" visible="false"/>		
+</e:Skin>

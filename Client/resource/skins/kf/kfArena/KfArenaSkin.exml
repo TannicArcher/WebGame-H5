@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="KfArenaSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586be3384a"/>
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  width="580" horizontalCenter="0" currentState="nohead"/>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" top="44" bottom="155" scale9Grid="19,12,14,25"/>
+	<e:ViewStack id="viewStack" selectedIndex="3" top="44" bottom="155" horizontalCenter="0" width="580">
+		<ns1:BaseComponent id="rankPanel" name="排行" skinName="KfArenaRankSkin" left="0" right="0" top="0" bottom="0" className="KfArenaRankPanel"/>
+		<ns1:BaseComponent id="macthPanel" name="匹配" skinName="KfArenaMacthSkin" left="0" right="0" top="0" bottom="0" className="KfArenaMacthPanel" visible="false"/>
+		<ns1:BaseComponent id="joinPanel" name="参与" skinName="KfArenaJoinSkin" left="0" right="0" top="0" bottom="0" className="KfArenaJoinPanel" visible="false"/>
+		<ns1:BaseComponent id="duanPanel" name="段位"   left="0" right="0" top="0" bottom="0" skinName="KfArenaDuanSkin" className="KfArenaDuanPanel" visible="false"/>
+	</e:ViewStack>
+
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}"
+	          selectedIndex="0" horizontalCenter="0" bottom="112">
+		<e:layout>
+			<e:HorizontalLayout  gap="-8"/>
+		</e:layout>
+	</e:TabBar>
+	<e:Group id="redPointGroup" horizontalCenter="42" bottom="139" touchEnabled="false">
+		<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" x="0" y="0"/>
+		<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" x="118" y="0"/>
+		<e:Image id="redPoint2" touchEnabled="false" source="zjmhongdian" x="237" y="0"/>
+		<e:Image id="redPoint3" source="zjmhongdian" touchEnabled="false" x="357" y="0"/>
+		<e:layout>
+			<e:HorizontalLayout gap="87"/>
+		</e:layout>
+	</e:Group>
+	<e:Button label="按钮" skinName="Btn0Skin" icon="wenhao" horizontalCenter="-75" width="30" height="30" alpha="0.6" top="10" visible="false"/>
+	<e:Image source="biaoti_duanzao" horizontalCenter="-155" top="6"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+	<e:Button id="seeRule" label="按钮" icon="wenhao" skinName="Btn0Skin" horizontalCenter="-246" y="8" scaleX="0.9" scaleY="0.9"/>
+</e:Skin>

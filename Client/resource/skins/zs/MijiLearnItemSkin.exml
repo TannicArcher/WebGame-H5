@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MijiLearnItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<ns1:BaseComponent id="item" x="1" y="0" skinName="ItemSkin" className="ItemBaseNoTap"/>
+	<e:Label id="label" text="已学" y="7" size="20" textColor="0x00ff00" bold="true" strokeColor="000000" horizontalCenter="0"/>
+</e:Skin>

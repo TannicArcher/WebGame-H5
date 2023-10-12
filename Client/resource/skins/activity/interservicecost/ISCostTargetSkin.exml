@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ISCostTargetSkin" width="90" height="76" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="cannot,can,already" >
+	<w:Config id="1586b362dfe"/>
+
+
+
+
+
+	<e:Group x="0" y="0">
+		<ns1:BaseComponent id="reward" className="ItemBase" y="0" skinName="ItemSkin" x="0"/>
+		<e:Image id="bless" source="" x="45" y="36"/>
+		<e:Image id="redPoint" source="zjmhongdian" x="59" includeIn="can" y="0"/>
+		<e:Image id="getImg" x="1" y="42" source="yilingqu" rotation="-35" includeIn="already" touchEnabled="false"/>
+	</e:Group>
+	<e:Group y="60" horizontalCenter="0.5">
+		<e:Label id="cost" size="16" textAlign="center" text="1000" strokeColor="0x111111" stroke="1" x="0" y="0" textColor.cannot="0xff0000" textColor.can="0x00ff00" textColor.already="0x00ff00" textColor="0xf8b141"/>
+		<e:Label id="target" size="16" textAlign="center" text="/2000" strokeColor="0x111111" stroke="1" x="0" y="0" textColor="0xf8b141"/>
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="maskGroup" left="0" right="0" top="0" includeIn="can" touchEnabled.can="true" touchEnabled.already="true" bottom="0"/>
+
+	<!--<ns1:BaseComponent id="tongIcon" skinName="RuneItemSkin" horizontalCenter="1" verticalCenter="-3" visible="false"/>-->
+</e:Skin>

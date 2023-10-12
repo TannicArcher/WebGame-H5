@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WorldBossUiSkin" currentState="normal" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="930">
+	<w:Config id="15c6d0f73d2" />
+	<e:Group id="attList" width="100" top="190" bottom="144" right="0">
+		<e:Button id="refush" label="按钮" x="0" y="1" skinName="Btn0Skin" width="76"  visible="false"/>
+		<e:ToggleButton id="btn" touchEnabled="true" label="按钮" right="1" skinName="Btn4Skin" y="1"  visible="false"/>
+		<e:Label text="选择目标" x="6" y="6" size="16" textColor="0xDFD1B5" stroke="1" strokeColor="000000" visible="false" />
+		<e:Group id="beAttackGroup" x="0" top="151" bottom="0">
+			<e:Group x="0" y="0" width="100">
+				<e:Image source="teshuwenzibg" y="0" height="30" left="0" right="0" />
+				<e:Label text="受到攻击" y="5" size="18" textAlign="center" textColor="0xd6240e" x="14" />
+			</e:Group>
+			<e:Scroller id="bar1" width="100" x="0" top="32" bottom="0">
+				<e:List id="list2" x="5" y="6" itemRendererSkinName="MemberHeadSkin">
+				</e:List>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="attackGroup" x="0" y="1">
+			<e:Group x="0" y="0" width="100">
+				<e:Image source="teshuwenzibg" y="0" height="30" left="0" right="0" />
+				<e:Label text="正在攻击" y="5" size="18" textColor="0xFFCE0B" textAlign="center" x="14" />
+			</e:Group>
+			<e:List id="list1" width="100" height="110" x="0" y="30"  
+			        itemRendererSkinName="MemberHeadSkin">
+			</e:List>
+		</e:Group>
+	</e:Group>
+	<e:Group id="leftTimeGroup" horizontalCenter="0" y="6" width="260" height="22">
+		<e:Image source="bantoutiaobg" scale9Grid="80,5,86,35" left="0" right="0" top="0" bottom="0" />
+		<e:Group y="2" horizontalCenter="0">
+			<e:Label text="活动剩余时间" x="0" y="0" size="18" textColor="0xDFD1B5" />
+			<e:Label id="lastTime" text="15分00秒" x="111" y="0" size="18" textColor="0xFFB82A" rotation="359.27" />
+			<e:layout>
+				<e:HorizontalLayout gap="2" />
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="bossBloodGroup" width="480" y="20" horizontalCenter="0">
+		<e:Rect height="20" y="50" left="110" right="30" fillColor="0x111010" />
+		<e:Rect width="82" height="82" x="17" y="19" ellipseWidth="82" ellipseHeight="82" fillColor="0x111010" />
+		<e:Image id="head" source="" y="22" x="20"  scaleX="1.2" scaleY="1.2"/>
+		<e:Image id="grayImg" y="52" source="bosshp2" width="340" x="110" />
+		<e:Image y="22" height="28" width="396" source="bantoutiaobg" x="44" scale9Grid="51,5,136,35"/>
+		<e:ProgressBar id="bloodBar" y="52" value="50" left="110" right="30" skinName="bar7Skin" />
+		<e:Image left="0" right="0" scale9Grid="150,0,9,122" source="bosstouxiangk"  y="0"/>
+		<e:Group id="hudun" x="120" y="74" visible="false">
+			<e:Rect left="13" right="13" top="0" bottom="10" fillColor="0x111010" />
+			<e:ProgressBar id="hudunbloodBar" width="290" height="4" value="100" x="12" y="1" skinName="bar6Skin" />
+			<e:Image source="zdbossskin_json.zdbosshudunxuetiaobg" x="0" y="0" width="315" scale9Grid="15,1,13,3" />
+		</e:Group>
+		<e:Label id="lvTxt" y="27" size="20" text="Lv.2000" x="126" textColor="0xf8b141" width="70" textAlign="right" />
+		<e:Label id="nameTxt" y="26" size="20" text="祖玛教主" x="200" textColor="0xd1c28f" bold="true" />
+		<e:Button id="tipBtn" label="奖励" x="13" y="100.33" skinName="Btn18Skin"/>
+	</e:Group>
+	<e:Button id="attackPlayer1" label="" skinName="worldBossAtbtn" currentState="attgsup" horizontalCenter="66" bottom="150" scaleX="1" visible="false"/>
+	<e:Button id="attackBoss1" label="" skinName="worldBossAtbtn" currentState="attbossup" horizontalCenter="-99" bottom="150" visible="false"/>
+	<e:Group id="attackBtnGroup" bottom="166" horizontalCenter="0" width="322">
+		<ns1:BaseComponent id="attackBoss" skinName="worldBossAtbtn" x="75" y="35" className="BossUIBtnItem" anchorOffsetX="75" anchorOffsetY="35"/>
+		<ns1:BaseComponent id="attackPlayer" skinName="worldBossAtbtn" x="246" y="35" className="BossUIBtnItem" anchorOffsetX="75" anchorOffsetY="35"/>
+
+
+
+	</e:Group>
+	<e:Group width="235" y="110" id="belongGroup" right="4">
+		<e:Rect height="14" y="30" left="77" right="13" fillColor="0x111010"   />
+		<e:Rect left="91" right="32" fillColor="0x111010" height="4" width="92"  y="46"/>
+		<e:Rect width="58" height="58" x="8" y="9" ellipseWidth="82" ellipseHeight="82" fillColor="0x111010" />
+		<e:Image id="roleHead" source="yuanhead10" width="52" height="52" x="11" y="11.2" />
+		<e:Image y="5" height="24" width="196" source="bantoutiaobg" x="23" scale9Grid="51,5,136,35"/>
+		<e:ProgressBar id="neigongBar0" width="112" height="4" y="46" value="100" x="89" skinName="bar6Skin" />
+		<e:ProgressBar id="bloodBar0" y="31" value="50" left="76" right="14" height="12"  skinName="bar7Skin"/>
+		<e:Image scale9Grid="92,32,5,7" left="0" right="0" y="1" source="zdbossgueishuzhebg" />
+		<e:Group x="77" y="8" height="18" width="140">
+			<e:Label text="归属" size="16" textAlign="center" y="1" textColor="0x9f946d" x="0" />
+			<e:Label id="belongNameTxt" text="玩家名称" size="16" textColor="0xFFCE0B" textAlign="center" y="1" x="40" />
+		</e:Group>
+		<e:Button id="attguishu" label="抢夺归属" x="72" y="50" width="80" height="36" skinName="Btn17Skin"/>
+	</e:Group>
+	<e:Group id="attEffectGroup" left="0" right="0" top="0" bottom="0" touchChildren="false" touchEnabled="false" alpha="0" visible="false">
+		<e:Image source="shoujihong" scale9Grid="8,2,54,2" top="0" bottom="0" touchEnabled="false" left="0" />
+		<e:Image source="shoujihong" scale9Grid="8,2,54,2" scaleX="-1" top="0" bottom="0" touchEnabled="false"
+		         right="0" />
+	</e:Group>
+	<e:Group id="endGroup" width="300" height="100" horizontalCenter="0" verticalCenter="-335" touchChildren="false" touchEnabled="false" visible="false">
+		<e:Image   left="0" right="0" top="0" bottom="0"
+		          source="waifaguang" scale9Grid="11,11,8,6"/>
+		<e:Image   left="4" right="4" top="4" bottom="4" source="tongyongtip3" scale9Grid="11,11,8,6"/>
+		<e:Group y="50" horizontalCenter="0">
+			<e:Label text="离开倒计时:" size="24"   x="0" y="0" textColor="0x7e6437"/>
+			<e:Label id="leftTime" text="180s" size="24" x="125" y="0" textColor="0xf8b141"/>
+			<e:layout>
+				<e:HorizontalLayout gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="winnerName" text="最终归属者是：玩家名六个字"  textAlign="center" size="20" textColor="0x9f946d" horizontalCenter="0" y="16"/>
+	</e:Group>
+</e:Skin>

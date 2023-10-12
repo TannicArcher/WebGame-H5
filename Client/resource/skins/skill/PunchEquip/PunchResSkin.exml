@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PunchResSkin" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" width="580">
+	<w:Config id="1586b3b34b9"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group id="anigroup" width="420" height="570" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-38" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-32" textColor="0x7E6437"/>
+		<e:Image scale9Grid="17,13,14,24" source="tongyongkuang3bg" left="0" right="0" top="2" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" y="0" left="0" right="0"/>
+		<e:Image source="ronglianbg_png" left="6" right="6" height="422" y="44"/>
+		<e:Image y="86" width="400" height="370" horizontalCenter="0" source="tongyongtip1" scale9Grid="5,6,12,11"/>
+		<e:Image source="tongyongtip2" y="86" width="400" height="370" scale9Grid="19,19,2,4" horizontalCenter="0"/>
+		<e:Label text="分  解" y="10" size="24" bold="true" horizontalCenter="0" textColor="0xA67D44"/>
+		<e:Image source="gantanhao" x="123" y="52"/>
+		<e:Label text="只会分解无用的装备" size="18" horizontalCenter="19" y="54" textColor="0x9F946D"/>
+		<e:Group id="dinghong" width="410" height="98" bottom="5" horizontalCenter="0">
+			<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" width="205"/>
+			<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" width="205"/>
+		</e:Group>
+
+		<e:Group y="44" width="330" horizontalCenter="0">
+			<e:Image source="tielian" y="0" right="0"/>
+			<e:Image source="tielian" x="0" y="0"/>
+		</e:Group>
+		<e:List id="itemList" height="323" itemRendererSkinName="ItemSkin" width="320" horizontalCenter="0" x="65" y="117">
+			<e:layout>
+			<e:TileLayout requestedColumnCount="3" horizontalGap="25" verticalGap="13" requestedRowCount="3" paddingLeft="0" paddingTop="0"/>
+			</e:layout>
+		</e:List>
+		<e:Button skinName="Btn1Skin" label="分  解" id="smeltBtn" horizontalCenter="0" bottom="24" width="156" height="60" x="147" y="706"  />
+	</e:Group>
+	
+	
+</e:Skin>

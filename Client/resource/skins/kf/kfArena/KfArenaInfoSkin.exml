@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KfArenaInfoSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group horizontalCenter="0" top="53">
+		<e:Button id="sureBtn" label="确  定" width="120" height="50" skinName="Btn1Skin" y="605" x="215"/>
+		<e:Scroller x="0" y="113">
+			<e:List id="list" y="-20" itemRendererSkinName="KfArenaResultItemSkin" anchorOffsetY="0" height="446">
+			<e:ArrayCollection>
+				<e:Array>
+				<e:Object/>
+				<e:Object/>
+				<e:Object/>
+				<e:Object/>
+				<e:Object/>
+				<e:Object/>
+				<e:Object/>
+				<e:Object/>
+				<e:Object/>
+				</e:Array>
+			</e:ArrayCollection>
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:BitmapLabel id="blueScore" x="203" y="9" font="num_j2_fnt" text="0"/>
+		<e:BitmapLabel id="redScore" x="319" y="9" text="0" font="num_j1_fnt"/>
+		<e:Image source="guildboss_json.gb_vs" x="243" y="0"/>
+	</e:Group>
+</e:Skin>

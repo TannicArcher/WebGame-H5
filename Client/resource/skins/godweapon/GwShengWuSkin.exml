@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GwShengWuSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  width="55" height="54">
+	<w:Config id="1586b349dbe"/>
+	<e:Image id="frame" horizontalCenter="0" verticalCenter="0" source="godweapon_quality1"/>
+	<e:Image id="shengwuImg" width="39" height="39" source="200110_png" x="8.42" y="7.86"/>
+	<e:Image id="add" width="20" height="20" source="tongyongadd2" horizontalCenter="0" verticalCenter="0" visible="false"/>
+	<e:Image id="rpImgAdd" x="33" y="0" source="zjmhongdian"/>
+
+
+</e:Skin>

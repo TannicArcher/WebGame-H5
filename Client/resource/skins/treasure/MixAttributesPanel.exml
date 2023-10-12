@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MixAttributesPanel" width="300" height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="300" x="0" source="shuxingbg" scale9Grid="50,5,65,34" top="10" bottom="0"/>
+
+	<e:Label id="score" y="28" text="999999" size="20" textColor="0xFFA327" x="144"/>
+	<e:Label y="28" text="评分：" size="20" textColor="0xFFA327" x="90"/>
+	<e:Label id="nameAttr" y="56" textColor="0xDFD1B5" text="魔防：" size="18" x="48" width="54"/>
+	<e:Label id="randAttr" y="56" text="+?" size="18" x="200" textColor="0xc6a463"/>
+	<e:Label id="baseAttr" y="56" textColor="0xDFD1B5" text="999999" size="18" x="100" width="180" height="86"/>
+</e:Skin>

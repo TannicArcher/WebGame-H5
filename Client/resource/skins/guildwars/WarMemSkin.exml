@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WarMemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" width="430" height="100">
+	<e:Image source="tongyonglabbg" left="0" right="0" top="0" bottom="0" scale9Grid="62,24,1,28"/>
+	<e:Image id="vipTitle" x="90" y="3" scaleX="0.8" scaleY="0.8" source="vipv_png"/>
+	<e:Group id="vip" x="86" y="4"  width="56" height="40"/>
+	<e:Label id="conLab" text="999999" x="160" y="40" size="16" textColor="0xd1c28f"/>
+	<e:Label text="积  分：" x="96" y="40" size="16" textColor="0x9f946d"/>
+	<e:Label text="战斗力：" x="96" y="60" size="16" textColor="0x9f946d"/>
+	<e:Label id="attack" text="99999999" x="160" y="60" size="16" textColor="0xF7B910"/>
+	<e:Label id="nameLab" text="[副会长]" x="244" y="15" size="16" textColor="0xf8b141"/>
+	<e:Label id="nameLab0" text="成员名称六字" x="145" y="15" size="16" textColor="0x9f946d"/>
+	<e:Image id="headBG" source="touxiangkuang0" width="70" height="70" scale9Grid="10,8,5,3" verticalCenter="0" left="16"/>
+	<e:Image id="face" source="head_11" verticalCenter="0" width="60" height="60" left="21"/>
+	<e:Label id="onLine" text="龙城城门" size="16" verticalCenter="0" textColor="0x9f946d" x="340"/>
+	<e:Image source="tongyongzuobiao" x="303" verticalCenter="0"/>	
+	
+</e:Skin>

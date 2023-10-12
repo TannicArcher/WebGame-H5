@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Btn9Skin" states="up,down,disabled" width="212" height="49" currentState="up"
+        xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="czbtn"  y.down="2" visible.disabled="false"/>
+	<e:Label id="labelDisplay" size="22" verticalCenter="0" text="牛逼按钮" horizontalCenter="0"
+	         textColor="0xffd93f" bold="true"  verticalCenter.down="0" visible.disabled="false" textColor.down="0x9f946d" horizontalCenter.up="0" verticalCenter.up="-2"/>
+</e:Skin>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SmeltSeletctItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="135" height="155">
+	<w:Config id="1586b3cda3a"/>
+	<e:Image source="zyz_02" y="0" width="410" height="148" x="0" scale9Grid="20,16,38,22" visible="false"/>
+	<e:Image source="bag_13" y="0" scale9Grid="5,6,3,4" width="135" height="155" x="0"/>
+	<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" verticalCenter="-14" horizontalCenter="0"/>
+	<e:Label id="lvLabel" y="100" size="20" width="120" textColor="0xDFD1B5" textAlign="center" text="name" horizontalCenter="0"/>
+	<e:Label id="nameLabel" text="装备名字" x="120" y="12" size="18" visible="false"/>
+	<e:Label id="gradeLabel" text="评分:123456" y="122" size="18" textColor="0xA89C88" horizontalCenter="0" width="120" textAlign="center"/>
+	<e:Image id="arrowIcon" x="78" y="77" source="tongyongup" width="24" height="20"/>
+	<e:Label id="attrLabel" x="135" y="40" size="16" height="100" width="160" text="攻击：00000 +123\n\n攻击：00000\n\n攻击：00000\n\n攻击        +00000" textColor="0xFFFFFF" lineSpacing="10" visible="false"/>
+	<e:CheckBox id="checkBoxs" skinName="CheckBox0" scaleX="0.7" scaleY="0.7" top="0" right="0"/>
+</e:Skin>

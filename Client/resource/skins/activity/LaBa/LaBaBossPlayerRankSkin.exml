@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LaBaBossPlayerRankSkin" currentState="normal" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="220" height="25">
+	<w:Config id="15c6d0f73d2" />
+	<e:Group id="playerRank" width="220" height="25" x="0" verticalCenter="0">
+		<e:Image width="220" height="25" x="0" source="zjmgonggaobg" scale9Grid="28,2,171,16" verticalCenter="0"/>
+		<e:Label id="rank" text="10." size="16" textAlign="center" height="20" horizontalCenter="-91.5" verticalCenter="0" verticalAlign="middle" textColor="0x20CB30"/>
+		<e:Label id="name1" text="玩家名字六" size="16" textAlign="left" height="20" horizontalCenter="-14" verticalCenter="0" verticalAlign="middle" textColor="0x16B2FF"/>
+		<e:Label id="hurt" text="10000W" size="16" textAlign="right" height="20" right="0" verticalCenter="0" verticalAlign="middle" textColor="0x20CB30"/>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

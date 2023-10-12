@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DailypresidentAwardSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="930" width="580">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Image width="480" height="323" scale9Grid="18,14,12,20" source="tongyongkuang3bg"     y="8" horizontalCenter="0"/>
+		<e:Image width="480" source="tongyongkuang3tou" scale9Grid="66,0,271,47"   horizontalCenter="0"/>
+		<e:Label id="desc" y="80" text="龙城占领行会会长奖励" size="20" textColor="0x9f946d"   horizontalCenter="0"/>
+		<e:Label y="108" text="奖励通过邮件发放" size="18" textColor="0x9F946D" horizontalCenter="0"/>
+		<e:Image source="teshuwenzibg" y="7"   horizontalCenter="0"/>
+		<e:Label y="14" text="会长奖励" size="24" textColor="0xa67d44"   horizontalCenter="0"/>
+		<e:Button id="sure" label="领 取" skinName="Btn1Skin" y="265"   horizontalCenter="0" visible="false"/>
+		<e:Scroller y="148" skinName="Btn0Skin"   horizontalCenter="0">
+			<e:List id="list" width="405" height="102" y="2" itemRendererSkinName="ItemSkin" x="0">
+			<e:layout>
+				<e:HorizontalLayout paddingLeft="10" gap="8"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

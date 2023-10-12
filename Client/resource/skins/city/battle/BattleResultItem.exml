@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleResultItem" width="390" height="20" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="ranking" text="20" size="20" scaleX="1" scaleY="1" width="55" textAlign="center" textColor="0x9f946d" verticalCenter="0" horizontalCenter="-167.5"/>
+	<e:Label id="roleName" text="布拉格の沉默" size="20" scaleX="1" scaleY="1" width="125" textAlign="center" textColor="0x9f946d" verticalCenter="0" x="55"/>
+	<e:Label id="guild" text="布拉格の传说" size="20" scaleX="1" scaleY="1" width="125" textAlign="center" textColor="0x5186fd" verticalCenter="0" x="180"/>
+	<e:Label id="score" text="1000000" size="20" scaleX="1" scaleY="1" width="85" textColor="0xff9900" verticalCenter="0" textAlign="center" horizontalCenter="152.5"/>
+</e:Skin>

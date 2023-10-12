@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChatMainSkin"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="580">
+	<w:Config id="1589952c00c"/>
+	
+
+	<e:Group id="chatGroup" touchEnabled="false" bottom="116" width="400" height="42" horizontalCenter="0">
+		<e:Rect left="46" right="0" top="0" bottom="0" fillAlpha="0.3" visible="false"/>
+		<e:Image left="0" right="0" top="0" bottom="0" source="zjmgonggaobg"/>
+		<e:Image id="message" touchEnabled="true" pixelHitTest="true" source="zjmliaotian" y="0" visible="false"/>
+		<e:List id="chatList" itemRendererSkinName="ChatItemSkin" right="10" left="30" height="32" verticalCenter="0">
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+					<!--<e:ArrayCollection>
+						<e:Array>
+							<e:Object label="数据1"/>
+							<e:Object label="数据2"/>
+							<e:Object label="数据3"/>
+							<e:Object label="数据4"/>
+							<e:Object label="数据5"/>
+							<e:Object label="数据6"/>
+							<e:Object label="数据7"/>
+						</e:Array>
+					</e:ArrayCollection>-->
+				</e:List>
+	</e:Group>
+</e:Skin>

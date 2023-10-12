@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CheckEfficienSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="580" height="930">
+	<e:Group id="mainGroup" height="100" width="400" horizontalCenter="0" top="240">
+		<e:Image top="0" bottom="0" left="0" right="0" source="bantoutiaobg2" scale9Grid="11,2,70,17"/>
+		<e:Label id="descTxt" text="关卡效率提升" size="22" bold="true" y="10" horizontalCenter="0" textColor="0xbd600d"/>
+		<e:Group id="groupGold" width="300" y="40" horizontalCenter="0" visible="false">
+			<e:Image x="18" verticalCenter="0" source="szjinbi"/>
+			<e:Label id="curMoney" text="5734285" size="20" x="50" textColor="0xDFD1B5"/>
+			<e:Image source="tongyongup" x="150" rotation="90" verticalCenter="0.5"/>
+			<e:Group x="164" y="0">
+				<e:Label id="nextMoney" text="5734285" size="20" textColor="0x20C020" x="0" y="0"/>
+				<e:Label text="/小时" size="20" textColor="0xDFD1B5" x="88" y="0"/>
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group id="groupExp" width="300" y="68" horizontalCenter="0" visible="false">
+			<e:Image verticalCenter="0" x="14" source="szexp"/>
+			<e:Label id="curExp" text="2373360" size="20" textColor="0xDFD1B5" x="50"/>
+			<e:Image source="tongyongup" x="150" rotation="90" verticalCenter="0.5"/>
+			<e:Group x="164" y="0">
+				<e:Label id="nextExp" text="2373360" size="20" textColor="0x20C020" x="0" y="0"/>
+				<e:Label text="/小时" size="20" textColor="0xDFD1B5" x="88" y="0"/>
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+
+		<e:Group id="groupInfoGold" y="40" horizontalCenter="0">
+			<e:Group x="164" y="0">
+				<e:Image x="18" verticalCenter="0" source="szjinbi"/>
+				<e:Label id="nextInfoMoney" text="5734285" size="20" textColor="0x20C020" x="0" y="0"/>
+				<e:Label text="/小时" size="20" textColor="0xDFD1B5" x="88" y="0"/>
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+			</e:Group>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="groupInfoExp" y="68" horizontalCenter="0">
+			<e:Group x="164" y="0">
+				<e:Image verticalCenter="0" x="14" source="szexp"/>
+				<e:Label id="nextInfoExp" text="2373360" size="20" textColor="0x20C020" x="0" y="0"/>
+				<e:Label text="/小时" size="20" textColor="0xDFD1B5" x="88" y="0"/>
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+			</e:Group>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

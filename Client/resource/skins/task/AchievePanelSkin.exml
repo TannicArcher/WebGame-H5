@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="AchievePanelSkin" width="430" height="535" xmlns:e="http://ns.egret.com/eui">
+	<e:Group width="430" height="528">
+		<e:Scroller width="426" height="520" x="5" y="9">
+			<e:List y="6" id="list" itemRendererSkinName="TaskItemSkin" x="4" width="420" height="520">
+				<e:layout>
+					<e:VerticalLayout gap="2"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

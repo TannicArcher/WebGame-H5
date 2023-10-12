@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="hunguSkin" width="580" height="712" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586c85d15d"/>
+	<e:Image y="0" horizontalCenter="0" source="hunguBg_png"/>
+
+
+
+
+
+
+
+
+
+
+	<e:Group y="153" horizontalCenter="0" width="520" height="500" touchEnabled="false">
+		<e:Group id="effect1quanshen" horizontalCenter="0" verticalCenter="0" visible="false"/>
+		<e:Group id="effect3xia" horizontalCenter="0" verticalCenter="-41"/>
+		<e:Group id="effect2toubu" horizontalCenter="0" verticalCenter="-41"/>
+		<e:Group id="pos0" y="0" x="0" width="248">
+
+			<e:Image id="HGanxianzhi0" width="127" x="76" y="34" source="HGxianan"/>
+			<e:Image id="HGanxianxie0" width="77" x="206" y="36" source="HGxianan" rotation="64"/>
+			<e:Image id="HGliangxianzhi0" x="76" y="34" source="HGxianliang" scale9Grid="2,1,16,8" width="127" visible="false"/>
+			<e:Image id="HGliangxianxie0" x="206" y="36" source="HGxianliang" scale9Grid="2,1,16,8" width="77" rotation="64" visible="false"/>
+			<e:Image id="andian0" x="218" y="89" source="HGdianan"/>
+			<e:Image id="liangdian0" x="218" y="89" source="HGdianliang" visible="false"/>
+			<e:Component id="equip0" y="0" x="0" skinName="EquipItem"/>
+			<e:Group id="effectPos0" y="104" x="234"/>
+		</e:Group>
+		<e:Group id="pos2" y="110" x="0">
+			<e:Image id="HGanxianzhi2" width="110" x="76" y="34" source="HGxianan"/>
+			<e:Image id="HGanxianxie2" width="59" x="188" y="35" source="HGxianan" rotation="30"/>
+			<e:Image id="HGliangxianzhi2" x="76" y="34" source="HGxianliang" scale9Grid="2,1,16,8" width="110" visible="false"/>
+			<e:Image id="HGliangxianxie2" x="188" y="35" source="HGxianliang" scale9Grid="2,1,16,8" width="59" rotation="30" visible="false"/>
+			<e:Image id="andian2" x="221" y="54" source="HGdianan"/>
+			<e:Image id="liangdian2" x="221" y="54" source="HGdianliang" visible="false"/>
+			<e:Component id="equip2" x="0" skinName="EquipItem" y="0"/>
+			<e:Group id="effectPos2" x="236" y="68"/>
+		</e:Group>
+		<e:Group id="pos4" x="0" y="220">
+			<e:Image id="HGanxianzhi4" width="58" x="73" y="34" source="HGxianan"/>
+			<e:Image id="HGanxianxie4" width="82" x="126" y="38" source="HGxianan" rotation="290"/>
+			<e:Image id="HGliangxianzhi4" x="73" y="34" source="HGxianliang" scale9Grid="2,1,16,8" width="58" visible="false"/>
+			<e:Image id="HGliangxianxie4" x="126" y="38" source="HGxianliang" scale9Grid="2,1,16,8" width="82" rotation="290" visible="false"/>
+			<e:Image id="andian4" x="144" y="-53" source="HGdianan"/>
+			<e:Image id="liangdian4" x="144" y="-53" source="HGdianliang" visible="false"/>
+			<e:Component id="equip4" y="0" x="0" skinName="EquipItem"/>
+			<e:Group id="effectPos4" x="159" y="-39"/>
+		</e:Group>
+		<e:Group id="pos6" x="0" y="330">
+			<e:Image id="HGanxianzhi6" width="80" x="75" y="34" source="HGxianan"/>
+			<e:Image id="HGanxianxie6" width="115" x="151" y="37" source="HGxianan" rotation="308"/>
+			<e:Image id="HGliangxianzhi6" x="75" y="34" source="HGxianliang" scale9Grid="2,1,16,8" width="80" visible="false"/>
+			<e:Image id="HGliangxianxie6" x="151" y="37" source="HGxianliang" scale9Grid="2,1,16,8" width="115" rotation="308" visible="false"/>
+			<e:Image id="andian6" x="210" y="-64" source="HGdianan"/>
+			<e:Image id="liangdian6" x="210" y="-64" source="HGdianliang" visible="false"/>
+			<e:Component id="equip6" y="0" x="0" skinName="EquipItem"/>
+			<e:Group id="effectPos6" x="224" y="-49"/>
+		</e:Group>
+		<e:Group id="pos1" x="440" y="0">
+			<e:Image id="HGanxianzhi1" width="190" x="13" y="42" source="HGxianan" rotation="180"/>
+			<e:Image id="HGanxianxie1" width="80" x="206" y="30" source="HGxianan" rotation="66" visible="false"/>
+			<e:Image id="HGliangxianzhi1" x="13" y="42" source="HGxianliang" scale9Grid="2,1,16,8" width="190" rotation="180" visible="false"/>
+			<e:Image id="HGliangxianxie1" x="216" y="40" source="HGxianliang" scale9Grid="2,1,16,8" width="80" rotation="66" visible="false"/>
+			<e:Image id="andian1" y="24" source="HGdianan" x="-196"/>
+			<e:Image id="liangdian1" x="-196" y="24" source="HGdianliang" visible="false"/>
+			<e:Component id="equip1" y="0" skinName="EquipItem" x="0"/>
+			<e:Group id="effectPos1" x="-181" y="38"/>
+		</e:Group>
+		<e:Group id="pos3" x="440" y="110">
+			<e:Image id="HGanxianzhi3" width="80" x="13" y="45" source="HGxianan" rotation="180"/>
+			<e:Image id="HGanxianxie3" width="125" x="-69" y="44" source="HGxianan" rotation="210"/>
+			<e:Image id="HGliangxianzhi3" x="13" y="45" source="HGxianliang" scale9Grid="2,1,16,8" width="80" rotation="180" visible="false"/>
+			<e:Image id="HGliangxianxie3" x="-69" y="44" source="HGxianliang" scale9Grid="2,1,16,8" width="125" rotation="210" visible="false"/>
+			<e:Image id="andian3" x="-190" y="-37" source="HGdianan"/>
+			<e:Image id="liangdian3" x="-190" y="-37" source="HGdianliang" visible="false"/>
+			<e:Component id="equip3" y="0" skinName="EquipItem" x="0"/>
+			<e:Group id="effectPos3" y="-23" x="-175"/>
+		</e:Group>
+		<e:Group id="pos5" x="440" y="220">
+			<e:Image id="HGanxianzhi5" width="58" x="8" y="43" source="HGxianan" rotation="180"/>
+			<e:Image id="HGanxianxie5" width="85" x="-52" y="42" source="HGxianan" rotation="236"/>
+			<e:Image id="HGliangxianzhi5" x="8" y="43" source="HGxianliang" scale9Grid="2,1,16,8" width="58" rotation="180" visible="false"/>
+			<e:Image id="HGliangxianxie5" x="-52" y="42" source="HGxianliang" scale9Grid="2,1,16,8" width="85" rotation="236" visible="false"/>
+			<e:Image id="andian5" x="-112" y="-47" source="HGdianan"/>
+			<e:Image id="liangdian5" x="-112" y="-47" source="HGdianliang" visible="false"/>
+			<e:Component id="equip5" y="0" skinName="EquipItem" x="0"/>
+			<e:Group id="effectPos5" x="-97" y="-32"/>
+		</e:Group>
+		<e:Group id="pos7" x="440" y="330">
+			<e:Image id="HGanxianzhi7" width="85" x="8" y="44" source="HGxianan" rotation="180"/>
+			<e:Image id="HGanxianxie7" width="125" x="-78" y="43" source="HGxianan" rotation="221"/>
+			<e:Image id="HGliangxianzhi7" x="8" y="44" source="HGxianliang" scale9Grid="2,1,16,8" width="85" rotation="180" visible="false"/>
+			<e:Image id="HGliangxianxie7" x="-78" y="43" source="HGxianliang" scale9Grid="2,1,16,8" width="125" rotation="221" visible="false"/>
+			<e:Image id="andian7" x="-183" y="-56" source="HGdianan"/>
+			<e:Image id="liangdian7" x="-183" y="-56" source="HGdianliang" visible="false"/>
+			<e:Component id="equip7" y="0" skinName="EquipItem" x="0"/>
+			<e:Group id="effectPos7" x="-168" y="-42"/>
+		</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+	</e:Group>
+
+	<e:Group id="fightGroup" horizontalCenter="-5" top="87">
+		<ns1:BaseComponent id="powerPanel0" skinName="PowerPanelSkin" className="PowerPanel"/>
+	</e:Group>
+	<e:Button id="fenjie" label="分解" y="636" horizontalCenter="-213" x="20" icon="fenjie" skinName="Btn1Skin" width="94" height="44" visible="false"/>
+	<e:Button id="executeBtn" label="特殊共鸣" horizontalCenter="72" skinName="Btn0Skin" icon="gongmingBtn2" bottom="14"/>
+	<e:Button id="executeBtn0" label="躯干共鸣" horizontalCenter="-68" x="10" skinName="Btn0Skin" icon="gongmingBtn" bottom="14"/>
+	<e:Label id="getItemTxt0" text="获取道具" size="20" textColor="0x00FF00" horizontalCenter="211" bottom="20" height="60" verticalAlign="middle" width="100" textAlign="center"/>
+	<e:Button id="xiangxishuxing" label="" horizontalCenter="147" top="87">
+		<e:Skin states="up,down,disabled">
+		<e:Image width="100%" height="100%" source="tongyongxiangxi"/>
+		<e:Label id="labelDisplay1" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+	</e:Button>
+
+ 
+</e:Skin>

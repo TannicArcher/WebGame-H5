@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RedBagDetailsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="930" >
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image source="hongbao_png" horizontalCenter="0" verticalCenter="-56.5" width="381" height="527"/>		
+	<e:Button id="closeBtn0" label="按钮" x="385" y="156" skinName="Btn0Skin" visible="false"/>
+	<e:Group horizontalCenter="0" verticalCenter="-171.5">
+		<e:Image x="0" y="0" source="szyuanbao" scaleX="1.3" scaleY="1.3"/>
+		<e:Label id="num" text="2000" x="42" y="6" size="20" textColor="0xf8b141"/>
+	</e:Group>
+	<e:Scroller width="350" horizontalCenter="0" height="266" verticalCenter="57">
+		<e:List id="list" width="350" height="301" x="3" y="35" itemRendererSkinName="RedBagRendererSkin">
+		</e:List>
+	</e:Scroller>
+	<e:Group width="95" horizontalCenter="0" verticalCenter="-106">
+		<e:Label text="详细" size="20" textColor="0x9f946d" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image source="tongyongdian2" left="0" verticalCenter="0"/>
+		<e:Image source="tongyongdian2" right="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Image source="hongbaoline" horizontalCenter="0" verticalCenter="-146"/>
+	<e:Image source="gongxihuode" horizontalCenter="0" verticalCenter="-297.5"/>
+</e:Skin>

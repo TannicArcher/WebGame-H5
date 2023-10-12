@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="tujian" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  height="775">
+	<w:Config id="1586b349dbe"/>
+	<e:Image id="shenqibg" width="570" source="tongyongmianbanbg" top="44" bottom="0" horizontalCenter="0" scale9Grid="19,11,14,19"/>
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" width="580" currentState="nohead"   horizontalCenter="0" top="0"/>
+	<e:Image source="tongyonglabbg" scale9Grid="41,20,45,17"  left="0" right="0" top="0" bottom="-1" visible="false"/>
+	<e:Group top="60" bottom="0" right="28" width="106"  visible="false">
+		<e:Image x="0" y="0" source="tielian"/>
+		<e:Image y="0" right="0" source="tielian"/>
+		<e:Image x="0" bottom="0" source="tielian"/>
+		<e:Image right="0" bottom="0" source="tielian"/>
+		<e:Image width="160" top="32" bottom="32" source="tongyongmianbanbg" scale9Grid="19,11,10,27" horizontalCenter="0"/>
+		<e:Image source="chatbg3" bottom="38" horizontalCenter="0" width="144" height="400" scale9Grid="1,4,8,29"/>
+	</e:Group>
+	<e:Scroller top="106" bottom="100" horizontalCenter="0" width="522">
+		<e:Group y="1.33" x="-1.33">
+			<e:List id="listBook" itemRendererSkinName="tujianskinstate" scaleX="0.85" scaleY="0.85" horizontalCenter="0">
+				<e:layout>
+				<e:TileLayout horizontalGap="16" verticalGap="6" requestedColumnCount="3" paddingBottom="50"/>
+				</e:layout>
+			</e:List>
+
+		</e:Group>
+	</e:Scroller>
+	<e:Group height="50" y="52" width="570" horizontalCenter="0">
+		<e:Image height="50" left="4" right="4" verticalCenter="0" source="bantoutiaobg" scale9Grid="61,5,116,35"/>
+		<e:Image source="zhandoulibg" x="10.92" width="269" alpha="0.4" height="44.33"   scale9Grid="130,26,31,16" verticalCenter="1" visible="false"/>
+		<e:Image source="zjmzhandouli" x="12" verticalCenter="0"/>
+		<e:BitmapLabel id="power" x="83" y="10" font="num_8_fnt" text="22345678" letterSpacing="-6"/>
+		<e:Label id="labelAttr" text="攻击力：" x="12" y="0" size="18" width="360" height="40" textColor="0x9f946d" bold="true" visible="false"/>
+		<e:Label id="labelSuit" text="已收集此套装：0/8" size="20" textColor="0xf8b141" right="96" textAlign="right" verticalCenter="0" visible="false"/>
+		<e:Image id="xiangqing" x="504" verticalCenter="0" source="" visible="false"/>
+		<e:Group height="50" verticalCenter="0" right="26">
+			<e:Image source="tujianexp" verticalCenter="0" x="0"/>
+			<e:Label text="图鉴经验" y="14" size="18"   textColor="0xff750f" x="30"/>
+			<e:Label id="expValue" text="12345678" y="16" size="18"   textColor="0xd1c28f" x="114"/>
+			<e:Group x="189" y="24" width="120" height="50">
+
+				<e:Group scaleX="1" scaleY="1" left="5" verticalCenter="0">
+					<e:Group id="eff" scaleX="1" scaleY="1" x="27" y="5"/>
+					<e:Label id="resolve" text="分解多余图鉴" size="18" textColor="0x35e62d" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1"/>
+				</e:Group>
+			</e:Group>
+
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" gap="0"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Image horizontalCenter="-155" y="6" source="biaoti_tujian"/>
+	<e:Group id="dinghong0" width="556" height="92" bottom="6" horizontalCenter="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0"/>
+	</e:Group>
+	<e:Group horizontalCenter="0" width="554" bottom="96" height="44">
+		<e:Image source="bantoutiaobg2" scale9Grid="20,2,52,17" left="0" right="0" top="0" bottom="0"/>
+		<e:Rect fillAlpha="0.8" left="0" right="0" top="0" bottom="0" visible="false"/>
+		<e:Group x="16" y="1">
+			<e:Image id="labelIcon" x="20" y="2" source="tujiantxt01_png"/>
+			<e:Label id="progress" text="（已集齐 10/12）" x="0" y="0" textColor="0xbd600d" size="18" bold="true"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="attr" text="集齐套装效果：攻击+2000     生命+2000" x="20" y="24" size="18" textColor="0x7f7f7f"/>
+		<e:Label id="getway1" text="套装详情" y="2" size="20" textColor="0x33ce02" right="10" bold="true" visible="false"/>
+		<e:Button id="getway" label="" icon="tongyongxiangxi" verticalCenter="0" right="0" width="50" height="50" skinName="Btn0Skin"/>
+	</e:Group>
+	<e:Scroller id="listScroller" left="48" right="48" bottom="6">
+		<e:List id="listMenu" itemRendererSkinName="TujiandaanniuSkin" horizontalCenter="0" top="0" bottom="0">
+		<e:layout>
+			<e:HorizontalLayout gap="12" paddingLeft="0"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group left="48" right="48" bottom="28">
+		<e:Group id="rightGroup" x="483" y="0" scaleX="1" scaleY="1">
+			<e:Button id="rightBtn" label="" icon="jiantouxuan" skinName="Btn0Skin" scaleX="-1" scaleY="1" y="0" x="39"/>
+			<e:Image id="rightRed" x="19" y="-8" source="zjmhongdian" touchEnabled="false"/>
+		</e:Group>
+		<e:Group id="leftGroup" scaleX="1" scaleY="1" x="-38">
+			<e:Button id="leftBtn" label="" icon="jiantouxuan" skinName="Btn0Skin" scaleX="1" scaleY="1" x="0" y="0"/>
+			<e:Image id="leftRed" x="20" y="-8" source="zjmhongdian" touchEnabled="false"/>
+		</e:Group>
+	</e:Group>
+
+</e:Skin>

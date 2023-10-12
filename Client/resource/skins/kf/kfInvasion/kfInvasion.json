@@ -1,0 +1,12 @@
+{"file":"kfInvasion.png","frames":{
+"invasion_boss_name3":{"x":168,"y":0,"w":56,"h":228,"offX":0,"offY":0,"sourceW":56,"sourceH":228},
+"invasion_icon_belong":{"x":224,"y":0,"w":94,"h":100,"offX":0,"offY":0,"sourceW":94,"sourceH":100},
+"invasion_icon_participate":{"x":224,"y":100,"w":94,"h":100,"offX":0,"offY":0,"sourceW":94,"sourceH":100},
+"biaoti_mojieruqin":{"x":0,"y":228,"w":134,"h":26,"offX":0,"offY":4,"sourceW":134,"sourceH":34},
+"invasion_boss_head0":{"x":318,"y":0,"w":91,"h":84,"offX":0,"offY":0,"sourceW":91,"sourceH":84},
+"invasion_boss_head1":{"x":318,"y":168,"w":91,"h":84,"offX":0,"offY":0,"sourceW":91,"sourceH":84},
+"invasion_boss_head2":{"x":318,"y":84,"w":91,"h":84,"offX":0,"offY":0,"sourceW":91,"sourceH":84},
+"invasion_boss_head3":{"x":409,"y":0,"w":91,"h":84,"offX":0,"offY":0,"sourceW":91,"sourceH":84},
+"invasion_boss_name0":{"x":112,"y":0,"w":56,"h":228,"offX":0,"offY":0,"sourceW":56,"sourceH":228},
+"invasion_boss_name1":{"x":56,"y":0,"w":56,"h":228,"offX":0,"offY":0,"sourceW":56,"sourceH":228},
+"invasion_boss_name2":{"x":0,"y":0,"w":56,"h":228,"offX":0,"offY":0,"sourceW":56,"sourceH":228}}}

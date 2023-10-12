@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShenYuSkillTipsSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="unactive,active,max" >
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="background" source="tongyongtip1" scale9Grid="7,6,11,12" left="0" right="0" top="0" bottom="0" x="-3" y="1" scaleX="1" scaleY="1"/>
+		<e:Image source="tongyongtip2" left="0" right="0" top="0" scale9Grid="18,18,2,4" bottom="0" scaleX="1" scaleY="1"/>
+		<e:Group y="0" x="0">
+			<e:Group width="380" y="-22" horizontalCenter="0" x="-29" scaleX="1" scaleY="1">
+				<ns1:BaseComponent id="icon" x="20" y="52" skinName="ShenYuItem" top.max="52" bottom.max="20" className.unactive="GodWingItem" className="GodWingItem"/>
+				<e:Label id="state" text="未激活" textColor="0xFF0000" size="20" y="20" scaleX="1" scaleY="1" text.unactive="未激活" bold.unactive="true" text.active="已激活" textColor.active="0x00ff00" bold.active="true" textColor.unactive="0xff0000" text.max="已满级" textColor.max="0x00ff00" bold.max="true" right="17"/>
+				<e:Label id="name1" text="疾风斩" size="25" textColor="0xFF9900" bold="true" x="20" y="20" scaleX="1" scaleY="1"/>
+				<e:Label id="lv" text="等级：1" size="18" textColor="0xFF9900" bold="true" x="110" y="55" scaleX="1" scaleY="1"/>
+				<e:Label text="激活条件" size="18" textColor="0xFF9900" bold="true" x="25" y="140" scaleX="1" scaleY="1" includeIn="unactive"/>
+				<e:Label id="content" text="每次攻击有10%概率触发，伤害提升1.5倍，暴击时触发疾风斩，简直爆炸！" textColor="0xFFFFCC" width="250" size="18" textAlign="left" x="110" y="75" scaleX="1" scaleY="1" text.active="每次攻击有10%概率触发，伤害提升1.5倍，暴击时触发疾风斩，简直爆炸！" text.max="每次攻击有10%概率触发，伤害提升1.5倍，暴击时触发疾风斩，简直爆炸！" anchorOffsetX="0"/>
+				<e:Label id="condition" text="所有神羽达到X阶" size="18" textAlign="left" x="25" scaleX="1" scaleY="1" anchorOffsetX="0" top="160" bottom="20" includeIn="unactive" textColor="0xff0000"/>
+			</e:Group>
+			<e:Group width="380" y="-12" horizontalCenter="0" x="-19" scaleX="1" scaleY="1" includeIn="active">
+				<ns1:BaseComponent id="icon0" x="20" y="52" skinName="ShenYuItem" className="GodWingItem"/>
+				<e:Label id="state0" text="未激活" textColor="0xFF0000" size="20" y="20" scaleX="1" scaleY="1" right="17"/>
+				<e:Label id="lv0" text="等级：1" size="18" textColor="0xFF9900" bold="true" x="110" y="55" scaleX="1" scaleY="1"/>
+				<e:Label text="激活条件" size="18" textColor="0xFF9900" bold="true" x="25" y="140" scaleX="1" scaleY="1"/>
+				<e:Label id="content0" text="每次攻击有10%概率触发，伤害提升1.5倍，暴击时触发疾风斩，简直爆炸！" textColor="0xFFFFCC" width="250" size="18" textAlign="left" x="110" y="75" scaleX="1" scaleY="1" anchorOffsetX="0"/>
+				<e:Label text="所有神羽达到X阶" size="18" textAlign="left" x="25" scaleX="1" scaleY="1" anchorOffsetX="0" top="160" bottom="20" id="condition0" textColor="0xff0000"/>
+				<e:Image source="tongyonghd_json.bantoutiaoboss" x="2" y="14" scale9Grid="7,10,3,2" width="140" height="30"/>
+				<e:Label text="下一级" x="20" y="19" size="20" textColor="0xff9900"/>
+			</e:Group>
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" horizontalCenter="0" bottom="-35" x="25" y="662" scaleX="1" scaleY="1">
+			<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

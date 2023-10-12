@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="guardGodWeaponSkin" currentState="challenge" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="554" height="710"        states="challenge" >
+	<w:Config id="15a98a3982e"/>
+	<e:Image width="555" height="710" scale9Grid="117,5,6,8" source="bantoumingkuang3" horizontalCenter="0.5"/>
+	<e:Image width="555" scale9Grid="117,5,6,8" source="bantoumingkuang3" bottom="102" top="455" horizontalCenter="0"/>
+	<e:Image source="guardGodWeaponBG_png" width="554" height="455" horizontalCenter="0" top="0"/>
+
+	<e:Label text="副本奖励" size="20" horizontalCenter="0" includeIn="challenge" textColor="0xFB9D00" bold="true" bottom="215"/>
+
+
+	<e:Scroller id="itemScroller" horizontalCenter="0" includeIn="challenge" height="104" bottom="103">
+		<e:List id="itemList" itemRendererSkinName="ItemSkin" y="0" useVirtualLayout="false" width="450" height="206" horizontalCenter="0">
+		<e:layout>
+			<e:TileLayout verticalGap="0" requestedColumnCount="5" horizontalGap="0"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group id="dinghong0" width="556" height="103" horizontalCenter="0" bottom="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0"/>
+	</e:Group>
+	<e:Button id="btnChallenge" label="挑  战" skinName="Btn1Skin" width="160" height="55" horizontalCenter="0" bottom="40"/>
+	<e:Label text="今日可挑战次数：" textColor="0x35E62B" size="20" horizontalCenter="0" includeIn="challenge" bottom="20"/>
+	<e:Label id="lbTime" text="10" size="20" textColor="0x35E62B" horizontalCenter="82.5" includeIn="challenge" bottom="20"/>
+		<e:Scroller id="notice" top="396" width="350" height="60" scrollPolicyV="off" scrollPolicyH="off" horizontalCenter="-102">
+				<e:List id="noticeList" itemRendererSkinName="UIshowDropNoticeSkin" bottom="0" horizontalCenter="0">
+					<e:layout>
+						<e:VerticalLayout gap="-1"/>
+					</e:layout>
+				</e:List>
+		</e:Scroller>
+
+</e:Skin>

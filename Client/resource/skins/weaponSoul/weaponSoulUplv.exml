@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="weaponSoulUplv" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15dc1d89cd5"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group id="anigroup" height="300" width="400" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="tongyongkuang3bg" right="0" top="0" scale9Grid="6,6,38,38" bottom="0" left="0" x="0" y="0"  />
+		<e:Image source="tongyongkuang3tou" right="0" scale9Grid="67,5,272,37" left="0" x="0" top="0" y="0"  />
+		<e:Image source="tongyongline" y="188" scale9Grid="100,0,8,3" width="363" horizontalCenter="0" x="19"  />
+		<e:Group id="shengji" width="393.33" height="142" x="3" y="44"    >
+		<e:Label id="name0" text="兵魂名称" y="21.669999999999987" size="22" textColor="0xF3EDD7" x="135.66"  />
+		<ns1:BaseComponent id="item0" x="31.33" y="21.659999999999997" skinName="ItemIconSkin"   className="ItemIcon"/>
+		<e:Label id="attr1" text="精炼等级" size="18" textAlign="center" x="139.67" textColor="0x9F946D" y="64"  />
+		<e:Label text="兵魂精炼" y="-35" horizontalCenter="0" textColor="0xF0D45B" size="25" x="147"  />
+		<e:Button id="btn1" label="精  炼" x="131.33" y="197.34" skinName="Btn1Skin"  />
+		<e:Label id="attr2" text="攻击" size="18" textAlign="center" x="138.67" textColor="0x9F946D" y="98.5"  />
+		<e:Label id="attr3" text="10000" size="18" textAlign="center" x="189.67" textColor="0x9F946D" y="99.5"  />
+		<e:Label id="attr5" text="1804" size="18" textAlign="center" x="218.67" textColor="0x9F946D" y="64"  />
+		<e:Label id="attr6" text="+20" size="18" textAlign="center" x="279.17" y="64.5"   textColor="0x20cb30"/>
+		<e:Label id="attr4" text="99999" size="18" textAlign="center" x="264.67" y="100.5"   textColor="0x20CB30"/>
+		<e:Image id="rightIcon1" source="tongyongup" x="255" y="103" rotation="89.12"   width="13"/>
+		<e:Image id="rightIcon0" source="tongyongup" x="273" y="66" rotation="89.12"   width="13"/>
+		<e:Group id="costgroup" y="159" horizontalCenter="0" x="107"  >
+			<e:Label text="消耗: " size="20" bold="true" x="0" y="2" textColor="0xD1C28F"/>
+			<e:Image id="micon" x="64" source="200003_png" width="40" height="40" y="-14"/>
+			<e:Label id="countLabel0" text="120/100" size="20" textAlign="left" x="108" y="2" textColor="0xD1C28F"/>
+		</e:Group>
+		</e:Group>
+		<e:Label id="maxdesc" text="已满级" textColor="0x20cb30" size="20" horizontalCenter="0" verticalCenter="116" visible="false"/>
+	</e:Group>
+</e:Skin>

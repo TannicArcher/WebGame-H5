@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="luckyTurntableSkin2" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*"
+        xmlns:w="http://ns.egret.com/wing" width="560" height="620">
+	<w:Config id="15a98a3982e" />
+	<e:Group horizontalCenter="0">
+		<e:Image id="bg0" width="554" horizontalCenter="0" source="turntablebg_jpg" height="554" y="0"/>
+		<e:Image id="select" y="82" source="luckyselect_png" x="228"/>
+		<e:Group y="109" horizontalCenter="0" width="400" height="370">
+		<ns1:BaseComponent id="item0" y="0" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" horizontalCenter="0" scaleX="0.8" scaleY="0.8"/>
+		<ns1:BaseComponent id="item1" y="12" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.8" scaleY="0.8" horizontalCenter="78"/>
+		<ns1:BaseComponent id="item2" y="72" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.8" scaleY="0.8" horizontalCenter="134"/>
+		<ns1:BaseComponent id="item3" y="150" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.8" scaleY="0.8" horizontalCenter="156"/>
+		<ns1:BaseComponent id="item4" y="228" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.8" scaleY="0.8" horizontalCenter="134"/>
+		<ns1:BaseComponent id="item5" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" horizontalCenter="78" scaleX="0.8" scaleY="0.8" y="288"/>
+		<ns1:BaseComponent id="item6" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" y="300" scaleX="0.8" scaleY="0.8" horizontalCenter="0"/>
+		<ns1:BaseComponent id="item7" y="288" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.8" scaleY="0.8" horizontalCenter="-78"/>
+		<ns1:BaseComponent id="item8" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.8" scaleY="0.8" y="228" horizontalCenter="-134"/>
+		<ns1:BaseComponent id="item9" y="150" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.8" scaleY="0.8" horizontalCenter="-156"/>
+			<ns1:BaseComponent id="item10" y="72" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.8" scaleY="0.8" horizontalCenter="-134"/>
+			<ns1:BaseComponent id="item11" y="12" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.8" scaleY="0.8" horizontalCenter="-78"/>
+		</e:Group>
+		<e:Image id="tttzhi" y="288" touchEnabled="false" anchorOffsetX="19" anchorOffsetY="123" source="zhizhen" x="276"/>
+		<e:Button id="choujiangBtn" skinName="Btn0Skin" icon="luckystart_png" horizontalCenter="0" y="239"/>
+	</e:Group>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50" x="80"/>
+	<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_xingyunzhuanpan" x="212"/>
+
+
+
+
+	<e:Group y="40" width="180" height="30">
+		<e:Image source="bantoutiaoboss" left="0" right="0" top="0" bottom="0"/>
+		<e:Label id="inte" text="当前积分：1200" size="20" textColor="0xD1C28F" x="10" verticalCenter="0" bold="true"/>
+
+	</e:Group>
+	<e:Group y="350" width="230" height="24" horizontalCenter="0" touchEnabled="false" touchThrough="true" touchChildren="false">
+		<e:Image left="0" right="0" top="0" bottom="0" source="bantoutiaobg2"/>
+		<e:Label text="消耗 100 积分可转动转盘" size="18" verticalCenter="0" bold="true" textColor="0x20cb30" horizontalCenter="0"/>
+	</e:Group>
+	<e:Image source="luckystar_json.luckytxt3" horizontalCenter="0" y="515"/>
+
+
+
+	<e:Scroller id="barList" bounces="false" bottom="6" top="550" horizontalCenter="-10">
+		<e:List id="list" x="0" y="-2" itemRendererSkinName="HuntListRendererSkin" scaleX="0.8" scaleY="0.8">
+		</e:List>
+	</e:Scroller>
+	<e:Button id="back" label="" skinName="Btn0Skin" icon="fanhui" scaleX="0.8" scaleY="0.8" horizontalCenter="248" bottom="4"/>
+
+
+
+
+</e:Skin>

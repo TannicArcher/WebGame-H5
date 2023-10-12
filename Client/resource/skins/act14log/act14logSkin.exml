@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="act14logSkin" width="540" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="630">
+	<w:Config id="1586d1506c8" />
+	<e:Button id="closeBtn0" label="按钮" x="433" y="70" skinName="Btn0Skin" visible="false" />
+	<e:Image width="554" horizontalCenter="0" height="280"  source="denglu14bg_png" bottom="26"/>
+	<e:Image source="denglu14txt_png" horizontalCenter="72" bottom="176"/>
+
+
+
+
+	<e:Scroller id="scroller" horizontalCenter="0" top="14" bottom="306">
+		<e:Group id="dataGroup">
+		<e:Group x="5" y="25">
+			<e:Image id="arrow0" source="jiantouyou2" y="40" x="96" scaleX="1" scaleY="1"/>
+			<e:Image id="arrow7" source="jiantouyou2" y="40" x="216" scaleX="1" scaleY="1"/>
+			<e:Image id="arrow8" source="jiantouyou2" y="40" x="336" scaleX="1" scaleY="1"/>
+			<e:Image source="denglu_01" x="8" y="2"/>
+			<e:Image x="130" y="2" source="denglu_02"/>
+			<e:Image x="250" y="2" source="denglu_03"/>
+			<e:Image x="368" y="2" source="denglu_04"/>
+
+
+
+
+			<ns1:BaseComponent id="dayNum1" x="0" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+			<ns1:BaseComponent id="dayNum2" x="121" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+			<ns1:BaseComponent id="dayNum3" x="241" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+			<ns1:BaseComponent id="dayNum4" x="360" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+		</e:Group>
+			<e:Group x="-25" y="-74" scaleX="1" scaleY="1">
+				<e:Image id="arrow9" source="jiantouyou2" y="40" x="96" scaleX="1" scaleY="1"/>
+				<e:Image id="arrow10" source="jiantouyou2" y="40" x="216" scaleX="1" scaleY="1"/>
+				<e:Image id="arrow11" source="jiantouyou2" y="40" x="336" scaleX="1" scaleY="1"/>
+				<e:Image x="8" y="2" source="denglu_05"/>
+				<e:Image x="130" y="2" source="denglu_06"/>
+				<e:Image x="250" y="2" source="denglu_07"/>
+				<e:Image x="368" y="2" source="denglu_08"/>
+
+
+
+
+				<ns1:BaseComponent id="dayNum5" x="0" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+				<ns1:BaseComponent id="dayNum6" x="120" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+				<ns1:BaseComponent id="dayNum7" x="240" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+				<ns1:BaseComponent id="dayNum8" x="360" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group x="-15" y="-64" scaleX="1" scaleY="1">
+				<e:Image id="arrow12" source="jiantouyou2" y="40" x="96" scaleX="1" scaleY="1"/>
+				<e:Image id="arrow13" source="jiantouyou2" y="40" x="216" scaleX="1" scaleY="1"/>
+				<e:Image id="arrow14" source="jiantouyou2" y="40" x="336" scaleX="1" scaleY="1"/>
+				<e:Image x="8" y="2" source="denglu_09"/>
+				<e:Image x="130" y="2" source="denglu_10"/>
+				<e:Image x="250" y="2" source="denglu_11"/>
+				<e:Image x="368" y="2" source="denglu_12"/>
+
+
+
+
+				<ns1:BaseComponent id="dayNum9" x="0" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+				<ns1:BaseComponent id="dayNum10" x="120" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+				<ns1:BaseComponent id="dayNum11" x="240" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+				<ns1:BaseComponent id="dayNum12" x="360" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Group x="-5" y="-54" scaleX="1" scaleY="1">
+				<e:Image id="arrow17" source="jiantouyou2" y="40" x="96" scaleX="1" scaleY="1"/>
+				<e:Image x="8" y="2" source="denglu_13"/>
+				<e:Image x="130" y="2" source="denglu_14"/>
+
+
+				<ns1:BaseComponent id="dayNum13" x="0" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+				<ns1:BaseComponent id="dayNum14" x="120" y="20" skinName="act14item" className="SevenDayItemRender" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:layout>
+				<e:VerticalLayout gap="16"/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+
+	<e:Group id="group1" horizontalCenter="0" bottom="74" scaleX="0.9" scaleY="0.9">
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="4" paddingTop="0" />
+		</e:layout>
+	</e:Group>
+	<e:Button id="suerBtn" label="领取奖励" horizontalCenter="0" height="56" bottom="10" width="180"  skinName="Btn16Skin"/>
+	<e:Label id="daylabel" text="登陆天数:13" size="20" bottom="30" x="50" textColor="0xf8b141" />
+	<e:Label id="dayaward" text="第一天奖励详情" size="20" bottom="162" textColor="0xF8B141" horizontalCenter="-2" bold="true"/>
+
+
+	<e:Image id="redPoint" width="20" height="20" horizontalCenter="77" source="zjmhongdian" bottom="50"/>
+</e:Skin>

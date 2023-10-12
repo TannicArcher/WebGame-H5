@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Btn4Skin" states="up,down,disabled"
+        currentState="up" xmlns:e="http://ns.egret.com/eui">
+	<e:Image visible.disabled="false" source.up="btnmax" left.up="0" right.up="0" top.up="0" bottom.up="0" source="btnmax" left="0" right="0" top="0" bottom="0" source.down="btnmax" rotation.down="270" rotation.up="90"/>
+</e:Skin>

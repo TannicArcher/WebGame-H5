@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CDLogSkin" width="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="622">
+	<w:Config id="1586d1506c8" />
+	<e:Image horizontalCenter="0" source="cd_logbg_png" width="554" height="471" top="151"/>
+	<e:Image source="cd_logbottombg_png" left="8" bottom="0"/>
+	<e:Image source="cd_logbottombg_png" scaleX="-1" right="8" bottom="0"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+	<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_shengdandenglu"/>
+	<e:Group id="infoBg" y="35" left="3" right="3" height="116">
+		<e:Image left="0" right="0" top="0" bottom="0" source="cd_curtain_png"/>
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime1" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actInfo1" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+	</e:Group>
+	<e:Group horizontalCenter="6" verticalCenter="-11" anchorOffsetY="0" height="192" anchorOffsetX="0" width="438">
+		<e:Image y="28" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="-139" source="cd_logitembg" touchEnabled="false"/>
+		<e:Image y="29" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="1" source="cd_logitembg" touchEnabled="false"/>
+		<e:Image y="28" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="141" source="cd_logitembg" touchEnabled="false"/>
+		<e:Image source="jiantouyou2" y="69" x="135" scaleX="1" scaleY="1"/>
+		<e:Image source="jiantouyou2" y="69" x="273" scaleX="1" scaleY="1"/>
+		<e:Image source="denglu_01" y="35" horizontalCenter="-138"/>
+		<e:Image y="35" source="denglu_02" horizontalCenter="2"/>
+		<e:Image y="34" source="denglu_03" horizontalCenter="144"/>
+		<ns1:BaseComponent id="dayNum1" y="50" className="ActivityHFRenderItem" scaleX="0.8" scaleY="0.8" horizontalCenter="-138" skinName="CDLogitem"/>
+		<ns1:BaseComponent id="dayNum2" y="50" className="ActivityHFRenderItem" scaleX="0.8" scaleY="0.8" horizontalCenter="2" skinName="CDLogitem"/>
+		<ns1:BaseComponent id="dayNum3" y="50" className="ActivityHFRenderItem" scaleX="0.8" scaleY="0.8" horizontalCenter="144" skinName="CDLogitem"/>
+	</e:Group>
+	<e:Group id="group1" scaleX="0.9" scaleY="0.9" horizontalCenter="0" bottom="80">
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="4" paddingTop="0" />
+		</e:layout>
+	</e:Group>
+	<e:Label id="done" text="已领取" textColor="0x00ff00" size="28" bold="true" horizontalCenter="0" bottom="24"/>
+	<e:Button id="suerBtn" label="领取奖励" horizontalCenter="0" height="56" bottom="10" width="180"  skinName="Btn16Skin"/>
+	<e:Label id="daylabel" text="登陆天数:13" size="20" bottom="27" x="50" textColor="0xf8b141" />
+	<e:Label id="dayaward" text="第一天奖励详情" size="20" textColor="0xF8B141" horizontalCenter="0" bold="true" bottom="173"/>
+	<e:Image id="redPoint" width="20" height="20" horizontalCenter="77" source="zjmhongdian" bottom="50" visible="false"/>
+</e:Skin>

@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CETreasureSkin" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Group left="0" right="0" top="0" bottom="0">
+
+
+		<e:Image source="tongyonglabbg" bottom="0" scale9Grid="38,48,54,2" right="3" left="3" height="223"/>
+		<e:Image source="tongyonglabbg" scale9Grid="38,48,54,2" right="3" left="3" top="0" scaleY="-1" height="86"/>
+		<e:Rect top="6" fillAlpha="0.3" width="445" horizontalCenter="32.5" anchorOffsetY="0" height="73"/>
+		<e:List id="jpList" itemRendererSkinName="HuntListRendererSkin" anchorOffsetY="0" height="73" anchorOffsetX="0" width="445" horizontalCenter="32.5" top="6">
+			<e:layout>
+				<e:VerticalLayout gap="-5"/>
+			</e:layout>
+		</e:List>
+		<e:Image horizontalCenter="0" verticalCenter="199" source="tongyongditu_png" width="300" height="260" scaleX="0.8" scaleY="0.8"/>
+
+
+		<e:Group y="407" right="20">
+
+			<e:Label id="leftTimeTxt" text="3天10时05分00秒" x="100" size="20" y="10" textColor="0xD1C28F"/>
+			<e:layout>
+			<e:HorizontalLayout gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Image horizontalCenter="0" source="runetreasurebg_png" y="103" visible="false"/>
+		<e:Group width="530" horizontalCenter="0" height="319" anchorOffsetY="0" top="78">
+
+
+
+
+			<ns1:BaseComponent id="gift8" x="0" skinName="ItemSkin" verticalCenter="10.5" className="ItemBase"/>
+			<ns1:BaseComponent id="gift9" skinName="ItemSkin" verticalCenter="10.5" right="0" className="ItemBase"/>
+
+
+
+
+			<e:Group x="0" y="223">
+				<ns1:BaseComponent id="gift10" x="0" skinName="ItemSkin" className="ItemBase" y="0"/>
+				<ns1:BaseComponent id="gift11" x="110" skinName="ItemSkin" className="ItemBase" y="0"/>
+				<ns1:BaseComponent id="gift12" skinName="ItemSkin" className="ItemBase" x="220" y="0"/>
+				<ns1:BaseComponent id="gift13" skinName="ItemSkin" className="ItemBase" x="330" y="0"/>
+				<ns1:BaseComponent id="gift14" skinName="ItemSkin" className="ItemBase" x="440" y="0"/>
+				<ns1:BaseComponent id="gift15" skinName="ItemSkin" className="ItemBase" x="450" y="10"/>
+				<e:layout>
+					<e:HorizontalLayout gap="-2"/>
+				</e:layout>
+			</e:Group>
+			<e:Group x="0" y="10">
+				<ns1:BaseComponent id="gift2" x="0" skinName="ItemSkin" className="ItemBase" y="0"/>
+				<ns1:BaseComponent id="gift3" skinName="ItemSkin" x="110" className="ItemBase" y="0"/>
+				<ns1:BaseComponent id="gift4" skinName="ItemSkin" className="ItemBase" x="330" y="0"/>
+				<ns1:BaseComponent id="gift5" skinName="ItemSkin" className="ItemBase" x="440" y="0"/>
+				<ns1:BaseComponent id="gift6" skinName="ItemSkin" y="0" className="ItemBase" x="220"/>
+				<ns1:BaseComponent id="gift7" skinName="ItemSkin" y="10" className="ItemBase" x="230"/>
+				<e:layout>
+					<e:HorizontalLayout gap="-2"/>
+				</e:layout>
+			</e:Group>
+			<ns1:BaseComponent id="gift0" skinName="ItemSkin" horizontalCenter="-70" className="ItemBase" top="124"/>
+
+
+			<ns1:BaseComponent id="gift1" skinName="ItemSkin" horizontalCenter="70" className="ItemBase" top="124"/>
+
+
+		</e:Group>
+		<e:Button id="buy1" label="寻宝一次" icon="xb_25" skinName="Btn1Skin" width="130" height="50" horizontalCenter="-115" bottom="9"/>
+		<e:Button id="buy10" label="寻宝十次" icon="xb_26" skinName="Btn1Skin" width="130" height="50" horizontalCenter="115" bottom="9" x="10" y="10"/>
+		<e:Group id="ybHunt10" horizontalCenter="115" bottom="63">
+			<e:Image source="szyuanbao" width="30" x="0" y="0" scaleX="1" scaleY="1"/>
+			<e:Label id="yb10" text="4980" size="20" textColor="0xF8B141" x="32" y="1" scaleX="1" scaleY="1"/>
+			<e:Label text="（" size="20" textColor="0xF8B141" x="189" y="5" scaleX="1" scaleY="1"/>
+			<e:Image id="icon10" anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" x="215" y="0" scaleX="1" scaleY="1" source="200982_png"/>
+			<e:Label id="num10" text="1000" size="20" x="133" textColor="0x00FF00"/>
+			<e:Label text="/10）" size="20" textColor="0xF8B141" x="199" y="15" scaleX="1" scaleY="1"/>
+			<e:layout>
+				<e:HorizontalLayout gap="2" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+
+		<e:Group id="ybHunt" horizontalCenter="-115" bottom="63">
+			<e:Image source="szyuanbao" width="30" scaleX="1" scaleY="1" left="0" top="0"/>
+			<e:Label id="yb1" text="10000" size="20" textColor="0xF8B141" x="32" y="-1" scaleX="1" scaleY="1"/>
+			<e:Label text="（" size="20" textColor="0xF8B141" x="0" y="5" scaleX="1" scaleY="1"/>
+			<e:Image id="icon1" anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" x="26" y="0" scaleX="1" scaleY="1" source="200982_png"/>
+			<e:Label id="num" text="1000" y="5" size="20" x="62" textColor="0x00FF00"/>
+			<e:Label text="/1）" size="20" textColor="0xF8B141" x="113" y="5" scaleX="1" scaleY="1"/>
+
+
+
+
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Rect top="430" bottom="94" fillAlpha="0.3" width="540" horizontalCenter="0" anchorOffsetY="0"/>
+		<e:Scroller id="barList" width="540" horizontalCenter="0" bounces="false" bottom="100" top="435" anchorOffsetY="0" scrollPolicyV="on" scrollPolicyH="off">
+			<e:List id="list" x="0" y="-43" itemRendererSkinName="HuntListRendererSkin" anchorOffsetY="0" height="67">
+			</e:List>
+		</e:Scroller>
+		<e:Label text="寻宝日志：" x="14" size="22" textColor="0x7E6437" y="404"/>
+		<e:Image source="celebration_json.jipinrizhi" x="26" y="10"/>
+
+
+	</e:Group>
+	<e:Group width="513" x="17" top="330" visible="false">
+		<e:ProgressBar id="bar0" height="17" skinName="bar5Skin" value="100" y="22" width="42" x="56" slideDuration="0"/>
+		<e:ProgressBar id="bar1" height="17" skinName="bar5Skin" value="100" y="22" width="38" x="150" slideDuration="0"/>
+		<e:ProgressBar id="bar2" height="17" skinName="bar5Skin" value="100" y="22" width="38" x="239" slideDuration="0"/>
+		<e:ProgressBar id="bar3" height="17" skinName="bar5Skin" value="100" y="22" width="38" x="329" slideDuration="0"/>
+		<e:ProgressBar id="bar4" height="17" skinName="bar5Skin" value="100" y="22" width="38" x="420" slideDuration="0"/>
+		<e:Image source="jingyantiao6" scale9Grid="26,3,8,19" y="18" left="52" right="46"/>
+		<e:Image source="touxiangkuang" x="0" anchorOffsetX="0" width="61" anchorOffsetY="0" height="61" y="0"/>
+		<e:Image source="star2" x="13" y="13"/>
+	</e:Group>
+	<e:Group horizontalCenter="44" top="330" visible="false">
+		<e:Group y="-484" x="-224">
+		<e:Image source="touxiangkuang" width="60" height="60" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="box0" source="200116_png" width="60" height="60" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image source="tongyonghd_json.bantoutiaobg" width="60" height="20" horizontalCenter="0" bottom="0" scale9Grid="121,19,7,7"/>
+		<e:Label id="time0" text="10次" size="16" textColor="0xDFD1B5" bottom="2" horizontalCenter="0"/>
+		<e:Label id="done0" text="已领取" size="16" textColor="0x00FF00" bottom="0" horizontalCenter="0" visible="false"/>
+		<e:Image id="boxPoint0" source="zjmhongdian" touchEnabled="false" scaleX="1" scaleY="1" right="0" top="0" visible="false"/>
+		</e:Group>
+		<e:Group x="-468" y="-414">
+		<e:Image source="touxiangkuang" width="60" height="60" horizontalCenter="0" verticalCenter="0" x="2" y="70" scaleX="1" scaleY="1"/>
+		<e:Image id="box1" horizontalCenter="0" source="200116_png" width="60" height="60"/>
+		<e:Image source="tongyonghd_json.bantoutiaobg" width="60" height="20" horizontalCenter="0" bottom="0" scale9Grid="121,19,7,7"/>
+		<e:Label id="time1" text="20次" size="16" textColor="0xDFD1B5" bottom="2" horizontalCenter="0"/>
+		<e:Label id="done1" text="已领取" size="16" textColor="0x00FF00" bottom="0" horizontalCenter="0" visible="false"/>
+		<e:Image id="boxPoint1" source="zjmhongdian" touchEnabled="false" scaleX="1" scaleY="1" right="0" top="0" visible="false"/>
+		</e:Group>
+		<e:Group x="-468" y="-344">
+		<e:Image source="touxiangkuang" width="60" height="60" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="box2" horizontalCenter="0" source="200116_0_png" width="60" height="60"/>
+		<e:Image source="tongyonghd_json.bantoutiaobg" width="60" height="20" horizontalCenter="0" bottom="0" scale9Grid="121,19,7,7"/>
+		<e:Label id="time2" text="50次" size="16" textColor="0xDFD1B5" horizontalCenter="0" bottom="2"/>
+		<e:Label text="已领取" size="16" textColor="0x00FF00" id="done2" bottom="0" horizontalCenter="0" visible="false"/>
+		<e:Image id="boxPoint2" source="zjmhongdian" touchEnabled="false" scaleX="1" scaleY="1" right="0" top="0" x="36" y="-60" visible="false"/>
+		</e:Group>
+		<e:Group x="-468" y="-274">
+		<e:Image source="touxiangkuang" width="60" height="60" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="box3" horizontalCenter="0" source="200116_0_png" width="60" height="60"/>
+		<e:Image source="tongyonghd_json.bantoutiaobg" width="60" height="20" horizontalCenter="0" bottom="0" scale9Grid="121,19,7,7"/>
+		<e:Label id="time3" text="100次" size="16" textColor="0xDFD1B5" bottom="2" horizontalCenter="0"/>
+		<e:Label text="已领取" size="16" textColor="0x00FF00" id="done3" bottom="0" horizontalCenter="0" visible="false"/>
+		<e:Image id="boxPoint3" source="zjmhongdian" touchEnabled="false" scaleX="1" scaleY="1" right="0" top="0" x="36" y="-60" visible="false"/>
+		</e:Group>
+		<e:Group x="-458" y="-264">
+		<e:Image source="touxiangkuang" width="60" height="60" horizontalCenter="0" verticalCenter="0"/>
+		<e:Image id="box4" horizontalCenter="0" source="200116_0_png" width="60" height="60"/>
+		<e:Image source="tongyonghd_json.bantoutiaobg" width="60" height="20" horizontalCenter="0" bottom="0" scale9Grid="121,19,7,7"/>
+		<e:Label id="time4" text="100次" size="16" textColor="0xDFD1B5" bottom="2" horizontalCenter="0"/>
+		<e:Label text="已领取" size="16" textColor="0x00FF00" id="done4" bottom="0" horizontalCenter="0" visible="false"/>
+		<e:Image id="boxPoint4" source="zjmhongdian" touchEnabled="false" scaleX="1" scaleY="1" right="0" top="0" x="36" y="-60" visible="false"/>
+		</e:Group>
+		<e:layout>
+		<e:HorizontalLayout gap="30"/>
+		</e:layout>
+	</e:Group>
+
+		
+</e:Skin>

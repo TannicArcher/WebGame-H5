@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildSkillSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" />
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" scale9Grid="15,12,2,3" width="580" horizontalCenter="0"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30" width="570" horizontalCenter="0" top="45" bottom="155"/>
+
+	<e:ViewStack id="viewStack"   selectedIndex="2" width="566" horizontalCenter="0" top="45" bottom="155">
+		<ns1:BaseComponent name="练功房" id="guildskill" skinName="GuildSkillWinSkin" className="GuildSkillPanel" top="0" bottom="0" left="0" right="0"/>
+		<ns1:BaseComponent name="篝火盛会" id="guildcampfire" left="0" right="0" top="0" bottom="0" skinName="GuildCampFireSkin" className="GuildFirePanel" visible="false"/>		
+		<!--<e:Component name="行会商店" id="guildstore" skinName="GuildStoreWinSkin" top="0" bottom="10" left="0" right="9" visible="false"/>-->
+	</e:ViewStack>
+
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" horizontalCenter="0"  y="0"/>
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" selectedIndex="0" horizontalCenter="0" dataProvider="{viewStack}" bottom="112">
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:TabBar>
+	<e:Image id="redPoint1" source="zjmhongdian" touchEnabled="false" bottom="140"  horizontalCenter="108" visible="false"/>
+	<e:Image id="redPoint0" source="zjmhongdian" touchEnabled="false" bottom="140" y="10"  horizontalCenter="-16" visible="false"/>
+	<e:Image id="title" horizontalCenter="-150" top="13" source="guildcamp_title1"/>
+	<!--<e:TabBar id="tab" height="48" horizontalCenter="0" bottom="108" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}"/>
+	<e:Image id="redPoint0" x="261" y="773" source="zjmhongdian" visible="false"/>
+	<e:Image id="redPoint1" x="386" y="773" source="zjmhongdian" visible="false"/>-->
+</e:Skin>

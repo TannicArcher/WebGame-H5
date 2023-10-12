@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="hongbaoRewardItem" width="350" currentState="otherman" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"   height="54" states="owner,otherman"  width.otherman="350" width.owner="350">
+	<e:Image anchorOffsetY="0" anchorOffsetX="0" width.otherman="362" horizontalCenter.otherman="0" width.owner="350" source.owner="fengexian" scale9Grid.owner="19,0,4,11" height.owner="11" width="360" y="0" x="0" source="fengexian" scale9Grid="21,0,4,11" bottom.owner="0" visible.otherman="false"/>
+	<e:Image anchorOffsetY="0" anchorOffsetX="0" width="362" x="-1" scale9Grid="21,0,4,11" includeIn="otherman" source="hongbaoline" bottom="0"/>
+	<e:Group anchorOffsetX="0" anchorOffsetY="0" scaleX="0.5" scaleY="0.5" verticalCenter="0" left="0" left.owner="3" verticalCenter.owner="-4.5">
+		<e:Image y="0" x="0" source="touxiangkuang"/>
+		<e:Image id="myFace" x="9" y="11" source="yuanhead10" anchorOffsetX="0" anchorOffsetY="0" width="72" height="72"/>
+	</e:Group>
+
+	<e:Group x="0" y="0" x.owner="51" y.owner="1" x.otherman="48" y.otherman="18">
+		<e:Label id="playerName" text="玩家名字六字" size="18" textColor="0xffd93f" bold.owner="true" top.owner="3" verticalCenter.otherman="0" textColor.otherman="0x5186fd" text.otherman="玩家名字六字" size.otherman="16" left.otherman="52" left.owner="57" x="57" y="0"/>
+		<e:Label id="speaktxt" text="在红包里抢到了" size="16" anchorOffsetX="0" width="312" anchorOffsetY="0" bold.owner="true" left.owner="57" textColor="0xd1c28f" height.owner="32" bottom.owner="2" text.otherman="在红包里抢到了96元宝" width.otherman="200" verticalCenter.otherman="0" textAlign.otherman="left" x.otherman="182" size.otherman="16" verticalAlign.owner="middle" text.owner="手气爆炸，在红包里抢到了500元宝" x="0" y="0" width.owner="291"/>
+		<e:layout.otherman>
+			<e:HorizontalLayout gap="4"/>
+		</e:layout.otherman>
+		<e:layout.owner>
+			<e:VerticalLayout gap="0"/>
+		</e:layout.owner>
+	</e:Group>		
+</e:Skin>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="NYFireworkerSkin" width="560" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="622">
+	<w:Config id="1586d1506c8" />
+	<e:Image horizontalCenter="0" source="ny_fireworkerbg_png" anchorOffsetY="0" top="37" width="554" height="554"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+	<e:Image id="title" y="-5" horizontalCenter="0.5" source="biaoti_baozhu"/>
+	<e:Group id="infoBg" left="3" right="3" x="10" y="36" height="116">
+
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime1" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actInfo1" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+	</e:Group>
+	<e:List id="list" x="206" y="308" itemRendererSkinName="ItemSkin" anchorOffsetX="0" scaleX="0.9" scaleY="0.9">
+		<e:layout>
+			<e:TileLayout requestedRowCount="2" requestedColumnCount="4" horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+	</e:List>
+	<e:Image x="265" source="ny_rewardtitle" top="275"/>
+
+
+	<e:Image x="48" anchorOffsetX="0" anchorOffsetY="0" source="ny_rewardname" top="275"/>
+	<e:Image x="156" y="374" source="jiantouyou"/>
+
+	<e:Image x="37" y="293" anchorOffsetX="0" anchorOffsetY="0" source="ny_fireworker"/>
+	<e:Image x="33" anchorOffsetX="0" anchorOffsetY="0" source="tongyongdian2" top="280"/>
+	<e:Image x="168" anchorOffsetX="0" anchorOffsetY="0" source="tongyongdian2" top="280"/>
+	<e:Image x="246" anchorOffsetX="0" anchorOffsetY="0" source="tongyongdian2" top="280"/>
+	<e:Image x="470" anchorOffsetX="0" anchorOffsetY="0" source="tongyongdian2" top="280"/>
+	<e:Button id="buyBtn" label="购买" x="51" y="441" skinName="Btn3Skin"/>
+	<ns1:BaseComponent id="price" x="59" y="413" skinName="PriceIconSkin" className="PriceIcon" scaleX="0.8" scaleY="0.8"/>
+	<e:CheckBox id="turnten" label="购买10个" skinName="CheckBox0" y="491" horizontalCenter="-177.5" scaleX="0.7" scaleY="0.7"/>
+
+
+	<e:Rect top="527" bottom="1" fillAlpha="0.3" width="540" horizontalCenter="0" anchorOffsetY="0"/>
+	<e:Group id="reward" width="550" anchorOffsetX="0" horizontalCenter="0" top="144">
+		<e:ProgressBar id="bar0" width="50" height="20" x="131" y="39" skinName="bar6Skin" slideDuration="0"/>
+		<e:ProgressBar id="bar1" width="50" height="20" x="253" y="39" skinName="bar6Skin" slideDuration="0"/>
+		<e:ProgressBar id="bar2" width="50" height="20" x="375" y="39" skinName="bar6Skin" slideDuration="0"/>
+		<e:Image id="barbg" width="394" source="jingyantiao6" scale9Grid="21,8,17,7" x="63" scaleX="1" scaleY="1" y="37"/>
+		<ns1:BaseComponent id="reward0" x="45" verticalCenter="6" skinName="fireworkerItemSkin" className = "FireworkerItemRender"/>
+		<ns1:BaseComponent id="reward1" x="167"  skinName="fireworkerItemSkin" className = "FireworkerItemRender" verticalCenter="6"/>
+		<ns1:BaseComponent id="reward2" x="290" skinName="fireworkerItemSkin" className = "FireworkerItemRender" verticalCenter="6"/>
+		<ns1:BaseComponent id="reward3" x="413" skinName="fireworkerItemSkin" className = "FireworkerItemRender" verticalCenter="6"/>
+		<e:Image id="arrowleft" source="jiantouxuan" scaleX="1" scaleY="1" verticalCenter="0" left="5"/>
+		<e:Image id="redPointLeft" touchEnabled="false" source="zjmhongdian" verticalCenter="-24" left="5"/>
+
+		<e:Image id="arrowright" source="jiantouxuan" scaleX="-1" scaleY="1" verticalCenter="0" right="5"/>
+		<e:Image id="redPointRight" touchEnabled="false" source="zjmhongdian" right="5" verticalCenter="-24"/>
+	</e:Group>
+	<e:Scroller id="barList" width="660" bounces="false" bottom="5" top="527" anchorOffsetY="0" scaleX="0.8" scaleY="0.8" height="114" anchorOffsetX="0" horizontalCenter="0">
+		<e:List id="list0" x="0" y="80" itemRendererSkinName="HuntListRendererSkin" anchorOffsetX="0">
+		</e:List>
+	</e:Scroller>
+	<e:Group id="effLocation" width="20" height="20" horizontalCenter="0" top="336" scaleX="1.3" scaleY="1.3"/>
+</e:Skin>

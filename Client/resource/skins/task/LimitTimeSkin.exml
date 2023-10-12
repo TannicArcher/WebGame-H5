@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LimitTimeSkin" width="550" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Scroller  left="0" right="0" top="0" bottom="0">
+
+			<e:List id="list" width="720" height="650" x="12" y="9" itemRendererSkinName="LimitTimeItem" >
+				<e:layout>
+					<e:VerticalLayout gap="3"/>
+				</e:layout>
+			</e:List>
+
+	</e:Scroller>
+	<e:Image source="bagLine" x="22" y="609" width="436" scale9Grid="1,2,1,1" height="3" visible="false"/>
+	
+</e:Skin>

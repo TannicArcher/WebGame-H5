@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="worldBossItemSkin" width="160" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" states="up,down" >
+	<e:Image id="bg"  source="yeqian4" scale9Grid="52,0,58,58" right="0" left="0" top="0" bottom="0" source.down="yeqian5"/>
+	<e:Image id="bg0" right="0" left="0" top="4" bottom="4" source="yeqian6" scale9Grid="32,0,93,40" visible.up="false"/>
+	<e:Label id="timeTxt" text="01:01:55" size="18" textAlign="center" textColor="0xFFB92D"
+	         y="34"  horizontalCenter="10" size.up="16" horizontalCenter.up="10" y.up="36" size.down="16" y.down="36" textColor.down="0xd1c28f" textColor.up="0x9f946d"/>
+	<e:Label text="可击杀" y="34" size="16"  horizontalCenter="12" textColor="0x20cb30" visible="false"/>
+	<e:Label id="titleText" text="70级" y="8" size="18"  horizontalCenter="10" textColor="0xf8b141" textColor.down="0xf8b141" textColor.up="0xf8b141"/>
+	<e:Image id="killImg" source="zdbossskin_json.zdbosskejisha2" y="0" right="8"/>
+</e:Skin>

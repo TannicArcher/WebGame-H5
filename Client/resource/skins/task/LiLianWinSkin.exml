@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LiLianWinSkin" xmlns:e="http://ns.egret.com/eui" width="580" height="930" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0" />
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0"  scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:ViewStack selectedIndex="4" horizontalCenter="0" width="580" id="viewStack" top="0" bottom="155">
+		<ns1:BaseComponent name="爵位" id="liLianPanel" skinName="LiLianSkin" left="0" right="0" top="0" bottom="0" className="NewLilianWin"/>
+		<ns1:BaseComponent name="神器" id="artifactWin" skinName="XinShenQiSkin" left="0" right="0" top="0" bottom="0" className="NewArtifactWin" visible="false"/>
+
+
+		<ns1:BaseComponent name="勋章" id="xunzhangPanel" skinName="XunzhangPanelSkin" left="0" right="0" top="0" bottom="0" className="XunzhangPanel" visible="false"/>
+		<ns1:BaseComponent id="bookPanel" left="0" top="0" bottom="0" right="0" skinName="tujian" className="BookWin" name="图鉴" visible="false"/>
+		<ns1:BaseComponent id="WeiWang" name="威望" skinName="WeiWangSkin" left="0" top="0" className="WeiWangPanel" right="0" bottom="0" visible="false"/>
+
+	</e:ViewStack>
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}" selectedIndex="0" horizontalCenter="0"
+	          bottom="112">
+		<e:layout>
+			<e:HorizontalLayout gap="-8" />
+		</e:layout>
+	</e:TabBar>
+	<e:Image id="redPoint1" touchEnabled="false" bottom="139" horizontalCenter="-183" source="zjmhongdian"/>
+	<e:Image id="redPoint0" touchEnabled="false" bottom="139" horizontalCenter="-71" source="zjmhongdian"/>
+
+	<e:Image id="redPoint2" touchEnabled="false" bottom="139" horizontalCenter="43" source="zjmhongdian" />
+	<e:Image id="redPoint3" touchEnabled="false" bottom="139" horizontalCenter="153" source="zjmhongdian"/>
+	<e:Image id="redPoint4" touchEnabled="false" bottom="139" horizontalCenter="265" source="zjmhongdian"/>
+
+
+	<e:Button id="help" icon="wenhao" skinName="Btn0Skin" label="按钮"  horizontalCenter="-246" scaleX="0.9" scaleY="0.9" y="8"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+	<ns1:BaseComponent name="玉佩" id="yupei" skinName="YuPeiSkin" left="0" top="0" className="JadePanel" right="0" bottom="0" visible="false"/>
+</e:Skin>

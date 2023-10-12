@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="kfArenaCheckSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,check" >
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" width="400" height="300">
+		<e:Image source="tongyongkuang3bg" left="0" right="0" top="5" bottom="-3" scale9Grid="12,6,21,25"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0" scale9Grid="72,18,264,29"/>
+		<e:Label id="title" size="24" text="提  示"     horizontalCenter="0" y="11" bold="true" textColor="0xbd600d"/>
+		<e:Label id="powerLab" text="战力：999999" x="240" y="77" size="18" textColor="0x9f946d"/>
+		<e:Label id="nameLab" text="名字名字什么" x="114" y="77" size="18" textColor="0x9f946d"/>
+		<e:Label id="winRateLab" text="胜率： 0" x="240" y="120" size="18" textAlign="left" textColor="0x9F946D"/>
+		<e:Label id="scoreLab" text="积分： 0" x="114" y="120" size="18" textColor="0x9F946D"/>
+		<e:Image id="face" source="head_11" x="30" width="60" height="60" verticalCenter="-46"/>
+		<e:Image id="headBG" x="25" source="touxiangkuang0" width="70" height="70" scale9Grid="6,6,1,1" verticalCenter="-46"/>
+
+
+		<e:Button id="outBtn" label="移出队伍" bottom="59" horizontalCenter="90" width="120" height="50" skinName="Btn3Skin" horizontalCenter.normal="80" horizontalCenter.check="80" visible.check="false"/>
+		<e:Button id="checkBtn" label="查看" bottom="57" horizontalCenter="-78" width="120" height="50" skinName="Btn3Skin" horizontalCenter.normal="-80" horizontalCenter.check="5" bottom.check="57"/>
+	</e:Group>	
+</e:Skin>

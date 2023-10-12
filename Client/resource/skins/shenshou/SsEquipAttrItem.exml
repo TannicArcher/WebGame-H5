@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SsEquipAttrItem" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        xmlns:tween="egret.tween.*" includeIn="normalWithPrompt,disabledWithPrompt" width="404"
+        height="101" states="normal,max" >
+	<w:Declarations></w:Declarations>
+	<w:Config id="158995f2c90"></w:Config>
+	<e:Image y="21" source="jiantouyou" x="178" includeIn="normal"/>
+	<e:Label id="lvNext" text="Lv.6" size="20" textColor="0x00ff00" x="290" y="1" includeIn="normal"/>
+	<e:Group x="16" y="26" anchorOffsetX="0" width="163" horizontalCenter.max="0">
+		<e:Label id="attr1Now" text="攻击：9999999" x="0" y="26" size="20" textColor="0xd1c28f"/>
+		<e:Label id="attr2Now" text="攻击：9999999" x="0" y="51" size="20" textColor="0xd1c28f"/>
+		<e:Label id="attr3Now" text="攻击：9999999" x="0" y="75" size="20" textColor="0xd1c28f"/>
+		<e:layout>
+		<e:VerticalLayout verticalAlign="middle" horizontalAlign="left"/>
+		</e:layout>
+	</e:Group>
+	<e:Label text="Lv.5" id="lvNow" size="20" textColor="0xD1C28F" x="70" y="1" horizontalCenter.max="0"/>
+	<e:Group x="231" y="26" anchorOffsetX="0" width="163" includeIn="normal">
+		<e:Label id="attr1Next" text="攻击：9999999" x="0" y="26" size="20" textColor="0x00ff00"/>
+		<e:Label id="attr2Next" text="攻击：9999999" x="0" y="51" size="20" textColor="0x00ff00"/>
+		<e:Label id="attr3Next" text="攻击：9999999" x="0" y="75" size="20" textColor="0x00ff00"/>
+		<e:layout>
+		<e:VerticalLayout verticalAlign="middle" horizontalAlign="left"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

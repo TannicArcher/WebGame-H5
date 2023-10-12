@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PointResultItemSkin" width="413" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="ranking" text="1" size="20" scaleX="1" scaleY="1" textAlign="center" textColor="0x9f946d" width="55" verticalCenter="0" horizontalCenter="-179"/>
+	<e:Label id="roleName" text="布拉格de诚挚" size="20" scaleX="1" scaleY="1" width="130" textColor="0x9f946d" textAlign="center" verticalCenter="0" horizontalCenter="-86.5"/>
+	<e:Label id="guild" text="布拉格の联盟" size="20" scaleX="1" scaleY="1" width="130" textAlign="center" textColor="0x5186fd" verticalCenter="0" horizontalCenter="43.5"/>
+	<e:List id="award" itemRendererSkinName="PointResultAwardSkin" verticalCenter="0" horizontalCenter="157.5">
+		<e:layout>
+		<e:HorizontalLayout gap="-2"/>
+		</e:layout>
+	</e:List>
+</e:Skin>

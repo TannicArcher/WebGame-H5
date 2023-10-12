@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="Days42BigRewardItemSkin" width="90" height="96" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<ns1:BaseComponent id="reward" skinName="ItemSkin" className="ItemBase" horizontalCenter="0" top="0"/>
+	<e:Label id="days" text="7天" size="20" textColor="0x00ff00" bottom="0" horizontalCenter="0"/>
+	<e:Image id="state" source="tongyong2_json.yilingqu" rotation="28.6" x="19" y="0"/>otation="28.51"/>
+</e:Skin>

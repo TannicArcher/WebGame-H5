@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RedBagRendererSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="350" height="43" >		
+	<e:Image x="253" source="szyuanbao" verticalCenter="0"/>
+	<e:Label id="num" text="2000" x="291" size="20" textColor="0xf8b141" verticalCenter="0"/>
+	<e:Label id="nameLabel" text="玩家名称六字" x="12" size="20" width="205" textColor="0xd1c28f" verticalCenter="0"/>
+	<e:Image y="38" scale9Grid="87,1,2,1" source="hongbaoline" horizontalCenter="0"/>
+</e:Skin>

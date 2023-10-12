@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KFFieldDropRecordSkin" width="560" height="716" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Scroller id="listScroller" top="8" scrollPolicyH="off" scaleX="1" scaleY="1" left="0" right="0" bottom="3" anchorOffsetY="0">
+		<e:List id="list" x="-3" y="30" itemRendererSkinName="KFFieldDropRecordItemSkin" anchorOffsetY="0" height="707">
+		<e:layout>
+			<e:VerticalLayout gap="0"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

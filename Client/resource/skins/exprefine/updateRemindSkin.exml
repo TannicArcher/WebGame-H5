@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="updateRemindSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group width="530" height="686" verticalCenter="-65" horizontalCenter="0">
+		<e:Image source="tongyongkuang3bg" scale9Grid="9,5,30,27" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0"/>
+		<e:Label y="11" text="更新提醒" size="24" bold="true" textColor="0xA67D44" horizontalCenter="0.5"/>
+
+
+		<e:Group horizontalCenter="0" bottom="-35">
+			<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" x="0" y="0"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" x="48" bold="true" textColor="0x7E6437" y="5"/>
+		</e:Group>
+		<e:Image id="img" horizontalCenter="0" verticalCenter="-21" source="updatePictureBg1_png"/>
+		<e:Button id="btn" label="查看详情" skinName="Btn1Skin" horizontalCenter="0" verticalCenter="300"/>
+
+
+
+	</e:Group>	
+</e:Skin>

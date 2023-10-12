@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="shenshouSkillItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        xmlns:tween="egret.tween.*" includeIn="normalWithPrompt,disabledWithPrompt"
+        height="76">
+	<w:Declarations></w:Declarations>
+	<w:Config id="158995f2c90"></w:Config>
+	<e:Image id="skillQuality" source="quality0" horizontalCenter="0" top="0" width="76" height="76"/>
+	<e:Image id="skillImg" touchEnabled="false" anchorOffsetY="0" height="62" anchorOffsetX="0" width="62" source="80000_png" horizontalCenter="0" top="6"/>
+	<e:Label id="skillName" text="上古血脉" y="66" size="14" bold="true" textColor="0xd1c28f" horizontalCenter="0" visible="false"/>
+</e:Skin>

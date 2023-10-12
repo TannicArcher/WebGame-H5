@@ -1,0 +1,16 @@
+{"file":"guildboss.png","frames":{
+"gb_b6":{"x":1,"y":110,"w":141,"h":141,"offX":6,"offY":0,"sourceW":153,"sourceH":141},
+"gb_bossdiban":{"x":282,"y":144,"w":180,"h":77,"offX":0,"offY":0,"sourceW":180,"sourceH":77},
+"gb_chakanpaihangicon":{"x":1,"y":394,"w":82,"h":74,"offX":0,"offY":0,"sourceW":82,"sourceH":74},
+"gb_dingbuxianp1":{"x":144,"y":110,"w":58,"h":12,"offX":0,"offY":0,"sourceW":58,"sourceH":12},
+"gb_dingbuxianp2":{"x":246,"y":411,"w":95,"h":15,"offX":0,"offY":0,"sourceW":95,"sourceH":15},
+"gb_guildname_bg1":{"x":1,"y":470,"w":159,"h":26,"offX":0,"offY":0,"sourceW":159,"sourceH":26},
+"gb_guildname_bg2":{"x":85,"y":411,"w":159,"h":26,"offX":0,"offY":0,"sourceW":159,"sourceH":26},
+"gb_vs":{"x":282,"y":223,"w":70,"h":61,"offX":0,"offY":0,"sourceW":70,"sourceH":61},
+"gb_xuetiaop1":{"x":162,"y":439,"w":110,"h":37,"offX":0,"offY":0,"sourceW":110,"sourceH":37},
+"gb_zhongjianp1":{"x":1,"y":1,"w":209,"h":107,"offX":0,"offY":0,"sourceW":209,"sourceH":107},
+"gb_b1":{"x":144,"y":143,"w":136,"h":141,"offX":6,"offY":0,"sourceW":153,"sourceH":141},
+"gb_b2":{"x":367,"y":1,"w":141,"h":141,"offX":6,"offY":0,"sourceW":153,"sourceH":141},
+"gb_b3":{"x":1,"y":253,"w":137,"h":139,"offX":10,"offY":1,"sourceW":153,"sourceH":141},
+"gb_b4":{"x":212,"y":1,"w":153,"h":140,"offX":0,"offY":0,"sourceW":153,"sourceH":141},
+"gb_b5":{"x":140,"y":286,"w":141,"h":123,"offX":6,"offY":18,"sourceW":153,"sourceH":141}}}

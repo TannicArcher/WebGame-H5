@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DETimeBuyTabSkin" width="120" height="64" currentState="intime" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" states="intime,intimeselect,outtime,outtimeselect" >
+	<e:Image source="btn80" horizontalCenter="0" y="3" width="116" height="44"/>
+	<e:Image id="select0" y="0" visible.intime="false" visible.outtime="false" source="btn81" horizontalCenter="0" width="120" height="50"/>
+	<e:Image id="select1" y="44" horizontalCenter="0" visible.intime="false" visible.outtime="false" source="arrow_down" height="20"/>
+	<e:Label id="time" text="12:00" size="28" y="10" horizontalCenter="0" textColor="0xf8b141" bold="true" textColor.outtime="0x9f946d" textColor.outtimeselect="0x9f946d" size.intime="28" size.intimeselect="28" horizontalCenter.outtime="0" horizontalCenter.outtimeselect="0" horizontalCenter.intime="0" y.intime="11" y.intimeselect="11" size.outtime="24" horizontalCenter.intimeselect="0" y.outtime="4" size.outtimeselect="24" rotation.outtime="0.84" y.outtimeselect="4"/>
+	<e:Label id="timetxt" text="等待开启" size="18" y="39" horizontalCenter="0" textColor="0x9f946d" visible.intime="false" visible.intimeselect="false" horizontalCenter.outtime="0" horizontalCenter.outtimeselect="0" size.outtime="16" y.outtime="28" y.outtimeselect="28" size.outtimeselect="16"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" right="0" y="0" visible="false"/>
+</e:Skin>

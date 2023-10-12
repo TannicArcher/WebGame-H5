@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TreasureRuneGift" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="930" width="580">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group id="anigroup"  horizontalCenter="0" verticalCenter="0">
+		<e:Image width="480" height="323" scale9Grid="18,14,12,20" source="tongyongkuang3bg"   y="12"   horizontalCenter="0"/>
+		<e:Image width="480" horizontalCenter="0" source="tongyongkuang3tou" scale9Grid="66,0,271,47" x="0" y="0"  />
+		<e:Image source="teshuwenzibg" y="6" horizontalCenter="0.5" x="150"  />
+		<e:Label y="13" text="累计购买额外奖励" size="24" horizontalCenter="0" textColor="0xa67d44" x="144"  />
+		<e:Label id="already" text="已领取" y="281" textColor="0x00ff00" size="18" horizontalCenter="0" x="213"   visible="false"/>
+		<e:Group y="62" horizontalCenter="0.5" x="153"  >
+			<e:Label y="2" text="你已累计购买" size="20" horizontalCenter="0" textColor="0x9f946d" x="63"  />
+			<e:Label id="num0" y="12" text="40" size="20" horizontalCenter="0" x="73"   textColor="0x00ff00"/>
+			<e:Label y="12" text="次" size="20" horizontalCenter="0" textColor="0x9F946D" x="73"  />
+			<e:layout>
+			<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="more" y="92" horizontalCenter="0.5" x="103"  >
+			<e:Label id="num2" y="2" text="再购买" size="20" horizontalCenter="0" textColor="0x9F946D" x="63"  />
+			<e:Label id="num1" y="12" text="40" size="20" horizontalCenter="0" textColor="0x00FF00" x="73"  />
+			<e:Label id="num3" y="12" text="次即可获取以下奖励" size="20" horizontalCenter="0" textColor="0x9F946D" x="73"  />
+			<e:layout>
+			<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:List id="gift" horizontalCenter="0" verticalCenter="28" itemRendererSkinName="ItemSkin">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:List>
+	</e:Group>
+</e:Skin>

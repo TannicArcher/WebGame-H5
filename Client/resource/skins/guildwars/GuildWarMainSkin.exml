@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildWarMainSkin" width="712" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15c3ed8af0d"/>
+	<e:Rect id="rect" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image horizontalCenter="0" top="0" bottom="0" source="tongyongmianbanbg2" scale9Grid="15,12,2,3" width="580"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" width="580" horizontalCenter="0" currentState="nohead"/>
+	<e:Button id="help" icon="wenhao" skinName="Btn0Skin" label="按钮" horizontalCenter="-246" scaleX="0.9" scaleY="0.9" y="8"/>
+	<e:Group horizontalCenter="0" top="44" bottom="130" width="580">
+		<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30"  top="0" bottom="0" left="0" right="0"/>
+		<e:Image source="shachengzhenba_bg_png" top="6" bottom="6" left="6" right="6"/>
+
+	</e:Group>
+	
+	
+	
+	<e:Group id="player" horizontalCenter="-3" verticalCenter="-30.5">
+	</e:Group>
+	<e:Group horizontalCenter="232" verticalCenter="-52">
+		<e:Button id="redBag" label="按钮" skinName="Btn0Skin" icon="guildhongbao" y="-74" horizontalCenter="0" visible="false"/>
+		<e:Button id="practiseBtn2"  width="82"  height="78" x="0" y="241">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="meirijiangli"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="redPoint0" source="zjmhongdian" right="0" y="246"/>
+		<e:Button id="practiseBtn1"  width="82"  height="78" x="0" y="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="shangjiezhankuang"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="practiseBtn"  width="82"  height="78" x="0" y="81">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="gongshajiangli"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="practiseBtn0"  width="82"  height="78" x="0" y="160">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="huizhangjiangli"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Label id="guildName" text="行会名称六字" size="18" stroke="1" strokeColor="000000" width="224" textAlign="center" horizontalCenter="0" verticalCenter="-234" textColor="0xffb243"/>
+	<e:Label id="guildOwn" text="玩家名称六字" size="18" stroke="1" strokeColor="000000" width="211" textAlign="center" horizontalCenter="0" textColor="0xd1c28f" verticalCenter="-211"/>
+	<e:Group id="none" y="261" horizontalCenter="0" visible="false">
+		<e:Label text="虚位以待" size="24" bold="true" stroke="1" textColor="0xf8b141"/>
+	</e:Group>
+
+	<e:Button id="play" horizontalCenter="0" skinName="Btn1Skin" label="杀入战场" bottom="175" width="156" height="60"/>
+	<e:Label id="openDesc" text="X月XX日（周X） 22:00开启龙城争霸" width="375" textAlign="center" size="18" horizontalCenter="0" bottom="154" textColor="0xd1c28f"/>
+	<e:Image horizontalCenter="-155" source="biaoti_longcheng" y="6"/>
+	<e:Group id="titleGroup" y="170" horizontalCenter="0"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+</e:Skin>

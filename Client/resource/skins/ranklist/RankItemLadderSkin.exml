@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RankItemLadderSkin" width="312" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="t3"  left="0" right="0" top="0" bottom="0" source=""/>
+	<e:Label id="pos" text="100" x="16" size="16" textAlign="center" y="22" width="30"/> 
+	<e:Label id="player" textColor="0xDFD1B5" text="狂拽酷炫叼去" size="20" textAlign="right" x="133" verticalCenter="0"/>
+	<e:Group x="86" y="2" width="47">
+		<e:Image id="challgeLevel" x="0" y="0" scaleX="0.5" scaleY="0.5" width="92" height="75" source="ladder_rank_3"/>
+		<e:Image id="levelBg" width="30" height="20" y="35" scale9Grid="5,4,14,7" horizontalCenter="0" source=""/>
+		<e:Label id="dan" text="1" y="37" size="14" textAlign="center" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label id="winNum" size="20" text="100场" textAlign="center" width="72" textColor="0xFFB92D" left="250" verticalCenter="0"/>
+	<e:Image id="t10" right="5"/> 
+</e:Skin>

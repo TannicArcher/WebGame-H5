@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MyBetRecordItemSkin" width="510" height="30" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="round" text="16进8强" size="16" verticalCenter="0" horizontalCenter="-181.5" textColor="0xd1c28f"/>
+	<e:Label id="infoLabel" text="下注hs05[s1000]XXX筹码，等待结果中" size="16" left="165" verticalCenter="0" textColor="0xd1c28f"/>
+	<e:Image source="tongyongline" bottom="0" horizontalCenter="0" scale9Grid="112,0,4,3" width="387"/>
+</e:Skin>

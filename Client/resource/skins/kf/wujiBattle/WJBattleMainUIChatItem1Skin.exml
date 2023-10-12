@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WJBattleMainUIChatItem1Skin" width="414" height="30" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="msg" text="s54 玩家名字：聊天内容" x="5" y="4" size="20" fontFamily="黑体" textColor="0x10cced"/>
+</e:Skin>

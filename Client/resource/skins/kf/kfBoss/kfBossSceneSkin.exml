@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="kfBossSceneSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group right="10" top="10" anchorOffsetY="0" height="49">
+		<e:Image source="bantoutiaobg2" x="-3.5" y="3" width="148" height="44" scale9Grid="44,2,6,17" anchorOffsetY="0"/>
+		<e:Label id="nameTxt" text="S241跨服战场" y="16" size="20" horizontalCenter="1" textColor="0xF8B141"/>
+		<e:Group y="34" horizontalCenter="0">
+		<e:layout>
+			<e:HorizontalLayout gap="0" horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="endGroup" width="300" height="100" horizontalCenter="0" verticalCenter="-335" touchChildren="false" touchEnabled="false">
+		<e:Image left="0" right="0" top="0" bottom="0" source="waifaguang" scale9Grid="11,11,8,6"/>
+		<e:Image left="4" right="4" top="4" bottom="4" source="tongyongtip3" scale9Grid="11,11,8,6"/>
+		<e:Group y="50" horizontalCenter="0" visible="false">
+		<e:Label text="离开倒计时:" size="24" x="0" y="0" textColor="0x7E6437"/>
+		<e:Label id="leftTime" text="180s" size="24" x="125" y="0" textColor="0xF8B141" visible="false"/>
+		<e:layout>
+			<e:HorizontalLayout gap="2"/>
+		</e:layout>
+		</e:Group>
+		<e:Label id="winnerName" text="最终归属者是：玩家名六个字" textAlign="center" size="20" textColor="0x9F946D" horizontalCenter="0" y="36"/>
+	</e:Group>
+</e:Skin>

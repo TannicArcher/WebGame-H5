@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LevelUpWaySkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group width="450" height="660" verticalCenter="0" horizontalCenter="0">
+		<e:Image id="frame" source="tongyongkuang3bg" scale9Grid="9,5,30,27"   left="0" right="0" top="0" bottom="0"/>
+		<e:Image id="tou" y="0" source="tongyongkuang3tou" left="0" right="0" scale9Grid="66,0,269,47"/>
+		<e:Image y="46" source="sjts_06_png" left="10" right="10"/>
+		<e:Label id="titleTxt" horizontalCenter="0" y="12" text="我要升级" size="22" x="20" bold="true" textColor="0xA67D44"/>
+		<e:Label text="无论在线或离线，自动挂机升级永不停歇" size="18" textColor="0xFFF2BE" horizontalCenter="0" bottom="12"/>
+		<e:List id="gainList" y="375" itemRendererSkinName="GainGoodsItemSkin" horizontalCenter="0">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:List>
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-30" textColor="0x7E6437"/>
+	</e:Group>	
+</e:Skin>

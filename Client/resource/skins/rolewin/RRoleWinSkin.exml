@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RRoleWinSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" height="930">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6" />
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" scale9Grid="15,12,2,3" width="580" horizontalCenter="0" />
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30" width="570" horizontalCenter="0" top="0" bottom="140" />
+	<e:Group id="dinghong" width="560" height="92" bottom="142" horizontalCenter="0">
+		<e:Image top="0" bottom="0" source="bantoumingkuang3" left="0" right="270"/>
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" left="270"/>
+	</e:Group>
+
+	<e:ViewStack id="viewStack" width="580" selectedIndex="0" horizontalCenter="0" top="0" bottom="160">
+			<ns1:BaseComponent id="roleInfoPanel" skinName="RRoleInfoSkin" className="RRoleInfoPanel" name="角色" left="0" right="0" top="0" bottom="0"/>
+	</e:ViewStack>
+
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" horizontalCenter="0" bottom="112" visible="false">
+		<e:layout>
+			<e:HorizontalLayout gap="0" />
+		</e:layout>
+	</e:TabBar>
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" width="580" horizontalCenter="0" y="-48" className="RRoleSelectPanel"/>
+	<e:Group width="560" horizontalCenter="0" height="86" bottom="142">
+		<e:Label id="nameTxt" text="名字要六个字" textColor="0xFFD862" size="22" bold="true" y="16" x="112"/>
+		<e:Label id="levelText" text="10转100级" size="22" x="112" y="50" textColor="0x9f946d"/>
+		<e:Label id="guildNameText" text="行会名字很长" size="22" x="259" y="16" textColor="0x20cb30"/>
+		<e:Image id="headIcon" source="head_10" x="24" width="72" height="72" verticalCenter="0"/>
+		<e:Image source="touxiangkuang0" x="20" scale9Grid="4,4,22,22" width="80" height="80" verticalCenter="0"/>
+		<e:Image id="jueweiIcon" bottom="0" source="juewei_1_11_png" x="446"/>
+	</e:Group>
+	<e:Button id="friend" label="好友" skinName="Btn3Skin" horizontalCenter="-60" bottom="250" visible="false"/>
+	<e:Button id="talk" label="私聊" skinName="Btn3Skin" horizontalCenter="60" bottom="250" visible="false"/>
+	<e:Button id="likeBtn" label="Button" skinName="Btn0Skin" icon="like_btn" horizontalCenter="0" bottom="241" visible="false"/>
+</e:Skin>

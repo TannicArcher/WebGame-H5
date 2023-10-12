@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuleTipsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bigBg" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group width="350" height="400" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="bg" left="0" right="0" top="0" bottom="0" source="tongyongtip3" scale9Grid="11,9,5,6"/>
+		<e:Image y="10" source="teshuwenzibg" horizontalCenter="0" width="220"/>
+		<e:Label id="mapName" text="龙城城内" y="18" size="24" textColor="0xFFB82A" touchEnabled="false" horizontalCenter="0"/>
+		<e:Label id="attr" text="1. 玩法说明文本玩法说明文本玩法说明文本玩法说明文本玩法说明文本玩法说明文本玩法说明文本玩法说明文本\n2. 玩法说明文本玩法说明文本玩法说明文本玩法说明文本玩法说明文本" y="62" size="16" textColor="0xDFD1B5" lineSpacing="10" touchEnabled="false" width="300" height="320" horizontalCenter="0"/>
+		<e:Button id="leftBtn" label="按钮" y="152" skinName="Btn0Skin" icon="jiantouxuan" horizontalCenter="-200"/>
+		<e:Button id="rightBtn" label="按钮" y="148" skinName="Btn0Skin" icon="jiantouxuan" scaleX="-1" horizontalCenter="200"/>
+		<e:Button id="closeBtn" label="按钮" x="338" y="304" skinName="Btn0Skin" visible="false"/>
+		<e:Image source="bantoutiaobg" height="30" width="400" y="412" horizontalCenter="0"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="416" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

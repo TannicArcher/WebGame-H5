@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CDkeySkin" width="540" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="540" height="358" source="cdkeybg_png" horizontalCenter="0"/>
+	<e:Image width="430" height="50" horizontalCenter="0" source="shuzibg" scale9Grid="4,7,17,14" bottom="126"/>
+	<e:Button id="sendBtn" skinName="Btn1Skin" width="156" height="60" label="领取奖励" horizontalCenter="0" bottom="40"/>
+	<e:TextInput id="input" text="" width="410" height="40" horizontalCenter="0" bottom="131"/>
+</e:Skin>

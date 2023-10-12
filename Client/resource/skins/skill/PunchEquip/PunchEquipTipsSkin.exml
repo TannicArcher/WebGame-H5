@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PunchEquipTipsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<w:Config id="15a6a787b32"/>
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="group" height="600" width="400" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="background0"   source="tongyongtip1" scale9Grid="6,5,13,13" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,16,4,7" left="0" right="0" top="0" bottom="0"/>
+		<!--<e:Group id="powerGroup" horizontalCenter="13.5" verticalCenter="-179" locked="true">
+			<e:Image source="zhandoulibg" x="6" y="8"/>
+			<e:Image id="attPoint" x="0" y="0" source="zjmzhandouli"/>
+		</e:Group>-->
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" y="99" horizontalCenter="10" className="PowerPanel"/>
+		<!--<ns1:ItemIcon id="itemIcon" x="20" y="20"/>-->
+		<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" x="20" y="20"/>
+		<e:Label id="nameLabel" text="屠龙 " x="120" y="18" size="22" textColor="0x37FE21" bold="true"/>
+		<e:Label id="type" y="44" text="武器" size="16" x="235" textColor="0xFFFFFF" visible="false"/>
+		<e:Label id="lv" y="47" text="评分：123456" size="20" x="120" textColor="0xFFCC00"/>
+		<e:Label id="score" y="71" text="评分：123456" size="20" x="120" textColor="0xFFCC00"/>
+		<e:Group id="tupoDesc" width="300" y="360" horizontalCenter="0">
+			<e:Label id="attr0" y="32" text="增加对战士的伤害%  \n增加对战士的伤害%   \n增加对战士的伤害%   \n增加对战士的伤害%   \n增加对战士的伤害%   " size="18" x="20" verticalAlign="justify" width="250" lineSpacing="7" textColor="0xFF49F4"/>
+			<e:Label id="bestAtt" y="0" text="极品属性:" size="20" textColor="0xCA8A00"   bold="true"/>
+		</e:Group>
+		<e:Group id="baseDesc" width="300" y="150" horizontalCenter="0">
+			<e:Label id="attr1" y="30" text="攻击：100 +100\n生命：100 +100\n生命：100 +100\n生命：100 +100" size="18" x="20" verticalAlign="justify" width="250" lineSpacing="7" wordWrap="true" multiline="true" textColor="0xd1c28f"/>
+			<e:Label id="desc1" text="基础属性:" size="20" textColor="0xCA8A00" bold="true"/>
+		</e:Group>
+		<e:Button id="forgeGroup" label="更  换" width="156" height="60" skinName="Btn1Skin" horizontalCenter="0" bottom="10"/>
+	</e:Group>
+</e:Skin>

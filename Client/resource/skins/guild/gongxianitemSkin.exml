@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="gongxianitemSkin" width="240" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Label id="nameLab" text="啊名称有六字" x="4" y="4" size="16" textAlign="left" textColor="0x9f946d"/>
+	<e:Label id="office" text="副会长" x="105" y="4" size="16" textAlign="center" textColor="0xd1c28f"/>
+	<e:Label id="conLab" text="995999" x="175" y="5" size="16" verticalAlign="justify" textAlign="right" textColor="0xf8b141"/>
+	<e:Image y="22" height="2" source="tongyongline" left="0" right="0"/>
+
+	
+</e:Skin>

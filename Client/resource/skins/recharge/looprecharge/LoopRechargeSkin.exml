@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LoopRechargeSkin" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+		<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_sanrilianchong"/>
+
+		<e:Group horizontalCenter="0" top="40">
+			<e:Group y="0" x="0">
+				<e:Group id="infoBg" left="10" right="10" x="10" y="2" height="110">
+				<e:Image left="0" right="0" top="0" bottom="0" source="activity_headbg0_png"/>
+				<e:Group left="28" verticalCenter="0">
+					<e:Label id="actInfo0" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" size="18" width="396" left="90" textColor="0xdfd1b5" scaleX="1" scaleY="1" verticalCenter="0"/>
+					<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" verticalCenter="0"/>
+				</e:Group>
+				<e:Label id="todayRecharge" text="本日累计充值：10000" y="86" size="18" textColor="0x00ff00" right="30"/>
+				</e:Group>
+			</e:Group>
+			<e:Group y="262" width="540" height="147" x="11">
+				<e:Image source="tongyongtip1" scale9Grid="12,11,1,1" left="0" right="0" top="0" bottom="0"/>
+				<e:Image source="tongyongtip2" scale9Grid="20,20,1,1" left="0" right="0" top="0" bottom="0"/>
+				<e:Label id="already0" text="已领取" textColor="0x00FF00" size="20" verticalCenter="7.5" right="60" visible="false"/>
+				<e:Button id="get0" label="立即领取" skinName="Btn15Skin" width="129" y="57" horizontalCenter="180.5"/>
+				<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" verticalCenter="-4.5" right="25" visible="false"/>
+				<e:Image source="bantoutiaoboss" y="5" height="35" width="285" scale9Grid="16,11,2,2" anchorOffsetY="0" anchorOffsetX="0"/>
+				<e:List id="reward0" y="43" itemRendererSkinName="ItemSkin" horizontalCenter="-89.5" x="45" scaleX="1" scaleY="1">
+				<e:layout>
+					<e:HorizontalLayout gap="-7"/>
+				</e:layout>
+				<e:ArrayCollection>
+					<e:Array>
+					<e:Object null=""/>
+					<e:Object null=""/>
+					<e:Object null=""/>
+					<e:Object null=""/>
+					</e:Array>
+				</e:ArrayCollection>
+				</e:List>
+				<e:Label id="target0" text="累计1天（0/1）充值10000元宝" y="13" size="20" textColor="0xFF9900" x="10"/>
+			</e:Group>
+			<e:Group y="111" width="540" height="147" x="11">
+				<e:Image source="tongyongtip1" scale9Grid="12,11,1,1" left="0" right="0" top="0" bottom="0"/>
+				<e:Image source="tongyongtip2" scale9Grid="20,20,1,1" left="0" right="0" top="0" bottom="0"/>
+				<e:Label id="already1" text="已领取" textColor="0x00FF00" size="20" verticalCenter="7.5" right="60" visible="false"/>
+				<e:Button id="get1" label="立即领取" skinName="Btn15Skin" width="129" horizontalCenter="180.5" verticalCenter="6.5"/>
+				<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" verticalCenter="-4.5" right="25" visible="false"/>
+				<e:Image source="bantoutiaoboss" y="5" height="35" width="285" scale9Grid="16,11,2,2" anchorOffsetY="0" anchorOffsetX="0"/>
+				<e:List id="reward1" y="43" itemRendererSkinName="ItemSkin" horizontalCenter="-89.5" x="45" scaleX="1" scaleY="1">
+				<e:layout>
+					<e:HorizontalLayout gap="-7"/>
+				</e:layout>
+				<e:ArrayCollection>
+					<e:Array>
+					<e:Object null=""/>
+					<e:Object null=""/>
+					<e:Object null=""/>
+					<e:Object null=""/>
+					</e:Array>
+				</e:ArrayCollection>
+				</e:List>
+				<e:Label id="target1" text="累计2天（0/2）充值10000元宝" y="13" size="20" textColor="0xFF9900" x="10"/>
+			</e:Group>
+			<e:Group y="412" width="540" height="147" x="11">
+				<e:Image source="tongyongtip1" scale9Grid="12,11,1,1" left="0" right="0" top="0" bottom="0"/>
+				<e:Image source="tongyongtip2" scale9Grid="20,20,1,1" left="0" right="0" top="0" bottom="0"/>
+				<e:Label id="already2" text="已领取" textColor="0x00FF00" size="20" verticalCenter="7.5" right="60" visible="false"/>
+				<e:Button id="get2" label="立即领取" skinName="Btn15Skin" width="129" y="57" horizontalCenter="180.5"/>
+				<e:Image id="redPoint2" touchEnabled="false" source="zjmhongdian" verticalCenter="-4.5" right="25" visible="false"/>
+				<e:Image source="bantoutiaoboss" y="5" height="35" width="285" scale9Grid="16,11,2,2" anchorOffsetY="0" anchorOffsetX="0"/>
+				<e:List id="reward2" y="43" itemRendererSkinName="ItemSkin" horizontalCenter="-89.5" x="45" scaleX="1" scaleY="1">
+				<e:layout>
+					<e:HorizontalLayout gap="-7"/>
+				</e:layout>
+				<e:ArrayCollection>
+					<e:Array>
+					<e:Object null=""/>
+					<e:Object null=""/>
+					<e:Object null=""/>
+					<e:Object null=""/>
+					</e:Array>
+				</e:ArrayCollection>
+				</e:List>
+				<e:Label id="target2" text="累计3天（0/3）充值10000元宝" y="13" size="20" textColor="0xFF9900" x="10"/>
+			</e:Group>
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center"/>
+			</e:layout>
+		</e:Group>
+
+	</e:Group>		
+</e:Skin>

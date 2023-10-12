@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WarReportSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="0" width="450" height="460">
+		<e:Image source="tongyongkuang3bg" left="0" right="0" top="2" bottom="0" scale9Grid="12,6,21,25"/>
+		<e:Image left="5" right="5" top="31" bottom="5" scale9Grid="18,17,1,1" source="tongyongmianbanbg"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0" scale9Grid="72,18,264,29"/>
+		<e:Label size="24" text="战 报" horizontalCenter="0" y="11" bold="true" textColor="0xBD600D"/>
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" horizontalCenter="0" bottom="-35" x="75" y="646" scaleX="1" scaleY="1">
+		<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group y="48" width="399" height="48" horizontalCenter="0">
+			<e:Image scale9Grid="136,25,4,3" source="bantoumingkuang5" left="0" width="160" horizontalCenter="-80" top="0" bottom="0"/>
+			<e:Image source="bantoumingkuang5" scale9Grid="136,25,4,3" scaleX="-1" horizontalCenter="80" right="0" top="0" bottom="0"/>
+		</e:Group>
+		<e:BitmapLabel id="score" y="55" text="2.0" font="num_4_fnt" x="186"/>
+		<e:Label id="AnameTxt" text="布拉格の传说" y="62" size="20" textColor="0xf8b141" x="45"/>
+		<e:Label id="BnameTxt" text="飘零豆豆" y="62" size="20" textColor="0xf8b141" x="305"/>
+		<e:List id="list" left="20" right="20" bottom="15" top="102" itemRendererSkinName="WarReportItemSkin">
+		</e:List>
+	</e:Group>
+</e:Skin>

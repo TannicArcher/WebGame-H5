@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="chuangtianguan" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="554" height="710">
+	<w:Config id="15a98a3982e"/>
+	<e:Image left="0" right="0" top="0" bottom="0" source="chuangtianguanbg_png"/>
+	<e:Image id="endImg" source="tadizuo" bottom="68" horizontalCenter="111"/>
+	<e:Scroller id="rollbar"  height="554" horizontalCenter="127.5" bottom="137">
+			<e:List id="list" itemRendererSkinName="chuangtianguanItem"  x="0" y="157">
+				<e:layout>
+					<e:VerticalLayout gap="-50" paddingBottom="0" horizontalAlign="center"/>
+				</e:layout>
+			</e:List>
+	</e:Scroller>
+	<e:Image source="chuangtianguan_json.dingbuzhezhao" scaleY="-1" left="0" right="0" bottom="0" height="180" touchEnabled="false"/>
+	<e:Image source="chuangtianguan_json.dingbuzhezhao" left="0" right="0" height="250" touchEnabled="false" top="0"/>
+	<e:Group id="tabiaoti" width="264" horizontalCenter="128" bottom="646">
+		<e:Image source="ctgbiaoti2" y="0" width="132" scale9Grid="88,0,10,64"  left="0"/>
+		<e:Image source="ctgbiaoti2" y="0" scale9Grid="88,0,10,64" width="132"  scaleX="-1" right="0"/>
+		<e:Label id="nameLabel" text="三十六重天" size="22"   y="34" textColor="0x7e6437" bold="true" horizontalCenter="0"/>
+	</e:Group>
+	<e:Image source="chuangtianguan_json.ctgyun4" scaleX="1.5" scaleY="1.5" touchEnabled="false" horizontalCenter="201" bottom="419"/>
+	<e:Image source="chuangtianguan_json.ctgyun3" scaleX="1.5" scaleY="1.5" touchEnabled="false" horizontalCenter="-63.5" bottom="382"/>
+	<e:Image source="chuangtianguan_json.ctgyun2" scaleX="1.5" scaleY="1.5" touchEnabled="false" horizontalCenter="203.5" bottom="280"/>
+	<e:Image source="chuangtianguan_json.ctgyun2" scaleX="1.5" scaleY="1.5" touchEnabled="false" horizontalCenter="33.5" bottom="587" height="37.333333333333336"/>
+	<e:Image source="chuangtianguan_json.ctgyun1" scaleX="1.5" scaleY="1.5" touchEnabled="false" horizontalCenter="-21.5" bottom="279"/>
+	<e:Image source="chuangtianguan_json.ctgyun1" touchEnabled="false" horizontalCenter="-65" bottom="545"/>
+	<e:Group horizontalCenter="-137" bottom="136">
+		<e:Group y="12" width="270" height="124" horizontalCenter="-137">
+			<e:Image left="0" right="0" top="0" source="tongyongtip1" scale9Grid="6,5,12,12" bottom="0" x="-35" y="-22" scaleX="1" scaleY="1"/>
+			<e:Image source="bantoutiaoboss" y="3" scale9Grid="16,0,2,24" height="28" width="125"/>
+			<e:Label text="通关排名" x="11" size="20" y="7" bold="true" textColor="0x9f946d"/>
+
+			<e:Label id="name0" text="布拉格の鑫爷" y="40" size="16" left="55" textColor="0xffff00"/>
+			<e:Image id="rankImg0" x="19" source="paihangs1" y="38"/>
+			<e:Image id="rankImg1" x="19" source="paihangs2" y="63"/>
+			<e:Image id="rankImg2" x="19" source="paihangs3" y="88"/>
+			<e:Label id="num0" text="36重天10层" y="40" size="16" right="14" textColor="0xffff00"/>
+			<e:Label id="name1" text="极光" y="65" size="16" x="55" textColor="0xff00ff"/>
+			<e:Label id="num1" text="9重天1层" y="65" size="16" textColor="0xff00ff" right="14"/>
+			<e:Label id="name2" text="梦里画" y="90" size="16" x="55" textColor="0x00ff00"/>
+			<e:Label id="num2" text="1重天1层" y="90" size="16" textColor="0x00ff00" right="14"/>
+			<e:Label id="jump" text="查看排行" x="146" y="0" size="18" textColor="0x00ff00" width="150" textAlign="center" height="34" verticalAlign="middle"/>
+		</e:Group>
+		<e:Group id="topGroup" width="270" height="199"  x="0" y="0"  >
+			<e:Image   top="0" bottom="0" source="shuxingbg" scale9Grid="50,5,65,34" width="221" x="0"/>
+			<e:Image source="teshuwenzibg" y="2"  height="70" left="0" right="0" scale9Grid="22,5,137,27" width="270"/>
+			<e:Label id="openDesc" text="通关三十六重天" size="20" textColor="0x9f946d" horizontalCenter="0.5" y="12" bold="true"/>
+			<ns1:BaseComponent id="itemicon" skinName="ItemSkin" className="ItemBase" y="80" horizontalCenter="0"/>
+			<e:Label id="unlock" text="解锁新类型" y="35" textColor="0x9f946d" size="16" horizontalCenter="0"/>
+			<ns1:BaseComponent id="runeItem" width="100" height="110" y="73.5" skinName="RuneItemSkin" horizontalCenter="0.5" visible="false"/>
+			<e:Group id="runeLock" width="100" height="105" y="70" horizontalCenter="0.5" visible="false">
+			<e:Image y="0" source="zwfwbg"   horizontalCenter="0"/>
+			<e:Image id="noOpenImg" source="zwfwbg2" y="0"   horizontalCenter="0"/>
+			<e:Label id="noOpenTF" text="第X个战纹槽" size="14" verticalAlign="middle" touchEnabled="false" strokeColor="0x080708" textAlign="center" textColor="0xBF7E7E" y="91" horizontalCenter="1" x="11"  />
+			<e:Image y="25" source="suowen"   x="34"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="buttomGroup" width="270" height="190"    x="0" y="207">
+			<e:Image source="jiantouyou2" right="-30" bottom="0" visible="false"/>
+			<e:Image   left="0" right="0" top="0" source="tongyongtip1" scale9Grid="6,5,12,12" bottom="0"/>
+			<e:Image source="teshuwenzibg" y="2" scale9Grid="26,19,137,13" left="0" right="0"/>
+			<e:List id="iconList" y="59" itemRendererSkinName="ItemSkin"  width="94" x="88">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center"/>
+			</e:layout>
+			</e:List>
+			<e:List id="iconList0" y="59" itemRendererSkinName="ItemSkin"  width="94" height="96" x="178">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center"/>
+			</e:layout>
+			</e:List>
+			<e:Label id="nowrawed" text="通关X层奖励" textColor="0x9F946D" size="20" bold="true" y="12" horizontalCenter="0"/>
+			<e:Group width="192" height="96" y="52" horizontalCenter="0" visible="false">
+			<ns1:BaseComponent id="randomRune" width="96" height="96" x="22" y="-1" skinName="ItemSkin"   visible="false"/>
+			<ns1:BaseComponent id="jinghuaRune" width="96" height="96" x="115" y="-1" skinName="ItemSkin"   visible="false"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+			</e:Group>
+			<e:Image source="szexp" x="16" y="50" visible="false"/>
+			<e:Group width="90" height="96" x="0" y="59">
+				<e:Image x="7" y="0" width="76" height="76"   source="quality3"/>
+				<e:Label id="nameTxt" size="16" textAlign="center" text="经验" strokeColor="0x111111" bottom="0" horizontalCenter="0" stroke="1" textColor="0x00ff00"/>
+				<e:Image source="result_json.ZSexp" x="20" y="13"  />
+				<e:Label id="expText" text="300000" x="14" y="58" size="16"   textColor="0xd1c28f"/>
+			</e:Group>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout gap="16"/>
+		</e:layout>
+	</e:Group>
+
+	<e:Button id="challengeBtn" label="挑  战" skinName="Btn1Skin" bottom="29" horizontalCenter="128"/>
+	<e:Button id="challengeBtn0" label="每日奖励" skinName="chuangtianguanDayrewardbtn" bottom="30" horizontalCenter="-194.5"/>
+	<e:Label id="limit" text="1转X级可继续挑战" size="20"   horizontalCenter="113.5" bottom="45" textColor="0xeda661" visible="false"/>
+
+	<e:Label id="dailyGift" text="（可领取）" size="16"   bold="true" textColor="0x2b9e27" bottom="10" horizontalCenter="-195" x="86" y="682"/>
+	<e:Label id="dailyGift0" text="每通关10层可抽奖" size="16" bold="true" bottom="10" horizontalCenter="-50" x="96" y="692" textColor="0x2b9e27"/>
+	<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" bottom="90" horizontalCenter="-150" x="157" y="591"/>
+	<e:Button id="choujiang" label="" skinName="Btn0Skin" icon="tttlucky" horizontalCenter="-50" bottom="35"/>
+	<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" bottom="90" horizontalCenter="-16" x="167" y="601"/>
+</e:Skin>

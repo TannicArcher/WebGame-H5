@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="jiejiSkin" minHeight="80" minWidth="40" currentState="1" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  states="1,2,3"  height.1="68">
+	<e:Group id="group1" includeIn="1" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="shuziji_json.jiejikuang_png" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Image id="num1" includeIn="1" x="5" y="0" scaleX="1" scaleY="1" source="jieji010_png"/>
+		<e:Image includeIn="1" x="5" y="30" source="jiejijie_png" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group id="group2" horizontalCenter="0" verticalCenter="0" includeIn="2">
+		<e:Image source="jiejikuang2_png" y="0" x="0"/>
+		<e:Image id="num21" x="6" y="7" source="jieji010_png"/>
+		<e:Image id="num22" x="5" y="37" source="jieji07_png"/>
+		<e:Image x="7" y="74" source="jiejijie_png"/>
+	</e:Group>
+	<e:Group width="43" height="140" includeIn="3">
+		<e:Image source="jiejikuang2_png" anchorOffsetY="0" top="0" bottom="0" left="0" right="0" x="-63" y="-39" scaleX="1" scaleY="1"/>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0">
+			<e:Image id="num31" y="9" source="jieji07_png" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image id="num32" y="38" source="jieji010_png" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image id="num33" y="66" source="jieji07_png" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:Image y="111.60000000000001" source="jiejijie_png" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			<e:layout>
+			<e:VerticalLayout horizontalAlign="center" gap="0" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

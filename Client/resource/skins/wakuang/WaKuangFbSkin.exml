@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WaKuangFbSkin" width="560" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group right="10" top="10">
+		<e:Image source="bantoutiaobg2" x="-3.5" y="3" width="148" height="58"   scale9Grid="44,2,6,17"/>
+		<e:Label id="nameTxt" text="比奇矿洞100" y="9" size="20"   horizontalCenter="0.5" textColor="0xf8b141"/>
+		<e:Label id="workerNum" text="矿工：10人" y="34" size="20" textColor="0xD1C28F"   horizontalCenter="0"/>
+		<e:Group y="34" horizontalCenter="0">
+			<e:layout>
+				<e:HorizontalLayout gap="0" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="myGroup" bottom="149" horizontalCenter="0">
+		<e:Image source="wordsbg" verticalCenter="0" left="30" right="0" scale9Grid="0,0,115,29"/>
+		<e:Image y="0" x="0" source="icon_wakuang"/>
+		<e:Group verticalCenter="0" x="50">
+			<e:Label text="挖矿中" size="20" verticalCenter="0" left="50" textColor="0x9f946d" x="-53" y="-10"/>
+			<e:Label id="time" text="（30:00）" size="20" textColor="0x9f946d" x="0" y="-10"/>
+			<e:Label id="quickFinish" text="快速完成" size="20" textColor="0x00FF00" x="23" y="-12"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="recordGroup" right="18" bottom="146">
+		<e:Image id="xiangqing" source="icon_robrecorrd"/>
+		<e:Image id="redPoint" x="46" source="zjmhongdian" touchEnabled="false" y="-2"   visible="false"/>
+	</e:Group>
+	<e:Group id="wakuangGroup" right="18" bottom="210">
+		<e:Image id="wakuang" source="icon_wakuang" horizontalCenter="0"/>
+		<e:Image id="redPoint1" x="46" source="zjmhongdian" touchEnabled="false" y="-2" visible="false"/>
+		<e:Image source="words_dianwowakuang" horizontalCenter="0" bottom="0" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

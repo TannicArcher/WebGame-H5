@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="highProjectItemSkin" width="210" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  height="60">
+	<w:Config id="1586d1506c8" />
+	<e:Image left="-7" right="-7" source="ny_projectbg" bottom="0" top="0" scale9Grid="21,5,132,31"/>
+	<e:Label id="projectName" text="王者争霸" size="18" textColor="0xd1c28f" verticalCenter="0" left="5"/>
+	<e:Label id="daliyCount" text="(15/15)" size="18" textColor="0xD1C28F" verticalCenter="0" horizontalCenter="12"/>
+	<e:Label id="jifen" text="2积分" size="18" textColor="0xD1C28F" verticalCenter="0.5" right="5"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

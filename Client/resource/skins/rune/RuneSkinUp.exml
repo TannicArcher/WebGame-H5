@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuneSkinUp" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  width="554" height="716">
+	<e:Group id="showAct" left="0" right="0" top="0" bottom="0">
+		<e:Group width="560" height="92" horizontalCenter="0" bottom="0">
+
+			<e:Image width="280" x="0" top="0" bottom="0" source="bantoumingkuang3" />
+			<e:Image width="280" scaleX="-1" top="0" bottom="0" right="0" source="bantoumingkuang3" />
+		</e:Group>
+		<e:Image source="zhanwenbg_png" width="554" horizontalCenter="0" height="596" top="0" x="0" y="0"  />
+		<e:Image source="rune_json.zhanwenbg2" width="380" height="437" horizontalCenter="1" top="90" x="88" y="90"  />
+		<e:Group id="Rune" x="0" y="0" visible="false"/>
+		<e:Group id="Runeitem" width="520" height="600" horizontalCenter="0" y="0">
+			<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" y="80" horizontalCenter="0" className="PowerPanel"/>
+			<e:Image id="runeBook" y="80" source="tongyongxiangxi" x="391"/>
+			<e:Image id="linebg0" source="rune_json.zwfwline1" x="144" y="169" width="80" scale9Grid="2,6,14,6"/>
+			<e:Image id="linebg1" source="rune_json.zwfwline1" x="295" y="169" width="80" scale9Grid="2,6,14,6"/>
+			<e:Image id="linebg2" source="rune_json.zwfwline1" x="409" y="200" width="80" scale9Grid="2,6,14,6" rotation="112"/>
+			<e:Image id="linebg3" source="rune_json.zwfwline1" x="378" y="316" width="80" scale9Grid="2,6,14,6" rotation="68"/>
+			<e:Image id="linebg4" source="rune_json.zwfwline1" x="295" y="409" width="80" scale9Grid="2,6,14,6"/>
+			<e:Image id="linebg5" source="rune_json.zwfwline1" x="144" y="409" width="80" scale9Grid="2,6,14,6"/>
+			<e:Image id="linebg6" source="rune_json.zwfwline1" x="163" y="320" width="80" scale9Grid="2,6,14,6" rotation="112"/>
+			<e:Image id="line0" x="144" y="169" width="80" scale9Grid="2,6,14,6" source="rune_json.zwfwline2"/>
+			<e:Image id="line1" x="295" y="169" width="80" scale9Grid="2,6,14,6" source="rune_json.zwfwline2" visible="false"/>
+			<e:Image id="line2" x="409" y="200" width="80" scale9Grid="2,6,14,6" rotation="112" source="rune_json.zwfwline2" visible="false"/>
+			<e:Image id="line3" x="378" y="316" width="80" scale9Grid="2,6,14,6" rotation="68" source="rune_json.zwfwline2" visible="false"/>
+			<e:Image id="line4" x="295" y="409" width="80" scale9Grid="2,6,14,6" source="rune_json.zwfwline2" visible="false"/>
+			<e:Image id="line5" x="144" y="409" width="80" scale9Grid="2,6,14,6" source="rune_json.zwfwline2" visible="false"/>
+			<e:Image id="line6" x="163" y="320" width="80" scale9Grid="2,6,14,6" rotation="112" source="rune_json.zwfwline2" visible="false"/>
+			<ns1:BaseComponent id="rune0" y="130" skinName="RuneItemSkin" className="RuneDisplay" horizontalCenter="-150"/>
+			<ns1:BaseComponent id="rune1" y="130" skinName="RuneItemSkin" className="RuneDisplay" horizontalCenter="0"/>
+			<ns1:BaseComponent id="rune2" y="130" skinName="RuneItemSkin" className="RuneDisplay" horizontalCenter="150"/>
+			<ns1:BaseComponent id="rune3" y="250" skinName="RuneItemSkin" className="RuneDisplay" horizontalCenter="96"/>
+			<ns1:BaseComponent id="rune4" y="370" skinName="RuneItemSkin" className="RuneDisplay" horizontalCenter="150"/>
+			<ns1:BaseComponent id="rune5" y="370" skinName="RuneItemSkin" className="RuneDisplay" horizontalCenter="0"/>
+			<ns1:BaseComponent id="rune6" y="370" skinName="RuneItemSkin" className="RuneDisplay" horizontalCenter="-150"/>
+			<ns1:BaseComponent id="rune7" y="250" skinName="RuneItemSkin" className="RuneDisplay" horizontalCenter="-96"/>
+			<e:Label id="levelsay" text="通过X层开启下一凹槽" x="169.33" y="529.57" visible="false"/>
+			<e:Image id="bookBtn" source="rune_json.zhanwenjiacheng" left="2" y="20"/>
+		</e:Group>
+		<e:Group id="up" width="540" height="230" horizontalCenter="0" bottom="0">
+			<e:Button id="replace" label="替 换" skinName="Btn1Skin" width="130" height="50" horizontalCenter="-80" bottom="9"/>
+			<e:Button id="uplevel" label="升 级" skinName="Btn1Skin" width="130" height="50" horizontalCenter="80" bottom="9"/>
+			<e:Group horizontalCenter="80" bottom="59">
+			<e:Image id="costImg" width="20" height="20" x="0" y="0" source="500007_png"/>
+			<e:Label id="cost" text="99/99" size="20" textAlign="left" textColor="0xd1c28f" x="28" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout gap="10"/>
+			</e:layout>
+			</e:Group>
+			<e:Group y="26" width="500" height="110" horizontalCenter="0">
+			<e:Image source="shuxingbg" scale9Grid="50,5,65,34" left="1" right="-1" top="0" bottom="0"/>
+				<e:Group height="110"  horizontalCenter="0" y="0" width="500">
+					<ns1:BaseComponent id="rune8" x="40" skinName="RuneItemSkin" className="RuneDisplay" height="89" width="89" verticalCenter="0"/>
+					<e:Label id="nuneName" text="狂暴 lv.3" x="140" y="20" size="18" textColor="0xd242fb"/>
+
+
+					<e:Group verticalCenter="8" x="140">
+						<e:Label id="addAttr" text="武器基础属性" x="17.5" size="16" textColor="0xd8c5ab" y="32"/>
+						<e:Image id="arrow" source="jiantouyou" y="0" x="0"/>
+						<e:Label id="attrDesc" text="攻击力 +9999" x="262.5" size="16" textColor="0x00ff00" y="21"/>
+						<e:layout>
+							<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+						</e:layout>
+					</e:Group>
+
+				</e:Group>
+			</e:Group>
+			<e:Image id="redPointReplace" touchEnabled="false" source="zjmhongdian" horizontalCenter="-27" bottom="35"/>
+			<e:Image id="upRed" touchEnabled="false" source="zjmhongdian" horizontalCenter="133" bottom="35"/>
+		</e:Group>
+		<e:Group id="Activation" horizontalCenter="0" bottom="20" visible="false">
+			<e:Label id="activeTipsTxt" text="1转可激活战纹" size="24" textColor="0xD1C28F" y="0" horizontalCenter="0"/>
+			<e:Button id="UplevelBtn1" label="激 活 战 纹" skinName="Btn1Skin" width="180" height="60" y="44" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="linkGroup" width="500" height="96" horizontalCenter="0" bottom="20" visible="false">
+			<e:Label text="可以通过以下方式获得战纹" y="0" size="20" textColor="0xf8b141" horizontalCenter="0"/>
+			<e:Button id="btn1" label="战纹寻宝" skinName="Btn1Skin" width="130" height="50" horizontalCenter="-100" bottom="0"/>
+			<e:Button id="btn2" label="通天塔" skinName="Btn1Skin" width="130" height="50" horizontalCenter="100" bottom="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

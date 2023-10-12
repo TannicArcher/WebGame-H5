@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CheckBigItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="160" height="160">
+	<e:Group  height="160"  horizontalCenter="0" verticalCenter="0">
+		<e:Group id="chapter" width="160" height="160"  horizontalCenter="0" verticalCenter="0">
+			<e:Rect width="160" height="60" y="100" strokeAlpha="0.6"/>
+			<e:Image height="60" source="bantoutiaobg2"  width="160" horizontalCenter="0" scale9Grid="0,4,92,12" y="100"/>
+			<e:Image source="tongyongdian2" left="0" verticalCenter="37"/>
+			<e:Image source="tongyongdian2" right="0" verticalCenter="37"/>
+			<e:Label id="nameTxt" text="一、中州皇城" y="109" size="20" bold="true" textAlign="center" horizontalCenter="-1.5" verticalAlign="middle" textColor="0xf8b141"/>
+			<e:Label id="chapterCount" text="1000-7000关" size="16" bold="true" textAlign="center" horizontalCenter="0" verticalAlign="middle" width="100" height="14" textColor="0xd1c28f" verticalCenter="65"/>
+			<e:Image id="redPointBox" right="0" top="90" source="zjmhongdian" visible="false"/>
+			<e:Group id="roleHeadGroup" x="49" y="13" width="64" height="64" visible="false">
+				<e:Image y="64" rotation="90" horizontalCenter="0" source="jiantouyou2"/>
+				<e:Image id="rolelocation" width="60" height="60" source="head_10" horizontalCenter="0" verticalCenter="0"/>
+				<e:Image source="touxiangkuang1" scale9Grid="5,5,3,3" left="0" right="0" top="0" bottom="0"/>
+				<e:Image source="xuanzhongkuang2" left="0" right="0" top="0" bottom="0" scale9Grid="4,4,8,8"/>
+			</e:Group>
+		</e:Group>
+		<!--<e:Group id="reward" x="150" width="200" height="150" verticalCenter="0" touchEnabled="false">
+			<e:Image source="worldMap_json.mapdajiantou" x="-34" width="34" height="88" verticalCenter="0"/>
+			<e:Image   source="tongyongtip3" scale9Grid="9,9,11,10" left="0" right="0" top="0" bottom="0"/>-->
+			<!--<ns1:BaseComponent id="item0" y="46" className="ItemBase" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" x="64"/>-->
+
+			<!--<e:Image source="teshuwenzibg" y="4" horizontalCenter="0"/>
+			<e:Label id="title" text="通关奖励" y="12" size="20" textColor="0xEDB107" bold="true" horizontalCenter="0"/>
+			<e:Label id="rew" text="距离毒蛇山谷还差9999关" size="16" horizontalCenter="0" bottom="14" textColor="0x9f946d"/>
+			<e:Button id="rewardBtn" label="领取" horizontalCenter="0" bottom="8" skinName="Btn6Skin" height="30" width="70" visible="false"/>
+		</e:Group>-->
+	</e:Group>
+</e:Skin>

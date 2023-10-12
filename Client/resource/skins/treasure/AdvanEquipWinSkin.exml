@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="AdvanEquipWinSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+    <w:Config id="1586be3e7df" />
+    <e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" />
+    <e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3" />
+    <e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="155" />
+
+    <e:ViewStack id="viewStack" width="580" selectedIndex="2" horizontalCenter="0" top="52" bottom="166">
+        <ns1:BaseComponent id="orangeEquipPanel" name="神装" skinName="OrangeEquipSkin" className="OrangeEquipPanel" left="0" right="0" top="0" bottom="0"/>
+        <ns1:BaseComponent id="legendEquipPanel" name="热血" skinName="LegendEquipSkin" className="LegendEquipPanel" left="0" right="0" top="0" bottom="0" visible="false"/>
+		<ns1:BaseComponent id="extremeEquipPanel" name="至尊" skinName="ExtremeEquipSkin" className="ExtremeEquipPanel" left="0" right="0" top="0" bottom="0" visible="false"/>
+			<e:Group x="332" y="383" name="寻宝" visible="false"/>
+    </e:ViewStack>
+    <e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}" selectedIndex="0"
+              horizontalCenter="0" bottom="112">
+        <e:layout>
+            <e:HorizontalLayout gap="0" />
+        </e:layout>
+    </e:TabBar>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin"   width="580" horizontalCenter="0" className="RoleSelectPanel"/>
+	<e:Group horizontalCenter="46" bottom="140" touchEnabled="false">
+		<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" x="0" y="0" visible="false"/>
+		<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" x="120" y="0"/>
+		<e:Image id="redPoint3" touchEnabled="false" source="zjmhongdian" x="175" y="0"/>
+		<e:Image id="redPoint2" touchEnabled="false" source="zjmhongdian" x="243" y="0" visible="false"/>
+		<e:layout>
+			<e:HorizontalLayout gap="96"/>
+		</e:layout>
+	</e:Group>
+
+
+	<e:Image horizontalCenter="-155" y="5" source="biaoti_chengzhuang"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+</e:Skin>

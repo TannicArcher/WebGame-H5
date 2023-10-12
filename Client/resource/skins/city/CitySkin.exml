@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CitySkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" xmlns:euiextension="euiextension.*">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="120"/>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  width="580" horizontalCenter="0" currentState="nohead"/>
+	<e:Image y="6"  horizontalCenter="-155" source="biaoti_yuanguboss"/>
+	<e:ViewStack id="viewStack" selectedIndex="0" width="554" horizontalCenter="0" top="52" bottom="128">
+		<ns1:BaseComponent id="personalBoss" name="怪物攻城"
+		                    left="0" right="0" top="0" bottom="0" skinName="CityBossSkin" className="MonsterCityWarView"/>
+
+
+
+
+	</e:ViewStack>
+	<e:TabBar id="tab" selectedIndex="0" itemRendererSkinName="BtnTab0Skin"
+	          dataProvider="{viewStack}"   bottom="112" horizontalCenter="0" visible="false">
+		<e:layout>
+			<e:HorizontalLayout  gap="0"/>
+		</e:layout>
+	</e:TabBar>
+	<e:Image id="redPoint0" touchEnabled="false"  bottom="138" horizontalCenter="41" source="zjmhongdian" visible="false"/>
+	<e:Image id="redPoint1" touchEnabled="false"  bottom="138" horizontalCenter="101" source="zjmhongdian" visible="false"/>
+
+
+	<e:Button id="seeRule" label="按钮" icon="wenhao" skinName="Btn0Skin" horizontalCenter="-246" y="8" scaleX="0.9" scaleY="0.9"/>
+	<ns1:BaseComponent id="npc" name="NPC" left="0" right="0" top="0" bottom="0" skinName="CityNpcSkin" x="10" y="10" visible="false"/>
+	<e:Button id="closeBtn0" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+</e:Skin>

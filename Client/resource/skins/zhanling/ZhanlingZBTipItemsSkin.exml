@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ZhanlingZBTipItemsSkin" width="470" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group scaleX="1" scaleY="1" touchEnabled="false" touchChildren="true" x="25" verticalCenter="0">
+		<e:Image source="quality0" scale9Grid="8,8,48,48" width="60" height="60" y="0" x="0"/>
+		<e:Image id="skillIcon1" width="50" height="50" touchEnabled="true" source="yupei_skill_0" y="5" x="5"/>
+	</e:Group>
+	<e:Label id="desc" text="激活后获得强力天赋:【杀意高涨】已放角色死亡后，为友方其他角色施加回血Buff，每秒恢复20%生命值，持续3秒" x="100" size="18" width="346" verticalCenter="0" textColor="0x9f946d"/>
+</e:Skin>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="markSkillTipsSkin" currentState="skill0" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:PriceIcon="PriceIcon.*" xmlns:ns1="*"  width="580"  height="930" states="skill0,skill1,skill2,skill3,skill4,skill5,skill6" >
+	<w:Config id="15a177a4c02"/>
+	<e:Rect id="closeBtn" left="0" top="0" bottom="0" right="0" fillAlpha="0.6"/>
+	<e:Group width="370" height="603" horizontalCenter="0" top="100" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image source="tongyongtip1" scale9Grid="7,6,11,12" touchEnabled="false" left="0" top="0" bottom="0" right="0"/>
+		<e:Image id="quali" height="110" top="0" source="quali5" left="0" right="0" anchorOffsetY="0" scale9Grid="8,1,12,5"/>
+		<e:Image id="corner" source="tongyongtip2" scale9Grid="18,18,2,4" touchEnabled="false" left="0" top="0" right="0" bottom="0"/>
+		<e:Image y="66" source="teshuwenzibg" anchorOffsetX="0" width="297" horizontalCenter="0.5"/>
+		<e:Image x="24" y="16" source="lym_kuang" anchorOffsetX="0" width="-73" anchorOffsetY="0" height="-74"/>
+		<e:Image id="skillImg" x="28" y="20" source="lym_skill1" source.skill0="lym_skill0" source.skill2="lym_skill2" source.skill3="lym_skill3" source.skill4="lym_skill4" source.skill5="lym_skill5" source.skill6="lym_skill6"/>
+		<e:Group x="105" y="19">
+			<e:Label id="nametxt" text="印记之殇" x="0" y="0" textColor="0xffd93f" size="28" bold="true" fontFamily="SimHei"/>
+			<e:Label id="lvtxt" text="Lv.1" x="97" y="0" textColor="0xFFD93F" size="28" bold="true" fontFamily="SimHei" visible.skill0="false"/>
+			<e:layout>
+				<e:HorizontalLayout gap="20"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="keyDesctxt"  x="106" y="46" size="20" fontFamily="Arial" textColor="0xffffff" anchorOffsetY="0" height="40" anchorOffsetX="0" width="240" verticalAlign="bottom"/>
+		<e:Label id="infoDesctxt" text="神秘莫测的魔力能量，环绕于烈焰戒指周身激活后可以对目标造成海量伤害" size="16" anchorOffsetY="0" anchorOffsetX="0" width="305" lineSpacing="3" top="110" horizontalCenter="0"/>
+		<e:Label id="skillDesctxt" size="16" anchorOffsetY="0" anchorOffsetX="0" width="320" lineSpacing="3" left="25" bottom="72" left.skill3="25" bottom.skill3="72" height="35"/>
+		<e:Label text="技能效果:" textColor="0xf8b141" size="16" bold="true" left="25" bottom="91"/>
+		<e:Label id="damageDesctxt" text="" size="16" anchorOffsetY="0" anchorOffsetX="0" width="320" lineSpacing="3" left="25" bottom="20" includeIn="skill0" height="35"/>
+		<e:Label text="伤害效果:" textColor="0xF8B141" size="16" bold="true" left="25" bottom="39" includeIn="skill0"/>
+		<e:Image source="tongyongline" horizontalCenter="0" width="280" bottom="63"/>
+		<e:Group id="show" x="26" y="146" anchorOffsetX="0">
+			<e:Image width="319" height="337" x="0" y="0" source="cd_rewardbg" scale9Grid="5,5,5,4" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Image source="lyr_markbg_jpg" x="5" y="4"/>
+		</e:Group>
+		<e:Button id="update" label="升  级" skinName="Btn3Skin" includeIn="skill1,skill2,skill3,skill4,skill5,skill6" horizontalCenter="0" bottom="8" horizontalCenter.skill1="0" bottom.skill1="7" horizontalCenter.skill2="0" bottom.skill2="7" horizontalCenter.skill3="0" bottom.skill3="7" horizontalCenter.skill4="0" bottom.skill4="7" horizontalCenter.skill5="0" bottom.skill5="7" horizontalCenter.skill6="0" bottom.skill6="7"/>
+		<e:Image id="redpoint" source="zjmhongdian" right="128" bottom.skill5="39" height.skill5="24" bottom="39" visible="false"/>
+		<e:Group id="cost" horizontalCenter="0.5" bottom="13" includeIn="skill1,skill2,skill3,skill4,skill5,skill6" horizontalCenter.skill1="0.5" bottom.skill1="13" horizontalCenter.skill2="0.5" bottom.skill2="13" horizontalCenter.skill3="0.5" bottom.skill3="13" horizontalCenter.skill4="0.5" bottom.skill4="13" horizontalCenter.skill5="0.5" bottom.skill5="13">
+			<e:Label text="升级消耗:" x="0" y="0" size="30" textColor="0xd1c28f" bold="true"/>
+			<e:Image id="costImg" width="40" height="40" x="19" y="2" source="200926_png"/>
+			<e:Label id="costNum" text="X 3" x="10" y="10" size="26" textColor="0xD1C28F" bold="true"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="nextLevel" text="" size="20" bold="true" textColor="0xd1c28f" horizontalCenter="1.5" bottom="23" includeIn="skill1,skill2,skill3,skill4,skill5,skill6"/>
+		<e:Group id="uieff" x="185" y="314" anchorOffsetX="0" anchorOffsetY="0"/>
+	</e:Group>
+</e:Skin>

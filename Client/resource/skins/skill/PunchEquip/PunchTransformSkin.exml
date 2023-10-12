@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PunchTransformSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="930">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group anchorOffsetY="0" width="453" height="398" horizontalCenter="0.5" verticalCenter="-41">
+		<e:Image  source="tongyongkuang3bg" scale9Grid="7,3,34,37" left="0" right="0" top="0" bottom="31" anchorOffsetY="0"/>
+		<e:Image source="ronglianbg_png" height="316" y="44" anchorOffsetY="0" width="441" horizontalCenter="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="74,5,261,37" left="0" right="0"/>
+		<e:Label text="符文碎片转换" y="12" size="24" horizontalCenter="0" bold="true" textColor="0xbd600d"/>
+		<e:Button id="transformBtn" label="一键转换" y="263" skinName="Btn3Skin" left="90"/>
+		<e:Button id="quicklytransformBtn" label="转  换" y="263" skinName="Btn3Skin" right="90"/>
+		<e:Group y="57" horizontalCenter="0">
+			<e:Group id="seniorPiece" x="0" y="0">
+				<e:Image y="20" source="quality0" anchorOffsetX="0" width="98" anchorOffsetY="0" height="98" scale9Grid="8,8,48,48" horizontalCenter="0"/>
+				<e:Image y="32" source="hejisuipian1" width="50" height="50" horizontalCenter="0"/>
+				<e:Label text="高级符文碎片" y="-4" size="18" textColor="0xffd93f" horizontalCenter="0"/>
+				<e:Image width="80" height="20" y="88" source="bantoutiaobg2" scale9Grid="11,2,70,17" horizontalCenter="0"/>
+				<e:Label id="count0" text="99999" y="90" size="18" horizontalCenter="0.5" textColor="0xd1c28f"/>
+			</e:Group>
+			<e:Image source="jiantouyou" x="154" y="38"/>
+			<e:Group id="basePiece" x="235" y="0">
+				<e:Image y="18" source="quality0" width="98" height="98" scale9Grid="8,8,48,48" horizontalCenter="0"/>
+				<e:Image y="32" width="46" height="46" source="hejisuipian" horizontalCenter="0"/>
+				<e:Label text="低级符文碎片" y="-4" size="18" textColor="0xFFD93F" horizontalCenter="0"/>
+				<e:Image width="80" height="20" y="88" source="bantoutiaobg2" scale9Grid="11,2,70,17" horizontalCenter="0"/>
+				<e:Label text="99999" y="90" size="18" horizontalCenter="0.5" id="count1" textColor="0xD1C28F"/>
+			</e:Group>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" gap="40" paddingLeft="40" paddingRight="40"/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="190" horizontalCenter="0.5">
+			<e:Image width="152" height="38" x="0" y="0" source="tongyongtip3" scale9Grid="9,9,12,12" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:ProgressBar id="changeBar" width="140" height="26" x="6" y="6" value="0" anchorOffsetY="0" skinName="bar5Skin" anchorOffsetX="0"/>
+		</e:Group>
+		<e:Button id="minus" label="Button" y="186" skinName="Btn0Skin" icon="btn-" left="90"/>
+		<e:Button id="add" label="Button" y="185" skinName="Btn0Skin" icon="btnadd" right="90"/>
+		<e:Image width="20" height="20" x="69" y="335" source="gantanhao"/>
+		<e:Label text="低级符文碎片无法转换为高级符文碎片" x="94" y="336" size="18" textColor="0xf8b141"/>
+		<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" horizontalCenter="0.5" bottom="1" touchEnabled="false"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" horizontalCenter="0.5" bottom="6" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

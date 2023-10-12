@@ -1,0 +1,26 @@
+<e:Skin class="ChestOpenRewardSkin" width="640" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="1030">
+	<w:Config id="1586b349dbe" />
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.9" />
+	<e:Image width="592.01" height="126.67"   verticalCenter="-87.5" horizontalCenter="-1"
+	           source="shuxingbg" scale9Grid="50,5,65,34" visible="false" />
+	<e:Image width="500" height="240" verticalCenter="85" horizontalCenter="0" source="shuxingbg" scale9Grid="50,5,65,34"  touchEnabled="false"/>
+	<e:Group id="bgGroup" horizontalCenter="0" verticalCenter="-182"></e:Group>
+	<e:Image id="imgBox"   height="150" width="150" verticalCenter="-127"
+	         source="baoxiang_5b" horizontalCenter="10" />
+	<e:Scroller width="494" height="422"   y="301" touchChildren="false"
+	            touchEnabled="false" horizontalCenter="0">
+		<e:Group id="listCon"  height="218">
+			<e:List id="list" width="490" height="424" x="3" y="205"  
+			        itemRendererSkinName="ItemSkin" visible="false">
+				<e:layout>
+					<e:TileLayout/>
+				</e:layout>
+			</e:List>
+		</e:Group>
+	</e:Scroller>
+	<e:Image source="shuxingbg4" y="203" horizontalCenter="0" />
+	<e:Label text="开启宝箱 获得奖励" y="216" size="24" textColor="0xf8b141" horizontalCenter="0.5" bold="true" />
+	<e:Image y="212" scale9Grid="16,0,10,11" width="150" horizontalCenter="-184" source="weijihuohuawen" />
+	<e:Image source="weijihuohuawen" y="212" scale9Grid="16,0,10,11" width="150" horizontalCenter="184" scaleX="-1" />
+</e:Skin>

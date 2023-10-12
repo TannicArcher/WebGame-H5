@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="hefuXunbao" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="hejibg4_png" y="40" width="554" height="484" horizontalCenter="0"/>
+		<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+		<e:Image y="0" horizontalCenter="0" source="biaoti_hefuxunbao"/>
+
+		<e:Group id="eff2" x="422" y="404"/>
+		<e:Group id="eff1" y="292" x="198"/>
+		<e:Group id="infoBg" y="40" horizontalCenter="0" width="540">
+		<e:Image source="shuxingbg"   scale9Grid="77,5,15,34" left="0" right="0" top="0" bottom="0"/>
+		<e:Label text="剩余时间：" x="14" y="12" size="18" textColor="0xf8b141"/>
+		<e:Label id="actTime" text="6天23小时55分" x="104" y="12" size="18" textColor="0x00FF00"/>
+		<e:Label id="actDesc" text="活动期间成功击杀BOSS可以获得BOSS礼包。" x="104" y="32" size="18" width="344" bottom="12" top="32" left="104" right="14" textColor="0xdfd1b5"/>
+		<e:Label text="活动说明：" x="14" y="32" size="18" textColor="0xf8b141"/>
+		</e:Group>
+		<e:Image source="hefuxunbao_png" y="394" x="0"/>
+		<e:Image source="weapon104_1_c_png" x="-48" y="35" visible="false"/>
+
+
+
+
+
+
+
+		<e:Button id="goBtn" label="前往抽奖" horizontalCenter="0" skinName="Btn16Skin" verticalCenter="260"/>
+
+
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian"   horizontalCenter="66" bottom="66" visible="false"/>
+
+	</e:Group>		
+</e:Skin>

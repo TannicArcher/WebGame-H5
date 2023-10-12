@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WingWarnTips" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<w:Config id="1586b36a128"/>
+	<e:Rect id="BG" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="anigroup" horizontalCenter="0" width="350" height="260" verticalCenter="0">
+		<e:Image top="0" bottom="0" left="0" right="0" source="tongyongtip1" scale9Grid="5,5,15,15" touchEnabled="true"/>
+		<e:Image top="0" bottom="0" left="0" right="0" source="tongyongtip2" scale9Grid="19,18,3,6"/>
+		<e:Label text="提示" size="24" y="10" bold="true" textColor="0xa67d44" horizontalCenter="0"/>
+		<e:Label id="desc" text="你的羽翼有祝福值         ，将在" size="20" y="59" textColor="0x9f946d" width="270" height="69" horizontalCenter="0"/>
+		<e:Image scale9Grid="85,1,6,1" y="40" source="tongyongline" left="0" right="0"/>
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" width="400"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-30" textColor="0x7E6437"/>
+		<e:Button id="closeBtn" label="关闭" horizontalCenter="-80" bottom="20" skinName="Btn3Skin" width="120" height="50"/>
+		<e:Button id="up" label="去升阶" horizontalCenter="80" bottom="20" skinName="Btn3Skin" width="120" height="50"/>
+		<e:CheckBox id="nextHint" label="本次不再提示" y="136" skinName="CheckBox0" horizontalCenter="0" scaleX="0.9" scaleY="0.9"/>
+	</e:Group>
+</e:Skin>

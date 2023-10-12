@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CheckButtonSkin" states="up,down,disabled" width="120" height="126"
+        currentState="up" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" includeIn="down">
+	<e:Image id="iconDisplay" pixelHitTest="true" source="tiaozhan01" x.up="-2" y.up="2" horizontalCenter="0" verticalCenter="0" verticalCenter.down="2"/>
+	<e:Image id="redPoint" x="69" y="17" source="zjmhongdian" touchEnabled="false"  visible="false"/>
+</e:Skin>

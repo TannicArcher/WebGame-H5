@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WaKuangSkin" width="560" height="712" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="wakuang_bg_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Image x="415" y="92" source="wakuang_bg1_png"/>
+	<e:Image x="482" y="40" source="wakuang_bg2_png"/>
+	<e:Group id="btnGroup" horizontalCenter="0" bottom="40">
+		<e:Button id="go" label="进入矿洞" skinName="Btn1Skin"/>
+		<e:Image id="redPoint" source="zjmhongdian" touchEnabled="false" y="0" right="0"/>
+	</e:Group>
+	<e:Group horizontalCenter="100.5" bottom="118">
+		<e:Image source="wordsbg" verticalCenter="0" left="21"/>
+		<e:Image source="icon_rob" y="0"   left="0"/>
+		<e:Label id="plunderNum" text="掠夺次数：2/3" size="18" textColor="0x00FF00"   verticalCenter="0" left="50"/>
+	</e:Group>
+	<e:Group horizontalCenter="-99.5" bottom="118">
+		<e:Image source="wordsbg" verticalCenter="0" left="21"/>
+		<e:Image y="0"   left="0" source="icon_wakuang"/>
+		<e:Label id="workNum" text="挖掘次数：2/3" size="18" textColor="0x00ff00"   verticalCenter="0" left="50"/>
+	</e:Group>
+	<e:Image source="npcnamebg" scale9Grid="41,18,4,5" width="91" height="25" y="233" horizontalCenter="0"/>
+	<e:Label id="nameTxt" text="矿洞使者" size="14" textColor="0xFFFFCC" y="238" horizontalCenter="0" bold="true"/>
+	<e:Image source="npc_png" horizontalCenter="0" verticalCenter="-40"/>
+</e:Skin>

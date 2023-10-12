@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="auctionSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" xmlns:euiextension="euiextension.*">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" width="580" horizontalCenter="0" currentState="nohead"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="155"/>
+
+	<e:Image y="6"  horizontalCenter="-155" source="biaoti_auction"/>
+
+	<e:ViewStack id="viewStack" selectedIndex="1" width="554" horizontalCenter="0" top="52" bottom="162">
+
+		<ns1:BaseComponent id="guild" skinName="auctionPanelSkin" name="公会" left="0" right="0" top="0" bottom="0" className="AuctionPanel"/>
+
+		<ns1:BaseComponent id="server" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" skinName="auctionPanelSkin" className="AuctionPanel" name="全服" visible="false"/>
+
+	</e:ViewStack>
+	<e:TabBar id="tab" selectedIndex="0" itemRendererSkinName="BtnTab0Skin"
+	          dataProvider="{viewStack}"   bottom="112" horizontalCenter="0">
+		<e:layout>
+			<e:HorizontalLayout  gap="-8"/>
+		</e:layout>
+	</e:TabBar>
+	<e:Image id="redPoint0" touchEnabled="false"  bottom="138" source="zjmhongdian" horizontalCenter="-9"/>
+	<e:Image id="redPoint1" touchEnabled="false"  bottom="138" source="zjmhongdian" horizontalCenter="104"/>
+
+
+
+	<e:Button id="seeRule" label="按钮" icon="wenhao" skinName="Btn0Skin" horizontalCenter="-246" y="8" scaleX="0.9" scaleY="0.9"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+</e:Skin>

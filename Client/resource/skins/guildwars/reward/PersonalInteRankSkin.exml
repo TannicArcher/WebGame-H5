@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PersonalInteRankSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="520" height="720">
+	<e:Image  source="tongyongkuang3bg" left="0" right="0" top="0" bottom="0" scale9Grid="20,21,9,8"/>
+	<e:Image y="44"  source="leibiefengetou" left="6" right="6" scale9Grid="5,5,30,32"/>
+	<e:Image source="tongyongkuang3tou" scale9Grid="66,0,271,47" left="0" right="0" y="0"/>	
+	<e:Image source="leibeifengexian" x="96" y="52"/>
+	<e:Image source="leibeifengexian" x="237" y="52"/>
+	<e:Image source="leibeifengexian" x="378" y="52"/>
+	<e:Label text="上届排名" size="24" horizontalCenter="0" y="11" textColor="0xa67d44"/>
+	<e:Label y="54" text="名次" size="20" x="31" textColor="0x7e6437"/>
+	<e:Label y="54" text="名称" size="20" x="144" textColor="0x7e6437"/>
+	<e:Label y="54" text="行会" size="20" x="284" textColor="0x7e6437"/>
+	<e:Label y="54" text="积分" size="20" x="423" textColor="0x7e6437"/>
+	<e:Scroller width="510" height="630" horizontalCenter="0" y="84">
+		<e:List id="list" itemRendererSkinName="GuildInteRankItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

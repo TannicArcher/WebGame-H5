@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GwMixItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  width="90" height="100">
+	<w:Config id="1586b349dbe"/>
+	<e:Image id="frame" horizontalCenter="0" verticalCenter="-7.5" scaleX="1.2" scaleY="1.2" source="godweapon_quality1"/>
+	<e:Image id="shengwuImg" source="200110_png" horizontalCenter="0.5" verticalCenter="-7" width="47" height="48"/>
+	<e:Image y="-6" source="gwmix_itembg" horizontalCenter="-0.5"/>
+	<e:Label id="shengwuName" text="圣物名字" size="16" horizontalCenter="0" bottom="0" bold="true"/>
+	<e:Label id="count" size="16" y="54" text="999" x="16" stroke="1" strokeColor="0x232323" textColor="0xDDD3B1"/>
+	<e:Image id="imgJob" source="job3Item" alpha="0.8" scaleX="0.8" scaleY="0.8" y="0" right="0"/>
+</e:Skin>

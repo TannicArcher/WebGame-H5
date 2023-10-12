@@ -1,0 +1,9 @@
+{"file":"kaimenhong.png","frames":{
+"biaoti_ringup":{"x":0,"y":274,"w":369,"h":33,"offX":0,"offY":0,"sourceW":369,"sourceH":33},
+"ringup_toptext":{"x":0,"y":0,"w":366,"h":120,"offX":0,"offY":0,"sourceW":366,"sourceH":120},
+"biaoti_kaimenhong":{"x":280,"y":187,"w":135,"h":26,"offX":0,"offY":0,"sourceW":135,"sourceH":26},
+"icon_ringup":{"x":202,"y":120,"w":78,"h":75,"offX":2,"offY":2,"sourceW":80,"sourceH":80},
+"icon_kaimenlishi":{"x":123,"y":120,"w":79,"h":75,"offX":0,"offY":2,"sourceW":80,"sourceH":80},
+"biaoti_kaimenlishi":{"x":280,"y":154,"w":136,"h":33,"offX":0,"offY":0,"sourceW":138,"sourceH":34},
+"zhizunshoushen_bg":{"x":366,"y":0,"w":123,"h":154,"offX":4,"offY":3,"sourceW":131,"sourceH":157},
+"shoushenlibao_bg":{"x":0,"y":120,"w":123,"h":154,"offX":4,"offY":3,"sourceW":131,"sourceH":157}}}

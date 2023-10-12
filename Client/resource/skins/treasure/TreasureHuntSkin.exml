@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TreasureHuntSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586be3e7df" />
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="155"/>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  width="580" horizontalCenter="0" currentState="nohead"/>
+	<e:ViewStack id="viewStack" width="554" selectedIndex="3" horizontalCenter="0" top="52" bottom="160"  height="716">
+		<ns1:BaseComponent id="treasureHuntPanel"  name="装备" left="0" right="0" top="0" bottom="0" skinName="TreasureHuntPanelSkin"  className="TreasureHuntPanel"/>
+		<ns1:BaseComponent id="treasureRune" name="战纹" skinName="TreasureRune"  left="0" right="0" top="0" bottom="0" className="TreasureRunePanel" visible="false"/>
+		<ns1:BaseComponent id="treasureChuanshi" name="传世" skinName="TreasureChuanshi"  left="0" right="0" top="0" bottom="0" className="TreasureChuanshiPanel" visible="false"/>
+		<!--TreasureRune-->
+		<!--<ns1:BaseComponent x="0" y="0" skinName="OrangeEquipSkin" className="OrangeEquipPanel" visible="false"/>
+		<ns1:BaseComponent x="0" y="0" skinName="LegendEquipSkin" className="LegendEquipPanel" width="425" height="619" visible="false"/>-->
+		<!--<ns1:BaseComponent skinName="TreasureStore" className="TreasureStorePanel" left="0" right="0" top="0" bottom="0"/>-->
+		<!--<e:Component x="0" y="0" skinName="" />
+		-->
+	</e:ViewStack>
+
+
+
+
+
+
+	<e:Image source="treasure22_json.xunbao_1" horizontalCenter="-154.5" top="5"/>
+	<e:Button id="help" label="按钮" skinName="Btn0Skin" icon="wenhao" horizontalCenter="-246" y="8" scaleX="0.9" scaleY="0.9"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}" selectedIndex="0" horizontalCenter="0" bottom="112">
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:TabBar>
+	<e:Group id="redGroup" bottom="140" horizontalCenter="46" touchEnabled="false">
+		<e:layout>
+		<e:HorizontalLayout gap="100" verticalAlign="middle"/>
+		</e:layout>
+		<e:Image id="redPoint0" source="zjmhongdian" touchEnabled="false" horizontalCenter="-72" y="-24" x="206" scaleX="1" scaleY="1"/>
+		<e:Image id="redPoint1" source="zjmhongdian" touchEnabled="false" bottom="140" horizontalCenter="49" x="327" y="-24" scaleX="1" scaleY="1"/>
+		<e:Image id="redPoint2" source="zjmhongdian" touchEnabled="false" bottom="140" horizontalCenter="169" x="447" y="-24" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

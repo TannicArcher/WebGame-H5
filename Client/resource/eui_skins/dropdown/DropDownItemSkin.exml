@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DropDownItemSkin" minWidth="100" minHeight="31" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down">
+
+    <e:Label id="nameLbl" size="18"  textColor="0xDFD1B5" verticalCenter="0" text=""/> </e:Skin>

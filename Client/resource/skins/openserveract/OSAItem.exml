@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OSAItem" width="540" height="125" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image id="bg0" source="scitembg" scale9Grid="56,26,4,3" left="0" right="0" top="0" bottom="0" x="0" y="0"/>
+		<e:Group x="420" y="41" anchorOffsetY="0">
+		<e:Button id="get0" label="领取"  verticalCenter="0" skinName="Btn15Skin"/>
+			<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" x="84" y="-7" visible="false"/>
+		<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" x="84" y="-7" visible="false"/>
+			<e:Label id="already" text="已领取" size="20" textColor="0x00ff00" verticalCenter="0" x="21" visible="false"/>
+		</e:Group>
+		<ns1:BaseComponent id="reward" xmlns:ns1="*" skinName="ItemSkin" className="ItemBase" verticalCenter="5" y="0" left="36" visible="false"/>
+		<e:List id="rewardList" itemRendererSkinName="ItemSkin" verticalCenter="5" x="20">
+			<e:layout>
+			<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:List>
+		<e:Group x="290" verticalCenter="0">
+			<e:Label text="累计充值" x="4" y="2" size="18" textColor="0xF8B141"/>
+			<e:BitmapLabel id="num" height="20" x="-36" y="0" text="99" font="num_lv__fnt" scaleX="1" scaleY="1" letterSpacing="-3"/>
+			<e:Label text="天" x="14" y="12" size="18" textColor="0xF8B141"/>
+			<e:layout>
+			<e:HorizontalLayout gap="5" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

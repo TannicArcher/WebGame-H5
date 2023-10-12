@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ReincarnateSpiritSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgClose" fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Group width="500" height="700" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="tongyongkuang3bg" scale9Grid="9,4,34,37" left="0" right="0" top="2" bottom="0"/>
+		<e:Group horizontalCenter="0" bottom="375">
+			<e:Label text="附灵值" x="-23" y="20" size="20" textColor="0xd1c28f"/>
+			<e:Group id="barGroup" width="375" height="40" horizontalCenter="21" y="11" x="43">
+			<e:ProgressBar id="expBar" maximum="100" value="40" skinName="WingExpBarSkin" slideDuration="0" height="16" left="8" right="68" verticalCenter="0" anchorOffsetX="0"/>
+			<e:Image id="barBg1" left="0" right="60" verticalCenter="0" source="jingyantiao6" scale9Grid="28,11,2,1"/>
+				<e:Label id="expLabel" stroke="1" strokeColor="0x000000" text="100/100" size="16" verticalAlign="middle" textAlign="center" height="18" verticalCenter="0" right="60" left="0" textColor="0xffffff"/>
+				<e:Label id="lvTxt" text="(Lv.30)" textColor="0xFF9900" size="20" scaleX="1" scaleY="1" right="0" verticalCenter="0"/>
+			</e:Group>
+			<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="dinghong" height="104" bottom="5" left="5" right="5">
+			<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+			<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0"/>
+		</e:Group>
+		<e:Button id="upBtn" label="附 灵" width="156" height="60" skinName="Btn1Skin" horizontalCenter="0" bottom="20"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" horizontalCenter="66" bottom="56" visible="false"/>
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0" top="47"/>
+		<e:Image width="500" source="tongyongkuang3tou" scale9Grid="66,0,273,47"/>
+		<e:Label text="附    灵" size="24" bold="true" textColor="0xF4C127" y="12" horizontalCenter="0"/>
+		<e:Group y="367" width="480" height="220" horizontalCenter="0">
+			<e:Image left="0" right="0" bottom="0" source="shuxingbg" scale9Grid="50,5,65,34" top="0" scaleX="1" scaleY="1" x="-30" y="-190"/>
+			<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="255" scaleX="1" scaleY="1" top="-32" left="0" x="-30" y="-190"/>
+			<e:Image source="shuxingbg2" width="255" right="0" scaleX="-1" x="470" scaleY="1" top="-32" scale9Grid="187,0,8,32" y="-190"/>
+			<e:List id="lunhuiList" itemRendererSkinName="ItemSkin" horizontalCenter="0" x="5" scaleX="1" scaleY="1" verticalCenter="0">
+				<e:layout>
+				<e:TileLayout requestedRowCount="2" requestedColumnCount="5" horizontalGap="5"/>
+				</e:layout>
+			</e:List>
+		</e:Group>
+		<e:Group y="119" width="430" height="145" horizontalCenter="0">
+			<e:Image source="shuxingbg" scale9Grid="80,19,8,7" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0"/>
+			<e:Image id="arrow" source="jiantouyou" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+			<e:Group id="attrGroup0" horizontalCenter="0" verticalCenter="0" visible="false">
+				<e:Label text="攻击生命物防法防" size="18" verticalAlign="middle" textAlign="center" lineSpacing="5" width="36" textColor="0x00ff00" scaleX="1" scaleY="1"/>
+				<e:Label id="attr0" text="+1000000" size="18" textColor="0x00FF00" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46"/>
+				<e:Label id="attr1" text="+1000000" size="18" textColor="0x00FF00" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46" y="23"/>
+				<e:Label id="attr2" text="+1000000" size="18" textColor="0x00FF00" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46" y="46"/>
+				<e:Label id="attr3" text="+1000000" size="18" textColor="0x00FF00" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46" y="69"/>
+			</e:Group>
+			<e:Group id="attrGroup1" horizontalCenter="-110" verticalCenter="0">
+				<e:Label text="攻击生命物防法防" size="18" textColor="0xD1C28F" verticalAlign="middle" textAlign="center" lineSpacing="5" width="36" scaleX="1" scaleY="1"/>
+				<e:Label text="+1000000" size="18" textColor="0xD1C28F" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46" id="attr4"/>
+				<e:Label text="+1000000" size="18" textColor="0xD1C28F" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46" y="23" id="attr5"/>
+				<e:Label text="+1000000" size="18" textColor="0xD1C28F" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46" y="46" id="attr6"/>
+				<e:Label text="+1000000" size="18" textColor="0xD1C28F" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46" y="69" id="attr7"/>
+			</e:Group>
+			<e:Group id="attrGroup2" horizontalCenter="110" verticalCenter="0">
+				<e:Label text="攻击生命物防法防" size="18" verticalAlign="middle" textAlign="center" lineSpacing="5" width="36" textColor="0x00FF00" scaleX="1" scaleY="1"/>
+				<e:Label id="attr8" text="+1000000" size="18" textColor="0x00FF00" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46"/>
+				<e:Label id="attr9" text="+1000000" size="18" textColor="0x00FF00" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46" y="23"/>
+				<e:Label id="attr10" text="+1000000" size="18" textColor="0x00FF00" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46" y="46"/>
+				<e:Label id="attr11" text="+1000000" size="18" textColor="0x00FF00" verticalAlign="middle" textAlign="center" lineSpacing="5" scaleX="1" scaleY="1" x="46" y="69"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

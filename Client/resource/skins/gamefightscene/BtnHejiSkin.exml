@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BtnHejiSkin" width="70" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Group id="autoHeji" anchorOffsetX="0" anchorOffsetY="0" left="2" top="2">
+		<e:Button id="heji" label="Button" skinName="Btn0Skin" icon="heji_png" anchorOffsetX="0" anchorOffsetY="0" x="0" y="0"/>
+	</e:Group>
+</e:Skin>

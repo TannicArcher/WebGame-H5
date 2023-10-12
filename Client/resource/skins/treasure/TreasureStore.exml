@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TreasureStore" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<e:Rect fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group width="450" height="650" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="tongyongkuang3bg" left="0" right="0" top="2" bottom="0" scale9Grid="6,6,38,38"/>
+		<e:Image source="tongyongkuang3tou" y="0" left="0" right="0"/>
+
+		<e:Image horizontalCenter="0" verticalCenter="-30" source="tongyongditu_png"/>
+		<e:Group id="dinghong" height="100" bottom="4" left="5" right="5">
+
+			<e:Image width="220" x="0" top="0" bottom="0" source="bantoumingkuang3" />
+			<e:Image width="220" scaleX="-1" top="0" bottom="0" right="0" source="bantoumingkuang3" />
+		</e:Group>
+		<e:Button id="get" icon="xb_42" skinName="Btn1Skin" horizontalCenter="0" bottom="20" label="全部取出"/>
+		<e:Scroller id="listScroller" width="436" height="490" horizontalCenter="0" y="50">
+			<e:List id="list" itemRendererSkinName="ItemSkin" x="1" scaleX="0.9" scaleY="0.9">
+				<e:layout>
+					<e:TileLayout paddingLeft="6" requestedColumnCount="5"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Label text="寻宝仓库" y="11" size="24" bold="true" textColor="0xbd600d" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

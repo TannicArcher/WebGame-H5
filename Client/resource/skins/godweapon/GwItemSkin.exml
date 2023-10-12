@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GwItemSkin" width="90" currentState="skillicon1" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  height="90" states="skllicon2,skillicon1" >
+	<w:Config id="1586b349dbe"/>
+	<e:Image id="Bg1" horizontalCenter="0" verticalCenter="0" source="godweapon_skillicon1" visible.skllicon2="false"/>
+	<e:Image id="Bg2" horizontalCenter="0" verticalCenter="0" source="godweapon_skillicon2" visible.skillicon1="false"/>
+	<e:Image id="Img" source="42000_png" width.skllicon2="60" height.skllicon2="60" horizontalCenter="0" verticalCenter="0" horizontalCenter.skillicon1="0" verticalCenter.skillicon1="0" source.skllicon2="" width.skillicon1="40" height.skillicon1="40" source.skillicon1=""/>
+	<e:Image id="lockImg" source="42000_png" width="60" height="60" horizontalCenter="0" verticalCenter="0" source.skllicon2="" width.skillicon1="40" height.skillicon1="40" source.skillicon1=""/>
+	<e:Image id="lvFrame" y="66" horizontalCenter="0.5" source="godweapon_skillframe" horizontalCenter.skillicon1="0.5" y.skillicon1="52"/>
+	<e:Label id="lvCount" text="0/5" y="70" size="14" horizontalCenter="0" textColor="0xf8b141" bold="true" horizontalCenter.skillicon1="0" y.skillicon1="56"/>
+	<e:Image id="glowImg" source="godweapon_attention" y.skllicon2="9" x.skllicon2="9" horizontalCenter.skillicon1="0" verticalCenter.skillicon1="0" y="9" x="9" visible.skllicon2="false" visible="false"/>
+</e:Skin>

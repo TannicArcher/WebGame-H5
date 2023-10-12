@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="hefuGift" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image id="bg" source="kaifulibaobg_png" width="554" horizontalCenter="0" height="454" y="176" x="2"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="49" width="400" height="50" x="79"/>
+	<e:Image source="biaoti_kaifulibao" y="-1" horizontalCenter="0" x="211"/>
+	<e:Image source="bantoutiaobg" y="39" scale9Grid="127,20,8,5" left="0" right="0" height="180" x="-1"/>
+	<e:Image id="showbg" y="181" horizontalCenter="-158" source="kaifucailiaobg_png" x="-33"/>
+	<e:Group y="250" right="10" width="408" x="141">
+		<e:Group y="21" right="0" width="365" height="48">
+		<e:Image left="0" right="0" source="mojibg_new" top="0" bottom="0"/>
+		<e:Image source="bantoutiaobg" scale9Grid="79,26,2,2" y="0" left="0" right="0" visible="false"/>
+		<e:Label id="desc0" text="累积充值" horizontalCenter="0" verticalCenter="0" size="20" textColor="0xd1c28f" visible="false"/>
+		<e:Label id="desc1" text="123" horizontalCenter="-80" verticalCenter="0.5" size="20" textColor="0xff9900" visible="false"/>
+		<e:Group id="desc" verticalCenter="0" horizontalCenter="0">
+			<e:Label id="desc2" text="花费" horizontalCenter="-80" verticalCenter="0.5" size="20" textColor="0xd1c28f"/>
+			<e:Label id="desc3" text="12340" horizontalCenter="96" verticalCenter="0.5" size="20" textColor="0xFF9900"/>
+			<e:Label id="desc4" text="元宝即可购买" horizontalCenter="-80" verticalCenter="0.5" size="20" textColor="0xD1C28F"/>
+			<e:Label id="desc5" text="材料礼包" horizontalCenter="96" verticalCenter="0.5" size="20" textColor="0xFF9900"/>
+			<e:layout>
+			<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+		</e:Group>
+		<e:Group id="reward0" y="73" horizontalCenter="18">
+		<ns1:BaseComponent id="item0" x="100" y="2" skinName="ItemSkin" className="ItemBase"/>
+		<ns1:BaseComponent id="item1" x="110" y="12" skinName="ItemSkin" className="ItemBase"/>
+		<ns1:BaseComponent id="item2" x="120" y="22" skinName="ItemSkin" className="ItemBase"/>
+		<ns1:BaseComponent id="item3" x="130" y="32" skinName="ItemSkin" className="ItemBase"/>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="0"/>
+		</e:layout>
+		</e:Group>
+		<e:Group id="reward1" y="173" horizontalCenter="18">
+		<ns1:BaseComponent id="item4" x="100" y="2" skinName="ItemSkin" className="ItemBase"/>
+		<ns1:BaseComponent id="item5" x="110" y="12" skinName="ItemSkin" className="ItemBase"/>
+		<ns1:BaseComponent id="item6" x="120" y="22" skinName="ItemSkin" className="ItemBase"/>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="0"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Label id="actTime" text="0天23小时55分" size="18" textColor="0x00FF00" horizontalCenter="0" bottom="10" x="218" y="591"/>
+	<e:Group horizontalCenter="0" y="51" x="16">
+		<e:Group id="lhlb" x="0" y="0">
+		<e:Image source="cailiaolibao" horizontalCenter="0" y="2"/>
+		<e:Image id="arrow0" source="arrow_down" y="156" horizontalCenter="0"/>
+		<e:Image id="select0" width="127" height="158" horizontalCenter="0" source="xuanzhongkuang2" scale9Grid="5,5,6,6" y="0"/>
+		</e:Group>
+		<e:Group id="yylb" x="10" y="10">
+		<e:Image source="tujianlibao" horizontalCenter="0" y="2"/>
+		<e:Image id="arrow1" source="arrow_down" y="156" horizontalCenter="0"/>
+		<e:Image id="select1" width="127" height="158" horizontalCenter="0" source="xuanzhongkuang2" scale9Grid="5,5,6,6" y="0"/>
+		</e:Group>
+		<e:Group id="szlb" x="20" y="20">
+		<e:Image source="chibanglibao" horizontalCenter="0" y="2"/>
+		<e:Image id="arrow2" source="arrow_down" y="156" horizontalCenter="0"/>
+		<e:Image id="select2" width="127" height="158" horizontalCenter="0" source="xuanzhongkuang2" scale9Grid="5,5,6,6" y="0"/>
+		</e:Group>
+		<e:Group id="sblb" x="30" y="30">
+		<e:Image source="shenbinglibao" horizontalCenter="0" y="2"/>
+		<e:Image id="arrow3" source="arrow_down" y="156" horizontalCenter="0"/>
+		<e:Image id="select3" width="127" height="158" horizontalCenter="0" source="xuanzhongkuang2" scale9Grid="5,5,6,6" y="0"/>
+		</e:Group>
+		<e:layout>
+		<e:HorizontalLayout horizontalAlign="center" verticalAlign="top" gap="6"/>
+		</e:layout>
+	</e:Group>
+	<e:Button id="buy" label="购  买" skinName="Btn1Skin" horizontalCenter="0" bottom="30"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" horizontalCenter="66" bottom="66" visible="false"/>
+	<e:Label id="already" text="已购买" textColor="0x00FF00" size="20" horizontalCenter="0" bottom="45" visible="false" x="249" y="554"/>
+		
+</e:Skin>

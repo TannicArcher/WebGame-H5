@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="chuangtianguanItem" width="277" height="133" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" states="up,down" >
+	<w:Config id="15a98b829a2"/>
+	<e:Image source="chuangtianguan_json.ta" x="0" y="0" pixelHitTest="true"/>
+	<e:Label id="passAllTip0" text="99层" size="24" textColor="0xFFB82A" textAlign="center" y="86" x.up="103" horizontalCenter="0" textColor.up="0x7e6437" textColor.down="0xf8b141" bold.down="true" bold.up="true" size.down="26"/>
+	<e:Image source="chuangtianguan_json.xuanzhong" includeIn="down" x="20" y="25"/>
+	<e:Image source="chuangtianguan_json.xuanzhong" includeIn="down" x="251" y="25" scaleX="-1"/>
+
+</e:Skin>

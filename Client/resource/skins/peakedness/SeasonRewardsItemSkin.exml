@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SeasonRewardsItemSkin" width="540" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="scitembg" scale9Grid="57,26,2,1" left="0" right="0" top="0" bottom="0"/>
+		<e:Label id="typeLabel" text="冠军" size="20" verticalCenter="0" horizontalCenter="-220" textColor="0xffff00"/>
+		<e:List id="awardslist" itemRendererSkinName="ItemSkin" verticalCenter="0" scaleX="0.9" scaleY="0.9" left="81">
+		<e:layout>
+			<e:HorizontalLayout gap="-13"/>
+		</e:layout>
+		</e:List>
+		<e:Label text="邮件发放" size="18" verticalCenter="0" horizontalCenter="215" textColor="0x00ff00"/>
+	</e:Group>
+</e:Skin>

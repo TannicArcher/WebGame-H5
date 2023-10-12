@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CreateRole1Skin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  >
+
+	<e:Image bottom="0" source="createbg1_png" top="0" scale9Grid="0,921,580,9" left="0" right="0"/>
+	<e:Label text="角色名字不超过6个字，不能包含空格和敏感字" size="18" bottom="187" textColor="0x444134" horizontalCenter="0"/>
+	<e:Group width="276" top="5" horizontalCenter="0">
+		<e:Image source="createrole_title_bg" x="0" y="0"/>
+		<e:Image source="createrole_title_bg" y="0" scaleX="-1" x="276"/>
+		<e:Image source="createrole_title" scaleX="1" scaleY="1" y="6" x="88"/>
+	</e:Group>
+
+
+
+
+
+	<e:Scroller id="scroller" width="300" height="99" horizontalCenter="0" top="60">
+		<e:List id="list" x="1" y="3" itemRendererSkinName="CreateRolItemSkin">
+		<e:layout>
+			<e:VerticalLayout gap="5" paddingTop="2"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Label id="timeLab" text="剩余15秒" size="22" horizontalCenter="180.5" textColor="0xff750f" bottom="111"/>
+	<e:Label id="desc" text="只需体验两分钟，你就会跟我一样，爱上这款游戏！" size="22" textColor="0xFF750F" bottom="50" horizontalCenter="0.5"/>
+
+	<e:Image id="role" horizontalCenter="-30" source="cr_1_0_png" top="127"/>
+
+
+	<e:Group left="20" width="90" bottom="260" height="290">
+		<e:Button id="job1" label="Button" icon="createrole_job1" skinName="Btn23Skin" horizontalCenter="0" verticalCenter="-95"/>
+		<e:Button id="job2" label="Button" icon="createrole_job2" skinName="Btn23Skin" horizontalCenter="0" verticalCenter="0"/>
+		<e:Button id="job3" label="Button" icon="createrole_job3" skinName="Btn23Skin" horizontalCenter="0" verticalCenter="95"/>
+	</e:Group>
+
+	<e:Group right="24" bottom="327" width="64" height="154">
+		<e:Button id="boy" label="Button" icon="createrole_boy" skinName="Btn23Skin" horizontalCenter="0" verticalCenter="-45"/>
+		<e:Button id="girl" label="Button" icon="createrole_girl" skinName="Btn23Skin" horizontalCenter="0" verticalCenter="45"/>
+	</e:Group>
+	<e:Group horizontalCenter="0" bottom="211" width="274">
+		<e:Image source="createrole_input" scale9Grid="29,5,10,32" verticalCenter="0" left="0"/>
+		<e:Image source="createrole_input" scale9Grid="29,5,10,32" verticalCenter="0" y="10" scaleX="-1" right="0"/>
+		<e:TextInput id="nameInput" height="40" verticalCenter="0" textColor="0x9f946d" width="244" x="15" text="输入玩家名称"/>
+	</e:Group>
+	<e:Button id="diceBtn" label="按钮" skinName="Btn0Skin" icon="createrole_any" horizontalCenter="166.5" bottom="208"/>
+	<e:Group bottom="77" horizontalCenter="0" width="300" height="100">
+		<e:Button id="createBtn" label="按钮" y="17" skinName="Btn0Skin" icon="createrole_btn" height="60" horizontalCenter="0" scaleX="1.1" scaleY="1.1"/>
+		<e:Image id="imgA" y="16" horizontalCenter="-115" source="" visible="false"/>
+	</e:Group>
+	<e:Group id="enterGroup" left="0" top="0" bottom="0" right="0" visible="false">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+		<e:Rect height="30" y="450" left="0" right="0" strokeColor="0x030306" fillAlpha="0.6"/>
+		<e:Label id="loadText" text="正在进入游戏（50%）" size="20" horizontalCenter="0" verticalCenter="0" textColor="0xd1c28f"/>
+	</e:Group>
+
+</e:Skin>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GrewupAttributesPanel" width="400" height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="360" source="shuxingbg" scale9Grid="50,5,65,34" top="10" bottom="0" horizontalCenter="0"/>
+
+	<e:Label text="当前" y="22" size="20" textColor="0xd1c28f" bold="true" horizontalCenter="-80"/>
+	<e:Label text="下级" y="22" size="20" textColor="0xD1C28F" bold="true" horizontalCenter="80"/>
+	<e:Label id="curScore" y="44" text="评分：9999999" size="20" textColor="0xFCC832" horizontalCenter="-90"/>
+	<e:Label id="nextScore" y="44" text="评分：9999999" size="20" textColor="0xFCC832" horizontalCenter="90"/>
+	<e:Label id="nextBaseAttr" y="68" text="999999" width="150" size="18" x="235" textColor="0x2ECA22" height="80"/>
+	<e:Label id="nameAttr" y="70" textColor="0xDFD1B5" text="魔防：" size="18" x="29" width="54"/>
+	<e:Label id="curBaseAttr" y="70" textColor="0xDFD1B5" text="100000" size="18" x="74" width="150" height="80"/>
+	<e:Image id="arrow1" source="tongyongup" y="70" horizontalCenter="28"/>
+	<e:Image id="arrow2" source="tongyongup" y="90" horizontalCenter="28"/>
+	<e:Image id="arrow3" source="tongyongup" y="110" horizontalCenter="28"/>
+	<e:Image id="arrow4" source="tongyongup" y="130" horizontalCenter="28"/>
+</e:Skin>

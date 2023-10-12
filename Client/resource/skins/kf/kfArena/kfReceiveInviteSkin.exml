@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="kfReceiveInviteSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" width="400" height="300">
+		<e:Image source="tongyongkuang3bg" left="0" right="0" top="2" bottom="0" scale9Grid="12,6,21,25"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0" scale9Grid="72,18,264,29"/>
+		<e:Label id="title" size="24" text="提  示"     horizontalCenter="0" y="11" bold="true" textColor="0xbd600d"/>
+		<e:Label id="nameLabel" size="20" text="段位： 黄金" y="71" bold="true" textColor="0x35E62D" x="59"/>
+	<e:Label id="scoreLabel" size="20" text="积分：1000" y="122" bold="true" textColor="0x35E62D" x="59"/>
+		<e:Label size="20" text="邀请您前往参加天梯3v3跨服匹配，\n是否前往？" horizontalCenter="13.5" y="171" bold="true" textColor="0x35E62D"/>
+	<e:Label id="powerLabel" size="20" text="战力： 10000" y="71" bold="true" textColor="0x35E62D" x="221"/>
+	<e:Label id="winRateLabel" size="20" text="胜率： 0" y="122" bold="true" textColor="0x35E62D" anchorOffsetY="0" height="21" x="221"/>
+		<e:Button id="sureBtn" label="前往" bottom="20" horizontalCenter="92" width="120" height="50" skinName="Btn3Skin"/>
+		<e:Button id="notBtn" label="取消" bottom="20" horizontalCenter="-67" width="120" height="50" skinName="Btn3Skin"/>
+	</e:Group>	
+</e:Skin>

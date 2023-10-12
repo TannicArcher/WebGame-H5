@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChuangtianguanBloodSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+	xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="15aa24df099"/>
+
+	<e:Group id="tongtianta" width="180" height="30" y="10" horizontalCenter="0">
+		<e:Rect left="0" right="0" top="0" bottom="0" ellipseWidth="10" ellipseHeight="10" fillAlpha="0.2" visible="false"/>
+		<e:Image left="0" right="0" top="0" bottom="0" alpha="0.5" source="bantoutiaobg2" scale9Grid="11,2,70,17"/>
+		<e:Label text="下层" y="28" size="14" textColor="0xb2b2b2" x="10" visible="false"/>
+		<e:Group y="8" horizontalCenter="0">
+			<e:Label text="通关倒计时：" y="0" size="16"  x="0" textColor="0x9f946d"/>
+			<e:Label id="time" text="3:00" x="80" y="0" size="16" textColor="0xf8b141"/>
+			<e:layout>
+				<e:HorizontalLayout gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="levelLimit" text="20转200级" y="28" size="14" textColor="0xffc15b" x="41" visible="false"/>
+		<e:List id="list" y="61" itemRendererSkinName="ItemSkin" horizontalCenter="0" visible="false">
+			<e:layout>
+			<e:HorizontalLayout gap="-12" horizontalAlign="center"/>
+			</e:layout>
+		</e:List>
+		<e:Label text="通关奖励" y="48" size="16" horizontalCenter="0" textColor="0xb79e75" visible="false"/>
+	</e:Group>
+	</e:Skin>

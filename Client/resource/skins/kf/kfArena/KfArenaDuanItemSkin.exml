@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KfArenaDuanItemSkin" width="560" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:List id="reward" x="367" y="16" itemRendererSkinName="ItemSkin">
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object null=""/>
+				<e:Object null=""/>
+			</e:Array>
+		</e:ArrayCollection>
+	</e:List>
+	<e:Image id="dwImg" scaleX="0.4" scaleY="0.4" source="ladder_rank_3" horizontalCenter="-207" verticalCenter="0"/>
+	<e:Label id="dwName" text="黄金段位" horizontalCenter="-57.5" verticalCenter="0" textColor="0xf2a00c"/>
+</e:Skin>

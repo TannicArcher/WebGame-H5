@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="tujianshengxing" width="580" currentState="nomax" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  height="930" states="nomax,max,noActive" >
+	<w:Config id="1586b349dbe"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.5" fillAlpha.noActive="0.7"/>
+	<e:Group id="anigroup" name="装备" width="450" height="600" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="tongyongkuang3bg" left="0" right="0" top="0" bottom="0" scale9Grid="6,6,38,38"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0" scale9Grid="67,5,272,37"/>
+		<e:Image height="312" y.noActive="45" horizontalCenter.noActive="0" width.noActive="468" y="45" source="tujianbg_png" left="6" right="6"/>
+		<e:List id="listOpen" horizontalCenter="0" itemRendererSkinName="tujianskinstate" y="66">
+		<e:layout>
+			<e:HorizontalLayout gap="6"/>
+		</e:layout>
+		</e:List>
+		<e:Group id="barGroup" width="430" height="40" horizontalCenter="0" y="479" includeIn="nomax,max" visible.max="false" width.nomax="460">
+		<e:ProgressBar id="expBar" maximum="100" value="40" skinName="WingExpBarSkin" slideDuration="0" width="360" height="16" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			<e:Image id="barBg" scale9Grid="49,3,6,23" source="jingyantiao1" verticalCenter="0" left="0" right="0" visible="false"/>
+		<e:Label id="expLabel" stroke="1" strokeColor="0x000000" text="100/100" size="12" width="460" verticalAlign="middle" textAlign="center" height="18" verticalCenter="0" horizontalCenter="0" visible="false"/>
+		</e:Group>
+		<e:Label text="图鉴详情" size="24" horizontalCenter="0" y="11" textColor="0x7e6437"/>
+		<e:Label text="已满级" y="533" visible.nomax="false" textColor="0xd1c28f" horizontalCenter="0" visible.noActive="false" y.max="520"/>
+		<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="fanhui" scaleX="1.2" scaleY="1.2" bottom="18" x="613" visible="false"/>
+		<e:List id="list" height="210" width="495" itemRendererSkinName="ItemSkin" visible.max="false" scaleX="0.9" scaleY="0.9" horizontalCenter="-5" y="520" visible="false">
+		<e:layout>
+			<e:TileLayout requestedColumnCount="5" horizontalGap="13" verticalGap="10"/>
+		</e:layout>
+		</e:List>
+		<e:Label text="更换" x="262" y="678" textColor="0xa5ce33" size="20" visible="false"/>
+		<e:Image width="440" horizontalCenter="0" scale9Grid="108,1,11,1" y="472" source="tongyongline"/>
+		<e:Group y="360" horizontalCenter="0" width="450" height="110">
+			<e:Image source="shuxingbg" left="0" right="0" top="0" bottom="0"/>
+			<e:Group horizontalCenter="0" verticalCenter="0">
+				<e:Group x.max="70.22" y.nomax="336" y.max="336" horizontalCenter="-104" verticalCenter="0" x="0" y="-10">
+					<e:Label id="labelCur" text="攻击  +1000" size="20" textColor="0xDFD1B5" x.max="212" width="170"/>
+				</e:Group>
+				<e:Image source="jiantouyou" horizontalCenter="0.5" x="150" verticalCenter="0" y="-31" visible.max="false"/>
+				<e:Group y.nomax="336" horizontalCenter="89" verticalCenter="0" x="196" y="-10" visible.max="false">
+					<e:Label id="labelNext" text="攻击  +1000" size="20" textColor="0x2ECA22" width="170"/>
+				</e:Group>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="10"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Label id="info" text="获取图鉴经验" size="20" textColor="0x35e62d" right="20" bottom="30" visible.max="false"/>
+		<e:Image id="xiangqing" x="406" y="47" source="tongyongxiangxi" visible="false"/>
+		<e:Label text="（0/5）" x="410" y="107" size="16" visible="false"/>
+		<e:Group id="need" y="487" includeIn="noActive" horizontalCenter="0">
+			<e:Label text="需要：" x="0" y="0" size="20"/>
+			<e:Label id="tujian" text="触龙神图鉴*1" y="0" size="20" textColor="0xf3311e" left="0"/>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="specialAttr" text="特殊属性：所有角色伤害减免 +5%" y="325" size="20" textColor="0xd242fb" bold="true" horizontalCenter="0"/>
+		<e:Button id="btnUp" label="升  星" icon="bag_99" skinName="Btn1Skin" width="156" height="60" horizontalCenter="0" bottom="20" visible.max="false" label.noActive="激  活"/>
+	</e:Group>
+</e:Skin>

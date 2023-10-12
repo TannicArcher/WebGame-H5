@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="warnFrameSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,sure,check" >
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" width="400" height="300">
+		<e:Image source="tongyongkuang3bg" left="0" right="0" top="2" bottom="0" scale9Grid="12,6,21,25"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0" scale9Grid="72,18,264,29"/>
+		<e:Label id="title" size="24" text="提  示"     horizontalCenter="0" y="11" bold="true" textColor="0xbd600d"/>
+		<e:Button id="sureBtn" label="确定" horizontalCenter.sure="0" bottom="20" horizontalCenter="-80" width="120" height="50" skinName="Btn3Skin" horizontalCenter.normal="80" horizontalCenter.check="80"/>
+		<e:Button id="notBtn" label="取消" visible.sure="false" bottom="20" horizontalCenter="80" width="120" height="50" skinName="Btn3Skin" horizontalCenter.normal="-80" horizontalCenter.check="-80"/>
+		<e:Label id="warnLabel" text="当前不是最高品质，是否确认挖矿？" size="18" textAlign="center" verticalAlign="middle" verticalCenter="-10" textColor="0xd1c28f" horizontalCenter="0" width="332" height="160"/>
+		<e:Group id="leftGroup" horizontalCenter="-80" verticalCenter="60" visible="false">
+			<e:Image id="icon1" width="20" height="20" x="0" y="0" source="zjmyuanbao"/>
+			<e:Label id="label1" text="单元宝" x="30" y="0" size="20" textColor="0xd1c28f"/>
+		</e:Group>
+		<e:Group id="rightGroup" horizontalCenter="80" verticalCenter="60" visible="false">
+			<e:Image id="icon2" width="20" height="20" x="0" y="0" source="zjmyuanbao"  />
+			<e:Label id="label2" text="单元宝" size="20"   x="30" textColor="0xd1c28f"/>
+		</e:Group>
+		<e:CheckBox id="cbx" label="是否勾选" skinName="CheckBox0" height="83" width="166" scaleX="1" scaleY="1" horizontalCenter="21" verticalCenter="45.5" visible.normal="false" visible.sure="false" label.check="本次登陆不再提示" horizontalCenter.check="-12" verticalCenter.check="45.5"/>
+	</e:Group>	
+</e:Skin>

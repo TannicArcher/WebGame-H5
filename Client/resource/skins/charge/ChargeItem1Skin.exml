@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChargeItem1Skin" width="427" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Scroller x="53" y="506" width="354" height="100">
+	</e:Scroller>
+	<e:Image source="quality0" x="27" y="12" scaleX="0.8" scaleY="0.8"/>
+	<e:Image id="firstPay" x="6" source="cz_23"/>
+	<e:Image id="yuanbaoImg" source="charge_json.cz_11" x="34" y="19"/>
+	<e:Image id="num" source="charge_json.cz_01" x="91" y="18"/>
+	<e:Label id="desc" text="首充6元  返利120元宝" x="89" y="46" fontFamily="黑体" size="16" textColor="0xDFD1B5" width="187"/>
+	<e:Button id="payBtn" label="60元" x="311" skinName="Btn1Skin" verticalCenter="0"/>
+	<e:Image id="priceImg" x="90" y="18" source="yb_29980"/>
+</e:Skin>

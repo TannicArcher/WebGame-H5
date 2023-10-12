@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="NYCostItemSkin" width="540" height="130" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image id="bg" source="scitembg" scale9Grid="56,26,4,3" left="0" right="0" top="0" bottom="0" x="0" y="0"  />
+		<e:List id="reward" verticalCenter="2" itemRendererSkinName="ItemSkin" x="20" scaleX="0.9" scaleY="0.9">
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:List>
+		<e:Group x="369" verticalCenter="0">
+			<e:Label id="target" text="累计消费3000元宝" size="18" scaleX="1" scaleY="1" textColor="0xff9900" horizontalCenter="0" y="0"/>
+			<e:Button id="get" label="领取" skinName="Btn15Skin" width="122" scaleX="1" scaleY="1" y="20" horizontalCenter="0"/>
+			<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" y="20" horizontalCenter="49.5"/>
+			<e:Label id="recharge" text="(0/3000)" y="68" size="20" textColor="0x00ff00" horizontalCenter="0"/>
+			<e:Label id="already" text="已领取" size="20" textColor="0x00FF00" horizontalCenter="0" verticalCenter="0" x="-129" y="34" scaleX="1" scaleY="1" visible="false"/>
+		</e:Group>
+	</e:Group>		
+</e:Skin>

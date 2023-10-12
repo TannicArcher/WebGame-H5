@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ZhanlingComposeSkin" width="580" height="730" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Scroller horizontalCenter="-204" top="20" bottom="20" scrollPolicyH="off" x="2" y="45" scaleX="1" scaleY="1" anchorOffsetX="0">
+		<e:List id="list" x="-3" y="30" itemRendererSkinName="ReinComposeItemSkin">
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Scroller id="contentScroller" horizontalCenter="76.5" top="20" bottom="20" scrollPolicyH="off" x="2" y="45" scaleX="1" scaleY="1" anchorOffsetX="0" width="397">
+		<e:List id="list0" x="-3" y="30" itemRendererSkinName="ReinEquipItemSkin" anchorOffsetY="0">
+		<e:layout>
+			<e:VerticalLayout gap="0"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

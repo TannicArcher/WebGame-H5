@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopPointSkin" width="620" height="900" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Scroller width="620" height="740" x="0" verticalCenter="-40">
+
+			<e:List id="list" x="73" y="57" itemRendererSkinName="ShopPointItem" useVirtualLayout="true">
+			</e:List>
+
+	</e:Scroller>
+	<e:Label id="label1" text="我的积分：200000（在神秘商店购买商品或刷新获得）" x="19" size="24"  textColor="0xA86F00" bottom="50"/> 
+</e:Skin>

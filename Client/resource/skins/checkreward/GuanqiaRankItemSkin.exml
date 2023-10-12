@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuanqiaRankItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="430" height="50">
+	<e:Rect left="0" right="0" top="0" bottom="0"/>
+	<e:Label id="rank" textColor="0xDFD1B5" text="1" textAlign="center" size="22" horizontalCenter="-187" verticalCenter="0"/>
+	<e:Label id="nameLabel" textColor="0xDFD1B5" text="狂拽酷炫叼去" size="20" textAlign="right" x="120" verticalCenter="0"/>
+	<e:Label id="zhuan_level" size="20" text="1000.1万" textAlign="center" textColor="0x1DDA1D" width="107" x="244" verticalCenter="0"/>
+	<e:Label id="ce" size="20" text="1234关" textAlign="center" textColor="0xFFB92D" verticalCenter="0" right="10"/>
+	<e:Image id="vipImg" x="39" verticalCenter="0" source=""/>
+	<e:Group id="vip" x="95" y="18" scaleX="0.8" scaleY="0.8"/>
+</e:Skin>

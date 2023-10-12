@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LYRSkillItemSkin" currentState="learn" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:PriceIcon="PriceIcon.*" xmlns:ns1="*"  width="192" height="85" states="learn,unlearn,lock"  height.learn="85" width.learn="192" width.unlearn="192" height.unlearn="85" width.lock="192" height.lock="85">
+	<w:Config id="15a177a4c02"/>
+	<e:Image left="0" right="0" top="0" bottom="2" source="chunbantoubg" scale9Grid="1,1,2,2"/>
+
+	<e:Image x="77" y="8" anchorOffsetX="0" width="110" y.learn="9" x.learn="71" x.unlearn="71" y.unlearn="9" x.lock="71" y.lock="9" source="bantoutiaoboss" scale9Grid="0,3,58,18" height="30"/>
+	<e:Image x="7" y.learn="5" x.learn="8" x.unlearn="8" y.unlearn="5" x.lock="8" y.lock="5" verticalCenter="-0.5" source="quality0" width="76" height="76" scale9Grid="8,8,48,48" verticalCenter.learn="0.5" verticalCenter.unlearn="0.5" verticalCenter.lock="0.5"/>
+	<e:Label id="skillName" text="技能名称" x="88" y="13" size="20" bold="true" textColor="0xe5b613" y.learn="14" x.learn="90" x.unlearn="90" y.unlearn="14" text.unlearn="未学习" x.lock="90" y.lock="14" text.lock="多少解锁"/>
+	<e:Image id="skillImg" width="62" height="62" x="14" source="ability_1N" source.unlearn="tongyongadd" source.lock="suowen" width.lock="50" verticalCenter="-0.5" verticalCenter.learn="0.5" x.learn="15" width.learn="62" height.learn="62" verticalCenter.unlearn="0.5" x.unlearn="16" verticalCenter.lock="1.5" x.lock="21"/>
+	<ns1:BaseComponent id="price" skinName="PriceIconSkin" className="PriceIcon" includeIn="lock" x="83" y="39"/>
+	<e:Label id="skillLv" text="Lv. 1" x="99" y="49" size="20" includeIn="learn" textColor="0xd1c28f" bold="true"/>
+	<e:Image id="select" source="xuanzhongkuang2" left="0" right="0" top="0" bottom="0" visible.unlearn="false" visible.lock="false" visible.learn="false" scale9Grid="6,6,4,3" touchEnabled="false"/>
+	<e:Image id="redpoint" source="zjmhongdian" bottom="60" horizontalCenter="84" visible.lock="false" visible="false"/>
+</e:Skin>

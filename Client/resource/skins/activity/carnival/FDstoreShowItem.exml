@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FDstoreShowItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"    height="99">
+	<e:Image source="touxiangkuang" horizontalCenter="0" top="0"/>
+	<e:Image id="itemImg" horizontalCenter="0" top="9" source="200191_png" width="72" height="72" touchEnabled="true"/>
+	<e:Image source="bantoutiaobg2" horizontalCenter="0" bottom="0" height="23"/>
+	<e:Label id="limitCount" text="限购 2/3" fontFamily="SimHei" size="18" horizontalCenter="0" textColor="0xffd93f" bottom="2"/>		
+</e:Skin>

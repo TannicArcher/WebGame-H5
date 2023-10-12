@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HonorMarketSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="560" height="683">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<e:Scroller width="560" horizontalCenter="0" anchorOffsetY="0" bottom="61" top="0">
+		<e:List id="listView" x="54" y="37" itemRendererSkinName="HonorMarketItemSkin">
+
+		<e:layout>
+			<e:VerticalLayout gap="4"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group bottom="0" left="0" right="0" height="61">
+		<e:Image id="background" source="tongyongtip1" scale9Grid="7,6,11,12" right="0" bottom="0" touchEnabled="false" scaleX="1" scaleY="1" left="0" top="0" x="0" y="-546"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,18,2,4" touchEnabled="false" bottom="0" top="0" left="0" right="0" scaleX="1" scaleY="1" x="0" y="-546"/>
+		<e:Group verticalCenter="-9.5" left="100">
+			<e:Label id="myHonor" text="我的功勋：" x="-34" size="20" textAlign="left" y="4" textColor="0xff9900"/>
+		<e:Label id="myAttrValue0" text="30" size="20" x="163" scaleX="1" scaleY="1" verticalCenter="0.5" y="-12" textColor="0xff9900"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0" verticalAlign="middle"/>
+		</e:layout>
+		</e:Group>
+		<e:Label id="get" text="获取功勋" size="20" textAlign="left" textColor="0x00ff00" left="380" verticalCenter="-9.5"/>
+	</e:Group> 
+</e:Skin>

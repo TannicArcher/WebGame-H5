@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="XNWingUpSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*"
+        xmlns:w="http://ns.egret.com/wing" width="560" height="620" >
+	<w:Config id="15a98a3982e" />
+	<e:Rect id="bgClose" left="3" right="3" top="0" bottom="0" fillAlpha="0.7" width="460" 
+	         height="610"  visible="false"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+	<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_wingup"/>
+	<e:Image source="xn_wingupBG_png" anchorOffsetY="0" width="554" height="477" horizontalCenter="0" verticalCenter="78.5"/>
+	<e:Group id="infoBg" y="36" height="116" left="3" right="3">
+		<e:Image top="0" bottom="0" source="ny_curtain_png" right="0" left="0"/>
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actInfo" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+	</e:Group>
+	<e:Image x="3" source="jwing09_png" scaleX="1" scaleY="1" verticalCenter="74"/>
+	<e:Image x="205" source="wingup_toptext" verticalCenter="-87.5"/>
+	<e:Image x="325" source="xn_wingup2" rotation="345.37" verticalCenter="17"/>
+	<e:Image x="367" rotation="11.48" source="xn_wingup5" verticalCenter="117"/>
+	<e:Image source="wingup_bottomtext" right="12" verticalCenter="194.5"/>
+	<e:Button id="pay0" label="前去升级" skinName="Btn16Skin" horizontalCenter="0" bottom="20" scaleX="1.1" scaleY="1.1"/>
+</e:Skin>

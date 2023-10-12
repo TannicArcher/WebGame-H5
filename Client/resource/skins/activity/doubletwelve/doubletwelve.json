@@ -1,0 +1,9 @@
+{"file":"doubletwelve.png","frames":{
+"dt_yuanbao":{"x":425,"y":109,"w":62,"h":30,"offX":0,"offY":0,"sourceW":62,"sourceH":30},
+"dt_qian":{"x":461,"y":141,"w":33,"h":30,"offX":1,"offY":0,"sourceW":34,"sourceH":31},
+"dt_wan":{"x":425,"y":141,"w":34,"h":30,"offX":0,"offY":1,"sourceW":34,"sourceH":31},
+"dt_kuang":{"x":381,"y":0,"w":108,"h":107,"offX":0,"offY":0,"sourceW":108,"sourceH":107},
+"dt_title":{"x":0,"y":0,"w":379,"h":104,"offX":0,"offY":0,"sourceW":379,"sourceH":104},
+"dt_slogan":{"x":0,"y":106,"w":315,"h":95,"offX":0,"offY":0,"sourceW":315,"sourceH":95},
+"dt_select":{"x":0,"y":203,"w":197,"h":61,"offX":0,"offY":0,"sourceW":197,"sourceH":61},
+"dt_activitytitle":{"x":317,"y":109,"w":106,"h":33,"offX":0,"offY":0,"sourceW":106,"sourceH":33}}}

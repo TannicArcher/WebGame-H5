@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CDSnowManSkin" width="560" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="622">
+	<w:Config id="1586d1506c8" />
+	<e:Image horizontalCenter="0" source="cd_snowmanbg_png" width="554" top="151" height="471"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+	<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_duixueren"/>
+	<e:Group id="infoBg" y="35" left="3" right="3" height="116">
+		<e:Image left="0" right="0" top="0" bottom="0" source="cd_curtain_png"/>
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime1" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actInfo1" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+	</e:Group>
+
+
+	<e:Button id="turnBossBtn" label="收集雪球" skinName="Btn1Skin" horizontalCenter="-92" bottom="12"/>
+	<e:Group x="75" y="161">
+		<e:Image x="0" y="5" source="cd_snowballtext1"/>
+		<e:BitmapLabel id="numLbl" x="110" y="0" font="num_8_fnt" text="100"/>
+		<e:Image x="10" y="15" source="cd_snowballtext2"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="2"/>
+		</e:layout>
+	</e:Group>
+
+	<e:Image width="141" x="417" anchorOffsetX="0" anchorOffsetY="0" source="cd_rewardbg" scale9Grid="4,4,7,6" bottom="2" top="152"/>
+	<e:Image x="419" source="teshuwenzibg2" top="157"/>
+	<e:Image x="419" source="teshuwenzibg2" scaleY="-1" bottom="8"/>
+	<e:Image id="arrowUp" x="511" source="jiantouxuan" rotation="90" top="158"/>
+	<e:Image id="arrowDown" x="511" source="jiantouxuan" rotation="90" scaleX="-1" bottom="9"/>
+	<e:Scroller width="124" x="426" anchorOffsetX="0" anchorOffsetY="0" top="199" bottom="50">
+		<e:List id="list" itemRendererSkinName="snowManItemSkin" anchorOffsetX="0" anchorOffsetY="0">
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" gap="-6" paddingTop="-6"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

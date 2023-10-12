@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChoseWorkerItemSkin" width="550" height="140" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15a59527d66"/>
+	<e:Image left="0" right="0" top="0" bottom="0" source="tongyonglabbg" scale9Grid="63,31,3,3"/>
+	<e:Image id="noRobBg"   scale9Grid="18,19,1,1" x="335" source="teshuwenzibg" y="2" width="145" height="30"/>
+	<e:Label id="label" text="不可被掠夺" textColor="0xff9900" size="18" x="360" y="8"/>
+
+	<e:Image id="arrow"  right="14" source="arrow" verticalCenter="0"/>
+	<e:Image id="selectedImg" source="xuanzhongkuang2" left="0" right="0" top="0" bottom="0" scale9Grid="5,5,6,6" visible="false"/>
+	<e:Group verticalCenter="0" x="22" width="120" height="140">
+		<e:Group   horizontalCenter="0" bottom="2">
+		<e:Image source="kuanggongiconbg"     horizontalCenter="0" bottom="0"/>
+		<e:Image id="worker"   horizontalCenter="-9" source="kuanggong1" bottom="6"/>
+		</e:Group>
+		<e:Image source="npcnamebg" y="2" horizontalCenter="2"/>
+		<e:Label id="nameTxt" text="裸体矿工" y="5" size="20"   textColor="0x00ff00" horizontalCenter="2"/>
+	</e:Group>
+
+	<e:Group verticalCenter="10" x="143">
+		<e:List id="reward" itemRendererSkinName="ItemSkin"  >
+
+			<e:layout>
+			<e:HorizontalLayout gap="18"/>
+			</e:layout>
+		</e:List>
+
+
+	</e:Group>
+</e:Skin>

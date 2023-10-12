@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TaskSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="397">
+	<w:Config id="1586bcdda65" />
+	<e:Rect fillAlpha="0.2" left="0" right="0" top="0" bottom="0" />
+	<e:Group width="450" height="280" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="zjmrenwubg" scale9Grid="32,21,193,44" scaleX="1.3" scaleY="1.3" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="bantoutiaobg2" scale9Grid="11,2,70,17" left="10" right="10" top="29" bottom="0"  visible="false"/>
+		<e:Image left="10" right="10" top="30" bottom="-40" source="bantoutiaoboss" rotation="90" scale9Grid="8,2,50,20" visible="false"/>
+		<e:Image source="shuxingbg2" scale9Grid="188,4,3,24" width="280"  x="-40" visible="false"/>
+		<e:Image source="shuxingbg2" scale9Grid="188,4,3,24" width="280" right="-40" scaleX="-1"  visible="false"/>
+		<e:Image source="tongyongline" y="126" horizontalCenter="0" width="400" />
+		<e:Image source="teshuwenzibg" y="130" horizontalCenter="-100" />
+		<e:Label id="taskName" text="这是一个很牛逼的任务" x="80" y="40" size="20" textColor="0xbd600d" bold="true" />
+		<e:Label id="taskInfo" y="70" size="18" text="这个任务字很多，很多很多很多很多很多很多很多很多很多很多很多" textColor="0xd1c28f"  width="290" x="80"/>
+		<e:Label id="taskAwards" y="141" size="20" text="任务奖励" textColor="0xFFAE00" horizontalCenter="-100" />
+		<e:Button id="gotoBtn" skinName="Btn1Skin" label="领  取" bottom="30" horizontalCenter="120" />
+		<e:Label id="timeText" size="16" text="10秒后自动提交" horizontalCenter="120" bottom="86" textColor="0x9f946d" />
+		<!--<e:Component x="54" y="180" skinName="ItemSkin" scaleX="0.9" scaleY="0.9" />
+		<e:Component x="145" y="180" skinName="ItemSkin" scaleX="0.9" scaleY="0.9" />
+		-->
+		<e:List id="rewardList" itemRendererSkinName="ItemSkin" y="177" horizontalCenter="-100">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center"/>
+			</e:layout>
+		</e:List>
+		<e:Group y="270" horizontalCenter="120" width="120" height="40" touchChildren="false" touchEnabled="false">
+			<e:Group id="arrowGroup" height="40" width="120" x="0" y="0" touchChildren="false" touchEnabled="false">
+				<e:Image source="jiantouxia" y="0" scaleY="-1" horizontalCenter="0" />
+				<e:Image left="0" right="0" top="0" bottom="0" source="zjmqipao" scale9Grid="5,5,11,12" />
+				<e:Label size="20" text="请点击" horizontalCenter="0" bold="true" verticalCenter="0" textColor="0xd1c28f" />
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

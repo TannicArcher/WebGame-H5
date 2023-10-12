@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="hunguGroupItemSkin" width="493" height="160" currentState="max" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Group id="descGroup" y="7" horizontalCenter="0" width="493" height="160">
+		<e:Image source="tongyongtip1" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" scale9Grid="7,6,11,12"/>
+		<e:Image scaleX="1" scaleY="1" y="2" source="bantoumingkuang3" scale9Grid="98,40,5,7" height="27" width="493" x="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,18,2,4" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0"/>
+		<e:Group width="493" height="28" y="5" horizontalCenter="0">
+			<e:Label id="qualityName" text="【特殊魂骨共鸣·凡品】" x="4" size="20" textColor="0x04FE2A" bottom="7" verticalAlign="top" textAlign="left"/>
+			<e:Label id="posName" text="头部魂骨" anchorOffsetX="0" anchorOffsetY="0" size="18" verticalAlign="middle" textAlign="center" textColor="0x6D6A64" bottom="105" x="210"/>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group width="469" horizontalCenter="0" verticalCenter="-4">
+			<e:Label id="suit0" text="2件：生命+5000" anchorOffsetX="0" anchorOffsetY="0" size="18" verticalAlign="middle" textAlign="left" textColor="0x6D6A64" x="0" y="12" width="469"/>
+			<e:Label id="suit1" text="4件：攻击+5000" anchorOffsetX="0" anchorOffsetY="0" size="18" verticalAlign="middle" textAlign="left" textColor="0x6D6A64" y="42" x="0" width="469"/>
+			<e:Label id="suit2" text="6件：每次攻击5%几率无视对方防御，并额外造成10%伤害" anchorOffsetX="0" anchorOffsetY="0" size="18" verticalAlign="top" textAlign="left" textColor="0x6D6A64" y="74" x="0" width="469"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

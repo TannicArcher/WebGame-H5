@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CheckBox0" states="up,down,disabled,upAndSelected,downAndSelected,disabledAndSelected" currentState="up" xmlns:e="http://ns.egret.com/eui">
+    <e:Image source="duoxuankuang" x="0" x.disabledAndSelected="0"  verticalCenter.disabledAndSelected="0" verticalCenter.upAndSelected="0" verticalCenter.disabled="0" verticalCenter.up="0" verticalCenter.down="0" verticalCenter.downAndSelected="0"/>
+    <e:Image source.upAndSelected="duoxuangou" source.downAndSelected="duoxuangou" source.disabledAndSelected="duoxuangou"
+        x="6" x.disabledAndSelected="6"  x.upAndSelected="6" width="30" height="30" verticalCenter="0" width.disabledAndSelected="30"/>
+    <e:Label id="labelDisplay" size="22" textAlign="center" verticalAlign="middle"
+     x="50" verticalCenter="0" textColor="0xd1c28f" textColor.up="0xd1c28f" textColor.disabled="0x7f7657" textAlign.up="left" x.up="50" textColor.down="0x9b906b" textColor.downAndSelected="0x9b906b" textColor.disabledAndSelected="0x665e47"/> </e:Skin>

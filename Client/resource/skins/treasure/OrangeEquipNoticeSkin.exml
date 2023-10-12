@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OrangeEquipNoticeSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group x="0" y="0" width="285" height="114">
+		<e:Image source="wupingkuangnb2" horizontalCenter="0" verticalCenter="0" alpha="0.8" width="285" height="114"/>
+		<e:Label id="itemName" text="橙色装备名称" y="60" size="20" textColor="0xFF6A21" textAlign="left" verticalAlign="middle" x="104"/>
+		<e:Label id="desc" text="传说物品！" y="31" size="20" textAlign="center" textColor="0xf8b141" x="104"/>
+		<ns1:BaseComponent id="item" x="20" y="29" className="ItemBase" skinName="ItemSkin" scaleX="0.8" scaleY="0.8"/>
+	</e:Group> 
+</e:Skin>

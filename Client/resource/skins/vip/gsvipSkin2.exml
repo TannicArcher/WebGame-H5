@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="gsvipSkin2" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="930" width="580"   >
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group id="anigroup"  horizontalCenter="0" verticalCenter="0" width="474" height="720">
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" horizontalCenter="0" bottom="-40">
+			<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+			<e:Button id="closeBtn1" label="按钮" y="-17" skinName="Btn0Skin" right="-10" x="188" visible="false"/>
+		</e:Group>
+		<e:Image scale9Grid="18,14,12,20" source="tongyongkuang3bg"     top="0" bottom="0" left="0" right="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,271,47" y="0"   left="0" right="0"/>
+		<e:Image source="teshuwenzibg" y="6" horizontalCenter="0.5" x="150"   visible="false"/>
+		<e:Image source="gshead_jpg" y="45" x="7"/>
+		<e:Image source="tongyongtip1" scale9Grid="10,9,2,1" width="458" horizontalCenter="0" height="200" bottom="10"/>
+		<e:Image source="tongyonghd_json.weijihuohuawen" y="517" scale9Grid="0,1,62,30" horizontalCenter="-160" width="120"/>
+		<e:Image source="tongyonghd_json.weijihuohuawen" y="517" scale9Grid="0,1,62,30" horizontalCenter="160" width="120" scaleX="-1"/>
+		<e:Group id="no" y="465" horizontalCenter="0" >
+			<e:Image source="tongyonghd_json.bantoutiaobg2" y="8" scale9Grid="30,2,32,17" height="32" width="450" horizontalCenter="0"/>
+			<e:Label id="lookbtn" y="0" text="点击开启超级会员，获取美女客服QQ号。" size="22" textColor="0xffd93f" height="50" verticalAlign="middle" horizontalCenter="0"/>
+		</e:Group>
+		<e:Label y="13" text="超级会员" size="24" horizontalCenter="0" x="144"   textColor="0xf8b141"/>
+		<e:Label y="520" text="超级会员专属服务" size="22" horizontalCenter="0" x="154" bold="true" textColor="0x2cc2f8"/>
+		<e:Label y="511" text="加美女客服QQ，领取神秘礼包！" size="20" x="10" textColor="0x4f4f4f" visible="false"/>
+
+		<e:Group id="qq" x="313" y="454" width="150" height="50">
+			<e:Label text="美女客服QQ号" size="20" horizontalCenter="0" bold="true" textColor="0xf43d3d"/>
+			<e:BitmapLabel id="qqnum" y="22" text="123456789" font="num_xvip_4_fnt" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group y="550" horizontalCenter="0">
+			<e:Label y="0" text="★专属通道★" size="20" textColor="0xf8b141" bold="true" x="0"/>
+			<e:Label y="30" text="美女客服一对一贴身服务，意见建议直通策划。" size="18" x="0" textColor="0xd1c28f"/>
+			<e:Label y="60" text="★专属优先★" size="20" x="0" textColor="0xf8b141" bold="true"/>
+			<e:Label y="90" text="游戏第一手最新资料，优先获取！" size="18" x="0" textColor="0xD1C28F"/>
+			<e:Label y="120" text="★专属礼包★" size="20" x="0" textColor="0xf8b141" bold="true"/>
+			<e:Label y="150" text="成为超级会员，领取超级大礼包！" size="18" x="0" textColor="0xD1C28F"/>
+			<e:layout>
+				<e:VerticalLayout gap="6"/>
+			</e:layout>
+		</e:Group>
+
+
+		<e:Button id="copy" label="复制QQ号" skinName="Btn15Skin" width="130" height="50" y="454" horizontalCenter="0"/>
+		<e:Image x="20" y="548" source="vip_v1_png"/>
+		<e:Image x="20" y="598" source="vip_v2_png"/>
+		<e:Image x="20" y="648" source="vip_v3_png"/>
+
+
+
+	</e:Group>
+</e:Skin>

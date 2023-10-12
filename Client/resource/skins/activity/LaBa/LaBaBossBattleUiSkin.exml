@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LaBaBossBattleUiSkin" currentState="normal" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="930">
+	<w:Config id="15c6d0f73d2" />
+
+
+
+	<e:Group id="bossBloodGroup" width="480" horizontalCenter="0" top="20" visible="false">
+		<e:Rect height="20" y="50" left="110" right="30" fillColor="0x111010" />
+		<e:Rect width="82" height="82" x="17" y="19" ellipseWidth="82" ellipseHeight="82" fillColor="0x111010" />
+		<e:Image id="head" source="" y="22" x="20"  scaleX="1.2" scaleY="1.2"/>
+		<e:Image id="grayImg" y="52" source="bosshp2" width="340" x="110" />
+		<e:Image y="22" height="28" width="396" source="bantoutiaobg" x="44" scale9Grid="51,5,136,35"/>
+		<e:ProgressBar id="bloodBar" y="52" value="50" left="110" right="30" skinName="bar7Skin" />
+		<e:Image left="0" right="0" scale9Grid="150,0,9,122" source="bosstouxiangk"  y="0"/>
+		<e:Group id="hudun" x="120" y="74" visible="false">
+			<e:Rect left="13" right="13" top="0" bottom="10" fillColor="0x111010" />
+			<e:ProgressBar id="hudunbloodBar" width="290" height="4" value="100" x="12" y="1" skinName="bar6Skin" />
+			<e:Image source="zdbossskin_json.zdbosshudunxuetiaobg" x="0" y="0" width="315" scale9Grid="15,1,13,3" />
+		</e:Group>
+		<e:Label id="lvTxt" y="27" size="20" text="Lv.2000" x="126" textColor="0xf8b141" width="70" textAlign="right" />
+		<e:Label id="nameTxt" y="26" size="20" text="祖玛教主" x="200" textColor="0xd1c28f" bold="true" />
+		<e:Button id="tipBtn" label="奖励" x="13" y="100.33" skinName="Btn18Skin" visible="false"/>
+	</e:Group>
+	<e:Image id="refreshBg" source="bantoutiaobg2" scale9Grid="43,11,5,3" horizontalCenter="4" bottom="369" width="354" height="80"/>
+	<e:Group horizontalCenter="0" bottom="398" touchEnabled="false">
+		<e:Label id="refreshHints" text="距离BOSS刷新还有:" size="22" textColor="0xF8FE03" x="-108" y="-22" scaleX="1" scaleY="1"/>
+		<e:Label id="refreshTime" text="等待刷新" size="22" textColor="0x3BFE03" x="81" y="-24" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:HorizontalLayout gap="6"/>
+		</e:layout>
+	</e:Group>
+
+
+
+
+	<e:Button id="help" label="按钮" skinName="Btn0Skin" icon="wenhao" scaleX="0.9" scaleY="0.9" bottom="84" right="24" visible="false"/>
+
+	<e:Button id="rankReward" label="" skinName="Btn0Skin" icon="LaBaRankRewadBtn" right="15" bottom="373"/>
+
+	<e:Image id="redPoint" source="zjmhongdian" touchEnabled="false" bottom="441" right="13" visible="false"/>
+	<e:Group id="ranking" width="220" height="175" right="0" bottom="181">
+		<e:Image width="220" height="175" y="0" source="bantoumingkuang3" scale9Grid="34,11,210,68" right="0"/>
+		<e:Image id="titleBg" y="0" x="0" source="teshuwenzibg2" height="25" width="221"/>
+		<e:Label id="title" text=" 玩家名字      伤害  " size="18" width="220" height="24" textAlign="right" verticalAlign="middle" right="0" textColor="0xF8B141" y="2"/>
+		<e:List id="otherRank" width="220" height="125" y="25" anchorOffsetY="0" right="0"/>
+		<e:List id="meRank" width="220" height="25" y="150" anchorOffsetY="0" right="0" x="10"/>
+
+
+
+	</e:Group>
+
+
+
+
+
+
+
+</e:Skin>

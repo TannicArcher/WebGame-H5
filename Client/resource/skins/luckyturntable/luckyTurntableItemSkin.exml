@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="luckyTurntableItemSkin" width="72" height="86" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="72" x="0" y="8">
+		<ns1:BaseComponent id="gift" xmlns:ns1="*" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" className="ItemBase"/>
+		<e:Group id="eff" scaleX="0.8" scaleY="0.8" y="30" x="34"/>
+		<e:Group id="isget" width="90" height="96" scaleX="0.8" scaleY="0.8"/>
+		<e:Image id="lingqu" source="yilingqu" y="16" horizontalCenter="0"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" x="50" y="-8"/>
+		<e:Group y="60" horizontalCenter="0">
+			<e:Label id="alreadyTime" text="3" size="18" y="0" textColor="0xff0000" x="0"/>
+			<e:Label id="targetTime" text="/4" size="18" y="0" textColor="0xD1C28F" x="0"/>
+			<e:layout>
+			<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

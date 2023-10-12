@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LimitStartTipsSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="450" height="280" horizontalCenter="0" verticalCenter="7">
+		<e:Group id="kuang" width="450" height="280" y="0"   horizontalCenter="0">
+
+			<e:Image source="wupingkuangNB" x="0" y="0"   scale9Grid="32,33,36,34" width="450" height="280"/>
+		</e:Group>
+		<e:Group id="bg" width="450" height="280" y="0"   horizontalCenter="0">
+			<e:Image source="dressBg_png"  height="256"  width="438" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="shadow" width="450" height="280" x="0" y="0"   visible="false">
+		</e:Group>
+		<e:Group id="title" width="450" height="60"   y="-2" horizontalCenter="0">
+			<e:Image source="tongyonglabbg" y="15.19"  width="94"  height="27.81" horizontalCenter="0"/>
+			<e:Image source="fuli_json.qiandaobg2" y="-6"   scale9Grid="76,6,30,43" horizontalCenter="0" width="260"/>
+
+			<e:Image source="biaoti_xianshi_png" y="10.5"   x="151"/>
+		</e:Group>
+		<e:Group id="txt" width="450" height="280"   y="0" horizontalCenter="0">
+			<e:Group x="102" y="-6" height="293" width="244">
+				<e:Image x="0" source="zhuakuang2" scale9Grid="41,30,9,1" width="122" top="0" bottom="0"/>
+				<e:Image source="zhuakuang2" scale9Grid="41,30,9,1" width="122" top="0" bottom="0" right="0" scaleX="-1"/>
+			</e:Group>
+			<e:Image source="shuxingbg" x="0.5" y="80" scale9Grid="76,5,22,34"  width="322"/>
+			<e:Image source="shuxingbg" x="140.5" y="140" scale9Grid="76,5,22,34" width="310" />
+			<e:Label text="恭喜您触发了          任务" x="27" y="89.5" italic="true" textColor="0xf8b141" size="25" bold="true"/>
+			<e:Label text="限时" x="181" y="87" italic="true" bold="true" textColor="0x35e52d" size="30"/>
+			<e:Label text="内完成    个任务" x="248" y="150.5" italic="true" textColor="0xF8B141" size="25" bold="true"/>
+			<e:Label text="8" x="332" y="148" italic="true" bold="true" textColor="0x35E52D" size="30"/>
+			<e:Label text="36小时" x="152" y="148" italic="true" bold="true" textColor="0x35E52D" size="30"/>
+			<e:Button id="btn" label="立即完成" y="206" width="137"  height="50" x="157" skinName="Btn1Skin"/>
+			<e:Label text="立即完成" y="221" size="20" bold="true" textColor="0xf8b141" touchEnabled="false" x="185" visible="false"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

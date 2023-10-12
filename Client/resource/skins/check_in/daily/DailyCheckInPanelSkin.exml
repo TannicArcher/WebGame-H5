@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DailyCheckInPanelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        height="620" width="540">
+	<e:Button id="help" y="251" skinName="Btn0Skin" x="11" label="按钮"  visible="false"/>
+	<e:Label id="checkInTitle" text="本月累计签到：" x="130.5" y="13.5" textColor="0xe4bb98" size="16" fontFamily="黑体"  visible="false"/>
+	<e:Label id="checkInLab" text="998天" x="135.5" y="13.5" textColor="0x3cdb02" size="16" fontFamily="黑体"
+	          width="53"  visible="false"/>
+	<e:Label id="remainComplementTitle" text="剩余补签次数：" x="225.5" y="13.5" textColor="0xE4BB98" size="16" fontFamily="黑体"  visible="false"/>
+	<e:Label id="remainComplementLab" text="98次" x="337.5" y="13.5" textColor="0x3CDB02" size="16" fontFamily="黑体"
+	          width="53"  visible="false"/>
+	<e:Label text="签到奖励每个月1号重置" y="566" textColor="0xe4bb98" size="16" fontFamily="黑体" horizontalCenter="0"  visible="false"/>
+	<e:Group id="itemGroup" width="397" height="412" y="45"   horizontalCenter="0"
+	          visible="false"/>
+	<e:Scroller id="cardScroller"
+	            scrollPolicyH="off" width="520" horizontalCenter="0" top="10" bottom="90">
+		<e:List id="cardList" itemRendererSkinName="DailyCheckInItem" y="0" horizontalCenter="0">
+			<e:layout>
+				<e:TileLayout horizontalGap="5" requestedColumnCount="5" verticalGap="5" />
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group id="rewardGroup" bottom="1" horizontalCenter="0" width="524" height="88">
+		<e:Image left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="3,3,19,19"/>
+		<e:Image left="0" right="0" top="0" bottom="0" source="tongyongtip2" scale9Grid="19,19,3,5"/>
+		<e:Label id="dayReardText" text="已累计签到（8/10）天，  \n 再签到2天可领取奖励。" x="100" size="18" verticalCenter="-9" textColor="0x9f946d"/>
+		<ns1:BaseComponent id="rewardItem" x="10" scaleX="0.9" scaleY="0.9" className="ItemBase" skinName="ItemSkin"/>
+		<e:Button id="rewardBtn" label="领 取" skinName="Btn1Skin" verticalCenter="0" right="30" width="130" height="50"/>
+	</e:Group>
+</e:Skin>

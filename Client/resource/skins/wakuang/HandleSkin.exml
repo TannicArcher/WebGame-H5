@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HandleSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  height="930" states="plunder,revenge,done" >
+	<w:Config id="1586b349dbe"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.5" fillAlpha.done="0.7"/>
+	<e:Group id="anigroup" horizontalCenter.revenge="0" horizontalCenter.plunder="0" verticalCenter.revenge="0" verticalCenter.plunder="0" anchorOffsetY.done="0" height.done="411" horizontalCenter.done="0" verticalCenter.done="0" height.revenge="446" horizontalCenter="0" verticalCenter="0">
+		<e:Group name="装备" width="500" height="400"  verticalCenter="0" horizontalCenter="0" height.revenge="411" x="-114" y="110"   height.done="411">
+			<e:Image source="tongyongkuang3bg" right="0" top="0" scale9Grid="6,6,38,38" bottom="0" left="0" height.revenge="400"/>
+			<e:Image source="tongyongkuang3tou" right="0" scale9Grid="67,5,272,37" left="0"/>
+			<e:Label id="Title" text="天魔矿工" size="24" text.plunder="天魔矿工（可掠夺）" x.plunder="-48" y.plunder="0" scaleX.plunder="1" scaleY.plunder="1" textColor="0xff0000" horizontalCenter.revenge="0" horizontalCenter.plunder="0" top="11" text.revenge="复仇" text.done="开采完毕" horizontalCenter.done="0" textColor.done="0xbd600d" bold.done="true" bold.revenge="true" bold.plunder="true" horizontalCenter="0"/>
+			<e:Group includeIn="revenge,done" y="45" horizontalCenter="0" y.done="49" horizontalCenter.done="0" height.done="140" horizontalCenter.revenge="0" y.revenge="50" width.revenge="460" height.revenge="100" width.done="460">
+				<e:Image source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="0" bottom="0" includeIn="done" left="0" right="0" visible="false"/>
+				<e:Image top="0" bottom="0" source="tongyongtip1" left="0" right="0" scale9Grid="7,6,12,13" includeIn="revenge,done"/>
+				<e:Image source="tongyong_json.tongyongmianbanbg" includeIn="done" left="0" right="0" top="0" bottom="0" scale9Grid="23,23,4,3" visible="false"/>
+				<e:Group left="25" includeIn="done" verticalCenter="0">
+					<e:Group   x="-0.5" y="-6">
+					<e:Image source="kuanggongiconbg"    width="111.3"  height="134.5" top="2" horizontalCenter="-1"/>
+					<e:Image id="worker" source="kuanggong0"  width="80.89"  height="118.49" y="15.03" horizontalCenter="-8.5"/>
+					</e:Group>
+					<e:Image source="npcnamebg" y="0" x="12"/>
+					<e:Label id="nameTxt" text="裸体矿工" y="3" size="20"   textColor="0x00FF00" x="14"/>
+				</e:Group>
+				<e:Group includeIn="done" x="22" y="17" visible="false">
+					<e:Image source="kuanggongiconbg"    width="92.27"  height="111.5" left="0" top="0"/>
+					<e:Image id="worker1" source="kuanggong0"  width="80.89"  height="118.49"   left="-4" top="-11"/>
+				</e:Group>
+			<e:Label text="战斗力：" x="123" size="20" textColor="0x9F946D" bottom="20" includeIn="plunder,revenge"/>
+			<e:Label id="enemyPower" text="100000000" x="203" size="20" textColor="0xFF9900" bottom="20" includeIn="plunder,revenge"/>
+			<e:Label text="掠夺者：" x="123" size="20" textColor="0x9F946D" top="20" includeIn="plunder,revenge"/>
+			<e:Label id="enemy" text="布拉格の沉魔" x="203" size="20" textColor="0xFF9900" top="20" includeIn="plunder,revenge"/>
+			<e:Group x="20" includeIn="revenge"   verticalCenter="0">
+				<e:Image y="0" x="0" width="80" height="80" source="touxiangkuang0" scale9Grid="6,6,1,1" includeIn="revenge,done"/>
+				<e:Image id="myFace0" source="head_10" x="5" y="5" width="70" height="70" includeIn="revenge,done"/>
+			</e:Group>
+			<e:Label id="reward" text="兵魂礼包碎片X1000\n功勋×500\n功勋×250" includeIn="done" textColor="0xFF9900" size="20"   width="182" horizontalCenter="9" top="20"/>
+			<e:Label id="minus" text="-15000\n-200\n-100" includeIn="done" size="20"   textColor="0xff0000" width="100" horizontalCenter="160" top="20"/>
+				<e:Label id="nameTxt1" text="裸体矿工" size="24"   textColor="0x00FF00" includeIn="done" y="12" x="182" visible="false"/>
+
+			<e:Group x="150" y="19" includeIn="plunder,revenge">
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="left" verticalAlign="middle" gap="5"/>
+				</e:layout>
+			</e:Group>
+			<e:Group x="290" y="19" includeIn="plunder,revenge">
+				<e:Label text="-100" includeIn="done" x="8" y="-21" textColor="0xFF0000" size="20" id="minus1"  />
+				<e:Label text="-150" includeIn="done" x="8" y="-21" textColor="0xFF0000" size="20" id="minus2"  />
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="left" verticalAlign="middle" gap="5"/>
+				</e:layout>
+			</e:Group>
+			</e:Group>
+			<e:Group includeIn="revenge,done" y="155" horizontalCenter="0" width="460" height.revenge="145" height.plunder="145" anchorOffsetY.done="0" horizontalCenter.done="0" height.done="129" y.done="196" horizontalCenter.revenge="0" y.revenge="160">
+				<e:Image top="0" bottom="0" source="tongyongtip1" left="0" right="0" scale9Grid="7,6,12,13" includeIn="revenge,done"/>
+				<e:Image source="shuxingbg4" includeIn="done" top="-3" left="-24" scale9Grid="86,26,2,2" width="203" visible="false"/>
+				<e:Image source="bantoutiaoboss" includeIn="done" y="4.33" scale9Grid="16,0,2,24" height="28" width="125" left="0"/>
+			<e:Label text="掠夺时间：" x="23" size="20" textColor="0x9F946D" top="10" includeIn="revenge"/>
+			<e:Label text="掠夺资源：" x="23" size="20" textColor="0x9F946D" top="40" includeIn="revenge"/>
+			<e:Group x="123" y="10" includeIn="revenge">
+				<e:Label id="time" text="2017-7-23  12:23" x="54" y="59" size="20" textColor="0x5186FD"   includeIn="revenge"/>
+				<e:layout>
+				<e:HorizontalLayout gap="15"/>
+				</e:layout>
+			</e:Group>
+			<e:List id="robaward" x="123" itemRendererSkinName="ItemSkin" width="270" height="96" top="40" includeIn="revenge">
+				<e:layout>
+				<e:HorizontalLayout gap="0" horizontalAlign="center" verticalAlign="middle"/>
+				</e:layout>
+			</e:List>
+			<e:Label text="掠夺情况：" includeIn="done" x="13" textColor="0xff9900" size="22" y="7.33"/>
+			<e:Scroller width="420" height="89" includeIn="done" x="20"  y="32">
+				<e:Group>
+				<e:List id="recordList" includeIn="done"   itemRendererSkinName="DoneRecordItemSkin"   right="0" bottom="-3" left="0" top="3">
+					<e:layout>
+					<e:VerticalLayout gap="0" horizontalAlign="left" verticalAlign="middle"/>
+					</e:layout>
+				</e:List>
+				</e:Group>
+			</e:Scroller>
+				<e:Label id="noRob" text="恭喜你，你的矿工没有被掠夺！" includeIn="done" size="18" horizontalCenter="0" verticalCenter="0" textColor="0x00ff00" visible="false"/>
+			</e:Group>
+			<e:Group y="70"  y.plunder="57.98" includeIn="plunder" width="457" horizontalCenter="0.5" height="117">
+				<e:Image top="0" bottom="0" left="0" right="0" includeIn="plunder" source="tongyongtip1" scale9Grid="7,6,12,13"/>
+				<e:List id="awardList" x="100"   itemRendererSkinName="ItemSkin"   includeIn="plunder,done" verticalCenter="0">
+					<e:layout>
+					<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="0"/>
+					</e:layout>
+				</e:List>
+				<e:Image source="bantoutiaoboss" includeIn="plunder" left="0" scale9Grid="12,0,3,24" width="113" top="5" height="28"/>
+			<e:Label text="掠夺奖励：" includeIn="plunder" textColor="0xff9900" size="20"   top="9" left="5"/>
+				<e:Image source="bantoutiaoboss" includeIn="done" y="3" scale9Grid="16,0,2,24" height="28" width="125" left="0"/>
+				<e:Image source="bantoutiaoboss" includeIn="done" y="3" scale9Grid="16,0,2,24" height="28" width="125" left="0"/>
+
+			</e:Group>
+			<e:Group y="188"  height="102"  width="457" horizontalCenter="0" includeIn="plunder" horizontalCenter.plunder="0.5" y.plunder="189.33">
+				<e:Image top="0" bottom="0" source="tongyongtip1" left="0" right="0" scale9Grid="2,7,16,11" includeIn="plunder"/>
+			<e:Label text="矿工主人：" x="13" y="18" size="20" textColor="0x9f946d"/>
+			<e:Label text="战力：" x="253" y="18" size="20" textColor="0x9f946d" text.plunder="战斗力："/>
+			<e:Label text="主人帮会：" x="13" y="55" size="20" textColor="0x9f946d"/>
+			<e:Label id="owner" text="布拉格の沉魔" x="113" y="18" size="20" textColor="0x18a5eb"/>
+			<e:Label id="power" text="100000000" x="313" y="18" size="20" textColor="0xff9900" x.plunder="333"/>
+			<e:Label id="gang" text="布拉格的传说" x="113" y="55" size="20" textColor="0x00ff00"/>
+			<e:Label id="noGang" text="暂未加入公会" x="113" y="55" size="20" textColor="0x9F946D" visible="false"/>
+			</e:Group>
+			<e:Label id="workNum" text="剩余次数：2/3" y="2" size="18" textColor="0x00FF00"   text.revenge="复仇成功可双倍取回资源并全服公告" y.revenge="10" text.plunder="剩余次数：2/3" horizontalCenter.done="0" bottom="78" includeIn="plunder,revenge" horizontalCenter.revenge="0" bottom.revenge="78" bottom.plunder="78" horizontalCenter.plunder="0" horizontalCenter="0"/>
+			<e:Group y.done="278" horizontalCenter="0.5" x="95"   horizontalCenter.revenge="1" bottom.revenge="68" bottom.plunder="68" horizontalCenter.plunder="0" includeIn="revenge">
+			<e:layout>
+				<e:HorizontalLayout gap="0" horizontalAlign="left" verticalAlign="middle"/>
+			</e:layout>
+			</e:Group>
+			<e:Button id="handleBtn" label="掠夺矿工" width="120" horizontalCenter="0" bottom="20" label.revenge="复仇" label.done="领取奖励"  height="54" skinName="Btn1Skin" horizontalCenter.done="-80" bottom.done="20" horizontalCenter.revenge="0" bottom.revenge="20" horizontalCenter.plunder="0" bottom.plunder="20"/>
+			<e:Button id="double" label="双倍领取" width="120" horizontalCenter="80" bottom="20" height="54" skinName="Btn1Skin" includeIn="done"/>
+			<e:Group bottom="38" includeIn="done" horizontalCenter="182">
+				<e:Image source="szyuanbao" width="30" y="0" scaleX="1" scaleY="1" x="0"/>
+				<e:Label id="cost" text="1980" size="20" textColor="0xF8B141" x="32" y="1" scaleX="1" scaleY="1"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" y="332" x="-129"   includeIn="plunder,revenge">
+			<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+			<e:Button id="closeBtn1" label="按钮" y="-17" skinName="Btn0Skin" right="-10" x="188"   visible="false"/>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout gap="5" horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

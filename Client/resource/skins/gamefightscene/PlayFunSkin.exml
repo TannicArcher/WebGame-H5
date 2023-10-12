@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlayFunSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580"
+        height="930">
+	<w:Config id="15ccf5046d3" />
+	<e:Image id="maskImg" source="black00_png" left="0" right="0" top="0" bottom="0" touchEnabled="false"  visible="false"/>
+	<e:Group id="topMain" right="0" top="0" bottom="0" left="0" touchEnabled="false">
+		<e:Group y="0" width="580" horizontalCenter="0" x="0" scaleX="1" scaleY="1">
+			<e:Image source="zjmdingtiao" width="520" scale9Grid="6,15,44,14" x="62"/>
+			<e:Image y="6" source="zjmdingtiaobg" x="280" width="140"/>
+			<e:Image y="6" source="zjmdingtiaobg" scale9Grid="6,6,20,21" x="420" width="140"/>
+			<e:Image source="biaoti3" x="535" y="0"/>
+			<e:Button id="recharge1" skinName="Btn0Skin" y="6" icon="zjmyuanbao" x="430" width="42"/>
+			<e:Button id="recharge2" skinName="Btn0Skin" y="6" icon="zjmjinbi" x="284"/>
+			<e:Image source="zjmjinbi" x="284" y="6" visible="false"/>
+			<e:Image width="500" height="34" y="46" source="zjmnamebg" x="85" touchEnabled="false"/>
+			<e:Label id="goldTxt" text="0" y="11" size="18" textAlign="center" width="82" x="325" textColor="0xf5dc84"/>
+			<e:Label id="ybTxt" text="0" y="11" size="18" textAlign="center" width="80" x="468" textColor="0xf5dc84"/>
+			<e:Label id="nameTxt" text="名字六个字起" y="52" size="20" textAlign="left" x="96" touchEnabled="false" textColor="0xd1c28f"/>
+			<e:Label id="lvTxt" text="99转999级" y="52" size="20" textAlign="center" x="212" touchEnabled="false" textColor="0xf8b141" width="110"/>
+			<e:Group width="230" height="21" x="312" y="51">
+			<e:Label id="mapName0" text="第3600关" size="20" backgroundColor="0x000000" x="-10" y="0" textColor="0xd1c28f"/>
+			<e:Group id="expGroup" y="53" x="390">
+				<e:Image verticalCenter="0" x="14" source="szexp"/>
+				<e:Label id="expTxt" text="999999/小时" size="20" backgroundColor="0x000000" textColor="0xd1c28f"/>
+				<e:layout>
+				<e:HorizontalLayout gap="-4" verticalAlign="middle" horizontalAlign="center"/>
+				</e:layout>
+			</e:Group>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" gap="-4" verticalAlign="middle"/>
+			</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group y="0" horizontalCenter="-139" x="0" scaleX="1" scaleY="1">
+			<e:Image pixelHitTest="true" source="zjmtouxiangkuang" x="-23" y="0" touchEnabled="false"/>
+			<e:Group id="flameGroup" y="2" width="175" x="97">
+			<e:Image id="fightImg" y="8.5" source="zjmzhandouli" height="30" width="50" x="-3"/>
+			</e:Group>
+			<e:Image id="face" y="13.9" source="yuanhead10" width="76" height="76" x="9"/>
+			<e:Group id="vipGroup" y="88.2" x="0">
+			<e:Button id="vipBtn0" label="按钮" skinName="Btn2Skin"/>
+			<e:Image id="vipImg0" x="18" touchEnabled="false" source="zjmvipzi" width="36" height="20" y="11"/>
+			<e:Image id="redPointVip0" x="68" y="1" source="zjmhongdian" visible="false"/>
+			</e:Group>
+			<e:Image id="headRedPoint" x="73" y="15" source="zjmhongdian" visible="false"/>
+		</e:Group>
+		<e:Group id="btnGuanQiaGroup" y="44" right="2" touchEnabled="false" x="27" scaleX="1" scaleY="1">
+			<e:Group id="iconGroup" height="240" y="42" touchEnabled="false" right="0">
+			</e:Group>
+			<e:ToggleButton id="btn_toolbar" label="" y="0" right="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btnjiantou" source.up="btnjiantou" x.up="43" y.up="45" rotation.up="180"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:ToggleButton>
+		</e:Group>
+		<e:Group id="mcGroup" height="170" y="236" horizontalCenter="0" width="0" x="290" scaleX="1" scaleY="1" visible="false">
+			<e:Group id="alphaGroup" width="500" height="82" horizontalCenter="0" y="-41">
+			<e:Image x="28" y="40" source="jingbao1"/>
+			<e:BitmapLabel id="levelNum" x="-4" y="25" font="jingbao_fnt" text="1234" letterSpacing="-45"/>
+			<e:Image x="341" y="31" source="jingbao2"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="-30"/>
+			</e:layout>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Group id="topGroup" touchEnabled="false" left="0" right="0" top="0" bottom="0">
+
+		<e:Group id="location" x="64" y="226" scaleX="1" scaleY="1"/>
+
+		<!--<e:Component id="shenqi" skinName="ArtifactIconSkin" x="-6" scaleX="0.9" scaleY="0.9" y="165"/>-->
+		<e:Component id="hejiguide" x="-14" skinName="questIconSkin" width="160" height="196" y="154" scaleX="1" scaleY="1" visible="false"/>
+		<e:Group id="recharge" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" top="450" left="74">
+			<e:Image id="cz" scaleX="0.7" scaleY="0.7" scale9Grid="54,22,6,7" source=""/>
+		</e:Group>
+		<e:Group id="vip" anchorOffsetX="0" anchorOffsetY="0" top="108" horizontalCenter="-161.5" x="129" y="108" scaleX="1" scaleY="1" visible="false">
+			<e:Image id="v" scaleX="0.7" scaleY="0.7" scale9Grid="54,22,6,7" x="0" y="0" source=""/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="downGroup" touchEnabled="false" left="0" right="0" top="0" bottom="0">
+
+		<e:Group id="taskTraceBtn" bottom="160" horizontalCenter="0" x="150" y="701" scaleX="1" scaleY="1">
+			<e:Image source="zjmrenwubg" horizontalCenter="0"/>
+			<e:Label id="taskTraceName" text="任务名字(10/20)" y="23" size="18" width="280" textColor="0xff8534" horizontalCenter="0.5" textAlign="center"/>
+			<e:Label id="taskTraceAwards" text="奖励:屠龙宝刀" y="46" size="18" width="280" textColor="0xbfbfbf" horizontalCenter="0.5" textAlign="center"/>
+		</e:Group>
+		<!--<e:Group id="taskTip" horizontalCenter="0" bottom="232" height="32" width="320" x="130" y="666" scaleX="1" scaleY="1" visible="false">
+			<e:Image left="0" right="0" top="0" bottom="0" source="zjmqipao" scale9Grid="6,8,6,8" alpha="0.8"/>
+			<e:Label id="taskTipText" text="正在完成清怪任务，还差X个。" size="18" horizontalCenter="0" verticalCenter="0" textColor="0xd1c28f"/>
+		</e:Group>-->
+
+
+
+		<e:Group id="groupGuanqia" height="176" right="-4" bottom="108" width="132" x="452" y="646" scaleX="1" scaleY="1">
+			<e:Group id="pkBossBtnGroup" horizontalCenter="0" bottom="0">
+			<e:ToggleButton id="autoPkBoss" label="自动挑战" skinName="Btn12Skin"/>
+			</e:Group>
+			<e:Image id="guanQiaStarImg" pixelHitTest="true" horizontalCenter="0" y="90" anchorOffsetX="45" anchorOffsetY="45" source="" visible="false"/>
+			<e:Image source="tielian1" y="96" horizontalCenter="-26"/>
+			<e:Image source="tielian1" y="96" horizontalCenter="26"/>
+			<e:Button id="guanqiaBtn" skinName="CheckButtonSkin" icon="tiaozhan01" horizontalCenter="0"/>
+			<e:Group id="guanqiaEff0" horizontalCenter="0" touchEnabled="false" touchThrough="true" verticalCenter="-25" touchChildren="false"/>
+			<e:Group id="guanqiaEff1" horizontalCenter="0" touchEnabled="false" touchThrough="true" verticalCenter="-24" touchChildren="false"/>
+			<e:Image y="90" source="tiaozhan03" horizontalCenter="0" touchEnabled="false"/>
+			<e:Image y="114" horizontalCenter="0" touchEnabled="false" source="tiaozhan04" scale9Grid="9,2,29,13" width="90"/>
+			<e:Image id="guanqiaSc" y="118" horizontalCenter="0" touchEnabled="false" source="tiaozhan05" scale9Grid="5,1,20,7" width="80" visible="false"/>
+			<e:Label id="guanqiaScn" text="3/3" y="116" size="16" horizontalCenter="0" stroke="1" textColor="0xd1c28f" visible="false"/>
+			<e:ProgressBar id="guanqiaBar" y="118" skinName="bar10Skin" horizontalCenter="0" value="50"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="leftGroup" touchEnabled="false" left="0" right="0" top="0" bottom="0">
+	</e:Group>
+	<e:Group id="rightGroup" touchEnabled="false" left="0" right="0" top="0" bottom="0">
+		<e:Group id="newBossRelive" touchChildren="false" touchEnabled="false" right="90" bottom="306" width="240" height="46" x="250" y="578" scaleX="1" scaleY="1">
+		<e:Image left="0" right="0" top="0" bottom="0" source="zjmyindao" scale9Grid="12,6,11,38" alpha="0.7"/>
+		<e:Label id="reliveBossLab" text="尼玛有六个字刷新了！" size="18" textAlign="center" textColor="0xDFD1B5" horizontalCenter="-22" verticalCenter="0"/>
+	</e:Group>
+	<!--<e:Component id="monster" right="6" skinName="BtnCityMonster" bottom="506" anchorOffsetX="0" width="90" anchorOffsetY="0" height="100" x="484" y="324" scaleX="1" scaleY="1"/>-->
+	<!--<ns1:BaseComponent id="equipTips" className="NewEquipWin" skinName="newEquipSkin" bottom="260" right="8" x="322" y="450" scaleX="1" scaleY="1" visible="false"/>-->
+</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<e:Image id="warmImage" left="0" right="0" top="0" bottom="0" touchEnabled="false"  height="1048"
+	          width="528" source="black02_png"  visible="false"/>
+	<e:Group id="hongbao" touchEnabled="false" horizontalCenter="0" top="200">
+
+
+	</e:Group>
+	<e:Group id="flower" touchEnabled="false" top="245" horizontalCenter="0"/>
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

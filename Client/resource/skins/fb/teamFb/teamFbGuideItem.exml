@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="teamFbGuideItem" width="450" height="110" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image left="0" right="0" top="0" bottom="0" source="tongyonglabbg" scale9Grid="42,20,48,41"/>
+	<e:Label text="怪物名：" y="13" size="18" left="103" textColor="0xf8b141"/>
+	<e:Label id="nameTxt" text="祖玛弓箭手" y="13" size="18" left="170" textColor="0xd1c28f" bold="true"/>
+	<e:Label text="威胁度：" y="36" size="18" left="103" textColor="0xf8b141"/>
+	<e:Label id="dangerLvTxt" text="极高" y="36" size="18" textColor="0xff052a" bold="true" left="170"/>
+	<e:Label text="挑战攻略：" y="59" size="18" left="102" textColor="0xf8b141"/>
+	<e:Label id="guideTxt" text="                 这里是用来告诉玩家如何运用正确的方法调戏这个怪物用的" y="59" size="18" textColor="0xD1C28F" left="102" width="342" anchorOffsetY="0" height="40" lineSpacing="4" verticalAlign="top" textAlign="left"/>
+	<e:Image source="touxiangkuang" verticalCenter="0" left="7"/>
+	<e:Image id="monHeadImg" source="monhead10002_png" width="74" height="74" verticalCenter="0" left="15"/>
+</e:Skin>

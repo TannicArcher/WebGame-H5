@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChargeTipsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<w:Config id="1586b3502a7"/>
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="background" width="277" height="85" horizontalCenter="0" verticalCenter="0" source="tongyongtip1" scale9Grid="6,6,13,13"/>
+	<e:Label id="score" text="正在充值请稍等..." size="20" textColor="0xFFCC00" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="shenqiPartActskin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Rect id="rect" fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="anigroup" width="343" height="415"   horizontalCenter="0" verticalCenter="50">
+		<e:Rect id="rect0" fillAlpha="0.8" strokeAlpha="0" left="0" right="0" top="0" bottom="0"/>
+		<e:Image id="bg0" touchEnabled="true" source="tongyongtip1" scale9Grid="8,6,9,13" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,18,4,4" left="0" right="0" top="0" bottom="0"/>
+		<e:Image y="2" height="42" left="10" right="10" scale9Grid="11,2,70,17" source="bantoutiaobg2"/>
+
+
+		<e:Image id="namebg0" scale9Grid="3,6,22,42" height="180" source="quali3" left="0" right="0"/>
+		<e:Label id="labelName" text="神器碎片1" size="28" y="10" bold="true" textColor="0xC41200" horizontalCenter="0"/>
+		<e:Image id="departline0" source="tongyongline" left="0" right="0" bottom="70"/>
+
+
+
+
+
+		<e:Group y="277" horizontalCenter="0">
+			<e:Image id="point2" width="20" height="20" x="0" y="27" source="tongyongdian2"/>
+			<e:Label id="tipsDes2" text="激活碎片可获得大量属性" size="20" y="27" textAlign="left" verticalAlign="top" x="24" textColor="0xF8B141"/>
+			<e:Label id="labelInfo" text="再获得3个碎片可激活完整神器" size="20" y="0" textAlign="left" verticalAlign="top" x="24" textColor="0xF8B141"/>
+			<e:Image width="20" height="20" x="0" y="0" source="tongyongdian2" id="point0"/>
+		</e:Group>
+
+		<e:Image id="imgArtifact" y="50" source="sq_11_png" width="100" height="100" horizontalCenter="0.5"/>
+
+
+		<e:Button id="btnOpen" label="激活" skinName="Btn1Skin" horizontalCenter="0" bottom="10"/>
+		<e:List id="list" width="240" height="100" y="161" itemRendererSkinName="shenQiAttrDescSkin" horizontalCenter="8">
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:List>
+	</e:Group>
+
+
+</e:Skin>

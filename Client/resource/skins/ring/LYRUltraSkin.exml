@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LYRUltraSkin" width="480" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Rect id="colorCanvas" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="anigroup" width="359" horizontalCenter="0" y="177" anchorOffsetY="0" height="362" anchorOffsetX="0">
+		<e:Image source="tongyongtip1" scale9Grid="5,5,14,14" left="0" top="0" right="0" bottom="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,18,3,4" left="0" right="0" top="0" bottom="0" anchorOffsetY="0"/>
+		<e:Image source="tongyongkuang3tou" right="0" left="0" top="0"/>
+		<e:Label id="abilityName" text="神力灌注" y="12" size="20" textAlign="right" bold="true" horizontalCenter="0" textColor="0xffd93f"/>
+		<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" horizontalCenter="0" bottom="-35" touchEnabled="false"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" horizontalCenter="0" bottom="-30" touchEnabled="false"/>
+		<e:Image source="jiantouyou" horizontalCenter="0" top="101"/>
+		<e:Label text="新的外观：" x="19" y="59" size="22" bold="true" textColor="0xf8b141"/>
+		<e:Label text="神力效果：" x="21" y="261" size="22" bold="true" textColor="0xf8b141"/>
+		<e:Label text="神力晋升：" x="18" y="172" size="22" bold="true" textColor="0xF8B141"/>
+
+
+		<e:Image width="310" height="57" source="tongyongtip3" scale9Grid="9,9,12,12" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0.5" top="287"/>
+		<e:Label id="abilityDesc" text="烈焰戒指晋升为神烈焰戒指" y="298" size="18" textColor="0xd1c28f" height="36" anchorOffsetX="0" width="288" horizontalCenter="0.5" verticalAlign="middle" anchorOffsetY="0"/>
+
+		<e:Label text="为" y="228" size="18" textColor="0xD1C28F" anchorOffsetY="0" anchorOffsetX="0" x="23"/>
+
+
+		<e:Group y="203" horizontalCenter="0">
+			<e:Label text="使用                  后可将                  晋升" y="1" size="18" anchorOffsetY="0" width="315" textColor="0xd1c28f" anchorOffsetX="0" x="0"/>
+			<e:Label text="神·烈焰戒指" y="24" size="20" bold="true" anchorOffsetY="0" anchorOffsetX="0" textColor="0xf3311e" x="22"/>
+			<e:Label text="烈焰戒指" y="0" size="20" bold="true" anchorOffsetY="0" textColor="0xf8b141" x="185"/>
+			<e:Label id="itemName" text="烈焰精髓" y="0" size="20" bold="true" textColor="0xffd93f" x="41"/>
+		</e:Group>
+		<e:Group id="ring0eff" y="92" width="32" height="32" scaleX="1" scaleY="1" left="64">
+		</e:Group>
+		<e:Group id="ring1eff" y="92" width="32" height="32" scaleX="1" scaleY="1" right="64">
+		</e:Group>
+		
+	</e:Group>
+</e:Skin>

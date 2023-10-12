@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuneEquipChangeSkinItem" width="480" height="120" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="all,dis,get,now" >
+	<w:Config id="1586b1c98a7"/>
+	<e:Image   source="tongyonglabbg" left="0" right="0" top="0" bottom="0" scale9Grid="58,30,14,10"/>
+	<e:Label id="nameLab" text="战纹名称 LVx" textColor="0xca8a00" x.dis="20" text.dis="当前装备" visible="false"/>
+	<e:Label id="back" text="回收可得精华123" y="16" size="16" textColor="0xdfd1b5" textAlign="center" includeIn="all" right="22" visible="false"/>
+	<e:Group width="200" height="100" x="98" y="10">
+		<e:Label id="runeName" text="自然 lv.1" textColor="0xd242fb" size="18" left="101" verticalCenter.now="-13" verticalCenter.get="-13" verticalCenter.dis="-13" includeIn="all,now" y.all="31.35" x.all="101" scaleX.all="1" scaleY.all="1"/>
+		<e:Label id="attr" text="生命\n111" size="18" text.dis="无" width="230" textColor="0xd1c28f" verticalAlign="middle" includeIn="all,dis" x="2" y="10" verticalAlign.all="top" anchorOffsetY.all="0" y.all="51" x.all="101"   visible.dis="false"/>
+		<e:layout>
+			<e:VerticalLayout verticalAlign="middle" horizontalAlign="left"/>
+		</e:layout>
+	</e:Group>
+	<e:Group width="220" height="18" includeIn="all" y="68"   left="101" visible="false">
+		<e:Label id="attrValue" text="+6708" size="18" textColor="0xe2dfd4"   includeIn="all,now" y.all="0" x.all="40" scaleX.all="1" scaleY.all="1"/>
+		<e:Label id="attrName" text="生命" textColor="0xd1c28f" size="18"   includeIn="all,now" y.all="0" x.all="0" scaleX.all="1" scaleY.all="1"/>
+	</e:Group>
+	<e:Label text="当前没有镶嵌战纹" x="100" size="18" width="230" height="80" verticalCenter="0" verticalAlign="middle" visible.all="false" textAlign="center" textColor.dis="0x9f946d" bold.dis="true" bold="true" includeIn="all,dis" textColor="0xd1c28f" horizontalCenter.dis="0"/>
+	<e:Group id="tag" x="413" includeIn="all,now" visible="false">
+		<e:Image source="xiejiaotiao" x="17" y="-14" rotation="45" width="90" scale9Grid="21,2,1,17"  />
+		<e:Label text="当前镶嵌" x="25" y="-1" rotation="45" size="15"  />
+	</e:Group>
+	<e:Button id="changeBtn" skinName="Btn1Skin" label="更  换" includeIn="all" verticalCenter="0" right="20"/>
+	<e:Button id="changeBtn0" skinName="Btn1Skin" label="装  备" visible.all="false" includeIn="all" right="20" verticalCenter="0"/>
+	<e:Button id="getBtn" skinName="Btn1Skin" label="获得战纹" includeIn="get" verticalCenter="0" horizontalCenter="0"/>
+	<ns1:BaseComponent id="itemIcon" className="RuneDisplay" skinName="RuneItemSkin" left="6" includeIn="all,now" height="86" width="86" verticalCenter="-3"/>
+	<e:Label id="now" text="当前镶嵌" size="20" verticalCenter="0" bold="true" right="43" textColor="0x35e62d" includeIn="all,now"/>
+	<e:Label id="already" text="已有属性" size="20" verticalCenter="0" bold="true" right="43" textColor="0xf3311e" includeIn="all,now" visible="false"/>
+</e:Skin>

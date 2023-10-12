@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SFHongBaoItem" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*"
+        xmlns:w="http://ns.egret.com/wing" width="527" height="247"  states="10,100,1000" >
+	<w:Config id="15a98a3982e" />
+	<e:Label text="发放大红包消耗100点红包积分，本服玩家可抢" size="20" horizontalCenter="0" textColor="0x7e6437" bold="true" bottom="2" text.1000="消耗        点积分发                  战区前    名玩家可以抢元宝" text.10="消耗      点积分发红包，本服前    名玩家可以抢元宝" text.100="消耗      点积分发                   本服前    名玩家可以抢元宝" textColor.1000="0xd1c28f" textColor.100="0xd1c28f" textColor.10="0xd1c28f" horizontalCenter.10="0.5" bottom.10="4" horizontalCenter.100="0.5" bottom.100="4" bottom.1000="4" horizontalCenter.1000="0.5"/>
+	<e:Image anchorOffsetX="0" anchorOffsetY="0" top="47" left="36" source="xn_yuanbao2_png" source.10="xn_yuanbao1_png" top.10="20" left.10="7" source.1000="xn_yuanbao3_png" top.1000="30" left.1000="19" left.100="22" top.100="30"/>
+	<e:Image x="185" y="11" source="xn_hongbaoarrow" y.1000="11" x.1000="185" y.10="11"/>
+	<e:Label text="100" x="181" y.1000="223" size="20" textColor="0x00ff00" x.10="73" bottom.10="4" bold.10="true" text.100="500" x.100="53" bottom.100="4" bold.100="true" x.1000="48" text.1000="1000" bold.1000="true"/>
+	<e:Label text="20" x="372" y.1000="223" y.10="211" size="20" textColor="0x00ff00" x.10="310" bottom.10="4" bold.10="true" x.100="333" bottom.100="4" bold.100="true" x.1000="336" text.1000="40" bold.1000="true"/>
+	<e:Label text="Label" x="293" y="210" textColor="0xffd93f" size="20" text.10="红包" bold.10="true" x.10="188" y.10="219" size.10="24" includeIn="100,1000" text.100="豪华红包" bold.100="true" size.100="24" x.100="169" y.100="221" text.1000="至尊红包" size.1000="24" x.1000="174" bold.1000="true" y.1000="221"/>
+</e:Skin>

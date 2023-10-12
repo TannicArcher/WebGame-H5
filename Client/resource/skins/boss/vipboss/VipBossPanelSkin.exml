@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="VipBossPanelSkin" width="554" height="716" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15caaa0d9f1"/>
+	<e:Group id="bosshome1" width="553" height="238" x="0" y="1"    >
+
+		<e:Label text="BOSS之家一层  请" x="194" y="100"/>
+	</e:Group>
+	<e:Group id="bosshome2" width="530" height="235" x="21" y="244"  >
+
+	</e:Group>
+	<e:Label text="BOSS之家二层 充" x="194" y="341"/>
+	<e:Group id="bosshome3" width="552" height="200" x="1" y="503" >
+
+	</e:Group>
+	<e:Label text="BOSS之家三层 钱" x="194" y="582"/>
+</e:Skin>

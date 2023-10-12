@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuildWinSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="1040" width="580">
+	<e:Group y="0" width="640" horizontalCenter="0" visible="false">
+		<e:Button id="recharge" skinName="Btn0Skin" y="4.67" scaleX="1.2" scaleY="1.2" x="429.67"/>
+		<e:Button id="recharge0" skinName="Btn0Skin" y="5.67" width="30" height="30" x="602.67"/>
+		<e:Label id="goldTxt" text="0" y="10.67" size="20" textAlign="center" width="100" x="326.67"/>
+		<e:Label id="ybTxt" text="0" y="10.67" size="20" textAlign="center" width="100" x="499.67"/>
+	</e:Group>
+	<e:TabBar id="tab"  itemRendererSkinName="BtnTab0Skin" horizontalCenter="0" bottom="112" visible="false">
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:TabBar>
+	<e:ViewStack id="viewStack" selectedIndex="2" width="570" horizontalCenter="0" top="84" bottom="170">
+	    <e:Component id="InfoPanel" skinName="GuildInfoSkin" name="基础"  width="570" horizontalCenter="0" top="0" bottom="0" visible="false"/>
+	    <e:Component id="managePanel" skinName="GuildManageBuildSkin" name="管理" width="433"  visible="false"/>
+	    <e:Component id="memberPanel" skinName="GuildMemberSkin" name="成员" y="0" height="520"  visible="false"/>
+	    <e:Component id="listPanel" skinName="GuildListSkin" name="列表" />
+	</e:ViewStack>
+	<e:Button id="closeBtn" skinName="Btn0Skin" label="按钮" y="987" x="594.53" visible="false"/>
+	<e:Image id="redPoint0" source="zjmhongdian" x="123" y="882" visible="false"/>
+</e:Skin>

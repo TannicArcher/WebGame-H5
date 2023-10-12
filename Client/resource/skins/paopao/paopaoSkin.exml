@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="paopaoSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="120" height="36">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="zjmqipao" left="0" right="0" top="0" bottom="0" scale9Grid="6,6,10,10"/>
+		<e:Label id="nameTxt" text="主人主人你在干嘛？" size="16" stroke="1" textColor="0xffb346" strokeColor="0x1c1818" width="108" horizontalCenter="0" verticalCenter="0" textAlign="center"/>
+	</e:Group>
+</e:Skin>

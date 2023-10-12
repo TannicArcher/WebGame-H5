@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RankItemSkirmishSkin" width="500" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="level" text="8转250级" size="20" textColor="0x1DDA1D" fontFamily="黑体" visible="false"/>
+	<e:Label id="reward" y="36" textColor="0xA89C88" text="123456" size="20" x="279.5" height="17" visible="false"/>
+	<e:Image y="0" x="0" source="szjinbi" visible="false"/>
+	<e:Label id="money" y="34" textColor="0xA89C88" text="123456" size="20" x="194" visible="false"/>
+	<e:Image id="t3" width="100%" height="100%" source="bantoutiaobg" scale9Grid="59,5,119,35"/>
+<!--	<e:Image id="month" source="monthcard_json.yk_07" x="289" scaleX="0.8" scaleY="0.8" y="21"/>
+	<e:Image id="vipTitle" source="rank_json.rank_2" x="248" width="14" height="19" y="25" scaleX="0.9" scaleY="0.9"/>-->
+	<e:Label id="count" text="声望：12345" size="24" x="300" textColor="0xbd600d" verticalCenter="0"/>
+	<e:Label id="pos" text="100" size="28" textAlign="center" verticalCenter="0" italic="true" textColor="0xF8B141" bold="true" horizontalCenter="-196"/>
+	<e:Label id="player" text="PK排行榜名" size="24" x="136" textColor="0xD1C28F" verticalCenter="0"/>
+	<e:Image id="vip" x="96" source="xvip_v2_png" verticalCenter="0"/>
+	<e:Image id="t1" source="paihang1" x="26" y="0" visible="false"/>
+</e:Skin>

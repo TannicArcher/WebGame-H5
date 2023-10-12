@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShenYuSuitTipsSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="unactive,active,max" >
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="0">
+		<e:Group x="0" y="0">
+			<e:Group width="350" height="130" y="0" horizontalCenter="0" x="0" scaleX="1" scaleY="1">
+				<e:Image id="background" source="tongyongtip1" scale9Grid="7,6,11,12" left="0" right="0" top="0" bottom="0" x="-3" y="1" scaleX="1" scaleY="1"/>
+				<e:Image source="tongyongtip2" left="0" right="0" top="0" scale9Grid="18,18,2,4" bottom="0" x="-3" y="1" scaleX="1" scaleY="1"/>
+				<e:Label id="state0" text="未激活" textColor="0xFF0000" size="20" left="17" top="13" x="14" y="14" scaleX="1" scaleY="1" text.unactive="未激活" bold.unactive="true" text.active="已激活" textColor.active="0x00ff00" bold.active="true" textColor.unactive="0xff0000" text.max="已满级" textColor.max="0x00ff00" bold.max="true"/>
+				<e:Label id="name0" text="神羽大师1级" horizontalCenter="0" size="20" textColor="0xFF9900" bold="true" top="29" x="117" y="30" scaleX="1" scaleY="1"/>
+				<e:Label id="content0" text="激活条件：全部神羽1阶可激活（2/4）\n激活属性：羽翼全属性+5%" textColor="0xFFFFCC" width="310" size="18" textAlign="left" horizontalCenter="0" top="70" x="19" y="71" scaleX="1" scaleY="1" text.active="激活属性：羽翼全属性+5%" text.max="激活属性：羽翼全属性+5%"/>
+				<e:Image source="shuxingbg4" x="0" y="0"/>
+			</e:Group>
+			<e:Group y="132" width="350" height="130" horizontalCenter="0" x="0" scaleX="1" scaleY="1" includeIn="active">
+				<e:Image id="background0" source="tongyongtip1" scale9Grid="7,6,11,12" left="0" right="0" top="0" bottom="0" x="-3" y="1" scaleX="1" scaleY="1"/>
+				<e:Image source="shuxingbg4" x="0" y="0"/>
+				<e:Image source="tongyongtip2" left="0" right="0" top="0" scale9Grid="18,18,2,4" bottom="0" x="-3" y="1" scaleX="1" scaleY="1"/>
+				<e:Label id="state1" text="未激活" textColor="0xFF0000" size="20" left="17" top="13" x="14" y="14" scaleX="1" scaleY="1"/>
+				<e:Label id="name1" text="神羽大师1级" horizontalCenter="0" size="20" textColor="0xFF9900" bold="true" top="29" x="117" y="30" scaleX="1" scaleY="1" text.active="神羽大师2级"/>
+				<e:Label id="content1" text="激活条件：全部神羽1阶可激活（2/4）\n激活属性：羽翼全属性+5%" textColor="0xFFFFCC" width="310" size="18" textAlign="left" horizontalCenter="0" top="70" x="19" y="71" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" horizontalCenter="0" bottom="-35" x="25" y="662" scaleX="1" scaleY="1">
+			<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

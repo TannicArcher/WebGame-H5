@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SsEquipForgeSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        xmlns:tween="egret.tween.*" includeIn="normalWithPrompt,disabledWithPrompt" width="580"
+        height="930">
+	<w:Declarations></w:Declarations>
+	<w:Config id="158995f2c90"></w:Config>
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" top="0" right="0" bottom="0"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<e:Group horizontalCenter="0" top="65" width="568" anchorOffsetY="0" height="758">
+		<e:Image source="tongyongmianbanbg" scale9Grid="23,21,2,2" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" height="732"/>
+		<e:Image anchorOffsetY="0" source="shenshouForgeBg_png" y="35" width="552" height="483" x="7"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,273,47" left="5" right="5"/>
+		<e:Label text="强   化" size="24" bold="true" y="12" horizontalCenter="0" textColor="0xA67D44"/>
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" scaleX="0.9" scaleY="0.9" x="151" y="60"/>
+		<e:Image width="462" height="107" x="52" y="351" source="shuxingbg" anchorOffsetX="0" scale9Grid="83,20,2,2" anchorOffsetY="0"/>
+		<e:Image y="320" source="shuxingbg2" scale9Grid="187,4,5,24" anchorOffsetX="0" width="249" x="44"/>
+		<e:Image y="320" source="shuxingbg2" scaleX="-1" scale9Grid="188,4,4,24" anchorOffsetX="0" width="243" x="524"/>
+		<e:Label id="equipName" text="皇极血瞳" y="319" size="26" bold="true" x="231"/>
+		<e:Group id="iconGroup" y="154" horizontalCenter="0">
+			<ns1:BaseComponent id="itemIcon" x="8" y="20" skinName="ItemSkin" className="ItemBase" scaleX="1.2" scaleY="1.2"/>
+			<e:Image x="0" y="0" source="dt_kuang" scaleX="1.2" scaleY="1.2"/>
+		</e:Group>
+		<e:Group y="463" x="22">
+			<e:Rect width="460" height="18" x="34" y="9"/>
+			<e:Image id="maxExpImg" width="448" anchorOffsetX="0" height="17" x="38" y="9" source="jingyantiao3" scale9Grid="1,4,15,9"/>
+			<e:Label id="maxExpTxt" text="强化等级已达到最大值" size="14" horizontalCenter="0.5" verticalCenter="-1.5" bold="true" textColor="0xd1c28f"/>
+			<e:ProgressBar id="exp" width="448" x="38" y="9" skinName="bar1Skin" value="100"/>
+			<e:Image width="524" x="0" y="0" source="jingyantiao1" scale9Grid="58,4,6,29" anchorOffsetX="0"/>
+		</e:Group>
+		<e:Image source="tongyonglabbg" scale9Grid="42,20,48,41" anchorOffsetY="0" anchorOffsetX="0" height="146" width="520" x="24" y="502"/>
+		<e:Button id="departBtn" label="一键分解" skinName="Btn1Skin" x="96" y="659"/>
+		<e:Button id="lvUpBtn" label="升   级" skinName="Btn1Skin" x="316" y="659"/>
+		<e:Image id="rightRed" source="zjmhongdian" touchEnabled="false" x="452" y="658"/>
+		<e:Group x="55" y="511">
+			<e:Image x="0" y="0" source="quality0" scale9Grid="8,8,48,48" width="76" height="76" scaleX="0.8" scaleY="0.8"/>
+			<e:Image x="80" y="0" source="quality0" width="76" height="76" scale9Grid="28,29,5,5" scaleX="0.8" scaleY="0.8"/>
+			<e:Image x="160" y="0" source="quality0" width="76" height="76" scale9Grid="28,29,5,5" scaleX="0.8" scaleY="0.8"/>
+			<e:Image x="240" y="0" source="quality0" width="76" height="76" scale9Grid="28,29,5,5" scaleX="0.8" scaleY="0.8"/>
+			<e:Image x="320" y="0" source="quality0" width="76" height="76" scale9Grid="28,29,5,5" scaleX="0.8" scaleY="0.8"/>
+			<e:Image x="400" y="0" source="quality0" width="76" height="76" scale9Grid="28,29,5,5" scaleX="0.8" scaleY="0.8"/>
+			<e:Image x="0" y="66" source="quality0" width="76" height="76" scale9Grid="8,8,48,48" scaleX="0.8" scaleY="0.8"/>
+			<e:Image x="80" y="66" source="quality0" width="76" height="76" scale9Grid="28,29,5,5" scaleX="0.8" scaleY="0.8"/>
+			<e:Image x="160" y="66" source="quality0" width="76" height="76" scale9Grid="28,29,5,5" scaleX="0.8" scaleY="0.8"/>
+			<e:Image x="240" y="66" source="quality0" width="76" height="76" scale9Grid="28,29,5,5" scaleX="0.8" scaleY="0.8"/>
+			<e:Image x="320" y="66" source="quality0" width="76" height="76" scale9Grid="28,29,5,5" scaleX="0.8" scaleY="0.8"/>
+			<e:Image x="400" y="66" source="quality0" width="76" height="76" scale9Grid="28,29,5,5" scaleX="0.8" scaleY="0.8"/>
+		</e:Group>
+		<e:List id="list" y="511" anchorOffsetY="0" anchorOffsetX="0" scaleX="0.8" scaleY="0.8" width="587.25" height="160.75" horizontalCenter="0" itemRendererSkinName="shenshouEquipItem">
+			<e:layout>
+			<e:TileLayout requestedRowCount="2" verticalGap="-14" requestedColumnCount="6" horizontalGap="10"/>
+			</e:layout>
+		</e:List>
+
+
+
+		<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" right="0" top="2" scaleX="0.8" scaleY="0.8"/>
+
+
+		<ns1:BaseComponent id="attrPanel" y="355" skinName="SsEquipAttrItem" horizontalCenter="0"/>
+		<e:Label text="分解已升级强化等级的装备将全额返还兽神精魄" size="18" textColor="0xf8b141" bold="true" horizontalCenter="14" bottom="12"/>
+		<e:Image x="82" y="726" source="gantanhao"/>
+	</e:Group>
+</e:Skin>

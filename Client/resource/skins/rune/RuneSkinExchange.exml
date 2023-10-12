@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuneSkinExchange" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="716" width="554" >
+	<w:Config id="1586b1c98a7"/>
+	<e:Group id="Rune" visible="false">
+	</e:Group>
+	<e:Scroller id="menuScroller" top="0" left="0" right="0" bottom="0">
+		<e:List id="menulist0" top="0" right="0" left="0" bottom="1" itemRendererSkinName="RuneExchangeItemSkin" >
+			<e:layout>
+				<e:VerticalLayout gap="2" horizontalAlign="center"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

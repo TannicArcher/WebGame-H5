@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PunchExchangeItemSkin" width="368" height="90" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15a59527d66"/>
+	<e:Image  source="tongyonglabbg" left="0" right="0" top="0" bottom="0" scale9Grid="14,10,100,51"/>
+	<e:Image source="shuzibg" x="154" y="45" width="90" scale9Grid="3,3,12,9"/>
+	<e:Label id="descLab" text="10/20" x="150" y="48" size="18" verticalAlign="middle" width="100" textAlign="center" textColor="0xd1c28f"/>
+	<e:Label text="消耗:" x="90" y="48" size="18" verticalAlign="middle" textColor="0x9f946d"/>
+	<e:Label id="nameLab" text="等级" x="90" y="18" size="18" textColor="0xd1c28f"/>
+	<e:Button id="goBtn" label="兑换" skinName="Btn1Skin" width="100" height="50" x="248" y="20"/>
+	<e:Image id="redPoint" source="zjmhongdian" y="20" x="324" visible="false"/>
+	<e:Image id="icon" source="hejisuipian" x="133" y="44"/>
+	<ns1:BaseComponent id="itemIcon0" skinName="ItemIconSkin" className="ItemIcon" x="10" verticalCenter="0" scaleX="0.9" scaleY="0.9"/>
+</e:Skin>

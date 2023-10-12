@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CEBossSkin" width="560" height="620" currentState="hefu" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="hefu,lieyan" >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="rechargebg_png" width="554" horizontalCenter="0" anchorOffsetY="0"  scale9Grid="0,0,386,21" bottom="80" top="0"/>
+		<e:Image id="show1" source="wing100_png" width="372" height="372" horizontalCenter="-133" top="221" visible="false"/>
+		<e:Group id="infoBg" left="10" right="10" top="40" x="10" y="40" scaleX="1" scaleY="1" height="110">
+			<e:Image left="0" right="0" top="0" bottom="0" source="recharge_headbg_png"/>
+			<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="15" bottom="15" visible="false"/>
+			<e:Group verticalCenter="0" left="28">
+			<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+			<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+			<e:Label id="actDesc" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+			<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+			</e:Group>
+		</e:Group>
+		<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50" x="80" scaleX="1"/>
+		<e:Image id="title" y="0" horizontalCenter="0" x="211" scaleX="1" scaleY="1" source="biaoti_lianchong" source.lieyan="biaoti_jifenduihuan"/>
+		<e:Label id="cost" text="积分:9999999" textColor="0xd1c28f" size="20" horizontalCenter="100" bottom="82"/>
+		<e:Group id="bossGroup" width="200" height="200" horizontalCenter="-59" bottom="-18" horizontalCenter.lieyan="-143" bottom.lieyan="-1" scaleX.lieyan="-1" width.lieyan="150" height.lieyan="150"/>
+		<e:Image source="words_kuangshuazhuangbei" horizontalCenter="81" bottom="173" visible.lieyan="false"/>
+		<e:Button id="boss" label="野外BOSS" skinName="Btn1Skin" scaleX="1" scaleY="1" horizontalCenter="-100" x="202" bottom="20"/>
+		<e:Button id="costbtn" label="积分兑换" skinName="Btn1Skin" scaleX="1" scaleY="1" horizontalCenter="100" x="212" bottom="20"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" scaleX="1" scaleY="1" horizontalCenter="169" bottom="60" visible="false"/>
+		<e:Group includeIn="lieyan" horizontalCenter="0" bottom="103">
+			<e:Image includeIn="lieyan" x="0" y="0" source="gantanhao"/>
+			<e:Image includeIn="lieyan" x="0" y="25" source="gantanhao"/>
+			<e:Label text="击杀的BOSS等级越高积分奖励越丰厚" includeIn="lieyan" x="25" y="2" size="18" bold="true" textColor="0xf8b141"/>
+			<e:Label text="BOSS归属者将获得更多积分" includeIn="lieyan" x="27" y="27" size="18" textColor="0xF8B141" bold="true"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

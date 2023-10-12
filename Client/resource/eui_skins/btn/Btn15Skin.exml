@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Btn15Skin" states="up,down,disabled"
+        currentState="up" xmlns:e="http://ns.egret.com/eui"  width="102" height="46">
+	<e:Image x.down="1" y.down="1" left="0" right="0" top="0" bottom="0" top.down="2" scale9Grid.disabled="16,0,54,40" scale9Grid.down="16,0,54,40" source.up="btn60" scale9Grid.up="18,0,51,40" source.down="btn60" bottom.down="2" right.down="2" left.down="2" source.disabled="btn62" source="btn60"/>
+	<e:Label size="22" text="按钮" id="labelDisplay" x.down="1" y.down="1" horizontalCenter="0" verticalCenter="0" verticalCenter.down="0" textColor="0xfff2be" textColor.up="0xfff2be" textColor.down="0xfff2be" size.down="20" textColor.disabled="0xc4c4c4" bold.disabled="true" bold.up="true" bold.down="true"/>
+</e:Skin>

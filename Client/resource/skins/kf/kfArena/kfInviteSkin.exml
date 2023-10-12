@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="kfInviteSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="930" width="580" >
+	<e:Rect left="0" top="0" bottom="0" right="0" fillAlpha="0.8"/>
+	<e:Group height="690" horizontalCenter="0" bottom="172">
+		<e:Image source="tongyongmianbanbg" scale9Grid="12,12,24,22" top="0" bottom="0" left="0" right="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,19,3,4" left="4" top="4" bottom="4" right="4"/>
+		<e:Group horizontalCenter="-10" bottom="10">
+			<e:TabBar id="tab" y="45" x="2" itemRendererSkinName="BtnTab0Skin" anchorOffsetX="0" scaleX="1" scaleY="1">
+				<e:ArrayCollection>
+				<e:Array>
+					<e:Object null="" name="好  友"/>
+					<e:Object null="" name="帮  派"/>
+				</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:HorizontalLayout gap="10"/>
+				</e:layout>
+			</e:TabBar>
+		</e:Group>
+		<e:Scroller top="10" bottom="100" left="10" right="10">
+			<e:List id="listView" itemRendererSkinName="kfArenaMemberItemSkin">
+			<e:ArrayCollection>
+				<e:Array>
+				<e:Object null=""/>
+				<e:Object null=""/>
+				<e:Object null=""/>
+				<e:Object null=""/>
+				<e:Object null=""/>
+				<e:Object null=""/>
+				</e:Array>
+			</e:ArrayCollection>
+			</e:List>
+		</e:Scroller>
+		<e:Label id="worldInvite" text="世界邀请" textColor="0x00ff00" size="20" horizontalCenter="186" bottom="33"/>
+		<e:Label id="noPlayer" text="暂无满足条件玩家在线" textColor="0x00FF00" size="20" horizontalCenter="-3" bottom="390"/>
+		<e:Label text="只显示当前在线、积分相差200、未组队、有次数的玩家" textColor="0x00FF00" size="20" horizontalCenter="-3" bottom="68"/>
+	</e:Group>
+	<e:Group id="backBtnGroup" width="100" height="100" horizontalCenter="250" bottom="4">
+		<e:Button id="closeBtn0" label="按钮" skinName="Btn0Skin" icon="zjmfanhui" x="10" y="10"/>
+	</e:Group>
+
+
+
+
+
+
+
+</e:Skin>

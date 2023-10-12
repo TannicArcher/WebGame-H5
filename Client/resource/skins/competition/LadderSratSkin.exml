@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LadderSratSkin" width="46" height="44" xmlns:e="http://ns.egret.com/eui" states="light,black" >
+	<e:Image source="star1" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image visible.black="false" source="star2" horizontalCenter="0" verticalCenter="0"/>	
+</e:Skin>

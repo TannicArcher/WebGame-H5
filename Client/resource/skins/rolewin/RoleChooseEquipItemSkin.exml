@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoleChooseEquipItemSkin" width="450" height="120" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image left="0" right="0" top="0" bottom="0" source="tongyonglabbg" scale9Grid="42,20,48,41"/>
+	<e:Image source="bantoutiaobg" x="40" y="10" width="200" height="30" visible="false"/>
+	<e:Image y="36" source="tongyongline" width="350" x="81"/>
+	<e:Label id="nameTxt" text="装备名字" y="90" size="18" horizontalCenter="-167" textColor="0xd1c28f"/>
+	<e:Label id="power" text="评分：999999" size="20" y="14" textColor="0xf8b141" x="280"/>
+	<e:Image id="upImg" x="417" y="11" source="tongyongup" width="30" height="24"/>
+	<e:Label text="推荐" size="20" y="20" x="280" textColor="0x35e62d" visible="false"/>
+	<e:Label text="基础属性" x="20" y="92" size="18" bold="true" textColor="0x7e6437" visible="false"/>
+	<e:Label id="attr1" text="攻击力+3000000  攻击力+30000   攻击力+30000   攻击力+30000" y="41" size="18" width="150" x="110" textColor="0x9f946d" verticalAlign="middle" height="72" />
+	<e:Button id="changeBtn" skinName="Btn1Skin" label="更 换" y="50" name="changeBtn" x="280" width="140"/>
+	<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" y="10" horizontalCenter="-167"/>
+	<e:Image id="best" y="43" touchEnabled="false" right="15" source="tuijian2"/>
+	<e:Image source="bantoutiaoboss" x="95" y="62" scaleX="-1" height="20" width="50" visible="false"/>
+	<e:Label id="levelText" text="60级" y="14" size="20" textColor="0xf8b141" x="166"/>
+	<e:Label id="levelStrText" text="等级:" y="15" size="18" x="110" textColor="0xd1c28f"/>
+	<e:Group id="now" x="381" y="52" visible="false">
+		<e:Image source="xiejiaotiao" scale9Grid="20,2,2,15" rotation="135" width="79" scaleX="1.6" scaleY="1.6" x="89" y="0"/>
+		<e:Label text="当前装备" size="20" bold="true" rotation="-45" textColor="0xd1c28f" x="-2" y="54"/>
+	</e:Group>
+</e:Skin>

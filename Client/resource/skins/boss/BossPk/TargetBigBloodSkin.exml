@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TargetBigBloodSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="bossBloodGroup" width="480" horizontalCenter="0" top="20">
+		<e:Rect height="20" y="50" left="110" right="30" fillColor="0x111010"/>
+		<e:Rect width="82" height="82" x="17" y="19" ellipseWidth="82" ellipseHeight="82" fillColor="0x111010"/>
+		<e:Image id="head0" source="" y="22" x="20" scaleX="1.2" scaleY="1.2"/>
+		<e:Image id="grayImg0" y="52" source="bosshp2" width="340" x="110"/>
+		<e:Image y="22" height="28" width="396" source="bantoutiaobg" x="44" scale9Grid="51,5,136,35"/>
+		<e:ProgressBar id="bloodBar0" y="52" value="50" left="110" right="30" skinName="bar7Skin"/>
+		<e:Image left="0" right="0" scale9Grid="150,0,9,122" source="bosstouxiangk" y="0"/>
+		<e:Group id="hudun0" x="120" y="74" visible="false">
+		<e:Rect left="13" right="13" top="0" bottom="10" fillColor="0x111010"/>
+		<e:ProgressBar id="hudunbloodBar0" width="290" height="4" value="100" x="12" y="1" skinName="bar6Skin"/>
+		<e:Image source="zdbossskin_json.zdbosshudunxuetiaobg" x="0" y="0" width="315" scale9Grid="15,1,13,3"/>
+		</e:Group>
+		<e:Group id="boss" x="126" y="27">
+			<e:Label id="lvTxt0" y="0" size="20" text="Lv.2000" x="0" textColor="0xF8B141" width="70" textAlign="right" scaleX="1" scaleY="1"/>
+			<e:Label id="nameTxt0" y="-1" size="20" text="祖玛教主" x="74" textColor="0xD1C28F" bold="true" scaleX="1" scaleY="1"/>
+			<e:layout>
+			<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="player" x="126" y="27" visible="false">
+			<e:Label id="nameTxt1" y="-1" size="20" text="祖玛教主" x="74" textColor="0xD1C28F" bold="true" scaleX="1" scaleY="1"/>
+			<e:layout>
+			<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Button id="tipBtn0" label="奖励" y="102" skinName="Btn18Skin" horizontalCenter="-181.5"/>
+	</e:Group>
+</e:Skin>

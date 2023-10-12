@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MemberHeadSkin" currentState="war" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"   states="war,panel"  width="100" height="110">
+	<w:Config id="15c397cdd5d"/>
+	<e:Image id="namebg" y="70" height="38" width="100" horizontalCenter="0" source="bantoutiaobg2"/>
+	<e:Image source="juesetxk" x="15" y="1"  />
+	<e:Image id="roleHead" source="yuanhead10" width="52" height="52" x="25" y="12"  />
+	<e:Image x="13" y="0"   source="juesetxkxue" visible="false"/>
+	<e:Label id="roleName" text="玩家名六个字" y="76" size="14" textColor="0xFFCE0B" textAlign="center" horizontalCenter="2" x="8"   textColor.war="0xd1c28f" horizontalCenter.panel="0" y.panel="76" horizontalCenter.war="0" y.war="76" textColor.panel="0xf3311e" anchorOffsetX="0" width="122" anchorOffsetY="0"/>
+	<e:Label id="num" text="200" y="58" size="16" visible.war="false" stroke.panel="1" strokeColor.panel="000000" textColor="0xd1c28f" horizontalCenter="-15"/>	
+</e:Skin>

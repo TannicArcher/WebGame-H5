@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WorldBossJiangLiTishiSkin2" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15ca5ef6a05"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0"/>
+	<e:Group verticalCenter="0" horizontalCenter="0" width="400" height="340">
+		<e:Image   source="tongyongtip1" left="0" right="0" top="0" bottom="0" scale9Grid="9,7,10,8"/>
+		<e:Group width="400" y="0" height="41" horizontalCenter="0">
+			<e:Image source="teshuwenzibg" left="0" right="0"/>
+			<e:Label id="nameTxt" text="奖励说明" size="24" textColor="0xd1c28f" y="8" horizontalCenter="0"/>
+			<e:Label id="nameTxt0" text="护盾奖励" size="24" bold="true" textColor="0xD1C28F" horizontalCenter="0" verticalCenter="0" x="127" y="19" visible="false"/>
+		</e:Group>
+		<e:Image id="giveUp" source="chatclose" y="0" right="0"/>
+		<e:Group horizontalCenter="0" bottom="10">
+			<e:Label text="1、首个对BOSS造成伤害的玩家可以获得归属" size="18" height="20" x="0.009999999999990905" y="0"   textColor="0x9f946d"/>
+			<e:Label text="2、当归属的玩家被其他玩家击败，移交归属权" size="18" textColor="0x9F946D" height="20" x="0" y="24"  />
+			<e:Label text="3、BOSS死亡时最终归属的玩家获得归属奖励" size="18" textColor="0x9F946D" height="20" x="0.009999999999990905" y="47.66999999999996"  />
+		</e:Group>
+		<e:Group width="390" height="110" y="54" horizontalCenter="0">
+			<e:Image   left="0" right="0" top="0" bottom="0" x="-5" y="-70"   source="bantoutiaobg2" scale9Grid="30,2,32,17"/>
+			<e:Label text="归属奖励" size="20" textColor="0xf8b141" width="20" verticalCenter="0" x="6" bold="true"/>
+			<e:List id="belongList" itemRendererSkinName="ItemSkin" scaleY="0.8" scaleX="0.8" bottom="2" horizontalCenter="0">
+				<e:layout>
+				<e:HorizontalLayout gap="2"/>
+				</e:layout>
+			</e:List>
+			<e:Label text="高概率获得 合击符文" size="24" y="4" bold="true" italic="true" textColor="0xff750f" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group width="390" height="84" y="172" horizontalCenter="0">
+			<e:Image   left="0" right="0" top="0" bottom="0" x="-5" y="-70"   source="bantoutiaobg2" scale9Grid="30,2,32,17"/>
+			<e:Label text="参与奖励" size="18" x="7" textColor="0xF8B141" width="20" verticalCenter="0"/>
+			<e:List id="joinList" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8" bottom="2" horizontalCenter="0">
+				<e:layout>
+				<e:HorizontalLayout gap="2"/>
+				</e:layout>
+			</e:List>
+		</e:Group>
+	</e:Group>
+</e:Skin>

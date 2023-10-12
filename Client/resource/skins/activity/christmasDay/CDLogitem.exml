@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CDLogitem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="120">
+	<ns1:BaseComponent id="item" className="SevenDayIconBase" skinName="ItemSkin"  horizontalCenter="0" y="4" visible="false"/>
+	<e:Image verticalCenter="0" horizontalCenter="0" source="cd_rewardicon1"/>
+	<e:Image id="select" horizontalCenter="0" verticalCenter="0" source="cd_rewardicon2" visible="false"/>
+	<e:Image id="checkedMask" horizontalCenter="0" verticalCenter="0" source="cd_rewardicon3" visible="false"/>
+	<e:Image id="checked" source="duoxuangou" verticalCenter="-1.5" horizontalCenter="-0.5" height="42" width="42" visible="false"/>
+</e:Skin>

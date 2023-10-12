@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RedBagWinSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        width="580" height="930" states="send,rob">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6" touchEnabled="true" />
+	<e:Image source="hongbao_png" horizontalCenter="0" verticalCenter="-56.5"  width="381" height="527"/>
+	<e:Group horizontalCenter="0" verticalCenter="-300">
+		<e:Label text="红包总金额" includeIn="send" y="8" size="20" x="0" textColor="0xd1c28f" />
+		<e:Label text="可用金额" includeIn="rob" y="8" size="20" x="10" textColor="0xd1c28f" visible="false" />
+		<ns1:BaseComponent id="price" skinName="PriceIconSkin" className="PriceIcon" includeIn="send" x="112" y="0" />
+	</e:Group>
+	<e:Group horizontalCenter="0" verticalCenter="-76">
+		<e:Label id="remainBag" text=" 2/32" includeIn="rob" y="0" size="20" textAlign="center" textColor="0x20c30b"
+		         width="82" horizontalCenter="39" />
+		<e:Label id="remainBag0" text="红包剩余" includeIn="rob" y="0" size="20" textAlign="center" textColor="0xD1C28F"
+		         width="82" horizontalCenter="-39" />
+	</e:Group>
+	<e:Group  width="362" horizontalCenter="0" verticalCenter="-70" height="100">
+		<e:Label text="发放元宝：" includeIn="send" x="12" width="106" size="20" height="22" textColor="0x9f946d"  verticalCenter="-28"/>
+		<e:Label text="发放个数：" includeIn="send" x="12" size="20" width="103" height="23" textColor="0x9f946d"  verticalCenter="18"/>
+		<e:Image includeIn="send" 
+		         width="80" alpha="0.7" horizontalCenter="16"  verticalCenter="-29" source="shuzibg" scale9Grid="5,5,14,14" height="44"/>
+		<e:Image includeIn="send" scale9Grid="5,5,14,14"
+		          width="80" alpha="0.7"  verticalCenter="20" source="shuzibg" height="44" horizontalCenter="16"/>
+		<e:Button id="btn1" label="按钮" includeIn="send" x="101" skinName="Btn0Skin" icon="btn-"  verticalCenter="-28"/>
+		<e:Button id="btn3" label="按钮" x="101" skinName="Btn0Skin" icon="btn-" includeIn="send"  verticalCenter="18"/>
+		<e:Button id="btn2" label="按钮" includeIn="send" x="245" skinName="Btn0Skin" icon="btnadd"  verticalCenter="-28"/>
+		<e:Button id="btn4" label="按钮" includeIn="send" x="245" skinName="Btn0Skin" icon="btnadd"  verticalCenter="18"/>
+		<e:Button id="btn5" includeIn="send" icon="btnmax" skinName="Btn0Skin"  verticalCenter="-28" right="0"/>
+		<e:Button id="btn6" includeIn="send" icon="btnmax" skinName="Btn0Skin"  verticalCenter="18" right="0"/>
+		<e:Label id="num1" x="154" restrict="0-9" width="86" height="28" visible.rob="false" 
+		         textAlign="center"  verticalCenter="-29" text=""/>
+		<e:Label id="num2" x="154" restrict="0-9" width="86" height="28" visible.rob="false" textAlign="center"  verticalCenter="19" text=""/>
+		<e:Image source="tongyongdian2" x="-3" visible.rob="false"  verticalCenter="-28"/>
+		<e:Image source="tongyongdian2" x="-3" visible.rob="false"  verticalCenter="18"/>
+	</e:Group>
+	<e:Button id="send" icon="fahongbao" horizontalCenter.send="0" horizontalCenter="0" visible.rob="false" skinName="RedBagBtnSkin" verticalCenter="56"/>
+	<e:Button id="rob" icon="qianghongbao" horizontalCenter="0" includeIn="rob" skinName="RedBagBtnSkin" verticalCenter="56"/>
+	<e:Image source="hongbaoline" horizontalCenter="0" verticalCenter="-279" />
+</e:Skin>

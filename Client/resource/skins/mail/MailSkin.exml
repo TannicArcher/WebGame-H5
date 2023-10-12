@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MailSkin" width="580" height="310" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Scroller id="mailScroller" top="0" bottom="46" left="10" right="120">
+		<e:List id="mailList" x="0" y="2" itemRendererSkinName="MailItemSkin" useVirtualLayout="false">
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Label id="noMailTip" text="暂无邮件" size="20" textColor="0xb59572" bold="true" horizontalCenter="0" verticalCenter="0" visible="false"/>
+	<e:Image source="chatfenge2" top="0" bottom="44" scale9Grid="6,7,18,3" scaleX="-1" right="119"/>
+	<e:Button label="一键领取" id="allReceiveBtn"  right="6" width="110" bottom="44" skinName="Btn3Skin" height="48"/>
+	<e:Button id="closeBtn" skinName="Btn0Skin" label="按钮" y="617" x="408" visible="false"/>
+	<e:Button id="closeBtn0" skinName="Btn0Skin" label="按钮" y="57" x="432" visible="false"/>
+	<e:Label text="GM不会以任何形式询问玩家帐号和密码，或私聊发布中奖信息。" x="39" textColor="0x444134" size="18" bottom="12" y="280"  />
+	<e:Image source="gantanhao" x="12" bottom="12" y="278"  />
+	
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="shenqiItemskin" width="160" height="44" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Group id="guiderGroup" x="0" y="0"   width="130" height="40"/>
+	<e:Image id="itemImg" width="40" height="40" verticalCenter="0" x="0" source="sq_11_png"/>
+	<e:Label id="labelMaterial" text="这里有5个字" size="20" textColor="0x9F946D" verticalCenter="0" x="44"/>
+	<e:Image id="closeImg" y="3" horizontalCenter="-55" scaleX="0.6" scaleY="0.6" source="" visible="false"/>
+	<e:Group id="groupMc" x="75" y="18"/>
+</e:Skin>

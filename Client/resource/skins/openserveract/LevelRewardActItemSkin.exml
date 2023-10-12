@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LevelRewardActItemSkin" width="413" height="95" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="0,1,2">
+	<e:Button id="rewardBtn" y="24" label="领  取" x="308" visible.1="false" visible.2="false"  skinName="Btn1Skin"/>
+	<e:Image id="rewardedTip" x="318" y="9" visible.1="false" visible.0="false"  source=""/>
+	<e:Scroller width="202" height="87" x="73" y="5">
+		<e:List id="list" width="322" height="104" x="30" y="60" itemRendererSkinName="ItemSkin" scaleX="0.9" scaleY="0.9">
+			<e:layout>
+				<e:HorizontalLayout gap="2" />
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Image x="3" y="90" scale9Grid="80,1,16,1" width="420"  source="tongyongline"/>
+	<e:Label id="level" text="50级" x="14" fontFamily="黑体" size="18" textColor="0xEAA51B" verticalCenter="0" />
+	<e:Label id="noReach" text="未达成" x="333" y="36" textColor="0xFF0000" size="16" fontFamily="黑体" visible.0="false"
+	         visible.2="false" />
+</e:Skin>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildCampFireSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="566" height="730">
+	<w:Config id="15d5f01209d"/>
+	<e:Image id="bgImg" anchorOffsetY="0" anchorOffsetX="0" bottom="6" right="6" left="6" source="campfire_bg_jpg" height="710"/>
+	<e:Group id="bar" horizontalCenter="0" bottom="101">
+		<e:Rect width="340" height="20" x="29" y="9"/>
+		<e:ProgressBar id="progressBar" width="325" height="17" x="37" y="9" value="0" skinName="bar4Skin"/>
+		<e:Image id="progressBg" width="400" y="0" source="jingyantiao1" anchorOffsetX="0" scale9Grid="60,14,4,6" x="0"/>
+	</e:Group>
+	<e:Image id="point1" width="20" height="20" x="90" source="gantanhao" bottom="59"/>
+	<e:Label id="desc1" text="每捐献 1 个柴火增加 10 点篝火值以及 10 点行会贡献" x="116" anchorOffsetX="0" width="400" size="16" textColor="0xf8b141" bold="true" bottom="60"/>
+	<e:Image id="point2" width="20" height="20" x="90" source="gantanhao" bottom="34"/>
+	<e:Label id="desc2" text="再捐献总计 1000 个柴火可增加 5000 行会资金" x="116" anchorOffsetX="0" width="400" size="16" textColor="0xF8B141" bold="true" bottom="34"/>
+	<e:Label id="cha" text="×" x="334" textColor="0x35e62d" bold="true" bottom="191"/>
+	<e:Label id="count" text="1" x="358" textColor="0x35E62D" bold="true" anchorOffsetX="0" width="105" size="24" bottom="194"/>
+	<e:Button id="give" label="Button" skinName="Btn0Skin" icon="campfire_button" horizontalCenter="0" scaleX="1" scaleY="1" width="80" height="80" bottom="167"/>
+	<e:Group id="fireLv" horizontalCenter="0" anchorOffsetY="0" height="473" bottom="250">
+		<e:Image id="lv0" y="285" source="campfire_lv1" horizontalCenter="-2.5"/>
+		<e:Image id="lv1" y="285" source="campfire_lv1" horizontalCenter="-2.5" visible="false"/>
+		<e:Image id="fire1" y="194" source="campfire_fire" horizontalCenter="5" visible="false"/>
+		<e:Image id="lv2" y="255" source="campfire_lv2" horizontalCenter="-6.5" visible="false"/>
+		<e:Image id="fire2" y="158" source="campfire_fire" horizontalCenter="5.5" visible="false"/>
+		<e:Image id="lv3" y="244" source="campfire_lv3" horizontalCenter="4.5" visible="false"/>
+		<e:Image id="fire3" y="142" source="campfire_fire" horizontalCenter="5.5" visible="false"/>
+		<e:Image id="lv4" y="219" source="campfire_lv4" horizontalCenter="4" visible="false"/>
+		<e:Image id="fire4" y="115" source="campfire_fire" horizontalCenter="5.5" visible="false"/>
+		<e:Image id="lv5" y="203" source="campfire_lv5" horizontalCenter="-4.5" visible="false"/>
+		<e:Image id="fire5" y="93" source="campfire_fire" horizontalCenter="5.5" visible="false"/>
+		<e:Image id="firestar" y="36" x="108" source="campfire_star" scaleX="2" scaleY="2" visible="false"/>
+	</e:Group>
+	<e:Image id="redPoint" source="zjmhongdian" horizontalCenter="25" bottom="219" visible="false"/>
+
+
+</e:Skin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CollectSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group id="progressGroup" width="300" height="40" horizontalCenter="0" bottom="260">
+		<e:ProgressBar id="progressBar" maximum="100" value="40" skinName="CollectionBarSkin" slideDuration="0" height="16" left="18" right="18" verticalCenter="0" anchorOffsetX="0"/>
+		<e:Group id="effGroup" width="264" anchorOffsetY="0" height="19" y="12" x="18"/>
+		<e:Image id="barBg1" left="0" right="0" verticalCenter="0" source="col_progress" scale9Grid="47,0,1,38"/>
+		<e:Label id="state" text="正在采集战旗..." size="20" horizontalCenter="0" top="-15" textColor="0xD1C28F"/>
+	</e:Group>
+</e:Skin>

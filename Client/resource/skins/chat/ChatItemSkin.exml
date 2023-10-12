@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChatItemSkin" width="540" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="34">
+	<w:Config id="158bee9d011"/>
+	<e:Group id="textGroup" left="2" top="1" right="2" bottom="1" width="536">
+		<e:Label id="showHead" text="[世界][人物名字]" size="16" wordWrap="true" verticalAlign="middle" textColor="0xd1c28f" y="0"   x="0"/>
+		<e:Image id="chatVip" width="25" height="16" x="116" y="0" source="num_json.xvip_v2_png"  />
+		<e:Label id="showText" text="" x="0" textColor="0xd1c28f" size="16"/>
+	</e:Group>
+	
+	
+</e:Skin>

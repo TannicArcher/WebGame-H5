@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="heartmethodSkillTipSkin" width="580" height="930" currentState="max" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="normal,initial,max" >
+	<e:Rect id="bgClose" left="0" top="0" bottom="0" right="0" fillAlpha="0.9"/>
+	<e:Group id="anigroup" horizontalCenter="0" anchorOffsetX="0" width="500" anchorOffsetY="0" height="736" horizontalCenter.max="0" top.max="73" height.max="650" horizontalCenter.initial="0" top.initial="73" height.initial="650" verticalCenter="-24">
+		<e:Image id="Bg" y="12" source="tongyongtip1" anchorOffsetY="0" height="477" anchorOffsetX="0" width="475" scale9Grid="5,5,15,15" horizontalCenter="0.5"/>
+		<e:Image id="skillShow" y="48" anchorOffsetY="0" anchorOffsetX="0" scale9Grid="5,5,15,15" fillMode="scale" source="heartmethodSkillBG_png" x="14"/>
+		<e:Image id="left" y="0" source="zhuakuang2" scale9Grid="41,28,6,3" height="507" width="207" left="0" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Image id="right" y="0" source="zhuakuang2" scale9Grid="41,28,6,3" scaleX="-1" height="507" width="207" right="0" anchorOffsetX="0"/>
+		<e:Image id="nameBg" y="9" source="shuxingbg4" horizontalCenter="0" anchorOffsetX="0" width="190" height="50"/>
+		<e:Label id="skillName" text="无影刀" y="24" size="24" horizontalCenter="0" bold="true" textColor="0xf8b141"/>
+		<e:Image width="458" height="85" y="508" source="zjmqipao" scale9Grid="6,6,10,10" horizontalCenter="-2" visible.max="false" horizontalCenter.initial="-2" y.initial="512"/>
+		<e:Label id="curskillDesc0" text="【技能名字1层】" x="20" y="517" size="20" textColor="0x04FE2A" visible.max="false" y.initial="521"/>
+		<e:Label id="curskillDesc1" text="（已生效）" y="508" anchorOffsetX="0" width="119" anchorOffsetY="0" height="38" size="18" verticalAlign="middle" textAlign="center" horizontalCenter="-33.5" textColor="0x80EF3F" visible.max="false" y.initial="512" visible.initial="false"/>
+		<e:Label id="curskillDesc2" text="收集一套紫色心法残页激活" y="508" anchorOffsetX="0" width="224" anchorOffsetY="0" height="38" size="18" verticalAlign="middle" textAlign="center" horizontalCenter="49" textColor="0x6D6A64" text.normal="收集一套紫色心法残页激活（1/5）" horizontalCenter.normal="88" width.normal="298" visible.normal="false" visible.max="false" horizontalCenter.initial="79" y.initial="514" text.initial="收集一套绿色心法残页激活（1/5）" width.initial="280"/>
+		<e:Label id="curskillDesc3" text="这里是当前技能效果描述" y="554" anchorOffsetX="0" width="392" anchorOffsetY="0" height="38" size="18" verticalAlign="middle" textAlign="left" horizontalCenter="-3" textColor="0xD1C28F" visible.max="false" horizontalCenter.initial="-3" y.initial="558"/>
+		<e:Image width="458" height="85" y="597" source="zjmqipao" scale9Grid="6,6,10,10" horizontalCenter="-2" visible.initial="false" horizontalCenter.max="-2" y.max="512"/>
+		<e:Label id="nextskillTitle0" text="【技能名字2层】" x="22" y="606" size="20" textColor="0xF41CAE" visible.initial="false" y.max="521" x.max="22"/>
+		<e:Label id="nextskillTitle1" text="（已生效）" y="512" anchorOffsetX="0" width="119" anchorOffsetY="0" height="38" size="18" verticalAlign="middle" textAlign="center" horizontalCenter="-33.5" textColor="0x80EF3F" includeIn="max"/>
+		<e:Label id="nextskillTitle2" text="收集一套紫色心法残页激活" y="597" anchorOffsetX="0" width="224" anchorOffsetY="0" height="38" size="18" verticalAlign="middle" textAlign="center" horizontalCenter="49" textColor="0x6D6A64" text.normal="收集一套紫色心法残页激活（1/5）" horizontalCenter.normal="79" width.normal="280" visible.initial="false" visible.max="false"/>
+		<e:Label id="nextskillTitle3" text="这里是下一级技能描述" y="636" anchorOffsetX="0" width="392" anchorOffsetY="0" height="38" size="18" verticalAlign="middle" textAlign="left" horizontalCenter="-1" textColor="0xd1c28f" visible.initial="false" horizontalCenter.max="-1" y.max="551"/>
+		<e:Group horizontalCenter="0" height="35" x="25" scaleX="1" scaleY="1" bottom="0">
+			<e:Image source="bantoutiaobg" height="30" touchEnabled="false" scale9Grid="128,2,15,41" width="300" y="5"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" touchEnabled="false" y="10" x="48"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

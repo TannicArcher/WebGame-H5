@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="YuPeiNewSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        xmlns:tween="egret.tween.*" states="open" includeIn="normalWithPrompt,disabledWithPrompt" width="580"
+        height="712">
+	<w:Declarations></w:Declarations>
+	<w:Config id="158995f2c90"></w:Config>
+
+
+
+	<e:Image source="tongyongmianbanbg" top="0" bottom="0"  left="0" right="0" scale9Grid="23,21,2,2" visible="false"/>
+
+	<e:Group id="dinghong" height="120" bottom="5" anchorOffsetY="0" left="6" right="6">
+		<e:Image top="0" bottom="0" source="bantoumingkuang3" left="0" width="296"/>
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" width="292"/>
+	</e:Group>
+
+	<e:Image source="yupeibg_png" anchorOffsetX="0" width="347" anchorOffsetY="0" height="382.9" horizontalCenter="0.5" top="88"/>
+
+
+
+
+
+
+
+
+	<!--<e:Group id="powerGroup" y="137" horizontalCenter="0.5" locked="true">
+	<e:Image source="zhandoulibg" x="0" y="9" />
+	<e:Image source="zjmzhandouli" />
+</e:Group>
+-->
+
+
+
+
+
+
+
+	<e:Group horizontalCenter="0" top="99">
+		<ns1:BaseComponent id="yupei" skinName="YuPei0Skin" className="JadeItem" x="0" y="0"/>
+	</e:Group>
+	<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0" top="76"/>
+
+	<e:Group id="maxLevel" width="158" height="40" horizontalCenter="0" bottom="22" visible="false">
+		<e:Image source="bantoutiaobg" left="0" right="0" top="0" bottom="0"/>
+		<e:Label textColor="0xFFD862" text="已满阶" size="20" width="144" height="84" verticalAlign="middle" textAlign="center" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Group width="80" top="55" horizontalCenter="220">
+		<e:Image source="touxiangkuang" y="3" scaleX="0.8" scaleY="0.8" horizontalCenter="0"/>
+		<e:Image source="touxiangkuang" y="75" scaleX="0.8" scaleY="0.8" horizontalCenter="0"/>
+		<e:Image source="touxiangkuang" y="147" scaleX="0.8" scaleY="0.8" horizontalCenter="0"/>
+		<e:Image id="up1" y="7" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" touchEnabled="true" source="204070_png" x="0"/>
+		<e:Image id="redPoint1" source="zjmhongdian" y="10" horizontalCenter="17.5"/>
+
+		<e:Label id="used1" text="100" size="16" textColor="0xddd3b1" y="53" horizontalCenter="-12" x="15"/>
+		<e:Image id="up2" y="80" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" touchEnabled="true" source="204071_png" x="0"/>
+		<e:Image id="redPoint2" source="zjmhongdian" y="83" horizontalCenter="18"/>
+
+		<e:Label id="used2" text="100" size="16" horizontalCenter="-12" textColor="0xddd3b1" y="126" x="15"/>
+		<e:Image id="up0" y="153" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" horizontalCenter="0" touchEnabled="true" source="204069_png" x="0"/>
+		<e:Image id="redPoint0" source="zjmhongdian" y="156" horizontalCenter="18"/>
+
+		<e:Label id="used0" text="100" size="16" horizontalCenter="-12" textColor="0xddd3b1" y="199" x="15"/>
+	</e:Group>
+
+
+	<e:Group id="maxGroup" bottom="0" touchChildren="true" touchEnabled="false" width="580" horizontalCenter="0">
+		<e:Group bottom="74" left="93">
+			<e:CheckBox id="checkBoxs0" label="" x="66" skinName="CheckBox0" bottom="76"/>
+			<e:Image id="lvImg0" anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" x="78.5" y="0" scaleX="1" scaleY="1" source="204066_png"/>
+			<e:Label id="lvNum0" text="1000" y="0" size="20" x="0" textColor="0x00FF00"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Group bottom="74" left="228">
+			<e:CheckBox id="checkBoxs1" label="" x="66" skinName="CheckBox0" bottom="76"/>
+			<e:Image id="lvImg1" anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" x="78.5" y="0" scaleX="1" scaleY="1" source="204067_png"/>
+			<e:Label id="lvNum1" text="1000" y="0" size="20" x="0" textColor="0x00FF00"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Group horizontalCenter="135.5" bottom="74" left="363">
+			<e:CheckBox id="checkBoxs2" label="" x="66" skinName="CheckBox0" bottom="76"/>
+			<e:Image id="lvImg2" anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" x="78.5" y="0" scaleX="1" scaleY="1" source="204068_png"/>
+			<e:Label id="lvNum2" text="1000" y="0" size="20" x="0" textColor="0x00FF00"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="0"/>
+			</e:layout>
+		</e:Group>
+
+
+		<e:Group id="normal" horizontalCenter="0" bottom="10">
+			<e:Button id="upgradeBtn" label="升  级" skinName="Btn1Skin" width="156" height="60" x="0" y="0"/>
+			<e:Image id="btnRedPoint0" source="zjmhongdian" x="132" y="0" visible="false"/>
+			<e:Button id="upgradeBtn0" label="一键升级" skinName="Btn1Skin" width="156" height="60" x="260" y="0"/>
+			<e:Image id="btnRedPoint1" source="zjmhongdian" x="392" y="0" visible="false"/>
+		</e:Group>
+		<e:Group id="upLv" bottom="10" y="652" scaleX="1" scaleY="1" horizontalCenter="0" visible="false">
+			<e:Button id="upgradeBtn1" label="升 阶" skinName="Btn1Skin" width="156" height="60" y="0" x="24"/>
+			<e:Image id="btnRedPoint2" source="zjmhongdian" x="156" y="0" visible="false"/>
+		</e:Group>
+		<e:Group width="500" height="169" horizontalCenter="0" bottom="174" x="40" y="369" scaleX="1" scaleY="1">
+			<e:Image id="nextAttBG" source="shuxingbg" left="0" right="0" top="0" bottom="0" scale9Grid="50,5,65,34"/>
+			<e:Label id="curAtt" text="攻击：800\n攻击：800201\n攻击：8000" size="18" textAlign="left" verticalAlign="middle" textColor="0x9f946d" scaleX="1" scaleY="1" verticalCenter="-47" horizontalCenter="-112"/>
+			<e:Label id="nextAtt" text="攻击：800\n攻击：8000\n攻击：8000" size="18" textColor="0x2ECA22" textAlign="left" verticalAlign="middle" verticalCenter="-47" horizontalCenter="110" x="0" y="0" scaleX="1" scaleY="1"/>
+			<e:Image id="cursor" source="jiantouyou" verticalCenter="-47" horizontalCenter="0"/>
+			<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="274" top="-32" left="-10" x="-40" y="-361" scaleX="1" scaleY="1"/>
+			<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="260" scaleX="-1" top="-32" right="-10" x="540" y="-361" scaleY="1"/>
+		</e:Group>
+		<e:Group id="barGroup" width="525" height="40" bottom="129" y="543" scaleX="1" scaleY="1" horizontalCenter="0">
+
+
+
+		</e:Group>
+	</e:Group>
+	<e:Group id="maxShowGroup" width="500" height="169" horizontalCenter="0" bottom="174" visible="false">
+		<e:Label id="maxCurAtt" text="攻击：8000" size="18" textAlign="left" verticalAlign="middle" textColor="0x9F946D" horizontalCenter="0" verticalCenter="-47"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="274" top="-32" left="-10" x="-50" y="-401" scaleX="1" scaleY="1"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="260" scaleX="-1" top="-32" right="-10" x="550" y="-401" scaleY="1"/>
+	</e:Group>
+	<e:Group scaleX="1" scaleY="1" touchEnabled="false" touchChildren="true" horizontalCenter="-177.5" bottom="179">
+		<e:Image source="quality0" scale9Grid="8,8,48,48" horizontalCenter="0" top="3"/>
+		<e:Image id="skillIcon0" width="48" height="48" horizontalCenter="0" top="11" touchEnabled="true" source="yupei_skill_0"/>
+		<e:Rect id="blackImg0" width="69" height="69" fillAlpha="0.6" y="0" x="0" scaleX="1" scaleY="1" touchEnabled="false" visible="false"/>
+	</e:Group>
+	<e:Group scaleX="1" scaleY="1" touchChildren="true" touchEnabled="false" horizontalCenter="-88.5" bottom="179">
+		<e:Image source="quality0" scale9Grid="8,8,48,48" horizontalCenter="0" top="3"/>
+		<e:Image id="skillIcon1" width="48" height="48" horizontalCenter="0" top="11" touchEnabled="true" source="yupei_skill_1"/>
+		<e:Rect id="blackImg1" width="69" height="69" fillAlpha="0.6" y="0" x="0" scaleX="1" scaleY="1" touchEnabled="false" visible="false"/>
+	</e:Group>
+	<e:Group scaleX="1" scaleY="1" touchChildren="true" touchEnabled="false" horizontalCenter="0.5" bottom="179">
+		<e:Image source="quality0" scale9Grid="8,8,48,48" horizontalCenter="0" top="3"/>
+		<e:Image id="skillIcon2" width="48" height="48" horizontalCenter="0" top="11" touchEnabled="true" source="yupei_skill_2"/>
+		<e:Rect id="blackImg2" width="69" height="69" fillAlpha="0.6" y="0" x="0" scaleX="1" scaleY="1" touchEnabled="false" visible="false"/>
+	</e:Group>
+	<e:Group scaleX="1" scaleY="1" touchEnabled="false" touchChildren="true" horizontalCenter="89.5" bottom="179">
+		<e:Image source="quality0" scale9Grid="8,8,48,48" horizontalCenter="0" top="3"/>
+		<e:Image id="skillIcon3" width="48" height="48" horizontalCenter="0" top="11" touchEnabled="true" source="yupei_skill_3"/>
+		<e:Rect id="blackImg3" width="69" height="69" fillAlpha="0.6" y="0" x="0" scaleX="1" scaleY="1" touchEnabled="false" visible="false"/>
+	</e:Group>
+	<e:Group scaleX="1" scaleY="1" touchEnabled="false" touchChildren="true" horizontalCenter="178.5" bottom="179">
+		<e:Image source="quality0" scale9Grid="8,8,48,48" horizontalCenter="0" top="3"/>
+		<e:Image id="skillIcon4" width="48" height="48" horizontalCenter="0" top="11" touchEnabled="true" source="yupei_skill_4"/>
+		<e:Rect id="blackImg4" width="69" height="69" fillAlpha="0.6" y="0" x="0" scaleX="1" scaleY="1" touchEnabled="false" visible="false"/>
+	</e:Group>
+	<e:Group top="69" horizontalCenter="-231">
+			<e:Image source="jiejikuang2_png" scaleX="1" scaleY="1" left="0" right="0" top="5" bottom="5" scale9Grid="1,22,37,4"/>
+			<e:BitmapLabel id="lv" font="num_lv_jie_fnt" text="五阶十级" width="25" scaleX="1" scaleY="1" horizontalCenter="0" top="15" bottom="15"/>
+		</e:Group>
+
+
+
+
+</e:Skin>

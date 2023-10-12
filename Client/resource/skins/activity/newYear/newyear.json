@@ -1,0 +1,17 @@
+{"file":"newyear.png","frames":{
+"icon_baozhu":{"x":377,"y":230,"w":79,"h":75,"offX":1,"offY":2,"sourceW":80,"sourceH":80},
+"icon_high":{"x":428,"y":126,"w":76,"h":75,"offX":2,"offY":2,"sourceW":80,"sourceH":80},
+"ny_hightitlebg":{"x":205,"y":265,"w":123,"h":39,"offX":0,"offY":0,"sourceW":123,"sourceH":39},
+"biaoti_high":{"x":0,"y":0,"w":491,"h":47,"offX":0,"offY":0,"sourceW":491,"sourceH":47},
+"biaoti_yuandandenglu":{"x":176,"y":230,"w":199,"h":33,"offX":0,"offY":0,"sourceW":199,"sourceH":33},
+"ny_fireworker":{"x":0,"y":49,"w":131,"h":131,"offX":0,"offY":0,"sourceW":131,"sourceH":131},
+"biaoti_baozhu":{"x":0,"y":182,"w":363,"h":46,"offX":0,"offY":0,"sourceW":363,"sourceH":46},
+"ny_denglong1":{"x":339,"y":49,"w":87,"h":120,"offX":20,"offY":9,"sourceW":115,"sourceH":129},
+"biaoti_yuandan":{"x":0,"y":301,"w":134,"h":26,"offX":0,"offY":0,"sourceW":134,"sourceH":26},
+"ny_denglong2":{"x":133,"y":49,"w":115,"h":117,"offX":0,"offY":0,"sourceW":115,"sourceH":129},
+"ny_line":{"x":493,"y":0,"w":4,"h":10,"offX":0,"offY":0,"sourceW":4,"sourceH":10},
+"ny_projectbg":{"x":0,"y":230,"w":174,"h":41,"offX":0,"offY":0,"sourceW":174,"sourceH":41},
+"ny_rewardname":{"x":365,"y":203,"w":119,"h":25,"offX":0,"offY":0,"sourceW":119,"sourceH":25},
+"ny_rewardtitle":{"x":0,"y":273,"w":203,"h":26,"offX":0,"offY":0,"sourceW":203,"sourceH":26},
+"icon_yuandandenglu":{"x":428,"y":49,"w":79,"h":75,"offX":0,"offY":2,"sourceW":80,"sourceH":80},
+"ny_denglong3":{"x":250,"y":49,"w":87,"h":120,"offX":20,"offY":9,"sourceW":115,"sourceH":129}}}

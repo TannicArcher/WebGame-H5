@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Charge1Skin" width="480" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	
+	
+	
+	<e:Button id="closeBtn" label="按钮" x="413" y="633" skinName="Btn0Skin"/>
+	<e:Scroller id="scrollBar" x="26" y="321" width="427" height="303">
+		<e:List id="list" itemRendererSkinName="ChargeItem1Skin" width="350" height="233">
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Button id="closeBtn0" label="按钮" x="435" y="57" skinName="Btn0Skin"/>
+</e:Skin>

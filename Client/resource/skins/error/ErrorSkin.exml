@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ErrorSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Rect fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Image width="350" height="450" source="tongyongtip1" scale9Grid="8,6,8,12" horizontalCenter="0" verticalCenter="0"/>	
+	<e:Image width="320" height="320" horizontalCenter="0" verticalCenter="-20" source="tongyongtip1" scale9Grid="9,9,8,8"/>
+	<e:Label size="24" text="异 常" horizontalCenter="0" textColor="0xbd600d" bold="true" verticalCenter="-200"/>
+	<e:Button id="notBtn" label="关闭"  horizontalCenter="0" verticalCenter="180" skinName="Btn3Skin"/>
+	<e:Label id="lab" text="12312314514" size="16" width="300" height="300" textAlign="left" verticalAlign="top" horizontalCenter="0" verticalCenter="-20" textColor="0xbfb197"/>
+	<e:Label text="请截图发客服" size="16" textColor="0x727272" verticalCenter="192" horizontalCenter="-118"/>
+</e:Skin>

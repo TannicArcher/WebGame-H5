@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ISCostWinSkin" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="tongyongmianbanbg" top="0" left="0" right="0" scale9Grid="23,22,1,1" bottom="45" width="560"/>
+	<e:ViewStack id="viewStack" width="560" selectedIndex="1" horizontalCenter="0" top="0" bottom="50">
+		<ns1:BaseComponent id="ranking" xmlns:ns1="*" left="0" right="0" top="0" bottom="0" className="KfRankPanel" skinName="ISCostRankSkin" name="排名" visible="false"/>
+		<ns1:BaseComponent id="costTarget" left="0" right="0" top="0" bottom="0" skinName="OSATarget1" height="570" name="达标" className="OSATarget1Panel" visible="false"/>
+		<ns1:BaseComponent id="reward" left="0" right="0" top="0" bottom="0" className="KfRankRewardPanel" skinName="ISCostRewardSkin" name="奖励" visible="false"/>
+	</e:ViewStack>
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}" selectedIndex="0" horizontalCenter="0" bottom="0">
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:TabBar>
+	<ns1:BaseComponent id="target" x="399" skinName="ISCostTargetSkin" bottom="55" className="OSATarget19PanelAct1" visible="false"/>
+	<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" horizontalCenter="43" bottom="25" visible="false"/>
+</e:Skin>

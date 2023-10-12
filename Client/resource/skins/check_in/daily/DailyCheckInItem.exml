@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DailyCheckInItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        height="100" width="100">
+	<e:Image id="bg"  source="qiandaobg" left="0" right="0" top="0" bottom="0"/>
+	<!--<ns1:BaseComponent id="item" x="6.5" y="10" skinName="ItemSkin" className="ItemBase" />
+	-->
+	<ns1:BaseComponent id="item" className="ItemBase" skinName="ItemSkin"  verticalCenter="0" horizontalCenter="0"/>
+	<e:Group id="vipFlagGroup" x="0" y="0">
+		<e:Image id="vipFlag" x="-13" y="43"  source="qiandaobq" rotation="-45"/>
+		<e:Label id="vipLab" text="V2双倍" x="0" y="33" size="14" rotation="-45"
+		         textAlign="center"  textColor="0xd1c28f"/>
+	</e:Group>
+	<e:Rect id="checkedMask" left="0" right="0" top="0" bottom="0" fillAlpha="0.7" fillColor="0x222222" visible="false"/>
+	<e:Image id="checked" source="duoxuangou" verticalCenter="0" horizontalCenter="0" height="42" width="42" visible="false"/>
+	<e:Image id="complement" source="qiandaobu" right="0" bottom="0" visible="false"/>
+	<e:Group id="dayFlagGroup" x="0" y="0" visible="false">
+		<e:Image id="dayFlag" x="0" y="0"    source=""/>
+		<e:Label id="dayLab" text="998天" x="0.5" y="29" size="14" fontFamily="黑体" rotation="-45" stroke="1" 
+		         width="40.66" verticalAlign="middle" textAlign="center" textColor="0xffe79d" />
+	</e:Group>
+</e:Skin>

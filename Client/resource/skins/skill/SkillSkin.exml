@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SkillSkin" width="554" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="716">
+	<e:Group y="0" horizontalCenter="0">
+		<e:Image source="tielian" x="40" y="0"/>
+		<e:Image source="tielian" x="40" y="43"/>
+		<e:Image source="tielian" x="40" y="86"/>
+		<e:Image source="tielian" y="0" x="492"/>
+		<e:Image source="tielian" y="43" x="492"/>
+		<e:Image source="tielian" y="86" x="492"/>
+		<e:Image source="jingyantiao2" y="100" scale9Grid="2,2,13,13" width="540" height="40" horizontalCenter="0"/>
+		<e:Image source="jineng_json.jinengline1" x="0" y="90" scale9Grid="16,1,4,9" width="277"/>
+		<e:Image source="jineng_json.jinengline1" y="90" scale9Grid="16,1,4,9" width="277" scaleX="-1" x="554"/>
+	</e:Group>
+	<e:Group id="dinghong0" width="556" height="86" bottom="0" horizontalCenter="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" />
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" />
+	</e:Group>
+
+	<e:Component id="skillItem1" skinName="SkillItem" horizontalCenter="0" y="104"/>
+	<e:Component id="skillItem2" skinName="SkillItem"  horizontalCenter="0" y="208"/>
+	<e:Component id="skillItem3" skinName="SkillItem"  horizontalCenter="0" y="312"/>
+	<e:Component id="skillItem4" skinName="SkillItem"  horizontalCenter="0" y="416"/>
+	<e:Component id="skillItem5" skinName="SkillItem"  horizontalCenter="0" y="520"/>
+	<e:Button id="all" label="全部升级" width="160" height="60" skinName="Btn1Skin" bottom="10" horizontalCenter="0"/>
+</e:Skin>

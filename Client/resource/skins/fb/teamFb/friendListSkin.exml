@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="friendListSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="closeBtn" fillAlpha="0.8" left="0" right="0" bottom="0" top="0"/>
+	<e:Group width="462" height="481" horizontalCenter="0" verticalCenter="-80.5" anchorOffsetY="0">
+		<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" y="487" horizontalCenter="0"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="492" horizontalCenter="0"/>
+		<e:Image source="tongyongkuang3bg" scale9Grid="9,4,34,37" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,273,47" left="0" right="0"/>
+		<e:Label text="邀请好友" size="24" bold="true" y="12" horizontalCenter="0" textColor="0xA67D44"/>
+		<e:Scroller id="scroll" width="450" height="434" horizontalCenter="0" anchorOffsetY="0" bottom="3">
+		<e:List id="list" x="78" y="241" useVirtualLayout="false" anchorOffsetY="0" height="434" itemRendererSkinName="friendItemSkin">
+			<e:layout>
+			<e:VerticalLayout gap="1"/>
+			</e:layout>
+		</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

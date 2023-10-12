@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SupportRecordItemSkin" width="470" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="nameLabel" text="布拉格の呆萌" size="18" horizontalCenter="-100" textColor="0x00ff00" verticalCenter="-5"/>
+	<e:Label id="score" text="100000" size="18" textColor="0xd1c28f" horizontalCenter="60" verticalCenter="-5"/>
+	<e:BitmapLabel id="rank" text="23" font="num_8_fnt" verticalCenter="-5" horizontalCenter="-200" letterSpacing="-5"/>
+	<e:Image id="rankImg" verticalCenter="-5" source="paihang1" horizontalCenter="-200"/>
+	<e:Button id="supportBtn" label="点赞" skinName="Btn1Skin" width="87" height="40" horizontalCenter="180" verticalCenter="-5"/>
+	<e:Image source="tongyongline" bottom="0" horizontalCenter="0" scale9Grid="112,0,4,3" width="387"/>
+</e:Skin>

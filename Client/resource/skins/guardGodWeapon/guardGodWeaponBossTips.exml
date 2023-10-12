@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="guardGodWeaponBossTips" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" width="400">
+	<w:Config id="1586b36a128"/>
+
+	<e:Group id="anigroup" horizontalCenter="0" width="400" height="240" verticalCenter="0">
+		<e:Image source="tongyongtip1" scale9Grid="5,5,15,15" touchEnabled="true" width="400" height="240" x="0" y="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="19,18,3,6" width="400" height="240" x="0" y="0"/>
+		<e:Label id="callTimesLable" text="1" size="20" x="242.5" y="126" scaleX="1" scaleY="1" textColor="0x70fd02"/>
+		<e:Label text="召唤幸运BOSS" size="24" y="10" bold="true" textColor="0xa67d44" x="127"/>
+		<e:Label id="desc" text="每次挑战可以召唤幸运BOSS\n\n幸运BOSS血量低，高几率掉落心法残页" size="20" y="54" textColor="0x9f946d" width="400" height="62" horizontalCenter="0" textAlign="center"/>
+		<e:Label id="desc0" text="可召唤次数： 次" size="20" y="126" horizontalCenter="2" textAlign="center" textColor="0x70FD02"/>
+		<e:Image scale9Grid="85,1,6,1" y="40" source="tongyongline" left="0" right="0"/>
+
+
+		<e:Button id="closeBtn" label="关闭" horizontalCenter="-80" bottom="16" skinName="Btn3Skin" width="120" height="50"/>
+		<e:Button id="up" label="召唤" horizontalCenter="80" bottom="16" skinName="Btn3Skin" width="120" height="50"/>
+		<e:Group id="cost" horizontalCenter="79.5" bottom="66">
+			<e:Image source="szyuanbao" width="30" x="0" y="0" scaleX="1" scaleY="1"/>
+			<e:Label id="zb0" text="4980" size="20" textColor="0xF8B141" x="32" y="1" scaleX="1" scaleY="1"/>
+		</e:Group>
+
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CEGoldEggSkin" width="150" height="150" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="showbg" source="kaifucailiaobg_png" height="150" width="150" y="0" x="0"/>
+</e:Skin>

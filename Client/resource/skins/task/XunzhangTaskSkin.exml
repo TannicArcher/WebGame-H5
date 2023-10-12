@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="XunzhangTaskSkin" width="120" height="130" currentState="goon" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"   states="goon,done" >
+	<w:Config id="15d18198f32"/>
+	<e:Image left="0" right="0" top="0" bottom="0" scale9Grid="12,8,103,52" source="tongyonglabbg"/>
+	<e:Image y="17" width="85" height="85" source="xunzhangdi_png" horizontalCenter="0"/>
+	<e:Image id="taskIcon" scale9Grid="15,12,36,37" horizontalCenter="0" y="36" source="xunzhang2002_png" width="60" height="60"/>
+	<e:Group x="5" visible.done="false" y.goon="100" bottom="8">
+		<e:Image y="4" width="76" height="13" source="jingyantiao2" x="17"/>
+		<e:ProgressBar id="expBar" maximum="100" value="40" slideDuration="0" height="13" width="76" y="4" skinName="bar5Skin" x="17"/>
+		<e:Image id="barBg" y="0" source="jingyantiao4" scale9Grid="22,0,16,21" width="110" x="0"/>
+		<e:Label id="expLabel" strokeColor="0x000000" text="10/100" size="18" verticalAlign="middle" textAlign="center" y="2" textColor="0xd8d0b6" horizontalCenter.goon="0" y.goon="2" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label id="nameTF" text="宝石镶嵌" size="16" horizontalCenter="0" y="11" width="110" verticalAlign="middle" textAlign="center" textColor="0xd1c28f" bold="true" textColor.done="0xd1c28f"/>
+	<e:Label id="done" text="已完成" size="18" horizontalCenter="0" width="105" height="32" verticalAlign="middle" textAlign="center" textColor="0x35e62d" bold="true" visible.goon="false" bottom="2"/>
+</e:Skin>

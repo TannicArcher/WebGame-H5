@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="hefuBossBtnSkin" states="up,down,disabled"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" includeIn="down" width="141" height="58">
+	<w:Config id="15ad0decdeb"/>
+	<e:Button id="grewUpAllBtn" x="0" y="0" label="70级装备" skinName="Btn0Skin" icon="yeqian4" icon.down="yeqian5"/>
+	<e:Image id="bg0" right="0" left="0" top="4" bottom="4" source="yeqian6" scale9Grid="32,0,93,40" visible.up="false" visible.disabled="false" touchEnabled="false"/>
+	<e:Image id="redPoint" source="zjmhongdian" right="0" top="0" visible="false"/>
+	<e:Label id="btnText" text="3转" size="24" verticalCenter="0" horizontalCenter="12" textColor="0xeaeaea" textColor.up="0x7e6437" bold.up="true" bold.down="true" textColor.disabled="0x595959"/>
+</e:Skin>

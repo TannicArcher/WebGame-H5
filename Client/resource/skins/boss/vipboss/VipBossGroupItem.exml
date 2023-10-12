@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="VipBossGroupItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Image   width="554" height="238" scale9Grid="24,21,3,5"
+                source=""/>
+    <e:Label id="homeNameTxt" text="BOSS之家二层 充" x="173" y="97"   />
+</e:Skin>

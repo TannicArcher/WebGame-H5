@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OSAComp" width="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  height="620">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image id="bg" source="longchengzhengbabg_png" height="554" width="554" y="0" horizontalCenter="0"/>
+		<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+		<e:Image source="biaoti_longchengzhengba" horizontalCenter="0" y="0"/>
+		<e:Group id="infoBg" y="40" horizontalCenter="0" width="540">
+			<e:Image source="shuxingbg"   scale9Grid="77,5,15,34" left="0" right="0" top="0" bottom="0"/>
+			<e:Label text="活动时间：" x="14" y="12" size="18" textColor="0xf8b141"/>
+			<e:Label id="actTime" text="7月30日20:00-20:20(周日)" x="104" y="12" size="18" textColor="0x00ff00"/>
+			<e:Label id="actInfo" text="活动期间首个带领行会攻占龙城的行会会长可获得丰厚的奖励，奖励通过邮件发放。" x="104" y="32" size="18" width="344" bottom="12" top="32" left="104" right="14" textColor="0xdfd1b5"/>
+			<e:Label text="活动说明：" x="14" y="32" size="18" textColor="0xf8b141"/>
+		</e:Group>
+		<e:Group horizontalCenter="0" width="420" height="120" bottom="120">
+			<e:Image source="bantoutiaobg2"   left="0" right="0" top="0" bottom="0" scale9Grid="11,2,70,17"/>
+			<e:Group id="reward"   verticalCenter="0" horizontalCenter="0">
+				<ns1:BaseComponent id="reward1" x="100" y="2" skinName="ItemSkin"   className="ItemBase"/>
+				<ns1:BaseComponent id="reward2" x="110" y="12" skinName="ItemSkin"   className="ItemBase"/>
+				<ns1:BaseComponent id="reward3" x="120" y="22" skinName="ItemSkin"   className="ItemBase"/>
+				<ns1:BaseComponent id="reward4" x="130" y="32" skinName="ItemSkin"   className="ItemBase"/>
+				<e:layout>
+				<e:HorizontalLayout gap="10" verticalAlign="justify" horizontalAlign="center"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Button id="go" label="前往参加" skinName="Btn1Skin" horizontalCenter="0" bottom="30"/>
+		<e:Image x="4" y="124" source="words_longcheng"/>
+		<e:Label text="无兄弟，不传奇！" x="60" y="290" size="20" textColor="0xf8b141" bold="true"/>
+		<e:Label text="拿下龙城后别忘记喊会长建个微信群，" x="80" y="320" size="18" textColor="0x9F946D"/>
+		<e:Label text="给兄弟发红包哦！" x="100" y="345" size="18" textColor="0x9F946D"/>
+		<e:Group x="240" y="239">
+			<e:Image source="num_json.g32_png" x="6" y="-4"  />
+			<e:Image source="num_json.g30_png" x="25" y="-4"  />
+			<e:Image source="num_json.g30_png" x="35" y="6"  />
+			<e:Image source="num_json.g30_png" x="45" y="16"  />
+			<e:Image source="num_json.g30_png" x="55" y="26"  />
+			<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="-3"/>
+			</e:layout>
+		</e:Group>
+		<e:Image source="words_yuanbao" x="311" y="238"/>
+		<e:Label id="over" text="已结束" textColor="0x00FF00" size="20" bottom="45" horizontalCenter="0" visible="false"/>
+	</e:Group>		
+</e:Skin>

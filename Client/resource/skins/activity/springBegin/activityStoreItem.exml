@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="activityStoreItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="180" height="180">
+	<w:Config id="1586bde13e1"/>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scitembg" scale9Grid="54,26,4,1"/>
+	<e:Image id="nameBG" height="24" y="83" source="bantoutiaobg2" scale9Grid="44,4,2,8" width="152" horizontalCenter="0"/>
+	<ns1:BaseComponent id="itemIcon" verticalCenter="-35" horizontalCenter="4" skinName="ItemSkin" className="ItemBase"/>
+
+	<e:Button id="buyBtn" label="购 买" name="buy" x="41" y="129" skinName="Btn15Skin"/>
+
+
+
+
+
+
+
+
+
+
+	<e:Group id="discount" width="34" height="63" x="15" y="1">
+		<e:Image id="discountbg" y="0" source="activityStoreDiscountIcon" horizontalCenter="0"/>
+		<e:Image id="discountNum" y="5" source="discountNum5" horizontalCenter="0.5"/>
+	</e:Group>
+	<e:Group id="yuanbao" width="124" height="22" y="108" horizontalCenter="0">
+		<e:Image id="moneyIcon" x="0" y="0" source="szyuanbao"/>
+		<e:Label id="money" text="111111" y="0" size="22" x="0" textColor="0xf8b141"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0" horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="jifen" y="108" horizontalCenter="0" visible="false">
+		<e:Label id="jifenxiaohao" text="消耗积分:" y="0" size="20" x="0" height="20" textColor="0x35E62D"/>
+		<e:Label id="jifenNum" text="111111" y="0" size="20" x="0" height="20" textColor="0x35E62D"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+ 
+</e:Skin>

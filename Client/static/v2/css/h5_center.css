@@ -1,0 +1,109 @@
+@charset "utf-8";
+html{ width:100%; height:100%;}
+.full{ width: 100%; background:#f8f8f8; position:relative; height:100%;}
+.top-hd{ background:url(../img/h5c_headbg1.jpg) repeat top center; height:270px; overflow:hidden; clear:both; position:relative;}
+.top-hd .face{ display:block; position:absolute; left:50%; top:34px; width:110px; height:110px; margin-left:-55px;}
+.top-hd .face img{ width:90px; height:90px; border-radius:110px; border:10px solid #fead4f;}
+.top-hd .username{ display:block; position:absolute; font-size:20px; top:160px; color:#fff; width:110px; height:42px; left:50%; margin-left:-55px; text-align:center;}
+.top-hd .idname{ display:block; position:absolute; width:110px; left:50%; margin-left:-55px; top:202px; height:28px; line-height:28px; border-radius:28px; background:#feaf46; color:#fff; font-size:14px; text-align:center;}
+.top-hd .outover{ display:block; width:70px; height:52px; text-align:center; line-height:52px; position:absolute; right:0px; top:0px; font-size:16px; color:#fff;}
+
+.centerlist{ background:#fff; overflow:hidden; margin-top:10px; text-align:center; padding-top:28px; padding-bottom:22px; clear:both;}
+.centerlist a{ display:inline-block; width:23%; text-align:center;}
+.centerlist a span{ display:block; text-align:center; font-size:14px; color:#333; padding-top:6px;}
+.common-entrance{ background:#fff; overflow:hidden; margin-top:10px; clear:both;}
+.common-entrance dl dt{ height:58px; line-height:58px; font-size:18px; color:#333333; padding-left:17px;}
+.common-entrance dl dd{ display:block; width:100%; overflow:hidden; clear:both; height:28px; line-height:28px; padding:14px 0 13px 0; border-top:1px solid #f3f3f3;}
+.common-entrance dl dd em{ display:block; float:left; width:21px; height:21px; padding-top:4px; padding-left:17px; padding-right:7px;}
+.common-entrance dl dd em img{ float:left;}
+.common-entrance dl dd span{ font-size:16px; float:left; display:block;}
+.common-entrance dl dd a{ display:block; width:80px; height:28px; line-height:28px; color:#fff; text-align:center; border-radius:3px; background:#febb39; float:right; margin-right:17px; font-size:14px;}
+
+.popup_bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 3100;
+    display: none;
+}
+/*选择登陆方式*/
+.login-mode{ width:100%; padding-bottom:20px; position:absolute; left:0px; top:0px; z-index:100; height:100%;}
+.graybg{ display:block; width:100%; height:100%; background:#000; opacity: 0.5; position:absolute; left:0px; top:0px;}
+.login_cont{ display:block; width:82%; background:#fff; border-radius:10px; position:fixed; top:150px; left:50%; margin-left:-41%; padding:10px 0 15px 0;}
+.ltit{ text-align:center; font-size:16px; color:#333; width:100%; display:block; height:27px; line-height:37px;}
+.login_cont .wx,.login_cont .qq,.login_cont .wb,.login_cont .sj{ display:block; width:80%; margin:0 auto; margin-top:19px; height:30px; line-height:30px; padding:8px 0; overflow:hidden; clear:both; font-size:16px; color:#fff; border-radius:46px; position:relative; text-align:center;}
+.login_cont em{ display:block; width:30px; height:30px; position:absolute; left:22px; top:8px;}
+.wx{ background:#2ad892;}
+.qq{ background:#3fa4ee;}
+.wb{ background:#f34f50;}
+.sj{ background:#f3a644;}
+.zh{ display:block; width:80%; margin:0 auto; text-align:right; font-size:16px; padding-top:10px; color:#666;}
+
+/*手机号登陆*/
+.phone-login{ display:block; width:72%; background:#fff; border-radius:10px; position:absolute; top:200px; left:50%; margin-left:-36%; padding:10px 0 15px 0;}
+.closed_b{ position:absolute; right:15px; top:15px; width:28px; display:block; height:28px;}
+.inpt,.inpm{ display:block; width:90%; margin:0 auto; height:38px; padding-top:6px; border-bottom:1px solid #eee; overflow:hidden; clear:both;}
+.inpt input,.inpm input{ display:block; border:none; background:none; float:left; font-size:14px; color:#999; height:38px; line-height:38px; text-indent:12px;}
+.inpt input{ width:100%;}
+.inpm input{ width:60%;}
+.inpm a{ display:block; width:36%; border:1px solid #fa9631; border-radius:4px; height:31px; line-height:31px; font-size:14px; color:#fa9631; float:right; text-align:center;}
+.tips1{ font-size:14px; width:90%; margin:0 auto; line-height:22px; color:#333; padding-top:10px;}
+.login-btn{ display:block; width:90%; margin:0 auto; background:#fe9e39; border-radius:19px; height:38px; line-height:38px; text-align:center; font-size:16px; color:#fff; margin-top:10px;}
+
+/*账号登录*/
+.account-login{ display:block; width:82%; background:#fff; border-radius:10px; position:absolute; top:200px; left:50%; margin-left:-41%; padding:10px 0 30px 0;}
+.ltit2{ font-size:20px; padding-top:5px;}
+.acccount-p{ display:block; width:80%; border:1px solid #e1e1e1; height:27px; padding:9px 0 8px 0; margin:0 auto; margin-top:15px; border-radius:35px; position:relative;}
+.acccount-p span{ display:block; position:absolute; width:27px; height:27px; top:9px; left:18px;}
+.acccount-p input{ display:block; width:100%; border:none; background:none; text-indent:55px; font-size:16px; color:#999; line-height:27px;}
+.login-btn2{ display:inline-block; width:40%; margin:0 auto; background:#fe9e39; height:40px; line-height:40px; text-align:center; font-size:16px; color:#fff; margin-top:20px; border-radius:19px;}
+
+/*关注微信*/
+.wechat{ display:block; width:80%; background:#fff; border-radius:10px; position:fixed; top:70px; left:50%; margin-left:-40%; padding:0px 0 15px 0; border-radius:10px;}
+.ltit3{ background:#ffbc2d; font-size:20px; height:56px; line-height:56px; color:#333; border-radius:10px 10px 0 0;}
+.follow{ text-align:center; font-size:18px; line-height:26px; color:#333; padding:12px 0 10px 0;}
+.follow span{ color:#ff9b25;}
+.sm{ display:block; text-align:center; overflow:hidden; clear:both;}
+.sm img{ max-width:150px;}
+.how1{ border:1px solid #ff9b25; display:block; margin:0 15px; border-radius:15px; font-size:14px; line-height:22px; padding:10px; margin-top:20px;}
+.htit{ display:block; width:140px; height:28px; line-height:28px; background:#ffbc2d; text-align:center; border-radius:14px; margin:0 auto; color:#fff; margin-top:-24px;}
+
+/*每日充值*/
+.daily{display:block; width:82%; background:#fff; border-radius:10px; position:fixed; top:150px; left:50%; margin-left:-41%; padding:0px 0 30px 0;}
+.playtit{ padding:0 10px; overflow:hidden; clear:both; height:16px; line-height:16px; font-size:14px; color:#333;}
+.playtit span{ display:block; float:left; width:4px; background:#fe9e39; height:16px; border-radius:3px; margin-right:8px;}
+.playcon{ text-align:center; padding-top:14px; overflow:hidden; clear:both;}
+.playcon a{ display:inline-block; width:24%; text-align:center; float:left;}
+.playcon a span{ display:block; text-align:center; font-size:14px; color:#333; padding-top:6px;}
+.playcon a img{ width:60px; height:60px;}
+
+/*绑定手机*/
+.account-lost{display:block; width:82%; background:#fff; border-radius:10px; position:fixed; top:150px; left:50%; margin-left:-41%; padding:0px 0 60px 0;}
+.account-lost p{ text-align:center; font-size:18px; color:#333; line-height:28px; padding-top:20px;}
+.binding{ display:block; width:70%; margin:0 auto; margin-top:20px; height:46px; line-height:46px; background:#e64047; color:#fff; font-size:16px; text-align:center; border-radius:23px;}
+.handico{ position:absolute; top:175px; right:10px;}
+
+/*联系客服*/
+.service{display:block; width:82%; background:#fff; border-radius:10px; position:fixed; top:150px; left:50%; margin-left:-41%; padding:0px 0 30px 0;}
+.kfbt{ text-align:center; font-size:16px; height:58px; line-height:58px; color:#333; clear:both; overflow:hidden;}
+.kfqq{ height:40px; border:1px solid #ffbc2d; color:#ffbc2d; text-align:center; line-height:40px; border-radius:3px; margin:0 40px;}
+.kfcp{ text-align:center; font-size:14px; padding-top:10px; color:#333;}
+
+/*支付*/
+.payment{display:block; width:82%; background:#fff; border-radius:10px; position:fixed; top:150px; left:50%; margin-left:-41%; padding:0px 0 10px 0;}
+.zfbt{ text-align:center; font-size:16px; color:#333; height:50px; line-height:50px;}
+.kfje{ height:40px; text-align:center; font-size:30px; color:#ff0000;}
+.kfxz{ height:36px; background:#f3f3f3; border-top:1px solid #ebebeb; color:#333; text-align:center; font-size:16px; line-height:36px;}
+.wxplay{ height:28px; padding:14px 20px; line-height:28px; position:relative; clear:both; display:block; overflow:hidden; border-top:1px solid #ebebeb;}
+.wxplay em,.wxplay span,.wxplay i{ display:block; float:left;}
+.wxplay span{ padding-left:12px; padding-right:10px;}
+.wxplay i{ display:block; width:40px; height:20px; background:#ff2323; border-radius:3px; color:#fff; margin-top:4px; text-align:center; line-height:20px; font-size:12px;}
+.wxplay b{ display:block; float:right;}
+
+/**/
+.wechat2{ width:90%; margin-left:-45%; top:20px;}
+.follow2{ font-size:16px;}
+.leave{display:block; width:70%; margin:0 auto; margin-top:20px; height:46px; line-height:46px; background:#fdb325; color:#fff; font-size:16px; text-align:center; border-radius:5px;}

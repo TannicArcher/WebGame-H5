@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DTItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="127" width="120">
+	<w:Config id="1586b362dfe"/>
+	<ns1:BaseComponent id="item" skinName="ItemSkin" className="ItemBase" horizontalCenter="0" y="18"/>
+	<e:Image source="dt_kuang" horizontalCenter="2" y="2" touchEnabled="false"/>
+	<e:Label id="nameTxt" text="name" y="109" size="16" textColor="0xdfd1b5" horizontalCenter="0"/>
+
+
+
+
+
+
+
+	<!--<ns1:BaseComponent id="tongIcon" skinName="RuneItemSkin" horizontalCenter="1" verticalCenter="-3" visible="false"/>-->
+</e:Skin>

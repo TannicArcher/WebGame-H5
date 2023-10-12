@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BtnTab4Skin" states="up,down,disabled"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="130" height="39" width.down="91" width.up="91">
+	<e:Image source.down="role_08"  y.disabled="5" scale9Grid="36,11,18,6" touchEnabled="false" bottom.down="0" visible.disabled="false" x.down="0" x.up="0" visible.down="false" y.up="0" source="actmidlog_json.actmidlog02"/>
+	<e:Image x="0" y.disabled="-1" y.down="0" x.up="0" bottom.up="0" visible.disabled="false" x.down="0" touchEnabled="false" visible.up="false" source="actmidlog_json.actmidlog03"/>
+	<e:Label id="labelDisplay" size="18" textColor="0xFFFFFF" verticalAlign="middle" textAlign="center" width="75" height="37" x.up="8" y.up="0" x.down="8" touchEnabled="false" y.down="0" x.disabled="8" y.disabled="1" textColor.down="0xFFF2BE" textColor.up="0xA89C88"  visible.disabled="false" horizontalCenter.disabled="0" text="{data}" fontFamily="黑体" horizontalCenter="0"/>
+	<e:Image source="" x="46" y="1"/>
+</e:Skin>

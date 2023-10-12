@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DTRechargeSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgClose" left="0" top="0" right="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group horizontalCenter="0" verticalCenter="7">
+		<e:Image id="bg" source="dt_bg_png" x="0" y="0"/>
+		<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="23" scaleX="0.8" scaleY="0.8" horizontalCenter="261.5"/>
+		<e:Image id="title" y="-34" source="dt_title" horizontalCenter="0"/>
+
+
+
+
+
+
+		<e:Group y="327" horizontalCenter="0.5">
+			<e:Label text="活动期间再充值" x="0" y="8" textColor="0xf8b141" bold="true" size="20"/>
+			<e:BitmapLabel id="rechargeCount" x="145" y="0" text="100000" font="num_dt0_fnt"/>
+			<e:Image x="266" y="7" source="dt_yuanbao"/>
+			<e:Label text=",即可免费领取" x="213" y="8" textColor="0xF8B141" bold="true" size="20"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Image y="37" horizontalCenter="-124.5" source="dt_slogan"/>
+		<e:Image width="535" height="94" y="131" source="shuxingbg4" horizontalCenter="0"/>
+		<e:List id="list" y="102" horizontalCenter="1" itemRendererSkinName="DTItemSkin">
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="0"/>
+			</e:layout>
+		</e:List>
+		<e:Label id="done" text="已领取" y="268" textColor="0x00ff00" horizontalCenter="0"/>
+		<e:Group id="btn" x="184" y="228">
+			<e:Button id="rechargeBtn" label="Button" y="0" skinName="Btn0Skin" icon="btnshouchong_png" x="0"/>
+			<e:Label id="recharge" text="立即充值" size="30" bold="true" touchEnabled="false" horizontalCenter="0" verticalCenter="4.5"/>
+			<e:Label id="get" text="领  取" horizontalCenter="0" verticalCenter="4.5" touchEnabled="false" visible="false"/>
+		</e:Group>
+		<e:Label id="limitTime" text="距离活动结束仅剩2天" x="365" y="80" size="14" textColor="0x00ff00"/>
+		<e:Group id="first" x="106" y="385" scaleX="0.9" scaleY="0.9">
+			<e:BitmapLabel id="count0" x="0" y="0" font="num_dt0_fnt" text="5"/>
+			<e:Image id="unit0" x="22" y="1" source="dt_qian"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="second" x="266" y="385" scaleX="0.9" scaleY="0.9">
+			<e:BitmapLabel id="count1" x="245" y="387" font="num_dt0_fnt" text="5"/>
+			<e:Image id="unit1" x="0" y="0" source="dt_wan"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="third" y="385" scaleX="0.9" scaleY="0.9" horizontalCenter="172.5">
+			<e:BitmapLabel id="count2" x="0" y="2" font="num_dt0_fnt" text="10"/>
+			<e:Image x="11" y="0" source="dt_wan" id="unit2"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Image id="select0" x="24" y="369" source="dt_select"/>
+		<e:Image id="select1" x="190" y="369" source="dt_select"/>
+		<e:Image id="select2" x="355" y="369" source="dt_select"/>
+		<e:Button id="chooseBtn0" label="Button" x="49" y="374" skinName="Btn0Skin" width="150" height="52"/>
+		<e:Button id="chooseBtn1" label="Button" x="217" y="374" skinName="Btn0Skin" width="150" height="52"/>
+		<e:Button id="chooseBtn2" label="Button" x="382" y="374" skinName="Btn0Skin" width="150" height="52"/>
+
+	</e:Group>
+</e:Skin>

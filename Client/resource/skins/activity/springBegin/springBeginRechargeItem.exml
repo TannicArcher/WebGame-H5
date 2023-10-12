@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="springBeginRechargeItem" width="540" height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="scitembg" scale9Grid="56,26,4,3" left="0" right="0" top="0" bottom="0" x="0" y="0"/>
+		<e:List id="reward" itemRendererSkinName="ItemSkin" verticalCenter="11" left="29">
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="-5"/>
+		</e:layout>
+		</e:List>
+		<e:Label id="info" text="累计充值50000元宝" size="20" left="38" verticalCenter="-53" textColor="0xf8b141"/>
+		<e:Button id="getBtn" label="领取" verticalCenter="0" right="20" skinName="Btn15Skin"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" right="15" verticalCenter="-12" visible="false"/>
+	</e:Group>
+</e:Skin>

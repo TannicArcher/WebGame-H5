@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="KfArenaFightSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" xmlns:euiextension="euiextension.*">
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<e:Group horizontalCenter="15.5" top="10" touchEnabled="false">
+		<e:Group id="bigTimeGroup" anchorOffsetX="0" width="367" x="26" y="260">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="battle_camp"/>
+			<e:BitmapLabel id="countDown" scaleX="1" scaleY="1" text="3" font="num_9_fnt" letterSpacing="-10" verticalCenter="4.5" right="293"/>
+			<e:layout>
+			<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Button id="seeRule" label="按钮" icon="wenhao" skinName="Btn0Skin" y="0" scaleX="0.9" scaleY="0.9" x="222"/>
+		<e:BitmapLabel id="blueScore" x="0" y="11" font="num_j2_fnt" text="0"/>
+		<e:BitmapLabel id="redScore" x="290" y="11" text="0" font="num_j1_fnt"/>
+		<e:Group x="46" y="632" touchChildren="false" touchEnabled="false">
+			<e:Group x="0" y="0">
+			<e:Label text="本场积分：" x="0" y="0" size="18"/>
+			<e:Label id="score" text="12" x="80" y="0" size="18" textColor="0x00ff00"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+			</e:Group>
+			<e:Group x="160" y="0">
+			<e:Label text="我的排名：" x="0" y="0" size="18"/>
+			<e:Label id="rank" text="12" x="80" y="0" size="18" textColor="0x00FF00"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Button id="infoBtn" label="Button" skinName="Btn0Skin" icon="jiantouyou" rotation="90" scaleX="0.7" scaleY="0.7" x="203" y="78"/>
+		<e:BitmapLabel id="leftTime" text="1223" font="num_g0_fnt" x="121" y="25"/>
+		<e:Image id="txtPrepare" source="biaoti_shengdan" x="115" y="31"/>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

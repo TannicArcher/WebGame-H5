@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="ChestStateOpenSkin" minHeight="50" minWidth="100" currentState="waiting" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="waiting,add,tips,canOpen"  width="230" height="230">
+	<w:Config id="15a6a784557"/>
+	<e:Image source="tongyonglabbg" x="1" y="2"  width="228"  height="226"   scale9Grid="39,20,53,42"/>
+	<e:Image id="imgBox" source="chest1_png" x="31" y="25" scaleX="0.8" scaleY="0.8" visible.add="false" visible.tips="false"/>
+	<e:Label id="labelInfo" text="点击查看宝箱" y="192" visible.add="false" visible.tips="false" text.canOpen="领取" horizontalCenter="0"/>
+	<e:Label id="labelTime" text="12:00:00" x="53.34" y="158.67" visible.add="false" visible.tips="false" visible.canOpen="false"/>
+	<e:Label id="labelTips" text="" y="96" visible.waiting="false" horizontalCenter="0" visible.add="false" />
+</e:Skin>

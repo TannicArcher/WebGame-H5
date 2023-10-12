@@ -1,0 +1,10 @@
+{"file":"ladderImg.png","frames":{
+"laddergradnum_2":{"x":190,"y":218,"w":23,"h":32,"offX":0,"offY":0,"sourceW":23,"sourceH":32},
+"laddergradnum_3":{"x":165,"y":218,"w":23,"h":32,"offX":0,"offY":0,"sourceW":23,"sourceH":32},
+"laddergradnum_4":{"x":140,"y":218,"w":23,"h":32,"offX":0,"offY":0,"sourceW":23,"sourceH":32},
+"laddergradnum_5":{"x":115,"y":218,"w":23,"h":32,"offX":0,"offY":0,"sourceW":23,"sourceH":32},
+"ladder_rank_1":{"x":1,"y":128,"w":112,"h":97,"offX":17,"offY":10,"sourceW":145,"sourceH":125},
+"ladder_rank_2":{"x":130,"y":114,"w":117,"h":102,"offX":14,"offY":0,"sourceW":145,"sourceH":125},
+"ladder_rank_3":{"x":130,"y":1,"w":117,"h":111,"offX":14,"offY":2,"sourceW":145,"sourceH":125},
+"ladder_rank_4":{"x":1,"y":1,"w":127,"h":125,"offX":9,"offY":0,"sourceW":145,"sourceH":125},
+"laddergradnum_1":{"x":215,"y":218,"w":22,"h":32,"offX":1,"offY":0,"sourceW":23,"sourceH":32}}}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GwBossChallengeSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" width="400" height="300">
+		<e:Image source="tongyongkuang3bg" left="0" right="0" top="2" bottom="0" scale9Grid="12,6,21,25"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0" scale9Grid="72,18,264,29"/>
+		<e:Label id="title" size="24" text="BOSS掉落" horizontalCenter="0" y="11" bold="true" textColor="0xBD600D"/>
+		<e:Group id="zwHunt" bottom="75" y="556" scaleX="1" scaleY="1" horizontalCenter="0">
+			<e:Label text="进入条件：" x="1" y="2" size="20" textColor="0xf8b141"/>
+			<e:Image source="szyuanbao" width="30" scaleX="1" scaleY="1" left="0" top="0"/>
+			<e:Label id="yuanbao" text="100" size="20" textColor="0xF8B141" x="32" y="14" scaleX="1" scaleY="1"/>
+			<e:Label text="或" size="20" textColor="0xF8B141" x="189" y="5" scaleX="1" scaleY="1"/>
+			<e:Image id="ticket" anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" x="215" y="0" scaleX="1" scaleY="1" source="200307_png"/>
+			<e:Label id="num" text="1000" size="20" x="133" textColor="0x00FF00"/>
+			<e:Label text="/1" size="20" textColor="0xF8B141" x="199" y="15" scaleX="1" scaleY="1"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Button id="challengeBtn" label="进入" width="120" height="50" skinName="Btn3Skin" bottom="20" horizontalCenter="80"/>
+		<e:Button id="notBtn" label="取消" bottom="20" horizontalCenter="-80" width="120" height="50" skinName="Btn3Skin"/>
+		<e:Label id="leftCDText" text="挑战CD:999秒" size="16" textColor="0xF8B141" horizontalCenter="80.5" x="65" scaleX="1" scaleY="1" bottom="7" visible="false"/>
+		<e:List id="reward" y="57" horizontalCenter="0">
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:List>
+	</e:Group>
+</e:Skin>

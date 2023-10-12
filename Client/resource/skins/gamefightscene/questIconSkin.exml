@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="questIconSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="160" height="196">
+	<e:Group id="eff" y="77" x="78" scaleX="0.8" scaleY="0.8"/>
+	<e:Group id="imggroup" y="58" scaleX="0.8" scaleY="0.8" x="46" width="84" height="66">
+		<e:Image id="bgimg" width="84" height="84" y="-18" x="0" source="71000b_png"/>
+		<e:Image id="Img" y="-18" height="84" width="84" x="0" source="71000_png"/>
+	</e:Group>
+	<e:Image id="guangquan" width="84" height="84" source="xuanzhongyuan" y="43" scaleX="0.8" scaleY="0.8" x="46"/>
+	<e:Image id="skillName" scaleX="0.6" scaleY="0.6" source="80001_png" x="2" y="104"/>
+	<e:Group id="partcount" horizontalCenter="0" touchEnabled="false" width="150" height="40" y="141">
+		<e:Image rotation="0.23" source="shuxingbg4" height="42.01"   width="222" x="-31" y="-1"/>
+		<e:Label id="questDes" text="还差     个任务" size="18" textColor="0xFCB853" horizontalCenter="0" bold="true" y="11" width="160" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="questNumber" text="22" size="18" bold="true" y="11" textColor="0x35e62d" width="30" x="51" verticalAlign="middle" textAlign="center"/>
+	</e:Group>
+</e:Skin>

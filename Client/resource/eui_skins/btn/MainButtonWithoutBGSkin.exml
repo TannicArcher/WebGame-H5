@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MainButtonWithoutBGSkin" states="up,down,disabled"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" includeIn="down">
+	<e:Image id="iconDisplay" alpha.disabled="0.5" horizontalCenter="0" verticalCenter="0" pixelHitTest="true" horizontalCenter.down="1" verticalCenter.down="1" source="zjmshejiao" scaleX="1.2" scaleY="1.2"/>
+	<e:Group id="redPoint" width="22" height="22" alpha.disabled="0.5" right="0" top="0">
+		<e:Image x="0" y="0" source="zjmhongdian"/>
+		<e:Label id="txt" x="8" y="10" size="12" width="15" textAlign="center"/>
+	</e:Group>
+</e:Skin>

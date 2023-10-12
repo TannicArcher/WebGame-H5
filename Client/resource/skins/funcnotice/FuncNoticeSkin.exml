@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FuncNoticeSkin" width="640" height="1030" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="640" height="1030" y="0" horizontalCenter="0">
+		<e:Image id="bodyImg" x="99" y="276" source="yg_1_png"  />
+		<e:Button id="sureBtn" label="按钮" x="345" y="475" skinName="Btn13Skin" icon="yg_001"  />
+		<e:Label id="txt" text="xx级开启" x="400" y="438" size="18" textColor="0xDFD1B5"  />
+	</e:Group>
+</e:Skin>

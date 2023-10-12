@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ExtremeEquipTipsSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="anigroup" width="350" horizontalCenter="0" touchEnabled="false" verticalCenter="-45">
+		<e:Image id="background" source="tongyongtip1" scale9Grid="7,6,11,12" left="0" right="0" top="0" bottom="0" touchEnabled="false"/>
+		<e:Image id="quali" left="0" right="0" scale9Grid="9,0,10,54" height="130" top="2" source="quali5"/>
+		<e:Image source="tongyongtip2" left="0" right="0" top="0" bottom="0" scale9Grid="18,18,2,4" touchEnabled="false"/>
+		<e:Image y="140" scale9Grid="85,1,6,1" width="340" horizontalCenter="0" source="bantoutiaobg"/>
+		<e:Label id="nameLabel" text="至尊神剑" size="20" textAlign="left" y="15" x="20" bold="true" textColor="0xffff00"/>
+		<e:Label y="53" text="部位：" size="18" x="120" textColor="0x966E5A"/>
+		<e:Label id="pos" y="53" text="武器" size="18" x="180" textColor="0xFFD9B5"/>
+		<e:Label y="77" text="等级：" size="18" x="120" textColor="0x966E5A"/>
+		<e:Label id="lv" y="77" text="无级别" size="18" x="180" textColor="0x00FF00"/>
+		<e:Label y="101" text="职业：" size="18" x="120" textColor="0x966E5A"/>
+		<e:Label id="career" y="101" text="全职业" size="18" x="180" textColor="0xFFD9B5"/>
+		<ns1:BaseComponent id="itemIcon" xmlns:ns1="*" skinName="ItemIconSkin" className="ItemIcon" x="20" y="47"/>
+		<ns1:BaseComponent id="powerPanel" xmlns:ns1="*" skinName="PowerPanelSkin" className="PowerPanel" y="120" x="0"/>
+		<e:Group top="190" bottom="10" horizontalCenter="0">
+		<e:Group id="baseGroup" x="0" y="0">
+			<e:Label y="0" text="基础属性" size="20" x="0" bold="true" textColor="0x7E6437"/>
+			<e:Label y="25" text="攻击：生命：物防：法防：" size="18" verticalAlign="justify" x="22" textAlign="left" textColor="0x9F946D" width="54" lineSpacing="7"/>
+			<e:Label id="attr4" y="25" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x9F946D"/>
+			<e:Label id="attr2" y="50" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x9F946D"/>
+			<e:Label id="attr5" y="75" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x9F946D"/>
+			<e:Label id="attr6" y="100" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x9F946D"/>
+		</e:Group>
+		<e:Group id="chainGroup" x="18" y="152">
+			<e:Group>
+			<e:Label id="chainName" y="0" text="杀戮" size="20" x="0" bold="true" textColor="0xFFFF00"/>
+			<e:Label id="chainLv" y="10" text="Lv1" size="20" x="10" bold="true" textColor="0xFFFF00"/>
+			<e:layout>
+				<e:HorizontalLayout gap="3" verticalAlign="bottom"/>
+			</e:layout>
+			</e:Group>
+			<e:Group x="22" y="25">
+			<e:Label id="chainPos" y="0" text="[魔魂面甲]" size="18" verticalAlign="justify" x="0" textAlign="left" lineSpacing="7" textColor="0xFFFF00" width="280"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group id="soulGroup" x="28" y="162">
+			<e:Group>
+			<e:Label id="soulName" y="0" text="灵魂锁链" size="20" x="0" bold="true" textColor="0xFFFF00"/>
+			<e:Label id="soulLv" y="10" text="Lv1" size="20" x="10" bold="true" textColor="0xFFFF00"/>
+			<e:layout>
+				<e:HorizontalLayout gap="3" verticalAlign="bottom"/>
+			</e:layout>
+			</e:Group>
+			<e:Label id="soulAttr" y="25" text="为当前部位注入上古魔魂，提升基础属性至" size="18" verticalAlign="justify" x="22" textAlign="left" lineSpacing="7" textColor="0xFFFF00" width="280"/>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout gap="5" horizontalAlign="left"/>
+		</e:layout>
+		</e:Group>
+		<e:Group horizontalCenter="0" bottom="-35">
+			<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" touchEnabled="false" x="-29" y="0"/>
+			<e:Label text="点击空白区域关闭窗口" size="18" x="58" bold="true" textColor="0x7E6437" touchEnabled="false" y="6"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

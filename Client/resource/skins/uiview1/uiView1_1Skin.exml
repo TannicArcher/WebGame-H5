@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="UIView1_1Skin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" width="580" states="guanqia,fb,guildfb" height="930">
+	<e:Image pixelHitTest="true" source="zjmtouxiangkuang" horizontalCenter="-151"  visible.fb="false"/>
+	<e:Group id="flameGroup" y="2"  width="175" horizontalCenter="-105.5" visible.fb="false">
+		<e:Image id="fightImg" y="8.5" source="zjmzhandouli" height="30" width="50"  x="-3"/>
+	</e:Group>
+	<e:Image id="face" y="13.9" source="yuanhead10" width="76" height="76" horizontalCenter="-243"  visible.fb="false"/>
+	<e:Group y="140" visible.fb="false" visible.guildfb="false" width="96" height="34" touchEnabled="false" x="4" visible="false">
+		<e:Image id="imageItembg" height.fb="87" height.guanqia="87" height.guildfb="120" y.guildfb="36" y.guanqia="38"
+		         source.guanqia="" source.fb="" source.guildfb="" y.fb="38" top="0" x="0" />
+		<e:Label id="mapName" text="赤月神殿10" size="18"  textAlign="left" visible.guanqia="true"
+		         visible.guildfb="true" visible.fb="false" y.guanqia="50" y.guildfb="54" touchEnabled="false" y="18"
+		         textColor="0xa57857" />
+		<e:Label id="mapName0" text="第3600关" size="18"  textAlign="left" backgroundColor="0x000000"
+		         textColor="0xa57857" />
+		<e:Image source="szjinbi" width="21" height="17" includeIn="guanqia" x="0" y="0" />
+		<e:Image source="szexp" width="26" height="29" includeIn="guanqia" />
+		<e:Label id="goldTxt" text="1234599/时" size="16"  textColor="0xDFD1B5" x.fb="313" width.fb="150"
+		         height.fb="43" multiline.fb="true" wordWrap.fb="true" width.guanqia="106" visible.guildfb="false"
+		         y.guanqia="74" y.fb="75" textAlign="center" visible="false" />
+		<e:Label id="goldTxt0" text="+10%" size="16" fontFamily="黑体" textColor="0x58FF00" visible="false" />
+		<e:Label id="expTxt" text="1222345/时" size="16"  textColor="0xDFD1B5" textAlign="center"
+		         includeIn="guanqia" visible="false" />
+		<e:Label id="goldTxt1" text="+10%" size="16" fontFamily="黑体" textColor="0x58FF00" includeIn="guildfb" visible="false" />
+	</e:Group>
+	<e:Label id="timeshenyu" text="本关剩余时间：00:00:59" y="327" size="20" fontFamily="黑体" stroke="1" strokeColor="000000"
+	         visible.fb="false" visible.guanqia="false" visible.guildfb="false" horizontalCenter="0" />
+	<e:Group id="group1" width="167" height="71" x="304" y="93" visible.fb="false" visible.guanqia="false"
+	         visible.guildfb="false" height.guildfb="68" y.guildfb="79" visible="false">
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign.guildfb="center" />
+		</e:layout>
+	</e:Group>
+	<e:Image id="guildfb_time" y="466" horizontalCenter="0"  source="" visible="false"/>
+	<e:Image id="guildfb_timenum" y="474" horizontalCenter="0"  source="" visible="false"/>
+	<e:Label id="bossTimer" text="3" y="478" textColor="0xffff00" horizontalCenter="84" />
+	<e:Group id="vipGroup" y="88.2" horizontalCenter="-243.5" visible.fb="false">
+		<e:Button id="vipBtn" label="按钮" skinName="Btn2Skin" />
+		<e:Image id="vipImg" x="18" touchEnabled="false" source="zjmvipzi" width="36" height="20" y="11" />
+		<e:Image id="redPointVip" x="68" y="24" source="zjmhongdian" />
+	</e:Group>
+	<e:Group y="80" width="100" height="50" horizontalCenter="-75" visible="false">
+		<e:Button id="paihangbangBtn" label="按钮" skinName="Btn0Skin" left="0" right="0" top="0" bottom="0" />
+		<e:Label text="排行榜" size="22" bold="true" verticalCenter="0" horizontalCenter="0" textColor="0xdbdbdb" />
+	</e:Group>
+</e:Skin>

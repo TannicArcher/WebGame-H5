@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="dayBtnSkin" currentState="lock" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"   width="130" height="52" states="unlock,lock,unlockS"  width.lock="130" height.lock="52">
+	<e:Image top="0" bottom="0" left="0" right="0" source="sd_daybtn1" source.lock="sd_daybtn2" source.unlock="sd_daybtn2"/>
+	<e:Image id="dayImg" source="sd_day1" verticalCenter="0.5" left="5"/>
+	<e:Image source="tjyijihuo" right="0" top="0" scaleX="0.8" scaleY="0.8" source.lock="tjweijihuo" scaleX.unlock="0.8" scaleY.unlock="0.8" scaleX.lock="0.8" scaleY.lock="0.8" scaleX.unlockS="0.8" scaleY.unlockS="0.8"/>
+	<e:Image id="redpoint" source="zjmhongdian" right="0" top="0" scaleX="0.8" scaleY="0.8" visible="false"/>	
+</e:Skin>

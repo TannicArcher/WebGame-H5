@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GwResultSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        height="930" width="580">
+	<w:Config id="15c8d32c190" />
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0" visible="false" />
+	<e:Group horizontalCenter="0" verticalCenter="-22">
+		<e:Image id="bg" width="562" height="788"   source="win_png" horizontalCenter="0" verticalCenter="-49" x="9" y="22"/>
+		<e:Label id="txt" text="通关评价" size="20" textColor="0xdfd1b5" verticalCenter="-239" horizontalCenter="0" textAlign="center" x="220" y="229"  />
+		<e:Button id="closeBtn" label="退出(10)" skinName="Btn1Skin" horizontalCenter="0" bottom="226" width="120" height="50" visible="false"/>
+		<e:Button id="closenoget" label="退 出" skinName="Btn1Skin" horizontalCenter="80" bottom="226" width="120" height="50"/>
+		<e:Label id="noget" text="不领奖不扣次数" size="16" horizontalCenter="80" textAlign="center" x="240" bottom="278" textColor="0xf8b141"/>
+		<e:Button id="get" label="领取奖励" skinName="Btn1Skin" horizontalCenter="-80" bottom="226" width="120" height="50"/>
+		<e:Image id="rank" horizontalCenter="0.5" y="227" source="godweapon_rank1" scaleX="1.5" scaleY="1.5"/>
+		<e:Image id="titleImg" horizontalCenter="0" y="106" source="godweapon_mijingend"/>
+		<e:Label id="timeTitle" text="消耗时间：" size="20" textColor="0xDFD1B5" verticalCenter="-83" horizontalCenter="-150" textAlign="center" x="230" y="239"/>
+		<e:Label id="time" text="07:59" size="20" textAlign="left" x="183" y="350" textColor="0x35e62d"/>
+		<e:Label id="gaptime" text="（距离S只差60秒）" size="20" x="270" y="350" textColor="0xf8b141"/>
+			<e:Group id="listGroup" width="414"   anchorOffsetY="0" height="242" x="74" y="363">
+			<e:List id="listCoin" y="54" width="380" left="4" anchorOffsetX="0" anchorOffsetY="0" height="105" itemRendererSkinName="ItemSkin">
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+
+			</e:List>
+
+
+			<e:Label id="labelItem" text="获得道具：" x="9" y="10" size="20" textColor="0xDFD1B5" height="40" verticalAlign="middle"/>
+
+			</e:Group>
+	</e:Group>
+</e:Skin>

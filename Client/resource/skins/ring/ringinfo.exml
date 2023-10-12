@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ringinfo" width="210" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15a177a4c02"/>
+	<e:Button id="ring0" label="按钮" x="115.68" y="6.65" skinName="ringtogglebtn"/>
+	<e:Button label="按钮" x="115.68" y="106.65" skinName="ringtogglebtn" id="ring1"/>
+	<e:Button label="按钮" x="115.68" y="206.65" skinName="ringtogglebtn" id="ring2" visible="false"/>
+	<e:Button label="按钮" x="115.68" y="306.65" skinName="ringtogglebtn" id="ring3"/>
+	<e:Button label="按钮" x="115.68" y="406.65" skinName="ringtogglebtn" id="ring4"/>
+	<e:Button label="按钮" x="115.68" y="506.65" skinName="ringtogglebtn" id="ring5"/>
+	<e:Button label="按钮" x="115.68" y="606.65" skinName="ringtogglebtn" id="ring6"/>
+	<e:Button label="按钮" x="115.68" y="706.65" skinName="ringtogglebtn" id="ring7"/>
+	<e:Label id="name" size="24" textAlign="right" width="100"  y="9.33" text="麻痹戒指" x="9.67" />
+	<e:Label id="name0" size="20" textAlign="right" width="100"  y="46" text="lv xx" x="11.67" />
+	<e:Label id="name3" size="24" textAlign="right" width="100"  y="110.33" text="麻痹戒指" x="10.67" />
+	<e:Label id="name4" size="20" textAlign="right" width="100"  y="147" text="lv xx" x="12.67" />
+	<e:Label id="name5" size="24" textAlign="right" width="100"  y="210.33" text="麻痹戒指" x="9.67" />
+	<e:Label id="name6" size="20" textAlign="right" width="100"  y="247" text="lv xx" x="11.67" />
+	<e:Label id="up" size="24" textAlign="center" width="100"  y="257.33" text="可激活" x="107.67"    textColor="0x1dce17"/>
+	<e:Label id="name1" size="24" textAlign="right" width="121"  y="321.33" text="四天登陆" x="-8.33"    textColor="0x989596"/>
+	<e:Label id="name2" size="24" textAlign="right" width="121"  y="355.33" text="VIPX开启" x="-6.33"    textColor="0x989596"/>
+</e:Skin>

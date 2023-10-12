@@ -1,0 +1,12 @@
+{"file":"lianzhan.png","frames":{
+"1":{"x":166,"y":109,"w":15,"h":47,"offX":14,"offY":2,"sourceW":43,"sourceH":50},
+"2":{"x":39,"y":161,"w":36,"h":46,"offX":3,"offY":2,"sourceW":43,"sourceH":50},
+"3":{"x":128,"y":109,"w":36,"h":48,"offX":3,"offY":1,"sourceW":43,"sourceH":50},
+"4":{"x":46,"y":109,"w":42,"h":50,"offX":0,"offY":0,"sourceW":43,"sourceH":50},
+"5":{"x":1,"y":109,"w":43,"h":49,"offX":0,"offY":1,"sourceW":43,"sourceH":50},
+"6":{"x":128,"y":159,"w":36,"h":48,"offX":3,"offY":1,"sourceW":43,"sourceH":50},
+"7":{"x":1,"y":160,"w":36,"h":50,"offX":3,"offY":0,"sourceW":43,"sourceH":50},
+"8":{"x":90,"y":109,"w":36,"h":49,"offX":3,"offY":1,"sourceW":43,"sourceH":50},
+"9":{"x":90,"y":160,"w":34,"h":49,"offX":4,"offY":1,"sourceW":43,"sourceH":50},
+"d":{"x":1,"y":1,"w":229,"h":106,"offX":0,"offY":0,"sourceW":229,"sourceH":106},
+"0":{"x":39,"y":209,"w":29,"h":43,"offX":7,"offY":4,"sourceW":43,"sourceH":50}}}

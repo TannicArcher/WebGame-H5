@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WJBattleMatchSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group horizontalCenter="0" width="475" height="500" verticalCenter="-7">
+		<e:Image left="0" top="0" width="477" height="501" source="tongyongmianbanbg" scale9Grid="18,23,6,4"/>
+		<e:Image source="wj_match_bg_png" horizontalCenter="1" verticalCenter="-123"/>
+
+		<e:Label id="matchLabel" size="24" text="匹配中"     horizontalCenter="6.5" y="82" bold="true" textColor="0xbd600d" anchorOffsetX="0" width="108" textAlign="center"/>
+		<e:Label id="overTimersLabel" size="20" text="00:00:00" horizontalCenter="4" y="119" bold="true" textColor="0x35E62D"/>
+		<e:Button id="cancelBtn" label="取消匹配" bottom="245" horizontalCenter="-99.5" width="120" height="50" skinName="Btn1Skin"/>
+		<e:Button id="minBtn" label="最小化" bottom="245" horizontalCenter="98.5" width="120" height="50" skinName="Btn1Skin"/>
+		<e:Image width="450" height="226" horizontalCenter="1.5" source="shuzibg" scale9Grid="4,7,17,14" bottom="8" x="14" y="262" scaleX="1" scaleY="1"/>
+		<e:Label id="desc" size="20" text="1、点击旗子图标，可直接前往该旗子位置，文字太长试试会不会换行" y="278" x="24.5" textColor="0xB77A44" width="429" scaleX="1" scaleY="1"/>
+
+
+
+
+	</e:Group>
+
+	
+</e:Skin>

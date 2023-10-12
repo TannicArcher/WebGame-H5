@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="guideArrowSkin" currentState="left" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        states="right,left" >
+	<e:Group id="bg" anchorOffsetX.left="218" anchorOffsetY.left="21" anchorOffsetX.right="-20" anchorOffsetY.right="21" width="193" height="42">
+		<e:Image source="zjmyindao" scaleX.right="-1" horizontalCenter.left="0" left="0" right="0" top="0" bottom="0" scale9Grid="13,0,9,50" height.right="63" width.right="193"/>
+		<e:Label id="lab" text="选择目标攻击击杀增加积分" size="18" textColor="0xD1C28F"  height="18"  width="120" verticalAlign="middle" textAlign="center" horizontalCenter.left="-34" horizontalCenter.right="29.5" verticalCenter="0" x="9"/>
+	</e:Group>
+
+
+</e:Skin>

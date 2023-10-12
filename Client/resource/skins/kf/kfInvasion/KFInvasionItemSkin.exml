@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KFInvasionItemSkin" states="up,down,disabled" width="82" height="82" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="itemIcon" horizontalCenter="-3.5" verticalCenter="0" source="invasion_boss_head0"/>
+	<e:Image id="selectIcon" pixelHitTest="true" source="xuanzhongyuan" visible.up="false" visible.disabled="false" left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="redPoint" y="0" source="zjmhongdian" touchEnabled="false" x="58"/>
+	<e:Image source="tongyonghd_json.bantoutiaobg2" horizontalCenter="0" bottom="0"/>
+	<e:Label id="nameLabel" text="鬼眼魔君" size="16" horizontalCenter="0" bottom="2" textColor="0xd1c28f" bold="true"/>
+	<e:Image id="state" rotation="25.9" scaleX="0.8" scaleY="0.8" horizontalCenter="0" y="7" source="biaoqian_yijisha" visible="false"/>
+</e:Skin>

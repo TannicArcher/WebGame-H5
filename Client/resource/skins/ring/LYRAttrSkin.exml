@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LYRAttrSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" height="930">
+	<w:Config id="1586b1359f6" />
+	<e:Rect id="bgClose" left="-2" right="2" top="2" bottom="3" fillAlpha="0.8"  anchorOffsetY="0" anchorOffsetX="0"/>
+	<e:Group id="anigroup" width="370" height="409" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" scale9Grid="128,2,15,41" width="300" />
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-30" textColor="0x7E6437" />
+		<e:Image id="bg"   left="0" right="0"
+		         top="0" bottom="0"  source="tongyongtip3" scale9Grid="10,9,9,10"/>
+		<e:Image id="bg0"   left="0" right="0" top="0" bottom="0" source="tongyongtip2"
+		         scale9Grid="19,18,2,6" />
+
+		<e:Image height="135" verticalCenter="-125.5"  source="zjmqipao" scale9Grid="6,9,9,8" alpha="0.5" anchorOffsetX="0" anchorOffsetY="0" left="38" right="38"/>
+		<e:Label text="角色属性" size="20" textColor="0xFFB82A" touchEnabled="false" y="50" bold="true" horizontalCenter="0"  visible="false"/>
+
+
+		<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="fanhui" x="271" y="369" visible="false" />
+		<e:Group id="attrGroup" y="20" left="50">
+			<e:Group x="42" y="2">
+				<e:Image touchEnabled="false" source="tongyongdian" y="0" x="6" scaleX="1" scaleY="1"/>
+				<e:Image touchEnabled="false" source="tongyongdian" y="10" x="16" scaleX="1" scaleY="1"/>
+				<e:Image touchEnabled="false" source="tongyongdian" y="20" x="26" scaleX="1" scaleY="1"/>
+				<e:Image touchEnabled="false" source="tongyongdian" y="30" x="36" scaleX="1" scaleY="1"/>
+				<e:layout>
+					<e:VerticalLayout gap="14" verticalAlign="bottom"/>
+				</e:layout>
+			</e:Group>
+			<e:Label id="attrName" text="生        命：\n攻        击：\n物        防：\n魔        防：" y="-26" textColor="0x9f946d" size="18" width="95" horizontalCenter="-63" lineSpacing="10" x="-49" scaleX="1" scaleY="1" anchorOffsetX="0"/>
+			<e:Label id="attrValue" text="10000\n100000\n10000\n29988" size="18" lineSpacing="10" touchEnabled="false" textAlign="left" y="0" width="147"  textColor="0xf8b141" x="121" anchorOffsetY="0" height="102"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+
+
+
+
+
+
+
+
+
+
+
+		</e:Group>
+		<e:Label text="不破金身：" y="180" textColor="0x9f946d" size="18" x="20"/>
+		<e:Label text="三角色双防+300，双防+1%" y="180" textColor="0xf8b141" size="18" left="108" right="20"/>
+		<e:Label text="巨灵蛮力：" y="215" textColor="0x9F946D" size="18" x="20"/>
+		<e:Label text="三角色攻击+1000，攻击+1%" y="215" textColor="0xF8B141" size="18" x="108"/>
+		<e:Label text="回  天  术：" y="250" textColor="0x9F946D" size="18" x="20"/>
+		<e:Label text="攻击时10%几率触发恢复生命60000，冷却时间60秒" y="250" textColor="0xF8B141" size="18" right="20" left="108"/>
+		<e:Label text="高贵血统：" y="293" textColor="0x9F946D" size="18" x="20"/>
+		<e:Label text="三角色生命+50000，生命+1%" y="293" textColor="0xF8B141" size="18" right="20" left="108"/>
+		<e:Label text="神力一击：" y="318" textColor="0x9F946D" size="18" x="20"/>
+		<e:Label text="攻击时10%几率触发造成1.25倍伤害，冷却时间60秒" y="318" textColor="0xF8B141" size="18" right="20" left="108"/>
+	</e:Group>
+</e:Skin>

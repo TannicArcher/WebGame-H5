@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FuncNoticeBtnSkin" states="up,down,disabled"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" includeIn="down">
+	<e:Image y="5" pixelHitTest="true" source="touxiangkuang" horizontalCenter="0"/>
+	<e:Image id="iconDisplay" alpha.disabled="0.5" pixelHitTest="true" y="-30" horizontalCenter="0" source=""/>
+	<e:Label id="txt" text="20关开启" y="93" size="16" textColor="0xDFD1B5" horizontalCenter="0"/>
+</e:Skin>

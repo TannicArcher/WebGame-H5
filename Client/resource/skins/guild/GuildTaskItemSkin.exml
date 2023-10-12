@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildTaskItemSkin" width="428" height="89" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Image y="0" scale9Grid="26,21,25,12" width="429" height="90" x="0" source="guild_94"/>
+	<e:Label id="descLab" text="贡献度+300      资金+1000" x="95" y="52" fontFamily="黑体" size="16" textColor="0xF7B910"/>
+	<e:Label id="nameLab" text="捐献100元宝" x="96" y="15" fontFamily="黑体" size="16" textColor="0xDFDCDC"/>
+	<e:Image id="headBG" y="12" x="17" source="quality0"/>
+	<e:Image id="taskIcon" source="guild_json.guild_51" x="24" y="18"/>
+	<e:Group id="getGroup" width="103" height="65" x="322" y="14">
+		<e:Button id="goBtn" label="前 往" x="17" y="16" skinName="Btn1Skin" width="70" height="30"/>
+	</e:Group>
+	<e:Group id="conGroup" width="119" height="87" x="310" y="2" visible="false">
+		<e:Button id="conBtn" label="捐 献" x="29" y="40" skinName="Btn1Skin" width="70" height="30"/>
+		<e:Label id="numLab" text="1/5" x="29" y="13" fontFamily="黑体" size="16" textColor="0xDFDCDC" width="71" textAlign="center"/>
+	</e:Group>
+
+	
+</e:Skin>

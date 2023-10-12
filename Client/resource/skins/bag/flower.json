@@ -1,0 +1,10 @@
+{"file":"flower.png","frames":{
+"flower_closeBtn":{"x":104,"y":191,"w":36,"h":37,"offX":0,"offY":0,"sourceW":36,"sourceH":37},
+"flower_knowTxt":{"x":0,"y":224,"w":101,"h":29,"offX":0,"offY":0,"sourceW":101,"sourceH":29},
+"flower_nameBg":{"x":142,"y":191,"w":19,"h":36,"offX":0,"offY":0,"sourceW":19,"sourceH":36},
+"flower_namelistBg":{"x":163,"y":224,"w":12,"h":22,"offX":0,"offY":0,"sourceW":12,"sourceH":22},
+"flower_recordBg":{"x":0,"y":171,"w":202,"h":18,"offX":0,"offY":0,"sourceW":202,"sourceH":18},
+"flower_recordLine":{"x":103,"y":248,"w":81,"h":1,"offX":0,"offY":0,"sourceW":81,"sourceH":1},
+"flower_sendBtn":{"x":0,"y":113,"w":173,"h":56,"offX":0,"offY":0,"sourceW":173,"sourceH":56},
+"flower_sendTxt":{"x":0,"y":191,"w":102,"h":31,"offX":0,"offY":0,"sourceW":102,"sourceH":31},
+"flower_openImg":{"x":0,"y":0,"w":97,"h":111,"offX":3,"offY":6,"sourceW":104,"sourceH":123}}}

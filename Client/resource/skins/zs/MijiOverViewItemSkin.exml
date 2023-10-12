@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MijiOverViewItemSkin" width="560" height="188" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" states="miji,title"  height.title="66" height.miji="121">
+	<w:Config id="15c92505802"/>
+<e:Rect fillAlpha="0.6" anchorOffsetY.title="0" left.title="0" right.title="0" top.title="0" top="0" left="0" right="0" bottom.miji="0" bottom.title="-2" bottom="0"/>
+	<e:Group x.miji="-2" y.title="0" horizontalCenter.title="0" horizontalCenter="0" height="188" y="3" height.miji="121" height.title="68">
+		<e:Group id="defaultTitle" width="560" horizontalCenter="0" verticalCenter="0" includeIn="title" x="2" y="33"   height="68" height.title="68">
+			<e:Image source="zjmdingtiaobg" y="19" width="335" horizontalCenter="0.5"/>
+			<e:Image source="shuxingbg4"   width="335" horizontalCenter="0.5" horizontalCenter.title="0" verticalCenter="0" verticalCenter.title="0" y.title="9"/>
+			<e:Label id="name1" text="中级秘籍" y="25"   size="20" textColor="0xf8b141" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="mjgroup" width="560" horizontalCenter="0" verticalCenter="0" includeIn="miji" x="2" y="37"   height.miji="116">
+			<ns1:BaseComponent id="item0" x="30" y="0"   className="MijiItemEx" skinName="MijiWithNameItemSkin"/>
+			<ns1:BaseComponent id="item1" x="130" y="0"   className="MijiItemEx" skinName="MijiWithNameItemSkin"/>
+			<ns1:BaseComponent id="item2" x="230" y="0"   className="MijiItemEx" skinName="MijiWithNameItemSkin"/>
+			<ns1:BaseComponent id="item3" x="330" y="0"   className="MijiItemEx" skinName="MijiWithNameItemSkin"/>
+			<ns1:BaseComponent id="item4" x="430" y="0"   className="MijiItemEx" skinName="MijiWithNameItemSkin"/>
+			<e:Image source="tongyongline" y="112" width="551" horizontalCenter="0.5" includeIn="miji" x="5"  />
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

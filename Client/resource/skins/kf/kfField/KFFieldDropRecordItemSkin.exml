@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KFFieldDropRecordItemSkin" width="560" height="55" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bg" source="tongyongbg_dark" scale9Grid="5,4,1,1" left="0" right="0" top="0" bottom="0"/>
+	<e:Label id="dropTime" text="01-23 14:33" size="17" x="20" y="10" anchorOffsetY="0" height="16" textColor="0xffffcc"/>
+	<e:Label id="record" text="XXX击杀了哥斯拉，获得了XXX" x="126" size="17" y="9" anchorOffsetX="0" width="379" anchorOffsetY="0" height="38" lineSpacing="4" textColor="0xffffcc"/>
+	<e:Image id="best" x="510" y="3" source="dropTop"/>
+</e:Skin>

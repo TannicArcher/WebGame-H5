@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="bar11Skin" minWidth="30" minHeight="11" xmlns:e="http://ns.egret.com/eui" width="229" height="16">
+	<e:Image id="thumb" left="0" right="0" top="0" bottom="0" source="newhp" scale9Grid="3,1,18,7"/>
+</e:Skin>

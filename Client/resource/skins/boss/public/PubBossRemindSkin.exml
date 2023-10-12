@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PubBossRemindSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group width="450" height="650" horizontalCenter="0" verticalCenter="-40">
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-40" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="18" x="30" bold="true" bottom="-35" textColor="0x7E6437"/>
+		<e:Image source="tongyongkuang3bg" scale9Grid="9,4,32,37" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0" y="0" scale9Grid="67,0,274,47"/>
+		<e:Label text="BOSS提醒" size="24" y="12" horizontalCenter="0" textColor="0xbd600d" bold="true"/>
+		<e:Scroller horizontalCenter="0" width="420" top="80" bottom="4">
+			<e:List id="list0" itemRendererSkinName="RemindInfoSkin" y="23" useVirtualLayout="false">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Image y="46" source="zjmdingtiaobg" scale9Grid="14,3,104,22" left="6" right="6"/>
+		<e:Label text="BOSS" textColor="0xC69A6B" size="20" x="54" y="50"/>
+		<e:Label text="等级" textColor="0xC69A6B" size="20" x="176" y="50"/>
+		<e:Label text="提醒状态" textColor="0xC69A6B" size="20" x="296" y="50"/>
+		<e:Button id="closeBtn0" label="按钮" skinName="Btn0Skin" right="6" bottom="-60" visible="false"/>
+		<e:CheckBox id="autoChallenge" label="自动挑战" x="321" y="11" skinName="CheckBox0" scaleX="0.6" scaleY="0.6"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ZsPanelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="554" height="716">
+
+
+	<e:Group id="mainGroup" top="52" bottom="0" width="554" horizontalCenter="0" x="9">
+		<e:Image horizontalCenter="0" source="zsbg_png" y="0" width="554" height="550"/>
+
+		<!--<e:Group id="powerGroup" horizontalCenter="-1.5" verticalCenter="-328" locked="true">
+			<e:Image source="zhandoulibg" y="10" x="4"/>
+			<e:Image y="0" source="zjmzhandouli" x="0"/>
+		</e:Group>-->
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0" top="70"/>
+		<e:Group id="normalGroup" horizontalCenter="0" bottom="198">
+			<e:Image source="shuxingbg" y="0" scale9Grid="50,5,65,34" width="180" height="120" x="0"/>
+			<e:Image source="shuxingbg" y="0" scale9Grid="50,5,65,34" width="180" height="120" x="320"/>
+			<e:Image id="arrowImg" source="jiantouyou" y="32" x="230"/>
+			<e:Label id="curAtt" text="攻击  +1000" size="20" verticalAlign="middle" width="180" height="120" y="0" x="30" textColor="0x9f946d"/>
+			<e:Label id="nextAtt" text="攻击  +1000" size="20" textColor="0x2ECA22" verticalAlign="middle" width="140" height="120" y="0" x="360"/>
+		</e:Group>
+		<e:Group id="maxGroup" horizontalCenter="0" width="400" height="100" bottom="88" visible="false">
+			<e:Image source="shuxingbg" left="0" right="0" top="0" bottom="0" scale9Grid="20,5,125,34"/>
+			<e:Group y="28" x="70"  >
+				<e:Label id="attr0" text="攻击+10000" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			</e:Group>
+			<e:Group x="219" y="29"  >
+				<e:Label id="attr1" text="生命+10000" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			</e:Group>
+			<e:Group x="219" y="50"  >
+				<e:Label id="attr3" text="物防 +100" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			</e:Group>
+			<e:Group x="70" y="49"  >
+				<e:Label id="attr2" text="魔防 +100" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			</e:Group>
+
+		</e:Group>
+
+
+
+
+	</e:Group>
+	<e:Group id="dinghong0" width="556" height="92" bottom="0" horizontalCenter="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" />
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" />
+	</e:Group>
+	<e:Group id="group" horizontalCenter="0" width="500" bottom="20" height="120">
+		<e:Label id="link" text="获得修为" size="22" textColor="0x2ECA22" x="360" y="69" width="120" height="60" verticalAlign="middle" textAlign="center"/>
+		<e:Button id="getBtn" label="转   生" skinName="Btn1Skin" width="156" height="60" y="66" horizontalCenter="0"/>
+		<e:Image id="redPoint" source="zjmhongdian" x="314" y="62"/>
+		<e:Group width="204" y="-14" horizontalCenter="0">
+			<e:Image source="shuzibg" x="90" scale9Grid="3,3,18,19" height="26" width="110" y="0" />
+			<e:Image source="shuzibg" x="90" scale9Grid="3,3,18,19" height="26" width="110" y="30"/>
+			<e:Label text="拥有修为" size="20" x="0" textColor="0xFFB92D" y="32"/>
+			<e:Label id="haveTxt" text="10000" size="20" x="94" textColor="0xFFB92D" width="110" textAlign="center" y="32"/>
+			<e:Label textColor="0xDFD1B5" text="消耗修为" size="20" x="0" y="2"/>
+			<e:Label id="useTxt" textColor="0xDFD1B5" text="900000009" size="20" x="94" width="110" textAlign="center" y="2"/>
+		</e:Group>
+		<e:Label id="sx" text="转生对所有角色生效" textColor="0xf8b141" size="20" bold="true" horizontalCenter="0" x="158" y="-40"  />
+	</e:Group>
+	<e:Label id="curZsLv" text="当前转生等级：10转"  size="24" horizontalCenter="0" textColor="0xf8b141" bold="true" top="100"/>
+
+	<e:Label id="maxTxt" text="转生等级已满" size="22" horizontalCenter="0" textColor="0xffb92d" bold="true" bottom="50" visible="false"/>
+</e:Skin>

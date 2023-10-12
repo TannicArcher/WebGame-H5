@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuneSeletctItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="156" height="145">
+	<w:Config id="1586b3cda3a"/>
+	<e:Image left="0" right="0" top="0" bottom="0" source="shitouban" scale9Grid="18,17,11,9"/>
+	<ns1:BaseComponent id="itemIcon" className="RuneDisplay" skinName="RuneItemSkin" horizontalCenter="0" verticalCenter="-9.5"/>
+	<e:Label id="power" text="武器基础属性 +30.00%" y="120" size="14" textColor="0xA89C88" horizontalCenter="0"/>
+	<e:Image id="arrowIcon" x="80" y="80" source="tongyongup" width="22" height="18" visible="false"/>
+	<e:Image source="suowen" top="0" right="10"/>
+	<e:CheckBox id="cb" skinName="CheckBox0" right="1" top="2"/>
+</e:Skin>

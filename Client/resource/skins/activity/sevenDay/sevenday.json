@@ -1,0 +1,13 @@
+{"file":"sevenday.png","frames":{
+"sd_day1":{"x":386,"y":97,"w":96,"h":25,"offX":0,"offY":0,"sourceW":96,"sourceH":25},
+"biaoti_qitianle":{"x":0,"y":0,"w":446,"h":41,"offX":0,"offY":0,"sourceW":446,"sourceH":41},
+"sd_day5":{"x":0,"y":138,"w":96,"h":25,"offX":0,"offY":0,"sourceW":96,"sourceH":25},
+"sd_daybtn2":{"x":0,"y":43,"w":210,"h":52,"offX":0,"offY":0,"sourceW":210,"sourceH":52},
+"sd_projecttitle2":{"x":125,"y":97,"w":123,"h":39,"offX":0,"offY":0,"sourceW":123,"sourceH":39},
+"sd_projectbg":{"x":348,"y":125,"w":15,"h":14,"offX":0,"offY":0,"sourceW":15,"sourceH":14},
+"sd_projecttitle1":{"x":0,"y":97,"w":123,"h":39,"offX":0,"offY":0,"sourceW":123,"sourceH":39},
+"sd_day2":{"x":250,"y":125,"w":96,"h":25,"offX":0,"offY":0,"sourceW":96,"sourceH":25},
+"sd_daybtn1":{"x":212,"y":43,"w":210,"h":52,"offX":0,"offY":0,"sourceW":210,"sourceH":52},
+"sd_day4":{"x":386,"y":124,"w":96,"h":25,"offX":0,"offY":0,"sourceW":96,"sourceH":25},
+"sd_day3":{"x":348,"y":151,"w":96,"h":25,"offX":0,"offY":0,"sourceW":96,"sourceH":25},
+"biaoti_qirikuanghuan":{"x":250,"y":97,"w":134,"h":26,"offX":0,"offY":0,"sourceW":134,"sourceH":26}}}

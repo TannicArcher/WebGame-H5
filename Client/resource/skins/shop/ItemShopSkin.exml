@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ItemShopSkin" width="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="688">
+	<e:Scroller top="0" bottom="4" width="560" horizontalCenter="0">
+		<e:List id="listView" x="54" y="37" itemRendererSkinName="ItemShopItem">
+			<e:layout>
+				<e:VerticalLayout gap="2" paddingBottom="20"/>
+			</e:layout>
+
+		</e:List>
+	</e:Scroller>
+</e:Skin>

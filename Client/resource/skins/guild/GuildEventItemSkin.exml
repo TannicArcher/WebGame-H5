@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildEventItemSkin" width="550" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Label id="info" text="{data}" x="10" size="18" textColor="0x9f946d" verticalCenter="0"/>
+</e:Skin>

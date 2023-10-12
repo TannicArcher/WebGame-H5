@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="weaponSoulSkin2" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15dbfa8e636"/>
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Group width="580" height="780" horizontalCenter="0" bottom="106">
+		<e:Image source="tongyongmianbanbg" scale9Grid="19,12,14,25" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="weapsbg1_png" left="6" right="6" top="6" bottom="6"/>
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0" y="22"/>
+
+		<e:Group y="24" horizontalCenter="0">
+			<ns1:BaseComponent id="weaponShowPanel" skinName="weaponSoulSkinState" className="WeaponShowPanel"/>
+		</e:Group>
+		<e:Group id="huanhuaImage" horizontalCenter="0" y="500" visible="false">
+			<e:Image source="shiyongzhong"/>
+		</e:Group>
+		<e:Group width="500" height="130" horizontalCenter="0" bottom="107">
+			<e:Image source="shuxingbg" scale9Grid="36,6,113,39" left="0" right="0"  top="30" bottom="0"/>
+			<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="250" left="0"/>
+			<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="250" scaleX="-1" right="0"/>
+			<e:Group y="4" horizontalCenter="0">
+				<e:Label id="ringname" text="兵魂名字" size="22" y="180"   textColor="0xf8b141" x="224" bold="true"/>
+				<e:Label id="levellabel" text="X阶" size="22" textColor="0xFFC300" y="0" x="0" bold="true"/>
+				<e:layout>
+				<e:HorizontalLayout gap="6"/>
+				</e:layout>
+			</e:Group>
+			<e:Group x="140" y="37">
+			<e:Label id="attr0" text="攻击+10000" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			</e:Group>
+			<e:Group x="300" y="37">
+			<e:Label id="attr1" text="生命+10000" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			</e:Group>
+			<e:Group x="140" y="61">
+			<e:Label id="attr2" text="魔防 +100" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			</e:Group>
+			<e:Group x="300" y="61">
+			<e:Label id="attr3" text="物防 +100" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			</e:Group>
+			<e:Group id="upInfo" y="36" x="40">
+				<ns1:BaseComponent id="skillicon" skinName="weaponSkillItemSkin" className="WeaponSkillItem" horizontalCenter="0"/>
+				<e:Label id="skillname" text="技能名字"   size="16" horizontalCenter="0" y="70" textColor="0x9f946d"/>
+			</e:Group>
+			<e:Label id="skill" text="技能效果：这里写技能效果的简单描述，字数如果很多，就会换行，不能超过两行" y="86" size="18" width="330" x="140" textColor="0x898989"/>
+		</e:Group>
+		<e:Button id="upGradeBtn0" label="激活外观" skinName="Btn1Skin" width="156" height="60" horizontalCenter="0" bottom="43"/>
+		<e:Image id="redPoint" source="zjmhongdian" horizontalCenter="66" bottom="83" visible="false"/>
+		<e:Group id="descGroup" y="743" horizontalCenter="0">
+			<e:Image x="0" y="1" source="gantanhao"/>
+			<e:Label id="desc" text="使用后将激活兵魂的技能效果以及外观显示" y="0" size="18" textColor="0xf8b141" bold="true" x="27"/>
+			<e:Label id="turnTxt" text="兵魂之灵" y="10" size="18" bold="true" x="37" textColor="0x00ff00"/>
+			<e:layout>
+				<e:HorizontalLayout gap="2" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="zjmfanhui" horizontalCenter="250" bottom="10"/>
+</e:Skin>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BossLeftTimeSkin" width="400" height="22" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="leftTimeGroup" horizontalCenter="0" width="260" height="22" verticalCenter="0">
+		<e:Image source="bantoutiaobg" scale9Grid="80,5,86,35" left="0" right="0" top="0" bottom="0"/>
+		<e:Group y="2" horizontalCenter="0">
+		<e:Label text="活动剩余时间" x="0" y="0" size="18" textColor="0xDFD1B5"/>
+		<e:Label id="lastTime0" text="15分00秒" x="111" y="0" size="18" textColor="0xFFB82A" rotation="359.27"/>
+		<e:layout>
+			<e:HorizontalLayout gap="2"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TreasureChuanshiGift" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="930" width="580" states="normal,special" >
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group id="anigroup"  horizontalCenter="0" verticalCenter="0" width="450">
+		<e:Image scale9Grid="18,14,12,20" source="tongyongkuang3bg"     left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,271,47" y="0"   left="0" right="0"/>
+		<e:Image source="teshuwenzibg" y="6" horizontalCenter="0.5" x="150"  />
+		<e:Label y="13" text="礼包选择" size="24" horizontalCenter="0" textColor="0xa67d44" x="144"   bold="true"/>
+		<e:Label id="already" text="已领取" y="281" textColor="0x00ff00" size="18" horizontalCenter="0" x="213"   visible="false"/>
+		<e:Label id="choose" y="70" text="请从以下道具中选择一种" size="22" textColor="0x9f946d" horizontalCenter="0"/>
+
+
+		<e:List id="gift" horizontalCenter="0" top="106" bottom="170" itemRendererSkinName="TreasureChuanshiItem">
+
+			<e:layout>
+				<e:TileLayout horizontalAlign="center" requestedColumnCount="4"/>
+			</e:layout>
+			<e:layout.special>
+				<e:HorizontalLayout/>
+			</e:layout.special>
+
+		</e:List>
+		<e:Button id="get" label="领取" skinName="Btn1Skin" horizontalCenter="0" bottom="20"/>
+		<e:Group id="add" width="380" height="60" horizontalCenter="0" bottom="92" x="-190" y="0" scaleX="1" scaleY="1">
+
+
+			<e:Button id="sub1Btn0" label="" skinName="Btn0Skin" icon="btn-" verticalCenter="0" horizontalCenter="-80"/>
+			<e:Button id="add1Btn0" label="" skinName="Btn0Skin" icon="btnadd" verticalCenter="0" horizontalCenter="80" x="10" y="10"/>
+			<e:Button id="maxBtn0" label="最大" icon="btnmax" skinName="Btn0Skin" verticalCenter="0" right="10"/>
+			<e:Button id="minBtn0" label="最小" icon="btnmax" x="60" skinName="Btn0Skin" rotation="180" verticalCenter="0"/>
+			<e:Image width="100" height="50" source="shuzibg" verticalCenter="0" horizontalCenter="0" scale9Grid="8,4,10,14"/>
+			<e:EditableText id="numLabel0" text="1" textAlign="center" size="30" width="90" verticalCenter="0" horizontalCenter="0" textColor="0xD1C28F"/>
+		</e:Group>
+
+	</e:Group>
+</e:Skin>

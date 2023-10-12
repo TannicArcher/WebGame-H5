@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemSkin" width="90" height="96" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586b362dfe"/>
+	<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" horizontalCenter="0" verticalCenter="-10"/>
+	<e:Image id="bless" horizontalCenter="0" verticalCenter="-12" source="" visible="false"/>
+	<e:Label id="count" size="16" y="54" text="999" x="16" stroke="1" strokeColor="0x232323" textColor="0xddd3b1"/>
+	<e:Label id="nameTxt" size="16" textColor="0xDFD1B5" textAlign="center" text="name" strokeColor="0x111111" bottom="0" horizontalCenter="0" stroke="1"/>
+	<e:Group id="redPoint" y="0" right="0" visible="false">
+		<e:Image source="zjmhongdian"/>
+	</e:Group>
+	<e:Image id="getImg" x="1" y="42" source="yilingqu" rotation="330" visible="false"/>
+	<e:Image id="selectFrame" width="72" height="72" x="9" y="1" source="xuanzhongkuang2" scale9Grid="5,5,6,6" visible="false"/>
+	<!--<ns1:BaseComponent id="tongIcon" skinName="RuneItemSkin" horizontalCenter="1" verticalCenter="-3" visible="false"/>-->
+</e:Skin>

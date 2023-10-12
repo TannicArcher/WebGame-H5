@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TargetListSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*">
+	<e:Group id="attackGroup0" top="180" right="0" touchEnabled="false">
+		<e:Group x="0" y="0" width="100">
+		<e:Image source="teshuwenzibg" y="0" height="30" left="0" right="0"/>
+		<e:Label text="正在攻击" y="5" size="18" textColor="0xFFCE0B" textAlign="center" x="14"/>
+		</e:Group>
+		<e:List id="list1" width="100" height="110" x="0" y="30" itemRendererSkinName="MemberHeadSkin">
+		</e:List>
+	</e:Group>
+	<e:Group id="beAttackGroup0" top="330" touchEnabled="false" right="0">
+		<e:Group x="0" y="0" width="100">
+		<e:Image source="teshuwenzibg" y="0" height="30" left="0" right="0"/>
+		<e:Label text="受到攻击" y="5" size="18" textAlign="center" textColor="0xD6240E" x="14"/>
+		</e:Group>
+		<e:Scroller id="bar2" width="100" x="0" top="32" height="317" anchorOffsetY="0">
+		<e:List id="list3" x="5" y="6" itemRendererSkinName="MemberHeadSkin" touchEnabled="false">
+		</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="canAttackGroup0" x="0" top="180" touchEnabled="false">
+		<e:Group x="0" y="0" width="100">
+		<e:Image source="teshuwenzibg" y="0" height="30" left="0" right="0"/>
+		<e:Label text="可以攻击" y="5" size="18" textAlign="center" x="14" textColor="0x00FF00"/>
+		</e:Group>
+		<e:Scroller id="bar1" width="100" x="0" top="32" height="500" anchorOffsetY="0">
+		<e:List id="list2" x="5" y="6" itemRendererSkinName="MemberHeadSkin" touchEnabled="false">
+		</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

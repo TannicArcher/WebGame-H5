@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BattleScoreProcessSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" xmlns:euiextension="euiextension.*">
+
+	<e:Group bottom="160" right="31">
+		<e:Image source="tongyonghd_json.bantoutiaobg" scale9Grid="119,18,5,6" anchorOffsetY="0" height="64" scaleX="1" scaleY="1" verticalCenter="0" x="0"/>
+		<e:Image source="220008_png" scaleX="1" scaleY="1" verticalCenter="0" x="0"/>
+		<e:Label text="战绩:100" x="60" y="35" size="18" scaleX="1" scaleY="1" textColor="0xd1c28f"/>
+		<e:Group y="10" x="60">
+			<e:Label text="个人积分达到" x="2" y="-26" size="18" scaleX="1" scaleY="1" textColor="0xff9900"/>
+			<e:Label text="(100/500)" x="12" y="-16" size="18" scaleX="1" scaleY="1" textColor="0xff0000"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

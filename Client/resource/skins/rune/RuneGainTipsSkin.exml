@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuneGainTipsSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" >
+	<w:Config id="1586b36a128"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group id="mainGroup" horizontalCenter="0" width="350" verticalCenter="0"  height="300">
+		<e:Image top="0" left="0" right="0" width="303"  source="tongyongtip1" scale9Grid="6,6,11,8" bottom="0"/>
+		<e:Image  source="tongyongtip2" scale9Grid="18,17,4,7" left="0" right="0" top="0" bottom="0"/>
+		<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" width="76" height="76" horizontalCenter="0" top="52"/>
+		<e:Label id="nameLabel" text="祝福 lv.1" size="22" bold="true" horizontalCenter="0" textColor="0xc41200" top="20"/>
+		<e:Group y="185"   horizontalCenter="0">
+			<e:Label id="attrName" text="闪避值" size="20" textColor="0xf8b141"    x="0" y="0"/>
+			<e:Label id="attrValue" text="+15%" size="20"   x="0" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout gap="3" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="attrDesc" text="攻击力  + 99999" size="18" width="275" y="200" textAlign="left" x="40" height="215" textColor="0xd1c28f" visible="false"/>
+		<e:Label text="99999999"  size="20" x="245.33" y="61.67" textColor="0xc78563" bold="true" visible="false"/>
+		<e:Label id="backDesc" text="回收可获得            精华" size="18" x="120" y="60" bold="true" textColor="0xd1c28f" visible="false"/>
+		<e:Image scale9Grid="85,1,6,1" source="tongyongline" left="0" right="0" horizontalCenter="0" top="157" width="300"/>
+		<e:Label id="power" text="评分：999999" size="20" y="20" textColor="0xffbc00" bold="true" textAlign="right" right="20" visible="false"/>
+		<e:Label text="战纹属性" size="20" x="20" y="170" bold="true" textAlign="right" textColor="0xbd600d"   visible="false"/>
+		<e:Label id="attrDes" text="默认解锁" size="20" textColor="0x5186fd"   top="260" horizontalCenter="0"/>
+		<e:Group id="gainListGroup" y="300" width="350" x="0" >
+				<e:Group x="0" width="350">
+					<e:Label text="获取途径" size="20" bold="true" textColor="0x7e6437" y="15" horizontalCenter="0"/>
+					<e:Image source="tongyongline" scale9Grid="27,0,166,3" width="272.222" y="0" horizontalCenter="0"/>
+					<e:Image source="tielian" x="40.444"   y="3"/>
+					<e:Image source="tielian" x="283.111" y="3"/>
+					<e:Image source="shuxingline" x="0" scale9Grid="18,8,2,1" width="171.111" y="35"/>
+					<e:Image source="shuxingline" scale9Grid="18,8,2,1" width="171.111" scaleX="-1" x="348" y="35"/>
+				</e:Group>
+			<e:List id="gainList" itemRendererSkinName="RuneGainTipsItemSkin" x="0" y="50">
+				<e:layout>
+				<e:VerticalLayout gap="0" horizontalAlign="contentJustify" paddingLeft="0" paddingRight="0"/>
+				</e:layout>
+			</e:List>
+			<e:Group width="350" height="30" horizontalCenter="0" bottom="-35">
+				<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" x="-25"   y="0"/>
+				<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" horizontalCenter="0" y="5"/>
+			</e:Group>
+			</e:Group>
+	</e:Group>
+</e:Skin>

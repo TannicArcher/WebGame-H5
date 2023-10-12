@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MaleBtnSkin" states="up,down,disabled"
+        xmlns:e="http://ns.egret.com/eui">
+	<e:Image alpha.disabled="0.5" horizontalCenter="0" verticalCenter="0" source="op_nan"/>
+	<e:Image visible.up="false" alpha.disabled="0.5" horizontalCenter="0" verticalCenter="0" source="xuanzhongyuan" visible.disabled="false"/>
+</e:Skin>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="welcomePanelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="930"
+        width="580">
+	<w:Config id="159bee3ba5d" />
+	<e:Rect id="bgClose" fillAlpha="0.5" left="0" right="0" top="0" bottom="0"/>
+	<e:Label id="slogon" text="这里是口号" size="24" textColor="0xDFD1B5" lineSpacing="5" textAlign="right"
+	         strokeColor="0x000000" stroke="1" horizontalCenter="0" verticalCenter="-51"  visible="false"/>
+	<e:Group id="sureGroup" horizontalCenter="48.5" verticalCenter="177.5"   width="209" height="81">
+		<e:Image id="pic" source="welcome_01_png" x="-279" y="-522"/>
+		<e:Group id="effgroup" width="209" height="81" x="24" y="10" scaleX="0.8" scaleY="0.8"/>
+		<e:Button id="sureBtn" label="" skinName="Btn0Skin" icon="welcomebtn_png" verticalCenter="0" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MailItemSkin" width="430" height="60" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect fillAlpha="0.2" left="0" right="0" top="0" bottom="0" touchEnabled="true"/>
+	<e:Image left="0" right="0" bottom="0" source="tongyongline" height="2"/>
+	<e:Label id="nameLabel" text="杀戮排行奖励(未读)" x="20" y="10" size="18"  textColor="0xa89c88" bold="true"/>
+	<e:Label id="dateLabel" text="2015.9.30      9:30" x="20" y="32" textColor="0xA89C88" size="18" />
+	<e:Image id="treasure"  verticalCenter="0" right="50" source="220003_png"/>
+</e:Skin>

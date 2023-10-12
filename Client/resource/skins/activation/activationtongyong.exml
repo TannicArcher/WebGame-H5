@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="activationtongyong" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="580" height="930">
+	<w:Config id="15c450809ef"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.9"/>
+	<e:Image id="lbg" y="194" scale9Grid="181,56,11,4" height="500" width="291.33" scaleX="-1" horizontalCenter="145"  touchEnabled="false" source="tyjhcgbg"/>
+	<e:Image id="rbg" y="194" scale9Grid="181,56,11,4" height="500" width="290" horizontalCenter="-145" touchEnabled="false" source="tyjhcgbg"/>
+	<e:Image id="bg" source="longhunbg2_png" y="610" scaleX="1.3" scaleY="1.3" horizontalCenter="0" touchEnabled="false"/>
+	<e:Group id="tielian" width="580" height="220" y="0" horizontalCenter="0" touchChildren="false" touchEnabled="false">
+		<e:Image source="tielian" y="-7.79" horizontalCenter="-190"/>
+		<e:Image source="tielian" y="32.21" horizontalCenter="-190"/>
+		<e:Image source="tielian" y="73.86" horizontalCenter="-190"/>
+		<e:Image source="tielian" y="116.53" horizontalCenter="-190"/>
+		<e:Image source="tielian" y="156.53" horizontalCenter="-190"/>
+		<e:Image source="tielian1" y="198.23" horizontalCenter="-190"/>
+		<e:Image source="tielian" y="-7.5"   horizontalCenter="190"/>
+		<e:Image source="tielian" y="32.5"   horizontalCenter="190"/>
+		<e:Image source="tielian" y="73.5"   horizontalCenter="190"/>
+		<e:Image source="tielian" y="115.5"   horizontalCenter="190"/>
+		<e:Image source="tielian" y="155.5"   horizontalCenter="190"/>
+		<e:Image source="tielian1" y="197.2"   horizontalCenter="190"/>
+	</e:Group>
+	<e:Image id="leftBg" source="bantoutiaobg2" scale9Grid="11,2,70,17" rotation="269.8" height="50" width="200" horizontalCenter="-240" verticalCenter="-70"/>
+	<e:Image id="buttonBg" y="837" rotation="180" height="30" width="335" source="bantoutiaobg" scale9Grid="29,5,180,35" horizontalCenter="0" touchEnabled="false"/>
+	<e:Label id="itemname" text="物\n品\n名\n称" size="30" horizontalCenter="-240" verticalCenter="-70" textColor="0xf8b141"/>
+	<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" textColor="0x7E6437" y="812" touchEnabled="false"/>
+	<e:Button id="okBtn" label="确定" y="714" skinName="Btn1Skin" horizontalCenter="0" width="170" height="60" visible="false"/>
+	<e:Group id="imgGroup" horizontalCenter="0" verticalCenter="-309" touchChildren="false" touchEnabled="false">
+		<e:Image id="titleBg" source="tyjhcgtou" width="594" height="204"/>
+		<e:Image id="title" source="tongyongjihuochenggongp3" horizontalCenter="0" y="79"/>
+	</e:Group>
+	<e:Group id="imgAct" y="312" touchChildren="false" touchEnabled="false" width="300" height="300" horizontalCenter="0">
+		<e:Image id="img" source="" scaleX="1.2" scaleY="1.2" horizontalCenter="0" y="0"/>
+		<e:Group id="imgMc" y="269" horizontalCenter="0" rotation="120"/>
+		<e:Group id="zlMc" y="180" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="Groupeff" width="0" height="0" y="518" horizontalCenter="0" scaleX="1.5" scaleY="1.5" x="322" touchChildren="false" touchEnabled="false"/>
+</e:Skin>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OrangeEquipNoticeSkin2" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group x="0" y="0" width="280" height="74">
+		<e:Image source="wupingkuangnb3" width="270" horizontalCenter="0" verticalCenter="0" alpha="0.8" scale9Grid="21,0,2,74"/>
+		<e:Image x="110" y="38" width="140" source="tongyongline2" scale9Grid="18,0,111,4"/>
+		<e:Label id="skillName" text="技能名称" y="46" size="20" textColor="0xFF6A21" textAlign="left" verticalAlign="middle" x="120"/>
+		<e:Label id="desc" text="领悟新技能" y="14" size="20" textAlign="center" textColor="0xf8b141" x="120"/>
+		<ns1:BaseComponent id="item" x="30" className="ItemBase" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" verticalCenter="8"/>
+	</e:Group> 
+</e:Skin>

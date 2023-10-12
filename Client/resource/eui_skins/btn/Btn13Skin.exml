@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Btn13Skin" states="up,down,disabled"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="iconDisplay" y="9" horizontalCenter="0.5" horizontalCenter.up="0.5" y.up="12" horizontalCenter.down="0.5" y.down="8"/>
+</e:Skin>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GWChooseItemSkin" width="450" height="142" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image left="0" right="0" top="0" bottom="0" source="tongyonglabbg" scale9Grid="42,20,48,41"/>
+
+	<e:Image y="109" source="tongyongline" width="350" x="56"/>
+	<e:Label id="nameTxt" text="圣物名字" y="90" size="18" horizontalCenter="-170" textColor="0xd1c28f"/>
+	<e:Label id="power" text="评分：999999" size="20" y="11" textColor="0xf8b141" x="283"/>
+
+
+
+	<e:Label id="attr" text="职业攻击 +30000    职业防御 +4000    职业魔防 +4000    职业生命 +200000" y="34" size="18" width="150" x="103" verticalAlign="middle" height="72"  textColor="0xd1c28f"/>
+	<e:Label id="skill" text="" y="12" size="20" x="103" verticalAlign="middle" bold="true" textColor="0xf8b141" width="220" height="20" textAlign="left"/>
+	<e:Button id="changeBtn" skinName="Btn1Skin" label="更 换" y="38" name="changeBtn" x="280" width="140"/>
+	<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" y="10" horizontalCenter="-171"/>
+	<e:Image id="best" y="43" touchEnabled="false" right="15" source="tuijian2" visible="false"/>
+
+
+
+	<e:Group id="now" x="381" y="73" visible="false">
+		<e:Image source="xiejiaotiao" scale9Grid="20,2,2,15" rotation="135" width="79" scaleX="1.6" scaleY="1.6" x="89" y="0"/>
+		<e:Label text="当前装备" size="20" bold="true" rotation="-45" textColor="0xd1c28f" x="-2" y="54"/>
+	</e:Group>
+	<e:Label id="addNameLb" text="装备该圣物可提升神兵技能1、神兵技能2等级" y="116" size="18" textColor="0x00ff00" horizontalCenter="0"/>
+	<e:Label text="圣物品级：" x="103" y="11" size="18" textColor="0xd1c28f"/>
+	<e:Label id="quality" text="凡品" x="188" y="10" size="20" bold="true"/>
+</e:Skin>

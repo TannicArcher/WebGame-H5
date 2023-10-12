@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LvSkin" width="40" height="127" xmlns:e="http://ns.egret.com/eui">
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Image source="jiejikuang2_png" scaleX="1" scaleY="1" left="0" right="0" top="5" bottom="5" scale9Grid="1,22,37,4"/>
+		<e:BitmapLabel id="lv0" font="num_lv_jie_fnt" text="五阶零星" width="25" scaleX="1" scaleY="1" horizontalCenter="0" top="9" bottom="9"/>
+	</e:Group>
+</e:Skin>

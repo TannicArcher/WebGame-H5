@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MemberItem2Skin" width="550" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Group id="vip" scaleX="0" scaleY="0" touchChildren="false" touchEnabled="false" visible="false"/>
+	<e:Image source="tongyonglabbg" left="0" right="0" top="0" bottom="0" scale9Grid="38,30,50,23"/>
+	<e:Label id="conLab" text="贡献度：999999" x="130" y="42" size="18" textColor="0x9f946d"/>
+	<e:Label id="attack" text="99999999" x="130" y="68" size="18" textColor="0xf8b141" textAlign="left"/>
+	<e:Label id="nameLab" text="名字名字什么" x="130" y="16" size="18" textAlign="left" textColor="0x9f946d"/>
+	<e:Label id="onLine" text="在线" size="20" textColor="0x13CE0C" verticalCenter="0" x="360"/>
+	<e:Image id="face" source="head_11" x="30" width="60" height="60" verticalCenter="0"/>
+	<e:Image id="headBG" x="25" source="touxiangkuang0" width="70" height="70" scale9Grid="6,6,1,1" verticalCenter="0"/>
+	<e:Image id="vipTitle" x="101" y="4" scaleX="0.8" scaleY="0.8" source="vipv_png"/>
+	<e:Group id="group1" width="100" height="80" right="10" verticalCenter="0" locked="true">
+		<e:Button id="impeachBtn" label="弹 劾" width="100" height="40" verticalCenter="0" skinName="Btn3Skin"/>
+	</e:Group>
+	<e:Group id="group2" width="100" height="82" verticalCenter="0" right="10">
+		<e:Button id="demiseBtn" label="禅 让" skinName="Btn1Skin" width="100" height="40"/>
+		<e:Button id="downBtn" label="降 职" y="42" skinName="Btn1Skin" width="100" height="40"/>
+	</e:Group>
+	<e:Group id="group3" width="100" height="82" verticalCenter="0" right="10" locked="true">
+		<e:Button id="kickBtn" label="踢 出" skinName="Btn1Skin" width="100" height="40"/>
+		<e:Button id="appointBtn" label="任 命" y="42" skinName="Btn1Skin" width="100" height="40"/>
+	</e:Group>
+</e:Skin>

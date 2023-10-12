@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ReincarnationWinSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:PriceIcon="PriceIcon.*" xmlns:ns1="*" width="580" height="770">
+	<w:Config id="15d35efe574" />
+
+
+
+	<e:Image top="51" source="lunhui_bg_png" horizontalCenter="0"/>
+	<e:Group x="237" y="164">
+		<e:Image source="lunhui_progress_gray" x="0" y="0"/>
+		<e:Group id="ball" touchEnabled="false" x="56" y="53"/>
+		<e:Group id="water" touchEnabled="false" x="54" y="50"/>
+	</e:Group>
+	<e:Label id="yeliValue" text="3000/10000" size="16" horizontalCenter="2" textColor="0xcccccc" top="214" bold="true"/>
+	<e:Group width="500" horizontalCenter="0" height="225" bottom="125">
+		<e:Image left="0" right="0" bottom="0" source="shuxingbg" scale9Grid="50,5,65,34" top="30" scaleX="1" scaleY="1"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="255" scaleX="1" scaleY="1" top="0" left="0"/>
+		<e:Image source="shuxingbg2" width="255" right="0" scaleX="-1" x="568" scaleY="1" top="0" scale9Grid="187,0,8,32"/>
+		<e:Image source="lunhui_attr_title" horizontalCenter="0" top="-2"/>
+		<e:Group id="attrGroup0" horizontalCenter="0.5" width="227" y="32" x="137" scaleX="1" scaleY="1" visible="false">
+			<ns1:BaseComponent id="powerPanel0" skinName="PowerPanelSkin" className="PowerPanel" scaleX="0.75" scaleY="0.75" y="0" x="0"/>
+			<e:Label id="attr0" text="攻击：1000000\n物防：10000000\n魔防：10000000\n生命：10000000\n神圣伤害：10000000" x="7" y="23" size="20" lineSpacing="5" verticalAlign="top" textAlign="left" textColor="0xd1c28f"/>
+			<e:layout>
+			<e:VerticalLayout horizontalAlign="center" gap="9"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="attrGroup1" y="32" horizontalCenter="-123">
+			<ns1:BaseComponent id="powerPanel1" skinName="PowerPanelSkin" className="PowerPanel" scaleX="0.75" scaleY="0.75" top="0" y="8" horizontalCenter="0"/>
+			<e:Label id="attr1" text="攻击：10000000\n物防：10000000\n魔防：10000000\n生命：10000000\n合击神圣伤害：1000000" size="20" lineSpacing="5" verticalAlign="top" textAlign="left" y="58" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0xd1c28f"/>
+		</e:Group>
+		<e:Group id="attrGroup2" y="31" horizontalCenter="143">
+			<ns1:BaseComponent id="powerPanel2" skinName="PowerPanelSkin" className="PowerPanel" scaleX="0.75" scaleY="0.75" horizontalCenter="0" top="0"/>
+			<e:Label id="attr2" text="攻击：10000000\n物防：10000000\n魔防：10000000\n生命：10000000\n合击神圣伤害：10000000" y="58" size="20" lineSpacing="5" verticalAlign="top" textAlign="left" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x00ff00"/>
+		</e:Group>
+
+
+		<e:Image id="arrow" source="jiantouyou" scaleX="1" scaleY="1" verticalCenter="11.5" horizontalCenter="0.5"/>
+	</e:Group>
+	<e:Group id="dinghong" width="556" height="104" bottom="6" horizontalCenter="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0"/>
+	</e:Group>
+	<e:Button id="upBtn" label="轮 回" width="156" height="60" skinName="Btn1Skin" horizontalCenter="0" bottom="20"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" horizontalCenter="66" bottom="56"/>
+	<e:Label id="maxLevel" text="已满级" bold="true" size="24" horizontalCenter="0" bottom="38" textColor="0x00ff00"/>
+	<e:Group horizontalCenter="170" bottom="41">
+		<e:Label id="getItemTxt" text="获取业力" size="22" textColor="0x00FF00" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" y="0" x="0"/>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+	<e:Group top="70" left="27">
+		<e:Image source="lunhui_name_bg" scale9Grid="9,130,54,10" height="242" x="0" y="0"/>
+		<e:BitmapLabel id="lunhuiLv" font="lunhui_lv_fnt" text="畜牲道·灭境" width="42" x="15" y="25"/>
+	</e:Group>
+	<e:Group horizontalCenter="-123" top="200">
+		<e:Image id="lv0" source="lunhui_xuan" x="0" y="0"/>
+		<e:Group id="eff0" x="21" y="23" touchEnabled="false"/>
+	</e:Group>
+	<e:Group horizontalCenter="-63" top="93">
+		<e:Image id="lv1" source="lunhui_sheng" x="0" y="0"/>
+		<e:Group x="20" y="19" id="eff1" touchEnabled="false"/>
+	</e:Group>
+	<e:Group horizontalCenter="64" top="92">
+		<e:Image id="lv2" source="lunhui_po" x="0" y="0"/>
+		<e:Group x="19" y="20" id="eff2" touchEnabled="false"/>
+	</e:Group>
+	<e:Group horizontalCenter="125" top="200">
+		<e:Image id="lv3" source="lunhui_xu" x="0" y="0"/>
+		<e:Group x="20" y="18" id="eff3" touchEnabled="false"/>
+	</e:Group>
+	<e:Group horizontalCenter="61" top="308">
+		<e:Image id="lv4" source="lunhui_wang" x="0" y="0"/>
+		<e:Group x="20" y="19" id="eff4" touchEnabled="false"/>
+	</e:Group>
+	<e:Group horizontalCenter="-62" top="307">
+		<e:Image id="lv5" source="lunhui_mie" x="0" y="0"/>
+		<e:Group x="19" y="20" id="eff5" touchEnabled="false"/>
+	</e:Group>
+
+
+
+
+
+</e:Skin>

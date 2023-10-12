@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LadderResiltWinSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15aa3a89626"/>
+	<e:Image id="bg"  horizontalCenter="0" verticalCenter="0" source="win_png"/>
+	<e:Image id="starBg" width="281" height="300" x="229" y="119"   source=""/>
+	<e:Button id="closeBtn0" label="领奖并往下一关(10s)" skinName="Btn1Skin" width="220" height="60" verticalCenter="248" horizontalCenter="0"/>
+	<e:Button id="closeBtn1" label="领奖并退出(10s)" skinName="Btn1Skin" width="220" height="60" horizontalCenter="0" verticalCenter="248"/>
+	<e:Scroller width="350" height="400" horizontalCenter="0" verticalCenter="10">
+		<e:List id="list" itemRenderer="ItemBase" x="-16" y="-0.67">
+			<e:layout>
+				<e:TileLayout/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Image id="result" horizontalCenter="0" source="win_02"  verticalCenter="-253"/>
+	<e:Label text="挑战奖励：" size="20"  horizontalCenter="-113" verticalCenter="-200"/>
+</e:Skin>

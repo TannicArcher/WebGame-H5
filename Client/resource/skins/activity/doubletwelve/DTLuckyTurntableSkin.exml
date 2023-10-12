@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DTLuckyTurntableSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*"
+        xmlns:w="http://ns.egret.com/wing" width="560" height="620">
+	<w:Config id="15a98a3982e" />
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.7" width="460" 
+	         height="610" />
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image id="bg0" source="quanminbossbg_png" width="554" horizontalCenter="0" top="0" bottom="0"/>
+		<e:Group horizontalCenter="0" width="512" height="604" verticalCenter="-30">
+			<e:Image source="tttluckybg_png"/>
+			<e:Image y="102" source="tttzp1_png" horizontalCenter="1.5" scaleX="0.95" scaleY="0.95"/>
+			<e:Image y="391" source="tttzp2_png" scaleX="0.95" scaleY="0.95" horizontalCenter="2"/>
+			<e:Image id="select" y="100" source="tttzpselect_png" x="201" scaleX="1.8" scaleY="1.8" visible="false"/>
+			<e:Group y="105" horizontalCenter="2" width="430" height="385">
+			<ns1:BaseComponent id="item0" y="0" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" horizontalCenter="0" scaleX="0.9" scaleY="0.9"/>
+			<ns1:BaseComponent id="item1" y="32" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="85"/>
+			<ns1:BaseComponent id="item2" y="112" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="148"/>
+			<ns1:BaseComponent id="item3" y="200" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="148"/>
+			<ns1:BaseComponent id="item4" y="278" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="85"/>
+			<ns1:BaseComponent id="item5" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" horizontalCenter="0" bottom="0" scaleX="0.9" scaleY="0.9"/>
+			<ns1:BaseComponent id="item6" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" y="278" scaleX="0.9" scaleY="0.9" horizontalCenter="-85"/>
+			<ns1:BaseComponent id="item7" y="200" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="-148"/>
+			<ns1:BaseComponent id="item8" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" y="112" horizontalCenter="-148"/>
+			<ns1:BaseComponent id="item9" y="32" skinName="tttZhuanpanItemSkin" className="BabelLotteryItem" scaleX="0.9" scaleY="0.9" horizontalCenter="-85"/>
+			</e:Group>
+			<e:Image id="tttzhi" source="tttluckyzz" x="259" y="297" touchEnabled="false" anchorOffsetX="76" anchorOffsetY="126"/>
+			<e:CheckBox id="turnten" label="10连抽" skinName="CheckBox0" y="358" horizontalCenter="1.5" scaleX="0.8" scaleY="0.8"/>
+			<e:Button id="choujiangBtn" skinName="Btn0Skin" icon="tttluckybtn" horizontalCenter="3" verticalCenter="-5.5"/>
+			<e:Button id="closeBtn" skinName="Btn0Skin" icon="fanhui" right="0" y="530" visible="false"/>
+		</e:Group>
+		<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+		<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_xingyunzhuanpan"/>
+		<e:Label text="进度奖励将在每日0点重置" size="18" horizontalCenter="150" bottom="91" textColor="0x00ff00" bold="true"/>
+	</e:Group>
+	<e:Group horizontalCenter="0" width="530" bottom="5" >
+		<e:ProgressBar id="bar0" height="17" skinName="bar5Skin" value="100" y="32" width="90" x="76"/>
+		<e:ProgressBar id="bar1" height="17" skinName="bar5Skin" value="100" y="32" width="88" x="225"/>
+		<e:ProgressBar id="bar2" height="17" skinName="bar5Skin" value="100" y="32" width="92" x="370"/>
+
+		<e:Image source="jingyantiao6" left="70" right="50" scale9Grid="26,3,8,19" y="28"/>
+		<e:Image source="touxiangkuang" anchorOffsetX="0" width="80" anchorOffsetY="0" height="80"/>
+
+		<e:Label text="已抽次数" y="24" size="14" scaleX="1" scaleY="1" textColor="0x9F946D" horizontalCenter="-225"/>
+		<e:Label id="turntime" text="25" y="41" size="22" textColor="0x00FF00" textAlign="center" horizontalCenter="-225.5"/>
+		<e:Group y="6" x="160" width="72">
+		<e:Label id="turntime0" text="抽奖4次" size="18" y="60" horizontalCenter="0" textColor="0xD1C28F"/>
+		<ns1:BaseComponent id="gift0" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" className="ItemBase"/>
+		<e:Group id="eff0" scaleX="0.8" scaleY="0.8" y="30" x="34"/>
+		<e:Group id="isget0" width="90" height="96" scaleX="0.8" scaleY="0.8"/>
+		<e:Image id="lingqu0" source="tongyong2_json.yilingqu" y="16" horizontalCenter="0"/>
+		<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" x="50" y="-8"/>
+		</e:Group>
+		<e:Group x="306" y="6" width="72">
+		<e:Label id="turntime1" text="抽奖10次" size="18" textColor="0xD1C28F" y="60" horizontalCenter="0"/>
+		<ns1:BaseComponent id="gift1" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" className="ItemBase"/>
+		<e:Group id="eff1" scaleX="0.8" scaleY="0.8" x="34" y="30"/>
+		<e:Group id="isget1" width="90" height="96" scaleX="0.8" scaleY="0.8"/>
+		<e:Image id="lingqu1" source="tongyong2_json.yilingqu" y="16" horizontalCenter="0" visible="false"/>
+		<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" x="50" y="-8" visible="false"/>
+		</e:Group>
+		<e:Group x="456" y="6" width="72">
+		<e:Label id="turntime2" text="抽奖20次" size="18" textColor="0xD1C28F" y="60" horizontalCenter="0"/>
+		<ns1:BaseComponent id="gift2" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" className="ItemBase"/>
+		<e:Group id="eff2" scaleX="0.8" scaleY="0.8" x="34" y="30"/>
+		<e:Group id="isget2" height="96" scaleX="0.8" scaleY="0.8" width="90"/>
+		<e:Image id="lingqu2" source="tongyong2_json.yilingqu" y="16" horizontalCenter="0" visible="false"/>
+		<e:Image id="redPoint2" touchEnabled="false" source="zjmhongdian" x="50" y="-8" visible="false"/>
+		</e:Group>
+	</e:Group>
+	<e:Image source="bantoutiaoboss" y="38" height="30" width="230" x="0"/>
+	<e:Group x="10" y="45">
+		<e:Label id="actTime" text="剩余时间：20时20分20秒" size="18" textColor="0xD1C28F" y="549" x="186"/>
+		<e:layout>
+		<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Group x="5" y="450" visible="false">
+		<e:Label id="notice4" text="荒野老镖客 抽到了 热血神剑" x="0" y="0" size="14" textColor="0x9f946d"/>
+		<e:Label id="notice3" text="荒野老镖客 抽到了 热血神剑" x="10" y="10" size="14" textColor="0x9f946d"/>
+		<e:Label id="notice2" text="荒野老镖客 抽到了 热血神剑" x="20" y="20" size="14" textColor="0x9f946d"/>
+		<e:Label id="notice1" text="荒野老镖客 抽到了 热血神剑" x="30" y="30" size="14" textColor="0x9f946d"/>
+		<e:Label id="notice0" text="荒野老镖客 抽到了 热血神剑" x="40" y="40" size="14" textColor="0x9f946d"/>
+		<e:layout>
+			<e:VerticalLayout gap="2"/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="getkey" text="获取钥匙" size="20" right="60" textColor="0x20cb30" bottom="111" visible="false"/>
+	<e:Scroller id="barList" bounces="false" bottom="92" top="454" left="0">
+		<e:List id="list" x="0" y="-2" itemRendererSkinName="HuntListRendererSkin" scaleX="0.7" scaleY="0.7">
+		</e:List>
+	</e:Scroller>
+	<e:Image scaleX="-1" right="0" height="30" width="300" source="bantoutiaoboss" bottom="118"/>
+	<e:Label text="抽奖消耗：" textColor="0xd1c28f" size="20" bottom="123" x="280" bold="true"/>
+	<e:Group bottom="118" x="370">
+		<e:Image source="szyuanbao" width="30" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="pay0" text="500" size="20" textColor="0xF8B141" x="32" y="14" scaleX="1" scaleY="1"/>
+		<e:Label text="或" size="20" textColor="0xF8B141" x="189" y="5" scaleX="1" scaleY="1"/>
+		<e:Image id="icon" anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" x="215" y="0" scaleX="1" scaleY="1" source="szkey"/>
+		<e:Label id="num" text="10" y="0" size="20" x="136.5" textColor="0x00FF00"/>
+		<e:Label id="num2" text="/1" size="20" textColor="0xF8B141" x="199" y="15" scaleX="1" scaleY="1"/>
+		<e:layout>
+		<e:HorizontalLayout verticalAlign="middle" gap="2"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

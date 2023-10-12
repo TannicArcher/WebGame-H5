@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="YuPeiUpTipsSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="anigroup" width="350" verticalCenter="-30" horizontalCenter="0">
+		<e:Image id="BG" top="0" bottom="0" left="0" right="0" source="tongyongtip3" scale9Grid="11,10,9,10"/>
+		<e:Image source="tongyongtip2" left="0" right="0" top="0" bottom="0" scale9Grid="18,18,2,4"/>
+		<e:Image scale9Grid="85,1,6,1" width="340" y="150" horizontalCenter="0" source="tongyongline"/>
+		<e:Label text="数量：" size="20" x="120" y="90" textColor="0x966E5A"/>
+		<e:Label id="num" text="9" size="20" x="180" y="90" bold="true" textColor="0xFFD9B5"/>
+		<e:Label text="当前使用：" size="20" x="120" y="66" textColor="0x966E5A"/>
+		<e:Label id="use" text="10/100" size="20" x="220" y="66" bold="true" textColor="0xFFD9B5"/>
+		<e:Group id="info" y="130" left="13">
+			<e:Label text="（玉佩达到" size="16" x="0" y="0" textColor="0xFF0000"/>
+			<e:Label id="num0" text="30阶10级" size="16" x="60" y="0" bold="true" textColor="0xFFD9B5"/>
+			<e:Label text="后增加使用上限）" size="16" x="10" y="10" textColor="0xFF0000"/>
+			<e:layout>
+			<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Label text="使用后玉佩属性：" size="18" width="320" y="160" textAlign="left" textColor="0xD1C28F" x="15"/>
+		<e:Label id="attr" text="攻击+100\n暴击附加伤害+10100\n暴击附加伤害+1000\n暴击附加伤害+1000" size="18" width="320" textAlign="left" x="15" textColor="0x00ff00" lineSpacing="7" top="185" bottom="45"/>
+		<e:Group x="15" bottom="15">
+			<e:Label text="可在" size="18" y="0" textAlign="left" textColor="0xD1C28F" x="81"/>
+			<e:Label text="玉佩" size="18" y="10" textAlign="left" x="81" textColor="0x00ff00"/>
+			<e:Label text="界面使用为玉佩提升属性" size="18" y="20" textAlign="left" textColor="0xD1C28F" x="0"/>
+			<e:layout>
+			<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+		<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" x="20" y="52"/>
+		<e:Label id="nameLabel" text="初级温养丹" size="20" textAlign="left" y="20" x="20" bold="true" textColor="0xff9900"/>
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" horizontalCenter="0" x="100" scaleX="1" scaleY="1" bottom="-30">
+		<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+		<e:Button id="closeBtn2" label="按钮" y="-17" skinName="Btn0Skin" right="-10" x="188" visible="false"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

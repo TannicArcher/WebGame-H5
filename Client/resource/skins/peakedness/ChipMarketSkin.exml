@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChipMarketSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="560" height="683">
+	<e:Scroller width="560" horizontalCenter="0" anchorOffsetY="0" bottom="40" top="0">
+		<e:List id="listView" x="54" y="37" itemRendererSkinName="ChipMarketItemSkin">
+
+		<e:layout>
+			<e:VerticalLayout gap="4"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group bottom="0" left="0" right="0" height="40">
+		<e:Image id="background" source="tongyongtip1" scale9Grid="7,6,11,12" right="0" bottom="0" touchEnabled="false" scaleX="1" scaleY="1" left="0" top="0" x="0" y="-546"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,18,2,4" touchEnabled="false" bottom="0" top="0" left="0" right="0" scaleX="1" scaleY="1" x="0" y="-546"/>
+		<e:Group horizontalCenter="0" verticalCenter="0">
+			<e:Label text="我的筹码：" x="-34" size="20" textAlign="left" y="4" textColor="0xff9900"/>
+		<e:Label id="myLabel" text="30" size="20" x="163" scaleX="1" scaleY="1" verticalCenter="0.5" y="-12" textColor="0xff9900"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0" verticalAlign="middle"/>
+		</e:layout>
+		</e:Group>
+		<e:Label id="getWay" text="获取筹码" size="20" textAlign="left" textColor="0x00ff00" left="380" verticalCenter="-9.5" visible="false"/>
+	</e:Group> 
+</e:Skin>

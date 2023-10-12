@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GwBossSkin" width="556" height="716" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="gwboss_bg_png" horizontalCenter="0" y="50"/>
+	<e:Group id="tower" x="145" y="21">
+		<e:Image source="gw_tower_black" y="0" horizontalCenter="0" x="-11" scaleX="1" scaleY="1"/>
+		<e:Image id="towerTitleBg" x="-18" y="66" source="gw_title_bg_0" scaleX="1" scaleY="1"/>
+		<e:Image id="towerTitle" x="-4" y="96" source="gw_title_0" scaleX="1" scaleY="1"/>
+		<e:Group id="tower0" y="236" horizontalCenter="0" width="190" height="86" x="38" scaleX="1" scaleY="1">
+		<e:Image y="3" source="gw_tower_bottom" horizontalCenter="0" x="-49" scaleX="1" scaleY="1"/>
+		<e:Image source="gw_tower_0" horizontalCenter="2" y="8"/>
+		<e:Image source="gw_tower_light_0" scaleX="1" scaleY="1" top="0"/>
+		<e:Image source="gw_tower_light_0" scaleX="-1" scaleY="1" x="190" y="0"/>
+		</e:Group>
+		<e:Group id="tower1" y="191" horizontalCenter="0" x="31" scaleX="1" scaleY="1" visible="false">
+		<e:Image source="gw_tower_1" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image scaleX="1" scaleY="1" top="1" source="gw_tower_light_1" x="21"/>
+		<e:Image scaleX="-1" scaleY="1" y="1" source="gw_tower_light_1" x="185"/>
+		</e:Group>
+		<e:Group id="tower2" y="138" width="148" height="64" horizontalCenter="0" x="59" scaleX="1" scaleY="1" visible="false">
+			<e:Image horizontalCenter="1" source="gw_tower_2" y="1"/>
+			<e:Image source="gw_tower_light_1" scaleX="1" scaleY="1" top="0" left="0" bottom="0" scale9Grid="68,46,4,2" width="74"/>
+			<e:Image source="gw_tower_light_1" scaleX="-1" scaleY="1" right="0" top="0" bottom="0" scale9Grid="68,46,4,2" width="74"/>
+		</e:Group>
+		<e:Group id="tower3" y="95" width="122" height="54" horizontalCenter="0" x="72" scaleX="1" scaleY="1" visible="false">
+			<e:Image horizontalCenter="0.5" source="gw_tower_3" top="-1"/>
+			<e:Image source="gw_tower_light_1" scaleX="1" scaleY="1" top="0" left="0" bottom="0" scale9Grid="68,46,4,2" width="61"/>
+			<e:Image source="gw_tower_light_1" scaleX="-1" scaleY="1" right="0" top="0" bottom="0" scale9Grid="68,46,4,2" width="61"/>
+		</e:Group>
+		<e:Group id="tower4" y="55" width="100" height="46" horizontalCenter="1" x="84" scaleX="1" scaleY="1" visible="false">
+			<e:Image horizontalCenter="0.5" source="gw_tower_4" y="1"/>
+			<e:Image source="gw_tower_light_1" scaleX="1" scaleY="1" top="0" left="0" bottom="0" scale9Grid="68,46,4,2" width="50"/>
+			<e:Image source="gw_tower_light_1" scaleX="-1" scaleY="1" right="0" top="0" bottom="0" scale9Grid="68,46,4,2" width="50"/>
+			<e:Image y="-55" id="tower5" source="gw_tower_top" horizontalCenter="3" x="-19" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Label id="towerInfo0" text="一层（4转及以上）" y="316" size="20" textAlign="center" textColor="0xE2DFD4" horizontalCenter="0" touchEnabled="false" x="47" scaleX="1" scaleY="1"/>
+		<e:Label id="towerInfo1" text="二层（4转及以上）" y="253" size="20" textAlign="center" textColor="0xE2DFD4" horizontalCenter="0" touchEnabled="false" x="47" scaleX="1" scaleY="1"/>
+		<e:Label id="towerInfo2" text="三层（4转及以上）" y="198" size="20" textAlign="center" textColor="0xE2DFD4" horizontalCenter="0" touchEnabled="false" x="47" scaleX="1" scaleY="1"/>
+		<e:Label id="towerInfo3" text="四层（4转及以上）" y="143" size="20" textAlign="center" textColor="0xE2DFD4" horizontalCenter="0" touchEnabled="false" x="47" scaleX="1" scaleY="1"/>
+		<e:Label id="towerInfo4" text="五层（4转及以上）" y="93" size="20" textAlign="center" textColor="0xE2DFD4" horizontalCenter="0" touchEnabled="false" x="47" scaleX="1" scaleY="1"/>
+		<e:Image id="towerRedPoint0" source="zjmhongdian" scaleX="1" scaleY="1" x="210" y="264" touchEnabled="false"/>
+		<e:Image id="towerRedPoint1" source="zjmhongdian" scaleX="1" scaleY="1" x="203" y="223" touchEnabled="false"/>
+		<e:Image id="towerRedPoint2" source="zjmhongdian" scaleX="1" scaleY="1" x="193" y="169" touchEnabled="false"/>
+		<e:Image id="towerRedPoint3" source="zjmhongdian" scaleX="1" scaleY="1" x="181" y="117" touchEnabled="false"/>
+		<e:Image id="towerRedPoint4" source="zjmhongdian" scaleX="1" scaleY="1" x="173" y="67" touchEnabled="false"/>
+	</e:Group>
+	<e:Group id="gw2" x="167" y="462">
+		<e:Image id="img2" source="gw_field_locked_2" y="0" x="41"/>
+		<e:Image id="redPoint2" source="zjmhongdian" scaleX="1" scaleY="1" bottom="140" horizontalCenter="58.5" x="-191" y="19" touchEnabled="false"/>
+		<e:Image id="titleBg2" source="gw_title_bg_1" x="0" y="15" touchEnabled="false"/>
+		<e:Image id="title2" x="14" y="35" source="gw_title_locked_3" touchEnabled="false"/>
+		<e:Label id="info2" text="（4转及以上）" y="168" size="20" textColor="0xE2DFD4" textAlign="center" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="gw0" x="6" y="327">
+		<e:Image id="img0" y="26" x="31" source="gw_field_locked_0"/>
+		<e:Image id="redPoint0" source="zjmhongdian" scaleX="1" scaleY="1" bottom="100" horizontalCenter="38" touchEnabled="false"/>
+		<e:Image id="titleBg0" x="0" y="0" source="gw_title_bg_1" touchEnabled="false"/>
+		<e:Image id="title0" source="gw_title_locked_1" x="14" y="20" touchEnabled="false"/>
+		<e:Label id="info0" text="（4转及以上）\n12:23:12" y="153" size="20" textAlign="center" horizontalCenter="0" textColor="0xa9a9a9"/>
+	</e:Group>
+	<e:Group id="gw1" x="336" y="357">
+		<e:Image id="img1" source="gw_field_locked_1" y="1" x="37"/>
+		<e:Image id="titleBg1" source="gw_title_bg_1" x="0" y="0" touchEnabled="false"/>
+		<e:Image id="title1" x="14" y="20" source="gw_title_locked_1" touchEnabled="false"/>
+		<e:Label id="info1" text="（4转及以上）" y="133" size="20" textAlign="center" textColor="0xe2dfd4" horizontalCenter="0"/>
+		<e:Image id="redPoint1" source="zjmhongdian" scaleX="1" scaleY="1" bottom="100" horizontalCenter="58" x="-191" y="19" touchEnabled="false"/>
+	</e:Group>
+	<e:Label id="leftTime" text="今日剩余圣域归属次数：6" size="20" textColor="0x00ff00" bottom="10" horizontalCenter="0"/>
+	<e:Label id="remindTpis" text="提醒设置" size="20" textColor="0x00FF00" horizontalCenter="177" bottom="10"/>
+</e:Skin>

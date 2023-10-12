@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HelpTipsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="497">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" />
+	<e:Group id="anigroup" horizontalCenter="0" width="350" verticalCenter="0">
+		<e:Image id="background" left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="6,6,12,13" />
+		<e:Label id="textInfo" text="1" size="18" lineSpacing="3" width="320" horizontalCenter="0" textColor="0xc9c9c9"
+		         top="70" bottom="60" />
+		<e:Label text="玩法说明" size="24" horizontalCenter="0" bold="true" textColor="0xbd600d" y="20" />
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" scale9Grid="128,2,15,41" width="300" />
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" bottom="-30" textColor="0x7E6437"  horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

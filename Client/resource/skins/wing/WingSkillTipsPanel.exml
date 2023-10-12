@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WingSkillTipsPanel" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" height="400">
+	<w:Config id="1586b36a128"/>
+	<e:Rect fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group horizontalCenter="0" width="300" height="200" verticalCenter="0">
+		<e:Image id="BG" top="0" bottom="0" left="0" right="0" source="tongyongtip1" scale9Grid="5,5,15,15"/>
+		<e:Label id="nameLabel" text="羽毛" size="24" x="20" y="16" bold="true" textColor="0xff00ff"/>
+		<e:Label text="羽翼技能" size="20" x="20" y="60" bold="true" textColor="0x7e6437"/>
+		<e:Label id="description" text="使用后获得1000万角色经验值" size="18" width="260" y="80" horizontalCenter="0" textAlign="left" textColor="0xd1c28f" height="100" verticalAlign="middle"/>
+		<e:Image scale9Grid="85,1,6,1" y="50" source="tongyongline" left="0" right="0"/>
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-30" textColor="0x7E6437"/>
+	</e:Group>
+</e:Skin>

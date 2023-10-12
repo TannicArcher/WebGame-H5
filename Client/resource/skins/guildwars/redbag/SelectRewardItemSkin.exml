@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SelectRewardItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="186" width="436">
+
+	<e:Image left="0" right="0" top="0" bottom="0" source="scitembg" scale9Grid="65,29,2,1"/>
+	<e:Image left="0" right="0" y="82" source="tongyongline"/>
+	<e:Label id="chooseNum" y="8" text="3/3" size="20" x="370" textColor="0x00FF00"/>
+	<e:Label y="8" text="奖励剩余" size="20" x="280" textColor="0x9f946d"/>
+	<e:Label id="boxname" y="10" text="宝箱1" size="20" x="40" textColor="0xf8b141"/>
+	<ns1:ItemBase id="goods" y="6" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" x="198"/>
+	<e:Button id="choosePeople" x="280" y="30" label="选择成员" skinName="Btn3Skin" width="120" height="50"/>
+	<e:Scroller y="87" horizontalCenter="0.5" width="319">
+		<e:List id="list" y="0" itemRendererSkinName="MemberHeadSkin">
+			<e:layout>
+				<e:HorizontalLayout gap="6"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Image id="rightBtn" source="jiantouyou2" y="120" touchEnabled="true" right="9"/>
+	<e:Image id="leftBtn" source="jiantouyou2" y="120" scaleX="-1" touchEnabled="true" x="40"/>
+	<e:Image source="tongyongdian2" x="17" y="12"/>
+</e:Skin>

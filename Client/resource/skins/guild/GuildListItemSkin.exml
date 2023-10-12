@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildListItemSkin" width="550" height="98" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Image source="tongyonglabbg"  scale9Grid="40,24,47,30" left="0" right="0" top="0" bottom="0"/>
+	<e:Label id="nameLab" text="公会名字六个" x="93" y="20" size="24" bold="true" textColor="0xf8b141"/>
+	<e:Label text="会长:" x="95" y="56" size="20" textColor="0x9f946d"/>
+	<e:Label id="president" text="玩家名称六字" x="150" y="56" size="20" textColor="0xd1c28f"/>
+	<e:Label id="president0" text="战斗力:" x="310" y="56" size="20" textColor="0x9f946d" visible="false"/>
+	<e:Label id="attrLab" text="3000000" x="384" y="56" size="20" textColor="0xF8B141" visible="false"/>
+	<e:Label text="人数：" x="350" y="56" size="20" textColor="0x9f946d"/>
+	<e:Label id="member" text="15/50" x="410" y="56" size="20" textColor="0xd1c28f"/>
+	<e:Label text="等级：" x="350" y="22" size="20" textColor="0x9f946d"/>
+	<e:Label id="member0" text="9" x="410" y="21" size="22" textColor="0xf8b141"/>
+	<e:Label id="numLab" text="99" size="30" verticalCenter="0" italic="true" horizontalCenter="-231" textAlign="center" textColor="0x9f946d"/>
+	<e:Image id="numImg" x="20" source="paihang1" verticalCenter="0"/>
+
+	
+</e:Skin>

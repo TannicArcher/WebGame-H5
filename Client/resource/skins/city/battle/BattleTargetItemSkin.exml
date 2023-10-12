@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleTargetItemSkin" width="150" height="96" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="tongyongline" height="2" scale9Grid="104,0,11,3" rotation="90" width="110" y="0" x="140"/>
+	<e:Label id="rank" text="1000\n积分" size="20" verticalCenter="0" textColor="0x9F946D" left="5" textAlign="center"/>
+	<ns1:BaseComponent id="award" x="61" skinName="ItemSkin" className="ItemBase" top="0"/>
+	<e:Image id="already" source="tongyong2_json.yilingqu" x="87" y="0" rotation="45" touchEnabled="false"/>
+</e:Skin>

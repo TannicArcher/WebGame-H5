@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="targetSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="580" height="930">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="0" width="500" height="600">
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" horizontalCenter="0" bottom="-50">
+			<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+		</e:Group>
+		<e:Image id="bg" left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="7,5,10,8"/>
+		<e:Image source="yugaobiankuang" height="70" left="0" right="0" scale9Grid="1,3,2,1"/>
+		<e:Image height="620" source="zhuakuang2" x="-16" scale9Grid="40,30,7,1" width="266" y="-8"/>
+		<e:Image source="zhuakuang2" height="620" scale9Grid="40,30,7,1" width="266" y="-8" scaleX="-1" right="-16"/>
+
+		<e:Group id="quest" width="500" height="600" visible="false">
+			<e:Image y="70" height="438" left="0" right="0" source="hejibg4_png"/>
+			<e:Group id="dinghong" width="500" height="140" bottom="0" horizontalCenter="0">
+				<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" width="250"/>
+				<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" width="250"/>
+			</e:Group>
+			<e:Image id="roleimg" x="46" y="30" source="punchpre1_png" width="100" height="250" visible="false"/>
+			<e:Image id="enenyimg" x="204" y="167" source="shiwang_png" width="196" height="164" visible="false"/>
+			<e:Image id="questTitleBg" y="2" source="shuxingbg4"  scaleY="1.3" scaleX="2" horizontalCenter="0"/>
+			<e:Image id="questTitleImg" y="20" horizontalCenter="0" source="shenqides_00_png"/>
+			<e:Group id="questSchedule" width="456" horizontalCenter="0" bottom="54">
+			<e:Image id="questScheduleBg" y="0" source="shuxingbg" scale9Grid="20,5,125,34" width="456" height="95" horizontalCenter="0" visible="false"/>
+			<e:Rect width="390" height="16" y="25" fillAlpha="0.4" horizontalCenter="0"/>
+			<e:ProgressBar id="bar2" width="382" height="15" y="25" skinName="bar1Skin" value="0" horizontalCenter="0"/>
+			<e:Image id="questScheduleFrame" width="394" y="21" source="jingyantiao6" scale9Grid="21,8,17,7" horizontalCenter="0"/>
+			<e:Label id="questDes1" text="再完成     个任务领取                开启合击技能" y="56" size="18" width="456" horizontalCenter="0" verticalAlign="middle" textAlign="center" textColor="0xf8b141"/>
+			<e:Label id="questDes2" text="火龙之心" y="56" size="18" width="83" textAlign="center" textColor="0x35E62D" verticalAlign="middle" x="216"/>
+			<e:Label id="questNumber" text="25" y="56" size="18" width="40" textAlign="center" x="96" textColor="0x35e62d" verticalAlign="middle"/>
+			</e:Group>
+			<e:Button id="btn2" label="继续任务" skinName="Btn1Skin" horizontalCenter="0" bottom="10"/>
+			<e:Image id="skillName" scaleX="0.6" scaleY="0.6" x="25" y="70" source="80001_png" visible="false"/>
+			<e:Group x="20" y="360">
+			<e:Image id="desP0" source="tongyongdian2" x="0" y="7"/>
+			<e:Image id="desBg0" source="shuxingbg4"  scaleX="2" x="-30" y="-10" width="155.5"/>
+			<e:Label id="des0" text="集三角色攻击力总和" y="6" size="18" x="15" textColor="0xf8b141"/>
+			<e:Image id="desP1" source="tongyongdian2" x="0" y="31"/>
+			<e:Image id="desBg1" source="shuxingbg4"  scaleX="2.2" x="-30" y="14" width="155.46"/>
+			<e:Label id="des1a" text="对玩家造成           的伤害" y="30" size="18" x="15" textColor="0xf8b141"/>
+			<e:Label id="des1b" text="480%" y="30" size="18" x="109" textColor="0x20CB30"/>
+			<e:Image id="desP2" source="tongyongdian2" x="0" y="55"/>
+			<e:Image id="desBg2" source="shuxingbg4"  scaleX="2.3" x="-20" y="37" width="152.18"/>
+			<e:Label id="des2a" text="对怪物造成             的伤害" y="54" size="18" x="15" textColor="0xf8b141"/>
+			<e:Label id="des2b" text="1050%" y="54" size="18" textColor="0x20CB30" x="109"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="guanqia" width="500" height="600" horizontalCenter="0" verticalCenter="0">
+			<e:Image y="70" source="longhunbg_png" width="500" height="478" horizontalCenter="0"/>
+			<e:Group id="dinghong0" width="500" height="140" bottom="0" horizontalCenter="0">
+				<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" width="250"/>
+				<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" width="250"/>
+			</e:Group>
+			<e:Image id="artifactImg" y="62" width="423" height="423" alpha="1" blendMode="normal" source="sq_49_png" horizontalCenter="0"/>
+			<e:Image id="titleGuanqiaBg" y="2" source="shuxingbg4"  scaleY="1.3" scaleX="2" horizontalCenter="0"/>
+			<e:Image id="titleGuanqiaImg" y="20" horizontalCenter="0" source="shenqiguide_png"/>
+			<e:Group id="guanqiaSchedule" horizontalCenter="0" bottom="54">
+			<e:Image id="guanqiaScheduleBg" y="0" source="shuxingbg" scale9Grid="20,5,125,34"  width="456"  height="95" x="0" visible="false"/>
+			<e:Rect width="390" height="16" y="25" fillAlpha="0.4" x="33"/>
+			<e:ProgressBar id="bar1" width="382" height="15" x="37" y="25" skinName="bar1Skin" value="0"/>
+			<e:Image id="guanqiaScheduleFrame" width="394" y="21" source="jingyantiao6" scale9Grid="21,8,17,7" x="31"/>
+			<e:Label id="guanqiaDes1" text="再战     关 获得                    " y="56" size="18"  width="456" horizontalCenter="0" verticalAlign="middle" textAlign="center" textColor="0xF8B141"/>
+			<e:Label id="artifactName1" text="修罗碎片①" y="56" size="18"  width="100" textAlign="center" textColor="0x35E62D" x="238" verticalAlign="middle"/>
+			<e:Label id="guanqiaDes2" text="19" y="56" size="18"  width="40" textAlign="center" textColor="0x35E62D" x="146" verticalAlign="middle"/>
+			</e:Group>
+			<e:Group id="guanqiaDes" x="8" y="394">
+			<e:Image id="desP3" source="tongyongdian2" x="0" y="7"/>
+			<e:Image id="desBg3" source="shuxingbg4"  scaleX="2" x="-30" y="-10" width="222.5"/>
+			<e:Label id="des3" text="再收集    个碎片可合成神器" y="5" size="18" x="17" textColor="0xF8B141"/>
+			<e:Label id="number1" text="8" y="5" size="18" x="69" textColor="0x35e62d" width="25" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="artifactname" text="修罗斧" y="5" size="18" x="236" textColor="0x35E62D" width="80" verticalAlign="middle"/>
+			<e:Image id="dexP4" source="tongyongdian2" x="0" y="31"/>
+			<e:Image id="desBg4" source="shuxingbg4"  scaleX="2.2" x="-30" y="14" width="233.64"/>
+			<e:Label id="des1a0" text="组合神器" y="29" size="18" x="17" textColor="0xF8B141"/>
+			<e:Label id="des1a1" text="攻杀术 天雷术 镇魔咒伤害系数暴涨 20%" y="29" size="18" x="89" textColor="0xF8B141"/>
+			</e:Group>
+			<e:Group horizontalCenter="0" y="225">
+			<e:Image id="itemBg" x="0" y="0" source="wupingkuangNB" width="120" height="120" scale9Grid="48,47,5,5"/>
+			<e:Image id="itemFrame" y="0" source="xuanzhongkuang2" scale9Grid="4,4,8,8" x="0" width="120" height="120"/>
+			<e:Image id="itemImg" y="20" x="20" width="80" height="80" source="180042_png"/>
+			</e:Group>
+			<e:Group id="button" horizontalCenter="0" bottom="10">
+			<e:Image id="btn1" source="btn2_2"/>
+			<e:Image id="btnbar" source="btn2"/>
+			<e:Label text="挑  战" size="22" textColor="0xd1c28f" horizontalCenter="0" verticalCenter="0" bold="true"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="taskTip" horizontalCenter="0" bottom="70" height="32" width="320" x="86" y="486" visible="false">
+			<e:Image left="0" right="0" top="0" bottom="0" source="zjmqipao" scale9Grid="6,8,6,8" alpha="0.8"/>
+			<e:Label id="taskTipText0" text="提示文字什么的" size="18" horizontalCenter="0" verticalCenter="1" textColor="0xD1C28F"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

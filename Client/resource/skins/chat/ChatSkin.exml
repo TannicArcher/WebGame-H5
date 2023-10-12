@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChatSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="sys,world,customService,guild,mail,all"  height="930">
+	
+	<e:Group id="winGroup" height="370" bottom="0" left="0" right="0">
+		<e:Image x.mail="9" x.guild="9" x.customService="9" x.sys="9"   left="0" right="0" bottom="0" top="0" alpha="0.9" source="chatbg2" scale9Grid="2,2,6,4"/>
+		<e:Image source="chatbg1" left="0" right="0" bottom="0" scale9Grid="1,4,8,5" height="98" height.sys="98" height.customService="98"/>
+		<e:Image includeIn="customService" right="12" bottom="110" top="20"  source="tongyongtip1" scale9Grid="5,7,14,12" left="12"/>
+		<e:Image source="chatlight" left="0" right="0" bottom="100" bottom.sys="98" bottom.customService="98" bottom.world="98" bottom.guild="98"/>
+		<e:Image source="chatfenge1" height="34" bottom="10" horizontalCenter="-280"/>
+		<e:Image source="chatding" y="0" left="0" right="0" scale9Grid="14,1,4,9"/>
+		<e:Image source="tongyongline" bottom="53" width="556" horizontalCenter="0" bottom.world="54" visible.world="false" visible.guild="false" bottom.sys="54" bottom.customService="54" visible.all="false"/>
+		<e:Label text="游戏内容遇到的问题，请咨询客服（不超过100字）" includeIn="customService" size="18" bottom="64" horizontalCenter="-72" textColor="0x444134"/>
+		<!--<e:TextInput id="input" maxChars="100" enabled="true" y.customService="278" height.customService="272" visible.world="false" visible.sys="false" visible.guild="false" text="555" left="8" top="51" right="9" bottom="55"/>-->
+		<e:EditableText id="input" text="游戏内容遇到的问题，请咨询客服（不超过100字）" size="20" verticalAlign="top" promptColor="0x848282" visible.sys="false" visible.guild="false" bottom="98" right="15" top="10" left.mail="15" left.guild="15" left.world="15" left.sys="15" textColor="0xc6660f" visible.mail="false" top.customService="34" textColor.customService="0xdfd1b5" text.customService="" right.customService="30" bottom.customService="120" visible.world="false" left.customService="30" visible.all="false"/>
+		
+		<e:Button id="closeBtn" label="按钮" x="535" y="-36" skinName="Btn0Skin"/>
+		<e:Button id="allReceiveBtn" label="一键领取" includeIn="mail" width="120" height="44" bottom="6" right="90" skinName="Btn3Skin" visible="false"/>
+		<e:Button id="sendBtn0" label="发 送" includeIn="customService" bottom="56" horizontalCenter="220" skinName="Btn3Skin" width="100" height="40"/>
+		<e:Scroller id="barList" visible.customService="false" left="20" right="20" bottom="100" top="12" left.sys="12" right.sys="20" top.sys="12" bottom.sys="102" left.world="12" right.world="20" bottom.world="102" bottom.guild="102">
+				<e:List id="chatList" itemRendererSkinName="ChatItemSkin" right="0" left="0" bottom="0" top="0">
+				</e:List>
+		</e:Scroller>
+		<e:Image width.mail="370" width.customService="370" width.sys="370" visible.sys="false" visible.customService="false" bottom="62" visible.mail="false" right.mail="200" right.customService="200" right.sys="200" bottom.world="55" bottom.guild="55" width.guild="480" horizontalCenter.guild="-40" source="chatbg3" scale9Grid="5,4,2,10" source.world="chatbg3" scale9Grid.world="4,2,3,18" width.world="556" horizontalCenter.world="0" horizontalCenter.all="0" bottom.all="55" width.all="556"/>
+		<e:EditableText id="chatInput" width="360" height="36" text="点击输入聊天内容" maxChars="16" size="20" verticalAlign="middle" textColor="0x848282" visible.sys="false" promptColor.world="0x848282" visible.customService="false" bottom="67" visible.mail="false" right.mail="200" right.customService="200" right.sys="200" bottom.world="58" width.world="400" height.world="30" height.guild="30" width.guild="400" bottom.guild="58" horizontalCenter.guild="-78" horizontalCenter.world="-78" width.all="400" height.all="30" horizontalCenter.all="-78" bottom.all="58"/>
+		<e:TabBar id="tab" itemRendererSkinName="BtnTab5Skin" selectedIndex="0" bottom="10" horizontalCenter="0">
+			<e:layout>
+			<e:HorizontalLayout gap="0" gap.world="0" gap.sys="0" gap.customService="0" gap.guild="0"/>
+			</e:layout>
+		</e:TabBar>
+		<e:Button id="sendBtn" label="发送" width.mail="100" width.customService="100" width.sys="100" visible.sys="false" visible.customService="false" height.mail="44" height.customService="44" height.sys="44" bottom="6" right.mail="90" right.customService="90" right.sys="90" visible.mail="false" bottom.world="56" bottom.guild="56" label.world="发 送" label.guild="发 送" horizontalCenter.guild="220" skinName="Btn3Skin" horizontalCenter.world="220" skinName.world="Btn3Skin" width.world="100" height.world="40" skinName.guild="Btn3Skin" width.guild="100" height.guild="40" width.all="100" height.all="40" horizontalCenter.all="220" bottom.all="56" label.all="发 送"/>
+		<e:Label id="showText" text="聊天内容很长很长，最多40个字" size="20" textColor="0xDFD1B5" width.sys="336" text.sys="系统频道不能发言，请切换其他频道发言" size.sys="18" text.world="收到100条新消息" x.world="180" visible.customService="false" visible.guild="false" horizontalCenter.mail="0" horizontalCenter.guild="0" horizontalCenter.customService="0" horizontalCenter.world="0" bottom.mail="19" bottom.guild="19" bottom.customService="19" bottom.world="19" visible.mail="false" visible.world="false" bottom.sys="64" x.mail="20" x.guild="20" x.customService="20" y="20" horizontalCenter.sys="-108" textColor.sys="0x444134" horizontalCenter.all="-108" bottom.all="64" textColor.all="0x444134" size.all="18" text.all="综合频道不能发言，请切换其他频道发言" visible.all="false"/>
+		<e:Button id="closeBtn0" label="按钮" skinName="Btn0Skin" icon="chatclose" right="2" y="-2" y.sys="-2" y.customService="-2" y.world="-2" y.guild="-2"/>
+		<e:Image source="chatbtn1" y="-18" horizontalCenter="0" width="120"/>
+		<e:Button id="upBtn" label="按钮" y="-2" skinName="Btn0Skin" icon="chatbtn2" horizontalCenter="-1" scaleX="1.5" anchorOffsetY="25" height="40" anchorOffsetX="50" width="100" scaleY="1.2"/>
+		<e:Image id="redPoint2" source="zjmhongdian" bottom="32" horizontalCenter="48"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SixteenSkin" width="580" height="730" currentState="bf" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="bf,kf_four,kf" >
+	<e:Group id="sixteenGroup" left="0" right="0" top="0" bottom="0">
+		<e:Image source="peakness_bg_png" y="40" horizontalCenter="0"/>
+		<e:Group id="dinghong" height="104" bottom="1" left="6" right="6">
+			<e:Image top="0" bottom="0" source="bantoumingkuang3" left="0" right="284"/>
+			<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" left="284"/>
+		</e:Group>
+		<e:Label id="singleTimeInfoLabel" text="12月12日（周日）21:00 16进8第2场" size="20" textColor="0x00ff00" textAlign="center" horizontalCenter.kf_four="0.5" y.kf_four="561" horizontalCenter="0" bottom="202"/>
+		<e:Image source="peakness_type_single" horizontalCenter="0.5" bottom="35" horizontalCenter.bf="0.5" bottom.bf="33" includeIn="bf,kf" source.kf="peakness_type_final" horizontalCenter.kf="0"/>
+		
+		<e:Group id="content" horizontalCenter="0" top="0">
+			<e:Group id="link" x="0" y="0" cacheAsBitmap.bf="true">
+				<e:Group id="link_0_1" y="70" x="120">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_2" y="100" x="120">
+				<e:Image source="line_black" y="27" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_3" y="184" x="120">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_4" y="214" x="120">
+				<e:Image source="line_black" y="27" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_5" y="298" x="120">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_6" y="328" x="120">
+				<e:Image source="line_black" y="27" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_7" y="412" x="120">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_8" y="442" x="120">
+				<e:Image source="line_black" y="27" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_9" scaleX="-1" y="70" x="460">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_10" scaleX="-1" y="100" x="460">
+				<e:Image source="line_black" y="27" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_11" scaleX="-1" y="184" x="460">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_12" scaleX="-1" y="214" x="460">
+				<e:Image source="line_black" y="27" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_13" scaleX="-1" y="298" x="460">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_14" scaleX="-1" y="328" x="460">
+				<e:Image source="line_black" y="27" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_15" scaleX="-1" y="412" x="460">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_0_16" scaleX="-1" y="442" x="460">
+				<e:Image source="line_black" y="27" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="30" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_1_1" y="99" x="146">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="62" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_1_2" y="153" x="146">
+				<e:Image source="line_black" scale9Grid="5,1,1,1" y="59" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="62" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_1_3" y="325" x="146">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="62" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_1_4" y="379" x="146">
+				<e:Image source="line_black" scale9Grid="5,1,1,1" y="59" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="62" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_1_5" scaleX="-1" y="99" x="434">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="62" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_1_6" scaleX="-1" y="153" x="434">
+				<e:Image source="line_black" scale9Grid="5,1,1,1" y="59" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="62" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_1_7" scaleX="-1" y="325" x="434">
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="62" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_1_8" scaleX="-1" y="379" x="434">
+				<e:Image source="line_black" scale9Grid="5,1,1,1" y="59" width="29" x="0"/>
+				<e:Image source="line_black" x="28.669999999999987" scale9Grid="5,1,1,1" width="62" rotation="90" height="3" y="0"/>
+				</e:Group>
+				<e:Group id="link_2_1" y="154" width.kf_four="83.33" height.kf_four="52" touchEnabled="false" x.kf="174" x.kf_four="173" y.bf="154" x.bf="174" y.kf_four="154" y.kf="154" anchorOffsetX.kf_four="0">
+				<e:Image source="line_black" scale9Grid="5,1,1,1" width="28" y="0" y.bf="0" width.bf="28" x.bf="0" width.kf_four="84" x.kf_four="0" y.kf="0" width.kf="28" x.kf="0"/>
+				<e:Image source="line_black" scale9Grid="5,1,1,1" width="120" rotation="90" width.kf_four="29" height.kf_four="3" height="3" y="0" x.bf="28" x.kf_four="84" x.kf="28"/>
+				</e:Group>
+				<e:Group id="link_2_2" x="173" width.kf_four="84" height.kf_four="30" y.kf="260" y.bf="260" x.bf="174" x.kf_four="171.99" y.kf_four="351.66" x.kf="174">
+				<e:Image source="line_black" scale9Grid="5,1,1,1" width="28" y.kf="117" x="0" width.bf="28" x.bf="0" y.bf="117" width.kf_four="84" x.kf_four="0" y.kf_four="27" width.kf="28" x.kf="0"/>
+				<e:Image source="line_black" y.kf="0" y.bf="0" scale9Grid="5,1,1,1" width.kf="120" width.bf="120" rotation="90" width.kf_four="29" x.kf="28" x.bf="28" x.kf_four="84" height.kf_four="3" y.kf_four="0"/>
+				</e:Group>
+				<e:Group id="link_2_3" scaleX="-1" x.kf="406" x.kf_four="406" y="154" width.kf_four="87" y.bf="154" x.bf="406" y.kf="154" anchorOffsetX.kf_four="0" anchorOffsetY.kf_four="0" height.kf_four="35">
+				<e:Image source="line_black" scale9Grid="5,1,1,1" width="28" y.kf_four="0" y="0" x="0" width.bf="28" x.bf="0" width.kf_four="84" x.kf_four="0" width.kf="28" x.kf="0"/>
+				<e:Image source="line_black" y="0" scale9Grid="5,1,1,1" width="120" rotation="90" x="28" x.kf_four="87" width.kf_four="31"/>
+				</e:Group>
+				<e:Group id="link_2_4" scaleX="-1" x="407" y="260" width.kf_four="98" y.bf="260" x.bf="406" y.kf_four="260" x.kf_four="406" y.kf="260" x.kf="406">
+				<e:Image source="line_black" scale9Grid="5,1,1,1" width="28" x="0" y="117" y.bf="117" width.bf="28" x.bf="0" width.kf_four="84" x.kf_four="0" width.kf="28" x.kf="0"/>
+				<e:Image source="line_black" y.kf="0" y.bf="0" scale9Grid="5,1,1,1" width="120" rotation="90" x="28" height.kf_four="3" x.kf_four="87" width.kf_four="31" y.kf_four="89"/>
+				</e:Group>
+				<e:Group id="link_3_1" width="70" includeIn="bf,kf" y="265" x="200">
+				<e:Image source="line_black" scale9Grid="5,1,1,1" y="0" width="70" x="0"/>
+				</e:Group>
+				<e:Group id="link_3_2" width="70" includeIn="bf,kf" y="265" x="310">
+				<e:Image source="line_black" scale9Grid="5,1,1,1" y="0" width="70" x="0"/>
+				</e:Group>
+			</e:Group>
+			<e:Group id="btn" x="0" y="52">
+				<e:Group id="group0" x="0" y="0">
+				<e:Image source="peakness_name_bg" x="0" y="0"/>
+				<e:Label id="player0" text="布拉格の屠龙" size="16" textAlign="center" width="100" textColor="0xf8b141" bold="true" y="12" horizontalCenter="-10"/>
+				</e:Group>
+				<e:Group id="group1" x="0" y="57">
+				<e:Image source="peakness_name_bg" x="0" y="0"/>
+				<e:Label id="player1" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="-10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group2" x="0" y="114">
+				<e:Image source="peakness_name_bg" x="0" y="0"/>
+				<e:Label id="player2" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="-10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group3" x="0" y="171">
+				<e:Image source="peakness_name_bg" x="0" y="0"/>
+				<e:Label id="player3" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="-10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group4" x="0" y="228">
+				<e:Image source="peakness_name_bg" x="0" y="0"/>
+				<e:Label id="player4" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="-10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group5" x="0" y="285">
+				<e:Image source="peakness_name_bg" x="0" y="0"/>
+				<e:Label id="player5" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="-10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group6" x="0" y="342">
+				<e:Image source="peakness_name_bg" x="0" y="0"/>
+				<e:Label id="player6" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="-10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group7" x="0" y="399">
+				<e:Image source="peakness_name_bg" x="0" y="0"/>
+				<e:Label id="player7" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="-10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group8" x="450" y="0">
+				<e:Image source="peakness_name_bg" y="0" scaleX="-1" right="0"/>
+				<e:Label id="player8" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="10" textColor="0xf8b141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group9" x="450" y="57">
+				<e:Image source="peakness_name_bg" y="0" scaleX="-1" right="0"/>
+				<e:Label id="player9" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group10" x="450" y="114">
+				<e:Image source="peakness_name_bg" y="0" scaleX="-1" right="0"/>
+				<e:Label id="player10" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group11" x="450" y="171">
+				<e:Image source="peakness_name_bg" y="0" scaleX="-1" right="0"/>
+				<e:Label id="player11" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group12" x="450" y="228">
+				<e:Image source="peakness_name_bg" y="0" scaleX="-1" right="0"/>
+				<e:Label id="player12" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group13" x="450" y="285">
+				<e:Image source="peakness_name_bg" y="0" scaleX="-1" right="0"/>
+				<e:Label id="player13" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group14" x="450" y="342">
+				<e:Image source="peakness_name_bg" y="0" scaleX="-1" right="0"/>
+				<e:Label id="player14" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+				<e:Group id="group15" x="450" y="399">
+				<e:Image source="peakness_name_bg" y="0" scaleX="-1" right="0"/>
+				<e:Label id="player15" text="布拉格の屠龙" size="16" textAlign="center" width="100" horizontalCenter="10" textColor="0xF8B141" bold="true" y="12"/>
+				</e:Group>
+			</e:Group>
+			<e:Group id="competion" y="85" x="208">
+				<e:Image x="0" y="0" source="peakness_dragon_png"/>
+				<e:Image id="peaknessProcess" x="56" y="119" source="peakness_dianfengsaiji" source.kf_four="peakness_kuafushiliuqiang" source.kf="peakness_dianfengjuesai"/>
+			</e:Group>
+			<e:Group id="bet" x="120" y="87">
+				<ns1:BaseComponent id="actState_1_1" x="0" y="0" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_1_2" x="0" y="112" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_1_3" x="0" y="224" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_1_4" x="0" y="336" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_1_5" x="285" y="0" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_1_6" x="285" y="112" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_1_7" x="285" y="224" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_1_8" x="285" y="336" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_2_1" x="27" y="55" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_2_2" x="27" y="278" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_2_3" x="258" y="55" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_2_4" x="258" y="278" skinName="VsItemSkin"/>
+				<ns1:BaseComponent id="actState_3_1" x="54.64999999999998" y="165.67999999999995" skinName="VsItemSkin" scaleX="1" scaleY="1" includeIn="bf,kf"/>
+				<ns1:BaseComponent id="actState_3_2" x="231.64999999999998" y="165.67999999999995" skinName="VsItemSkin" scaleX="1" scaleY="1" includeIn="bf,kf"/>
+			</e:Group>
+			<e:Group id="finals" visible.kf="false" y="194" x="238" visible.kf_four="false">
+				<e:Image source="peakness_champion_title" horizontalCenter="0" verticalCenter="-55"/>
+				<e:Image id="championFace" source="head_11" width="70" height="70" horizontalCenter="0" verticalCenter="8"/>
+				<e:Image source="peakness_champion_kuang" verticalCenter="8.5" horizontalCenter="0"/>
+				<e:Label id="championNameLabel" text="布拉格の地狱" size="16" horizontalCenter="0" textColor="0xffff00" bold="true" verticalCenter="66"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="groupMatch" includeIn="kf_four" horizontalCenter="0" bottom="5" width="402" height="97">
+			<e:Button id="groupBtn0" label="Button" scaleX="1" scaleY="1" icon="peakness_group_0" horizontalCenter="-153" verticalCenter="0" width="96" height="97" skinName="Btn0Skin"/>
+			<e:Button label="Button" scaleX="1" scaleY="1" icon="peakness_group_1" id="groupBtn1" horizontalCenter="-51" verticalCenter="0" width="96" height="97" skinName="Btn0Skin"/>
+			<e:Button label="Button" scaleX="1" scaleY="1" icon="peakness_group_2" id="groupBtn2" horizontalCenter="51" verticalCenter="0" width="96" height="97" skinName="Btn0Skin"/>
+			<e:Button label="Button" scaleX="1" scaleY="1" icon="peakness_group_3" id="groupBtn3" horizontalCenter="153" verticalCenter="0" width="96" height="97" skinName="Btn0Skin"/>
+			<e:Image id="groupBtnSelect0" source="xuanzhongyuan" bottom="5" height="87" width="87" x="5" anchorOffsetX="0"/>
+			<e:Image id="groupBtnSelect1" source="xuanzhongyuan" bottom="5" height="87" width="87" x="106" anchorOffsetX="0"/>
+			<e:Image id="groupBtnSelect2" source="xuanzhongyuan" bottom="5" height="87" width="87" x="208" anchorOffsetX="0"/>
+			<e:Image id="groupBtnSelect3" source="xuanzhongyuan" bottom="5" height="87" width="87" x="310" anchorOffsetX="0"/>
+		</e:Group>
+		<e:Group id="timerGroup" width="395" horizontalCenter="0" bottom="113">
+			<e:Image source="peakness_process_bg" left="0" y="0"/>
+			<e:Image source="peakness_process_bg" scaleX="-1" right="0" y="0"/>
+			<e:Group horizontalCenter="0" verticalCenter="0">
+				<e:Group x="0" y="0">
+					<e:Label text="第1局" x="0" y="0" size="20" textColor="0xd1c28f"/>
+					<e:Label id="gameTime1Txt" text="12:10" x="0" y="18" size="18" textColor="0x7e6437"/>
+					<e:layout>
+					<e:VerticalLayout horizontalAlign="center"/>
+					</e:layout>
+				</e:Group>
+				<e:Group x="61" y="0">
+					<e:Label text="第2局" x="37" y="-10" size="20" scaleX="1" scaleY="1" textColor="0xd1c28f"/>
+					<e:Label id="gameTime2Txt" text="12:10" x="0" y="18" size="18" textColor="0x7e6437"/>
+					<e:layout>
+					<e:VerticalLayout horizontalAlign="center"/>
+					</e:layout>
+				</e:Group>
+				<e:Group x="122" y="0">
+					<e:Label text="第3局" x="0" y="18" size="20" textColor="0xd1c28f"/>
+					<e:Label id="gameTime3Txt" text="12:10" x="79" y="-20" size="18" textColor="0x7e6437"/>
+					<e:layout>
+					<e:VerticalLayout horizontalAlign="center"/>
+					</e:layout>
+				</e:Group>
+				<e:Group x="183" y="0">
+					<e:Label text="第4局" x="0" y="18" size="20" textColor="0xd1c28f"/>
+					<e:Label id="gameTime4Txt" text="12:00" x="121" y="-30" size="18" textColor="0x7e6437"/>
+					<e:layout>
+					<e:VerticalLayout horizontalAlign="center"/>
+					</e:layout>
+				</e:Group>
+				<e:Group x="244" y="0">
+					<e:Label text="第5局" x="0" y="18" size="20" textColor="0xd1c28f"/>
+					<e:Label id="gameTime5Txt" text="12:00" x="121" y="-30" size="18" textColor="0x7e6437"/>
+					<e:layout>
+					<e:VerticalLayout horizontalAlign="center"/>
+					</e:layout>
+				</e:Group>
+				<e:layout>
+					<e:HorizontalLayout gap="27"/>
+				</e:layout>
+			</e:Group>
+			<e:Group horizontalCenter="0" verticalCenter="0">
+			<e:Image source="tongyongline3" x="0" y="0"/>
+			<e:Image source="tongyongline3" x="0" y="0"/>
+			<e:Image source="tongyongline3" x="0" y="0"/>
+			<e:Image source="tongyongline3" x="0" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout gap="78"/>
+			</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Group horizontalCenter="0" top="5">
+			<e:Button id="myRecord" label="我的战绩" y="0" skinName="Btn20Skin" scaleX="1" scaleY="1" x="0"/>
+			<e:Button id="myBet" label="我的下注" x="132" y="0" skinName="Btn21Skin" scaleX="1" scaleY="1"/>
+			<e:Button id="topRank" label="人气排名" x="261" y="0" skinName="Btn22Skin" scaleX="1" scaleY="1"/>
+			<e:Image id="border1" source="peakness_btn_border" y="0" scaleX="1" scaleY="1" scale9Grid="68,38,4,4" width="225" left="-10" touchEnabled="false"/>
+			<e:Image id="border2" source="peakness_btn_border" scaleX="-1" y="0" scaleY="1" scale9Grid="69,39,3,2" width="225" right="-10" touchEnabled="false"/>
+			<e:Image id="myRecordRedpoint" touchEnabled="false" source="zjmhongdian" scaleX="1" scaleY="1" x="113" y="-6" visible="false"/>
+			<e:Image id="myBetRedpoint" touchEnabled="false" source="zjmhongdian" scaleX="1" scaleY="1" x="243" y="-6" visible="false"/>
+			<e:Image id="topRankRedpoint" touchEnabled="false" source="zjmhongdian" scaleX="1" scaleY="1" x="359" y="-6" visible="false"/>
+		</e:Group>
+		<e:Label id="vewChampScore" text="查看比分" size="20" horizontalCenter="6" top="397" textColor="0x00ff00" visible.kf_four="false"/>
+	</e:Group>
+</e:Skin>

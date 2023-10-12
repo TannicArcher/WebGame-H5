@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PlunderRecordSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  height="930" >
+	<w:Config id="1586b349dbe"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.5"/>
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="0">
+		<e:Group name="装备" width="500" height="600" verticalCenter="0" horizontalCenter="0" x="7" y="104"  >
+			<e:Image source="tongyongkuang3bg" left="0" top="0" bottom="0" scale9Grid="6,6,38,38" right="0"/>
+			<e:Image source="tongyongkuang3tou" left="0" scale9Grid="67,5,272,37" right="0"/>
+			<e:Label text="掠夺记录" size="24" horizontalCenter="0" y="11" textColor="0x7e6437"/>
+			<e:Scroller width="480" height="541" y="50"  horizontalCenter="0" scrollPolicyV="on" scrollPolicyH="off">
+			<e:List id="record" left="0" top="0" bottom="0" itemRendererSkinName="PlunderRecordItemSkin" right="0">
+				<e:layout>
+				<e:VerticalLayout gap="0"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+		</e:Group>
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" y="322" x="-15"  >
+			<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+			<e:Button id="closeBtn0" label="按钮" y="-17" skinName="Btn0Skin" right="-10" x="188"   visible="false"/>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout gap="5" horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

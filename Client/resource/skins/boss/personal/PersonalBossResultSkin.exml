@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PersonalBossResultSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        height="930" width="580">
+	<w:Config id="15c8d32c190" />
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0" visible="false" />
+	<e:Group horizontalCenter="0" verticalCenter="-22">
+		<e:Image id="bg" width="562" height="788"   source="win_png" horizontalCenter="0" verticalCenter="-49" x="9" y="22"/>
+
+		<e:Label id="txt" text="获得奖励如下：" size="20" textColor="0xdfd1b5" verticalCenter="-226" horizontalCenter="0" textAlign="center" x="220" y="229"  />
+		<e:Button id="closeBtn" label="退出(10s)" skinName="Btn1Skin" width="130" y="629" horizontalCenter="0"/>
+
+		<e:Scroller id="scrollerGroup" width="400"    y="230" enabled="true"  horizontalCenter="0" height="380">
+			<e:Group id="listGroup" width="414"   horizontalCenter="0" verticalCenter="4">
+			<e:List id="listCoin" y="1.52" width="150" left="true">
+				<e:layout>
+				<e:TileLayout verticalGap="0"/>
+				</e:layout>
+			</e:List>
+
+			<e:List id="listEmblem" y="11.52" x="10" width="380">
+				<e:layout>
+				<e:TileLayout/>
+				</e:layout>
+			</e:List>
+			<e:Label id="labelItem" text="获得道具：" x="644" y="561" size="20" textColor="0xDFD1B5" height="40" verticalAlign="middle"/>
+			<e:List id="listItem" y="11.52" width="380" >
+				<e:layout>
+				<e:TileLayout/>
+				</e:layout>
+			</e:List>
+			<e:layout>
+				<e:VerticalLayout gap="3"/>
+			</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Image id="title" source="win_02" y="113" horizontalCenter="0"/>
+		<e:Group y="113"   horizontalCenter="0">
+
+		</e:Group>
+
+		<e:Group id="effGroup"   touchChildren="false" touchEnabled="false" y="120" horizontalCenter="-60" x="230"  />
+		<e:Group width="431" height="408" id="defeat" verticalCenter="-45" y="216" horizontalCenter="0" x="66" scaleX="1" scaleY="1">
+			<e:Label id="lostTxt0" textColor="0xDFD1B5" text="我要变强" size="20" y="7" horizontalCenter="0"/>
+
+
+			<e:Scroller width="372" height="393" verticalCenter="15.5" horizontalCenter="0">
+			<e:List id="list0" y="0" height="392" width="326" itemRendererSkinName="DefeatItemSkin" horizontalCenter="0">
+				<e:layout>
+				<e:TileLayout horizontalGap="0" verticalGap="0"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+			<e:Image source="anwen1" rotation="180" left="117" verticalCenter="-187"/>
+			<e:Image source="anwen1" right="117" verticalCenter="-187"/>
+			<e:Image source="shuxingbg4" horizontalCenter="0" verticalCenter="-187.5"/>
+		</e:Group>
+
+
+
+	</e:Group>
+</e:Skin>

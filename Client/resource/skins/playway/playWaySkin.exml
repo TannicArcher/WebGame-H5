@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="playWaySkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="554" height="710">
+	<w:Config id="15d305f2e2d"/>
+	<e:Image source="bossbg_png" left="0" top="0" alpha="0.5" right="0" bottom="0"/>
+
+	<e:Group y="11" horizontalCenter="0">
+		<e:Group y="129" width="540" height="160" x="0">
+			<e:Image left="4" right="4" top="4" bottom="4" source="pwcbg_png"/>
+			<e:Image source="bossbgkuang" scale9Grid="49,26,2,1" left="0" right="0" top="0" bottom="0"/>
+			<e:Button id="btn2" label="进入" skinName="Btn3Skin" width="100" height="46" verticalCenter="0" right="20"/>
+			<e:Label id="info2" text="玩法说明" x="21" y="4" size="20" touchEnabled="true" width="120" height="50" verticalAlign="middle" textAlign="center" textColor="0x20CB30"/>
+			<e:Image id="redPoint2" source="zjmhongdian" scaleX="1" scaleY="1" right="14" verticalCenter="-17" visible="false"/>
+		</e:Group>
+
+		<e:Group y="0" width="540" height="160" x="0">
+			<e:Image left="4" right="4" top="4" bottom="4" source="pwsjboss_png"/>
+
+			<e:Image source="bossbgkuang" scale9Grid="49,26,2,1" left="0" right="0" top="0" bottom="0"/>
+			<e:Label id="info1" text="玩法说明" size="20" y="4" x="21" textColor="0x20cb30" width="120" height="50" verticalAlign="middle" textAlign="center"/>
+			<e:Button id="btn1" label="进入" skinName="Btn3Skin" width="100" height="46" verticalCenter="0" right="20" enabled="true"/>
+			<e:Image id="redPoint1" source="zjmhongdian" scaleX="1" scaleY="1" verticalCenter="-16" right="16" visible="false"/>
+
+			<e:Label id="time1" text="开服第2天起 每天 19:30 开启" size="20" textColor="0xf8b141" bold="true" y="121" right="16" width="400" textAlign="right"/>
+
+		</e:Group>
+		<e:Group y="10" width="540" height="160" x="10">
+			<e:Image left="4" right="4" top="4" bottom="4" source="pwyzbq1_png"/>
+			<e:Image source="bossbgkuang" scale9Grid="49,26,2,1" left="0" right="0" top="0" bottom="0"/>
+			<e:Label id="info3" text="玩法说明" size="20" y="4" x="21" textColor="0x20CB30" width="120" height="50" verticalAlign="middle" textAlign="center"/>
+			<e:Button id="btn3" label="进入" skinName="Btn3Skin" width="100" height="46" verticalCenter="0" right="20" enabled="true"/>
+			<e:Image id="redPoint3" source="zjmhongdian" scaleX="1" scaleY="1" verticalCenter="-16" right="16" locked="true" visible="false"/>
+			<e:Label id="time3" text="每周一、三、五 20:00 开启" size="20" textColor="0xF8B141" bold="true" y="121" right="16" width="400" textAlign="right"/>
+		</e:Group>
+		<e:Group y="20" width="540" height="160" x="20">
+			<e:Image left="4" right="4" top="4" bottom="4" source="pwjqpd_png"/>
+			<e:Image source="bossbgkuang" scale9Grid="49,26,2,1" left="0" right="0" top="0" bottom="0"/>
+			<e:Label id="info4" text="玩法说明" size="20" y="4" x="21" textColor="0x20CB30" width="120" height="50" verticalAlign="middle" textAlign="center"/>
+			<e:Button id="btn4" label="进入" skinName="Btn3Skin" width="100" height="46" verticalCenter="0" right="20" enabled="true"/>
+			<e:Image id="redPoint0" source="zjmhongdian" scaleX="1" scaleY="1" verticalCenter="-16" right="16" locked="true" visible="false"/>
+			<e:Label id="time4" text="开服第5天起 每天 20:00 开启" size="20" textColor="0xF8B141" bold="true" y="121" right="16" width="400" textAlign="right"/>
+		</e:Group>
+
+		<!--<e:Group y="20" width="540" height="160" x="20" visible="false">
+			<e:Image left="4" right="4" top="4" bottom="4" source="pwyzbq1_png"/>
+			<e:Image source="bossbgkuang" scale9Grid="49,26,2,1" left="0" right="0" top="0" bottom="0"/>-->
+
+
+
+
+
+		<e:layout>
+			<e:VerticalLayout gap="10"/>
+		</e:layout>
+	</e:Group>
+
+</e:Skin>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="teamFbMemberSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"    width="100" height="100">
+	<w:Config id="15c397cdd5d"/>
+	<e:Image id="namebg" height="25" width="100" horizontalCenter="0" source="bantoutiaobg2" anchorOffsetY="0" bottom="3"/>
+	<e:Image source="juesetxk" x="15" y="3"  />
+	<e:Image id="roleHead" source="yuanhead10" width="52" height="52" x="25" y="14"  />
+	<e:Image x="13" y="2"   source="juesetxkxue" visible="false"/>
+	<e:Label id="roleName" text="玩家名六个字" size="16" textAlign="center"   horizontalCenter="0" bottom="7" textColor="0xd1c28f"/>
+	<e:Label id="num" text="200" y="60" size="16" textColor="0xd1c28f" horizontalCenter="-14.5" visible="false"/>
+	<e:Image id="fuhuoImg" y="37" source="tfb_fuhuo" horizontalCenter="0.5" rotation="-25" visible="false"/>	
+</e:Skin>

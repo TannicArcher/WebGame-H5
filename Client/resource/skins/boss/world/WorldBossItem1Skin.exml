@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WorldBossItem1Skin" currentState="open" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="open,close" width.open="176" width.close="176" width="176">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Group x="8" y="7">
+			<e:Button label="Button" skinName="Btn0Skin" icon="worldbossBtn" y.open="0" x.open="0" y="0" x="0" y.close="0" x.close="0"/>
+			<e:Image id="title" horizontalCenter="0" verticalCenter="1" source="title_mijingboss" source.open="title_mijingboss" touchEnabled="false"/>
+		</e:Group>
+		<e:List id="list" x="46" y="91" width="160" includeIn="open" itemRendererSkinName="worldBossItemSkin">
+		</e:List>
+		<e:layout>
+			<e:VerticalLayout gap="0" horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" includeIn="open" x="151" y="10"/>
+</e:Skin>

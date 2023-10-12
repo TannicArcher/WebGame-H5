@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="memberInfoSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="closeBtn" left="0" top="0" right="0" bottom="0" fillAlpha="0.4"/>
+
+
+
+
+
+
+
+
+
+	<e:Group anchorOffsetX="0" anchorOffsetY="0" height="151" width="260" horizontalCenter="0" verticalCenter="0">
+		<e:Rect fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+		<e:Image scale9Grid="10,7,11,14" source="tongyongtip1" left="0" top="0" bottom="0" right="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="19,18,2,5" left="2" bottom="2" top="2" right="2"/>
+		<e:Image id="imgHead" source="head_10" x="16" y="14" height="62" width="62"/>
+		<e:Image id="imgBg" x="12" y="10" height="70" width="70" source="touxiangkuang0" scale9Grid="4,4,5,5"/>
+		<e:Label id="labelName" text="名字有六个字" x="96" y="12" size="18" textColor="0xbd600d" bold="true"/>
+		<e:Label id="labelGuild" text="行会名字多少" x="96" y="58" size="16" textColor="0x9f946d"/>
+		<e:Label id="labelLv" text="12转100级" x="96" y="36" size="16" textColor="0x9f946d"/>
+		<e:Button id="btnInfo" label="查看" width="110" height="50" skinName="Btn3Skin" x="12" y="91"/>
+		<e:Button id="btnRemove" label="移出队伍" height="50" skinName="Btn3Skin" width="110" x="138" y="91"/>
+	</e:Group>
+
+
+</e:Skin>

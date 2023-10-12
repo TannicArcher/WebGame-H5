@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MixOrangePanel" width="300" height="460" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586bdfbbac"/>
+	<e:Image source="chengzhuangkuang_png" y="30" horizontalCenter="0"   width="200" height="190"/>
+	<e:Image source="bantoutiaobg" y="0" horizontalCenter="0" scale9Grid="0,5,238,35" height="28" width="200"/>
+	<ns1:BaseComponent id="itemIcon" y="86" skinName="ItemIconSkin" className="ItemIcon" horizontalCenter="0"/>
+	<e:Label id="equipName" text="装备名字" y="4" size="22" textColor="0xFF6A21" horizontalCenter="4.5" bold="true"/>
+	<e:Label id="level" y="160" textColor="0xDFD1B5" text="Lv.100" size="18" horizontalCenter="0.5"/>
+	<e:Component id="attributes" skinName="MixAttributesPanel" horizontalCenter="0" bottom="0"/>
+</e:Skin>

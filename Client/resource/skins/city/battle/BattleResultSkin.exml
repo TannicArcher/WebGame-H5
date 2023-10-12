@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BattleResultSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image id="bg" y="42"  horizontalCenter="0" source="win_png" width="562" height="788"/>
+	<e:Image id="starBg" width="300" height="300" x="92" y="119" source="" visible="false"/>
+	<e:Button id="closeBtn" label="确定" y="670" skinName="Btn1Skin" width="157"  horizontalCenter="0" height="60"/>
+	<e:Image id="result" y="134" anchorOffsetX="0" anchorOffsetY="0" source="battle_result_title" width="365" height="83" horizontalCenter="0"/>
+
+	<e:Group y="226"  horizontalCenter="0" width="408">
+		<e:Image  source="bantoutiaobg2" scale9Grid="43,9,4,3" left="0" right="0" top="0" height="40"/>
+
+		<e:Label id="myRanking" text="12" size="20" x="90" textAlign="left" y="10" textColor="0xf8b141"/>
+		<e:Label text="我的排名:" size="20" x="4" textAlign="left" height="20" textColor="0xFF9900" y="10"/>
+		<e:Label text="获得奖励:" size="20" x="4" textAlign="left" height="20" textColor="0xFF9900" y="50"/>
+		<e:Label id="myScore" text="1200" size="20" x="240" textAlign="left" y="10" textColor="0xF8B141"/>
+		<e:Label text="我的积分:" size="20" x="154" textAlign="left" height="20" textColor="0xFF9900" y="10"/>
+		<e:List id="myRewarrd" x="86" itemRendererSkinName="ItemSkin" top="50" bottom="10">
+			<e:layout>
+				<e:HorizontalLayout gap="-13"/>
+			</e:layout>
+		</e:List>
+	</e:Group>
+	<e:Image source="bantoutiaobg2" scale9Grid="43,9,4,3" y="388" width="396" height="40" horizontalCenter="0"/>
+
+
+	<e:Group y="398" horizontalCenter="0">
+		<e:Label text="  名次" y="-1" size="20" x="0" scaleX="1" scaleY="1" textColor="0xFF9900" width="55"/>
+		<e:Label id="NaN" text="玩家名" y="9" size="20" x="10" scaleX="1" scaleY="1" width="125" textAlign="center" textColor="0xFF9900"/>
+		<e:Label id="guild0" text="公会名" y="19" size="20" x="20" scaleX="1" scaleY="1" width="125" textAlign="center" textColor="0xFF9900"/>
+		<e:Label id="score0" text="积分" y="29" size="20" x="325" scaleX="1" scaleY="1" textAlign="center" width="85" textColor="0xFF9900"/>
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+	<e:List id="rankList" width="390" height="218" y="435" anchorOffsetX="0" anchorOffsetY="0" itemRendererSkinName="BattleResultItem" horizontalCenter="0">
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="center" gap="20"/>
+		</e:layout>
+
+	</e:List>
+	<e:Group id="timerGroup" y="706" horizontalCenter="154">
+		<e:Label id="info" text="5" y="8" textColor="0x00ff00" size="18" horizontalCenter="172" x="37" scaleX="1" scaleY="1"/>
+		<e:Label text="秒退出比奇" y="8" textColor="0x00FF00" size="18" horizontalCenter="172" x="37" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:HorizontalLayout gap="1"/>
+		</e:layout>
+	</e:Group>
+
+
+
+</e:Skin>

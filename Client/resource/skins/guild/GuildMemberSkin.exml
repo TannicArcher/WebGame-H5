@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildMemberSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" height="731" width="570">
+	<e:Image source="tongyongmianbanbg" scale9Grid="20,18,8,14" top="0" bottom="0" left="0" right="0"/>
+	<e:Group id="dinghong" width="556" height="80" bottom="7" horizontalCenter="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" />
+	</e:Group>
+
+	<e:Group bottom="6" horizontalCenter="0" width="554" height="80">
+
+		<e:Label text="我的职位：" size="20" textColor="0x9f946d" x="20" verticalCenter="0"/>
+		<e:Label text="历史贡献：" size="20" textColor="0x9f946d" x="202" verticalCenter="0"/>
+		<e:Label id="office" text="副会长" size="20" textColor="0x9f946d" x="116" verticalCenter="0"/>
+		<e:Label id="totalCon" text="99999999" size="20" textColor="0x9f946d" x="300" verticalCenter="0"/>
+		<e:Button id="quitBtn" label="退出" width="110" height="46" skinName="Btn3Skin" verticalCenter="0" right="30"/>
+	</e:Group>	
+	<e:Scroller width="550" horizontalCenter="0" top="10" bottom="90">
+
+			<e:List id="list" x="4" y="2" itemRendererSkinName="MemberItem2Skin">
+				<e:layout>
+					<e:VerticalLayout gap="2"/>
+				</e:layout>
+			</e:List>
+
+	</e:Scroller>
+	
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PowerPanelSkin" currentState="yhead" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="302" height="64">
+    <e:Image id="bgImg" touchEnabled="false" source="zhandoulibg" />
+    <e:Group id="flameGroup" y="8" x="70"></e:Group>
+    <e:Image id="powerImg" touchEnabled="false" source="zjmzhandouli" x="30"  verticalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BlackMarketSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="560" height="688">
+	<e:Image source="shopbn2_png" bottom="4" left="0" right="0" height="230"/>
+
+
+	<e:Image id="tipsBg" source="bantoutiaobg2" height="32" scale9Grid="11,2,70,17" width="280" bottom="100" horizontalCenter="118"/>
+	<e:Label id="tip" text="免费刷新：" size="20" bottom="106" width="280" textAlign="center" horizontalCenter="118" textColor="0xd1c28f"/>
+	<e:Button id="closeBtn" label="按钮" x="391" y="628" skinName="Btn0Skin" visible="false"/>
+	<e:TabBar id="tab" height="50" width="280" x="52" y="634" itemRendererSkinName="BtnTab0Skin" visible="false">
+	</e:TabBar>
+	<e:Button id="buyAllItemBtn" label="全部购买" width="130" height="50" bottom="20" skinName="Btn1Skin" horizontalCenter="-91"/>
+	<e:Button id="refreshShopBtn" label="刷   新" width="130" height="50" bottom="20" skinName="Btn1Skin" horizontalCenter="91"/>
+	<e:Image id="redPoint" source="zjmhongdian" horizontalCenter="147" bottom="51" visible="false"/>
+	<e:Label id="noGoods" text=" 商品已全部售完，请刷新" size="24" textColor="0xFF8534" horizontalCenter="0" verticalCenter="0" visible="false"/>
+
+
+	<e:Label id="point" text="我的积分：20000" x="105" width="213" size="20"  textAlign="left" bottom="15" visible="false"/>
+	<e:Group id="costGroup" bottom="69" horizontalCenter="91">
+		<e:Group x="12" y="6" scaleX="1" scaleY="1">
+			<e:Image x="6" bottom="68" source="szyuanbao" y="3" scaleX="1" scaleY="1"/>
+			<e:Label id="price" text="2000" x="38" size="20" bottom="69" textColor="0xf8b141" y="4" scaleX="1" scaleY="1"/>
+			<e:layout>
+			<e:HorizontalLayout gap="3" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Label text="或" x="100" size="20" bottom="69" textColor="0xF8B141" y="10" scaleX="1" scaleY="1"/>
+		<e:Group x="122" y="6" scaleX="1" scaleY="1">
+			<e:Image source="201002_png" x="3" y="-3" anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" scaleX="1" scaleY="1"/>
+			<e:Label id="keylabel" text="0" x="30" size="18" bottom="70" y="5" scaleX="1" scaleY="1" textColor="0xff0000"/>
+			<e:Label text="/1" x="40" size="18" bottom="70" y="15" scaleX="1" scaleY="1" textColor="0xf8b141"/>
+			<e:layout>
+			<e:HorizontalLayout gap="3" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="11"/>
+		</e:layout>
+	</e:Group>
+	<e:Scroller width="560" horizontalCenter="0" height="556" y="0">
+		<e:List id="listView" x="54" y="37" itemRendererSkinName="BlackMarketItem">
+		<e:layout>
+			<e:VerticalLayout gap="4"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Label id="goodsOverView" text="极品预览" size="20" textColor="0x00FF00" horizontalCenter="223" bottom="28" verticalAlign="middle" textAlign="center"/> 
+</e:Skin>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KfArenaInfoItemSkin" width="550" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="rank" text="1" size="18" verticalCenter="0" horizontalCenter="-259.5"/>
+	<e:Label id="name" text="玩家的长名字" size="18" verticalCenter="0" horizontalCenter="-180"/>
+	<e:Label id="ka" text="500/100" x="161" size="18" verticalCenter="0"/>
+	<e:Label id="collection" text="100" x="236" size="18" verticalCenter="0"/>
+	<e:Label id="score" text="1000" x="286" size="18" verticalCenter="0"/>
+	<e:Image id="mvp" source="xvip_v2_png" x="330" verticalCenter="0.5"/>
+	<e:Image id="firstBloodImg" source="xvip_v2_png" x="200" verticalCenter="0.5"/>
+	<e:Image id="firstCollectionImg" source="xvip_v2_png" x="260" verticalCenter="0.5"/>
+	<e:Label id="arenaPoint" text="200" x="384" size="18" verticalCenter="0"/>
+	<e:Label id="arenaScore" text="2000+20" x="434" size="18" verticalCenter="0"/>
+</e:Skin>

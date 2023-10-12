@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KfArenaDuanSkin" width="580" height="731" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15dbfa8e636"/>
+	<e:Scroller top="65" bottom="147" horizontalCenter="0" anchorOffsetY="0">
+		<e:List id="list" y="-20" itemRendererSkinName="KfArenaDuanItemSkin">
+		<e:ArrayCollection>
+			<e:Array>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:VerticalLayout gap="0"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group x="11" y="595" width="560" height="80">
+		<e:Label text="当前段位的每日奖励：" x="0" y="7"/>
+		<e:List id="rewardList" x="422" y="5" itemRendererSkinName="ItemSkin" height="69"/>
+	</e:Group>
+	<e:Group y="681" horizontalCenter="0">
+		<e:Label text="我的当前段位：" x="0" y="0"/>
+		<e:Label id="dw" text="黄金" x="0" y="0" textColor="0x00FF00"/>
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Image id="redPoint" source="zjmhongdian" x="480" y="595" visible="false"/>
+	<e:Label id="get" text="已领取" x="438.5" y="622" textColor="0x10e56e" size="20" visible="false"/>
+
+</e:Skin>

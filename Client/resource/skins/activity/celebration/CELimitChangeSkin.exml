@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CELimitChangeSkin" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50" x="80"/>
+	<e:Image id="title" y="0" horizontalCenter="0" x="212" source="biaoti_jpdh"/>
+	<e:Group id="infoBg" left="10" right="10" x="10" y="42" height="100">
+		<e:Image left="0" right="0" top="0" bottom="0" source="activity_headbg0_png"/>
+		<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="15" bottom="15" visible="false"/>
+		<e:Group x="28" verticalCenter="0">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" y="0" x="0"/>
+		<e:Label id="actTime0" text="6天23小时55分" size="18" textColor="0x00FF00" x="90" y="0"/>
+		<e:Label id="actInfo0" text="活动说明待补" x="90" y="22" size="18" width="400" textColor="0xd1c28f"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" x="0" y="22"/>
+			<e:Label text="当前拥有：" size="18" textColor="0xFF9900" y="44"/>
+			<e:Label id="num" text="99999" size="18" y="44" x="118" textColor="0xd1c28f"/>
+			<e:Image width="24" height="24" x="90" y="42" source="200320_png"/>
+		</e:Group>
+	</e:Group>
+	<e:Scroller scrollPolicyH="off" scrollPolicyV="on" horizontalCenter="0" width="540" top="146" bottom="6" x="10" y="158">
+		<e:List id="content" y="549" horizontalCenter="-43" x="0" useVirtualLayout="false" itemRendererSkinName="limitChangeItemSkin">
+		<e:layout>
+			<e:VerticalLayout gap="2"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+		
+</e:Skin>

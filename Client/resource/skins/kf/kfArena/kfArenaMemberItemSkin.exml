@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="kfArenaMemberItemSkin" width="500" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Group id="vip" scaleX="0" scaleY="0" touchChildren="false" touchEnabled="false"/>
+	<e:Image source="tongyonglabbg" left="0" right="0" top="0" bottom="0" scale9Grid="38,30,50,23"/>
+	<e:Label id="powerLab" text="战力：999999" x="267" y="19" size="18" textColor="0x9f946d"/>
+
+	<e:Label id="nameLab" text="名字名字什么" x="130" y="19" size="18" textAlign="left" textColor="0x9f946d"/>
+	<e:Label id="winRateLab" text="胜率： 0" x="269" y="62" size="18" textAlign="left" textColor="0x9F946D"/>
+	<e:Label id="scoreLab" text="积分： 0" x="128.2" y="62" size="18" textAlign="left" textColor="0x9F946D"/>
+
+	<e:Image id="face" source="head_11" x="30" width="60" height="60" verticalCenter="0"/>
+	<e:Image id="headBG" x="25" source="touxiangkuang0" width="70" height="70" scale9Grid="6,6,1,1" verticalCenter="0"/>
+	<e:Image id="vipTitle" x="101" y="4" scaleX="0.8" scaleY="0.8" source="vipv_png"/>
+	<e:Button id="inviteBtn" label="邀请" width="100" height="40" verticalCenter="0" skinName="Btn3Skin" right="10"/>
+</e:Skin>

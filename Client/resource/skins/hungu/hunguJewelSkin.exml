@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="hunguJewelSkin" width="580" height="930" currentState="activation" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="activation,upgrade,max" >
+	<w:Config id="1586c85d15d"/>
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" top="0" right="0" bottom="0"/>
+	<e:Group horizontalCenter="0" top="65" width="568" anchorOffsetY="0" height="758">
+		<e:Image source="tongyongmianbanbg" scale9Grid="23,21,2,2" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" height="732"/>
+		<e:Image anchorOffsetY="0" y="73" source="hunyuBg" horizontalCenter="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,273,47" left="5" right="5"/>
+		<e:Label text="魂  玉" size="24" bold="true" y="12" horizontalCenter="0" textColor="0xA67D44"/>
+
+	</e:Group>
+
+	<e:Group id="fightGroup" horizontalCenter="-4" top="492">
+		<ns1:BaseComponent id="powerPanel0" skinName="PowerPanelSkin" className="PowerPanel"/>
+	</e:Group>
+
+
+
+
+
+
+
+
+	<e:Group y="110" horizontalCenter="0" width="520" height="445">
+		<e:Component id="equip" y="149" skinName.upgrade="EquipItem" skinName="EquipItem" horizontalCenter="0"/>
+		<e:Component id="equip0" y="-1" skinName="hunyuItem" horizontalCenter="2"/>
+		<e:Component id="equip1" y="98" skinName="hunyuItem" horizontalCenter="144"/>
+
+
+		<e:Component id="equip2" y="267" skinName="hunyuItem" horizontalCenter="88"/>
+		<e:Component id="equip3" y="267" skinName="hunyuItem" horizontalCenter="-87"/>
+		<e:Component id="equip4" y="96" skinName="hunyuItem" horizontalCenter="-154"/>
+
+	</e:Group>
+	<e:Group width="500" height="217" horizontalCenter="0" x="40" scaleX="1" scaleY="1" y="597">
+		<e:Image id="attBG" source="shuxingbg" scale9Grid="50,5,65,34" height="116" width="500" x="0" y="0"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="274" top="-32" left="-10" x="-40" y="-361" scaleX="1" scaleY="1"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="260" scaleX="-1" top="-32" right="-10" x="540" y="-361" scaleY="1"/>
+	</e:Group>
+	<e:Group id="activation" width="500" height="217" horizontalCenter="0" visible.upgrade="false" visible.max="false" y="597" y.activation="597">
+		<e:Label id="att0" text="攻击：800\n攻击：8000\n攻击：8000" size="20" textColor="0x2ECA22" textAlign="left" verticalAlign="middle" verticalCenter="-46.5" horizontalCenter="0.5" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Label id="activationTip" text="（激活后可继续升级魂玉）" size="16" textAlign="left" verticalAlign="middle" verticalCenter="-3.5" horizontalCenter="1" x="10" y="10" scaleX="1" scaleY="1" textColor="0x8E907F"/>
+		<e:Button id="executeBtn0" skinName="Btn1Skin" label="激活" horizontalCenter="0" bottom="2"/>
+		<e:Label id="name0" text="1级血意魂玉" size="20" textAlign="left" verticalAlign="middle" scaleX="1" scaleY="1" verticalCenter="-88.5" horizontalCenter="0" textColor="0xFA6D0B"/>
+		<e:Group id="costGroup0" horizontalCenter="-1" height="40" y="120">
+			<e:Label id="expendLabel0" text="消耗: " size="20" textColor="0xD1C28F" x="0" y="12"/>
+			<e:Image id="icon0" width="30" height="22" x="54" y="10" source="szyuanbao"/>
+			<e:Label id="countLabel0" text="12000/100" size="20" textAlign="left" textColor="0xD1C28F" x="93" y="12"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="max" width="500" height="217" horizontalCenter="0" visible.upgrade="false" visible.activation="false" y="597">
+		<e:Label id="att1" text="攻击：800\n攻击：8000\n攻击：8000" size="20" textColor="0x2ECA22" textAlign="left" verticalAlign="middle" verticalCenter="-46.5" horizontalCenter="0.5" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Label id="name1" text="1级血意魂玉" size="20" textAlign="left" verticalAlign="middle" scaleX="1" scaleY="1" verticalCenter="-88.5" horizontalCenter="0" textColor="0xFA6D0B"/>
+		<e:Label id="maxText" text="当前魂玉已满级" size="20" textAlign="left" verticalAlign="middle" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0xF8B141" y="131"/>
+	</e:Group>
+	<e:Group id="upgrade" width="500" height="217" horizontalCenter="0" visible.activation="false" visible.max="false" y="597">
+		<e:Button id="executeBtn" skinName="Btn1Skin" label="升 级" horizontalCenter="0" bottom="2"/>
+		<e:Label id="curname" text="1级血意魂玉" size="20" textAlign="left" verticalAlign="middle" scaleX="1" scaleY="1" verticalCenter="-88.5" horizontalCenter="-127.5" textColor="0xFA6D0B"/>
+		<e:Label id="nextname" text="2级血意魂玉" size="20" textAlign="left" verticalAlign="middle" scaleX="1" scaleY="1" verticalCenter="-88.5" horizontalCenter="114.5" textColor="0xFA6D0B"/>
+		<e:Label id="curAtt0" text="攻击：800\n攻击：800201\n攻击：8000" size="20" textAlign="left" verticalAlign="middle" textColor="0x9F946D" scaleX="1" scaleY="1" verticalCenter="-46.5" horizontalCenter="-111.5"/>
+		<e:Label id="nextAtt0" text="攻击：800\n攻击：8000\n攻击：8000" size="20" textColor="0x2ECA22" textAlign="left" verticalAlign="middle" verticalCenter="-46.5" horizontalCenter="110.5" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Image id="cursor0" source="jiantouyou" verticalCenter="-33" horizontalCenter="0.5"/>
+		<e:Group id="costGroup" horizontalCenter="-0.5" height="40" y="120">
+		<e:Label id="expendLabel1" text="消耗: " size="20" textColor="0xD1C28F" x="0" y="12"/>
+		<e:Image id="icon1" source="200002_png" width="40" height="40" x="49" y="0"/>
+		<e:Label id="countLabel1" text="12000/100" size="20" textAlign="left" textColor="0xD1C28F" x="92" y="12"/>
+		</e:Group>
+	</e:Group>
+	<e:Label id="getItemTxt0" text="获取道具" size="20" textColor="0x00FF00" horizontalCenter="211" height="60" verticalAlign="middle" width="100" textAlign="center" visible.max="false" visible.activation="false" y="728"/>
+	<e:Group horizontalCenter="0" height="35" x="25" scaleX="1" scaleY="1" y="822">
+		<e:Image source="bantoutiaobg" height="30" touchEnabled="false" scale9Grid="128,2,15,41" width="300" y="5"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" touchEnabled="false" y="10" x="48"/>
+	</e:Group>
+
+ 
+</e:Skin>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="teamFbTargetSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"    width="115" height="133">
+	<w:Config id="15c397cdd5d"/>
+	<e:Image id="namebg" height="25" width="115" horizontalCenter="0" source="bantoutiaobg2" anchorOffsetY="0" bottom="3"/>
+	<e:Image source="juesetxk" y="29"   horizontalCenter="0"/>
+	<e:Image id="roleHead" source="yuanhead10" width="52" height="52" y="40"   horizontalCenter="0"/>
+	<e:Label id="roleName" text="玩家名六个字" size="18" textAlign="center"   horizontalCenter="0" bottom="6" textColor="0xd1c28f"/>
+	<e:Image id="targetSelect" width="123" height="30" source="teshuwenzibg" scale9Grid="76,21,28,9" horizontalCenter="0.5" y="-2"/>
+	<e:Label id="targetName" text="正在攻击" size="18" y="4" horizontalCenter="0" textColor="0xffd93f" bold="true"/>	
+</e:Skin>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SBHighSkin" width="560" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="622">
+	<w:Config id="1586d1506c8" />
+	<e:Image horizontalCenter="0" width="554" height="560" top="0" source="quanminbossbg_png" visible="false"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+	<e:Image id="title" y="-6" horizontalCenter="0.5" source="biaoti_high"/>
+	<e:Group id="infoBg" left="3" right="3" x="10" y="36" height="116">
+		<e:Image left="0" right="0" top="0" bottom="0" source="ny_curtain_png"/>
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime1" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actInfo1" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+		<e:Label id="totalScore" text="当前嗨积分:999" x="394" y="88" size="20" textColor="0x00ff00" bold="true"/>
+	</e:Group>
+	<e:Image id="line" anchorOffsetX="0" anchorOffsetY="0" x="343" bottom="0" top="153" source="ny_line" scale9Grid="1,1,2,8"/>
+	<e:Group id="leftTopBg" anchorOffsetX="0" width="340" left="4" anchorOffsetY="0" top="153">
+		<e:Image y="0" anchorOffsetX="0" anchorOffsetY="0" left="0" source="ny_hightitlebg" scale9Grid="63,6,5,26" height="40" right="230"/>
+		<e:Image y="0" anchorOffsetX="0" anchorOffsetY="0" height="40" right="0" left="110" source="ny_hightitlebg" scale9Grid="61,6,5,29"/>
+		<e:Label text="积分要求" x="12" size="20" textColor="0xd1c28f" bold="true" scaleX="1" scaleY="1" verticalCenter="1"/>
+		<e:Label text="活动奖励" x="185" size="20" bold="true" textColor="0xd1c28f" verticalCenter="1"/>
+	</e:Group>
+	<e:Group id="rightTopBg" anchorOffsetX="0" width="210" right="3" anchorOffsetY="0" top="153">
+		<e:Image y="0" anchorOffsetX="0" anchorOffsetY="0" right="0" left="0" source="ny_hightitlebg" scale9Grid="61,6,6,28" height="40"/>
+		<e:Label text="赚取&quot;嗨&quot;积分" size="20" textColor="0xD1C28F" bold="true" verticalCenter="1" horizontalCenter="0.5"/>
+	</e:Group>
+	<e:Group id="reward" anchorOffsetX="0" width="340" left="4" anchorOffsetY="0" top="194" bottom="0">
+		<e:List id="rewardList" itemRendererSkinName="highRewardItemSkin" anchorOffsetY="0" left="0" right="0" top="0" bottom="0">
+		</e:List>
+	</e:Group>
+	<e:Group id="project" anchorOffsetX="0" anchorOffsetY="0" right="3" width="210" top="194" bottom="0">
+		<e:Scroller left="0" top="0" bottom="0" right="0" scrollPolicyH="off" scrollPolicyV="on">
+				<e:List id="projectList" left="0" bottom="0" right="0" top="0" itemRendererSkinName="highProjectItemSkin"/>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

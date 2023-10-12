@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="WingEquipItemrenderSkin" states="up,down,disabled" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8"
+             size="20" fontFamily="Tahoma 'Microsoft Yahei'"
+             textColor="0xFFFFFF" text="{data}" verticalAlign="middle" textAlign="center"/>
+
+	<w:Config id="156bfb8dc27" ></w:Config>
+</e:Skin>

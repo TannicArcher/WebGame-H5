@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MainButtonSkin" states="up,down,disabled" width="76" height="76"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" includeIn="down" width.down="76" height.down="76" width.disabled="80" height.disabled="80">
+	<e:Image pixelHitTest="true" source.down="touxiangkuang" y.down="8" x.down="7" source.disabled="touxiangkuang" x.disabled="8" source.up="touxiangkuang" horizontalCenter="0" verticalCenter="0" width="80" height="80" source="touxiangkuang" visible="false"/>
+	<e:Image id="selectIcon" visible.disabled="false" pixelHitTest="true" source.up="xuanzhongyuan" source.down="xuanzhongyuan" visible.up="false" width.disabled="74" width.up="74" height.disabled="74" height.up="74" source="xuanzhongyuan" left="0" right="0" top="0" bottom="0" top.down="2" left.down="2"/>
+	<e:Image id="iconDisplay" alpha.disabled="0.5" pixelHitTest="true" horizontalCenter="0" verticalCenter="0" source="zjmhanghui" verticalCenter.down="1" horizontalCenter.down="1"/>
+	<e:Group id="redPoint" width="30" height="30" alpha.disabled="0.5" right="-5" top="2" visible="false">
+		<e:Image horizontalCenter="0" verticalCenter="0" source="zjmhongdian"/>
+		<e:Label id="txt" size="16" width="25" textAlign="center" horizontalCenter="0" verticalCenter="0" verticalAlign="middle"/>
+	</e:Group>
+</e:Skin>

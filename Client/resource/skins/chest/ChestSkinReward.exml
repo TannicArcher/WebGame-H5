@@ -1,0 +1,32 @@
+<e:Skin class="ChestRewardSkin" width="580" currentState="open" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  height="930"  states="open,jiesuo,payOpen" >
+	<w:Config id="1586b349dbe"/>
+	<e:Rect id="rect"  fillAlpha="0.6" touchEnabled="true" left="0" right="0" top="0" bottom="0"/>
+	<e:Group width="400" height="600" horizontalCenter="0" verticalCenter="0" horizontalCenter.jiesuo="0" verticalCenter.jiesuo="0">
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" scale9Grid="128,2,15,41" width="300" touchEnabled="false"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="18" x="30" bold="true" bottom="-30" textColor="0x7E6437" touchEnabled="false"/>
+		<e:Image source="tongyongkuang3bg" scale9Grid="6,6,38,38" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="69,8,266,39" left="0" right="0"/>
+		<e:Image source="tongyonglabbg" height="414" width="388" horizontalCenter="0" scale9Grid="39,21,50,41" y="180"/>
+		<e:Image source="szyuanbao" y.payOpen="471" x.payOpen="114.13" horizontalCenter="-31" bottom="70" horizontalCenter.payOpen="-38" bottom.payOpen="116" visible.open="false" bottom.jiesuo="80"/>
+
+		<e:Label id="costNum" text="9999" textColor="0xF8B141" size="20" y.payOpen="474" visible.open="false" x.payOpen="145.83" horizontalCenter="16" bottom="70" horizontalCenter.payOpen="13.5" bottom.payOpen="117" bottom.jiesuo="80"/>
+		<e:Image source="baoxiangt1" visible.payOpen="false" horizontalCenter="-58" bottom="137" bottom.open="107" visible.jiesuo="false"/>
+		<e:Image source="baoxiangt2" visible.jiesuo="false" visible.payOpen="false" horizontalCenter="-58" bottom="138" bottom.open="108"/>
+		<e:Image id="imgBox" horizontalCenter="26" source="baoxiang_5" x="114" y="25" scaleX="0.7" scaleY="0.7"/>
+		<e:Label id="t3" text="11：59：59" textColor="0xF8B141" size="20" textAlign="left" visible.jiesuo="false" visible.payOpen="false" horizontalCenter="19" bottom="144" bottom.open="114"/>
+		<e:Label id="labelTime" text="12:00:00" size="20" textColor="0x20CB30" visible.open="false" horizontalCenter="132" y="150"/>
+		<e:Image source="shalou" scaleX="0.7" scaleY="0.7" visible.open="false" horizontalCenter="82" y="145"/>
+		<e:Button id="btnOpen" skinName="Btn1Skin" label="开始解锁" horizontalCenter.payOpen="0" horizontalCenter.open="0" label.jiesuo="立即开启" label.payOpen="立即完成" bottom="20" bottom.open="50" horizontalCenter.jiesuo="0" horizontalCenter="0" bottom.jiesuo="30" bottom.payOpen="50"/>
+		<e:List id="list" height="244" itemRendererSkinName="ChestShowItemSkin" width.open="380" width="380" horizontalCenter="0" y="190" y.open="190">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:List>
+		<e:Label text="宝箱开启" size="24" bold="true" horizontalCenter="3.5" textColor="0xa67d44" y="11"/>
+		<e:Group id="rule" includeIn="jiesuo" horizontalCenter="0" y="441">
+			<e:Label id="labelWarning" text="队列不足，只能同时解锁1个宝箱" size="20" bold="true" visible.open="false" x.jiesuo="10" visible.payOpen="false" y.jiesuo="0" horizontalCenter="0" textColor="0xfe4444"/>
+			<e:Label id="labelVip" text="VIP4 可同时解锁2个宝箱" size="20" visible.open="false" textColor="0xd1c28f" x.jiesuo="-14" visible.payOpen="false" y.jiesuo="20" y="22" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

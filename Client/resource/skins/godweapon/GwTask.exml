@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GwTaskSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="556" xmlns:ns1="*" height="633">
+	<e:Group id="GwTask" name="桃源秘境" left="0" right="0" top="0" bottom="0">
+		<e:Image id="BG" width="556" horizontalCenter="0" verticalCenter="-88" source="GwrenwuBG_png"/>
+		<e:Image id="nameBG" width="227" height="42" source="bosswzbg" horizontalCenter="10.5" y="24"/>
+		<e:Image id="zhanshi" source="leitingnuzhan" horizontalCenter="13" y="28"/>
+		<e:Image id="fashi" source="chixuemojian" horizontalCenter="13" y="29"/>
+		<e:Image id="daoshi" source="wujixiaoyaoshan" horizontalCenter="13" y="28"/>
+		<e:Group width="557" height="30" x="0" bottom="127">
+			<e:Image id="gantanhao" source="gantanhao" bottom="140" x="99"/>
+			<e:Label id="taskLabel" text="激活雷霆怒斩，需要先完成神兵任务" bottom="141" size="20" bold="true" textColor="0xF2CC52" left="125"/>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="renwuchushi" text="每次只能领取一个任务" horizontalCenter="0" bottom="102" size="20" textColor="0xB1994F"/>
+		<e:Label id="quanbuwancheng" text="全部任务已完成" horizontalCenter="0" bottom="102" size="20" textColor="0xB1994F" visible="false"/>
+		<e:Label id="renwuneirong" text="1.xxxxxxxxxxxxxxxxxxxxxx" horizontalCenter="0.5" bottom="102" size="20" textColor="0xB1994F" visible="false"/>
+		<e:Group id="showSkill0" width="540" height="100" x="9" y="102">
+			<e:Image id="bg0" width="540" height="96" x="0" y="4" source="zjmgonggaobg" scale9Grid="116,9,2,2"/>
+			<ns1:BaseComponent id="item0" x="7" y="9" skinName="GwItemSkin" currentState="skllicon2" className="GwWeaponSkillIcon"/>
+			<e:Label id="skillName0" y="13" text="技能名字" size="20" x="117" textAlign="left" bold="true" textColor="0xD1C28F"/>
+			<e:Label id="skillDesc0" y="42" text="技能效果技能效果技能效果技能效果技能效果技能效果技能效果" size="18" height="54" x="110" width="418" textColor="0x8E764D"/>
+			<e:Image source="jineng_json.jinengline2" x="112" y="35"/>
+		</e:Group>
+		<e:Group id="showSkill1" width="540" height="100" x="9" y="212">
+			<e:Image id="bg1" width="540" height="96" x="0" y="4" source="zjmgonggaobg" scale9Grid="110,8,2,4"/>
+			<ns1:BaseComponent id="item1" x="7" y="9" skinName="GwItemSkin" currentState="skllicon2" className="GwWeaponSkillIcon"/>
+			<e:Label id="skillName1" y="13" text="技能名字" size="20" x="117" textAlign="left" bold="true" textColor="0xD1C28F"/>
+			<e:Label id="skillDesc1" y="42" text="技能效果技能效果技能效果技能效果技能效果技能效果技能效果" size="18" height="54" x="110" width="418" textColor="0x8E764D"/>
+			<e:Image source="jineng_json.jinengline2" x="112" y="35"/>
+		</e:Group>
+		<e:Group id="showSkill2" width="540" height="100" x="9" y="324">
+			<e:Image id="bg2" width="540" height="96" x="0" y="5" source="zjmgonggaobg" scale9Grid="112,8,3,3"/>
+			<ns1:BaseComponent id="item2" x="6" y="5" skinName="GwItemSkin" currentState="skllicon2" className="GwWeaponSkillIcon"/>
+			<e:Label id="skillName2" y="13" text="技能名字" size="20" x="117" textAlign="left" bold="true" textColor="0xD1C28F"/>
+			<e:Label id="skillDesc2" y="42" text="技能效果技能效果技能效果技能效果技能效果技能效果技能效果" size="18" height="54" x="110" width="418" textColor="0x8E764D"/>
+			<e:Image source="jineng_json.jinengline2" x="112" y="35"/>
+		</e:Group>
+		<e:Group width="156" height="60" bottom="28" horizontalCenter="0">
+			<e:Button id="btn" skinName="Btn1Skin" label="领取任务" x="0" y="0" scaleX="1" scaleY="1"/>
+		</e:Group>
+	</e:Group>
+	<e:Image source="jineng_json.jinengline1" x="0" y="451" scale9Grid="16,1,4,9" width="277"/>
+	<e:Image source="jineng_json.jinengline1" y="451" scale9Grid="16,1,4,9" width="277" scaleX="-1" x="554"/>
+</e:Skin>

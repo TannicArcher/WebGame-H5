@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CDRechargeItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="118" height="84">
+	<w:Config id="1586b362dfe"/>
+	<e:Image id="ball" y="-15" scaleX="1.2" scaleY="1.2" horizontalCenter="-1" source="cd_treeitembg1"/>
+
+	<e:Image y="61" scaleX="1.2" scaleY="1.2" source="cd_rechargebg2" anchorOffsetX="0" left="0" right="0" scale9Grid="9,2,60,17"/>
+	<ns1:BaseComponent id="reward" skinName="ItemSkin" className="ItemBase" horizontalCenter="0" verticalCenter="0" scaleX="0.8" scaleY="0.8"/>
+	<e:Label id="schedule" text="(1000000/100000)" size="14" anchorOffsetX="0" anchorOffsetY="0" height="20" y="64" verticalAlign="middle" textAlign="center" textColor="0xD1C28F" horizontalCenter="0"/>
+	<e:Image id="lingqu" y="18" horizontalCenter="0" source="yilingqu" touchEnabled="false" visible="false"/>
+	<e:Group id="redPoint" y="3" right="23" visible="false">
+		<e:Image source="zjmhongdian"/>
+	</e:Group>
+</e:Skin>

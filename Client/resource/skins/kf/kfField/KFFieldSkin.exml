@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KFFieldSkin" width="560" height="716" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="kf_field_bg_jpg" width="554" height="716" horizontalCenter="0" top="0"/>
+	<ns1:BaseComponent id="island1" skinName="KFFieldItemSkin" y="159" x="202" touchChildren="false"/>
+	<ns1:BaseComponent id="island0" skinName="KFFieldItemSkin" y="300" x="325" touchChildren="false"/>
+	<ns1:BaseComponent id="island2" skinName="KFFieldItemSkin" y="431" x="82" touchChildren="false"/>
+	<ns1:BaseComponent id="island3" skinName="KFFieldItemSkin" y="55" x="41" touchChildren="false"/>
+</e:Skin>

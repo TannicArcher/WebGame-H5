@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="gameNoticeSkin" width="540" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="156e3e6cd48"/>
+	<e:Label id="title" text="游戏公告" y="20" textAlign="center" size="22" horizontalCenter="0" textColor="0xbd600d" bold="true"/>
+	<e:Group id="updataReward" width="497" height="100" horizontalCenter="0" bottom="1">
+		<e:Image source="tongyongtip1" scale9Grid="10,12,3,2" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="19,18,2,2" left="0" right="0" top="0" bottom="0"/>
+		<e:List id="reward" width="200" height="96" itemRendererSkinName="ItemSkin" horizontalCenter="-16.5" verticalCenter="0">
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:List>
+		<e:Label id="gengxinfuli" text="更新福利" textAlign="center" size="22" bold="true" horizontalCenter="-186.5" verticalCenter="0" textColor="0xF8B141"/>
+		<e:Label id="yilingqu" text="已领取" textAlign="center" size="22" bold="true" horizontalCenter="169.5" verticalCenter="0" textColor="0x20CB30"/>
+		<e:Button id="suerBtn" label="领取奖励" horizontalCenter="168.5" verticalCenter="0" skinName="Btn1Skin" width="130" height="50"/>
+
+		<e:Image id="redPoint" source="zjmhongdian" verticalCenter="-21" horizontalCenter="219.5"/>
+	</e:Group>
+	<e:Image horizontalCenter="0" verticalCenter="0" source="tongyongditu_png"/>
+	<e:Scroller left="20" right="20" top="60" bottom="107" scrollPolicyV="on">
+		
+	<e:Group>
+	<e:Label id="desc" text="立即获得" size="20" left="0" right="0" top="0" bottom="0" textColor="0x9f946d"/>
+	</e:Group>
+	</e:Scroller>
+	<e:Image source="weijihuohuawen" x="20" y="15" scale9Grid="0,3,50,25" width="200"/>
+	<e:Image source="weijihuohuawen" y="15" scale9Grid="0,3,50,25" width="200" scaleX="-1" right="20"/>
+</e:Skin>

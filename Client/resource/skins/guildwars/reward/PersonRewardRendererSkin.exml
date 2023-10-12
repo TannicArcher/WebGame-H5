@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PersonRewardRendererSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="90" height="110">
+	<e:Label id="desc" text="999" width="44" size="18" textAlign="center" verticalAlign="middle" textColor="0xE7C218" horizontalCenter="-17"/>
+	<e:Label text="积分" size="18" textAlign="left" verticalAlign="middle" textColor="0xE7C218" x="44"/>	
+	<e:List id="itemList" itemRendererSkinName="ItemSkin" scaleX="0.9" scaleY="0.9" horizontalCenter="0" bottom="0">
+		<e:layout>
+		<e:HorizontalLayout gap="10"/>
+		</e:layout>
+	</e:List>
+</e:Skin>

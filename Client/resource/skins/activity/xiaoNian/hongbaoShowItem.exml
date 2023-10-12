@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="hongbaoShowItem" width="405" height="405" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Image source="main_hongbaotexiao_png" x="0" y="0" touchEnabled="false"/>
+	<e:Image id="hbimg" source="main_hongbao_png" horizontalCenter="0" verticalCenter="0" visible="false"/>
+	<e:Group id="hongbaoeff" width="20" height="20" y="203" horizontalCenter="9.5"/>
+		
+</e:Skin>

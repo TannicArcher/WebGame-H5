@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="TitleItemSkin" states="simple,expand" width="550" height.simple="96" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="360">
+	<e:Image top="0" bottom="0" left="0" right="0" source="tongyonglabbg" scale9Grid="38,26,49,34"/>
+	<e:Image x="29" y="29" source="chenghaoditai" y.simple="42"/>
+    <e:Image id="img" x="0" y="6" source="ch_2_png" y.simple="10"/>
+	<e:Button id="btnSet" label="穿戴" y="25" x="310" icon="xch_02" skinName="Btn1Skin" width="120" height="40" verticalCenter.simple="0"/>
+	<e:Label id="labLack" text="未获得" x="330" y="32" size="20" bold="true" textColor="0x9f946d" verticalCenter.simple="0" x.simple="339" y.expand="34" x.expand="337"/>
+	<e:Label id="time" text="有效期：" y="6" size="18" textColor="0xff9e00" textAlign="center" horizontalCenter="95" verticalCenter.simple="-31"/>
+	<e:Image right="20" y="20" source="btnmax" rotation="90" source.expand="btnmax" rotation.expand="-90" y.expand="57" verticalCenter.simple="0"/>
+	<e:Group includeIn="expand" width="100%" y="87">
+		<e:Group width="100%" height="80">
+			<e:Image y="0" horizontalCenter="0.5" source="tongyongline" width="400"/>
+			<e:Image x="0" y="4" source="chenghaobiaoti" scale9Grid="186,4,16,27" width="276"/>
+			<e:Image source="chenghaobiaoti" x="550" y="39" scale9Grid="186,4,16,27" width="276" rotation="180"/>
+			<e:Label text="当前称号属性" y="10" size="20" horizontalCenter="0" bold="true" textColor="0x9f946d"/>
+			<e:Group id="power" x="96" y="40"/>
+			<e:Label id="labRare" text="稀有度：" size="18" y="50" width="160" textAlign="center" right="0" textColor="0x9f946d"/>
+			<e:Image x="18" y="40" source="zhandoulibg" visible="false"/>
+			<e:Image x="16" y="32" source="zjmzhandouli"/>
+		</e:Group>
+		<e:DataGroup id="attrs" width="450" dataProvider="{data.attrsText}">
+			<e:itemRendererSkinName>
+				<e:Skin>
+					<e:Label size="16" textColor="0xBAB398" fontFamily="黑体">
+						<e:textFlow>
+							<e:Object text="{data.h}"/>
+							<e:Object text="{data.t}" style="{data}"/>
+						</e:textFlow>
+					</e:Label>
+				</e:Skin>
+			</e:itemRendererSkinName>
+			<e:layout>
+				<e:TileLayout rowHeight="25" columnWidth="160" verticalGap="0" horizontalGap="0" requestedColumnCount="2"/>
+			</e:layout>
+		</e:DataGroup>
+		<e:Label id="conditionTxt" size="18" width="450" textColor="0xf8b141" text="获得条件："/>
+		<e:Group width="550" y="258">
+			<e:Image x="0" y="6" source="chenghaobiaoti" width="276" scale9Grid="185,4,14,27"/>
+			<e:Image source="chenghaobiaoti" x="550" y="41" width="276" scale9Grid="185,4,14,27" rotation="180"/>
+			<e:Label text="称号总属性" y="12" size="20" horizontalCenter="0" bold="true" textColor="0xafaa97"/>
+			<e:Image y="2" horizontalCenter="0" source="tongyongline" width="400"/>
+		</e:Group>
+		<e:DataGroup id="attrsTotal" dataProvider="{data.attrsTotal}" width="450">
+			<e:itemRendererSkinName>
+				<e:Skin>
+					<e:Label size="16" textColor="0xBAB398" fontFamily="黑体">
+						<e:textFlow>
+							<e:Object text="{data.h}"/>
+							<e:Object text="{data.t}" style="{data}"/>
+						</e:textFlow>
+					</e:Label>
+				</e:Skin>
+			</e:itemRendererSkinName>
+			<e:layout>
+				<e:TileLayout columnWidth="160" horizontalGap="0" verticalGap="0" paddingTop="7" rowHeight="25" requestedColumnCount="2"/>
+			</e:layout>
+		</e:DataGroup>
+		<e:Label text="称号属性会累计为玩家的所有角色提供属性" y="145" size="16" textAlign="left" width="450" textColor="0x9f946d"/>
+		<e:layout>
+			<e:VerticalLayout gap="0" horizontalAlign="right" paddingBottom="11"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

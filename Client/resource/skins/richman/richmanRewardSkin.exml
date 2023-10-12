@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="richmanRewardSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgClose" fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="anigroup" height="300" width="340" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" x="20" y="304"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" x="68" y="309"/>
+		<e:Image id="tipsbg" touchEnabled="true" left="0" right="0" top="0" bottom="0" source="tongyongtip3" scale9Grid="11,11,6,8"/>
+		<e:Image id="tipsnamebg" scale9Grid="3,6,22,42" height="100" source="quali3" top="1" left="2" right="2"/>
+		<e:Image id="tipscorner" touchEnabled="true" left="0" right="0" top="0" bottom="0" scale9Grid="18,17,4,7" source="tongyongtip2"/>
+		<e:Image id="tipsdepartline" source="tongyongline" left="4" right="4" bottom="74"/>
+		<e:Label id="partname" text="第三圈奖励" x="105" y="18" size="26" verticalAlign="middle" textAlign="center" textColor="0xBD600D" bold="true"/>
+		<ns1:BaseComponent id="itemIcon" skinName="ItemSkin" scaleX="1.4" scaleY="1.4" horizontalCenter="0" verticalCenter="-5" className="ItemBase"/>
+		<e:Group horizontalCenter="0" bottom="0">
+			<e:Image id="getreward" left="124" top="237" bottom="15" right="116" source="btn40" x="-177" y="33" scaleX="1" scaleY="1"/>
+			<e:Label id="getlabel" text="已领取" textColor="0xfff2be" size="20" scaleX="1" scaleY="1" horizontalCenter="4" verticalCenter="110"/>
+		</e:Group>
+		<e:Button label="领 取" x="124" y="237" skinName="Btn3Skin" visible="false"/>
+		<e:Group id="counttext" x="14" y="252" visible="false">
+			<e:Label text="再完成      圈可领取" size="20" bold="true" y="0" width="312" verticalAlign="middle" textAlign="center" textColor="0xd1c28f" x="0"/>
+			<e:Label id="count" text="49" size="20" bold="true" y="1" width="38" verticalAlign="middle" textAlign="center" x="128" textColor="0x35e62d"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

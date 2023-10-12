@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CheckRewardSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+	xmlns:ns1="*" width="580" height="500">
+	<ns1:BaseComponent id="guanQiaRewardPanel" name="地区" skinName="GuanqiajiangliSkin" className="GuanQiaRewardPanel" bottom="0" horizontalCenter="0" width="580" height="300"/>
+	<e:Image id="redPointBox" source="zjmhongdian" bottom="0" horizontalCenter="0" visible="false"/>
+	<e:Button id="closeBtn0" label="按钮" skinName="Btn0Skin" horizontalCenter="250" bottom="230" width="60" height="60"/> </e:Skin>

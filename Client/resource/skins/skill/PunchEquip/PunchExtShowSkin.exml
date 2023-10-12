@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PunchExtShowSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+    <w:Config id="15a6a787b32" />
+    <e:Rect id="bgClose" fillAlpha="0.6" left="0" right="0" top="0" bottom="0" />
+    <e:Group id="group" height="600" width="400" horizontalCenter="0" verticalCenter="0">
+        <e:Image  left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="5,5,15,15" />
+        <e:Image source="tongyongtip2" left="0" right="0" top="0" bottom="0" scale9Grid="18,17,3,6" />
+        <e:Scroller width="367" height="552" x="18" y="24">
+            <e:Group>
+                <e:Label id="baseAttr" size="18" textColor="0xe2dfd4" lineSpacing="10" textAlign="left"
+                         />
+            </e:Group>
+        </e:Scroller>
+    </e:Group>
+</e:Skin>

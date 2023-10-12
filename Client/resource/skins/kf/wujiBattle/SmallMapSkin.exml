@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SmallMapSkin" width="200" height="200" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="frameImg" source="tongyong2_json.bossbgkuang" scale9Grid="47,25,5,3" left="0" right="0" top="0" bottom="0"/>
+</e:Skin>

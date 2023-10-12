@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PunchItemSkin" width="580" height="90" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15a59527d66"/>
+	<e:Image source="guild_json.guild_94"  top="0" bottom="0" left="0" right="0"/>
+	<e:Label id="descLab" text="战士等级达到60" x="120" y="50" size="18" textColor="0xF7B910"/>
+	<e:Label id="label0" text="(11/60)" x="161" y="20" size="18" textAlign="center"/>
+	<e:Label id="nameLab" text="等级" x="120" y="20" size="18" textColor="0xDFDCDC"/>
+	<e:Image id="headBG" x="20" source="quality0" width="76" height="76" verticalCenter="0"/>
+	<e:Image id="taskIcon" source="guild_json.guild_51" x="30" verticalCenter="0"/>
+	<e:Button id="goBtn0" label="前往" skinName="Btn1Skin" width="120" height="50" verticalCenter="0" right="20"/>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Btn23Skin" states="up,down,disabled,selected" minHeight="25" minWidth="25" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="iconDisplay" alpha.disabled="0.5"
+	         source="" x.down="0" y.down="1"  scaleX.down="0.95" scaleY.down="0.95" pixelHitTest="true" verticalCenter="0" horizontalCenter="0"/>
+	<e:Image id="selected" source="" pixelHitTest="true" verticalCenter="0" horizontalCenter="0" includeIn="selected"/>
+	<e:Rect width="100%" height="100%" x="0" y="0" fillAlpha="0" strokeAlpha="0" fillColor="0xffffff" touchEnabled="true" includeIn="disabled"/>
+</e:Skin>

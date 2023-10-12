@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="FriendInfoSkin" width="580" height="310" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Scroller left="10" right="50" top="0" bottom="44">
+			<e:List id="list" x="-18" y="348" itemRendererSkinName="FriendsItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Button id="btnFind" label="Button" skinName="Btn0Skin" icon="chatfind" y="77" x="539"/>
+		<e:Label text="GM不会以任何形式询问玩家帐号和密码，或私聊发布中奖信息。" x="39" textColor="0x444134" size="18" bottom="12"/>
+		<e:Image source="gantanhao" x="12" bottom="12"/>
+	</e:Group>
+</e:Skin>

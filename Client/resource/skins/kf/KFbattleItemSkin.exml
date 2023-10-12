@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KFbattleItemSkin" width="560" height="157" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="bgImg" width="20" height="20" x="0" y="0"/>
+	<e:Button id="enterBtn" label="进入" x="427" y="59" skinName="Btn3Skin"/>
+	<e:Label id="openTimeLabel" text="每周一，三，五" x="337" y="118" size="20" textColor="0xbc9914"/>
+	<e:Label id="playDirecLink" text="玩法说明" x="15" y="10" size="20" fontFamily="黑体" textColor="0x2ced0e"/>
+</e:Skin>

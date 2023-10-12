@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HuntListRendererSkin" width="554" height="28" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="showText" text="vip" size="18" textColor="0xDFD1B5" wordWrap="true" verticalCenter="0" left="10" right="10"/>
+	
+	
+	
+</e:Skin>

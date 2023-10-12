@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WJBattleDataSkin" width="580" height="930" currentState="data" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  states="result,data" >
+	<w:Config id="159b5e0f988"/>
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="group" name="上周" height="620" width="475" horizontalCenter="0" verticalCenter="-55">
+		<e:Image height="30" horizontalCenter="0" bottom="-38" scale9Grid="128,2,15,41" width="300" source="bantoutiaobg"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-32" textColor="0x7E6437"/>
+		<e:Image source="tongyongkuang3bg" scale9Grid="10,5,28,31" left="0" top="0" bottom="0" width="475"/>
+		<e:Image horizontalCenter="0" scale9Grid="128,2,15,41" y="45" source="wj_logo_bg"/>
+		<e:Image y="0" source="tongyongkuang3tou" left="0" right="0" scale9Grid="74,9,265,38"/>
+		<e:Label y="10" text="战场数据" size="24" horizontalCenter="0" textColor="0xa67d44" bold="true"/>
+		<e:Group horizontalCenter="2" width="475" y="156">
+		<e:Image y="0" width="528" horizontalCenter="0" source="bantoutiaobg" scale9Grid="29,5,180,35"/>
+		<e:Label text="名字" x="41" size="20" fontFamily="黑体" textColor="0x967E43" verticalCenter="-3.5"/>
+		<e:Label text="杀人/死亡/助攻" x="162" size="20" fontFamily="黑体" textColor="0x967E43" verticalCenter="-3.5" verticalCenter.data="-3.5" x.data="198"/>
+		<e:Label text="采旗" x="325" size="20" fontFamily="黑体" textColor="0x967E43" verticalCenter="-3.5" verticalCenter.data="-3.5" x.data="402"/>
+		<e:Label text="获得荣誉" x="383" size="20" fontFamily="黑体" textColor="0x967E43" verticalCenter="-3.5" visible.data="false"/>
+		<e:Image source="pailietouline" x="150" verticalCenter="-3"/>
+		<e:Image source="pailietouline" x="312" verticalCenter="-1" verticalCenter.data="-1" x.data="372"/>
+		<e:Image source="pailietouline" x="372" verticalCenter="-1" visible.data="false"/>
+		</e:Group>
+		<e:List id="enemyList" width="475" height="191" x="-1" y="418" anchorOffsetX="0" anchorOffsetY="0" itemRendererSkinName="WJBattleDataItemSkin" scaleX="1" scaleY="1">
+			<e:layout>
+			<e:VerticalLayout/>
+			</e:layout>
+		</e:List>
+		<e:List id="myList" width="475" height="191" x="0" y="199" anchorOffsetX="0" anchorOffsetY="0" itemRendererSkinName="WJBattleDataItemSkin" scaleX="1" scaleY="1">
+			<e:layout>
+			<e:VerticalLayout/>
+			</e:layout>
+		</e:List>
+		<e:Image id="myResult" source="wjBattle_json.wj_winning" x="27" y="24" visible.data="false"/>
+		<e:Image id="enemyResult" source="wjBattle_json.wj_fail" x="344" y="23" visible.data="false"/>
+	</e:Group>
+
+ 
+
+
+</e:Skin>

@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SFEightDayWin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Group top="0" bottom="0" left="0" right="0">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" x="0" y="0"   locked="true"/>
+		<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" scale9Grid="15,12,2,3" y="0"   horizontalCenter="0" locked="true"/>
+		<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30" width="570" horizontalCenter="0" top="44" bottom="120" locked="true"/>
+		<e:Group width="556" horizontalCenter="0" bottom="58" locked="true">
+			<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+			<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+		</e:Group>
+		<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" currentState="nohead" width="580" y="0" horizontalCenter="0" locked="true"/>
+		<e:Image source="shang_7" y="-2" height="30" width="181" horizontalCenter="-165" locked="true"/>
+
+		<e:Image source="teshuwenzibg2" scaleY="-1" width="400" height="50" horizontalCenter="0" top="82" locked="true"/>
+
+		<e:Group id="infoBg" y="118" height="116" width="556" horizontalCenter="0" locked="true">
+			<e:Image top="0" bottom="0" source="ny_curtain_png" right="0" left="0"/>
+			<e:Group left="28" y="30">
+			<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+			<e:Label id="actTime0" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+			<e:Label id="actInfo0" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+			<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+			</e:Group>
+		</e:Group>
+		<e:Group top="233" bottom="223" anchorOffsetY="0" width="558" horizontalCenter="0" locked="true">
+			<e:Image id="bgD" width="141" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="4,4,7,6" bottom="0" top="0" y="69" scaleX="1" scaleY="1" left="0" source="sd_projectbg"/>
+			<e:List id="tabD" width="130" top="5" left="6" itemRendererSkinName="dayBtnSkin">
+				<e:layout>
+					<e:VerticalLayout gap="2"/>
+				</e:layout>
+			</e:List>
+			<e:Group id="project" x="139" bottom="0" top="1" anchorOffsetY="0">
+				<e:Image id="bgP" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="4,4,7,6" scaleX="1" scaleY="1" source="sd_projectbg" left="0" bottom="0" right="-1" top="38"/>
+				<e:List id="tabP" x="1" y="0" itemRendererSkinName="tabBtnSkin">
+					<e:layout>
+					<e:HorizontalLayout gap="0"/>
+					</e:layout>
+				</e:List>
+				<e:Scroller id="item" left="4" top="42" bottom="4" right="4" scrollPolicyH="off" scrollPolicyV="on">
+						<e:List id="list" itemRendererSkinName="SDProjectItemSkin" left="0" top="0" right="0" bottom="0">
+						</e:List>
+				</e:Scroller>
+			</e:Group>
+		</e:Group>
+
+		<e:Group width="560" height="100"   horizontalCenter="0" bottom="124" locked="true">
+			<e:Image top="0" bottom="0" source="bantoumingkuang3" left="0" right="270" />
+			<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" left="271" right="0" />
+		</e:Group>
+		<e:Group width="582" top="38" bottom="118" horizontalCenter="0" touchEnabled="false" touchThrough="true" cacheAsBitmap="true" locked="true">
+			<e:Image source="shop_json.shang_2" x="0" y="-22"/>
+			<e:Image source="shop_json.shang_2" y="-22" scaleX="-1" right="0"/>
+			<e:Image rotation="90" x="17" y="45" source="shang_3"/>
+			<e:Image source="shang_3" rotation="90" y="45" scaleY="-1" right="-3"/>
+			<e:Image x="-1" source="shang_10" bottom="-9"/>
+			<e:Image source="shop_json.shang_1" y="-27" horizontalCenter="0"/>
+			<e:Image bottom="92" source="shang_9" top="202" scale9Grid="1,3,9,10"/>
+			<e:Image source="shang_10" bottom="-9" right="-1" scaleX="-1"/>
+			<e:Image source="shang_9" bottom="92" top="202" scale9Grid="1,3,9,10" right="0" scaleX="-1"/>
+			<e:Image x="16" bottom="0" source="shang_8" scale9Grid="60,4,7,24" width="275"/>
+			<e:Image bottom="0" source="shang_8" scale9Grid="60,4,7,24" width="275" scaleX="-1" right="16"/>
+			<e:Image x="11" bottom="-6" source="shang_5" touchEnabled="false"/>
+			<e:Image bottom="-2" source="shang_6" right="11" touchEnabled="false"/>
+			<e:Image source="ny_topframe1_png" y="-33" left="1" touchEnabled="false"/>
+			<e:Image y="-33" source="ny_topframe2_png" right="1" width="104" touchEnabled="false"/>
+			<e:Image source="ny_bottomframe1_png" bottom="-1" left="0"/>
+			<e:Image bottom="-2" source="ny_bottomframe2_png" right="5" width="155"/>
+		</e:Group>
+		<e:Image id="title" horizontalCenter="0" top="79" source="biaoti_chunjiebatianle" locked="true"/>
+		<e:Image horizontalCenter="-155" top="10" source="biaoti_chunjiekuanghuan" locked="true"/>
+		<e:Group horizontalCenter="20" bottom="116" anchorOffsetX="0" width="396">
+			<e:Label text="全目标终极奖励" size="16" bold="true" textColor="0xf8b141" top="16" right="94"/>
+			<e:Group id="bar" x="0" y="37">
+				<e:Rect width="300" height="17" x="6" y="3" fillAlpha="0.6"/>
+				<e:ProgressBar id="schedule" width="300" x="6" y="3" skinName="bar1Skin"/>
+				<e:Image y="0" source="jingyantiao6" scale9Grid="26,3,7,19" width="320" x="0"/>
+			</e:Group>
+			<e:Group id="checkBtn" x="284" y="0">
+				<e:Image y="12" source="jinglianitem" x="11"/>
+				<e:Image y="0" source="jinglianing" x="0"/>
+				<e:Image id="rewardBtn" y="24" source="220006_png" touchEnabled="true" x="22"/>
+				<e:Label text="查看奖励" x="19" y="80" size="18" textColor="0x00ff00" bold="true" touchEnabled="false"/>
+			</e:Group>
+			<e:Group x="21" y="41">
+				<e:Image x="14" y="0" source="pailietouline2" height="22"/>
+				<e:Image width="20" height="20" x="5" y="24" source="200952_png"/>
+				<e:Image x="44" y="0" source="pailietouline2" height="22"/>
+				<e:Image width="20" height="20" x="35" y="24" source="200952_png"/>
+				<e:Image x="74" y="0" source="pailietouline2" height="22"/>
+				<e:Image width="20" height="20" x="66" y="24" source="200952_png"/>
+				<e:Image x="104" y="0" source="pailietouline2" height="22"/>
+				<e:Image width="20" height="20" x="95" y="24" source="200952_png"/>
+				<e:Image x="134" y="0" source="pailietouline2" height="22"/>
+				<e:Image width="20" height="20" x="126" y="24" source="220008_png"/>
+				<e:Image x="164" y="0" source="pailietouline2" height="22"/>
+				<e:Image width="20" height="20" x="155" y="24" source="220008_png"/>
+				<e:Image x="194" y="0" source="pailietouline2" height="22"/>
+				<e:Image width="20" height="20" x="184" y="25" source="220007_png"/>
+				<e:Image x="224" y="0" source="pailietouline2" height="22"/>
+				<e:Image width="20" height="20" x="215" y="25" source="220007_png"/>
+				<e:Image x="254" y="0" source="pailietouline2" height="22"/>
+				<e:Image width="20" height="20" x="245" y="25" source="220007_png"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="44" scaleX="0.8" scaleY="0.8" horizontalCenter="266" locked="true"/>		
+</e:Skin>

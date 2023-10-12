@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="tujianskinstate" minHeight="50" minWidth="100" currentState="notactive" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  width="192" height="236"  states="notactive,activated,fulllevel" >
+	<w:Config id="15a6a784557"/>
+	<e:Image id="imgBox" pixelHitTest="true" right="3" bottom="5" source="tujian260001_png"/>
+	<e:Image id="imgBook" source="tongyongtip1" visible="false"/>
+	<e:Rect fillAlpha="0.7"   fillColor="0x190a0a" width="180" height="222" y="8" horizontalCenter="3" visible="false"/>
+	<e:Image id="rect" y="8" width="180" height="222" horizontalCenter="3" scale9Grid="15,16,16,12" source="shitouban" alpha="0.8" visible.activated="false" visible.fulllevel="false"/>
+	<e:Image source="tujiankabg" scale9Grid="0,23,186,15" left="6" right="0" top="6" bottom="0"/>
+	<e:Image id="quality0" touchEnabled="false" pixelHitTest="true" source="tujian_1c" x="8" y="7" scale9Grid="22,0,138,3"/>
+	<e:Image id="quality1" touchEnabled="false" pixelHitTest="true" source="tujian_1c" rotation="90" right="2" bottom="2" width="226" scaleX="-1"/>
+	<e:Image id="quality2" touchEnabled="false" pixelHitTest="true" source="tujian_1c" rotation="180" right="2" bottom="2"/>
+	<e:Image id="quality3" touchEnabled="false" pixelHitTest="true" rotation="270" x="7.95" width="226" source="tujian_1c" bottom="3" scaleX="-1"/>
+	<e:Image id="quality4" touchEnabled="false" pixelHitTest="true" y="7.34" source="tujian_1b" x="70" alpha="0.6"/>
+	<e:Image source="zhandouli2" x="11" bottom="0"/>
+	<e:Group id="pownGP" x="6" y="0"/>
+	<e:Label id="labelName" text="图鉴名称" y="173" size="20" textColor="0x9f946d" horizontalCenter="4"/>
+	<e:Image id="quality" touchEnabled="false" pixelHitTest="true" source="tujian_1a" y="-2.4"/>
+	<e:Group x="41" y="10"  >
+		<e:Image id="imgStar0" x="0" y="0" rotation="0.48" source="star3"/>
+		<e:Image id="imgStar1" x="0" y="0" rotation="0.48" source="star3"/>
+		<e:Image id="imgStar2" x="10" y="10" rotation="0.48" source="star3"/>
+		<e:Image id="imgStar3" x="20" y="20" rotation="0.48" source="star3"/>
+		<e:Image id="imgStar4" x="30" y="30" rotation="0.48" source="star3"/>
+		<e:Image id="imgStar5" x="40" y="40" rotation="0.48" source="star3"/>
+		<e:Image id="imgStar6" x="50" y="50" rotation="0.48" source="star3"/>
+		<e:Image id="imgStar7" x="60" y="60" rotation="0.48" source="star3"/>
+		<e:Image id="imgStar8" x="70" y="70" rotation="0.48" source="star3"/>
+		<e:Image id="imgStar9" x="80" y="80" rotation="0.48" source="star3"/>
+		<e:layout>
+		<e:HorizontalLayout gap="-4"/>
+		</e:layout>
+	</e:Group>
+
+	<e:Image id="manji" x="116" y="110" source="manji" visible.notactive="false" visible.activated="false"/>
+	<e:Image id="weiji" visible.activated="false" visible.fulllevel="false" source="tjweijihuo" right="0" y="5" alpha="0.8" scaleX="1.2" scaleY="1.2"/>
+	<e:Image id="kejihuo" source="kejihuo" rotation="-15" y="90" x="40" visible.fulllevel="false"/>
+	<e:Group id="redPoint" y="0" right="0" visible="false">
+		<e:Image source="zjmhongdian"/>
+		<e:Label id="txt0" y="5" size="12" textAlign="center" horizontalCenter="0" text="" visible="false"/>
+	</e:Group>
+</e:Skin>

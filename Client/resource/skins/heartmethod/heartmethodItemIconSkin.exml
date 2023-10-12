@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="heartmethodItemIconSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"    width="76" height="100">
+	<e:Group left="0" height="100" width="76" y="0" >
+		<ns1:BaseComponent id="itemIcon" x="0" y="0" skinName="ItemIconSkin" className="ItemIcon"/>
+
+		<e:Image id="nameBG" source="bantoutiaobg" left="0" right="0" height="24" y="76" scale9Grid="79,5,95,35"/>
+		<e:Label id="nameTF" text="name" size="18" touchEnabled="false" textColor="0xf4bc75" x="0" textAlign="center" y="76" width="76" height="24"/>
+	</e:Group>
+</e:Skin>

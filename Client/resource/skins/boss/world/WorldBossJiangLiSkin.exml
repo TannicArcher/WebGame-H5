@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WorldBossJiangLiSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.2" visible="false"/>
+	<e:Group horizontalCenter="0" width="348" height="140" bottom="260">
+		<e:Image id="guang"   left="-4" right="-4" top="-4" bottom="-4" scale9Grid="12,11,6,9" source="waifaguang" visible="false"/>
+		<e:Image   left="0" right="0" top="0" bottom="0" source="tongyongtip3" scale9Grid="12,11,6,9"/>
+		<e:Group x="7" y="14">
+			<e:Image width="120" height="120" horizontalCenter="0" verticalCenter="0" source="zdbossjianglixiaobg"/>
+			<ns1:BaseComponent id="goods" skinName="ItemSkin" className="RoleItem" horizontalCenter="0.5" verticalCenter="10.5"/>
+		</e:Group>
+		<e:Group id="time" y="140" height="25" left="0" right="0">
+			<e:Image id="bargb2"  source="jingyantiao2" left="4" right="4" top="3" bottom="5"/>
+			<e:ProgressBar id="bar" maximum="100" value="40" slideDuration="0"  skinName="bar5Skin" left="6" right="6" top="4" bottom="6"/>
+			<e:Image source="jingyantiao6" scale9Grid="23,0,9,25" left="0" right="0" top="0" bottom="0"/>
+			<e:Label text="倒计时:" size="16" verticalCenter="0" textColor="0xd1c28f" horizontalCenter="-43"/>
+			<e:Label id="timeLabel" text="标签" size="16" textColor="0xDFD1B5" horizontalCenter="7" verticalCenter="0"/>
+		</e:Group>
+		<e:Group width="120" height="28" x="6" y="10">
+			<e:Image source="teshuwenzibg" left="0" right="0" top="0" bottom="0"/>
+			<e:Label id="nameTxt" text="BOSS礼包" size="22" bold="true" textColor="0xd1c28f" horizontalCenter="0" verticalCenter="0" visible="false"/>
+			<e:Label id="nameTxt0" text="护盾礼包" size="22" bold="true" textColor="0xD1C28F" horizontalCenter="0" x="127" y="0"/>
+		</e:Group>
+		<e:Group id="point" height="150" x="130" y="10" width="190">
+			<e:Label text="当前最高：" x="10" y="20" size="20" textColor="0x9f946d" visible="false"/>
+			<e:Label id="playerName" text="暂无玩家投掷" x="0" y="24" size="18" textColor="0xc99c30" width="108"/>
+			<e:Group id="maxPointGroup" x="110" y="24">
+			<e:Label text="掷出" x="0" size="18" textColor="0x9f946d"/>
+			<e:Label id="maxPoint" text="99" x="38" y="0" size="18" textColor="0xf8b141"/>
+			</e:Group>
+			<e:Group id="myPointGroup" x="0" y="57" visible="false">
+			<e:Label id="myPoint" text="50" y="0" size="60" textColor="0xf8b141" x="100"/>
+			<e:Label id="myPointText" text="我的掷出:" x="0" y="0" size="20" textColor="0x20cb30"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="playGroup" width="130" height="50" x="128" y="70">
+			<e:Image source="zjmyindao" left="0" right="0" top="0" bottom="0" scale9Grid="14,6,10,38"/>
+			<e:Label text="请点击" x="8" textColor="0x9f946d" size="20" verticalCenter="0"/>
+			<e:Image id="play" source="zdbossskin_json.zdbossqiangjiangli" x="132" y="-12"/>
+		</e:Group>
+		<e:Image id="giveUp" source="chatclose" y="0" right="0"/>
+		<e:Group id="end" x="120" y="55" width="220" height="46" visible="false">
+			<e:Label id="endname" text="玩家名六个字" y="0" size="24" textColor="0xf8b141" horizontalCenter="0"/>
+			<e:Label text="点数最高，拿走了奖励！" x="0" y="26" size="20" textColor="0x9f946d"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

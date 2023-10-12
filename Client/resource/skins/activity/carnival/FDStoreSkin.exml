@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FDStoreSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="560" height="620" >
+	<e:Image source="teshuwenzibg2" scaleY="-1" width="400" height="50" horizontalCenter="0" y="50"/>
+
+	<e:Group bottom="-4" height="98" left="0" right="0">
+		<e:Image left="2" top="0" bottom="0" right="2" source="sd_projectbg" scale9Grid="8,6,1,1"/>
+	
+		<e:Button id="refreshShopBtn" label="刷   新" horizontalCenter="0" skinName="Btn0Skin" icon="btn2" verticalCenter="0"/>
+		<e:Group touchEnabled="false" verticalCenter="0" horizontalCenter="0">
+			<e:Image id="moneyIcon" x="0" source="szyuanbao" y="0" scaleX="1" scaleY="1" touchEnabled="false"/>
+			<e:Label id="priceTxt" text="200" x="29" size="20" textColor="0xf8b141" y="1" scaleX="1" scaleY="1" textAlign="left" touchEnabled="false"/>
+			<e:Label id="refresh" text="刷新" x="66" size="20" y="1" scaleX="1" scaleY="1" textAlign="left" textColor="0xd1c28f" bold="true" touchEnabled="false"/>
+			<e:layout>
+				<e:HorizontalLayout gap="2" verticalAlign="middle" horizontalAlign="center"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="refreshFree" text="免费刷新" x="244" size="20" y="38" scaleX="1" scaleY="1" textAlign="left" textColor="0xD1C28F" bold="true" touchEnabled="false"/>
+		<e:Group x="14" verticalCenter="0">
+			<e:Label text="当前拥有:" x="0" size="20" textAlign="left" textColor="0xd1c28f" y="524"/>
+			<e:Image id="icon" width="32" height="32" x="86" y="0" source="200334_png"/>
+			<e:Label id="point" text="X2000" x="0" size="20" textAlign="left" textColor="0x00ff00" y="524"/>
+			<e:layout>
+			<e:HorizontalLayout gap="2" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="refreshTime" text="00:00:00" size="20" width="108" textAlign="center" height="36" verticalAlign="middle" x="392" y="20" textColor="0x00ff00"/>
+		<e:Label id="refreshTip" text="后免费刷新" size="20" width="108" textAlign="center" height="36" verticalAlign="middle" y="42" x="393" textColor="0x00ff00"/>
+		<e:layout>
+		<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Image id="redPoint" source="zjmhongdian" horizontalCenter="71" bottom="51" visible="false"/>
+	<e:Label id="noGoods" text=" 商品已全部售完，请刷新" size="24" textColor="0xFF8534" horizontalCenter="0.5" verticalCenter="32" visible="false"/>
+	<e:Scroller width="552" horizontalCenter="0" height="373" y="154">
+				<e:List id="listView" x="54" y="37" itemRendererSkinName="FDstoreItem">
+					<e:layout>
+						<e:TileLayout paddingTop="4"/>
+					</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_activityStore"/>
+	<e:Group left="3" right="3" x="10" y="36" height="116">
+		<e:Image top="0" bottom="0" source="ny_curtain_png" right="0" left="0"/>
+		<ns1:BaseComponent id="itemShow0" y="11" skinName="FDstoreShowItem" className="FDstoreShowItemRender" horizontalCenter="0"/>
+		<ns1:BaseComponent skinName="FDstoreShowItem" horizontalCenter="-105" className="FDstoreShowItemRender" id="itemShow1" scaleX="0.9" scaleY="0.9" verticalCenter="0"/>
+		<ns1:BaseComponent skinName="FDstoreShowItem" horizontalCenter="105" className="FDstoreShowItemRender" id="itemShow2" scaleX="0.9" scaleY="0.9" verticalCenter="0"/>
+		<ns1:BaseComponent skinName="FDstoreShowItem" horizontalCenter="-200" className="FDstoreShowItemRender" id="itemShow3" scaleX="0.8" scaleY="0.8" verticalCenter="0"/>
+		<ns1:BaseComponent skinName="FDstoreShowItem" horizontalCenter="200" className="FDstoreShowItemRender" id="itemShow4" scaleX="0.8" scaleY="0.8" verticalCenter="0"/>
+	</e:Group> 
+</e:Skin>

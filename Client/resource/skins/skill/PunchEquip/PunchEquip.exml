@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PunchEquip" width="560" height="770" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15acfe56d68"/>
+	<e:Group id="Punch" top="52" bottom="0" width="560" horizontalCenter="0" visible="false">
+		<e:Image source="hejibg1_png" y="0" left="0" right="0" height="490" locked="true"/>
+		<e:Image source="hejibg2_png" y="20" horizontalCenter="0" touchEnabled="false" locked="true"/>
+		<!--<e:Group id="powerGroup" horizontalCenter="-3" y="450">
+			<e:Image y="10" source="zhandoulibg" x="7"/>
+			<e:Image y="0" source="zjmzhandouli" x="0"/>
+		</e:Group>-->
+		<e:Image source="shuxingbg2" x="10" y="460" scale9Grid="187,0,8,32" width="270"/>
+		<e:Image source="shuxingbg2" y="460" scale9Grid="187,0,8,32" width="270" right="10" scaleX="-1"/>
+		<e:Image left="0" right="0" bottom="2" source="shuxingbg" top="492" scale9Grid="50,5,65,34"/>
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" y="433" horizontalCenter="0"/>
+		<e:Label text="当前符文套装" y="496" bold="true" size="20" horizontalCenter="0" textColor="0x7e6437"/>
+		<e:Scroller y="520" width="396" horizontalCenter="-54" touchEnabled="false" height="186">
+			<e:Group horizontalCenter="0" verticalCenter="0">
+			<e:Label id="currTitleText" text="60级齐鸣套装 (3/8)" size="22" y="106" x="0" textColor="0x7e6437"/>
+				<e:Label id="preViewText" text="更多套装预览" size="22" y="106.5" x="194" textColor="0x20cb30"/>
+			<e:Label id="currText0" text="乾  巽  坎  艮  坤  震  离  兑" size="24" y="135.4" bold="true" x="5.6" textColor="0xd1c28f"/>
+			<e:Label id="currText3" text="3件套：合击伤害增加" size="18" textColor="0xd1c28f" x="28" y="27"/>
+				<e:Label id="currText1say" text="装备3件符文大幅增强对怪物的伤害" size="18" textColor="0xD1C28F" x="28" y="27" visible="false"/>
+			<e:Label id="currText5" text="5件套：合击伤害增加" size="18" textColor="0xd1c28f" x="28" y="49"/>
+				<e:Label id="currText2say" text="装备5件符文大幅增强对玩家的伤害" size="18" textColor="0xD1C28F" x="28" y="49" visible="false"/>
+			<e:Label id="currText8" text="8件套：合击伤害增加" size="18" textColor="0xd1c28f" x="28" y="73"/>
+				<e:Label id="currText3say" text="装备8件符文大幅减少合击冷却时间" size="18" textColor="0xD1C28F" horizontalCenter="-29.5" bottom="95" visible="false"/>
+			<e:Label id="nextTitleText" text="套装名称" x="0" size="18" y="110" textColor="0xd04cc1" visible="false"/>
+			<e:Label id="nextText0" text="乾  巽  坎  艮  坤  震  离  兑" x="0" size="18" y="130" textColor="0x4cd05d" visible="false"/>
+			<e:Label id="nextText1" text="3件套：合击伤害增加" x="0" size="18" y="155" textColor="0xffffff" visible="false"/>
+			<e:Label id="nextText2" text="5件套：合击伤害增加" x="0" size="18" y="175" textColor="0xFFFFFF" visible="false"/>
+			<e:Label id="nextText3" text="8件套：合击伤害增加" x="0" size="18" y="195" textColor="0xFFFFFF" visible="false"/>
+			<e:Label text="合击套装累计加成（三角色时）" size="22" y="0" textColor="0x7e643d" x="0"/>
+				<e:Image source="tongyongdian2" horizontalCenter="-186.1" verticalCenter="-33.5"/>
+				<e:Image source="tongyongdian2" horizontalCenter="-186.1" verticalCenter="-9.5"/>
+				<e:Image source="tongyongdian2" horizontalCenter="-186.1" verticalCenter="-57.5"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Button id="punchtogether12" label="兑 换" skinName="Btn1Skin" width="100" height="46" bottom="20" right="30" visible="false"/>
+		<e:Button id="preViewBtn1" label="预 览" skinName="Btn1Skin" width="100" height="46" bottom="160" right="30" visible="false"/>
+		<e:Button id="fenjieBtn1" label="分 解" width="100" height="46" bottom="90" right="30" visible="false">
+		</e:Button>
+		<e:Button id="AttrBtn" label="按钮" skinName="Btn0Skin" icon="hejishuxing" x="10" y="20"/>
+		<ns1:BaseComponent id="skillitem" y="20" skinName="PunchSkillItem" className="PunchSkillItemRender" right="10"/>
+		<e:Group id="EffectGroup" horizontalCenter="-2.5" y="70" width="352" height="351">
+			<e:Group id="clickGroup" width="300" height="300" x="28" y="29">
+
+			</e:Group>
+			<ns1:BaseComponent id="item1" x="103" y="-1" skinName="PunchEquipItemSkin" className="PunchEquipItem" currentState="1"/>
+			<ns1:BaseComponent id="item2" x="175" y="1" skinName="PunchEquipItemSkin" className="PunchEquipItem" currentState="2"/>
+			<ns1:BaseComponent id="item3" x="173" y="103" skinName="PunchEquipItemSkin" className="PunchEquipItem" currentState="3"/>
+			<ns1:BaseComponent id="item4" x="175" y="175" skinName="PunchEquipItemSkin" className="PunchEquipItem" currentState="4"/>
+			<ns1:BaseComponent id="item5" x="101" y="173" skinName="PunchEquipItemSkin" className="PunchEquipItem" currentState="5"/>
+			<ns1:BaseComponent id="item6" x="-3" y="175" skinName="PunchEquipItemSkin" className="PunchEquipItem" currentState="6"/>
+			<ns1:BaseComponent id="item7" x="-3" y="103" skinName="PunchEquipItemSkin" className="PunchEquipItem" currentState="7"/>
+			<ns1:BaseComponent id="item8" x="0" y="0" skinName="PunchEquipItemSkin" className="PunchEquipItem" currentState="8"/>
+		</e:Group>
+		<e:Button id="fenjieBtn" label="" x="445" y="525">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="juese_json.hejifenjie"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="punchtogether1" label="" x="445" y="620">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="juese_json.hejiduihuan"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="redPointSo" source="zjmhongdian" x="500" y="527"   touchEnabled="false" visible="false"/>
+		<e:Image id="redPointEx" source="zjmhongdian" x="500" y="623"   touchEnabled="false" visible="false"/>
+		<e:Button id="turnPunchForge" label="Button" y="400" skinName="Btn0Skin" icon="hejizhuling" right="10"/>
+		<e:Image id="redPointPf" source="zjmhongdian" x="523" y="407" touchEnabled="false"/>
+	</e:Group>
+
+	<e:Group id="Punchpre" top="52" bottom="0" width="560" horizontalCenter="0">
+		<e:Image y="46"   source="hejibg4_png" width="554" height="498" x="3"/>
+		<e:Image source="tongyongtip1" left="10" right="10" scale9Grid="5,5,15,15" top="10" bottom="175" visible="false"/>
+		<e:Group bottom="172" horizontalCenter="0">
+			<e:Image source="shuxingbg2" x="0" scale9Grid="187,0,8,32" width="270" y="0"/>
+			<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="270" scaleX="-1" y="0" x="540"/>
+		</e:Group>
+		<e:Image left="0" right="0" source="shuxingbg" scale9Grid="50,5,65,34" bottom="2" height="171"/>
+		<e:Group bottom="34" horizontalCenter="21">
+			<e:Image source="tongyongdian2" x="0" y="4"/>
+			<e:Image source="tongyongdian2" x="0" y="34"/>
+			<e:Image source="tongyongdian2" x="0" y="64"/>
+			<e:Image source="tongyongdian2" x="0" y="94"/>
+			<e:Label text="集三角色攻击力总和" y="0" size="24" textColor="0x7E6437" x="24"/>
+			<e:Label text="对玩家造成           的伤害" y="30" size="24" textColor="0x7E6437" x="24"/>
+			<e:Label text="480%" y="30" size="26" x="148" textColor="0x20cb30"/>
+			<e:Label text="1050%" y="60" size="26" textColor="0x20CB30" x="148"/>
+			<e:Label text="对怪物造成             的伤害" y="60" size="24" textColor="0x7E6437" x="24"/>
+			<e:Label text="60级" y="90" size="24" x="24" textColor="0x20cb30"/>
+			<e:Label text="开启合击符文装备" y="90" size="24" textColor="0x7E6437" x="82"/>
+		</e:Group>
+		<e:Image id="skillIcon" horizontalCenter="-195" bottom="61" source="71000_png"/>
+		<e:Image source="juese_json.hejijineng" width="90" height="90" bottom="48" horizontalCenter="-195"/>
+		<e:Image id="skillName" horizontalCenter="29" source="80001_png" bottom="172"/>
+		<e:Image source="bantoutiaobg2" y="6" scale9Grid="11,2,70,17"  width="560"  height="40" horizontalCenter="0"/>
+		<e:Label text="技能预览" y="10.67" horizontalCenter="0" bold="true" textColor="0x7e6437"/>
+	</e:Group>
+	<e:Group id="Activation" top="140" bottom="0" left="0" right="0" visible="false">
+		<e:Group left="0" right="0" top="0" bottom="0">
+			<e:Image source="longhunbg_png" horizontalCenter="0" y="0" locked="true"/>
+		<e:Label id="activeTipsTxt" text="闯关达到 第5关 即可开启合击技能" horizontalCenter="0" size="24" textColor="0xd1c28f" y="64"/>
+		<e:Label text="英雄合击" bold="true" size="24" horizontalCenter="0" textColor="0xf8b141" y="154"/>
+		<e:Label text="超高伤害" bold="true" size="24" horizontalCenter="0" textColor="0xf8b141" y="214"/>
+		<e:Label text="激爽输出" bold="true" size="24" horizontalCenter="0" textColor="0xf8b141" y="274"/>
+			<e:Button id="UplevelBtn1" label="激活合击" skinName="Btn1Skin" width="180" height="60" horizontalCenter="0" x="210" y="410"/>
+			<e:Image source="tongyongdian" x="200" y="158"/>
+			<e:Image source="tongyongdian" x="200" y="278"/>
+			<e:Image source="tongyongdian" x="200" y="218"/>
+			<e:Image source="weijihuohuawen" y="424" scale9Grid="0,0,50,31" width="120" horizontalCenter="-160"/>
+			<e:Image source="weijihuohuawen" y="455" scale9Grid="0,0,50,31" width="120" horizontalCenter="160" rotation="180"/>
+			<e:Image source="tongyongline" y="178" horizontalCenter="0"/>
+			<e:Image source="tongyongline" y="239" horizontalCenter="0"/>
+			<e:Image source="tongyongline" y="298" horizontalCenter="0"/>
+			<e:Image id="redPointAct" source="zjmhongdian" x="353" y="406"/>
+		</e:Group>
+	</e:Group>
+	<ns1:BaseComponent id="PunchForge" skinName="PunchEquipForgeSkin" top="21" bottom="0" horizontalCenter="0" className="PunchEquipForge" visible="false"/>
+	<!--<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin"   width="640" horizontalCenter="0" currentState="nohead"/>-->
+</e:Skin>

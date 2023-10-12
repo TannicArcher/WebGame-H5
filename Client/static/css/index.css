@@ -1,0 +1,202 @@
+html {
+  /*background-image: url(bg.jpg);*/
+  background: #000;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  /*min-height: 650px;*/
+}
+html,body{height:100%;width:100%;padding:0px;margin:0px;border:0; position:relative;}
+#games-root {
+  opacity: 0;
+  height:100%;
+}
+
+.iframe_box{ max-width:580px; margin:0 auto; height:100%; overflow: hidden;}
+#games-container{
+	position:relative;  
+  z-index:999;
+  top: 0px;
+  left: 0%;
+  width:100%;
+  height: 100%;
+  background: #000;
+  transform-origin:100% 100%;
+}
+
+.left-tool-cont {
+	background:url(../img/leftconbg.png) no-repeat top center;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	padding-top:166px;
+}
+
+#information-cont{
+	width:350px;
+	height:156px;
+	overflow:hidden;
+	padding:9px 10px 0 10px;
+	
+	}
+#slide-runner{ position:absolute; left:8px; top:9px;}
+#information-cont img{ width:350px; height:156px;}
+#gifts-cont{ width:380px;}
+.xglb_box{ overflow:hidden; clear:both;background:url(../img/leftconbg.png) no-repeat; background-position:0 -174px; height:118px; width:380px;}
+.nohide{ display:none;} 
+.u-l-title{ height:39px; background:url(../img/lipin.png) no-repeat left center; padding-left:30px; margin-left:14px; line-height:44px; font-size:18px; color:#fff;}
+.swiper-wrapper{ overflow:hidden; height:62px; padding:8px 14px; overflow:hidden; clear:both; position:relative;}
+.swiper-wrapper span{ display:block; float:left; width:62px; height:62px; padding-right:10px;}
+.swiper-wrapper span img{ width:62px; height:62px;}
+.swiper-wrapper h2{ font-size:16px; width:202px; font-weight:normal; color:#333; height:24px; line-height:24px; padding-top:5px; overflow:hidden; white-space:nowrap;text-overflow:ellipsis; display:block; float:left; text-align:left;}
+.swiper-wrapper p{ text-align:left; display:block; font-size:13px; color:#777; width:202px; overflow:hidden; white-space:nowrap;text-overflow:ellipsis; padding-top:5px;}
+.swiper-wrapper a{ display:block; width:76px; height:32px; background:#ff9a02; border-radius:3px; position:absolute; right:13px; top:23px; color:#fff; font-size:14px; line-height:32px; text-align:center;}
+
+.lb-cont .swiper-wrapper{ padding:7px 14px;}
+.u-r-title{height:38px; background:url(../img/gameico.png) no-repeat left center; padding-left:30px; margin-left:14px; line-height:38px; font-size:18px; color:#fff;}
+#game-comm{ background:url(../img/leftconbg.png) no-repeat; background-position:0 -283px;}
+.hot-com{ height:312px;}
+.hot-com .swiper-wrapper{ padding:8px 14px 10px 14px;}
+.right-tool-cont{
+	position:fixed;
+	right:0px;
+	bottom:0px;
+  }
+.tool-sub{ width:145px; height:60px; line-height:60px; padding-bottom:5px; color:#fff; font-size:22px; font-weight:bold; padding-left:55px; text-align:center;background:url(../img/righttool.png) no-repeat; overflow:hidden;}
+.phone{ background-position:0 0;}
+.down{ background-position:0 -266px;}
+.hand{ background-position:0 -330px;}
+.tool-sub a{ color:#fff;}
+.saoma{ width:172px; height:172px; padding:15px 14px; text-align:center; background:#fff;}
+.saoma img{ width:172px; height:172px;}
+
+.fuchuangpc{ display:block; width:100%; height:501px; overflow:hidden; margin:10px 18px 20px 18px; background:url(../img/sdk_lb.png) no-repeat center; margin:0 auto; padding-top:10px; padding-bottom:10px; position:absolute; top:50px; z-index:9999;}
+.fuchuangpc dl{ display:block; padding:0px; margin:0px; width:90%; margin:0 auto; padding-top:152px;}
+.fuchuangpc dl dt{ display:block; font-size:18px; font-weight:bold; color:#FF0; font-weight:normal; line-height:22px; padding-top:5px; text-align:left; width:23%; margin:0 auto;}
+.fuchuangpc dl dt.k{ font-weight:bold; padding-right:70px; height:30px; overflow:hidden;}
+.fuchuangpc dl dt#hao-con{ display:block; font-size:14px; color:#fff; font-weight:normal; padding-right:70px; height:56px; overflow:hidden; line-height:20px;}
+.fuchuangpc dl dt#hao-cash{ display:block; font-size:14px; color:#fff; font-weight:normal; padding-right:70px; height:50px; overflow:hidden; line-height:20px;}
+.fuchuangpc dl dt.l{ text-align:center; font-size:20px; font-weight:bold; color:#fb3842; font-family:"΢���ź�";}
+.fuchuangpc dl dt.f a{ display:block; width:132px; height:31px; line-height:31px; text-align:center; background:#6bc03e; border-radius:3px; margin:0 auto; color:#fff;}
+.fuchuangpc .ca a{ display:block; width:48px; height:48px; position:fixed; right:6%; top:68px; text-decoration:none; background:url(../img/sdk_xx.png) no-repeat;}
+.fuchuangpc dl dt.l span{ width:90%; display:block; margin:0 auto; padding:10px 10px 10px 10px; text-align:center; margin-top:5px; margin-bottom:15px; overflow:hidden;}
+.fuchuangpc dl dt.f{ background:#fff; border:1px dashed #fb3842; position:absolute; right:28%; top:60%; color:#333; font-size:14px; line-height:30px; padding:0 8px;}
+
+#screenHint{ z-index:999;}
+.login-mode {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+}
+.graybg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+.wechat {
+    display: block;
+    width: 80%;
+    background: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-left: -40%;
+    padding: 0px 0 15px 0;
+    border-radius: 10px;
+}
+.wechat2 {
+    width: 90%;
+    margin-left: -45%;
+    top: 20px;
+}
+.wechat2 .closed_b{display: block;
+    width:38px;
+    height:37px;
+    right: 10px;
+    padding-left:260px;}
+.wechat2 .closed_b img{ width:38px; height:37px;}
+.wechat2{ width:300px; margin-left:-150px; top:20px; overflow:hidden;}
+.follow {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333;
+    padding: 0px 0 10px 0;
+}
+.sm {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    clear: both;
+}
+.sm img {
+    max-width: 150px;
+}
+.how1 {
+    border: 1px solid #ff9b25;
+    display: block;
+    margin: 0 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.how1 p{ text-align:left;}
+.htit {
+    display: block;
+    width: 140px;
+    height: 28px;
+    line-height: 28px;
+    background: #ffbc2d;
+    text-align: center;
+    border-radius: 14px;
+    margin: 0 auto;
+    color: #fff;
+    margin-top: -24px;
+}
+.playcon {
+    text-align: center;
+    padding-top: 14px;
+    overflow: hidden;
+    clear: both;
+}
+.playcon a {
+    display: inline-block;
+    width: 24%;
+	float:left;
+    text-align: center;
+}
+.playcon a img {
+    width: 60px;
+    height: 60px;
+}
+.playcon a span {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    padding-top: 6px;
+}
+.leave {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 46px;
+    line-height: 46px;
+    background: #fdb325;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+.follow2{ font-size:16px;}
+.leave{display:block; width:70%; margin:0 auto; margin-top:20px; height:46px; line-height:46px; background:#fdb325; color:#fff; font-size:16px; text-align:center; border-radius:5px;}
+.follow span{ color:#ffbc2d;}

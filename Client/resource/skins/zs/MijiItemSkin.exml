@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MijiItemSkin" width="90" height="90" currentState="up" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image id="iconBg"  source="touxiangkuang" left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="select" touchEnabled="false" source="xuanzhongyuan" left="0" right="0" top="0" bottom="0"  visible="false"/>
+	<e:Image id="lock" source="touxianglock" left="7" right="7" top="7" bottom="7" visible="false"/>
+	<e:Image id="icon"  source="mijiicon" anchorOffsetX="0" anchorOffsetY="0" top="10" left="10" right="10" bottom="10"/>
+	<e:Image id="itemLock" anchorOffsetX="0" anchorOffsetY="0" x="72" y="0" source="mijilock" visible="false"/>
+	<e:Label id="unlearn" text="未学习" size="22" textColor="0xf8b141" bold="true" horizontalCenter="0" verticalCenter="0" visible="false"/>
+	<e:Image id="addImg" source="tongyongadd" horizontalCenter="0" verticalCenter="0" width="48" height="50" visible="false"/>
+	<e:Label id="count" size="16" text="1转开启" horizontalCenter="0" verticalCenter="0" textColor="0x444134" bold="true" visible="false"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" horizontalCenter="20" verticalCenter="-20" visible="false"/>
+</e:Skin>

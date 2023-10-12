@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuildActitySkin" width="480" height="800" xmlns:e="http://ns.egret.com/eui">
+	<e:Image y="50" width="461" height="635" x="9" scale9Grid="160,49,46,23" source="zyz_03"/>
+    <e:Scroller width="429" height="518" x="26" y="91">
+			<e:List id="list" width="200" height="490" x="12" y="9" itemRendererSkinName="GuildActityItemSkin">
+				<e:layout>
+					<e:VerticalLayout gap="3"/>
+				</e:layout>
+			</e:List>
+
+	</e:Scroller>
+	<e:Image source="guild_json.guild_92" x="195" y="56"/>
+	<e:Image source="bagLine" x="22" y="609" width="436" scale9Grid="1,2,1,1" height="3"/>
+</e:Skin>

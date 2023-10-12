@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ganenLogSkin" width="560" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="622">
+	<w:Config id="1586d1506c8" />
+	<e:Image horizontalCenter="0" y="0" source="ganenbg_png" width="554" height="560"/>
+
+
+
+
+
+
+
+	<e:Scroller id="scroller" horizontalCenter="0.5" y="302">
+		<e:Group id="dataGroup">
+		<e:Group x="5" y="-20">
+			<e:Image id="arrow1" source="jiantouyou2" y="40" x="96" scaleX="1" scaleY="1"/>
+			<e:Image id="arrow2" source="jiantouyou2" y="40" x="216" scaleX="1" scaleY="1"/>
+
+			<e:Image source="denglu_01" x="8" y="2"/>
+			<e:Image x="130" y="2" source="denglu_02"/>
+			<e:Image x="250" y="2" source="denglu_03"/>
+
+
+
+
+
+			<ns1:BaseComponent id="dayNum1" x="0" y="20" skinName="act14item" className="ActivityHFRenderItem" scaleX="1" scaleY="1"/>
+			<ns1:BaseComponent id="dayNum2" x="121" y="20" skinName="act14item" className="ActivityHFRenderItem" scaleX="1" scaleY="1"/>
+			<ns1:BaseComponent id="dayNum3" x="241" y="20" skinName="act14item" className="ActivityHFRenderItem" scaleX="1" scaleY="1"/>
+
+		</e:Group>
+
+
+
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center" gap="26"/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+
+	<e:Group id="group1" scaleX="0.9" scaleY="0.9" verticalCenter="185.5" horizontalCenter="0">
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="4" paddingTop="0" />
+		</e:layout>
+	</e:Group>
+	<e:Button id="suerBtn" label="领取奖励" horizontalCenter="0" height="56" bottom="10" width="180"  skinName="Btn16Skin"/>
+	<e:Label id="daylabel" text="登陆天数:13" size="20" bottom="30" x="50" textColor="0xf8b141" />
+	<e:Label id="dayaward" text="第一天奖励详情" size="20" textColor="0xF8B141" horizontalCenter="0" bold="true" y="429"/>
+	<e:Group horizontalCenter="60" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" x="0" y="0"/>
+		<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" x="90" y="0"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+
+
+	<e:Image id="redPoint" width="20" height="20" horizontalCenter="77" source="zjmhongdian" bottom="50" visible="false"/>
+</e:Skin>

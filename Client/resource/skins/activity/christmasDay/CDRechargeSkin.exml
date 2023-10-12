@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CDRechargeSkin" width="560" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="622">
+	<w:Config id="1586d1506c8" />
+	<e:Image horizontalCenter="0" top="151" source="cd_logbg_png" width="554" height="471"/>
+	<e:Image horizontalCenter="0.5" top="144" source="cd_tree_png"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+	<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_shengdanleichong"/>
+	<e:Group id="infoBg" y="35" left="3" right="3" height="116">
+		<e:Image left="0" right="0" top="0" bottom="0" source="cd_curtain_png"/>
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime1" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actInfo1" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+	</e:Group>
+
+	<e:Image y="154" anchorOffsetX="0" anchorOffsetY="0" source="cd_rechargebg" left="10" right="10" scale9Grid="16,4,99,29"/>
+	<e:Group y="161" horizontalCenter="1">
+		<e:Image x="118" y="2" source="cd_rechargetext"/>
+
+		<e:BitmapLabel id="numLbl" x="229" y="2" text="100000" font="num_dt0_fnt"/>
+
+		<e:layout>
+			<e:HorizontalLayout gap="4" verticalAlign="top"/>
+		</e:layout>
+	</e:Group>
+
+
+
+
+
+	<e:Group id="rechargeBtn" horizontalCenter="-0.5" bottom="35" scaleX="0.8" scaleY="0.8">
+		<e:Button label="Button" skinName="Btn0Skin" icon="btnshouchong_png" y="0" horizontalCenter="0"/>
+		<e:Label text="我要充值" y="39.25" horizontalCenter="4.5" touchEnabled="false"/>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+
+	<e:Group horizontalCenter="-2" verticalCenter="39" anchorOffsetY="0" width="408" height="312">
+		<ns1:BaseComponent id="reward0" x="290" y="228" skinName="CDRechargeItemSkin" className="ChristmasRechargeItem"/>
+		<ns1:BaseComponent x="140" y="214" skinName="CDRechargeItemSkin" id="reward1" className="ChristmasRechargeItem"/>
+		<ns1:BaseComponent x="0" y="179" skinName="CDRechargeItemSkin" id="reward2" className="ChristmasRechargeItem"/>
+		<ns1:BaseComponent x="68" y="82" skinName="CDRechargeItemSkin" id="reward3" className="ChristmasRechargeItem"/>
+		<ns1:BaseComponent x="231.20000000000005" y="116" skinName="CDRechargeItemSkin" id="reward4" className="ChristmasRechargeItem"/>
+		<ns1:BaseComponent x="147" y="0" skinName="CDRechargeItemSkin" id="reward5" className="ChristmasRechargeItem"/>
+		<e:Group id="schedule0" x="227" y="230">
+			<e:Image id="sche0bell0" width="20" height="20" x="71" y="29" source="bell1"/>
+			<e:Image id="sche0bell1" width="20" height="20" x="48" y="34" source="bell1"/>
+			<e:Image id="sche0bell2" width="20" height="20" x="36" y="13" source="bell1"/>
+			<e:Image id="sche0bell3" width="20" height="20" x="17" y="0" source="bell1"/>
+			<e:Image id="sche0bell4" width="20" height="20" x="0" y="17" source="bell1"/>
+		</e:Group>
+		<e:Group id="schedule1" x="84" y="188" anchorOffsetY="0">
+			<e:Image id="sche1bell0" width="20" height="20" x="65" y="58" source="bell1"/>
+			<e:Image id="sche1bell1" width="20" height="20" x="42" y="44" source="bell1"/>
+			<e:Image id="sche1bell2" width="20" height="20" x="44" y="18" source="bell1"/>
+			<e:Image id="sche1bell3" width="20" height="20" x="21" y="3" source="bell1"/>
+			<e:Image id="sche1bell4" width="20" height="20" x="5" y="26" source="bell1"/>
+		</e:Group>
+		<e:Group id="schedule2" x="6" y="92" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Image id="sche2bell0" width="20" height="20" x="27" y="73" source="bell1"/>
+			<e:Image id="sche2bell1" width="20" height="20" x="9" y="49" source="bell1"/>
+			<e:Image id="sche2bell2" width="20" height="20" x="34" y="30" source="bell1"/>
+			<e:Image id="sche2bell3" width="20" height="20" x="47" y="1" source="bell1"/>
+			<e:Image id="sche2bell4" width="20" height="20" x="70" y="20" source="bell1"/>
+		</e:Group>
+		<e:Group id="schedule3" x="160" y="101" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Image id="sche3bell0" width="20" height="20" x="2" y="6" source="bell1"/>
+			<e:Image id="sche3bell1" width="20" height="20" x="16" y="25" source="bell1"/>
+			<e:Image id="sche3bell2" width="20" height="20" x="39" y="9" source="bell1"/>
+			<e:Image id="sche3bell3" width="20" height="20" x="63" y="19" source="bell1"/>
+			<e:Image id="sche3bell4" width="20" height="20" x="83" y="37" source="bell1"/>
+		</e:Group>
+		<e:Group id="schedule4" x="232" y="11" anchorOffsetY="0">
+			<e:Image id="sche4bell0" width="20" height="20" x="43" y="91" source="bell1"/>
+			<e:Image id="sche4bell1" width="20" height="20" x="66" y="64" source="bell1"/>
+			<e:Image id="sche4bell2" width="20" height="20" x="60" y="32" source="bell1"/>
+			<e:Image id="sche4bell3" width="20" height="20" x="34" y="15" source="bell1"/>
+			<e:Image id="sche4bell4" width="20" height="20" x="5" y="8" source="bell1"/>
+		</e:Group>
+	</e:Group>
+	<e:Image source="cd_infobg" horizontalCenter="23.5" bottom="7"/>
+	<e:Label text="单笔充值每满100积分可额外获得一个回馈礼包" size="20" textColor="0xf8b141" bold="true" horizontalCenter="30.5" bottom="13"/>
+	<ns1:BaseComponent id="singleReward" skinName="ItemSkin" className="ItemBase" left="0" bottom="-19"/>
+
+
+
+
+
+
+</e:Skin>

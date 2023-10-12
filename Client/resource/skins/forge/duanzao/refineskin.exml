@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="refineskin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        width="580" height="731">
+	<w:Config id="159bef2916a" />
+	<e:Image source="zhuzaobg2_png"
+	          horizontalCenter="0" width="554" height="680" y="31"/>
+	<e:Group id="dinghong0" width="556" height="104" bottom="6" horizontalCenter="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" />
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" />
+	</e:Group>
+	<!--<e:Group id="powerGroup" y="140" horizontalCenter="0" locked="true">
+	<e:Image source="zhandoulibg" x="2" y="10" />
+	<e:Image id="powerImg0" source="zjmzhandouli" />
+</e:Group>
+-->
+<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0" top="96"/>
+
+<e:Group id="upInfo" height="110" bottom="0" horizontalCenter="0" width="560">
+	<e:Group id="costGroup" horizontalCenter="0" bottom="70">
+		<e:Label id="expendLabel" text="消耗: " size="20" bold="true" x="0" y="2" textColor="0xd1c28f" />
+		<e:Image id="icon" x="64" width="40" height="40" verticalCenter="-3"  source="200003_png"/>
+		<e:Label id="countLabel" text="12000/100" size="20" textAlign="left" x="116" y="2" textColor="0xd1c28f" />
+		<e:layout>
+			<e:HorizontalLayout gap="0" verticalAlign="middle" />
+		</e:layout>
+	</e:Group>
+	<e:Button id="upGradeBtn" label="铸  造" skinName="Btn1Skin"  horizontalCenter="0" bottom="10"/>
+	<e:Button id="upGradeBtn0" label="一键精炼" skinName="Btn1Skin"  x="285" y="36" visible="false"/>
+	<e:Label id="getItemTxt" text="获取道具" size="20" textColor="0x00FF00"  horizontalCenter="170" bottom="10" width="100" height="60" verticalAlign="middle" textAlign="center"/>
+</e:Group>
+<e:Group id="itemGroup"   horizontalCenter="0" height="460" width="560" y="76">
+	<e:Image id="line0" x="120.5" y="202.01" height="10" rotation="116.35" width="98" source="jinglianline1" scale9Grid="0,0,30,10"/>
+	<e:Image id="line1" x="84.51" y="336.6" height="10" rotation="41.84" width="61" source="jinglianline0" scale9Grid="1,0,28,10"/>
+	<e:Image id="line2" x="183.35" y="389.05" height="10" rotation="344.74" width="104" source="jinglianline0" scale9Grid="1,0,28,10"/>
+	<e:Image id="line3" x="360.9" y="354.4" height="10" rotation="3.61" width="73" source="jinglianline0" scale9Grid="1,0,28,10"/>
+	<e:Image id="line4" x="470" y="334.68" height="10" rotation="280.8" width="89" source="jinglianline0" scale9Grid="1,0,28,10"/>
+	<e:Image id="line5" x="474.43" y="197" height="10" rotation="234.21" width="79" source="jinglianline0" scale9Grid="1,0,28,10"/>
+	<e:Image id="line6" x="315.53" y="208.08" width="107" rotation="310.79" 
+	          height="10"  source="jinglianline0" scale9Grid="1,0,28,10"/>
+	<e:Image id="kuang0" y="127" x="88" source="jinglianitem"/>
+	<e:Image id="kuang1" y="276" x="14"  source="jinglianitem"/>
+	<e:Image id="kuang2" y="358" x="109" source="jinglianitem"/>
+	<e:Image id="kuang3" y="313" x="281" source="jinglianitem"/>
+	<e:Image id="kuang4" y="321.4" x="425" source="jinglianitem"/>
+	<e:Image id="kuang5" y="176" x="454" source="jinglianitem"/>
+	<e:Image id="kuang6" x="367" y="65" source="jinglianitem"/>
+	<e:Image id="kuang7" x="252" y="192" source="jinglianitem"/>
+	<e:Image id="icon0" touchEnabled="true" y="141" x="103" source="dz_10"/>
+	<e:Image id="icon1" touchEnabled="true" y="290" x="29" source="dz_11"/>
+	<e:Image id="icon2" touchEnabled="true" y="372" x="124" source="dz_12"/>
+	<e:Image id="icon3" touchEnabled="true" y="327" x="296" source="dz_13"/>
+	<e:Image id="icon4" touchEnabled="true" y="336.4" x="440" source="dz_14"/>
+	<e:Image id="icon5" touchEnabled="true" y="191" x="469" source="dz_15"/>
+	<e:Image id="icon6" touchEnabled="true" y="80" x="382"  source="dz_16"/>
+	<e:Image id="icon7" touchEnabled="true" y="206" x="267" source="dz_17"/>
+	<e:Image id="jinglianed0" x="81" y="119.5"   source="jinglianed" width="100" height="100"/>
+	<e:Image id="jinglianed1" x="7" y="268.5"   source="jinglianed" width="100" height="100"/>
+	<e:Image id="jinglianed2" x="102" y="350.5"   source="jinglianed" width="100" height="100"/>
+	<e:Image id="jinglianed3" x="274" y="305.5"   source="jinglianed" width="100" height="100"/>
+	<e:Image id="jinglianed4" x="418" y="314.9"   source="jinglianed" width="100" height="100" visible="false"/>
+	<e:Image id="jinglianed5" x="447" y="168.5"   source="jinglianed" width="100" height="100" visible="false"/>
+	<e:Image id="jinglianed6" x="360" y="57.5"   source="jinglianed" width="100" height="100" visible="false"/>
+	<e:Image id="jinglianed7" x="245" y="184.5"   source="jinglianed" width="100" height="100" visible="false"/>
+	<e:Image id="selectIcon0" x="61" y="99.5" source="jinglianing"   width="140" height="140" visible="false"/>
+	<e:Image id="selectIcon1" width="140" height="140" x="-13" y="248.5"  source="jinglianing" visible="false"/>
+	<e:Image id="selectIcon2" width="140" height="140" source="jinglianing" x="82" y="330.5" visible="false"/>
+	<e:Image id="selectIcon3" width="140" height="140" source="jinglianing" x="254" y="285.5"/>
+	<e:Image id="selectIcon4" width="140" height="140" source="jinglianing" x="398" y="294.9" visible="false"/>
+	<e:Image id="selectIcon5" width="140" height="140" source="jinglianing" x="427" y="148.5" visible="false"/>
+	<e:Image id="selectIcon6" width="140" height="140" source="jinglianing" x="340" y="37.5" visible="false"/>
+	<e:Image id="selectIcon7" width="140" height="140" source="jinglianing" x="225" y="164.5" visible="false"/>
+	<e:Group id="lv0" width="52.98" height="24"   x="131" y="135" visible="false">
+		<e:Image id="dengji3" source="num_json.lv_+_png" x="1" y="0"   visible="false"/>
+		<e:Image id="dengji2" x="12.66" y="0"   source="num_json.lv_2_png" visible="false"/>
+		<e:Image id="dengji1" x="25.32" y="0"   source="num_json.lv_0_png" visible="false"/>
+		<e:Image id="dengji0" x="37.98" y="0"   source="num_json.lv_0_png" visible="false"/>
+	</e:Group>
+	<e:Group id="lv1" width="52.98" height="24"   x="57" y="285" visible="false">
+		<e:Image id="dengji7" source="num_json.lv_+_png" x="1" y="0"   visible="false"/>
+		<e:Image id="dengji6" x="12.66" y="0"   source="num_json.lv_2_png" visible="false"/>
+		<e:Image id="dengji5" x="25.32" y="0"   source="num_json.lv_0_png" visible="false"/>
+		<e:Image id="dengji4" x="37.98" y="0"   source="num_json.lv_0_png" visible="false"/>
+	</e:Group>
+	<e:Group id="lv2" width="52.98" height="24"   x="153" y="367" visible="false">
+		<e:Image id="dengji11" source="num_json.lv_+_png" x="1" y="0"   visible="false"/>
+		<e:Image id="dengji10" x="12.66" y="0"   source="num_json.lv_2_png" visible="false"/>
+		<e:Image id="dengji9" x="25.32" y="0"   source="num_json.lv_0_png" visible="false"/>
+		<e:Image id="dengji8" x="37.98" y="0"   source="num_json.lv_0_png" visible="false"/>
+	</e:Group>
+	<e:Group id="lv3" width="52.98" height="24"   x="325" y="323" visible="false">
+		<e:Image id="dengji15" source="num_json.lv_+_png" x="1" y="0"   visible="false"/>
+		<e:Image id="dengji14" x="12.66" y="0"   source="num_json.lv_2_png" visible="false"/>
+		<e:Image id="dengji13" x="25.32" y="0"   source="num_json.lv_0_png" visible="false"/>
+		<e:Image id="dengji12" x="37.98" y="0"   source="num_json.lv_0_png" visible="false"/>
+	</e:Group>
+	<e:Group id="lv4" width="52.98" height="24"   x="469" y="330" visible="false">
+		<e:Image id="dengji19" source="num_json.lv_+_png" x="1" y="0"   visible="false"/>
+		<e:Image id="dengji18" x="12.66" y="0"   source="num_json.lv_2_png" visible="false"/>
+		<e:Image id="dengji17" x="25.32" y="0"   source="num_json.lv_0_png" visible="false"/>
+		<e:Image id="dengji16" x="37.98" y="0"   source="num_json.lv_0_png" visible="false"/>
+	</e:Group>
+	<e:Group id="lv5" width="52.98" height="24"   x="498" y="185" visible="false">
+		<e:Image id="dengji23" source="num_json.lv_+_png" x="1" y="0"   visible="false"/>
+		<e:Image id="dengji22" x="12.66" y="0"   source="num_json.lv_2_png" visible="false"/>
+		<e:Image id="dengji21" x="25.32" y="0"   source="num_json.lv_0_png" visible="false"/>
+		<e:Image id="dengji20" x="37.98" y="0"   source="num_json.lv_0_png" visible="false"/>
+	</e:Group>
+	<e:Group id="lv6" width="52.98" height="24"   x="411" y="74" visible="false">
+		<e:Image id="dengji27" source="num_json.lv_+_png" x="1" y="0"   visible="false"/>
+		<e:Image id="dengji26" x="12.66" y="0"   source="num_json.lv_2_png" visible="false"/>
+		<e:Image id="dengji25" x="25.32" y="0"   source="num_json.lv_0_png" visible="false"/>
+		<e:Image id="dengji24" x="37.98" y="0"   source="num_json.lv_0_png" visible="false"/>
+	</e:Group>
+	<e:Group id="lv7" width="52.98" height="24"   x="297" y="201" visible="false">
+		<e:Image id="dengji31" source="num_json.lv_+_png" x="1" y="0"   visible="false"/>
+		<e:Image id="dengji30" x="12.66" y="0"   source="num_json.lv_2_png" visible="false"/>
+		<e:Image id="dengji29" x="25.32" y="0"   source="num_json.lv_0_png" visible="false"/>
+		<e:Image id="dengji28" x="37.98" y="0"   source="num_json.lv_0_png" visible="false"/>
+	</e:Group>
+	<e:Label id="level_0" text="10" y="139" size="24" horizontalCenter="-129.5" bold="true" stroke="1" textColor="0xffe75b"/>
+	<e:Label id="level_1" text="10" y="288" size="24" horizontalCenter="-204.5" bold="true" stroke="1" textColor="0xffe75b"/>
+	<e:Label id="level_2" text="10" y="370" size="24" horizontalCenter="-108.5" bold="true" stroke="1" textColor="0xffe75b"/>
+	<e:Label id="level_3" text="10" y="325" size="24" horizontalCenter="62" bold="true" stroke="1" textColor="0xffe75b"/>
+	<e:Label id="level_4" text="10" y="333" size="24" horizontalCenter="207" bold="true" stroke="1" textColor="0xffe75b"/>
+	<e:Label id="level_5" text="10" y="188" size="24" horizontalCenter="236" bold="true" stroke="1" textColor="0xffe75b"/>
+	<e:Label id="level_6" text="10" y="76" size="24" horizontalCenter="148.5" bold="true" stroke="1" textColor="0xffe75b"/>
+	<e:Label id="level_7" text="10" y="203" size="24" horizontalCenter="33.5" bold="true" stroke="1" textColor="0xffe75b"/>
+</e:Group>
+<e:Group width="480" height="100" bottom="110" horizontalCenter="0">
+	<e:Image height="68" y="30" source="shuxingbg" scale9Grid="50,5,65,34" left="0" right="0" />
+	<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="240" />
+	<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="240" scaleX="-1" right="0" />
+	<e:Group x="40" y="44">
+		<e:Label id="attr0" text="攻击+10000" size="18" textAlign="center" y="0" x="0" textColor="0x9f946d" />
+		<e:Image id="arrow0" source="tongyongup" x="114" y="2" rotation="90" />
+		<e:Label id="addattr0" text="2222" size="18" textAlign="center" y="0" x="93" textColor="0x32FF00" />
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" />
+		</e:layout>
+	</e:Group>
+	<e:Group x="260" y="44">
+		<e:Label id="attr1" text="生命+10000" size="18" textAlign="center" x="0" y="0" textColor="0x9f946d"/>
+		<e:Image id="arrow1" source="tongyongup" x="114" y="2" rotation="90"/>
+		<e:Label id="addattr1" text="2222" size="18" textAlign="center" textColor="0x32FF00" y="0" x="95"/>
+		<e:layout>
+		<e:HorizontalLayout verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group x="40" y="68">
+		<e:Label id="attr2" text="魔防+100" size="18" textAlign="center" x="0" y="0" textColor="0x9f946d" />
+		<e:Image id="arrow2" source="tongyongup" x="114" y="2" rotation="90" />
+		<e:Label id="addattr2" text="2222" size="18" textAlign="center" textColor="0x32FF00" y="0" x="93" />
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" />
+		</e:layout>
+	</e:Group>
+	<e:Group x="260" y="68">
+		<e:Label id="attr3" text="物防 +100" size="18" textAlign="center" x="0" y="0" textColor="0x9f946d" />
+		<e:Image id="arrow3" source="tongyongup" x="114" y="2" rotation="90" />
+		<e:Label id="addattr3" text="2222" size="18" textAlign="center" textColor="0x32FF00" y="0" x="95" />
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" />
+		</e:layout>
+	</e:Group>
+
+</e:Group>
+<e:Label id="maxDesc" text="铸造已满级"   textColor="0x9F946D" size="24" bold="true"
+         bottom="30"  horizontalCenter="0" visible="false"/>
+</e:Skin>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DailyFbItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="canChallenge,noChallenge"  width="543" height="131">
+	<w:Config id="1586bf85aa4"/>
+	<e:Image id="bg" source="3001bg" left="0" right="0" top="0" bottom="0"/>
+	<ns1:BaseComponent id="price" visible.noChallenge="false" skinName="PriceIconSkin" className="PriceIcon" y="90" x.canChallenge="400" horizontalCenter="178"/>
+	<ns1:BaseComponent id="doublePrice" visible.noChallenge="false" skinName="PriceIconSkin" className="PriceIcon" y="90" x.canChallenge="212" horizontalCenter="12" visible="false"/>
+	<e:Label id="levelRequire" text="70级开放" size="20" x="407" verticalCenter="0" bold="true" textColor="0xa59e9b" textColor.noChallenge="0xd1c28f" size.noChallenge="24" horizontalCenter.noChallenge="130" visible.canChallenge="false" verticalCenter.noChallenge="0.5" text.noChallenge="开服15天并达到5转开启"/>
+	<e:Button id="doubleChallengeBtn" label="双倍扫荡" visible.noChallenge="false" width.canChallenge="130" x.canChallenge="190" verticalCenter="0" horizontalCenter="12" skinName="Btn3Skin" width="120" height="50" visible="false"/>
+	<e:Button id="challengeBtn" label="挑  战" visible.noChallenge="false" width.canChallenge="120" verticalCenter="0" skinName="Btn3Skin" width="120" height="50" horizontalCenter.canChallenge="180" horizontalCenter="180"/>
+	<e:Image id="redPoint" x="499" y="36" includeIn="canChallenge" source="zjmhongdian" visible="false"/>
+	<e:Label id="count" size="18" text="今日挑战次数：1次" textColor="0xDFD1B5" visible.noChallenge="false" textColor.canChallenge="0xDFD1B5" y="20" horizontalCenter="180" horizontalCenter.canChallenge="180"/>
+	<ns1:BaseComponent id="item" x="24" y="44" className="ItemBase" skinName="ItemSkin"/>
+	<e:Group id="barGaroup" width="150" bottom="12" right="20" visible.noChallenge="false" visible.canChallenge="false" visible="false">
+		<e:ProgressBar id="bar" includeIn="canChallenge" skinName="bar3Skin" value="80" verticalCenter="-1" left="16" right="16"/>
+		<e:Image id="barbg" source="jingyantiao4" scale9Grid="21,2,16,17" y="0" left="0" right="0" source.canChallenge="jingyantiao4"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SpecialRingSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+	xmlns:ns1="*" states="open" includeIn="normalWithPrompt,disabledWithPrompt" >
+	<w:Config id="1586be39bf7"/>
+	<e:Rect id="colorCanvas0" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" horizontalCenter="0" y="710"/>
+	<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" horizontalCenter="0" y="714"/>
+	<e:Image width="350" horizontalCenter="0" source="tongyongtip1" scale9Grid="8,8,10,11" height="531" y="169"/>
+	<e:Image source="tongyongtip2" width="350" horizontalCenter="0" height="531" y="168" scale9Grid="18,17,4,6"/>
+	<ns1:BaseComponent id="powerPanel" horizontalCenter="0" height="64" y="375" width="310" skinName="PowerPanelSkin2" className="PowerPanel"/>
+	<e:Image width="350" horizontalCenter="0" source="tongyongline" y="317" visible="false"/>
+	<e:Image source="tongyongline" width="350" horizontalCenter="0" y="562" visible="false"/>
+	<e:Image y="180" horizontalCenter="0" height="30" source="teshuwenzibg"/>
+	<e:Label id="nameTxt" text="护身戒指" y="185" size="20" horizontalCenter="0" bold="true" textColor="0xbd600d"/>
+	<e:Image id="face" horizontalCenter="0" y="231" width="76" height="76" source="wupingkuangNB"/>
+	<e:Label id="lbGet" text="已拥有" size="20" bold="true" horizontalCenter="0" y="642.5" textColor="0x9f946d"/>
+	<e:Group id="bottomBar" horizontalCenter="0" y="600" horizontalCenter.open="0" y.open="567">
+		<e:Image y="5" width="60" height="26" source="shuzibg" scale9Grid="6,6,4,3" horizontalCenter="70" visible="false"/>
+		<e:Label id="useTxt" y="8" textColor="0x2ECA22" text="0/10" size="18" textAlign="center" horizontalCenter="62"/>
+		<e:Label id="countTxt" y="8" text="需要麻痹戒指" size="18" x="20" textColor="0x7e6431"/>
+		<e:Button id="upgradeBtn" label="按钮" y="30" skinName="Btn1Skin" horizontalCenter="0"/>
+	</e:Group>
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  top="0" horizontalCenter="0"/>
+	<e:Label id="labelInfo" text="作用描述是很忙的比例比比比例比比比" y="329" size="18" width="300" verticalAlign="middle" textAlign="left" horizontalCenter="0" textColor="0xf8b141" horizontalCenter.open="0" y.open="329"/>
+	<e:Image id="nextAttBG" y="400" width="240" height="140" horizontalCenter="0" source="shuzibg" scale9Grid="6,6,11,12" visible="false"/>
+	<e:Group y="448"  width="196" horizontalCenter="14">
+		<e:Label id="nextAtt" text="攻击：8000  \n攻击：8000\n攻击：8000\n攻击：8000\n" size="18" width="176" height="130" textAlign="left" textColor="0x7e6431" y="0"  right="0"/>
+		<e:Image id="attrImg0" touchEnabled="false" source="tongyongdian" y="2" x="0"/>
+		<e:Image id="attrImg1" touchEnabled="false" source="tongyongdian" y="20" x="0"/>
+		<e:Image id="attrImg2" touchEnabled="false" source="tongyongdian" y="38" x="0"/>
+		<e:Image id="attrImg3" touchEnabled="false" source="tongyongdian" y="56" x="0"/>
+		<e:Image id="attrImg4" touchEnabled="false" source="tongyongdian" y="74" x="0"/>
+		<e:Image id="attrImg5" touchEnabled="false" source="tongyongdian" y="92"/>
+	</e:Group>
+	<e:Image id="icon" scale9Grid="6,6,4,3" width="60" height="60" source="" horizontalCenter="0" y="239"/>
+	<e:Image source="juese_json.biaoti_tejie" y="5" horizontalCenter="-155"/>
+	<e:Image width="350" horizontalCenter="0" source="tongyongline" horizontalCenter.open="0" y.open="317" top="317"/>
+	<e:Image source="tongyongline" width="350" horizontalCenter="0" horizontalCenter.open="0" y.open="562" y="595"/>
+	<e:Group width="15" height="130"   top="395" left="195" visible="false">
+		<e:Image source="tongyongdian2"   x="0" top="0"/>
+		<e:Image source="tongyongdian2"   left="0" top="18"/>
+		<e:Image source="tongyongdian2"   left="0" top="38"/>
+		<e:Image source="tongyongdian2"   left="0" top="55"/>
+		<e:Image source="tongyongdian2"   left="0" top="80"/>
+	</e:Group>
+</e:Skin>

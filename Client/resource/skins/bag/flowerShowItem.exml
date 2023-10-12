@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="flowerShowItem" width="580" height="500" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Image id="imgBg" source="main_hongbaotexiao_png" touchEnabled="false" horizontalCenter="0.5" verticalCenter="-44.5"/>
+	<e:Image id="flowerImg" horizontalCenter="0" verticalCenter="-44.5" source="flower_openImg"/>
+	<e:Group id="flowereff" width="20" height="20" y="206" horizontalCenter="10"/>		
+</e:Skin>

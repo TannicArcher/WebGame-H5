@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OSA3Heroes" width="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  height="620">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image id="bg" y="40" horizontalCenter="0" source="jihuo3yxbg_jpg"/>
+
+		<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+		<e:Image horizontalCenter="0" y="0" source="biaoti_jihuo3hero"/>
+		<e:Group id="infoBg" y="40" horizontalCenter="0" width="540">
+			<e:Image source="shuxingbg"   scale9Grid="77,5,15,34" left="0" right="0" top="0" bottom="0"/>
+			<e:Label text="活动时间：" x="14" y="12" size="18" textColor="0xf8b141"/>
+			<e:Label id="actTime" text="7月30日20:00-20:20(周日)" x="104" y="12" size="18" textColor="0x00ff00"/>
+			<e:Label id="actInfo" text="活动期间首个带领行会攻占龙城的行会会长可获得丰厚的奖励，奖励通过邮件发放。" x="104" y="32" size="18" width="344" bottom="12" top="32" left="104" right="14" textColor="0xdfd1b5"/>
+			<e:Label text="活动说明：" x="14" y="32" size="18" textColor="0xf8b141"/>
+		</e:Group>
+
+		<e:Button id="active" label="20000元宝" skinName="Btn1Skin" horizontalCenter="0" bottom="30"/>
+		<e:Image id="redPoint" source="zjmhongdian" horizontalCenter="72" bottom="70"/>
+
+
+
+
+
+
+		<e:Label id="state" text="再登陆XX天可领取" textColor="0x00FF00" size="20" bottom="8" horizontalCenter="0.5"/>
+		<e:Label id="already" text="已领取" textColor="0x00FF00" size="20" bottom="49" horizontalCenter="0.5" visible="false"/>
+	</e:Group>		
+</e:Skin>

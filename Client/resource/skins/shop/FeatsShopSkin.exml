@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FeatsShopSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="900" width="620">
+	<e:Scroller width="388" height="490" x="3" y="2" visible="false">
+
+			<e:List width="388" height="490" x="73" y="57" itemRendererSkinName="FeatsShopItem" useVirtualLayout="true">
+			</e:List>
+
+	</e:Scroller>
+	<e:Label id="label1" text="我的功勋" x="118" size="24"  textColor="0xBCAF96" bottom="45" bold="true"/>
+	<e:Label id="labelGetCoin" text="获取功勋" x="495" size="24"  textColor="0x00FF38" bottom="50"/>
+	<e:Image x="215" source="feats" bottom="45"/>
+	<e:Image id="countBg" x="256" scale9Grid="6,6,4,3" width="150" height="40" bottom="40" source=""/>
+	<e:Label id="labelCoin" text="" fontFamily="黑体" size="24" textColor="0xBCAF96" textAlign="left" x="260" width="78" height="35" bottom="40"/>
+	<e:Scroller id="scroller" width="620" horizontalCenter="0" verticalCenter="-40" height="740">
+		<e:Group>
+			<e:List id="list">
+				<e:layout>
+					<e:VerticalLayout gap="0"/>
+				</e:layout>
+			</e:List>
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller> 
+</e:Skin>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="XunzhangItemSkin" width="170" height="90" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="nameTF" text="十阶 5星" size="20" textColor="0xffb82a" y="0" bold="true" x="0"/>
+	<e:Label id="attrTxt" text="暴击伤害：1234567\n暴击率：100%" size="18" textColor="0xDFD1B5" height="60" lineSpacing="5" verticalAlign="middle" bottom="0" left="0" right="0"/>
+</e:Skin>

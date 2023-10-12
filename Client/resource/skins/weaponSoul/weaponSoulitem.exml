@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="weaponSoulitem" height="92" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="76">
+	<w:Config id="1586b362dfe"/>
+	<ns1:BaseComponent id="itemIcon" className="ItemIcon" horizontalCenter="0" skinName="weaponSoulitemicon" y="0"/>
+	<e:Rect id="black" width="74" height="74" x="-1" y="2" fillAlpha="0.5"/>
+	<e:Label id="lv" size="16" y="56" text="+299" textColor="0xd1c28f" right="8"/>
+	<e:Label id="nameTxt" size="18" textColor="0xDFD1B5" text="name" strokeColor="0x111111" bottom="0" horizontalCenter="0" stroke="1"/>
+	<e:Group id="redPoint" y="0"   right="0">
+		<e:Image source="zjmhongdian"/>
+	</e:Group>
+</e:Skin>

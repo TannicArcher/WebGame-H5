@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DailyFbSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" />
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3" x="0"
+	         y="0" />
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90" />
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90" />
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="155"
+	         x="5" y="48" />
+
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" right="0" left="0" currentState="nohead" x="0"
+	                   className="RoleSelectPanel" />
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}" selectedIndex="0" bottom="112"
+	          horizontalCenter="0">
+		<e:layout>
+			<e:HorizontalLayout gap="-10" horizontalAlign="center" />
+		</e:layout>
+	</e:TabBar>
+	<e:ViewStack id="viewStack" selectedIndex="0" horizontalCenter="0" width="560" top="58" bottom="162">
+		<e:Scroller name="材料副本" top="10" bottom="6" horizontalCenter="0" width="550">
+			<e:List id="fbList" x="0" y="0">
+				<e:layout>
+					<e:VerticalLayout gap="8" horizontalAlign="center" />
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<ns1:BaseComponent name="经验副本" id="fbExpPanel" skinName="jinyanskin" top="0" bottom="0" width="554"
+		                   className="FbExpPanel" horizontalCenter="0" visible="false" />
+		<ns1:BaseComponent name="通天塔" id="fbChallengePanel" skinName="chuangtianguan" top="0" bottom="0" width="554"
+		                   className="FBChallengePanel" horizontalCenter="0" visible="false" />
+		<ns1:BaseComponent id="playWayPanel" name="玩法" skinName="playWaySkin" top="0" bottom="0" width="554"
+		                   className="PlayWayPanel" horizontalCenter="0" visible="false" />
+		<ns1:BaseComponent id="guardWeaponPanel" name="守护神剑" skinName="guardGodWeaponSkin" top="0" bottom="0" width="554"
+		                   className="GuardWeaponPanel" horizontalCenter="0" visible="false" />
+	</e:ViewStack>
+	<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" bottom="141" horizontalCenter="-175" />
+	<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" horizontalCenter="-64"  bottom="141"/>
+	<e:Image id="redPoint2" touchEnabled="false" source="zjmhongdian"  bottom="141" horizontalCenter="47"/>
+	<e:Image id="redPoint3" touchEnabled="false" source="zjmhongdian"  bottom="141" horizontalCenter="158"/>
+	<e:Image id="redPoint4" touchEnabled="false" source="zjmhongdian" bottom="141" horizontalCenter="269"/>
+	<e:Image y="11" source="biaoti_fuben" horizontalCenter="-155" />
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8"
+	          horizontalCenter="266" />
+	<e:Button id="help" label="按钮" skinName="Btn0Skin" icon="wenhao" horizontalCenter="-246" y="8" scaleX="0.9" scaleY="0.9"/>
+</e:Skin>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KMHRechargeSkin" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50" x="80" scaleX="1"/>
+	<e:Image anchorOffsetX="0" width="552" anchorOffsetY="0" height="470" top="152" horizontalCenter="0" source="cd_logbg_png"/>
+	<e:Image id="title" y="0" horizontalCenter="0" x="212" scaleX="1" scaleY="1" source="biaoti_leichongfanli"/>
+	<e:Group id="infoBg" y="36" left="3" right="3" height="116">
+		<e:Image left="0" right="0" top="0" bottom="0" source="ny_curtain_png"/>
+		<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="15" bottom="15" visible="false"/>
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actDesc" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+		<e:Label id="rechargeCoumt" text="今日已充值500元" y="89" size="20" textColor="0x00ff00" textAlign="right" right="22" bold="true"/>
+	</e:Group>
+	<e:Image id="bgP" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="4,4,7,6" scaleX="1" scaleY="1" source="sd_projectbg" left="2" bottom="-2" right="2" top="193"/>
+	<e:Scroller width="548" horizontalCenter="0" top="197" bottom="2" anchorOffsetY="0">
+		<e:List id="rechargeitem" itemRendererSkinName="KMHRechargeItem" anchorOffsetY="0" height="417" y="39" x="0" anchorOffsetX="0" width="545">
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group id="project0" y="155" width="184" height="39" horizontalCenter="-185">
+		<e:Image id="projectbg0" scale9Grid="60,15,6,9" y="0" right="0" left="0" source="sd_projecttitle1"/>
+		<e:Label text="充值20元" textColor="0xD1C28F" fontFamily="SimHei" size="20" horizontalCenter="0" verticalCenter="0" touchEnabled="false"/>
+		<e:Image id="redpoint0" source="zjmhongdian" right="0" top="0"/>
+	</e:Group>
+	<e:Group y="155" width="184" height="39" id="project1" horizontalCenter="0">
+		<e:Image source="sd_projecttitle1" scale9Grid="60,15,6,9" y="0" right="0" left="0" id="projectbg1"/>
+		<e:Label text="充值50元" textColor="0xD1C28F" fontFamily="SimHei" size="20" horizontalCenter="0" verticalCenter="0" touchEnabled="false"/>
+		<e:Image id="redpoint1" source="zjmhongdian" right="0" top="0"/>
+	</e:Group>
+	<e:Group y="155" width="184" height="39" id="project2" horizontalCenter="185">
+		<e:Image source="sd_projecttitle1" scale9Grid="60,15,6,9" y="0" right="0" left="0" id="projectbg2"/>
+		<e:Label text="充值200元" textColor="0xD1C28F" fontFamily="SimHei" size="20" horizontalCenter="0" verticalCenter="0" touchEnabled="false"/>
+		<e:Image id="redpoint2" source="zjmhongdian" right="0" top="0"/>
+	</e:Group>
+</e:Skin>

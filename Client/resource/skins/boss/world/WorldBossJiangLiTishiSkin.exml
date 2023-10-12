@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WorldBossJiangLiTishiSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="normal,gwboss,tower,hideboss" >
+	<w:Config id="15ca5ef6a05"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0"/>
+	<e:Group verticalCenter="0" horizontalCenter="0" width="400" height="350" height.gwboss="238" height.hideboss="169">
+		<e:Image   source="tongyongtip1" left="0" right="0" top="0" bottom="0" scale9Grid="9,7,10,8"/>
+		<e:Image source="tongyongline" x="72.19" y="265.05999999999995" width="300" visible="false"/>
+		<e:Image source="tongyongline" x="62.19" y="157.35999999999993" width="300" visible="false"/>
+		<e:Group width="400" y="0" height="41" horizontalCenter="0">
+			<e:Image source="teshuwenzibg" left="0" right="0"/>
+			<e:Label id="nameTxt" text="奖励说明" size="24" textColor="0xd1c28f" y="8" horizontalCenter="0"/>
+			<e:Label id="nameTxt0" text="护盾奖励" size="24" bold="true" textColor="0xD1C28F" horizontalCenter="0" verticalCenter="0" x="127" y="19" visible="false"/>
+		</e:Group>
+		<e:Image id="giveUp" source="chatclose" y="0" right="0"/>
+		<e:Label text="1、首个对BOSS造成伤害的玩家可以获得归属" size="18" height="20"   textColor="0x9f946d" left="10" bottom="55" includeIn="normal,gwboss,tower"/>
+		<e:Label text="2、当归属的玩家被其他玩家击败，移交归属权" size="18" textColor="0x9F946D" height="20"   left="10" bottom="31" includeIn="normal,gwboss,tower"/>
+		<e:Label text="3、BOSS死亡时最终归属的玩家获得归属奖励" size="18" textColor="0x9F946D" height="20"   bottom="7" left="10" includeIn="normal,gwboss,tower"/>
+		<e:Group width="390" height="100" y="54" horizontalCenter="0">
+			<e:Image   left="0" right="0" top="0" bottom="0" x="-5" y="-70"   source="bantoutiaobg2" scale9Grid="30,2,32,17"/>
+			<e:Image x="30" y="0" rotation="90" width="100" height="30" source="zjmqipao" scale9Grid="7,8,8,6" visible="false"/>
+			<e:Label text="归属奖励" size="20" textColor="0xf8b141" width="20" verticalCenter="0" x="6" bold="true" text.hideboss="奖励"/>
+			<ns1:BaseComponent id="belongItem" x="26" skinName="ItemSkin" className="ItemBase" y="2"/>
+			<e:Image x="24" y="36" rotation="-45" width="64" source="xiejiaotiao" scale9Grid="19,0,1,19" includeIn="normal,gwboss,tower"/>
+			<e:Label text="必掉" size="18" x="33" y="29" rotation="-45" textColor="0xd1c28f" includeIn="normal,gwboss,tower"/>
+			<e:Scroller x="122" y="2">
+			<e:Group>
+				<e:List id="belongList" itemRendererSkinName="ItemSkin">
+				<e:layout>
+					<e:HorizontalLayout gap="1"/>
+				</e:layout>
+				</e:List>
+			</e:Group>
+			</e:Scroller>
+			<e:Label text="机率掉落" size="16" x="100" y="22.63" width="17" textColor="0xd1c28f" bold="true" visible="false"/>
+			<e:Group x="119" y="-10" includeIn="normal">
+				<e:Label text="倍几率" size="16" x="29" y="16" textColor="0xD1C28F"/>
+				<e:Image x="0" y="0" source="35_png"/>
+			</e:Group>
+			<e:Group id="proWordGroup" x="211" y="-10">
+				<e:Label text="倍几率" size="16" x="29" y="16" textColor="0xD1C28F"/>
+				<e:Image x="0" y="0" source="35_png"/>
+			</e:Group>
+			<e:Group id="proWordGroup0" x="121" y="-10" includeIn="hideboss">
+				<e:Label text="倍几率" size="16" x="29" y="16" textColor="0xD1C28F"/>
+				<e:Image x="0" y="0" source="35_png"/>
+			</e:Group>
+			<e:Group id="proWordGroup2" x="26" y="-10" includeIn="hideboss">
+				<e:Label text="倍几率" size="16" x="29" y="16" textColor="0xD1C28F"/>
+				<e:Image x="0" y="0" source="35_png"/>
+			</e:Group>
+			<e:Group id="proWordGroup1" x="302" y="-10">
+				<e:Label text="倍几率" size="16" x="29" y="16" textColor="0xD1C28F"/>
+				<e:Image x="0" y="0" source="35_png"/>
+			</e:Group>
+			<e:Image x="119" y="27" rotation="-45" width="52" source="xiejiaotiao" scale9Grid="19,0,1,19" includeIn="gwboss,tower"/>
+			<e:Label text="必掉" size="16" x="126" y="24" rotation="-45" textColor="0xD1C28F" includeIn="gwboss,tower"/>
+		</e:Group>
+		<e:Group width="390" height="90" y="162.04" horizontalCenter="0" includeIn="normal,tower">
+			<e:Image   left="0" right="0" top="0" bottom="0" x="-5" y="-70"   source="bantoutiaobg2" scale9Grid="30,2,32,17" includeIn="normal"/>
+			<e:Label text="参与奖励" size="18" x="7" textColor="0xF8B141" width="20" verticalCenter="0"/>
+			<ns1:BaseComponent id="joinItem" x="36" skinName="ItemSkin" className="ItemBase" scaleX="0.8000000000000002" scaleY="0.8000000000000002" y="6"/>
+			<e:Image x="32" y="31" rotation="-45" width="52" source="xiejiaotiao" scale9Grid="19,0,1,19"/>
+			<e:Label text="必掉" size="16" x="38" y="28" rotation="-45" textColor="0xD1C28F"/>
+			<e:Scroller x="131" y="6">
+			<e:Group>
+				<e:List id="joinList" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8" x="0">
+				<e:layout>
+					<e:HorizontalLayout gap="24"/>
+				</e:layout>
+				</e:List>
+			</e:Group>
+			</e:Scroller>
+			<e:Label text="低几率" size="16" x="142" y="10" textColor="0xD1C28F" includeIn="normal"/>
+			<e:Label text="低几率" size="16" x="234" y="10" textColor="0xD1C28F" includeIn="normal"/>
+			<e:Label text="低几率" size="16" x="324" y="10" textColor="0xD1C28F" includeIn="normal"/>
+
+
+			<e:Image x="126" y="31" rotation="-45" width="52" source="xiejiaotiao" scale9Grid="19,0,1,19" includeIn="tower"/>
+			<e:Label text="必掉" size="16" x="133" y="28" rotation="-45" textColor="0xD1C28F" includeIn="tower"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WingSkillItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="70" height="70">
+    <e:Image id="iconBg" source="quality0"  left="0" right="0" top="0" bottom="0" scale9Grid="8,8,48,48"/>
+    <e:Image id="icon" source="suo_01"  horizontalCenter="0" verticalCenter="0"/>
+    <e:Image id="skillIcon" verticalCenter="0" horizontalCenter="0"/>
+	<e:Rect id="blackImg" width="69" height="69" x="0" y="0" fillAlpha="0.6" visible="false"/>
+</e:Skin>

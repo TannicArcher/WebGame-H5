@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ZhanlingComposeItemSkin" currentState="open" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="open,close" width.open="155" width.close="155">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Group x="8" y="7" width="150" width.open="155" width.close="155">
+			<e:Image y="0" scale9Grid="82,0,5,58" width="170" scaleX="1" scaleY="1" right="0" source="yeqian5" width.open="175" width.close="175"/>
+			<e:Label id="nameLabel" text="神·轮回装备" verticalCenter="0" size="20" horizontalCenter="-0.5" horizontalCenter.open="0" visible="false"/>
+			<e:Image id="rein_equips" horizontalCenter="0" verticalCenter="0" source="rein_equip_sheng" source.open="rein_equip_shen"/>
+		</e:Group>
+		<e:List id="list" x="46" y="91" width="155" itemRendererSkinName="ReinComposeLvItemSKin" includeIn="open">
+		</e:List>
+		<e:layout>
+			<e:VerticalLayout gap="0" horizontalAlign="right"/>
+		</e:layout>
+	</e:Group>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" includeIn="open" x="131" y="0"/>
+</e:Skin>

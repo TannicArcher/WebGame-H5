@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DailyDayRewardItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        height="94" width="84">
+	<ns1:BaseComponent id="item" x="6.5" y="10" className="ItemBase" skinName="ItemSkin" />
+	<e:Label id="stateText" text="已领取" x="20" y="63" size="20" touchEnabled="false"  visible="false"/>
+</e:Skin>

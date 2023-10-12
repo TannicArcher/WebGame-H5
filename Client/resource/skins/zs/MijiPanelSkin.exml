@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MijiPanelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="554" height="716">
+	<w:Config id="15bec2e9672"/>
+	<e:Image source="mijibg1_png" width="554" height="716"/>
+	<e:Image horizontalCenter="0" source="mijibg2_png" width="521" height="521" y="127" scaleX="0.9" scaleY="0.9"/>
+	<e:Group id="dinghong0" width="556" height="106" bottom="0" horizontalCenter="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" />
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" />
+	</e:Group>
+
+	<!--<e:Image x="10" y="98" source="zjmzhandouli" locked="true"/>-->
+	<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" y="76" horizontalCenter="0" scaleX="0.8" scaleY="0.8"/>
+	<e:Group y="191" width="380" height="380" horizontalCenter="0" scaleX="0.9" scaleY="0.9">
+		<e:Image id="imageMax_1" y="11" x="177" source="jineng_json.mijifu_1b" visible="false"/>
+		<e:Image id="imageMax_2" x="292" y="66" source="jineng_json.mijifu_2b" visible="false"/>
+		<e:Image id="imageMax_3" x="331" y="169" source="jineng_json.mijifu_3b" visible="false"/>
+		<e:Image id="imageMax_4" x="293" y="271" source="jineng_json.mijifu_4b" visible="false"/>
+		<e:Image id="imageMax_5" x="176" y="323" source="jineng_json.mijifu_5b" visible="false"/>
+		<e:Image id="imageMax_6" x="58" y="266" source="jineng_json.mijifu_6b" visible="false"/>
+		<e:Image id="imageMax_7" x="21" y="167" source="jineng_json.mijifu_7b" visible="false"/>
+		<e:Image id="imageMax_8" x="54" y="66" source="jineng_json.mijifu_8b" visible="false"/>
+		<e:Image id="imageSmall_1" y="69.8" x="182.2" source="jineng_json.mijifu_1b" width="21" height="28" visible="false"/>
+		<e:Image id="imageSmall_2" x="257.6" y="106.4" source="jineng_json.mijifu_2b" width="21" height="28" visible="false"/>
+		<e:Image id="imageSmall_3" x="284" y="175" width="21" height="28" source="jineng_json.mijifu_3b" visible="false"/>
+		<e:Image id="imageSmall_4" x="257" y="242" source="jineng_json.mijifu_4b" width="21" height="28" visible="false"/>
+		<e:Image id="imageSmall_5" source="jineng_json.mijifu_5b" x="181" y="275" width="21" height="28" visible="false"/>
+		<e:Image id="imageSmall_6" source="jineng_json.mijifu_6b" x="107" y="242" width="21" height="28" visible="false"/>
+		<e:Image id="imageSmall_7" source="jineng_json.mijifu_7b" x="77" y="172" width="21" height="28" visible="false"/>
+		<e:Image id="imageSmall_8" x="105" y="102" source="jineng_json.mijifu_8b" width="21" height="28" visible="false"/>
+	</e:Group>
+	<e:Group y="124" scaleX="0.9" scaleY="0.9" horizontalCenter="0">
+		<ns1:BaseComponent id="mijiBtn0" y="0" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" x="213"/>
+		<ns1:BaseComponent id="mijiBtn1" y="61" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" x="363"/>
+		<ns1:BaseComponent id="mijiBtn2" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" y="213" x="426"/>
+		<ns1:BaseComponent id="mijiBtn3" y="362" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" x="365"/>
+		<ns1:BaseComponent id="mijiBtn4" y="426" skinName="MijiItemSkin"   className="MijiItem" width="100" height="100" x="213"/>
+		<ns1:BaseComponent id="mijiBtn5" y="362" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" x="61"/>
+		<ns1:BaseComponent id="mijiBtn6" y="213" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" x="0"/>
+		<ns1:BaseComponent y="61" skinName="MijiItemSkin" id="mijiBtn7" className="MijiItem" width="100" height="100" x="63"/>
+		<ns1:BaseComponent id="select" skinName="MijiItemSkin" className="MijiItem" width="120" height="120" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Label id="curZsLv" text="2转或者VIP开启新的技能格" y="675.67" textColor="0xFFD862" fontFamily="黑体" size="16" horizontalCenter="-0.5" visible="false"/>
+
+
+	<e:Image source="zjmhongdian" horizontalCenter="71" bottom="60" visible="false"/>
+
+	<e:Image id="mijitujian" x="482" y="88" source=""/>
+	<e:Group horizontalCenter="0" bottom="10">
+		<e:Image source="tongyongline" y="0" width="500" x="0" visible="false"/>
+		<e:Label id="change" text="秘籍置换" size="20" textColor="0x20cb30" x="379" bottom="20"/>
+		<e:Group id="btnAct" horizontalCenter="0" bottom="0" width="160" height="60">
+			<e:Button id="getBtn" label="镶  嵌" skinName="Btn1Skin" width="160" height="60" scaleX="1" scaleY="1"/>
+			<e:Group id="arrow" width="0" height="0" x="80" y="30"/>
+		</e:Group>
+
+		<e:Label id="learnLabel" text="镶嵌有可能替换已学秘籍,高级秘籍必定替换同属性的中级秘籍" size="18" strokeColor="000000" textColor="0x9f946d" horizontalCenter="9" bottom="65"/>
+		<e:Image id="learnImg" source="gantanhao" horizontalCenter="-249" bottom="63"/>
+	</e:Group>
+	<e:Image id="all" source="mijizonglan" y="58" x="17"/>
+	<e:Image id="btnLock" y="58" x="436" source="mijilaoyin"/>
+</e:Skin>

@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Btn2Skin" states="up,down,disabled" width="93" height="43"
+        xmlns:e="http://ns.egret.com/eui" width.up="93" height.up="43" width.down="93" height.down="43" width.disabled="93" height.disabled="43">
+	<e:Image x.disabled="0" x.up="0" y.disabled="0" y.up="0" source.up="zjmvip" source.down="zjmvip2" source="zjmvip" source.disabled="zjmvip2"/>
+</e:Skin>

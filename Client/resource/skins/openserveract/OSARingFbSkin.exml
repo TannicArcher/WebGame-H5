@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OSARingFbSkin" width="560" height="638" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  states="normal,fullcount" >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image anchorOffsetX="0" anchorOffsetY="0" source="lieyanfubenbg_png" width="560" height="638" horizontalCenter="0" verticalCenter="0"/>
+
+
+
+
+
+		<e:Label id="starLabel" text="连跳     星" x="348" y="68" size="38" bold="true" textColor="0x35e62d" visible="false"/>
+
+		<e:Button id="chanllage" label="挑  战" icon="btnshouchong_png" horizontalCenter="0" visible.fullcount="false" skinName="Btn1Skin" bottom="19" horizontalCenter.normal="0" bottom.normal="39"/>
+
+		<ns1:BaseComponent id="price" skinName="PriceIconSkin" className="PriceIcon" horizontalCenter="0.5" visible.fullcount="false" bottom="73" horizontalCenter.normal="0.5" bottom.normal="6"/>
+		<e:Label text="今日挑战已完成" includeIn="fullcount" horizontalCenter="0.5" bold="true" textColor="0xf8b141" bottom="34"/>
+		<e:Image x="-6" source="fubenslogan_png" top="7"/>
+		<e:Group x="409" width="80" height="53" top="65">
+			<e:BitmapLabel id="starNum" text="" font="num_5_fnt" horizontalCenter="0"/>
+		</e:Group>
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" top="4" horizontalCenter="-74"/>
+		<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="4" horizontalCenter="32.5"/>
+
+
+		<e:Group includeIn="normal" bottom="105" horizontalCenter="0">
+			<e:Label text="奖励：" includeIn="normal" x="0" y="2" size="18" textColor="0xd1c28f" bold="true"/>
+			<e:Label id="rewardsCount" text="150" includeIn="normal" x="75" y="2" size="18" bold="true" textColor="0x00ff00"/>
+			<e:Image width="20" height="20" includeIn="normal" x="50" y="0" source="200015_png"/>
+		</e:Group>
+
+
+	</e:Group>		
+</e:Skin>

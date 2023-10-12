@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KfArenaRankSkin" width="580" height="731" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15dbfa8e636"/>
+	<e:Image y="2" width="554" height="380" source="juesebg_png" horizontalCenter="0"/>
+	<e:Group horizontalCenter="0" bottom="10">
+		<e:Image source="bantoutiaoboss" scaleX="-1" height="28" width="150" horizontalCenter="0" verticalCenter="0"/>
+		<e:Group width="146" horizontalCenter="0" verticalCenter="0">
+		<e:Label text="我的排名:" size="20" verticalCenter="0" textColor="0x9F946D" right="47"/>
+		<e:Label id="selfPos0" text="未上榜" size="20" verticalCenter="0" textColor="0xF8B141" right="0" textAlign="center"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0" horizontalAlign="right"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+	<ns1:BaseComponent id="rank1" skinName="RoleShowSkin" scaleX="0.57" scaleY="0.57" className="RoleItemRenderer" top="-42" horizontalCenter="-157.5"/>
+	<ns1:BaseComponent id="rank2" skinName="RoleShowSkin" scaleX="0.57" scaleY="0.57" className="RoleItemRenderer" top="-42" horizontalCenter="162.5" x="10" y="10"/>
+	<ns1:BaseComponent id="rank0" skinName="RoleShowSkin" scaleX="0.64" scaleY="0.64" className="RoleItemRenderer" top="-59" horizontalCenter="2.5" x="10" y="10"/>
+	<e:Scroller top="386" bottom="40" horizontalCenter="0">
+		<e:List id="list" y="-20" itemRendererSkinName="kfArenaRankItemSkin">
+		<e:ArrayCollection>
+			<e:Array>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:VerticalLayout gap="0"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Label id="state" text="暂时无人上榜" y="395" bold="true" horizontalCenter="0" textColor="0xD1C28F" size="24" visible="false"/>
+	<e:Group id="firstGroup" y="309" height="70" width="560" horizontalCenter="0">
+		<e:Image left="0" right="0" top="0" bottom="0" source="tongyongtip3" scale9Grid="11,11,10,8" alpha="0.8"/>
+		<e:Image left="10" right="10" top="10" bottom="8" alpha="0.8" scale9Grid="10,0,10,54" source="quali3"/>
+		<ns1:BaseComponent skinName="ItemSkin" className="ItemBase" scaleX="0.8" scaleY="0.8" verticalCenter="8" id="reward0" horizontalCenter="227"/>
+		<e:Label id="serverId0" text="S1110" size="20" verticalCenter="0" horizontalCenter="145" textColor="0xF8B141"/>
+		<e:Image x="9" y="6" source="paihang1"/>
+		<e:Image id="vip0" source="xvip_v2_png" verticalCenter="0.5" horizontalCenter="-190"/>
+		<e:Label id="firstNameTxt0" text="玩家名屌炸天" textColor="0xF8B141" size="20" verticalCenter="0" horizontalCenter="-98"/>
+		<e:Label id="score0" text="99999" textColor="0xF8B141" size="20" verticalCenter="0" horizontalCenter="9"/>
+		<e:Label id="seasonTitle0" text="钻石" textColor="0xF8B141" size="20" verticalCenter="0" horizontalCenter="76"/>
+	</e:Group>
+
+</e:Skin>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShenYuSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15dbfa8e636"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="155"/>
+	<e:Image source="shenyubg_png" horizontalCenter="0" top="52"/>
+
+	<e:ViewStack id="viewStack" width="554" horizontalCenter="0" top="52" bottom="162" selectedIndex="1">
+		<ns1:BaseComponent id="godWingPanel" name="装备" left="0" right="0" top="0" bottom="0" skinName="ShenYuEquipSkin" className="GodWingPanel" visible="false"/>
+		<ns1:BaseComponent id="godWingComposePanel" name="合成" left="0" right="0" top="0" bottom="0" skinName="ShenYuComposeSkin" className="GodWingComposePanel" x="-13" y="-52" scaleX="1" scaleY="1"/>
+		<ns1:BaseComponent id="godWingTransferPanel" name="转换" left="0" right="0" top="0" bottom="0" x="-13" y="-52" skinName="ShenYuTransferSkin" className="GodWingTransferPanel" scaleX="1" scaleY="1" visible="false"/>
+
+
+	</e:ViewStack>
+	<e:TabBar id="tab" dataProvider="{viewStack}" bottom="112" itemRendererSkinName="BtnTab0Skin" horizontalCenter="0">
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:TabBar>
+	<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" horizontalCenter="-80" bottom="137"/>
+	<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" horizontalCenter="43" bottom="137"/>
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" y="0" width="580" horizontalCenter="0"/>
+	<e:Image y="5" horizontalCenter="-155" source="biaoti_shenyu"/>
+
+
+
+
+
+</e:Skin>

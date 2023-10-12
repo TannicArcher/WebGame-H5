@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="auctionItemChoiceSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" width="468" height="368">
+		<e:Image source="tongyongkuang3bg" left="0" right="0" top="2" bottom="0" scale9Grid="12,6,21,25"/>
+		<e:Image width="449" height="207" x="9" y="82" source="tongyongtip1" scale9Grid="10,12,4,3"/>
+		<e:Image source="tongyongkuang3tou" left="0" right="0" scale9Grid="72,18,264,29"/>
+		<e:Label id="title" size="24" text="神秘拍卖盒" horizontalCenter="0" y="11" bold="true" textColor="0xBD600D"/>
+		<e:Group id="price" y="193" scaleX="1" scaleY="1" horizontalCenter="0.5" height="58" width="179">
+			<e:Image source="szyuanbao" width="30" scaleX="1" scaleY="1" left="82" top="30"/>
+			<e:Label text="起拍价：" x="6" y="2" size="20" textColor="0xf8b141"/>
+			<e:Image source="szyuanbao" width="30" scaleX="1" scaleY="1" x="82" y="30"/>
+			<e:Image source="szyuanbao" width="30" scaleX="1" scaleY="1" x="82" y="2"/>
+			<e:Label id="price1" text="1000" size="20" x="120" y="4" textColor="0x20CB30"/>
+			<e:Label id="price2" text="5000" size="20" x="120" y="33" scaleX="1" scaleY="1" textColor="0x20CB30" textAlign="left"/>
+			<e:Label text="一口价：" size="20" textColor="0xF8B141" x="6" y="32" scaleX="1" scaleY="1"/>
+			<e:layout>
+				<e:BasicLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Button id="auctionBtn" label="上架拍卖" width="120" height="50" skinName="Btn3Skin" bottom="18" horizontalCenter="80"/>
+		<e:Button id="ownUse" label="自己用" bottom="18" horizontalCenter="-80" width="120" height="50" skinName="Btn3Skin"/>
+		<e:Label text="您打开拍卖盒，获得拍品：" size="20" textColor="0xF8B141" y="56" scaleX="1" scaleY="1" verticalAlign="justify" x="11"/>
+		<e:Label text="请选择自己使用，或者上架拍卖" size="20" y="262" scaleX="1" scaleY="1" horizontalCenter="0" textColor="0x7E6437"/>
+		<ns1:BaseComponent id="item" y="91" skinName="ItemSkin" horizontalCenter="0" className="ItemBase"/>
+	</e:Group>
+</e:Skin>

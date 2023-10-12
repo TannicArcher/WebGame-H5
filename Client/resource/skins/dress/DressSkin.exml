@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DressSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*"
+        xmlns:w="http://ns.egret.com/wing">
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" scale9Grid="15,12,2,3" width="580" horizontalCenter="0" />
+	<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30" width="570" horizontalCenter="0" top="44" bottom="155" />
+	<e:Group id="dressGroup" width="580" horizontalCenter="0" top="0" bottom="166">
+		<e:Image source="juesebg_png" width="560" horizontalCenter="0" height="616"  verticalCenter="-22"/>
+
+		<e:ViewStack selectedIndex="0" id="viewStack" horizontalCenter="0"  top="150" bottom="81" left="73" right="72"/>
+		<e:Image id="wingImg" source="wing00_png" touchEnabled="false" scaleX="0.9" scaleY="0.9" horizontalCenter="50.5"  verticalCenter="-67.5"/>
+		<e:Image id="weaponImg" touchEnabled="false" scaleX="0.9" scaleY="0.9"
+		         horizontalCenter="-210.5"  source="weapon805_1_c_png" verticalCenter="102.5"/>
+		<e:Image id="bodyImg" touchEnabled="false" scaleX="0.9" scaleY="0.9"
+		          horizontalCenter="3" source="body805_1_c_png" verticalCenter="-43.5"/>
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" y="137" horizontalCenter="0" className="PowerPanel"/>
+		<e:Scroller width="560" horizontalCenter="0" bottom="-2">
+			<e:List id="list" y="2" itemRendererSkinName="DressItemSkin" x="0">
+				<e:layout>
+					<e:HorizontalLayout gap="0" paddingTop="0" paddingLeft="0" />
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Group id="selectGroup" width="560" height="300" horizontalCenter="0" bottom="128">
+			<e:Image id="nameImage" y="20" right="10" scaleX="1.2" scaleY="1.2"  source="" visible="false"/>
+			<e:Button id="dressBtn" label="幻 化" skinName="Btn1Skin" bottom="10" right="20" />
+			<e:Button id="dressBtn2" label="脱 下" skinName="Btn1Skin"  horizontalCenter="0" bottom="10"/>
+			<e:Image id="background" width="170" height="200" y="97" x="0" source="zhuangbanshuxingbg" scale9Grid="0,47,186,8" />
+			<e:Label text="时装效果" x="8" y="110" size="18" bold="true" textColor="0x7e6437"  visible="false"/>
+			<e:Label text="时装属性可累加" x="8" y="272" size="18" textColor="0xe0bc79" bold="true" />
+			<e:Label id="dressName" text="属性-烈焰" x="0" y="104" size="20" textColor="0xFFF300" width="150" textAlign="center"
+			          visible="false"/>
+			<e:Label id="attrLabel" x="6" y="154" size="18" width="180" text="攻击:123\n攻击:345\n攻击:10\n攻击:12" lineSpacing="3"
+			         height="120" textAlign="left" textColor="0x9f946d"  verticalAlign="top" anchorOffsetX="0"/>
+			<e:Label id="attrLv" x="97" y="154" size="18" width="160" text="升级+123\n升级+345\n升级+10\n升级+12" lineSpacing="3" height="120" textAlign="left" verticalAlign="top" textColor="0x1AFF00" visible="false"/>
+
+			<e:Group id="itemGroup" bottom="76" right="17">
+				<e:Label id="namelabel" text="需要：" size="20" textColor="0xDFD1B5" x="0" y="0"/>
+				<e:Label id="itemName" text="道具名称x1" size="20" textColor="0x1AFF00" textAlign="center" x="44" y="0"/>
+				<e:layout>
+					<e:HorizontalLayout gap="0"/>
+				</e:layout>
+			</e:Group>
+			<!--<e:Label id="attrPower" text="战力:12345" y="270" size="20" textColor="0xffb82a" width="160" textAlign="center"
+			         horizontalCenter="0" bold="true" />-->
+			<e:Image id="expBarBg" x="189" y="229" scale9Grid="12,10,6,4" width="100"  source="" visible="false"/>
+			<e:ProgressBar id="expBar" skinName="bar1Skin" maximum="100" value="10" x="193" y="233" width="100"  visible="false"/>
+			<e:Label id="expLabel" stroke="1" strokeColor="0x000000" text="100/100" x="190" y="235" size="12" width="100"
+			         verticalAlign="middle" textAlign="center"  visible="false"/>
+		</e:Group>
+		<e:Group id="unSelectGroup" horizontalCenter="0" bottom="139">
+			<e:Label text="请选择下列装扮试穿" size="18" textColor="0xFFB82A" bold="true" />
+		</e:Group>
+		<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" horizontalCenter="0" className="RoleSelectPanel"/>
+		<e:Button id="help" icon="wenhao" skinName="Btn0Skin" label="按钮" horizontalCenter="-246"  y="8" scaleX="0.9" scaleY="0.9"/>
+		<e:Image source="biaoti_zhuangban" horizontalCenter="-155"  top="6"/>
+
+</e:Group>
+<e:Group id="titleGroup" horizontalCenter="0" top="0" bottom="166" visible="false">
+	<ns1:BaseComponent id="roleSelect0" y="0" skinName="RoleSelectPanelSkin" horizontalCenter="0" className="RoleSelectPanel"/>
+	<e:Scroller width="550" horizontalCenter="0" top="135" bottom="0">
+		<e:DataGroup id="titleList" itemRendererSkinName="TitleItemSkin" currentState="disabled" useVirtualLayout="false">
+			<e:layout>
+				<e:VerticalLayout gap="0" />
+			</e:layout>
+		</e:DataGroup>
+	</e:Scroller>
+	<e:Image y="5" horizontalCenter="-155" source="biaoti_chenghao" />
+</e:Group>
+<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" bottom="112" horizontalCenter="0">
+	<e:layout>
+		<e:HorizontalLayout gap="0" />
+	</e:layout>
+</e:TabBar>
+<e:Image id="redPoint0" source="zjmhongdian"  horizontalCenter="-132" bottom="142" visible="false"/>
+<e:Image id="redPoint1" source="zjmhongdian"  horizontalCenter="-12" bottom="142" visible="false"/>
+<e:Image id="redPoint2" source="zjmhongdian"  horizontalCenter="108" bottom="142" visible="false"/>
+	<e:Image id="redPoint3" source="zjmhongdian" horizontalCenter="230" bottom="142" visible="false"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+</e:Skin>

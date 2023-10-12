@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WeiWangOverViewSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Image scaleX="1" scaleY="1" scale9Grid="23,22,1,1" left="0" right="0" top="0" bottom="0" source="tongyongtip1"/>
+		<e:Image source="tongyongtip2" scaleX="1" scaleY="1" scale9Grid="19,19,1,1" left="0" right="0" top="0" bottom="0"/>
+		<e:Image y="44" source="pailietoubg2" scale9Grid="8,0,26,40" scaleX="1" scaleY="1" left="0" right="0"/>
+		<e:Image y="49" x="227" source="pailietouline2" height="30" scaleX="1" scaleY="1"/>
+		<e:Label y="52" text="威望" size="20" scaleX="1" scaleY="1" textColor="0xf8b141" horizontalCenter="111"/>
+		<e:Label y="52" text="等级" size="20" scaleX="1" scaleY="1" textColor="0xf8b141" horizontalCenter="-58"/>
+		<e:Scroller top="88" bottom="10" horizontalCenter="0" width="380">
+			<e:List id="list" y="0" x="45.45" itemRendererSkinName="WeiWangItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="5"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" horizontalCenter="0" bottom="-35" x="25" y="662" scaleX="1" scaleY="1">
+			<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+		</e:Group>
+		<e:Image source="tongyongkuang3tou" top="0" horizontalCenter="0"/>
+		<e:Label text="威望预览" y="11" size="24" horizontalCenter="0" bold="true" textColor="0xd1c28f"/>
+	</e:Group>
+</e:Skin>

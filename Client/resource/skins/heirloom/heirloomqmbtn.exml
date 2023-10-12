@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="heirloomqmbtn" width="64" height="64" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="0,1,2,3,4" >
+	<w:Config id="1586b362dfe"/>
+	<e:Image  x="0" y="0" source="heirqm_0" visible.2="false" visible.1="false" visible.3="false" visible.4="false"/>
+	<e:Image  source="heir_json.heirqm_1" x="0" y="0"   visible.2="false" visible.0="false" visible.3="false" visible.4="false"/>
+	<e:Image  source="heir_json.heirqm_2" x="0" y="0" visible.1="false" visible.0="false" visible.3="false" visible.4="false"/>
+	<e:Image  source="heir_json.heirqm_3" x="0" y="0"   visible.2="false" visible.1="false" visible.0="false" visible.4="false"/>
+	<e:Image  source="heir_json.heirqm_4" x="0" y="0"   visible.2="false" visible.1="false" visible.0="false" visible.3="false"/>
+</e:Skin>

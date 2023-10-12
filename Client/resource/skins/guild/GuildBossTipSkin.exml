@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildBossTipSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="-1" bottom="1"/>
+
+	<e:Group id="anigroup" width="488" height="600" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="bg"   source="tongyongkuang3bg" scale9Grid="5,6,40,38" left="0" right="0" top="0" bottom="0"/>
+		<e:Image id="titlebg" y="0" source="tongyongkuang3tou" scale9Grid="66,18,271,12" left="0" right="0"/>
+
+		<e:Label id="title" text="BOSS信息" size="24" y="11"  textAlign="center" verticalAlign="middle" horizontalCenter="0" textColor="0x7e6437"/>
+
+		<e:Image id="star" y="219" scale9Grid="10,1,13,33"   x="283" source=""/>
+		<e:Group id="bossinfo" x="9" y="48" height="344" width="242">
+			<e:Image id="infobg"   source="tongyonglabbg" scale9Grid="39,22,53,38" left="0" right="0" top="0" bottom="0"/>
+			<e:Image id="corner"   source="tongyongtip2" scale9Grid="19,18,3,4" left="0" right="0" top="0" bottom="0" visible="false"/>
+			<e:Image id="tielian0" x="67" y="171" source="tielian"/>
+			<e:Image id="tielian1" x="156" y="171" source="tielian"/>
+			<e:Image id="bossImage" horizontalCenter="0" verticalCenter="-81" source="gb_b1"/>
+			<e:Image id="namebg" x="32" y="128" source="gb_bossdiban"/>
+			<e:Image id="departline" x="12" y="250" source="tongyongline"/>
+			<e:ProgressBar id="bosshp" y="216" width="154" value="100" height="17"   skinName="bar2Skin" horizontalCenter="0"/>
+			<e:Image id="hpbg" y="207" source="jingyantiao1"  width="229" scale9Grid="53,13,16,8" horizontalCenter="0"/>
+			<e:Label id="bossname" text="名字啊啊啊" size="20" y="152.5" textAlign="center" verticalAlign="middle" textColor="0xD1C28F" horizontalCenter="0"/>
+			<e:Image id="arrowright" x="170" y="287" source="anwen1"/>
+			<e:Image id="arrowleft" x="75" y="287" scaleX="-1" source="anwen1"/>
+			<e:Button id="rankBtn" label="" skinName="Btn0Skin" icon="gb_chakanpaihangicon" y="256" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="paihang" x="253" y="48" width="228" height="344">
+			<e:Image id="paihangbg" y="0" source="guildpaihang" horizontalCenter="0" width="228" height="223"/>
+			<e:Image id="point0" x="52" y="14"   source="tongyongdian2"/>
+			<e:Image id="point1" x="160" y="14"   source="tongyongdian2"/>
+			<e:Label id="paihangtitle" text="前三行会" size="20" y="11" textColor="0x9f946d" horizontalCenter="0"/>
+
+
+
+
+			<e:Group id="rankGroup0" x="18" y="49">
+				<e:Label id="guildname0" text="虚位以待" size="16" width="98" x="0" y="0"  textAlign="left" verticalAlign="middle" textColor="0x9F946D"/>
+				<e:Image id="bosshpbg0" y="0" width="96" height="16" x="96" source="tongyongtip1" scale9Grid="5,5,15,16"/>
+				<e:ProgressBar id="hpbar0" x="98" y="2" width="92" value="50" height="12" skinName="bar4Skin"/>
+			</e:Group>
+
+			<e:Group id="rankGroup1" x="18" y="82">
+				<e:Label id="guildname1" text="虚位以待" size="16" width="98" x="0" y="0"  verticalAlign="middle" textColor="0x9F946D"/>
+				<e:Image id="bosshpbg1" y="0" width="96" height="16" x="96" source="tongyongtip1" scale9Grid="5,5,15,16"/>
+
+				<e:ProgressBar id="hpbar1" x="98" y="2" width="92" value="100" height="12" skinName="bar4Skin"/>
+			</e:Group>
+
+			<e:Group id="rankGroup2" x="18" y="115">
+				<e:Label id="guildname2" text="虚位以待" size="16" width="98" x="0" y="0"  textAlign="left" verticalAlign="middle" textColor="0x9F946D"/>
+				<e:Image id="bosshpbg2" y="0" width="96" height="16" x="96" source="tongyongtip1" scale9Grid="5,5,15,16"/>
+
+				<e:ProgressBar id="hpbar2" x="98" y="2" width="92" value="100" height="12" skinName="bar4Skin"/>
+			</e:Group>
+			<e:Label id="harmtitle" text="伤害阶段奖励" size="20" y="222" textColor="0x7e6437" horizontalCenter="0"/>
+			<e:Image id="bosshpbg3" y="307" width="224" height="16" horizontalCenter="0" source="tongyongtip1" scale9Grid="5,5,15,14"/>
+			<e:ProgressBar id="rewardBar" y="309" width="220" value="100" height="12" skinName="bar5Skin" horizontalCenter="0"/>
+			<e:Label id="harmpoint0" text="20%" size="18" x="30.66" y="325" textColor="0xf8b141"/>
+			<e:Label id="harmpoint1" text="40%" size="18" x="75" y="325" textColor="0xf8b141"/>
+			<e:Label id="harmpoint2" text="60%" size="18" x="119.83" y="325" textColor="0xf8b141"/>
+			<e:Label id="harmpoint3" text="80%" size="18" x="163.32" y="325" textColor="0xf8b141"/>
+			<ns1:BaseComponent id="itemicon3" x="19" y="247" skinName="ItemSkin" className="ItemBase" scaleX="0.6" scaleY="0.6"/>
+			<ns1:BaseComponent id="itemicon4" x="65" y="247" skinName="ItemSkin" className="ItemBase" scaleX="0.6" scaleY="0.6"/>
+			<ns1:BaseComponent id="itemicon5" x="110" y="247" skinName="ItemSkin" className="ItemBase" scaleX="0.6" scaleY="0.6"/>
+			<ns1:BaseComponent id="itemicon6" x="155" y="247" skinName="ItemSkin" className="ItemBase" scaleX="0.6" scaleY="0.6"/>
+			<e:Image id="fengeline0" y="309"   x="46" source="pailietouline2" height="12"/>
+			<e:Image id="fengeline1" y="309"   x="92" source="pailietouline2" height="12"/>
+			<e:Image id="fengeline2" y="309"   x="136" source="pailietouline2" height="12"/>
+			<e:Image id="fengeline3" y="309"   x="180" source="pailietouline2" height="12"/>
+			<e:Image id="arrorw0" y="292"   x="34" source="jiantouxia"/>
+			<e:Image id="arrorw1" y="292"   x="80" source="jiantouxia"/>
+			<e:Image id="arrorw2" y="292"   x="124" source="jiantouxia"/>
+			<e:Image id="arrorw3" y="292"   x="167.5" source="jiantouxia"/>
+		</e:Group>
+		<e:Group id="killreward" y="400" horizontalCenter="0" width="460" height="90">
+			<e:Image id="rewardbg"   source="bantoutiaobg2" scale9Grid="11,2,70,17" left="0" right="0" top="0" bottom="0"/>
+			<e:Label id="rewardtitle" text="击杀奖励" size="20" y="4" verticalAlign="middle" textAlign="center" textColor="0x7e6437" width="26" x="83"/>
+			<e:Label id="rewardinfo" text="每周第一次击杀可重新领取" size="18" y="96" verticalAlign="middle" textAlign="center" horizontalCenter="0" textColor="0x444134" visible="false"/>
+
+			<!--<e:Label id="count0" size="16" y="76" text="999" x="142" textColor="0xD1C28F"/>-->
+
+			<!--<e:Label id="count1" size="16" y="76" text="999" x="222" textColor="0xD1C28F"/>-->
+			<e:Group y="16" horizontalCenter="0">
+				<ns1:BaseComponent id="itemicon0" x="0" y="13" skinName="ItemSkin" className="ItemBase" scaleX="0.8" scaleY="0.8"/>
+				<ns1:BaseComponent id="itemicon1" x="80" y="2" skinName="ItemSkin" className="ItemBase" scaleX="0.8" scaleY="0.8"/>
+				<ns1:BaseComponent id="itemicon2" x="160" y="2" skinName="ItemSkin" className="ItemBase" scaleX="0.8" scaleY="0.8"/>
+				<e:layout>
+					<e:HorizontalLayout/>
+				</e:layout>
+			</e:Group>
+			<!--<e:Label id="count2" size="16" y="76" text="999" x="302" textColor="0xD1C28F"/>-->
+		</e:Group>
+		<e:Button id="chanllage" label="挑  战" skinName="Btn1Skin" width="156" height="60" x="54" y="524"/>
+		<e:Button id="chanllageOme" label="一键挑战" skinName="Btn1Skin" width="156" height="60" x="278" y="524"/>
+		<e:Label id="state" text="周日休战" size="20" bottom="36" horizontalCenter="0" textColor="0xff9900" visible="false"/>
+		<e:Label id="chanllagecount" text="今日次数：3/3" size="20" horizontalCenter="0" textColor="0x20cb30" bottom="83"/>
+		<e:Label id="cantchanllage" text="通关前一个BOSS可挑战" size="20" horizontalCenter="0" textColor="0xe5b613" bottom="30" visible="false"/>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

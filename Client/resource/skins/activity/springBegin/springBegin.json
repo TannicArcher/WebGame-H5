@@ -1,0 +1,16 @@
+{"file":"springBegin.png","frames":{
+"discountNum8":{"x":14,"y":238,"w":11,"h":17,"offX":1,"offY":0,"sourceW":13,"sourceH":17},
+"icon_activityStore":{"x":175,"y":106,"w":79,"h":75,"offX":1,"offY":2,"sourceW":80,"sourceH":80},
+"activityStoreBg":{"x":1,"y":1,"w":172,"h":188,"offX":0,"offY":0,"sourceW":172,"sourceH":188},
+"activityStoreDiscountIcon":{"x":256,"y":106,"w":34,"h":63,"offX":0,"offY":0,"sourceW":34,"sourceH":63},
+"biaoti_activityStore":{"x":175,"y":1,"w":277,"h":33,"offX":3,"offY":1,"sourceW":283,"sourceH":34},
+"biaoti_springBegin":{"x":1,"y":191,"w":134,"h":26,"offX":4,"offY":4,"sourceW":144,"sourceH":34},
+"biaoti_springBeginLog":{"x":175,"y":36,"w":276,"h":33,"offX":3,"offY":1,"sourceW":283,"sourceH":34},
+"biaoti_springBeginRecharge":{"x":175,"y":71,"w":275,"h":33,"offX":4,"offY":1,"sourceW":283,"sourceH":34},
+"discountNum1":{"x":469,"y":1,"w":8,"h":16,"offX":2,"offY":0,"sourceW":13,"sourceH":17},
+"discountNum2":{"x":292,"y":106,"w":11,"h":16,"offX":1,"offY":0,"sourceW":13,"sourceH":17},
+"discountNum3":{"x":1,"y":238,"w":11,"h":17,"offX":1,"offY":0,"sourceW":13,"sourceH":17},
+"discountNum4":{"x":454,"y":1,"w":13,"h":16,"offX":0,"offY":0,"sourceW":13,"sourceH":17},
+"discountNum5":{"x":15,"y":219,"w":11,"h":17,"offX":1,"offY":0,"sourceW":13,"sourceH":17},
+"discountNum6":{"x":1,"y":219,"w":12,"h":17,"offX":1,"offY":0,"sourceW":13,"sourceH":17},
+"discountNum7":{"x":137,"y":191,"w":11,"h":16,"offX":1,"offY":0,"sourceW":13,"sourceH":17}}}

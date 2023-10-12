@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="chestbgskin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="930">
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  currentState="nohead" width="580" y="0" horizontalCenter="0"/>
+	<e:Image width="570" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="155" horizontalCenter="0" />
+	<e:ViewStack id="viewStack" width="570" selectedIndex="1" horizontalCenter="0" bottom="162" top="52">
+		<ns1:BaseComponent id="boxPanel" name="宝箱" width="554" skinName="ChestSkin" className="BoxWin" horizontalCenter="0" top="0" bottom="0"/>
+		<ns1:BaseComponent id="bookPanel" name="图鉴" skinName="tujian" className="BookWin" left="0" right="0" top="0" bottom="0" visible="false"/>
+	</e:ViewStack>
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}"
+	          selectedIndex="0" horizontalCenter="0" bottom="112">
+		<e:layout>
+			<e:HorizontalLayout gap="0" />
+		</e:layout>
+	</e:TabBar>
+	<e:Image id="redPoint1" source="zjmhongdian" bottom="139" horizontalCenter="-15"/>
+	<e:Image id="redPoint2" source="zjmhongdian" horizontalCenter="109" bottom="141"/>
+	<e:Button id="help" label="按钮" skinName="Btn0Skin" icon="wenhao" horizontalCenter="-246" scaleX="0.9" scaleY="0.9" y="8"/>
+</e:Skin>

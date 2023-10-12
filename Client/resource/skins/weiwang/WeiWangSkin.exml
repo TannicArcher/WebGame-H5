@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WeiWangSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        xmlns:tween="egret.tween.*" width="580"
+        height="775">
+	<w:Declarations></w:Declarations>
+	<w:Config id="158995f2c90"></w:Config>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" width="580" horizontalCenter="0" currentState="nohead" x="0"/>
+	<e:Button id="help" label="按钮" skinName="Btn0Skin" icon="wenhao" horizontalCenter="-246" y="8" scaleX="0.9" scaleY="0.9"/>
+
+
+
+	<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30" width="570" horizontalCenter="0" top="44" bottom="0" />
+	<e:Image source="weiwang_bg_jpg" left="15" right="15" scale9Grid="191,74,140,444" verticalCenter="2.5"/>
+	<e:Group id="dinghong" width="556" height="74" bottom="1" horizontalCenter="-1" anchorOffsetY="0">
+		<e:Image top="0" bottom="0" source="bantoumingkuang3" left="0"/>
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0"/>
+		<e:Label id="getItemTxt" text="获取威望" size="20" textColor="0x00FF00" height="60" verticalAlign="middle" width="100" textAlign="center" touchEnabled="true" horizontalCenter="170" bottom="10"/>
+		<e:Group horizontalCenter="-170" bottom="30">
+			<e:Label id="findItemTxt" text="找回威望" size="20" textColor="0x00FF00" verticalAlign="middle" textAlign="center" touchEnabled="true" scaleX="1" scaleY="1" y="0" x="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="praiseGroup0" scaleX="0.8" scaleY="0.8" horizontalCenter="-3.5" verticalCenter="-118.5">
+		<e:Image id="wingImg0" horizontalCenter="44" scaleX="0.8" scaleY="0.8" source="wing00_png" verticalCenter="-68.5"/>
+		<e:Image id="weaponImg0" horizontalCenter="-203" source="weapon101_0_c_png" scaleX="0.8" scaleY="0.8" verticalCenter="78.5"/>
+		<e:Image id="bodyImg0" horizontalCenter="-10" scaleX="0.8" scaleY="0.8" source="body101_0_c_png" touchEnabled="true" verticalCenter="-58.5"/>
+	</e:Group>
+	<e:Group id="praiseGroup2" scaleX="0.8" scaleY="0.8" horizontalCenter="186.5" verticalCenter="-27.5">
+		<e:Image id="wingImg2" horizontalCenter="44" scaleX="0.8" scaleY="0.8" verticalCenter="-68.5" source="wing00_png"/>
+		<e:Image id="weaponImg2" horizontalCenter="-203" source="weapon101_0_c_png" scaleX="0.8" scaleY="0.8" verticalCenter="78.5"/>
+		<e:Image id="bodyImg2" horizontalCenter="-10" scaleX="0.8" scaleY="0.8" source="body101_0_c_png" touchEnabled="true" verticalCenter="-58.5"/>
+	</e:Group>
+	<e:Group id="praiseGroup1" scaleX="0.8" scaleY="0.8" verticalCenter="-29.5" horizontalCenter="-181.5">
+		<e:Image id="wingImg1" horizontalCenter="44" scaleX="0.8" scaleY="0.8" source="wing00_png" verticalCenter="-68.5"/>
+		<e:Image id="weaponImg1" horizontalCenter="-203" source="weapon101_0_c_png" scaleX="0.8" scaleY="0.8" verticalCenter="78.5"/>
+		<e:Image id="bodyImg1" horizontalCenter="-10" scaleX="0.8" scaleY="0.8" source="body101_0_c_png" touchEnabled="true" verticalCenter="-58.5"/>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+	<e:Group y="144" horizontalCenter="-200.5">
+		<e:Image id="title1" touchEnabled="true" source="prestige_top_1" y="0" x="0"/>
+		<e:Group horizontalCenter="0" verticalCenter="0" height="48" width="165">
+			<e:Image source="bantoutiaobg" scale9Grid="126,21,4,5" left="0" top="0" scaleX="1" scaleY="1" right="0" bottom="0"/>
+			<e:Label text="威望排行榜第2名" size="18" textColor="0x5186fd" horizontalCenter="10" top="5"/>
+			<e:Label text="布拉格の梦想" size="18" id="name1" textColor="0xf8b141" bold="true" horizontalCenter="0" bottom="5"/>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="center" gap="-2"/>
+		</e:layout>
+
+
+
+	</e:Group>
+	<e:Group y="51" horizontalCenter="-6.5">
+		<e:Image id="title0" touchEnabled="true" y="0" x="0" source="prestige_top_0"/>
+		<e:Group horizontalCenter="0" verticalCenter="0" height="48" width="165">
+		<e:Image source="bantoutiaobg" scale9Grid="126,21,4,5" left="0" top="0" scaleX="1" scaleY="1" right="0" bottom="0"/>
+		<e:Label text="威望排行榜第1名" size="18" textColor="0x5186FD" horizontalCenter="10" top="5"/>
+		<e:Label text="布拉格の冲动" size="18" id="name0" textColor="0xF8B141" bold="true" horizontalCenter="0" bottom="5"/>
+		</e:Group>
+		<e:layout>
+		<e:VerticalLayout horizontalAlign="center" gap="-2"/>
+		</e:layout>
+	</e:Group>
+	<e:Group y="144" horizontalCenter="189.5">
+		<e:Image id="title2" touchEnabled="true" y="0" x="0" source="prestige_top_2"/>
+		<e:Group horizontalCenter="0" verticalCenter="0" height="48" width="165">
+		<e:Image source="bantoutiaobg" scale9Grid="126,21,4,5" left="0" top="0" scaleX="1" scaleY="1" right="0" bottom="0"/>
+		<e:Label text="威望排行榜第3名" size="18" textColor="0x5186FD" horizontalCenter="10" top="5"/>
+		<e:Label text="布拉格の厉害" size="18" id="name2" textColor="0xF8B141" bold="true" horizontalCenter="0" bottom="5"/>
+		</e:Group>
+		<e:layout>
+		<e:VerticalLayout horizontalAlign="center" gap="-2"/>
+		</e:layout>
+	</e:Group>
+
+
+
+
+
+
+
+
+<e:Image y="5" horizontalCenter="-155"  source="biaoti_weiwang"/>
+
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+	
+
+
+	<e:Group bottom="213" horizontalCenter="0.5" height="70">
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="240" top="-32" left="-10"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="240" scaleX="-1" top="-32" right="-10"/>
+		<e:Image left="0" right="0" bottom="0" source="shuxingbg" scale9Grid="50,5,65,34" top="0"/>
+		<e:Image source="quality0" x="0" width="75" height="75" scale9Grid="31,30,2,2" y="0"/>
+
+		<e:Image id="deter" anchorOffsetX="0" anchorOffsetY="0" touchEnabled="true" x="6" source="ZSprestige" y="6"/>
+		<e:Image source="yupei_wssh" scaleX="1" scaleY="1" x="76" verticalCenter="-14"/>
+		<e:Label id="desc" text="攻击威望值低于自己的玩家，增加伤害7%" x="78" size="20" verticalCenter="18" textColor="0xd1c28f"/>
+		<e:Image source="shuxingbg4" top="-40" horizontalCenter="0" scale9Grid="64,19,1,1" width="151" height="43"/>
+		<e:Label text="威望效果" size="24" bold="true" horizontalCenter="0" top="-30" textColor="0xf8b141"/>
+
+	</e:Group>
+	<e:Button id="checkBtn" label="查看排名" skinName="Btn1Skin" width="180" height="60" bottom="10" horizontalCenter="0"/>
+	
+	<e:Group id="attrGroup" horizontalCenter="0" anchorOffsetY="0" bottom="77" height="130">
+		<e:Image source="shuxingbg" left="0" right="0" top="0" bottom="0" scale9Grid="50,5,65,34"/>
+
+
+
+
+
+		<e:Group id="notMaxGroup" width="500" horizontalCenter="0" x="10" scaleX="1" scaleY="1" y="10">
+
+			<e:Label id="curAtt" text="攻击：8000\n物防：8000\n魔防：8000\n威慑：8000" size="18" textAlign="left" verticalAlign="middle" textColor="0x9f946d" scaleX="1" scaleY="1" verticalCenter="0" horizontalCenter="-150"/>
+			<e:Label id="nextAtt" text="攻击：8000000" size="18" textColor="0x2ECA22" textAlign="left" verticalAlign="middle" verticalCenter="0" horizontalCenter="150" x="0" y="0" scaleX="1" scaleY="1"/>
+
+			<e:Image id="cursor" source="jiantouyou" verticalCenter="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="maxShowGroup" width="500" horizontalCenter="0" y="10">
+			<e:Label id="maxCurAtt" text="攻击：8000" size="18" height="72" textAlign="left" verticalAlign="middle" textColor="0x9F946D" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group id="barGroup" width="520" height="40" horizontalCenter="0" bottom="0">
+			<e:ProgressBar id="expBar" maximum="100" value="40" skinName="WingExpBarSkin" slideDuration="0" width="446" height="16" verticalCenter="0" horizontalCenter="0"/>
+			<e:Image id="barBg" source="jingyantiao1" verticalCenter="0" left="0" right="0" scale9Grid="59,0,4,37"/>
+			<e:Label id="expLabel" stroke="1" strokeColor="0x000000" text="100/100" size="18" width="460" verticalAlign="middle" textAlign="center" height="18" verticalCenter="0" horizontalCenter="0" textColor="0xd1c28f"/>
+		</e:Group>
+	</e:Group>
+
+	<e:Group bottom="321" height="60" width="300" horizontalCenter="0">
+		<e:Image scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="12,11,1,2"/>
+		<e:Image scaleX="1" scaleY="1" left="-40" right="40" top="0" bottom="4" source="tongyongtip2" scale9Grid="20,20,1,2"/>
+		<e:Label text="当前：" scaleX="1" scaleY="1" size="20" textColor="0xd1c28f" y="8" horizontalCenter="-80"/>
+		<e:Label id="info" text="每日0点回收1000威望" scaleX="1" scaleY="1" size="18" y="38" horizontalCenter="0" textColor="0x9f946d"/>
+		<e:Image id="myTitle" scaleX="0.8" scaleY="0.8" x="94" y="2" source="prestige_title_2"/>
+		<e:Label id="overViewTxt" text="威望预览" size="20" textColor="0x00FF00" verticalAlign="middle" textAlign="center" scaleX="1" scaleY="1" y="8" touchEnabled="true" horizontalCenter="95"/>
+	</e:Group>
+
+</e:Skin>

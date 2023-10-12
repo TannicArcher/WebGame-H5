@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ZsSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="930">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" top="44" bottom="155" scale9Grid="19,12,14,14"/>
+	<e:ViewStack id="viewStack" selectedIndex="4" horizontalCenter="0" top="52" bottom="162" width="554">
+		<ns1:BaseComponent id='skillPanel' name='技能'  skinName="SkillSkin"  left="0" right="0" top="0" bottom="0" className="SkillPanel"/>
+		<ns1:BaseComponent id='neiGongPanel' name='内功'  skinName="NeiGongSkin"  top="0" bottom="0" horizontalCenter="0" className="NeiGongWin" visible="false"/>
+		<ns1:BaseComponent id='jingMai' name='经脉'  skinName="JinMaiSkin"  top="0" bottom="0" horizontalCenter="0" className="JingMaiPanel" visible="false"/>
+		<!--<ns1:BaseComponent id="skillPunch" name="技能" className="SkillPanel" x="10" y="10" skinName="SkillPunch" visible="false"/>-->
+		<ns1:BaseComponent id="mijiPanel" skinName="MijiPanelSkin" name="秘籍"  horizontalCenter="0" top="0" bottom="0" className="MijiPanel" visible="false"/>
+		<ns1:BaseComponent id="zhanlingPanel" skinName="ZhanlingSkin" name="战灵" top="0" bottom="0" className="ZhanLingPanel" left="0" right="0" visible="false"/>
+	</e:ViewStack>
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}" bottom="112" horizontalCenter="0">
+		<e:layout>
+			<e:HorizontalLayout gap="-8"/>
+		</e:layout>
+	</e:TabBar>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin"   width="580" horizontalCenter="0" className="RoleSelectPanel"/>
+	<e:Button id="help" label="按钮" skinName="Btn0Skin" icon="wenhao" horizontalCenter="-246" y="8" scaleX="0.9" scaleY="0.9" visible="false"/>
+	<e:Button id="closeBtn1" label="按钮" x="620" y="915" skinName="Btn0Skin" icon="fanhui"  width="82" height="85" visible="false"/>
+	<e:Button id="closeBtn0" label="按钮" x="671.33" y="51.66" skinName="Btn0Skin" visible="false"/>
+
+
+
+	<e:Group id="redPointGroup" bottom="142" horizontalCenter="39" touchEnabled="false">
+		<e:Image id="redPoint0" source="zjmhongdian" x="0" y="0" visible="false"/>
+		<e:Image id="redPoint1" source="zjmhongdian" x="119" y="0" visible="false"/>
+		<e:Image id="redPoint2" source="zjmhongdian" x="241" y="0" visible="false"/>
+		<e:Image id="redPoint3" source="zjmhongdian" x="358" y="0" visible="false"/>
+		<e:Image id="redPoint4" source="zjmhongdian" x="368" y="10" visible="false"/>
+		<e:layout>
+			<e:HorizontalLayout gap="87"/>
+		</e:layout>
+	</e:Group>
+	<e:Image id="skillTitle" y="5" horizontalCenter="-155" source="biaoti_jineng"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+</e:Skin>

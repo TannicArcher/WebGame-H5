@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ResultCoinItemSkin" width="300" height="40" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgCoin" x="137" width="30" height="30" verticalCenter="0" source="ZSgold"/>
+	<e:Label id="labelInfo" text="获得成就积分：" x="1" size="20" textColor="0xDFD1B5" y="10"/>
+	<e:Label id="labelCount" text="999999" size="20" fontFamily="黑体" textColor="0x6BCE08" width="150" x="172" textAlign="left" verticalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="tujianzonshuxin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="930">
+	<w:Config id="1586b1359f6"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group width="350" height="450" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" bottom="-30" textColor="0x7E6437" horizontalCenter="0"/>
+		<e:Image   source="tongyongtip1" scale9Grid="6,6,13,13" left="0" right="0" top="0" bottom="0"/>
+		<e:Image   left="0" right="0" top="0" bottom="0" source="tongyongtip2" scale9Grid="19,18,2,6"/>
+		<e:Image source="zhandoulibg" x="39.5" width="269" alpha="0.4" height="44.33"   scale9Grid="130,26,31,16" verticalCenter="-139"/>
+		<e:Image source="zjmzhandouli" x="42.5" verticalCenter="-140.5"/>
+		<e:Image width="240" height="199" horizontalCenter="0" verticalCenter="18.5" source="shuzibg" scale9Grid="4,4,15,14" />
+		<e:Label text="图鉴总属性" size="20" textColor="0xFFB82A" touchEnabled="false" y="18" bold="true" horizontalCenter="0"/>
+		<e:Label id="attrs" text="攻    击：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：" size="18" textColor="0xDFD1B5" lineSpacing="10" touchEnabled="false" textAlign="left" y="149" width="200" horizontalCenter="-1"  height="184"/>
+	</e:Group>
+</e:Skin>

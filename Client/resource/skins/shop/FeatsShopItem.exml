@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FeatsShopItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image x="0" y="0" width="620" height="120" source="tongyonglabbg" scale9Grid="13,9,101,52"/>
+	<e:Image id="textBG" x="100" y="12" source="bantoutiaobg" height="32" width="140"/>
+	<e:Button id="btnGet" label="购  买" skinName="Btn1Skin" verticalCenter="-15" name="buy" right="30"/>
+	<e:Label id="itemName" text="商品名称" x="100" y="16" size="24" textColor="0xBCAF96" width="140" textAlign="center" bold="true"/>
+	<e:Label id="labelPrice" text="1000" y="60" size="20" textColor="0xBCAF96" bold="true" x="158"/>
+	<e:Label id="labelTimes" text="今日已兑换:3/3" size="20" textColor="0xBCAF96" verticalCenter="30" right="26"/>
+	<e:Label id="used" text="（商品用途）" x="154" y="18" fontFamily="黑体" size="16" textColor="0xBCAF96" visible="false"/>
+	<e:Image x="120" y="55" source="feats"/> 
+</e:Skin>

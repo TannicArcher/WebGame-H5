@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ActBtnSkin" states="up,down,disabled"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" includeIn="down" width="82" height="82">
+	<e:Image id="selectIcon" visible.disabled="false" visible.up="false" pixelHitTest="true" source="xuanzhongyuan" left="0" right="0" top="0" bottom="0"/>
+	<e:Image id="iconDisplay" pixelHitTest="true" visible.disabled="false" horizontalCenter="-1" verticalCenter="0" source="fuli_json.fuli_denglu"/>
+	<e:Group id="redPoint" y="0" alpha.disabled="0.5" right="0" visible="false">
+		<e:Image x="0" y="0" source="zjmhongdian"/>
+	</e:Group>
+</e:Skin>

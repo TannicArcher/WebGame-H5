@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChuangtianguanBossReward" width="421" height="120" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="barGroup" horizontalCenter="0.5" top="0">
+		<ns1:ItemBase id="experience" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" top="20" horizontalCenter="-112.5"/>
+		<ns1:ItemBase id="randomRune" skinName="ItemSkin" horizontalCenter="-36.5" x="158" scaleX="0.8" scaleY="0.8" top="20"/>
+		<ns1:ItemBase id="runeCream" skinName="ItemSkin" horizontalCenter="39.5" x="234" scaleX="0.8" scaleY="0.8" top="20"/>
+		<ns1:ItemBase id="target" skinName="ItemSkin" horizontalCenter="153.5" x="348" scaleX="0.8" scaleY="0.8" top="20"/>
+		<e:Group id="labelGroup" x="357" rotation="35.5" top="0">
+			<e:Image source="greenkuang_png" left="0" right="0" top="0" bottom="0" scale9Grid="37,1,2,26"/>
+			<e:Label id="leftlabel" text="再闯10层" size="14" textColor="0x00ff00" left="0" right="0" top="0" bottom="0" verticalAlign="middle" textAlign="center"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

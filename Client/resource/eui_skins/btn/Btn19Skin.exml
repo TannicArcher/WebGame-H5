@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Btn19Skin" states="up,down" currentState="up" xmlns:e="http://ns.egret.com/eui"         xmlns:w="http://ns.egret.com/wing"         width="209" height="101">
+	<e:Image  x.up="0" y.up="0" horizontalCenter="0" y="0" scaleX.down="0.95" scaleY.down="0.95" y.down="4" source="btnshouchong_png"/>
+	<e:Label id="labelDisplay" size="28" text="立即充值"
+	         stroke="1" strokeColor="0xff9400" horizontalCenter="2.5" textColor="0xffffff" size.down="24" verticalCenter="5.5"/>
+</e:Skin>

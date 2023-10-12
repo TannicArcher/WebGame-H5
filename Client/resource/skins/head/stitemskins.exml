@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="stitemskins" width="430" height="130" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group width="430" height="60" horizontalCenter="0" top="0">
+		<e:Image left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="8,6,9,8"   />
+		<e:Image source="tongyongtip2" left="0" right="0" top="0" bottom="0" scale9Grid="19,20,1,2"  />
+		<e:Image source="anwen2" verticalCenter="0" y="253"   horizontalCenter="-144"/>
+		<e:Image source="anwen2"   rotation="180.28" verticalCenter="0" horizontalCenter="143"/>
+		<e:Label id="desc" text="战斗设置" size="26" touchEnabled="false" bold="true" textColor="0x7E6437" horizontalCenter="0" verticalCenter="0" x="109" y="254"  />
+	</e:Group>
+	<e:Group width="430" height="70"  horizontalCenter="0" bottom="0">
+		<e:Label text="自动释放合击" size="20" textColor="0xF8B141"   horizontalCenter="-127" verticalCenter="0"/>
+	</e:Group>	
+</e:Skin>

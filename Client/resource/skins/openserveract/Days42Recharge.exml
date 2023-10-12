@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Days42Recharge" width="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" height="623">
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50" x="80" scaleX="1" />
+	<e:Image id="title" y="0" horizontalCenter="0" x="211" scaleX="1" scaleY="1" source="biaoti_tiantianfanli" />
+	<e:Group height="110" y="40" width="540" horizontalCenter="0">
+		<e:Image source="day42_headbg_png"  width="540" x="0" top="0" bottom="0"/>
+
+
+
+		<e:Group left="10" right="10" verticalCenter="0">
+			<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="0" bottom="0" anchorOffsetY="0"
+			         scaleX="1" scaleY="1" />
+			<e:Label text="活动说明：" x="3" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" top="5" />
+			<e:Label id="actDesc" text="即日起每日充值任意金额，即可领取豪礼，每隔6天还可以领取海量元宝。" size="18" textColor="0xDFD1B5" scaleX="1" scaleY="1"
+			         anchorOffsetX="0" height="36" y="5" right="0" left="90" />
+		</e:Group>
+		<e:Image width="440" verticalCenter="12" horizontalCenter="0" source="jingyantiao5" scale9Grid="8,5,1,3"  visible="false"/>
+
+	</e:Group>
+	<e:List id="bigReward" y="155" itemRendererSkinName="Days42BigRewardItemSkin" horizontalCenter="0">
+		<e:layout>
+		<e:TileLayout requestedColumnCount="5" horizontalAlign="center" verticalAlign="middle" horizontalGap="10"/>
+		</e:layout>
+	</e:List>
+	<e:Group top="361" bottom="0" width="540" horizontalCenter="0">
+		<e:Scroller scrollPolicyH="off" scrollPolicyV="on" left="0" right="0" top="0" bottom="0">
+			<e:List id="content" y="1" horizontalCenter="-1" x="0" useVirtualLayout="false" itemRendererSkinName="OSAItem">
+				<e:layout>
+					<e:VerticalLayout gap="2" />
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

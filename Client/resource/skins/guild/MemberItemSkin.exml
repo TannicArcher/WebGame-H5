@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MemberItemSkin" width="554" height="32" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" >
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.2"/>
+	<e:Label id="nameLab" text="成员名字六个" size="20" textAlign="left" width="140" textColor="0xd1c28f" verticalCenter="0" x="70"/>
+	<e:Label id="office" text="副会长" size="20" textAlign="center" width="80" textColor="0xf8b141" x="250" verticalCenter="0"/>
+	<e:Label id="conLab" text="9999999" x="400" size="20" textAlign="center" textColor="0xd1c28f" verticalCenter="0"/>
+	<e:Image id="vipTitle" x="40" scaleX="0.8" scaleY="0.8" verticalCenter="-2.5" source="vipv_png"/>
+	<e:Group id="vip" x="30" verticalCenter="-12" scaleX="0" scaleY="0" visible="false">
+	</e:Group>
+	<e:Button id="conBtn" label="操作" x="470" skinName="Btn1Skin" width="70" height="30" verticalCenter="0" visible="false"/>
+	<e:Image id="zuncard" x="0" source="yuezhizun_png" scaleX="0.8" scaleY="0.8" verticalCenter="0" visible="false"/>
+	<e:Image id="monthcard" x="0"  source="yueka_png" scaleX="0.8" scaleY="0.8" verticalCenter="0" visible="false"/>
+	
+</e:Skin>

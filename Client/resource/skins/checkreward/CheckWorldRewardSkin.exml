@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CheckWorldRewardSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<e:Rect id="colorCanvas" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group id="anigroup" x="0" y="0" width="400" height="300">
+		<e:Image source="tongyongkuang3bg" left="0" right="0" top="0" bottom="0" scale9Grid="16,11,17,21"/>
+		<e:Image source="tongyongkuang3tou" y="0" left="0" right="0" scale9Grid="73,5,260,37"/>
+		<e:Group y="92" horizontalCenter="0">
+			<ns1:BaseComponent id="specialItem0" scaleX="0.9" scaleY="0.9" className="ItemBase" skinName="ItemSkin" x="0" y="0"/>
+			<ns1:BaseComponent id="specialItem1" scaleX="0.9" scaleY="0.9" className="ItemBase" skinName="ItemSkin" x="100" y="0"/>
+			<ns1:BaseComponent id="specialItem2" scaleX="0.9" scaleY="0.9" className="ItemBase" skinName="ItemSkin" x="200" y="0"/>
+			<ns1:BaseComponent id="specialItem3" scaleX="0.9" scaleY="0.9" className="ItemBase" skinName="ItemSkin" x="300" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Button skinName="Btn0Skin" label="按钮" id="closeBtn" y="0" right="0" visible="false"/>
+		<e:Button id="closeBtn0" label=" 挑  战 " width="156" height="60" y="210" horizontalCenter="0" skinName="Btn1Skin"/>
+		<e:Label id="requireLabel" text="标签" size="20" width="333" x="23" y="58"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="hongbaoSpeakSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="closeBtn" fillAlpha="0.6" left="0" right="0" bottom="0" top="0"/>
+	<e:Group horizontalCenter="0" width="358" height="246" verticalCenter="-71" anchorOffsetX="0" anchorOffsetY="0">
+		<e:Image scale9Grid="10,7,11,14" source="tongyongtip1" left="0" top="0" bottom="0" right="0"/>
+		<e:Image scale9Grid="19,18,2,5" top="0" bottom="0" source="tongyongkuang3bg" right="0" left="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,273,47" left="0" top="0" right="0"/>
+		<e:Image left="10" top="56" right="10" source="tongyongtip1" scale9Grid="5,5,15,15" anchorOffsetY="0" height="107"/>
+		<e:EditableText id="input" text="" size="20" verticalAlign="top" promptColor="0x848282" textColor="0xDFD1B5" width="320" prompt="春风送暖入屠苏，祝大家次次拿归属，把把爆神装！" height="94" x="16" textAlign="left" lineSpacing="2" multiline="true" y="62" wordWrap="true"/>
+		<e:Button id="sendBtn" label="发红包" height="50" skinName="Btn3Skin" width="110" bottom="15" horizontalCenter="0"/>
+		<e:Label text="红包寄语" y="10" size="26" bold="true" textColor="0xf8b141" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KFInvasionPartSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="BG" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="background0" source="tongyongtip1" scale9Grid="7,6,11,12" left="0" right="0" top="0" bottom="0" x="-3" y="1" scaleX="1" scaleY="1"/>
+		<e:Image source="tongyongtip2" left="0" right="0" top="0" scale9Grid="18,18,2,4" bottom="0" scaleX="1" scaleY="1"/>
+		<e:Label text="参与奖" size="22" bold="true" x="10" y="18" scaleX="1" scaleY="1" textColor="0x00ff00"/>
+		<e:Group left="10" right="10" top="50" bottom="10">
+			<e:Label text="参与者同行会在场景内成员可获得：" size="18" bold="true" x="0" y="0" scaleX="1" scaleY="1" textColor="0x00ff00"/>
+			<e:List id="belongReward" x="2" y="25" itemRendererSkinName="ItemSkin" width="380" scaleX="0.8" scaleY="0.8">
+				<e:layout>
+					<e:TileLayout/>
+				</e:layout>
+			</e:List>
+			<e:Label text="参与者行会几率获得拍卖品：" size="18" bold="true" x="0" y="190" scaleX="1" scaleY="1" textColor="0xffff00"/>
+			<e:List id="saleReward" x="2" y="25" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8" width="380">
+				<e:layout>
+				<e:TileLayout/>
+				</e:layout>
+			</e:List>
+			<e:layout>
+			<e:VerticalLayout gap="7"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="tipGroup0" touchChildren="false" touchEnabled="false" horizontalCenter="0" bottom="-35" x="25" y="662" scaleX="1" scaleY="1">
+		<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

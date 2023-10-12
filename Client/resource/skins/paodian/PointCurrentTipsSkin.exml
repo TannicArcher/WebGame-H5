@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PointCurrentTipsSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group id="anigroup" width="320" height="162" horizontalCenter="0" bottom="198">
+		<e:Image source="tongyong_json.tongyongmianbanbg" left="0" right="0" top="0" bottom="0" scale9Grid="23,21,2,2"/>
+		<e:Image source="tongyong_json.tongyongtip2" scaleX="1" scaleY="1" left="0" top="0" bottom="0" scale9Grid="20,19,1,1" right="0"/>
+		<e:Label text="当前区域：" x="15" y="22" size="18" textColor="0xd1c28f"/>
+		<e:Label id="currentArea" text="5倍区域" x="105" y="22" size="18" textColor="0xff00ff"/>
+		<e:Label id="Speed" text="玉佩碎片XXXX/10秒" x="105" y="50" size="18" textColor="0xFF00FF" height="41"/>
+		<e:Label id="gwexpNum" text="玉佩碎片10000" x="105" y="101" size="18" textColor="0xFF00FF"/>
+		<e:Label id="yupeiNum" text="神兵经验10000000" x="105" size="18" textColor="0xFF00FF" y="124"/>
+		<e:Label text="当前效率：" x="15" y="50" size="18" textColor="0xD1C28F"/>
+		<e:Label text="累计收益：" x="15" y="101" size="18" textColor="0xD1C28F"/>
+	</e:Group>
+</e:Skin>

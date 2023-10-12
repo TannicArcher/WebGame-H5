@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="KFGiftSkin" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Image id="bg" source="kaifulibaobg_png" width="554" horizontalCenter="0" height="454" x="2" verticalCenter="93"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="49" width="400" height="50" x="79"/>
+	<e:Image id="title" source="biaoti_kaifulibao" horizontalCenter="0" x="211" y="0"/>
+	<e:Image source="bantoutiaobg" scale9Grid="127,20,8,5" height="169" anchorOffsetY="0" left="0" right="0" top="39"/>
+	<e:Image id="showbg" horizontalCenter="-160" x="-33" verticalCenter="78" source="kaifushenbingbg_png"/>
+	<e:Label id="actTime" text="0天23小时55分" size="18" textColor="0x00FF00" horizontalCenter="0" bottom="10" x="218" y="591"/>
+	<e:Group horizontalCenter="0" x="16" top="44">
+		<e:Group id="lhlb" x="0" y="0">
+		<e:Image id="bg0" horizontalCenter="0" y="2" source="cailiaolibao_bg"/>
+			<e:Image id="name0" horizontalCenter="-13.5" y="131" source=""/>
+		<e:Image id="arrow0" source="arrow_down" y="156" horizontalCenter="0"/>
+		<e:Image id="select0" width="127" height="158" horizontalCenter="0" source="xuanzhongkuang2" scale9Grid="5,5,6,6" y="0"/>
+		</e:Group>
+		<e:Group id="yylb" x="10" y="10">
+		<e:Image id="bg1" source="tujianlibao" horizontalCenter="0" y="2"/>
+			<e:Image horizontalCenter="-13.5" y="131" id="name1" source=""/>
+		<e:Image id="arrow1" source="arrow_down" y="156" horizontalCenter="0"/>
+		<e:Image id="select1" width="127" height="158" horizontalCenter="0" source="xuanzhongkuang2" scale9Grid="5,5,6,6" y="0"/>
+		</e:Group>
+		<e:Group id="szlb" x="20" y="20">
+		<e:Image id="bg2" source="chibanglibao" horizontalCenter="0" y="2"/>
+			<e:Image horizontalCenter="-13.5" y="131" id="name2" source=""/>
+		<e:Image id="arrow2" source="arrow_down" y="156" horizontalCenter="0"/>
+		<e:Image id="select2" width="127" height="158" horizontalCenter="0" source="xuanzhongkuang2" scale9Grid="5,5,6,6" y="0"/>
+		</e:Group>
+		<e:Group id="sblb" x="30" y="30">
+		<e:Image id="bg3" source="shenbinglibao" horizontalCenter="0" y="2"/>
+			<e:Image horizontalCenter="-13.5" y="131" id="name3" source=""/>
+		<e:Image id="arrow3" source="arrow_down" y="156" horizontalCenter="0"/>
+		<e:Image id="select3" width="127" height="158" horizontalCenter="0" source="xuanzhongkuang2" scale9Grid="5,5,6,6" y="0"/>
+		</e:Group>
+		<e:layout>
+		<e:HorizontalLayout horizontalAlign="center" verticalAlign="top" gap="6"/>
+		</e:layout>
+	</e:Group>
+	<e:Group right="10" width="370" x="141" anchorOffsetX="0" verticalCenter="3">
+		<e:Group y="2" width="365" height="48" horizontalCenter="0.5">
+		<e:Image left="0" right="0" source="mojibg_new" top="0" bottom="0"/>
+		<e:Group id="desc" verticalCenter="0" horizontalCenter="0">
+			<e:Label id="desc2" text="花费" horizontalCenter="-80" verticalCenter="0.5" size="20" textColor="0xd1c28f"/>
+			<e:Label id="desc3" text="12340" horizontalCenter="96" verticalCenter="0.5" size="20" textColor="0xFF9900"/>
+			<e:Label id="desc4" text="元宝即可购买" horizontalCenter="-80" verticalCenter="0.5" size="20" textColor="0xD1C28F"/>
+			<e:Label id="desc5" text="材料礼包" horizontalCenter="96" verticalCenter="0.5" size="20" textColor="0xFF9900"/>
+			<e:layout>
+			<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+		</e:Group>
+		<e:List id="reward0" y="56" itemRendererSkinName="ItemSkin" horizontalCenter="0" width="360" height="96">
+		<e:layout>
+			<e:HorizontalLayout gap="0" horizontalAlign="center"/>
+		</e:layout>
+		</e:List>
+	</e:Group>
+	<e:Button id="buy" label="购  买" skinName="Btn1Skin" horizontalCenter="0" bottom="30"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" horizontalCenter="66" bottom="66" visible="false"/>
+	<e:Label id="already" text="已领取" textColor="0x00FF00" size="20" horizontalCenter="0" bottom="45" x="249" y="554" visible="false"/>
+	<e:Label id="readydesc" text="已领取" textColor="0x00FF00" size="20" horizontalCenter="0" bottom="45" x="259" y="564" visible="false"/>
+	<e:Image source="mojibg_new" width="314" height="48" verticalCenter="107" right="40"/>
+	<e:Label id="desc1" text="跨服购买总量标可领取额外奖励" size="20" textColor="0xD1C28F" verticalCenter="105" right="60"/>
+	<e:ProgressBar id="bar0" height="17" skinName="bar5Skin" value="100" width="21" scaleY="0.8" right="314" verticalCenter="163"/>
+	<e:ProgressBar id="bar1" height="17" skinName="bar5Skin" value="100" width="21" scaleY="0.8" verticalCenter="163" right="234"/>
+	<e:ProgressBar id="bar2" height="17" skinName="bar5Skin" value="100" width="21" scaleY="0.8" verticalCenter="163" right="154"/>
+	<e:ProgressBar id="bar3" height="17" skinName="bar5Skin" value="100" width="21" scaleY="0.8" right="74" verticalCenter="163"/>
+	<e:Image source="jingyantiao6" left="197" right="29" scale9Grid="26,3,8,19" y="463" anchorOffsetX="0" scaleX="0.8" scaleY="0.8"/>
+	<e:Group right="10" verticalCenter="170.5">
+		<ns1:BaseComponent id="kfreward0" x="0" y="0" skinName="KFRewardItem" className="OSATarget2Panel4ItemRender"/>
+		<ns1:BaseComponent x="10" y="10" skinName="KFRewardItem" id="kfreward1" className="OSATarget2Panel4ItemRender"/>
+		<ns1:BaseComponent x="20" y="20" skinName="KFRewardItem" id="kfreward2" className="OSATarget2Panel4ItemRender"/>
+		<ns1:BaseComponent x="30" y="30" skinName="KFRewardItem" id="kfreward3" className="OSATarget2Panel4ItemRender"/>
+		<e:layout>
+		<e:HorizontalLayout gap="10"/>
+		</e:layout>
+	</e:Group>
+	<e:Image source="touxiangkuang" scaleX="0.6" scaleY="0.6" verticalCenter="163" right="333"/>
+	<e:Label id="kfCount" text="9999" size="18" textColor="0x00ff00" verticalCenter="164" right="339"/>		
+</e:Skin>

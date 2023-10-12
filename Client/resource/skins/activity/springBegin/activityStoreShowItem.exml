@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="activityStoreShowItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="180" height="180">
+	<w:Config id="1586bde13e1"/>
+	<e:Image left="0" right="0" top="0" scale9Grid="26,25,10,4" bottom="0" source="activityStoreBg"/>
+	<ns1:BaseComponent id="itemIcon" verticalCenter="-32" className="ItemBase" horizontalCenter="2" skinName="ItemSkin"/>
+
+
+
+
+
+
+	<e:Label id="money" text="123456" y="132" size="22" x="73" textColor="0xf8b141"/>
+
+	<e:Image id="moneyIcon" x="36" y="131" source="szyuanbao"/>
+
+
+
+	<e:Group id="discount" width="34" height="63" x="15" y="1">
+		<e:Image id="discountbg" y="0" source="activityStoreDiscountIcon" horizontalCenter="0"/>
+		<e:Image id="discountNum" y="5" source="discountNum5" horizontalCenter="0.5"/>
+	</e:Group>
+ 
+</e:Skin>

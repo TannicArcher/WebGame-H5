@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="fiveDaySkin" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Image source="teshuwenzibg2" scaleY="-1" width="400" height="50" horizontalCenter="0" y="50"/>
+	<e:Group top="0" bottom="0" left="0" right="0">
+		<e:Group id="infoBg" left="3" right="3" x="10" y="40" scaleX="1" scaleY="1" height="116">
+			<e:Image left="0" right="0" top="0" bottom="0" source="ny_curtain_png"/>
+			<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="15" bottom="15" visible="false"/>
+			<e:Group verticalCenter="2.5" left="28" anchorOffsetX="0" width="436" anchorOffsetY="0" height="55">
+			<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+			<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+			<e:Label id="actDesc" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="345" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1" anchorOffsetY="0" height="36" anchorOffsetX="0"/>
+			<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+			</e:Group>
+			<e:Button id="shopBtn" label="Button" x="468" y="22" skinName="Btn0Skin" icon="zjmshangcheng"/>
+			<e:Image id="redPointImg" source="zjmhongdian" horizontalCenter="256" bottom="74"/>
+			<e:Label id="refreshTime" text="3:59:59后刷新" x="459" y="93" size="14" textColor="0x00ff00"/>
+		</e:Group>
+		<e:Group top="156" bottom="88" anchorOffsetY="0" width="558" horizontalCenter="0">
+			<e:Image id="bgD" width="141" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="4,4,7,6" bottom="0" top="0" y="69" scaleX="1" scaleY="1" left="0" source="sd_projectbg"/>
+			<e:List id="tabD" width="135" top="4" left="3" itemRendererSkinName="FDtabBtn" anchorOffsetY="0" bottom="4">
+
+				<e:layout>
+					<e:VerticalLayout gap="2"/>
+				</e:layout>
+			</e:List>
+			<e:Group id="project" x="139" bottom="0" top="0" anchorOffsetY="0" width="418">
+				<e:Image id="bgP" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="4,4,7,6" scaleX="1" scaleY="1" source="sd_projectbg" left="0" bottom="0" right="0" top="0"/>
+				<e:Scroller id="item" left="4" top="4" bottom="4" right="4" scrollPolicyH="off" scrollPolicyV="on" anchorOffsetY="0">
+						<e:List id="list" itemRendererSkinName="FDProjectItem" left="0" top="0" right="0" bottom="0">
+
+						</e:List>
+				</e:Scroller>
+			</e:Group>
+		</e:Group>
+		<e:Image id="title" source="biaoti_qitianle" horizontalCenter="0" y="0"/>
+		<e:Image source="touxiangkuang" anchorOffsetX="0" width="50" anchorOffsetY="0" height="50" x="5" bottom="22"/>
+		<e:Label id="totalScore" text="9999" size="18" textColor="0x00FF00" textAlign="center" x="10" bottom="37"/>
+		<e:Group x="15" bottom="5">
+
+
+
+
+
+
+
+
+
+
+		</e:Group>
+		<e:List id="rewardlist" x="59" itemRendererSkinName="FDrewardItem" scaleX="0.9" scaleY="0.9" bottom="8" width="552" height="76">
+
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:List>
+	</e:Group>
+
+		
+</e:Skin>

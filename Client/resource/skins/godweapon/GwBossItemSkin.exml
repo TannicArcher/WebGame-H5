@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GwBossItemSkin" width="180" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="cannot,already,havetime" >
+	<e:Image id="bg" scale9Grid="52,0,58,58" right="0" left="0" top="0" bottom="0" width="200" source="yeqian5"/>
+	<e:Image id="bg1" scale9Grid="52,0,58,58" right="0" left="0" top="0" bottom="0" width="200" source="yeqian7_png" includeIn="cannot"/>
+	<e:Image id="bg0" right="0" left="0" top="4" bottom="4" source="yeqian6" scale9Grid="32,0,93,40" includeIn="already,havetime"/>
+	<e:Image id="killImg" y="0" right="8" source="zdbosskejisha2" includeIn="already"/>
+	<e:Group horizontalCenter="0" verticalCenter="0">
+		<e:Label id="fbname" text="神兵圣域一层" y="-1" size="18" textColor="0xF8B141" horizontalCenter="0" x="-54" scaleX="1" scaleY="1" textColor.already="0x00ff00" textColor.cannot="0x9f946d"/>
+		<e:Label id="levelNeed" text="4转及以下" size="18" textAlign="center" textColor="0xF8B141" y="22" horizontalCenter="0.5" x="13" scaleX="1" scaleY="1" textColor.already="0x00ff00" textColor.cannot="0x9f946d"/>
+		<e:Label id="timeTxt" text="01:01:55" size="18" textAlign="center" textColor="0xF8B141" y="45" horizontalCenter="0.5" x="19" scaleX="1" scaleY="1" includeIn="havetime"/>
+		<e:layout>
+			<e:VerticalLayout gap="4" horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

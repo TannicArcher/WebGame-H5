@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="shenqiItemWin" width="560" height="80" currentState="2" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  states="2,4,5,6,8" >
+	<e:List id="piece" itemRendererSkinName="shenqiItemskin" left="0" right="0" top="0" bottom="0" scaleX.8="0.85" scaleY.8="0.85" scaleX.6="0.9" scaleY.6="0.9" scaleX.5="0.9" scaleY.5="0.9" scaleX.4="0.9" scaleY.4="0.9" scaleX.2="1.1" scaleY.2="1.1">
+		<e:layout>
+			<e:TileLayout horizontalGap="5" verticalGap="2" requestedColumnCount.6="3" horizontalGap.6="40" horizontalAlign="center" horizontalGap.5="40" verticalGap.4="0" requestedColumnCount.5="3" horizontalGap.4="50" requestedColumnCount.4="2" paddingLeft.4="114" paddingLeft.5="25" paddingLeft.6="25" requestedColumnCount.2="2" horizontalGap.2="50" paddingLeft.2="60" paddingTop.2="13"/>
+		</e:layout>
+	</e:List>
+
+
+
+
+
+</e:Skin>

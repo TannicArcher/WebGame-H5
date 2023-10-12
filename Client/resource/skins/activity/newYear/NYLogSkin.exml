@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="NYLogSkin" width="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="622">
+	<w:Config id="1586d1506c8" />
+	<e:Image horizontalCenter="0" top="152" source="ny_logbg_png" width="554" anchorOffsetY="0" height="470"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+	<e:Image source="cd_logbottombg_png" left="8" bottom="0"/>
+	<e:Image source="cd_logbottombg_png" scaleX="-1" right="8" bottom="0" x="10" y="10"/>
+	<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_yuandandenglu"/>
+	<e:Group id="infoBg" left="3" right="3" x="10" y="36" height="116">
+		<e:Image top="0" bottom="0" source="ny_curtain_png" right="0" left="0"/>
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime1" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actInfo1" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+	</e:Group>
+	<e:Group horizontalCenter="6" anchorOffsetY="0" height="263" anchorOffsetX="0" width="438" top="150">
+		<e:Image source="jiantouyou2" y="47" x="135" scaleX="1" scaleY="1"/>
+		<e:Image source="jiantouyou2" y="47" x="273" scaleX="1" scaleY="1"/>
+		<e:Image source="jiantouyou2" y="170" x="59" scaleX="1" scaleY="1"/>
+		<e:Image source="jiantouyou2" y="171" x="206" scaleX="1" scaleY="1"/>
+		<e:Image source="denglu_01" y="5" horizontalCenter="-140"/>
+		<e:Image y="3" source="denglu_02" horizontalCenter="8"/>
+		<e:Image y="4" source="denglu_03" horizontalCenter="160"/>
+		<e:Image y="120" source="denglu_04" horizontalCenter="-71"/>
+		<e:Image y="119" source="denglu_05" horizontalCenter="79"/>
+		<ns1:BaseComponent id="dayNum1" y="10" className="ActivityHFRenderItem" horizontalCenter="-149.5" skinName="NYLogitem"/>
+		<ns1:BaseComponent id="dayNum2" y="10" className="ActivityHFRenderItem" horizontalCenter="0.5" skinName="NYLogitem"/>
+		<ns1:BaseComponent id="dayNum3" y="10" className="ActivityHFRenderItem" horizontalCenter="150.5" skinName="NYLogitem"/>
+		<ns1:BaseComponent id="dayNum4" y="135" className="ActivityHFRenderItem" horizontalCenter="-79.5" skinName="NYLogitem"/>
+		<ns1:BaseComponent id="dayNum5" y="135" className="ActivityHFRenderItem" horizontalCenter="70.5" skinName="NYLogitem"/>
+	</e:Group>
+	<e:Group id="group1" scaleX="0.9" scaleY="0.9" horizontalCenter="0" bottom="80">
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="4" paddingTop="0" />
+		</e:layout>
+	</e:Group>
+	<e:Label id="done" text="已领取" x="240" textColor="0x00FF00" size="28" bold="true" bottom="24"/>
+	<e:Button id="suerBtn" label="领取奖励" horizontalCenter="0" height="56" bottom="10" width="180"  skinName="Btn16Skin"/>
+	<e:Label id="daylabel" text="登陆天数:13" size="20" bottom="27" x="50" textColor="0xf8b141" />
+	<e:Label id="dayaward" text="第一天奖励详情" size="20" textColor="0xF8B141" horizontalCenter="0" bold="true" bottom="173"/>
+	<e:Image id="redPoint" width="20" height="20" horizontalCenter="77" source="zjmhongdian" bottom="50" visible="false"/>
+</e:Skin>

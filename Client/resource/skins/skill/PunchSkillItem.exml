@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PunchSkillItem" width="76" height="76" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1586b22db6d"/>
+	<e:Image id="iconBG" scale9Grid="8,8,49,49" horizontalCenter="0" width="54" height="54" y="11" source="71000_png"/>
+	<e:Image id="icon" source="hejijineng"/>
+	<e:Label id="lock" text="00级开启" width="50" size="20" textAlign="center" verticalAlign="middle" height="50" strokeColor="0xffffff" verticalCenter="0" textColor="0xc41200" bold="true" horizontalCenter="0" backgroundColor="0x000000" stroke="1" visible="false"/>
+</e:Skin>

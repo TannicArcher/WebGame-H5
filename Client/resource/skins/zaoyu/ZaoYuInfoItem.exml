@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ZaoYuInfoItem" width="554" height="106" currentState="have" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="have,none" >
+	<e:Image source="tongyonglabbg" scale9Grid="13,10,74,50" left="0" right="0" top="0" bottom="0" visible.none="false" scale9Grid.have="39,20,48,40"/>
+
+	<e:Image id="headBG" x="30" visible.none="false" width="70" height="70" source="touxiangkuang0" scale9Grid="6,6,1,1" verticalCenter="0"/>
+	<e:Image id="face" source="head_11" x="35" visible.none="false" width="60" height="60" verticalCenter="0"/>
+	<e:Label id="nameTxt" y.none="61" textColor="0xA89C88" text="1233" size="20" x="179" visible.none="false"  x.have="130" text.have="玩家名六个字" textColor.have="0x9f946d" bold.have="true" verticalCenter.have="0"/>
+	<e:Label id="nameTxt0" textColor="0xA89C88" text="123" size="20" text.have="2转111级" x.have="266" text.none="附近暂时没有玩家，\n整个场景都被你承包了！" verticalCenter.none="0" horizontalCenter.none="0" textColor.none="0x9f946d" size.none="22" textColor.have="0xd1c28f" verticalCenter.have="0" textAlign.none="center"/>
+	<e:Label id="expTxt" y="64" textColor="0xA89C88" text="123456" fontFamily="黑体" size="16" x="123" visible.none="false" visible="false"/>
+	<e:Label id="moneyTxt" y="64" textColor="0xA89C88" text="12.3w" fontFamily="黑体" size="16" x="235" visible.none="false" visible="false"/>
+	<e:Image id="expKey" y="65" x="85" visible.none="false" source="" visible="false"/>
+	<e:Image id="moneyKey" x="207" y="62" visible.none="false" source="szjinbi" visible="false"/>
+	<e:Label id="soulTxt" y="64" textColor="0xA89C88" text="12.3w" fontFamily="黑体" size="16" x="333" visible.none="false" visible="false"/>
+	<e:Image id="soulKey" x="305" y="59" visible.none="false" source="" visible="false"/>
+	<e:Button id="challengeBtn" label="挑 战" y.none="82" visible.none="false" verticalCenter="0" width="120" right="20" skinName="Btn3Skin"/>
+
+
+</e:Skin>

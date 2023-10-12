@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="hunguRongluSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="930">
+	<w:Config id="1586b3b43d7"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group id="anigroup" width="520" height="700" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-38" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-32" textColor="0x7E6437"/>
+		<e:Image scale9Grid="17,13,14,24" source="tongyongkuang3bg" left="0" right="0" top="2" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" y="0" left="0" right="0"/>
+		<e:Image source="ronglianbg_png" left="6" right="6" top="44" bottom="10"/>
+		<e:Group id="dinghong" width="510" height="92" bottom="5" horizontalCenter="0">
+			<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" width="255"/>
+			<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" width="255"/>
+		</e:Group>
+		<e:Image id="shangBG" y="86" width="480" height="350" horizontalCenter="0" source="tongyongtip1" scale9Grid="5,6,12,11"/>
+		<e:Image id="shangBG2" y="86" width="480" height="350" horizontalCenter="0" scale9Grid="19,19,2,4" source="tongyongtip2"/>
+		<e:Image id="xiaBG" y="457" width="480" height="120" horizontalCenter="0" source="tongyongtip1" scale9Grid="5,6,12,11"/>
+		<e:Image id="xiaBG2" y="457" width="480" height="120" scale9Grid="19,19,2,4" source="tongyongtip2" horizontalCenter="0"/>
+		<e:Label id="title" text="物品分解" y="10" size="24" bold="true" horizontalCenter="0" textColor="0xA67D44"/>
+		<e:Image source="gantanhao" x="146" y="58"/>
+		<e:Label text="选中物品分解后将消失" size="18" horizontalCenter="15" y="59" textColor="0x9F946D"/>
+		<e:Group y="44" width="330" horizontalCenter="0">
+			<e:Image source="tielian" y="0" right="0"/>
+			<e:Image source="tielian" x="0" y="0"/>
+		</e:Group>
+
+		<ns1:BaseComponent name="123" id="equip" className="SmeltItemNormalPanel" horizontalCenter="0" bottom="0" skinName="hunguRongluMainSkin"/>
+	</e:Group>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" verticalCenter="273" horizontalCenter="45" visible="false"/>
+</e:Skin>

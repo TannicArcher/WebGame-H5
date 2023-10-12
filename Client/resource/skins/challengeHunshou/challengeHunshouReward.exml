@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="challengeHunshouReward" width="421" height="120" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="reward" text="通关奖励" x="4" y="47" size="24" textColor="0xF2FE06"/>
+	<e:Group id="barGroup" horizontalCenter="42" top="0">
+		<ns1:ItemBase id="experience" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" top="20" horizontalCenter="-112.5"/>
+		<ns1:ItemBase id="randomRune" skinName="ItemSkin" horizontalCenter="-36.5" x="158" scaleX="0.8" scaleY="0.8" top="20"/>
+		<ns1:ItemBase id="runeCream" skinName="ItemSkin" horizontalCenter="39.5" x="234" scaleX="0.8" scaleY="0.8" top="20"/>
+
+
+	</e:Group>
+</e:Skin>

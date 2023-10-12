@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="NobleshopSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="560" height="688">
+	<w:Config id="15bfb572cc5"/>
+	<e:Scroller width="560" horizontalCenter="0" top="0" bottom="142">
+		<e:List id="listView" x="54" y="37" width="560" height="600">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Label id="noGoods" text=" 商品已全部售完" size="24" textColor="0xFF8534" horizontalCenter="0" verticalCenter="0" visible="false"/>
+	<e:Image id="tipImg" source="shopbn1_png" horizontalCenter="0" bottom="0" width="548" height="136"/> 
+</e:Skin>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ringtogglebtn" width="130" height="120" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down,disabled" >
+	<w:Config id="15a2308ede0"/>
+	<e:Rect id="noopen" fillColor="0x191919"/>
+	<e:Image x="43" y="4"   source="tejiekuang"/>
+	<e:Image id="xuanzhong" source="tejiexuanzhong" y="-10" visible.disabled="false" visible.up="false" x="0"/>
+	<e:Image id="ringicon" smoothing="true" y="-38" width="123" height="127" x="27" source="tejie01"/>
+	<e:Label id="ringNameTxt" size="18" textAlign="center" y="92" text="麻痹戒指" x="50" textColor.up="0xafab9c" textColor.disabled="0x8c887b" textColor="0x9f946d"/>
+	<e:Image id="textBg" x="75" y="65"  width="54" source="tejiebg" scale9Grid="24,8,22,6"/>
+	<e:Label id="levelTxt" size="18" textAlign="right" text="X阶" verticalAlign="bottom" x="84.67" y="66" textColor="0xf8b141" width="41.33" />
+	<e:Label id="openLv" size="20" textAlign="center" text="第X天或VIP5开启" verticalAlign="middle" x="58" y="18" width="56"  strokeColor="0x282828" bold="true" textColor="0xf8b141"/>
+	<e:Image id="redPoint" source="zjmhongdian" x="100"   visible="false"/>
+	<e:Image id="actTxt" x="44" y="24" source="kejihuo" visible="false"/>
+</e:Skin>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BlackMarketItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="560" height="108">
+	<w:Config id="1586bde13e1"/>
+	<e:Image left="0" right="0" top="0" bottom="0" source="scitembg" scale9Grid="26,25,10,4"/>
+	<ns1:BaseComponent id="itemIcon" x="21" verticalCenter="0" skinName="ItemIconSkin" className="ItemIcon"/>
+	<e:Button id="buyBtn" label="购 买" verticalCenter="0" name="buy" right="30" skinName="Btn14Skin" width="100" height="48"/>
+	<e:Image id="textBG" x="110" y="44" source="tongyongline2"/>
+	<e:Label id="itemName" text="商品名称" x="110" y="20" size="22" textColor="0x9f946d"/>
+	<e:Label id="money" text="123456" y="60" size="22" x="150" textColor="0xf8b141"/>
+	<e:Label id="CEKey" text="评分" x="266" y="60" size="20" textColor="0x1AD023"/>
+	<e:Label id="CEValue" text="123456" x="312" y="60" size="20" textColor="0x1AD023"/>
+	<e:Label id="level" text="（商品用途）" y="20" size="22" x="230" textColor="0xd1c28f"/>
+	<e:Image id="moneyIcon" x="112" y="59" source="szyuanbao"/>
+	<e:Image id="arrowIcon" x="250" y="64" source="tongyongup"/>
+	<e:Label id="num" text="50" x="20" y="68" size="20" width="70" textAlign="right"/>
+	<e:Image id="discountIcon" x="21" y="21" scaleX=".8" scaleY=".8" source="" visible="false"/>
+	<e:Image id="discount" x="25" y="18" source="shop_json.shangzk5"/>
+	<e:Image id="wuzhe" source="tongyong2_json.tuijian2" x="490" y="12" touchEnabled="false" visible="false"/> 
+</e:Skin>

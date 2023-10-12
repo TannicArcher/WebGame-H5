@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ZhanlingAttrSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" height="930">
+	<w:Config id="1586b1359f6" />
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8" />
+	<e:Group id="anigroup" width="350" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" scale9Grid="128,2,15,41" width="300" />
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-30" textColor="0x7E6437" />
+		<e:Image id="bg"   left="0" right="0"
+		         top="0" bottom="-1"  source="tongyongtip3" scale9Grid="10,9,9,10"/>
+		<e:Image id="bg0"   left="0" right="0" top="0" bottom="-1" source="tongyongtip2"
+		         scale9Grid="19,18,2,6" />
+		<e:Image id="job" touchEnabled="false" source="op_1" y="16" horizontalCenter="0" />
+		<e:Image  source="zjmqipao" scale9Grid="6,9,9,8" alpha="0.5" top="78" left="40" right="40" bottom="30"/>
+
+		<e:Button id="leftBtn" label="按钮" skinName="Btn0Skin" icon="jiantouxuan" x="-70"  verticalCenter="0" scaleX="1.2" scaleY="1.2"/>
+		<e:Button id="rightBtn" label="按钮" skinName="Btn0Skin" icon="jiantouxuan" right="-70"  scaleX="-1.2" verticalCenter="0" scaleY="1.2"/>
+
+		<e:Group id="attrGroup" left="61" top="98" bottom="50">
+			<e:Label id="attr" text="999999\n999999\n999999\n999999\n999999\n999999" size="18" lineSpacing="10" touchEnabled="false" textAlign="left" y="0" width="123"  textColor="0xf8b141" x="103"/>
+			<e:Label id="attrName" text="生       命 \n攻       击 \n物       防 \n魔       防 \n魔       防 \n魔       防 " size="18" lineSpacing="10" touchEnabled="false" textAlign="left" y="0" width="123" x="25" textColor="0x9F946D"/>
+
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WJBattleMiniMapSkin" width="200" height="200" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="flag1" source="wjBattle_json.wj_green_flag_icon" x="45" y="35"/>
+	<e:Image id="flag3" source="wjBattle_json.wj_red_flag_iccon" x="134" y="123"/>
+	<e:Image id="flag2" source="wjBattle_json.wj_gray_flag_icon" x="121.5" y="48"/>
+</e:Skin>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="NYChangeItemSkin" width="540" height="130" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="scitembg" left="0" right="0" top="0" bottom="0" x="0" y="0"   scale9Grid="65,27,1,2"/>
+		<e:Group id="slimit" y="4" width="230" visible="false">
+			<e:Image source="bantoutiaoboss" left="0" right="0" top="0" bottom="0"/>
+			<e:Label id="limitchange0" text="今日全服可兑换次数：100" size="18" textColor="0xD1C28F" x="6" verticalCenter="0"/>
+		</e:Group>
+		<e:List id="reward" itemRendererSkinName="ItemSkin" x="30" verticalCenter="0">
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:List>
+		<e:Group x="249" verticalCenter="0">
+			<e:Label text="消耗:" size="20" textColor="0xFF9900" y="2" x="0"/>
+			<e:Image width="32" height="32" x="90" y="0" source="204030_png"/>
+			<e:Label id="consnum" text="99999" size="20" y="2" x="116" textColor="0xD1C28F"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="limitchange1" text="可兑换：10/10" y="90" size="18" textColor="0x00ff00" horizontalCenter="186"/>
+		<e:Button id="get" label="兑换" right="30" y="41" skinName="Btn14Skin" width="110"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" y="30" right="21" visible="false"/>
+	</e:Group>		
+</e:Skin>

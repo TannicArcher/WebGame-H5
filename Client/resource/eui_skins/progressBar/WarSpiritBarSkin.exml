@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WarSpiritBarSkin" width="281" height="11" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="thumb" source="WarSpirit_json.spirit_002" width="100%" scale9Grid="6,3,7,4"/>
+</e:Skin>

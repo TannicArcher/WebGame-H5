@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SelectServerSkin" width="480" height="800" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="role_10" x="9" y="40" scale9Grid="158,50,47,21" width="461" height="719"/>
+	<e:Image source="selesrv_8" x="21" y="86" scale9Grid="54,30,330,8" height="165"/>
+	<e:Image source="selesrv_8" scale9Grid="54,30,330,8" y="268" height="448" x="22"/>
+	<e:Image source="selesrv_1" x="195" y="44"/>
+	<e:Image source="selesrv_5" x="190" y="271"/>
+	<e:Image source="selesrv_6" x="190" y="94"/>
+	<e:Image source="selesrv_7" x="451" y="304" scale9Grid="1,6,1,5" height="236"/>
+	<e:Image source="selesrv_3" x="449" y="331" scale9Grid="2,5,3,6" height="90"/>
+	<e:Button label="按钮" x="33" y="128" skinName="Btn2Skin"/>
+	<e:Button skinName="Btn2Skin" y="128" label="按钮" x="247"/>
+	<e:Button skinName="Btn2Skin" y="302" label="按钮" x="33"/>
+	<e:Button skinName="Btn2Skin" y="360" label="按钮" x="247"/>
+	<e:Button skinName="Btn2Skin" y="302" label="按钮" x="247"/>
+	<e:Button skinName="Btn2Skin" y="360" label="按钮" x="33"/>
+	<e:Image source="selesrv_2" x="189" y="304"/>
+	<e:Button label="按钮" x="185" y="190" skinName="Btn1Skin"/>
+</e:Skin>

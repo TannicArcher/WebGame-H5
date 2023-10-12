@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="XinShenQiSkin" width="580" height="775" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="normal,open">
+	<e:Image id="shenqibg" width="570" source="tongyongmianbanbg" top="44" bottom="0"
+	         horizontalCenter="0"  scale9Grid="19,14,14,15"/>
+	<e:Image id="circle" source="longhunbg_png" y="142" width="490" height="463" horizontalCenter="0"/>
+	<e:Image id="rock" y="483" width="228" height="150" source="longhunbg2_png" scaleX="1.4" scaleY="1.4" horizontalCenter="0"/>
+	         horizontalCenter="0" top="44" bottom="0" />
+	<e:Group id="dinghong0" width="556" height="96" bottom="6" horizontalCenter="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" />
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" />
+	</e:Group>
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" width="580" currentState="nohead"  
+	             horizontalCenter="0" top="0" />
+	<e:Image id="title" source="lilian_json.biaoti_shenqi_png" y="5" horizontalCenter="-155"/>
+	<!--<e:Group y="60" horizontalCenter="0.5" locked="true">
+	<e:Image source="zhandoulibg" y="10" x="2" />
+	<e:Image x="0" y="0" source="zjmzhandouli" />
+</e:Group>
+-->
+<e:Group horizontalCenter="0" top="0" bottom="0">
+
+
+
+	<ns1:BaseComponent id="powerPanel" y="62" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0" />
+	<e:Group id="groupMaterial" width="470" height="470" y="106" horizontalCenter="0">
+		<e:Image id="imgArtfact" source="sq_10_png" x="0" y="0" />
+	</e:Group>
+	<e:Image y="120" source="bantoutiaobg2"  height="41"  rotation="89.44"
+	         scale9Grid="11,1,70,19"  width="166" x="101"  visible="false"/>
+	<e:Label id="labelName" text="祈祷之刃" y="123" size="28" bold="true" textColor="0xf8b141"  width="32"
+	          height="159" x="65" textAlign="center" verticalAlign="middle"  visible="false"/>
+	<e:Image id="imgName" y="124"  rotation="359.63"  x="55"  source="sqname_01_png"/>
+	<e:Image id="imgLeft" x="6" y="330" source="jiantouxuan"  width="48" height="55"/>
+	<e:Image id="imgRight" y="330" right="6" source="jiantouxuan" scaleX="-1"  width="48" height="55"/>
+	<e:Group id="attribute" width="434" height="95" horizontalCenter="0"
+	         verticalCenter="230">
+		<e:Image   top="0" bottom="0"
+		         source="shuxingbg" touchEnabled="false"  left="0" right="0" scale9Grid="50,5,65,34"/>
+
+		<e:Image id="attrTItleBg" source="shuxingbg4" width="338" horizontalCenter="0"
+		         height="56" touchEnabled="false" />
+		<e:Image id="imgFunc"  horizontalCenter="0" 
+		         touchEnabled="false"  source="shenqides_01_png" y="16"/>
+		<e:Label id="attrTitle" text="获得合击技能" size="30" horizontalCenter="-0.5" top="10" bottom="45" textColor="0xfcbd50"
+		          width="347"  verticalAlign="middle" textAlign="center"  visible="false"/>
+		<e:Label id="labelAttr" text="轻松秒杀BOSS 角色越多伤害越高" size="20"
+		         horizontalCenter="0" bottom="18" textColor="0xf8b141"
+		         touchEnabled="false" />
+		<e:Label id="turnicon" text="查看合击" size="20" width="80"   textAlign="center"
+		         verticalAlign="middle" height="20" textColor="0x40df38" y="21.5" x="344"  visible="false"/>
+		<e:Image id="imgOpen" source="weijihuo2" horizontalCenter="178" verticalCenter="-26" touchEnabled="false"  rotation="20" scaleX="1.2" scaleY="1.2"/>
+	</e:Group>
+	<e:Group id="part" width="557" height="100" visible.open="false" bottom="0"
+	         horizontalCenter="0">
+		<ns1:BaseComponent id="pieceCom" width="560" height="80" horizontalCenter="0" bottom="10" skinName="shenqiItemWin" className="ShenqiSelectItemWin" />
+
+		<e:List id="piece" width="650" height="102" y="7" itemRendererSkinName="shenqiItemskin" scaleX="0.8" scaleY="0.8"
+		          horizontalCenter="0.5" visible="false">
+			<e:layout>
+				<e:TileLayout requestedRowCount="2" requestedColumnCount="4" horizontalGap="6" verticalGap="5" />
+			</e:layout>
+		</e:List>
+	</e:Group>
+	<e:Group id="groupEff" y="421" touchChildren="false" touchEnabled="false" horizontalCenter="0"  scaleX="1.25" scaleY="1.25"/>
+	<!--<e:Button id="btnOpen" label="激活" skinName="Btn1Skin" visible.normal="false" y="705" horizontalCenter="0"
+	          visible="false" />-->
+	<e:Group id="actGroup"  width="130"  height="50" horizontalCenter="0" touchEnabled="false" bottom="30">
+		<e:Button id="btnOpen" label="激活" skinName="Btn1Skin" visible.normal="false"  width="130" height="50"/>
+	</e:Group>
+	<e:Button id="detail" label="Button" x="448" y="66" skinName="Btn0Skin" icon="tongyongxiangxi" />
+	<e:Group id="parttips"  height="290"  width="340" horizontalCenter="-1.5"
+	         verticalCenter="0.5" visible="false">
+		<e:Rect id="parttipsClose" fillAlpha="0.6" width="580" height="930" x="0" y="0" anchorOffsetX="120"
+		        anchorOffsetY="250" />
+		<e:Image id="tipsbg" touchEnabled="true" source="tongyongtip1" scale9Grid="8,6,9,13" 
+		          left="2" right="2" top="2" bottom="2" />
+		<e:Image id="icon" touchEnabled="true"   source="180001_png" x="16" y="6" width="44"
+		         height="44" />
+		<e:List id="list" width="240" height="100" y="145" itemRendererSkinName="shenQiAttrDescSkin" horizontalCenter="-27">
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:List>
+		<e:Image id="tipsnamebg" scale9Grid="3,6,22,42" height="71" source="quali3"  
+		         top="2" left="2" right="2" />
+		<e:Image id="tipsdepartline" source="tongyongline" left="0" right="0" bottom="36" />
+		<e:Label text="碎片属性" x="23" y="115" size="20" textColor="0x7e6437" />
+		<e:Label id="getway" text="通关1.落霞村获得" size="20" textColor="0x7E6437" horizontalCenter="0"  left="45"
+		         right="45" bottom="9" verticalAlign="middle" textAlign="center" bold="true" />
+		<e:Label id="partname" text="神器碎片一" x="61" y="18" size="26" verticalAlign="middle" textAlign="center"
+		         textColor="0xbd600d" bold="true" />
+		<e:Image id="tipscorner" touchEnabled="true"   left="2" right="2" top="2" bottom="2"
+		         source="tongyongtip2" scale9Grid="18,17,4,7" />
+		<e:Image left="2" right="2" top="53" bottom="189"  source="bantoutiaobg" scale9Grid="29,5,180,35" />
+		<ns1:BaseComponent id="powerPanel0" skinName="PowerPanelSkin" className="PowerPanel" left="-10" verticalCenter="-68" />
+	</e:Group>
+</e:Group>
+	<e:Image id="guide0" horizontalCenter="-124" width="100" height="40" bottom="46"/>
+	<e:Image id="guide1" horizontalCenter="118" width="100" height="40" bottom="46"/>
+</e:Skin>

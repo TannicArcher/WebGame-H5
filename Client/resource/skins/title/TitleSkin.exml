@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TitleSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586be3c5b0"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" scale9Grid="15,12,2,3" width="580" horizontalCenter="0"/>
+	<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30" width="570" horizontalCenter="0" top="44" bottom="120"/>
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin"  className="RoleSelectPanel" horizontalCenter="0" currentState="yhead"/>
+	<e:Button id="closeBtn0" label="按钮" x="433" y="54" skinName="Btn0Skin" visible="false"/>
+	<e:Button id="closeBtn" label="按钮" x="411" y="625" skinName="Btn0Skin" visible="false"/>
+	<e:Scroller width="550" horizontalCenter="0" height="670" y="130">
+		<e:DataGroup id="list" itemRendererSkinName="TitleItemSkin" currentState="disabled" useVirtualLayout="false">
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+		</e:DataGroup>
+	</e:Scroller>
+	<e:Image y="5" horizontalCenter="-155" source="biaoti_chenghao"/>
+</e:Skin>

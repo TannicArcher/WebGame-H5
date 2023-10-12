@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GwResetSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  height="930">
+	<e:Rect id="bgclose" left="0" top="0" bottom="0" right="0" fillAlpha="0.7"/>
+	<e:Group width="400" height="275" horizontalCenter="0" verticalCenter="-83.5">
+		<e:Image left="0" right="0" top="0" bottom="0" source="tongyongkuang3bg" scale9Grid="13,5,29,13"/>
+		<e:Image source="tongyongkuang3tou" y="0" width="400" x="0"/>
+		<e:Group x="14" y="73">
+			<e:Label text="是否消耗元宝重置 " textAlign="center" size="20" verticalAlign="middle" anchorOffsetY="0" y="7" textColor="0xd1c28f" x="0"/>
+			<e:Label id="gwName" text="无极逍遥扇" x="81" y="0" size="24" textColor="0xe5b613" bold="true"/>
+			<e:Label text=" 的技能点" textAlign="center" size="20" verticalAlign="middle" anchorOffsetY="0" y="7" textColor="0xD1C28F" x="36"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<ns1:BaseComponent id="price" skinName="PriceIconSkin" className="PriceIcon" horizontalCenter="-0.5" bottom="71"/>
+
+
+
+
+
+
+
+
+
+		<e:Button id="resetBtn" skinName="Btn1Skin" label="重  置" bottom="23" horizontalCenter="0" width="130" height="50"/>
+
+		<e:Label id="title" text="技能点重置" y="12" size="24" bold="true" horizontalCenter="0" textColor="0xBD600D"/>
+		<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" y="279" horizontalCenter="0" x="50" scaleX="1" scaleY="1"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="284" horizontalCenter="0" x="98" scaleX="1" scaleY="1"/>
+		<e:Label id="resetDesc" text="重置后可返还14技能点" y="115" size="18" textColor="0x00ff00" horizontalCenter="0.5"/>
+	</e:Group>
+</e:Skin>

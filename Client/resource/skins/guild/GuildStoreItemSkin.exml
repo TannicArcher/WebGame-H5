@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuildStoreItemSkin" width="352" height="30" xmlns:e="http://ns.egret.com/eui">
+    <e:Label id="rank" text="XXX 获得了 XXXXXXXX" x="12" y="3" height="20" size="16"  width="336" fontFamily="黑体"/>
+    <e:Image source="fb_json.fuben_17" x="19" y="23" width="310" />
+</e:Skin>

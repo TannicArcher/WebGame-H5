@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SmeltMainSkin" height="600" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" width="480">
+	<w:Config id="1586b3b34b9"/>
+	<e:List id="itemList" height="400" itemRendererSkinName="ItemSkin"  width="400" horizontalCenter="0" verticalCenter="-60">
+		<e:layout>
+			<e:TileLayout requestedColumnCount="3"  verticalGap="47" requestedRowCount="3" paddingLeft="0" paddingTop="0" horizontalGap="65"/>
+		</e:layout>
+	</e:List>
+	<e:Label id="smeltLable" text="贵族增加30%金币" size="18" textColor="0x20CB30"   horizontalCenter="128.5" verticalCenter="197" visible="false"/>
+	<e:Label id="forevet" text="贵族特权:获得金币增加30%" textColor="0x20CB30" size="20" horizontalCenter="0" verticalCenter="135" visible="false"/>
+	
+	<e:Group id="btnGroup" horizontalCenter="0" bottom="20">
+		<e:Button id="smeltBtn" skinName="Btn1Skin" label="熔  炼" height="60" x="0" y="0" width="156"/>
+	</e:Group>
+	<e:Button id="backbtn" label="Button" skinName="Btn0Skin" icon="fanhui" right="10" bottom="10"/>
+
+</e:Skin>

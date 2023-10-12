@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MijiWithNameItemSkin" width="90" height="110" currentState="up" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<ns1:BaseComponent id="miji" horizontalCenter="0" top="0" skinName="MijiItemSkin" className="MijiItem"/>
+	<e:Image id="icon" source="mijiicon" anchorOffsetX="0" anchorOffsetY="0" height="70" y="5" width="70" x="10" visible="false"/>
+	<e:Image id="nameBG" source="bantoutiaobg" scale9Grid="0,5,238,35" height="24" left="0" right="0" bottom="5"/>
+	<e:Label id="nameTF" text="中级幸运" y="84.5" size="18" touchEnabled="false" textColor="0xF4BC75" textAlign="center" width="100" horizontalCenter="0"/>
+
+
+
+
+
+
+</e:Skin>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="YuPei2Skin" width="250" height="270" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image horizontalCenter="0" verticalCenter="0" source="yupei2"/>
+	<e:Image source="yupeiline0" x="82" y="43" width="85" rotation="360" scale9Grid="2,1,1,1"/>
+	<e:Image source="yupeiline0" x="164" y="48" width="47" rotation="139" scale9Grid="2,1,1,1"/>
+	<e:Image source="yupeiline0" x="125" y="80" width="80" rotation="155" scale9Grid="2,1,1,1"/>
+	<e:Image source="yupeiline0" x="51.75" y="112" width="102" rotation="93" scale9Grid="2,1,1,1"/>
+	<e:Image source="yupeiline0" x="46" y="209" width="52" rotation="5" scale9Grid="2,1,1,1"/>
+	<e:Image source="yupeiline0" x="99.5" y="214" width="51" scale9Grid="2,1,1,1"/>
+	<e:Image source="yupeiline0" x="150.75" y="215" width="57" rotation="352" scale9Grid="2,1,1,1"/>
+	<e:Image source="yupeiline0" x="204.75" y="209" width="98" rotation="266" scale9Grid="2,1,1,1"/>
+	<e:Image id="line0" source="yupeiline1" x="82" y="39" rotation="0.13"  width="86"  height="10"/>
+	<e:Image id="line1" source="yupeiline1" x="167.39" y="50" rotation="138"  width="48"  height="10"/>
+	<e:Image id="line2" source="yupeiline1" x="127.06" y="83" rotation="155"  width="81"  height="10"/>
+	<e:Image id="line3" source="yupeiline1" x="55.5" y="112" rotation="93"  width="97"  height="10"/>
+	<e:Image id="line4" source="yupeiline1" x="46.14" y="205" rotation="6"  width="53"  height="10"/>
+	<e:Image id="line5" source="yupeiline1" x="100.14" y="211"  width="49"  height="10"/>
+	<e:Image id="line6" source="yupeiline1" x="151" y="211" rotation="352"  width="56"  height="10"/>
+	<e:Image id="line7" source="yupeiline1" x="200.81" y="207" rotation="266"  width="93"  height="10"/>
+	<e:Image source="yupeikuang" x="71" y="34" width="20" height="20"/>
+	<e:Image source="yupeikuang" x="158" y="34" width="20" height="20"/>
+	<e:Image source="yupeikuang" x="115" y="68" width="20" height="20"/>
+	<e:Image source="yupeikuang" x="40" y="101" width="20" height="20"/>
+	<e:Image source="yupeikuang" x="33" y="199" width="20" height="20"/>
+	<e:Image source="yupeikuang" x="90" y="206" width="20" height="20"/>
+	<e:Image source="yupeikuang" x="140" y="206" width="20" height="20"/>
+	<e:Image source="yupeikuang" x="196" y="199" width="20" height="20"/>
+	<e:Image source="yupeikuang" x="189" y="102" width="20" height="20"/>
+	<e:Group id="processEff0" x="81" y="43"/>
+	<e:Group id="processEff1" x="168" y="43"/>
+	<e:Group id="processEff2" x="125" y="77"/>
+	<e:Group id="processEff3" x="50" y="110"/>
+	<e:Group id="processEff4" x="43" y="208"/>
+	<e:Group id="processEff5" x="100" y="215"/>
+	<e:Group id="processEff6" x="150" y="215"/>
+	<e:Group id="processEff7" x="206" y="208"/>
+	<e:Group id="processEff8" x="199" y="111"/>
+</e:Skin>

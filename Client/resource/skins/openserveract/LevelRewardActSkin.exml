@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LevelRewardActSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="date" y="8" text="6天20小时30分" fontFamily="黑体" size="14" x="90" lineSpacing="10" textColor="0x23CA23"/>
+	<e:Label y="27" text="活动说明：" fontFamily="黑体" size="14" x="23" lineSpacing="10" textColor="0xFFC809"/>
+	<e:Label id="desc" y="27" text="活动期间，满足条件即可领取奖励" fontFamily="黑体" size="14" x="90" lineSpacing="10" textColor="0xdfd1b5" width="300" height="53"/>
+	<e:Label y="8" text="剩余时间：" fontFamily="黑体" size="14" x="23" lineSpacing="10" textColor="0xFFC809"/>
+	<e:Label text="目标等级" x="33" y="92" textColor="0xC69A6B" fontFamily="黑体" size="18"/>
+	<e:Label text="奖励" y="92" textColor="0xC69A6B" fontFamily="黑体" size="18" x="242"/>
+	<e:Scroller width="431" height="398" x="-1" y="122">
+			<e:List id="list" x="19" y="60" itemRendererSkinName="LevelRewardActItemSkin" height="398">
+			</e:List>
+	</e:Scroller>
+</e:Skin>

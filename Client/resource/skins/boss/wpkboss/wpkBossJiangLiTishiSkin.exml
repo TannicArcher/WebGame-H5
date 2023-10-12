@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="wpkBossJiangLiTishiSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15ca5ef6a05"/>
+	<e:Rect id="closeBtn" left="0" right="0" top="0" bottom="0" fillAlpha="0"/>
+	<e:Group verticalCenter="0" horizontalCenter="0" width="400" height="350">
+		<e:Image   source="tongyongtip1" left="0" right="0" top="0" bottom="0" scale9Grid="9,7,10,8"/>
+		<e:Image source="tongyongline" x="72.19" y="265.05999999999995" width="300" visible="false"/>
+		<e:Image source="tongyongline" x="62.19" y="157.35999999999993" width="300" visible="false"/>
+		<e:Group width="400" y="0" height="41" horizontalCenter="0">
+			<e:Image source="teshuwenzibg" left="0" right="0"/>
+			<e:Label id="nameTxt" text="奖励说明" size="24" textColor="0xd1c28f" y="8" horizontalCenter="0"/>
+			<e:Label id="nameTxt0" text="护盾奖励" size="24" bold="true" textColor="0xD1C28F" horizontalCenter="0" verticalCenter="0" x="127" y="19" visible="false"/>
+		</e:Group>
+		<e:Image id="giveUp" source="chatclose" y="0" right="0"/>
+
+
+		<e:Group x="30" y="270">
+			<e:Label text="1、伤害积分前三名可获得极品宝箱。" size="18" height="20" x="0.009999999999990905" y="0" textColor="0x9f946d"/>
+			<e:Label text="2、尾刀可获得极品宝箱和屠龙勇士称号。" size="18" textColor="0x9F946D" height="20" x="0" y="24"/>
+			<e:Label text="3、所有参与人都有机会获得极品神装！" size="18" textColor="0x9F946D" height="20" x="0.009999999999990905" y="47.66999999999996"/>
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Group width="120" height="100" y="54" x="30">
+			<e:Image   left="0" right="0" top="0" bottom="0" x="-5" y="-70"   source="bantoutiaobg2" scale9Grid="30,2,32,17"/>
+
+			<e:Label text="前三奖励" size="20" textColor="0xf8b141" width="20" verticalCenter="0" x="10" bold="true"/>
+			<ns1:BaseComponent id="belongItem" x="30" skinName="ItemSkin" className="ItemBase" y="12"/>
+
+
+
+
+
+
+
+		</e:Group>
+		<e:Group width="120" height="100" y="160" x="30">
+			<e:Image   left="0" right="0" top="0" bottom="0" x="-5" y="-70"   source="bantoutiaobg2" scale9Grid="30,2,32,17"/>
+			<e:Label text="参与奖励" size="20" x="10" textColor="0xF8B141" width="20" verticalCenter="0"/>
+			<ns1:BaseComponent id="joinItem" x="30" skinName="ItemSkin" className="ItemBase" y="12"/>
+
+
+
+
+
+
+		</e:Group>
+		<e:Group width="212" height="100" y="54" x="170">
+			<e:Image left="0" right="0" top="0" bottom="0" x="-5" y="-70" source="bantoutiaobg2" scale9Grid="30,2,32,17"/>
+			<e:Label text="尾刀奖励" size="20" x="10" textColor="0xF8B141" width="20" verticalCenter="0"/>
+			<ns1:BaseComponent id="endItem0" x="30" skinName="ItemSkin" className="ItemBase" y="12"/>
+			<ns1:BaseComponent id="endItem1" x="110" skinName="ItemSkin" className="ItemBase" y="12"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

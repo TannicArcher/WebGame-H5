@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildStoreWinSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="560">
+	<w:Config id="1574170a6d8"/>
+	<e:Image source="guildshop_bg1_png" horizontalCenter="2" top="8" width="561"/>
+	<e:Group x="143" y="5">
+		<e:Image source="tielian" scale9Grid="0,21,22,22"  height="22.5" x="58" y="0"/>
+		<e:Image source="tielian" scale9Grid="0,21,22,22"  height="22.5" x="188" y="0"/>
+		<e:Image source="forge_08" height="67" width="269" scale9Grid="123,13,25,8"  alpha="0.6" x="0" y="31"/>
+	</e:Group>
+	<e:Image width="560"  horizontalCenter="3" height="84" source="tongyongtip1" scale9Grid="9,7,6,9" top="640"/>
+	<e:Label id="record" text="玩家名称六字  获得了 麻痹碎片" size="18" width="310"  horizontalCenter="0" textColor="0x7e6437" top="645"/>
+	<e:Label id="record1" text="玩家名称六字  获得了 麻痹碎片" size="18" width="310"  horizontalCenter="0" textColor="0x7e6437" top="673"/>
+	<e:Label id="record2" text="玩家名称六字  获得了 麻痹碎片" size="18" width="310"  horizontalCenter="0" textColor="0x7e6437" top="699"/>
+	<e:Label id="guildMore" text="更多记录" size="18" horizontalCenter="214" textColor="0xd1c28f" top="702"/>
+	<ns1:BaseComponent id="guildshopitem_0"   className="ItemBase" skinName="ItemSkin" horizontalCenter="-120" top="420"/>
+	<ns1:BaseComponent id="guildshopitem_1" className="ItemBase" skinName="ItemSkin" horizontalCenter="-168" top="299"/>
+	<ns1:BaseComponent id="guildshopitem_2" className="ItemBase" skinName="ItemSkin" horizontalCenter="-120" top="189"/>
+	<ns1:BaseComponent id="guildshopitem_3" className="ItemBase" skinName="ItemSkin" horizontalCenter="0" top="136"/>
+	<ns1:BaseComponent id="guildshopitem_4" className="ItemBase" skinName="ItemSkin" horizontalCenter="124" top="191"/>
+	<ns1:BaseComponent id="guildshopitem_5" className="ItemBase" skinName="ItemSkin" horizontalCenter="168" top="300"/>
+	<ns1:BaseComponent id="guildshopitem_6" className="ItemBase" skinName="ItemSkin" horizontalCenter="124" top="419"/>
+	<ns1:BaseComponent id="guildshopitem_7" className="ItemBase" skinName="ItemSkin" horizontalCenter="0" top="464"/>
+
+	<e:Group id="guildshopclose" width="200" height="200" horizontalCenter="0" top="273" visible="false">
+		<e:Image source="forge_08" height="70" width="230" scale9Grid="123,13,25,8" alpha="0.6" horizontalCenter="0" verticalCenter="34"/>
+		<e:Label text="宝箱未开启" width="121" height="18" size="16" textColor="0xff0000" textAlign="center" verticalCenter="19" horizontalCenter="0"/>
+		<e:Label text="商店提升至LV1开启" width="143" height="18" size="16" textColor="0xff0000" verticalCenter="41" horizontalCenter="0"/>
+		<e:Label id="guildshopkaiqi" text="前往提升" width="77" height="18" size="16" textColor="0x00ff00" textAlign="center" verticalCenter="-28" horizontalCenter="0"/>
+	</e:Group>
+
+	<e:Group id="guildshopopen" width="200" height="224" horizontalCenter="1"  top="223">
+		<e:Button id="useBtn" label="按钮" y="-7.5" icon="guildshoparrow" skinName="Btn0Skin" horizontalCenter="1"/>
+		<e:Image source="forge_08" height="77" width="230" scale9Grid="123,13,25,8"  alpha="0.6" horizontalCenter="0" verticalCenter="70.5"/>
+		<e:Label id="guildshoplabel" text=" 9999" size="20" horizontalCenter="53" verticalCenter="46" textColor="0x9f946d"/>
+		<e:Label id="guildshopxiaolabel" text=" 9999" size="20" horizontalCenter="54.5" verticalCenter="76" textColor="0x9f946d"/>
+		<e:Image horizontalCenter="20" verticalCenter="48" source="szbanggong"/>
+		<e:Image horizontalCenter="20" verticalCenter="77" source="szbanggong"/>
+		<e:Image verticalCenter="14" horizontalCenter="-0.5" source="guildshop_title2"/>
+		<e:Label text="可用贡献：" x="18" y="148" textColor="0x9f946d" size="20"/>
+		<e:Label text="消耗贡献：" x="18" y="178" textColor="0x9F946D" size="20"/>
+	</e:Group>
+	<e:Label id="guildshopshengyulabel" text="本日剩余次数：1/10" size="18" width="428" textAlign="center" horizontalCenter="0" top="45" textColor="0x07f71b"/>
+	<e:Label text="（4级行会每日次数+10）" size="18" horizontalCenter="0" textColor="0xd1c28f" top="67"/>
+</e:Skin>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ItemUseTipsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*" states="2,10,guildgifts,rename" >
+	<w:Config id="1586b37c599" />
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8" />
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="0" width="400" width.guildgifts="460" height.guildgifts="510">
+		<e:Image id="BG" left="0" right="0" top="0" bottom="0"  source="tongyongtip3" scale9Grid="11,8,9,12"/>
+		<e:Image left="0" right="0" top="0" source="tongyongtip2" scale9Grid="18,18,2,4" bottom="0" />
+		<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" x="33" y="30" />
+		<e:Label id="nameLabel" text="羽毛" size="24" x="150" y="28" textColor="0x90f490" bold="true" />
+		<e:Label text="数量：" size="20" x="150" y="62"  textColor="0x7e6437"/>
+
+		<e:Label id="lv" text="9" size="20" x="211" y="89" bold="true"  textColor="0xd1c28f"/>
+		<e:Label text="等级：" size="20" x="150" y="89"  textColor="0x7e6437"/>
+		<e:Label id="num" text="1级" size="20" x="210" y="62" bold="true"  textColor="0xd1c28f"/>
+		<e:Image scale9Grid="85,1,6,1" source="tongyongline" y="120" left="0" right="0" />
+
+
+		<e:Group horizontalCenter="0" touchEnabled="false" touchChildren="false" bottom="-40">
+			<e:Image source="bantoutiaobg" height="30" width="400" y="0" x="0" />
+			<e:Label text="点击空白区域关闭窗口" size="18" x="105" bold="true" textColor="0x7E6437" y="7" />
+		</e:Group>
+		<e:Group top="130" horizontalCenter="0" bottom="20">
+			<e:Group top="130" horizontalCenter="0">
+				<e:Group width="200" height="141" x="2" y="4"/>
+				<e:Label id="description" text="使用后获得1000万角色经验值" size="18" width="350" horizontalCenter="0" textColor="0x9f946d" verticalAlign="middle" width.guildgifts="430" horizontalCenter.guildgifts="0" x="-175" scaleX="1" scaleY="1" top="0"/>
+			</e:Group>
+			<e:Group id="add" width="380" height="60" horizontalCenter="0" visible.10="false" visible.guildgifts="false" includeIn="2,10,guildgifts" bottom="110" x="-190" y="0" scaleX="1" scaleY="1">
+			<e:Image id="sub2Btn" width="50" height="50" source="btn-" verticalCenter="0" horizontalCenter="-80" visible="false"/>
+			<e:Image id="add2Btn" width="50" height="50" y="46" source="btnadd" verticalCenter="0" horizontalCenter="80" visible="false"/>
+			<e:Button id="sub1Btn" label="" skinName="Btn0Skin" icon="btn-" verticalCenter="0" horizontalCenter="-80"/>
+			<e:Button id="add1Btn" label="" skinName="Btn0Skin" icon="btnadd" verticalCenter="0" horizontalCenter="80" x="10" y="10"/>
+			<e:Button id="maxBtn" label="最大" icon="btnmax" skinName="Btn0Skin" verticalCenter="0" right="10"/>
+			<e:Button id="minBtn" label="最小" icon="btnmax" x="60" skinName="Btn0Skin" rotation="180" verticalCenter="0"/>
+			<e:Image width="100" height="50" source="shuzibg" verticalCenter="0" horizontalCenter="0" scale9Grid="8,4,10,14"/>
+			<e:EditableText id="numLabel" text="1" textAlign="center" size="30" width="90" verticalCenter="0" horizontalCenter="0" textColor="0xd1c28f"/>
+			</e:Group>
+			<e:Group id="btnGroup" width="380" height="60" horizontalCenter="0" bottom="20" x="0" y="90" scaleX="1" scaleY="1">
+			<e:Button id="useBtn" skinName="Btn1Skin" label="使 用" horizontalCenter="0" width="156" height="60" horizontalCenter.10="90" width.10="150" x="100" verticalCenter="0" verticalCenter.10="0" label.guildgifts="领取"/>
+			<e:Label id="useLabel" text="加入行会即可开启" includeIn="guildgifts" textColor="0xf8b141" verticalCenter="0" horizontalCenter="0" visible="false"/>
+			<e:Button id="useBtn0" skinName="Btn1Skin" label="回收" horizontalCenter="-90" width="150" height="60" includeIn="10" x="209" verticalCenter="0"/>
+			</e:Group>
+			<e:layout>
+			<e:VerticalLayout gap="25" horizontalAlign="center"/>
+			</e:layout>
+		</e:Group>
+		<e:Group height="80" includeIn="guildgifts" horizontalCenter="0" width="435" top="288">
+			<e:Scroller includeIn="guildgifts" left="0" right="0" top="0" bottom="0" scrollPolicyV="off">
+				<e:List id="itemList" itemRendererSkinName="ItemSkin" horizontalCenter="-1" verticalCenter="0">
+					<e:layout>
+						<e:HorizontalLayout gap="-4"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+		</e:Group>
+	</e:Group>
+</e:Skin>

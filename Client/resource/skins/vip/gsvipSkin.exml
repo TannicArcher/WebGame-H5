@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="gsvipSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="930" width="580"   >
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.7"/>
+	<e:Group id="anigroup"  horizontalCenter="0" verticalCenter="0" width="488" height="688">
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" horizontalCenter="0" bottom="-40">
+			<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+			<e:Button id="closeBtn1" label="按钮" y="-17" skinName="Btn0Skin" right="-10" x="188" visible="false"/>
+		</e:Group>
+		<e:Image scale9Grid="18,14,12,20" source="tongyongkuang3bg"     top="0" bottom="0" left="0" right="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,271,47" y="0"   left="0" right="0"/>
+		<e:Image scale9Grid="66,0,271,47" source="biaoti_gs_png" horizontalCenter="0"/>
+		<e:Image   source="gsvipbg2_png" top="48" bottom="6" left="6" right="6"/>
+		<e:Image y="66" width="230" height="230" horizontalCenter="-98" source="gshead256_jpg"/>
+		<e:Image width="250" height="250" y="56" source="touxiangkuang3" scale9Grid="32,28,1,1" horizontalCenter="-98"/>
+		<e:Image x="218" y="52" source="gstou0"/>
+		<e:Image x="6" y="195" source="gstou1"/>
+		<e:Image source="gshead" x="60" y="38"/>
+		<e:Image source="gshead" x="6" y="-13" rotation="40" width="40" height="38"/>
+		<e:Image source="gshead" x="30" y="34" width="30" height="28" rotation="10"/>
+		<e:Image source="gshead" x="23" y="67" width="20" height="20" rotation="50"/>
+		<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="0" right="0"/>
+
+
+
+
+
+
+
+
+
+
+		<e:Group id="qq" y="66" x="287">
+			<e:Label text="超级会员专属客服" size="20" textColor="0xd1c28f"/>
+			<e:Image source="gsqq" y="26" x="2"/>
+			<e:Label id="qqtxt" text="??????" size="24" y="28" textColor="0xf8b141" x="46"/>
+
+		</e:Group>
+
+
+
+		<e:Button id="copy" label="复制QQ号" skinName="Btn15Skin" width="150" height="50" y="130" x="292" visible="false"/>
+		<e:Group id="nopay0" y="208" x="286">
+			<e:Label y="0" text="成为尊贵的超级会员" size="18" textColor="0xF8B141" x="0"/>
+			<e:Label y="22" text="获取美女客服QQ号" size="18" textColor="0xF8B141" x="4"/>
+			<e:Button id="pey" label="立刻充值" skinName="Btn15Skin" width="150" height="50" y="46" x="6"/>
+		</e:Group>
+
+
+		<e:Group y="316" width="476" x="6">
+			<e:Image y="0" scale9Grid="0,1,62,30" x="0" source="gsbiaoti0"/>
+			<e:Image y="0" scale9Grid="0,1,62,30" scaleX="-1" source="gsbiaoti0" right="0"/>
+			<e:Image y="4" source="gsbiaoti2" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group y="588" width="476" x="6">
+			<e:Image y="0" scale9Grid="0,1,62,30" x="0" source="gsbiaoti0"/>
+			<e:Image y="0" scale9Grid="0,1,62,30" scaleX="-1" source="gsbiaoti0" right="0"/>
+			<e:Image y="4" horizontalCenter="0" source="gsbiaoti3"/>
+		</e:Group>
+		<e:Group y="348" x="24">
+			<e:Group x="0">
+				<e:Image source="gsvip_json.gsbiaoti1"/>
+				<e:Label y="5" text="专属通道" size="20" textColor="0xf8b141" bold="true" x="33"/>
+				<e:Image x="4" y="2" source="vip_v1_png"/>
+			</e:Group>
+			<e:Label y="34" text="美女客服一对一贴身服务，意见建议直通策划。" size="18" x="30" textColor="0xd1c28f"/>
+			<e:Group x="0" y="60">
+				<e:Image source="gsvip_json.gsbiaoti1"/>
+				<e:Label y="5" text="专属优先" size="20" textColor="0xF8B141" bold="true" x="33"/>
+				<e:Image x="4" y="2" source="vip_v2_png"/>
+			</e:Group>
+			<e:Label y="94" text="游戏第一手最新资料，优先获取！" size="18" x="30" textColor="0xD1C28F"/>
+			<e:Group x="0" y="120">
+				<e:Image source="gsvip_json.gsbiaoti1"/>
+				<e:Label y="5" text="专属礼包" size="20" textColor="0xF8B141" bold="true" x="33"/>
+				<e:Image x="4" y="2" source="vip_v3_png"/>
+			</e:Group>
+			<e:Label y="154" text="成为超级会员，领取超级大礼包！" size="18" x="30" textColor="0xD1C28F"/>
+			<e:Group y="180">
+				<e:Image source="gsvip_json.gsbiaoti1"/>
+				<e:Label y="5" text="专属活动" size="20" textColor="0xF8B141" bold="true" x="33"/>
+				<e:Image x="4" y="2" source="vip_v4_png"/>
+			</e:Group>
+			<e:Label y="214" text="专属不定时活动和福利。" size="18" x="30" textColor="0xD1C28F"/>
+		</e:Group>
+		<e:Group id="pay0" y="626" horizontalCenter="0" visible="false">
+			<e:Label y="0" text="您已成为最尊贵的超级会员" size="22" textColor="0xF8B141" horizontalCenter="0"/>
+			<e:Label y="26" text="立即添加专属美女客服QQ，享受最贴心的服务。" size="18" textColor="0x2cc2f8" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="nopay1" y="626" x="26">
+
+			<e:Group>
+			<e:Label y="30" text="方法一：单日充值2000元。" size="18" x="0" textColor="0xD1C28F"/>
+
+			<e:Label y="150" text="方法二：不限时间累计充值5000元。" size="18" x="0" textColor="0xD1C28F"/>
+			<e:layout>
+				<e:VerticalLayout gap="10"/>
+			</e:layout>
+			</e:Group>
+			<e:Group x="310">
+				<e:Label id="cond0" y="30" text="（0/2000）" size="18" x="0" textColor="0xD1C28F"/>
+				<e:Label id="cond1" y="40" text="（4990/5000）" size="18" x="10" textColor="0xD1C28F"/>
+
+				<e:Label id="cond2" y="50" text="（4000/5000）" size="18" x="20" textColor="0xD1C28F" visible="false"/>
+				<e:layout>
+				<e:VerticalLayout gap="10"/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+
+
+
+	</e:Group>
+</e:Skin>

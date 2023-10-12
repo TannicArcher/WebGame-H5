@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RedBagBtnSkin" states="up,down,disabled" minHeight="25" minWidth="25" xmlns:e="http://ns.egret.com/eui" width="128" height="128">
+	<e:Image alpha.disabled="0.5" scaleX.down="0.9" scaleY.down="0.9" source="hongbaobtn_png" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="iconDisplay" verticalCenter="0" horizontalCenter="0" alpha.disabled="0.5" scaleX.down="0.9" scaleY.down="0.9"/>
+</e:Skin>

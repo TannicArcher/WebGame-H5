@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PlunderRecordItemSkin" width="480" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15a59527d66"/>
+	<e:Label id="time" text="2017-7-23   14:23" size="18" textColor="0x5186fd"   left="15" verticalCenter="-22"/>
+	<e:Label id="des" text="我掠夺了布拉格の帝王的黑铁矿" size="20" verticalAlign="middle" textColor="0xd1c28f"   verticalCenter="10" left="15"/>
+	<e:Label id="revenge" text="复仇" right="20" size="20" verticalCenter="0" textColor="0x00ff00"/>
+	<e:Image source="tongyongline" scale9Grid="105,0,10,3" left="0" right="0" bottom="3"/>
+</e:Skin>

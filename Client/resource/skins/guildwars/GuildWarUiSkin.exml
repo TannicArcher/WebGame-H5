@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildWarUiSkin" width="580" height="930" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<w:Config id="15c38734e37"/>
+	<e:Group id="flag" width="481" height="122" y="101"  horizontalCenter="0">
+		<e:Group id="hudun1" width="309" height="15" x="134" y="74"  >
+			<e:Rect left="13" right="13" top="0" bottom="10" fillColor="0x111010"/>
+			<e:Image source="zdbosshudunxuetiaobg" scale9Grid="18,0,7,16"  width="318" height="14" x="-10" />
+			<e:ProgressBar id="hudun" x="2" y="-1" width="293" value="100" skinName="bar6Skin"/>
+			<e:Label text="（护盾归0时打断采集）" y="12" size="16" stroke="1" horizontalCenter="0" strokeColor="0x191919" textColor="0xd1be9e"/>
+		</e:Group>
+		<e:Rect left="118" right="26" top="51" bottom="53" fillColor="0x111010"  />
+		<e:Rect width="82" height="82" x="20" ellipseWidth="82" ellipseHeight="82" fillColor="0x111010" verticalCenter="0"/>
+		<e:ProgressBar id="bloodBar" x="107" y="51" width="350" value="100" skinName="bar7Skin"  height="18"/>
+		<e:Image y="18" height="30" width="380" source="bantoutiaobg" x="75" scale9Grid="51,5,136,35"/>
+		<e:Image x="2" y="0" width="481" source="bosstouxiangk" scale9Grid="150,0,9,122"/>
+		<e:Image x="17" width="88" height="88" y="12" source="guildqizhi"/>
+		<e:Label id="timeDesc" y="25" size="18" text="玩家名称六字 正在采集中…" x="170" textColor="0xd1c28f"/>
+		<e:Label id="times" y="55" size="18" text="龙城皇旗" fontFamily="黑体" x="116" textColor="0xF15A25" visible="false"/>
+	</e:Group>
+	<e:Group y="0" height="100" width="200" horizontalCenter="-190">
+		<e:Image scaleY="-1" left="0" top="0" bottom="0" right="0"  source="bantoutiaobg2" scale9Grid="30,2,32,17"/>
+		<e:Label text="行会战况" y="7" size="16" textColor="0x7E6437" horizontalCenter="0" bold="true"/>
+		<e:Label text="1" y="33" size="16" textAlign="center" strokeColor="0x000000" horizontalCenter="-83" textColor="0xd1c28f" stroke="1" bold="true"/>
+		<e:Label text="2" y="56" size="16" textAlign="center" strokeColor="0x000000" textColor="0xD1C28F" horizontalCenter="-83" stroke="1" bold="true"/>
+		<e:Label text="3" y="79" size="16" textAlign="center" strokeColor="0x000000" textColor="0xD1C28F" horizontalCenter="-83" stroke="1" bold="true"/>
+		<e:Label id="rankPoint1" text="12345" y="33" size="16" width="54" textColor="0xf8b141" horizontalCenter="66"/>
+		<e:Label id="rankPoint2" text="12345" y="56" size="16" width="55" textColor="0xf8b141" horizontalCenter="66.5"/>
+		<e:Label id="rankPoint3" text="12345" y="79" size="16" width="54" textColor="0xf8b141" horizontalCenter="66"/>
+		<e:Label id="rankName1" text="这是行会名称" y="33" size="16" textAlign="center" strokeColor="000000" textColor="0x21ad1a" x="32"/>
+		<e:Label id="rankName2" text="这是行会名称" y="56" size="16" textAlign="center" strokeColor="000000" textColor="0x21ad1a" x="32"/>
+		<e:Label id="rankName3" text="这是行会名称" y="79" size="16" textAlign="center" strokeColor="000000" textColor="0x21ad1a" x="32"/>
+		<e:Button id="seeRank" label="" skinName="Btn4Skin" right="0" top="0" alpha="0.6" scaleX="0.7" scaleY="0.7"/>
+	</e:Group>
+	<e:Group width="200" height="100" y="0" horizontalCenter="190">
+		<e:Image source="bantoutiaobg2" scaleY="-1" left="0" top="0" bottom="0" right="0"  scale9Grid="30,2,32,17"/>
+		<e:Label id="guildPoint" text="12345" x="109" y="56" size="16" textColor="0x00FF00"/>
+		<e:Label id="ownPoint" text="12345" x="110" y="79" size="16" textColor="0x00FF00"/>
+		<e:Label id="comNum" text="60" x="109" y="33" size="16" textColor="0x00FF00"/>
+		<e:Label text="行会积分" x="37" y="56" size="16" textColor="0x9f946d"/>
+		<e:Label text="我的积分" x="38" y="79" size="16" textColor="0x9f946d"/>
+		<e:Label text="本行战况" y="7" size="16" textColor="0x7e6437" horizontalCenter="0" bold="true"/>
+		<e:Label text="同屏" y="33" size="16" textColor="0x7E6437" x="142" visible="false"/>
+		<e:Label id="guid2" text="玩法说明" x="32" y="31" size="16" textColor="0x02FF00" visible="false"/>
+		<e:Label id="scene" text="龙城城外" y="33" size="16" textAlign="center" right="99" textColor="0x9f946d"/>
+		<e:Button id="seeMyGuild" label="本帮战况" skinName="Btn4Skin" right="0" top="0" alpha="0.6" scaleX="0.7" scaleY="0.7"/>
+	</e:Group>
+	<e:Group y="2" horizontalCenter="0" height="100">
+		<e:Image y="0"  scale9Grid="13,6,82,39" horizontalCenter="0" source="gb_bossdiban"/>
+		<e:Image source="shuxingbg4" y="55" horizontalCenter="0"/>
+		<e:Label id="lastTime" text="15:00" y="72" size="20" textColor="0xFFB82A" horizontalCenter="0" bold="true" stroke="1" strokeColor="0x212121"/>
+		<e:Label id="guildName" text="这里是行会名" y="35" size="18" textColor="0xf8b141" horizontalCenter="0" bold="true"/>
+		<e:Label text="皇宫归属" y="16" size="18" textColor="0x9f946d" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group width="200" height="70" horizontalCenter="0" bottom="160">
+		<e:Image source="bantoutiaobg2"     left="0" right="0" top="4" bottom="0" scale9Grid="31,2,30,17" alpha="0.5"/>
+		<e:Group id="flagGroup" x="30" verticalCenter="0">
+			<e:Button id="palaceFlag" label="">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="hhzcaiqi1" source.down="hhzcaiqi2" source.disabled="hhzcaiqi2"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Button id="Nextchengnei" label="" verticalCenter="0" horizontalCenter="0" skinName="Btn0Skin" icon="chengneip1">
+		</e:Button>
+		<e:Button id="Nextchengnei0" label="" verticalCenter="0" horizontalCenter="-38" skinName="Btn0Skin" icon="chengneip1"/>
+		<e:Button id="Nextdianqian" label="" verticalCenter="0" right="30" skinName="Btn0Skin" icon="dianqianp1">
+		</e:Button>
+		<e:Button id="Nexthuanggong" label="" verticalCenter="0" right="30" skinName="Btn0Skin" icon="huanggongp1">
+		</e:Button>
+	</e:Group>
+	<e:Group id="flagStatu" width="280" height="50" horizontalCenter="0" bottom="237">
+		<e:Image source="bantoutiaobg2" scale9Grid="11,2,70,17" top="0" bottom="0" left="0" right="0"/>
+		<e:Label id="flagTime" text="玩家名称很长采集皇旗中（5分10秒）" textColor="0xDFD1B5" size="16" y="8" horizontalCenter="0"/>
+		<e:Label id="guildName1" text="行会：行会名称很长" size="16" y="28" horizontalCenter="0" textColor="0x21ad1a"/>
+	</e:Group>
+	<e:Group id="attList" width="106" height="433" y="260" x="0">
+
+		<e:Image source="teshuwenzibg" height="30" left="0" right="0"/>
+		<e:Button id="refush" label="按钮" x="0" y="1" skinName="Btn0Skin" width="76" visible="false"/>
+		<e:Label text="选择目标" y="6" size="16" strokeColor="000000" textColor="0xd1c28f" bold="true" horizontalCenter="0"/>
+		<e:ToggleButton id="btn" touchEnabled="true" label="按钮" right="1" skinName="Btn4Skin" y="1" alpha="0.6" visible="false"/>
+		<e:Group x="0" y="30">
+			<e:Group id="mon" width="103" height="79" x="0" y="0">
+				<e:Image x="18" y="1" source="juesetxk" scaleX="0.9" scaleY="0.9"/>
+				<e:Image source="juesetxkxue" x="20" y="0" scaleX="0.9" scaleY="0.9" visible="false"/>
+				<e:Image id="monHead" y="10" width="48" height="48" horizontalCenter="0" source="monhead60000_png"/>
+				<e:Image y="57" width="102" height="20" source="bantoutiaobg" scale9Grid="71,10,132,10"/>
+				<e:Label id="roleName" text="龙城守卫" x="-1" y="59" fontFamily="黑体" size="16" textAlign="center" width="101" textColor="0x9f946d"/>
+			</e:Group>
+			<e:Scroller id="bar1" height="330" y="104" scaleX="0.9" scaleY="0.9" width="100" x="8">
+				<e:List id="list1" x="5" y="6" itemRendererSkinName="MemberHeadSkin">
+				</e:List>
+			</e:Scroller>
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="center"/>
+			</e:layout>
+		</e:Group>
+
+	</e:Group>
+	<e:Group id="gongxun" horizontalCenter="0" bottom="166">
+		<e:Button id="help" label="按钮" skinName="Btn0Skin" icon="wenhao"  x="-43" visible="false"/>
+		<e:Label text="龙城战功：" size="18" textColor="0xDFD1B5" verticalCenter="0" x="0"/>
+		<e:Label id="point" text="10/10" x="84" size="18" textColor="0x00FF00" verticalCenter="0"/>
+	</e:Group>
+	<e:Group id="weixie" width="106" height="341" y="260" right="0">
+
+	<e:Scroller width="100" height="333" y="33" horizontalCenter="0" scaleX="0.9" scaleY="0.9">
+			<e:List id="list2" x="5" y="5" itemRendererSkinName="MemberHeadSkin">
+			</e:List>
+		</e:Scroller>
+		<e:Image width="123" height="30" source="teshuwenzibg" scale9Grid="76,21,28,9" horizontalCenter="0"/>
+		<e:Label text="恶意玩家"  size="16" y="6" horizontalCenter="0" textColor="0xc41200" bold="true"/>
+	</e:Group>
+	<e:Group id="guid" width="206" height="63" y="296" touchChildren="false" touchEnabled="false" x="72">
+		<e:Image source="zjmyindao" scale9Grid="12,0,13,50" left="0" right="0" top="0" bottom="0" scaleX="-1"/>
+		<e:Label text="选择击杀目标\n增加战功/积分" x="73" y="13" size="18" textColor="0xd1c28f"/>
+	</e:Group>
+	<e:Group id="ruleDesc" horizontalCenter="0" y="97" width="115">
+		<e:Image id="descImg" source="" visible="false"/>
+		<e:Image id="huise" width="115" verticalCenter="0" horizontalCenter="0" source=""/>
+		<e:ProgressBar id="sceneBar" width="115" value="33" skinName="barguildwarSkin" height="4" verticalCenter="0" horizontalCenter="0"/>
+		<e:Image id="scene1" verticalCenter="0" source="" visible="false"/>
+		<e:Image id="scene2" verticalCenter="-1" source="" visible="false"/>
+		<e:Image id="scene3" verticalCenter="0" source="" visible="false"/>
+		<e:Image id="scene4" verticalCenter="0" source="" visible="false"/>
+		<e:Image id="selectImg" source="" visible="false"/>
+		<e:Image id="selectFig" x="20" y="-12" source="" visible="false"/>
+		<e:Image id="weijihuo1" verticalCenter="0" source="jzsc_json.guilddianp2"/>
+		<e:Image id="jihuo1" verticalCenter="0" source="jzsc_json.guilddianp1"/>
+		<e:Image id="weijihuo2"   horizontalCenter="-18" verticalCenter="0" source="jzsc_json.guilddianp2"/>
+		<e:Image id="jihuo2" verticalCenter="0" horizontalCenter="-18" source="jzsc_json.guilddianp1"/>
+		<e:Image id="weijihuo3"   horizontalCenter="15" verticalCenter="0" source="jzsc_json.guilddianp2"/>
+		<e:Image id="jihuo3"   horizontalCenter="15" verticalCenter="0" source="jzsc_json.guilddianp1"/>
+		<e:Image id="hgweijihuo" right="0" verticalCenter="0" source="jzsc_json.guilddianp3"/>
+		<e:Image id="hgjh" verticalCenter="0" right="0" source="jzsc_json.guilddianp4"/>
+	</e:Group>
+	<e:Group id="taskTraceBtn" width="120" right="0" height="98" bottom="120">
+		<e:Image y="0"   horizontalCenter="0" source="200105_png"/>
+		<e:Image height="39" left="0" right="0" source="bantoutiaobg2" scale9Grid="31,2,30,17" bottom="0"/>
+		<e:Label id="taskTraceName0" text="积分目标：(10/20)" size="16" textColor="0xd1c28f" horizontalCenter="0" bottom="3" width="110" textAlign="center"/>
+		<e:Label id="taskTraceAwards0" text="奖励:屠龙宝刀" x="61" y="34" size="14" width="183" fontFamily="黑体" visible="false"/>
+		<e:Image id="scorePoint" source="zjmhongdian" scaleX="1" scaleY="1" y="7" horizontalCenter="28"/>
+	</e:Group>
+
+	<e:Group y="190" width="230" touchEnabled="false" touchThrough="true">
+		<e:Group id="skillGroup" visible="false">
+			<e:BitmapLabel id="lztitle" font="lianzhan_fnt" text="d"/>
+			<e:BitmapLabel id="lzlabel" text="88" font="lianzhan_fnt" letterSpacing="-10" x="152" y="8"/>
+		</e:Group>
+
+	</e:Group>
+	<e:Group width="235" y="203" id="belongGroup" right="0">
+		<e:Rect height="14" y="30" left="77" right="13" fillColor="0x111010"/>
+		<e:Rect left="91" right="32" fillColor="0x111010" height="4" width="92" y="46"/>
+		<e:Rect width="58" height="58" x="8" y="9" ellipseWidth="82" ellipseHeight="82" fillColor="0x111010"/>
+		<e:Image id="roleHead0" source="yuanhead10" width="52" height="52" x="11" y="11.2"/>
+		<e:Image y="5" height="24" width="196" source="bantoutiaobg" x="23" scale9Grid="51,5,136,35"/>
+		<e:ProgressBar id="neigongBar1" width="112" height="4" y="46" value="100" x="89" skinName="bar6Skin"/>
+		<e:ProgressBar id="bloodBar1" y="31" value="50" left="76" right="14" height="12" skinName="bar7Skin"/>
+		<e:Image scale9Grid="92,32,5,7" left="0" right="0" y="1" source="zdbossgueishuzhebg"/>
+		<e:Group x="77" y="8" height="18" width="140">
+		<e:Label text="目标" size="16" textAlign="center" y="1" textColor="0x9F946D" x="0"/>
+		<e:Label id="belongNameTxt0" text="玩家名称" size="16" textColor="0xFFCE0B" textAlign="center" y="1" x="40"/>
+		</e:Group>
+		<e:Button id="attguishu0" label="抢夺归属" x="70" y="54" skinName="Btn6Skin" width="80" height="36" visible="false"/>
+	</e:Group>	
+</e:Skin>

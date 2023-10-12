@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ISCostRankSkin" width="560" height="560" currentState="none" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" states="normal,none" >
+	<e:Image source="interservice_bg_png" left="0" right="0" scale9Grid="69,2,416,6" top="3"/>
+	<ns1:BaseComponent skinName="RoleShowSkin" scaleX="0.52" scaleY="0.52" id="rank1" horizontalCenter="-176" className="RoleItemRenderer" top="1"/>
+	<ns1:BaseComponent skinName="RoleShowSkin" scaleX="0.52" scaleY="0.52" id="rank2" horizontalCenter="164" className="RoleItemRenderer" top="1"/>
+	<ns1:BaseComponent id="rank0" skinName="RoleShowSkin" scaleX="0.54" scaleY="0.54" className="RoleItemRenderer" top="-27" horizontalCenter="-9.5"/>
+	<e:Group id="infoBg" left="10" right="10" x="10" height="80" top="2">
+		<e:Image left="0" top="0" bottom="0" source="bantoumingkuang5" scale9Grid="150,24,2,3" width="270"/>
+		<e:Image top="0" bottom="0" source="bantoumingkuang5" scale9Grid="150,24,2,3" width="270" scaleX="-1" right="0"/>
+		<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="15" bottom="15" visible="false"/>
+		<e:Button id="rechargeBtn" label="立即充值" scaleX="0.6" scaleY="0.6" skinName="Btn19Skin" right="12" verticalCenter="0" skinName.none="Btn19Skin"/>
+		<e:Group y="50" x="27">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+		</e:Group>
+		<e:Image source="is_words" x="27" y="16"/>
+	</e:Group>
+	<e:Scroller top="356" bottom="51" left="0" right="0">
+		<e:List id="list" y="0" x="45.45" itemRendererSkinName="ISCostRankItemSkin">
+		<e:layout>
+			<e:VerticalLayout gap="0"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group horizontalCenter="-165" width="190" height="50" includeIn="normal" top="300">
+		<e:Image source="tongyonghd_json.bantoutiaobg" left="0" right="0" top="-7" bottom="7" scale9Grid="126,19,3,4"/>
+		<e:Label text="s9999.布拉格の流氓" y="7" id="playName1" size="16" includeIn="normal" textColor="0xd1c28f" horizontalCenter="0"/>
+		<e:Label text="已消费：100000" y="27" id="recharge1" size="16" includeIn="normal" textColor="0xf8b141" bold="true" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group width="190" height="50" horizontalCenter="0" includeIn="normal" top="274">
+		<e:Image source="tongyonghd_json.bantoutiaobg" left="0" right="0" top="0" bottom="0" scale9Grid="126,19,3,4"/>
+		<e:Label text="s9999.布拉格の流氓" y="7" id="playName0" size="16" includeIn="normal" textColor="0xD1C28F" horizontalCenter="0"/>
+		<e:Label text="已消费：100000" y="27" id="recharge0" size="16" includeIn="normal" textColor="0xF8B141" bold="true" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group width="190" height="50" horizontalCenter="165" includeIn="normal" top="300">
+		<e:Image source="tongyonghd_json.bantoutiaobg" left="0" right="0" top="0" bottom="0" scale9Grid="126,19,3,4"/>
+		<e:Label text="s9999.布拉格の流氓" y="7" id="playName2" size="16" includeIn="normal" textColor="0xD1C28F" horizontalCenter="0"/>
+		<e:Label text="已消费：100000" y="27" id="recharge2" size="16" includeIn="normal" textColor="0xF8B141" bold="true" horizontalCenter="0"/>
+	</e:Group>
+	<e:Label text="暂无上榜" size="20" horizontalCenter="-165" bold="true" includeIn="none" textColor="0x9f946d" top="252"/>
+	<e:Label text="暂无上榜" size="20" horizontalCenter="165" bold="true" includeIn="none" textColor="0x9f946d" top="252"/>
+	<e:Label text="暂无上榜" size="20" bold="true" horizontalCenter="0" includeIn="none" textColor="0x9f946d" top="232"/>
+	<e:Image source="is_first" horizontalCenter="-3.5" top="81"/>
+	<e:Image horizontalCenter="-173.5" top="97" source="is_second"/>
+	<e:Image horizontalCenter="165.5" top="97" source="is_third"/>
+	<e:Group bottom="0" height="50" horizontalCenter="0" width="460">
+		<e:Image left="-20" right="-20" top="-5" bottom="5" scale9Grid="35,20,2,1" source="tongyongranking_bg"/>
+		<e:Group left="3" verticalCenter="0" visible="false">
+		<e:Label text="我消费的元宝：" size="22" x="0" textColor="0x9F946D" y="2"/>
+		<e:Label id="myNumber" text="300 0000" size="22" x="170" textColor="0xF8B141" y="0"/>
+		<ns1:BaseComponent width="20" height="20" x="251" y="8"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="0"/>
+		</e:layout>
+		</e:Group>
+		<e:Group width="213" left="24" verticalCenter="-10">
+		<e:Label text="排名：" size="18" textColor="0x9F946D" x="0" y="2"/>
+		<e:Label id="myRanking" text="100名以后" size="18" textColor="0xF8B141" x="108" y="0"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="0"/>
+		</e:layout>
+		</e:Group>
+		<e:Label text="消费到指定金额可以领取对应奖励" size="18" textColor="0x9F946D" x="23" y="27"/>
+	</e:Group>
+</e:Skin>

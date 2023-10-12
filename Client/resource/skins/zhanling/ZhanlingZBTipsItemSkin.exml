@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ZhanlingZBTipsItemSkin" width="500" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image top="0" bottom="0" source="tongyongtip1" scale9Grid="8,6,9,8" left="0" right="0"/>
+	<e:Image source="tongyongtip2" top="0" bottom="0" scale9Grid="19,20,1,2" left="0" right="0"/>
+	<e:Image source="anwen2" x="44" verticalCenter="0"/>
+	<e:Label id="desc" text="熔炼装备" size="22" touchEnabled="false" bold="true" textColor="0x7e6437" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Btn12Skin" states="up,down,disabled"
+        currentState="up" xmlns:e="http://ns.egret.com/eui">
+	<e:Image scale9Grid="32,15,7,5" visible.disabled="false" source.up="zjmzidong" source="zjmzidong" source.down="zjmzidong" visible.down="false"/>
+	<e:Image scale9Grid="32,15,10,5" visible.up="false" visible.disabled="false" source="zjmzidong2"/>
+	<e:Label id="labelDisplay" size="16" verticalAlign="middle" textAlign="center" textColor="0xFFF2BE" x.down="0" y.down="0" size.down="16" y.up="0" textAlign.down="center" visible="false"/>
+</e:Skin>

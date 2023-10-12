@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DressItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" height="126" width="110">
+	<e:Image width="76" height="76" horizontalCenter="0" y="6" source="quality0"/>
+	<e:Image id="imgIcon" width="55" height="55" source="101001_png" horizontalCenter="0" y="16"/>
+	<e:Label id="imageName" text="装扮名称" size="18" textAlign="center" textColor="0xDFD1B5" horizontalCenter="0" bottom="20"/>
+	<e:Label id="timelabel" text="7天13时10分" size="16" horizontalCenter="0" textColor="0xFFC300" bottom="0"/>
+	<e:Label id="levellabel" text="1级" size="18" textColor="0xFFC300" textAlign="right" width="60" y="48" horizontalCenter="0"/>
+	<e:Image id="selectImage" y="4" width="80" height="80" horizontalCenter="0" source="xuanzhongkuang2" scale9Grid="4,4,8,8" visible="false"/>
+	<e:Image id="redPoint0" source="zjmhongdian" y="3" x="74" visible="false"/>
+	<e:Group id="huanhuaImage" x="6" y="48" rotation="-45" visible="false">
+		<e:Image source="xiejiaotiao" x="0" y="0" width="76" scale9Grid="20,2,3,15"/>
+		<e:Label text="已激活" size="16" textColor="0xFFC300" y="2" x="13"/>
+	</e:Group>
+</e:Skin>

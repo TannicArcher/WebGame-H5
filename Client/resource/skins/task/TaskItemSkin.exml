@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TaskItemSkin" width="425" height="92" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586bcdda65"/>
+	<e:Image source="zyz_02" y="0" scale9Grid="26,21,25,12" width="425" height="92" x="0"/>
+	<e:Image source="task_08" x="80" y="15"/>
+	<e:Image source="quality0" x="12" y="13"/>
+	<e:Image id="taskImg" source="" x="20" y="21"/>
+	<e:Label id="taskName" text="任务名称（活跃度150）" x="88" y="18" fontFamily="黑体" size="16" textColor="0xDFD1B5"/>
+	<e:Label id="taskInfo" y="44" size="16" text="任务详细说明(3/3)" fontFamily="黑体" x="88" textColor="0xDFD1B5"/>
+	<e:Label id="taskAwards" y="66" size="16" text="奖励：" fontFamily="黑体" x="88" textColor="0xFFAE00"/>
+	<e:Button id="gotoBtn" skinName="Btn1Skin" y="26" label="前  往" x="304"/>
+	<e:Button id="awardsBtn" skinName="Btn6Skin" y="26" label="领  奖" x="304"/>
+	<e:Image id="completeImg" source="forge_07" y="23" x="290"/>
+	<e:Label id="completeLabel" y="36" textColor="0xDFD1B5" text="已完成" size="20" x="321" fontFamily="黑体"/>
+	<ns1:BaseComponent id="awards1" x="100" y="60" skinName="PriceIconSkin" className="PriceIcon"/>
+	<ns1:BaseComponent id="awards2" x="175" y="60" skinName="PriceIconSkin" className="PriceIcon"/>
+</e:Skin>

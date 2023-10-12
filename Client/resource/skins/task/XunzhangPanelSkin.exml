@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="XunzhangPanelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="775">
+	<w:Config id="15aebebf0a7" left="0" right="0" top="0" bottom="0"/>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="0"/>
+
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" width="580" horizontalCenter="0" currentState="nohead"/>
+	<e:Image source="lilian_json.biaoti_xunzhang_png" y="5" horizontalCenter="-155"/>
+	<e:Group id="showAct" width="512" horizontalCenter="0" top="52" bottom="20">
+		<e:Image y="0" source="longhunbg_png" width="408" height="393" x="52"/>
+		<e:Group id="xunzhangMcGroup" width="50" height="50" touchEnabled="false" touchThrough="false"   horizontalCenter="25" top="60"/>
+		<e:Group id="group" width="420" height="100" horizontalCenter="0" bottom="340">
+			<e:Image source="shuxingbg" left="0" right="0" top="0" bottom="0" scale9Grid="50,5,65,34"/>
+			<ns1:BaseComponent id="com1" skinName="XunzhangItemSkin" className="XunzhangItem" x="10" y="8"/>
+			<ns1:BaseComponent id="com2" skinName="XunzhangItemSkin" className="XunzhangItem" right="0" y="8"/>
+			<e:Image id="arrow" source="jiantouyou" horizontalCenter="0" verticalCenter="10"/>
+		</e:Group>
+		<e:Scroller id="taskScroller" width="512" height="264" x="0" bottom="70">
+			<e:List id="taskList" itemRendererSkinName="XunzhangTaskSkin" horizontalCenter="0" verticalCenter="-1">
+			<e:layout>
+				<e:TileLayout horizontalGap="10" orientation="rows" verticalGap="2"/>
+			</e:layout>
+			<e:ArrayCollection/>
+			</e:List>
+		</e:Scroller>
+		<e:Button id="btn" label="升  星" skinName="Btn1Skin" horizontalCenter="0" bottom="0"/>
+		<e:Label id="nameTF" text="两仪勋章" y="13" size="24" textColor="0xffb82a" bold="true" x="207" visible="false"/>
+		<e:Label id="manjiTF" text="已满级" size="24" textColor="0xfff2be" x="220" y="669" visible="false"/>
+		<e:Image id="stageImg" y="43" source="" x="19"/>
+	</e:Group>
+	<e:Group id="Activation" horizontalCenter="0" verticalCenter="0" width="512" height="500" visible="false">
+		<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="longhunbg_png" horizontalCenter="0" y="0" locked="true"/>
+		<e:Label id="activeTipsTxt1" text="15级可开启勋章" horizontalCenter="0" size="24" textColor="0xD1C28F" y="64"/>
+		<e:Label text="暴击伤害提升" bold="true" size="24" horizontalCenter="0" textColor="0xF8B141" y="170"/>
+		<e:Label text="暴击概率提升" bold="true" size="24" horizontalCenter="0" textColor="0xF8B141" y="250"/>
+		<e:Button id="UplevelBtn1" label="开启勋章" skinName="Btn1Skin" width="180" height="60" y="410" horizontalCenter="0"/>
+		<e:Image source="tongyongdian" x="158" y="255"/>
+		<e:Image source="tongyongdian" x="158" y="175"/>
+		<e:Image source="weijihuohuawen" y="424" scale9Grid="0,0,50,31" width="120" horizontalCenter="-160"/>
+		<e:Image source="weijihuohuawen" y="455" scale9Grid="0,0,50,31" width="120" horizontalCenter="160" rotation="180"/>
+		<e:Image source="tongyongline" y="200" horizontalCenter="0"/>
+		<e:Image source="tongyongline" y="280" horizontalCenter="0"/>
+		<e:Image id="redPointAct1" source="zjmhongdian" x="332" y="406" visible="false"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="heirloomCom" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="930">
+	<w:Config id="159bef2916a"/>
+	<e:Rect id="rect" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group width="450" height="600" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="frame" source="tongyongkuang3bg" scale9Grid="9,5,30,27"   left="0" right="0" top="0" bottom="0"/>
+		<e:Image id="tou" source="tongyongkuang3tou" scale9Grid="66,0,269,47" y="0" left="0" right="0"/>
+		<e:Group horizontalCenter="0" width="300" height="30" bottom="-35">
+			<e:Image touchEnabled="false" left="0" right="0" top="0" bottom="0" source="bantoutiaobg" scale9Grid="111,2,32,41"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" touchEnabled="false" y="5" horizontalCenter="0"/>
+		</e:Group>
+		<e:Label text="合   成" size="24" touchEnabled="false" y="11" textColor="0xa67d44" horizontalCenter="0"/>
+		<e:Group id="item" width="420" height="420" y="58" horizontalCenter="0">
+			<e:Image horizontalCenter="0" verticalCenter="0" source="tongyongditu_png"/>
+			<ns1:BaseComponent x="0" id="item0" skinName="heirloomItemSkin" className="HeirloomItem"/>
+			<ns1:BaseComponent id="item1" y="0" skinName="heirloomItemSkin" className="HeirloomItem" x="344"/>
+			<ns1:BaseComponent id="item2" x="0" y="110" skinName="heirloomItemSkin" className="HeirloomItem"/>
+			<ns1:BaseComponent id="item3" x="344" y="110" skinName="heirloomItemSkin" className="HeirloomItem"/>
+			<ns1:BaseComponent id="item4" x="0" y="220" skinName="heirloomItemSkin" className="HeirloomItem"/>
+			<ns1:BaseComponent id="item5" x="344" y="220" skinName="heirloomItemSkin" className="HeirloomItem"/>
+			<ns1:BaseComponent id="item6" x="0" y="330" skinName="heirloomItemSkin" className="HeirloomItem"/>
+			<ns1:BaseComponent x="344" y="330" id="item7" skinName="heirloomItemSkin" className="HeirloomItem"/>
+			<e:Image id="model" width="211" height="256" y="82" x="105"/>
+		</e:Group>
+		<e:Group id="upInfo" width="412" height="86"  horizontalCenter="0" bottom="20">
+			<e:Group id="costGroup0" y="0" horizontalCenter="0">
+			<e:Label id="expendLabel0" text="消耗: " size="20" bold="true" x="0" y="11" textColor="0xD1C28F"/>
+			<e:Image id="icon0" x="55" y="-3" source="200141_png" scaleX="0.6" scaleY="0.5"/>
+			<e:Label id="countLabel0" text="12000/100" size="20" textAlign="left" textColor="0xD1C28F" x="94" y="12"/>
+				<e:layout>
+					<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle"/>
+				</e:layout>
+			</e:Group>
+
+			<e:Button id="jihuo0" label="合  成" skinName="Btn1Skin" y="36" horizontalCenter="0"/>
+			<e:Group y="60" right="5">
+				<e:Label id="getItemTxt0" text="获取宝钻" size="20" textColor="0x00FF00" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+	<!--<e:Group id="powerGroup" y="140" horizontalCenter="0" visible="false">
+		<e:Image source="zhandoulibg" x="2" y="10"/>
+		<e:Image id="powerImg" x="0" y="0" source="zjmzhandouli"/>
+	</e:Group>-->
+
+</e:Skin>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="shenshouSelectBtn" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        xmlns:tween="egret.tween.*" includeIn="normalWithPrompt,disabledWithPrompt"
+        width="86" height="86">
+	<w:Declarations></w:Declarations>
+	<w:Config id="158995f2c90"></w:Config>
+	<e:Image id="select" source="xuanzhongyuan" width="84" height="84" horizontalCenter="0" y="5" scaleX="0.9" scaleY="0.9"/>
+	<e:Image id="btnName" height="82" horizontalCenter="0" verticalCenter="0" width="80" source="tujiantuji_01"/>
+	<e:Image id="activityImg" right="3" top="4" source="job1Item" visible="false"/>
+	<e:Image source="zjmhongdian" right="2" id="redPoint" y="2" visible="false"/>
+</e:Skin>

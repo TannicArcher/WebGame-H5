@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MyRecordItemSkin" width="470" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="roundInfo" text="跨复赛64进16强 第2场" size="18" textColor="0xd1c28f" horizontalCenter="-130" verticalCenter="0"/>
+	<e:Label id="enemyLabel" text="布拉格の呆萌" size="18" textColor="0x00ff00" horizontalCenter="50" verticalCenter="0"/>
+	<e:Label id="result" text="失败" size="18" textColor="0xff0000" horizontalCenter="176" verticalCenter="0"/>
+	<e:Image source="tongyongline" bottom="0" horizontalCenter="0" scale9Grid="112,0,4,3" width="387"/>
+</e:Skin>

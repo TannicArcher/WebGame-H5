@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LaBaRankRewardskin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" >
+	<w:Config id="159b5e0f988"/>
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group name="上周" height="620" width="530" horizontalCenter="0" verticalCenter="-55">
+		<e:Image y="0" width="530" height="620" x="0" source="tongyongmianbanbg" scale9Grid="19,20,2,2"/>
+		<e:Image y="0" horizontalCenter="0" width="530" height="620" source="tongyongtip2" scale9Grid="19,20,2,2"/>
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-38" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-32" textColor="0x7E6437"/>
+
+
+
+
+		<e:Image source="teshuwenzibg" scale9Grid="76,19,29,5" y="10" horizontalCenter="0.5"/>
+		<e:Label id="rankReward" y="19" text="排名奖励" size="24" horizontalCenter="0" bold="true" textColor="0xED8D34"/>
+		<e:Image y="56" width="500" height="346" x="15" source="tongyongtip1" scale9Grid="12,10,2,4"/>
+
+
+
+
+		<e:Scroller width="500" horizontalCenter="0" height="346" y="56">
+		<e:List id="list0" x="-3" y="29" itemRendererSkinName="LaBaRewardItemSkin">
+			<e:layout>
+			<e:VerticalLayout gap="0" horizontalAlign="center"/>
+			</e:layout>
+		</e:List>
+		</e:Scroller>
+		<e:Label id="rewardDec" y="425" text="奖励说明" size="24" horizontalCenter="0" bold="true" textColor="0xED8D34"/>
+		<e:Image source="teshuwenzibg" scale9Grid="76,19,29,5" y="420" horizontalCenter="0"/>
+		<e:Label text="1.BOSS死亡时根据排名，发放上方列出的排名奖励，排名越高，获得奖励数量越多。" size="20" textAlign="left" x="31" y="465" width="488" height="47" textColor="0x7E6437" bold="true"/>
+		<e:Label text="2.BOSS死亡时根据排名还会额外发放随机掉落奖励，排名越高，掉落的奖励越好，几率越高。" size="20" textAlign="left" x="30" y="512" width="457" height="46" textColor="0x7E6437" bold="true"/>
+	</e:Group> 
+
+</e:Skin>

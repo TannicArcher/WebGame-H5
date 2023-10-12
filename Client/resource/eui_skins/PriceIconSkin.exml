@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PriceIconSkin" height="36" xmlns:e="http://ns.egret.com/eui">
+	<e:Label id="priceLabel" size="20" textColor="0xFFB92D" textAlign="left" verticalCenter="0" text="123123" x="32" touchEnabled="false"/>
+	<e:Image id="iconImg" verticalCenter="0" source="szyuanbao" x="0" touchEnabled="false"/>
+</e:Skin>

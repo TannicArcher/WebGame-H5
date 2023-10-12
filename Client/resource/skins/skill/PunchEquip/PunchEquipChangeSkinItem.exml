@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PunchEquipChangeSkinItem" width="500" height="177" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image   source="tongyonglabbg" left="0" right="0" top="0" bottom="0" scale9Grid="38,19,53,40"/>
+	<e:Label id="nameTxt" text="极品属性" x="20" y="10" size="24" bold="true" textColor="0xbd600d"/>
+	<e:Label text="基础属性" x="20" y="49" size="22" textColor="0xca8a00" bold="true"/>
+	<e:Label id="attr1" text="攻击力+300   \n攻击力+300   攻击力+300   " y="70" size="20" width="400" textColor="0xdfd1b5" height="40" horizontalCenter="0" verticalAlign="middle"/>
+	<e:Group x="20" y="116">
+		<e:Label id="attr2" text="对战士伤害增加：3.0%" y="24" size="20" width="400" textColor="0x7bf254" height="30" x="30"/>
+		<e:Label text="极品属性" x="0" y="0" size="22" textColor="0xCA8A00" bold="true"/>
+	</e:Group>
+	<e:Button id="changeBtn" skinName="Btn1Skin" label="更 换" y="10" right="20"/>
+	<e:Group id="now" right="-20" bottom="-22" visible="false">
+		<e:Image source="xiejiaotiao" scale9Grid="20,2,2,15" rotation="135" width="79" scaleX="1.6" scaleY="1.6" x="89" y="0"/>
+		<e:Label text="当前装备" size="20" bold="true" rotation="-45" textColor="0xD1C28F" x="-2" y="54"/>
+	</e:Group>
+</e:Skin>

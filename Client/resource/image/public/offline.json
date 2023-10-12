@@ -1,0 +1,11 @@
+{"file":"offline.png","frames":{
+"offline1":{"x":1,"y":1,"w":115,"h":50,"offX":0,"offY":0,"sourceW":115,"sourceH":50},
+"offline2":{"x":51,"y":53,"w":30,"h":70,"offX":0,"offY":0,"sourceW":30,"sourceH":70},
+"offline3":{"x":83,"y":105,"w":24,"h":13,"offX":0,"offY":0,"sourceW":24,"sourceH":13},
+"offline4":{"x":118,"y":1,"w":2,"h":6,"offX":0,"offY":0,"sourceW":2,"sourceH":6},
+"offzb":{"x":105,"y":79,"w":20,"h":24,"offX":2,"offY":0,"sourceW":24,"sourceH":24},
+"offzzs":{"x":27,"y":103,"w":21,"h":24,"offX":1,"offY":0,"sourceW":24,"sourceH":24},
+"offbtn":{"x":1,"y":53,"w":48,"h":48,"offX":0,"offY":0,"sourceW":48,"sourceH":48},
+"offexp":{"x":1,"y":103,"w":24,"h":24,"offX":0,"offY":0,"sourceW":24,"sourceH":24},
+"offjb":{"x":83,"y":53,"w":24,"h":24,"offX":0,"offY":0,"sourceW":24,"sourceH":24},
+"offjl":{"x":83,"y":79,"w":20,"h":24,"offX":2,"offY":0,"sourceW":24,"sourceH":24}}}

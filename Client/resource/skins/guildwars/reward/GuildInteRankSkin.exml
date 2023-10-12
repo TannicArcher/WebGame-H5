@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildInteRankSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="520" height="720">
+	<e:Image  source="tongyongkuang3bg" left="0" right="0" top="0" bottom="0" scale9Grid="20,21,9,8"/>
+	<e:Image source="tongyongkuang3tou" scale9Grid="66,0,271,47" y="0" left="0" right="0"/>
+	<e:Image source="shangjiepaiming_bg_png" y="47" left="6" right="6" height="110" alpha="0.5"/>
+	<e:Image source="anwen1" y="55" horizontalCenter="92"/>
+	<e:Image source="anwen1" y="55" scaleX="-1" horizontalCenter="-91"/>
+	<e:Group y="148" left="6" right="6">
+		<e:Image source="leibiefengetou" y="0" scale9Grid="5,5,30,32" left="0" right="0"/>
+		<e:Label y="12" text="积分" size="20" x="417" textColor="0x7e6437"/>
+		<e:Label y="12" text="名次" size="20" x="24" textColor="0x7e6437"/>
+		<e:Label y="12" text="行会" size="20" x="138" textColor="0x7e6437"/>
+		<e:Label y="12" text="会长" size="20" x="279" textColor="0x7e6437"/>
+		<e:Image source="leibeifengexian" x="368" y="12"/>
+		<e:Image source="leibeifengexian" x="85" y="10"/>
+		<e:Image source="leibeifengexian" x="229" y="10"/>
+	</e:Group>
+	<e:Label id="lastName" text="上届排名" size="24" horizontalCenter="0" y="11" textColor="0xa67d44"/>
+	<e:Label id="lastNameJie" text="龙城占领行会" size="20" textAlign="center" verticalAlign="middle" horizontalCenter="0" y="55" bold="true" textColor="0x7e6437"/>
+	<e:Label text="龙城占领行会：" size="18" horizontalCenter="-175" y="90" textColor="0x9f946d" visible="false"/>
+	<e:Label id="guildName" text="行会名称六字" size="28" horizontalCenter="0" y="90" textColor="0xf8b141"/>
+	<e:Label id="infoDesc" height="62" text="一个字，干！" size="18" textAlign="left" verticalAlign="justify" horizontalCenter="54" y="126"  width="324"  textColor="0xd1c28f" visible="false"/>
+	<e:Label text="占领缘由：" size="18" visible="false"/>	
+	<e:Scroller width="510" height="520" y="188" horizontalCenter="0">
+		<e:List id="list" itemRendererSkinName="GuildInteRankItemSkin" y="36">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

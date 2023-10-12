@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeFuResetRechargeSkin" width="560" height="622" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image y="147" horizontalCenter="0" width="554" height="466" source="hef_reset_recharge_bg_png"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50" x="80" scaleX="1"/>
+	<e:Image id="title" y="0" horizontalCenter="0" x="212" scaleX="1" scaleY="1" source="biaoti_shuangbeichongzhi"/>
+	<e:Group id="infoBg" y="36" height="110" width="540" horizontalCenter="0">
+		<e:Image left="0" right="0" top="0" bottom="0" source="activity_headbg0_png"/>
+		<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="15" bottom="15" visible="false"/>
+		<e:Group verticalCenter="0" left="28">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime1" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actDesc" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+	</e:Group>
+	<e:Button id="pay0" label="领取返利" skinName="Btn16Skin" bottom="50" horizontalCenter="0"/>
+	<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" verticalCenter="213" horizontalCenter="-56" visible="false"/>
+	<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" verticalCenter="213" horizontalCenter="186" visible="false"/>
+</e:Skin>

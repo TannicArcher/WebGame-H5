@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuanqiajiangliSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="300">
+	<e:Rect width="580" height="300" bottom="0" horizontalCenter="0" fillAlpha="0.8" strokeWeight="2" strokeColor="0x303030"/>
+	<e:Group id="info" left="0" right="0" top="-1" bottom="1">
+		<e:Button id="challengeBtn" label=" 挑  战 " width="156"  bottom="110" horizontalCenter="200" height="60" skinName="Btn1Skin"/>
+		<e:Button id="challengeBtn1" label="世界地图" width="156" bottom="30" horizontalCenter="200" height="60" skinName="Btn1Skin"/>
+		<e:Button id="challengeBtn0" label=" 自动挑战 " skinName="Btn1Skin" width="100" bottom="381" horizontalCenter="285" visible="false"/>
+		<e:Image source="check_06" width="250"  horizontalCenter="0" bottom="265" height="40" scale9Grid="91,4,100,19" visible="false"/>
+		<e:Image source="xguanqia_14" scale9Grid="9,6,57,13" scaleX="1.5" scaleY="1.5"  height="60" horizontalCenter="-177"  width="135" bottom="176"/>
+		<e:Image id="mapImage"  source="box" horizontalCenter="0" bottom="193" width="60" height="60"/>
+		<e:Image id="redPointBox" source="zjmhongdian" horizontalCenter="32" bottom="230"/>
+		<e:Image source="xguanqia_09" horizontalCenter="-277" bottom="372" visible="false"/>
+		<e:Image source="guanqiawrold_json.xguanqia_07" scaleX="1.2" scaleY="1.2" scale9Grid="11,15,69,81" horizontalCenter="-277" bottom="230" visible="false"/>
+		<ns1:BaseComponent id="specialItem" scaleX="0.9" scaleY="0.9" className="ItemBase" skinName="ItemSkin"  bottom="248" horizontalCenter="-275" visible="false"/>
+		<e:Label id="desc" text="通关矿洞所有关卡可获得特戒碎片奖励" x="10" y="17" fontFamily="黑体" size="18" textColor="0xA89C88"  visible="false"/>
+		<e:Label y="154" textColor="0xA89C88" text="关卡进度：" fontFamily="黑体" size="18" x="9"  visible="false"/>
+		<e:Label id="bossNameTxt" text="怪物名称" y="180"  size="20" textColor="0xFF982A"  horizontalCenter="0" visible="false"/>
+		<e:Label id="mapTxt0" text="地区奖励"  size="20" bold="true" bottom="176" horizontalCenter="0" textColor="0xffa500"/>
+		<e:Label id="mapNameTxt" text="地图名称"  size="24" horizontalCenter="0" textAlign="center" bold="true" bottom="269" width="300" stroke="1" textColor="0xffa500"/>
+		<e:Group id="headGroup" x="6" y="316"  width="426" visible="false">
+			<ns1:BaseComponent x="-8" y="7" className="GuanqiaBossHead" skinName="GuanqiaBossHeadSkin" id="head0"/>
+			<ns1:BaseComponent x="33" y="8" className="GuanqiaBossHead" skinName="GuanqiaBossHeadSkin" id="head1"/>
+			<ns1:BaseComponent x="75" y="8" className="GuanqiaBossHead" skinName="GuanqiaBossHeadSkin" id="head2"/>
+			<ns1:BaseComponent x="115" y="8" className="GuanqiaBossHead" skinName="GuanqiaBossHeadSkin" id="head3"/>
+			<ns1:BaseComponent x="198" y="8" className="GuanqiaBossHead" skinName="GuanqiaBossHeadSkin" id="head5"/>
+			<ns1:BaseComponent x="157" y="8" className="GuanqiaBossHead" skinName="GuanqiaBossHeadSkin" id="head4"/>
+			<ns1:BaseComponent x="240" y="8" className="GuanqiaBossHead" skinName="GuanqiaBossHeadSkin" id="head6"/>
+			<ns1:BaseComponent x="282" y="8" className="GuanqiaBossHead" skinName="GuanqiaBossHeadSkin" id="head7"/>
+			<ns1:BaseComponent x="325" y="8" className="GuanqiaBossHead" skinName="GuanqiaBossHeadSkin" id="head8"/>
+			<ns1:BaseComponent x="367" y="8" className="GuanqiaBossHead" skinName="GuanqiaBossHeadSkin" id="head9"/>
+		</e:Group>
+		<e:Image source="xguanqia_04"  width="680"  height="140" scale9Grid="55,19,337,32" horizontalCenter="0" bottom="20" visible="false"/>
+		<e:Group id="itemGroup" width="360" horizontalCenter="-100" bottom="10" height="100" >
+			<ns1:BaseComponent id="item0" y="377" x="102" className="ItemBase" skinName="ItemSkin" />
+			<ns1:BaseComponent id="item1" y="377" x="180" className="ItemBase" skinName="ItemSkin" />
+			<ns1:BaseComponent id="item2" y="-74" x="150" className="ItemBase" skinName="ItemSkin" />
+			<ns1:BaseComponent y="387" id="item3" x="267" className="ItemBase" skinName="ItemSkin" />
+			<ns1:BaseComponent y="-95" x="132" id="item4" className="ItemBase" skinName="ItemSkin" />
+			<e:layout>
+				<e:HorizontalLayout gap="-10" paddingLeft="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="needWave" y="171" textColor="0xF20909" size="18" fontFamily="黑体" bold="true" horizontalCenter="-6"
+		         textAlign="center" />
+		<e:Label id="chapterTxt" text="章节奖励" size="22" textColor="0xFF982A" bold="true" horizontalCenter="-101" bottom="110" backgroundColor="0x000000" stroke="1"/>
+		<e:Group id="rankDis" width="259" height="171" horizontalCenter="-148" bottom="126"  visible="false">
+			<e:Image x="4" y="19"  source="xguanqia_02" scale9Grid="62,0,34,103"  width="209"  height="126" visible="false"/>
+			<e:Label id="rank0" y="47" size="20" text="1"  x="10"  textColor="0xffa500" visible="false"/>
+			<e:Label id="name0" y="47" size="20" text="狂拽酷炫叼炸"  x="35" textAlign="left"
+			          textColor="0xffa500" visible="false"/>
+			<e:Label id="harm0" y="47" text="1234关"  size="20" x="160"
+			          textColor="0xffa500" visible="false"/>
+			<e:Label id="rank1" y="75" size="20" text="2"  x="10" textColor="0xDFD1B5"  visible="false"/>
+			<e:Label id="name1" y="75" textColor="0xDFD1B5" size="20" text="狂拽酷炫叼炸" 
+			         x="35" textAlign="left"  visible="false"/>
+			<e:Label id="harm1" y="75" textColor="0xDFD1B5" text="1234关"  size="20"
+			         x="160"  visible="false"/>
+			<e:Label id="rank2" y="101" size="20"  x="10" textColor="0xDFD1B5" text="3"  visible="false"/>
+			<e:Label id="name2" y="101" textColor="0xDFD1B5" size="20" text="狂拽酷炫叼炸" 
+			         x="35" textAlign="left"  visible="false"/>
+			<e:Label id="harm2" y="101" textColor="0xDFD1B5" text="1234关"  size="20"
+			         x="160"  visible="false"/>
+			<e:Label id="rank3" y="135" size="20"  x="99" text="3" textColor="0xb7b7b7"/>
+			<e:Label id="name3" y="135" size="20" text="我的排名"  x="11" textAlign="left" bold="true" textColor="0xb7b7b7"/>
+			<e:Label id="harm3" y="135" text="1234关"  size="20" x="129" bold="true" textColor="0xccab66"/>
+			<e:Image source="fb_json.fuben_17" x="5" y="179"  visible="false"/>
+			<e:Image source="fb_json.fuben_17" x="5" y="154"  visible="false"/>
+			<e:Image x="13" y="13" source="xguanqia_01" scaleX="1.2" scaleY="1.2" visible="false"/>
+			<e:Label id="seeRank" text="查看关卡排行" x="10" size="20"  bold="true" bottom="48" textColor="0x9fcc66"/>
+		</e:Group>
+		<e:Group width="360" bottom="144" horizontalCenter="-100" height="24">
+			<e:Label text="关卡进度" size="20"  bold="true" textColor="0xc78563" verticalCenter="0"/>
+			<e:Group x="82" width="275">
+				<e:Image source="check_05"   scale9Grid="13,5,5,13" left="0" right="0" top="0" bottom="0"/>
+				<e:ProgressBar id="bar" skinName="bar1Skin" value="100" width="266" x="5" y="4"/>
+				<e:layout>
+					<e:BasicLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Group>
+		<e:Label text="推荐战力" size="18" bottom="175" horizontalCenter="147" textColor="0xff9900" bold="true"/>
+		<e:Label text="9999999" size="18" bottom="175" horizontalCenter="233" width="100" textAlign="center" textColor="0x9fcc66"/>
+		<e:Group width="180" height="80" horizontalCenter="-177" bottom="178">
+			<e:Image id="imageItembg0" top="0" x="0"/>
+			<e:Image source="szjinbi" width="20" height="20"  y="28" x="10"/>
+			<e:Image source="szexp" width="20" height="20"  top="52" x="10"/>
+			<e:Label id="goldTxt0" text="1234599/时" size="16" textColor="0xDFD1B5" textAlign="left" y="30" x="50" width="140"/>
+			<e:Label id="goldTxt1" text="+10%" size="16" right="0" y="30" textColor="0x9fcc66"/>
+			<e:Label id="expTxt0" text="1222345/时" size="16" textColor="0xDFD1B5" textAlign="left"  y="54" width="140" x="50"/>
+			<e:Label id="expTxt1" text="+10%" size="16"  right="0" y="54" textColor="0x9fcc66"/>
+			<e:Label text="关卡收益" y="1" horizontalCenter="7" size="20" bold="true" textColor="0xffa500"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="award" horizontalCenter="0" bottom="0" visible="false">
+		<ns1:BaseComponent id="specialItem1" className="ItemBase" skinName="ItemSkin"  horizontalCenter="0" bottom="150"/>
+		<e:Button id="getawardBtn" label="领取奖励" skinName="Btn1Skin"  width="180" height="60" horizontalCenter="0" bottom="50"/>
+		<e:Image source="check_06" scale9Grid="127,11,27,8" height="52"  bottom="349" horizontalCenter="0"/>
+		<e:Label id="rewardDesc" text="标签" textColor="0xFF982A" width="356" textAlign="center" size="24"
+		          horizontalCenter="0" bottom="367"/>
+		<e:Label id="labelInfo" text="" y="442" horizontalCenter="4" width="420" textAlign="center" size="17" fontFamily="黑体"
+		         textColor="0x10ef67"  visible="false"/>
+	</e:Group>
+</e:Skin>

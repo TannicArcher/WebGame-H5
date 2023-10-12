@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChestShowItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="380" height="80">
+	<e:Image source="tongyongline" bottom="0" left="0" right="0"/>
+	<ns1:ItemBase id="item" x="10" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" verticalCenter="0"/>
+	<e:Image   source="tongyongtip1" left="88" right="0" top="26" bottom="0" scale9Grid="6,5,13,14" visible="false"/>
+	<e:Label id="labelDesc" text="文字说明" x="86" width="280" height="40" size="18" textColor="0x9f946d" verticalCenter="8"/>
+	<e:Label id="name" text="物品名称" x="86" size="18" textColor="0x7e6437" y="7" bold="true"/>
+</e:Skin>

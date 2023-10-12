@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopPointItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="554" height="120">
+	<e:Image source="scitembg" left="0" right="0" top="0" bottom="0" scale9Grid="29,26,49,4"/>
+	<e:Button id="buyBtn" label="购  买" skinName="Btn1Skin" verticalCenter="0" name="buy" right="20"/>
+	<e:Image id="textBG" x="100" y="23" source="bantoutiaobg" height="32" width="280"/>
+	<e:Label id="itemName" text="商品名称" x="128" y="28" size="24" textColor="0xBCAF96"/>
+	<e:Label id="money" text="1000" y="72" size="20" textColor="0xBCAF96" x="282"/>
+	<e:Label id="integration" text="1000" y="72" size="20" textColor="0xBCAF96" x="172"/>
+	<e:Label id="used" text="（商品用途）" x="230" y="28" size="24" textColor="0xBCAF96"/>
+	<e:Image x="251" y="70" source="szyuanbao"/>
+	<e:Image x="147" y="70" height="23" width="21" source="szjinbi"/> 
+	<ns1:BaseComponent id="itemIcon" x="21" verticalCenter="0" skinName="ItemIconSkin" className="ItemIcon"/>
+</e:Skin>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ReinEquipItemSkin" width="400" height="110" currentState="state1" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" states="state1,state2">
+	<e:Image source="tongyonglabbg" scale9Grid="62,32,5,3" left="0" right="0" top="0" bottom="0" left.state2="2" right.state2="-2" top.state2="0" bottom.state2="0"/>
+	<e:Group id="content" x="4" y="7" visible.state2="false">
+		<ns1:BaseComponent id="need" y="0" skinName="ItemSkin" className="ItemBase" x="11"/>
+		<ns1:BaseComponent id="target" x="204" y="0" skinName="ItemSkin" className="ItemBase"/>
+		<e:Label id="num" text="2" size="20" textColor="0x00ff00" bold="true" x="138" y="32"/>
+		<e:Button id="compose" label="合 成" height="50" width="100" x="292" y="17" skinName="Btn3Skin"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" x="368" y="17"/>
+		<e:Image source="rein_mulit" x="100" y="27"/>
+		<e:Image source="rein_equal" x="170" y="32"/>
+	</e:Group>
+	<e:Group id="content1" verticalCenter="0" left="0" right="0" visible.state1="false">
+		<ns1:BaseComponent id="need0" y="0" skinName="ItemSkin" className="ItemBase" x="-3" scaleX="0.8" scaleY="0.8" scaleX.state2="0.75" scaleY.state2="0.75" x.state2="0"/>
+		<ns1:BaseComponent id="need1" y="0" skinName="ItemSkin" className="ItemBase" x="77" scaleX="0.8" scaleY="0.8" scaleX.state2="0.75" scaleY.state2="0.75" x.state2="80"/>
+		<ns1:BaseComponent id="need2" y="0" skinName="ItemSkin" className="ItemBase" x="158" scaleX="0.8" scaleY="0.8" scaleX.state2="0.75" scaleY.state2="0.75" x.state2="161"/>
+		<ns1:BaseComponent id="target1" x="247" y="0" skinName="ItemSkin" className="ItemBase" scaleX="0.8" scaleY="0.8" scaleX.state2="0.75" scaleY.state2="0.75" x.state2="250"/>
+		<e:Button id="compose1" label="合 成" x="313" skinName="Btn3Skin" scaleX="0.8" scaleY="0.8" verticalCenter="-0.5" verticalCenter.state2="-1" x.state2="314"/>
+		<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" y="14" scaleX="0.8" scaleY="0.8" right="1" right.state2="1"/>
+		<e:Image source="rein_equal" x="224" y="20" x.state2="225" y.state2="20"/>
+		<e:Image x="62" y="21" source="tongyongadd" width="20" height="20" x.state2="63" y.state2="20"/>
+		<e:Image x="143" y="21" source="tongyongadd" width="20" height="20" x.state2="144" y.state2="20"/>
+	</e:Group>
+</e:Skin>

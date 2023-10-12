@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="hongbaoOpenSkin" width="405" height="510" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+
+	<e:Image source="hongbao_under_png" width="363" height="506" y="3" horizontalCenter="0"/>
+
+	<e:Scroller y="174" anchorOffsetY="0" height="324" horizontalCenter="0">
+		<e:List id="list" itemRendererSkinName="hongbaoRewardItem"/>
+	</e:Scroller>
+	<e:Image id="topImg" source="hongbao_top_png" height="373" y="2" horizontalCenter="0"/>
+	<e:Image id="downImg" source="hongbao_bottom_png" y="322" height="187" horizontalCenter="0"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="3" scaleX="0.8" scaleY="0.8" horizontalCenter="160" visible="false"/>
+	<e:Group y="62" horizontalCenter="0">
+		<e:Image y="0" x="0" width="80" height="80" source="touxiangkuang0" scale9Grid="6,6,1,1"/>
+		<e:Image id="myFace" x="4" y="4" width="72" height="72" source="head_10"/>
+	</e:Group>
+	<e:Image width="180" height="25" y="144" source="bantoutiaobg2" scale9Grid="11,2,70,17" horizontalCenter="0"/>
+	<e:Label id="playerName" text="玩家名字六字" y="146" size="20" textColor="0xffd93f" bold="true" horizontalCenter="0"/>
+	<e:Image id="speakbg" width="280" y="179" source="xn_hongbaoUnder" anchorOffsetY="0" scale9Grid="3,0,6,141" height="114" horizontalCenter="0"/>
+	<e:Label id="speaktxt" text="恭祝大家在新的一年里，欧气十足，天天爆红装" y="184" size="22" anchorOffsetX="0" width="268" anchorOffsetY="0" height="104" bold="true" textColor="0xd1c28f" horizontalCenter="0"/>
+	<e:Button id="hbbtn" label="Button" y="302" skinName="Btn0Skin" icon="hongbaobtn_png" horizontalCenter="0"/>
+	<e:Image id="hhbtnlabel" y="354" source="qianghongbao" touchEnabled="false" horizontalCenter="0"/>
+	<e:Image id="title" source="hongbao_title1000" y="16" horizontalCenter="0"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+</e:Skin>

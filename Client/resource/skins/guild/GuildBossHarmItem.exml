@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildBossHarmItem" width="470" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.2"/>
+	<e:Label id="rank" text="10" size="28" textAlign="center" verticalAlign="middle" x="16" verticalCenter="0" textColor="0x9f946d"/>
+	<e:Label id="playerName" text="玩家名字六字" size="20" verticalCenter="0" horizontalCenter="-88" textColor="0x9f946d"/>
+	<e:Label id="harm" text="99999999999" size="20" verticalCenter="0" horizontalCenter="64" textColor="0x9f946d"/>
+	<e:Label id="reward" text="5000" size="20"  verticalCenter="0" textColor="0x9f946d" horizontalCenter="190"/>
+	<e:Image id="qiansan" x="10" source="paihang1" visible="false"/>
+</e:Skin>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="teamFbRankItem" width="556" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="32">
+	<e:Image left="0" right="0" top="0" bottom="0" source="tfb_rankbg"/>
+
+
+
+
+
+
+
+	<e:Group id="member" x="71" y="3">
+		<e:Image id="img0" x="0" source="tfb_leader" scaleX="0.9" scaleY="0.9" y="0"/>
+		<e:Label id="nameTxt0" text="玩家名字六字" size="15" textColor="0x9f946d" x="27" y="5"/>
+		<e:Image id="img1" x="128" scaleX="0.9" scaleY="0.9" y="0" source="tfb_assistant"/>
+		<e:Label id="nameTxt1" text="玩家名字六字" size="15" textColor="0x9F946D" x="153" y="5"/>
+		<e:Image id="img2" x="253" source="tfb_assistant" scaleX="0.9" scaleY="0.9" y="0"/>
+		<e:Label id="nameTxt2" text="玩家名字六字" size="15" textColor="0x9F946D" x="278" y="5"/>
+		<e:Label id="fubenName" text="边界村新生" size="16" textColor="0x9F946D" left="393" verticalCenter="0" x="392" y="5" scaleX="1" scaleY="1"/>
+	</e:Group>
+
+	<e:Label id="noteam" text="暂无队伍上榜" x="198" size="22" verticalCenter="0" bold="true" visible="false"/>
+
+
+</e:Skin>

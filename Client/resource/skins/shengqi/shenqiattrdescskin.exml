@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="shenQiAttrDescSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="0" y="0">
+		<e:Image touchEnabled="false" source="tongyongdian" y="1" x="0"/>
+		<e:Label id="labelInfo" text="生       命：" size="18" lineSpacing="10" touchEnabled="false" textAlign="left" y="0"  x="15" textColor="0x9F946D"/>
+	</e:Group>
+</e:Skin>

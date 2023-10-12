@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildSkillWinSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="566" height="730">
+	<w:Config id="15d5f01209d"/>
+	<e:Image source="hejibg1_png" y="103" width="554" scale9Grid="3,5,251,213" height="475" horizontalCenter="0"/>
+	<e:Group id="dinghong" width="556" height="150" bottom="6" horizontalCenter="0">
+		<e:Image top="0" bottom="0" source="bantoumingkuang3" />
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" />
+	</e:Group>
+
+	<e:Group y="4" horizontalCenter="0">
+		<e:Image source="tielian" x="503" y="83" scale9Grid="0,11,22,32"  height="13"/>
+		<e:Image source="tielian" x="27" y="83" scale9Grid="0,11,22,32"  height="12"/>
+		<e:Image source="tielian" x="27" y="0"/>
+		<e:Image source="tielian" x="503" y="0"/>
+		<e:Image source="tielian" x="27" y="43"/>
+		<e:Image source="tielian" x="503" y="43"/>
+		<e:Image source="jineng_json.jinengline1" scale9Grid="16,0,4,11" width="280" x="0" y="87"/>
+		<e:Image source="jineng_json.jinengline1" scale9Grid="16,0,4,11" width="280" scaleX="-1" x="554" y="87"/>
+	</e:Group>
+	<e:Group y="105" horizontalCenter="0.5">
+		<e:Image   x="0" y="0" source="guildskill_bg3_png"/>
+		<e:Image height="96" rotation="0.14" y="6" source="guildskill_bg2" x="138"/>
+		<e:Image rotation="120.04"   height="96" x="411" y="247" source="guildskill_bg2"/>
+		<e:Image rotation="239.37" height="96" x="71" y="365" source="guildskill_bg2"/>
+		<e:Image height="91" source="guildskillarrow" x="147" y="266"/>
+		<e:Image id="skillBmp1" touchEnabled="true" x="42" y="246" source="guildskill_1"/>
+		<e:Image id="skillBmp2" touchEnabled="true" x="172" y="19" source="guildskill_2"/>
+		<e:Image id="skillBmp3" touchEnabled="true" x="300" y="246" source="guildskill_3"/>
+		<e:Image id="selectSkillBmp" x="158" y="156" scaleX="1.4" scaleY="1.4" source=""/>
+		<e:Image id="selectBmp" touchEnabled="false" source="xuanzhongyuan" scaleX="1.4" scaleY="1.4" y="13" x="165"/>
+		<e:Image id="redPoint1" source="zjmhongdian" x="87" y="235.5"/>
+		<e:Image id="redPoint2" source="zjmhongdian" x="229" y="13"/>
+		<e:Image id="redPoint3" source="zjmhongdian" x="347" y="242"/>
+	</e:Group>
+	<e:Group id="praGroup" width="481" height="286" horizontalCenter="0"   bottom="0">
+
+		<e:Image x="178" y="146" width="110" source="shuzibg" scale9Grid="3,3,18,18" height="32"/>
+		<e:Image x="314" y="146" width="110" source="shuzibg" scale9Grid="3,3,18,19" height="32"/>
+		<e:Image x="178" y="180" width="110" source="shuzibg" scale9Grid="3,4,18,17" height="32"/>
+		<e:Label id="praName" text="技能名称" x="43" y="34" size="24" textColor="0xE9AF12"/>
+		<e:Label id="praCurBase" text="生命：999999" x="50" y="78" size="20" wordWrap="true" textColor="0x9f946d" height="42" verticalAlign="middle"/>
+		<e:Label id="praNextLab" text="生命：99999999" x="288" y="78" size="20" textColor="0x5FD503" wordWrap="true" height="42" verticalAlign="middle"/>
+		<e:Image x="224" y="67" source="jiantouyou"/>
+		<e:Label id="praCon" text="9999999" x="192" y="186" size="20" textColor="0x9f946d"/>
+		<e:Image x="163" y="183" source="szbanggong"/>
+		<e:Label id="praCost" text="99999" x="192" y="152" size="20" textColor="0x9f946d"/>
+		<e:Label id="praCost0" text="99999999" x="325" y="152" size="20" textColor="0x9f946d"/>
+		<e:Image x="163" y="149" source="szbanggong"/>
+		<e:Image source="szjinbi" x="296" y="149"/>
+		<e:Button id="praBtn" label="学 习" skinName="Btn1Skin" bottom="10" horizontalCenter="0" width="156" height="60"/>
+		<e:Group id="praBtnMc" width="156" height="60" horizontalCenter="0" bottom="10"/>
+		<e:Image source="jineng_json.jinengline2" x="42" y="58"/>
+		<e:Label id="lvTxt" text="等级99" x="175" y="36" textColor="0x9f946d" size="20"/>
+		<e:Label text="升级消耗：" x="72" y="152" textColor="0x9F946D" size="20"/>
+		<e:Label text="剩余贡献：" x="72" y="186" textColor="0x9F946D" size="20"/>
+	</e:Group>
+	<e:Label id="learnLab" text="无法升级技能，请先提升练功房等级  前往提升" size="20"  horizontalCenter="0" textColor="0xf3311e" bottom="30" visible="false"/>
+</e:Skin>

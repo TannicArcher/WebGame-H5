@@ -1,0 +1,10 @@
+{"file":"shenyu.png","frames":{
+"sybg4":{"x":0,"y":192,"w":60,"h":64,"offX":2,"offY":0,"sourceW":64,"sourceH":64},
+"sybg2":{"x":0,"y":76,"w":59,"h":64,"offX":2,"offY":0,"sourceW":64,"sourceH":64},
+"btn_shenyudashi":{"x":0,"y":0,"w":96,"h":76,"offX":1,"offY":1,"sourceW":99,"sourceH":77},
+"sybg1":{"x":96,"y":73,"w":61,"h":64,"offX":3,"offY":0,"sourceW":64,"sourceH":64},
+"btn_shenyu":{"x":96,"y":0,"w":74,"h":73,"offX":0,"offY":2,"sourceW":74,"sourceH":75},
+"sybg3":{"x":157,"y":128,"w":60,"h":64,"offX":1,"offY":0,"sourceW":64,"sourceH":64},
+"biaoti_shenyu":{"x":59,"y":137,"w":80,"h":26,"offX":12,"offY":4,"sourceW":103,"sourceH":34},
+"sy100000_actived":{"x":170,"y":64,"w":64,"h":64,"offX":0,"offY":0,"sourceW":64,"sourceH":64},
+"sy100000":{"x":170,"y":0,"w":64,"h":64,"offX":0,"offY":0,"sourceW":64,"sourceH":64}}}

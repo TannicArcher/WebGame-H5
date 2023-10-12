@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShenYuComposeItem" width="165" height="60" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" states="up,down,disabled" >
+	<e:Image id="bg"  source="yeqian4" top="0" bottom="0" source.down="yeqian5" scale9Grid="80,0,7,58" left="0" right="0"/>
+	<e:Image id="bg0" right="0" left="0" top="4" bottom="4" source="yeqian6" visible.up="false" visible.disabled="false" scale9Grid="55,0,9,40"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" x="134" y="0" visible="false"/>
+
+	<e:Label id="nameTxt" text="2阶神羽" size="18" textColor="0xf8b141" horizontalCenter="10" verticalCenter="0" textColor.up="0xd1c28f" textColor.disabled="0x6b6b6b"/>
+	<e:Image id="notOpenImg" source="zdbossskin_json.zdbossweikaiqi" y="0" right="6" visible="false"/>
+</e:Skin>

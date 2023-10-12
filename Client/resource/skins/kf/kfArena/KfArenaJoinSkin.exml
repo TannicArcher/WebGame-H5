@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KfArenaJoinSkin" width="580" height="731" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15dbfa8e636"/>
+	<e:Scroller top="65" bottom="80" horizontalCenter="0" anchorOffsetY="0">
+		<e:List id="list" y="-20" itemRendererSkinName="KfArenaJoinItemSkin" x="-1">
+		<e:ArrayCollection>
+			<e:Array>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			<e:Object/>
+			</e:Array>
+		</e:ArrayCollection>
+		<e:layout>
+			<e:VerticalLayout gap="0"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group y="661" horizontalCenter="0">
+		<e:Label text="本月获得竞技巅峰令：" x="0" y="0"/>
+		<e:Label id="myRecord" text="100" x="0" y="0" textColor="0x00ff00"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+
+</e:Skin>

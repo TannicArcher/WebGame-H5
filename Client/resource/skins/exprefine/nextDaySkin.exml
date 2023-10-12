@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="nextDaySkin" width="432" height="475"  xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Button id="sendBtn" y="340" x="146" icon="act14log_17" width="145" height="43" skinName="Btn0Skin"/>
+	<ns1:ItemBase id="item" x="182" y="247"/>
+</e:Skin>

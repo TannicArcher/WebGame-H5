@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LadderSratListSkin" width="200" height="200" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing"  states="3,4,5,0" >
+	<e:Image source="jingji_json.jjxingwei" width="185" height="192" horizontalCenter="0" verticalCenter="0"/>
+	<e:Image id="dwImg" verticalCenter="20" horizontalCenter="0" source="ladder_rank_4"/>
+	<e:Image id="level" verticalCenter="16" horizontalCenter="0.5" source="laddergradnum_2"/>
+	<ns1:BaseComponent id="star3" x.0="79" y="13" visible.0="false" y.3="128" x.4="104" y.4="146" skinName="LadderSratSkin" className="LadderStarView" y.5="152" horizontalCenter.3="50" horizontalCenter.5="0"/>
+	<ns1:BaseComponent id="star1" x.0="7" y="72" visible.0="false" y.3="128" y.4="110" skinName="LadderSratSkin" className="LadderStarView" y.5="110" horizontalCenter.3="-50" horizontalCenter.4="-66" horizontalCenter.5="-64"/>
+	<ns1:BaseComponent id="star2" x.0="37" x.4="52" y="31" visible.0="false" y.3="152" y.4="146" y.5="140" skinName="LadderSratSkin" className="LadderStarView" horizontalCenter.3="0" horizontalCenter.5="-38"/>
+	<ns1:BaseComponent id="star4" x.0="124" x.3="124" y="31" visible.0="false" visible.3="false" y.4="110" y.5="140" skinName="LadderSratSkin" className="LadderStarView" horizontalCenter.4="66" horizontalCenter.5="38"/>
+	<ns1:BaseComponent id="star5" x.0="152" x.4="152" x.3="152" y="72" visible.0="false" visible.4="false" visible.3="false" skinName="LadderSratSkin" className="LadderStarView" y.5="110" horizontalCenter.5="64"/>
+
+	<e:Image id="up" includeIn="5" x="108" y="148" rotation="-90" source=""/>
+	<e:Image id="down" includeIn="5" x="108" y="134" source=""/>
+	
+</e:Skin>

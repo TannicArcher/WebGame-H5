@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LiLianSkin" currentState="nomax" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        width="580" states="nomax,max" height="775">
+	<w:Config id="15aa6864789"/>
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image width="570"   horizontalCenter="0" source="tongyongmianbanbg" top="44" bottom="0" x="5" y="44"   scale9Grid="19,12,14,19"/>
+		<e:Image source="tongyongline" y="244" left="0" right="0" includeIn="max" x="0"  />
+		<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" width="580" horizontalCenter="0" currentState="nohead" x="0"  />
+		<e:Group id="dinghong0" width="556" height="96" bottom="6" horizontalCenter="0" includeIn="nomax">
+			<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+			<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0"/>
+		</e:Group>
+		<e:Image source="lilian_json.biaoti_juewei_png" y="5" horizontalCenter="-155" x="84"  />
+		<e:Group id="showAct" top="0" bottom="0"   left="0" right="0">
+			<e:Image source="chatlight" width="554" scale9Grid="1,0,8,25" horizontalCenter="0" bottom="6" height="36" touchEnabled="false"/>
+			<e:Group width="580" height="40" y="366" includeIn="nomax,max" x="0">
+			<e:Image left="13" right="13" source="pailietoubg2" y="0" scale9Grid="12,0,17,40"/>
+			<e:Label text="任务名称" size="20" textColor="0xc69a6b" verticalCenter="0" x="44" bold="true"/>
+			<e:Label text="操作" x="488" textColor="0xc69a6b" size="20" bold="true" verticalCenter="0"/>
+			<e:Label text="单次奖励" x="331" size="20" textColor="0xc69a6b" verticalCenter="0" bold="true"/>
+			<e:Label text="次数" x="200" size="20" textColor="0xc69a6b" bold="true" verticalCenter="0"/>
+			<e:Image x="150" verticalCenter="0" source="pailietouline"/>
+			<e:Image x="288" verticalCenter="0" source="pailietouline"/>
+			<e:Image x="449" verticalCenter="0" source="pailietouline"/>
+			</e:Group>
+			<e:Scroller width="554" includeIn="nomax,max" x="13"  top="410" bottom="10" horizontalCenter.nomax="0" bottom.nomax="106">
+			<e:List id="list" itemRendererSkinName="LiLianItemSkin" horizontalCenter="0"  y="54" height="352">
+				<e:layout>
+				<e:VerticalLayout/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+			<e:Label text="已满级" includeIn="max" y="253" textColor="0xe5ba14" horizontalCenter="0" visible="false"/>
+			<e:Group id="upInfo" y="270" width="554" includeIn="nomax,max" x="13" visible.max="false">
+			<e:Button id="upgradeBtn" label="晋  升" verticalCenter="0" right="20" skinName="Btn1Skin" width="130" height="50"/>
+			<e:List id="itemList" x="40" itemRendererSkinName="ItemSkin" verticalCenter="0">
+				<e:layout>
+				<e:HorizontalLayout gap="0"/>
+				</e:layout>
+			</e:List>
+			<e:Image source="lilian_json.jueweijiangli_png" x="10" y="4"/>
+				<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" x="516" y="23"   visible="false"/>
+
+			</e:Group>
+			<e:Group id="expGroup" y="234" height="30" width="554" includeIn="nomax,max" x="13" visible.max="false"/>
+			<e:Group id="addReward" y="81"  right="20">
+			<e:Image id="guanyin" y="0" width="76" height="76" scale9Grid="8,8,48,48" source="quality5"   horizontalCenter="0" visible="false"/>
+			<ns1:BaseComponent id="item4" x="0" y="0" skinName="ItemSkin" className="ItemBase"/>
+
+				<e:Group id="tipsGroup" x="0" y="80">
+					<e:Group y="0" x="0" width="90">
+						<e:Label text="再提升" size="16" y="0" horizontalCenter="0" textAlign="center" x="0"   textColor="0xffff00"/>
+						<e:Label id="targetLevel" text="1" size="16" y="0" horizontalCenter="12" textAlign="center" textColor="0x00ff00" x="43"  />
+						<e:Label text="等" size="16" y="10" horizontalCenter="0" textAlign="center" x="10"   textColor="0xffff00"/>
+						<e:layout>
+						<e:HorizontalLayout gap="0" horizontalAlign="center"/>
+						</e:layout>
+					</e:Group>
+					<e:Label text="可领取" size="16" y="18" textAlign="center"   x="22" textColor="0xffff00"/>
+				</e:Group>
+
+			<e:Button id="reward" label="领取" skinName="Btn3Skin" width="76" height="40" y="80" horizontalCenter="0" visible="false"/>
+				<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" x="66" y="0"   visible="false"/>
+				<e:Group x="-16" y="0" id="guanyinMing0" touchChildren="false" touchEnabled="false" visible="false">
+					<e:Image id="guanyinBg0" source="jueweitb_json.guanyindb_png" y="0" x="0" scale9Grid="17,14,2,2" height="75"  />
+					<e:Image x="9" y="5" id="guanyinLv0"   source="jueweitb_json.guanyin_02_png"/>
+					<e:Image id="guanyinLv1" x="9" y="19"   source="jueweitb_json.guanyin_10_png" visible="false"/>
+
+				</e:Group>
+
+
+			</e:Group>
+			<e:Image source="fengexian" y="-5" left="4" right="4" scale9Grid="18,1,6,9" visible="false"/>
+			<e:Group horizontalCenter="-31" top="110">
+				<e:Label id="levelLabel" text="1等" size="20" includeIn="nomax,max" y="-34" horizontalCenter="0" textColor="0x00ff00"/>
+				<e:Label id="attrTxt" text="攻击：8000        生命：999999     物防：999999       魔防：999999        " size="18" width="120" textAlign="left" verticalAlign="middle" horizontalCenter.max="20" textAlign.nomax="left" verticalCenter="0" textColor="0x9f946d" x="0" y="-36"/>
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="middle"/>
+				</e:layout>
+			</e:Group>
+			<e:Image id="cursor" width="30" height="50" visible.max="false" source="jiantouyou" horizontalCenter="50" top="134"/>
+			<e:Group horizontalCenter="117" top="110">
+				<e:Label id="levelLabel0" text="120等海王·王爵" size="20" includeIn="nomax,max" y="-34" horizontalCenter="0" textColor="0x00ff00"/>
+				<e:Label id="nextTxt" text="8000\n9999\n999999\n999999           " size="18" textColor="0x2ECA22" width="73" textAlign="left" verticalAlign="middle" visible.max="false" verticalCenter="0" x="359"/>
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="center" verticalAlign="middle"/>
+				</e:layout>
+			</e:Group>
+
+			<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" y="57" includeIn="nomax,max" scaleX="0.8" scaleY="0.8" x="194"/>
+			<e:Group x="27" y="38" >
+			<e:Image source="lilian_json.jueweidengguang_png" width="182" height="190" includeIn="nomax,max"   horizontalCenter="0" top="0"/>
+			<e:Image source="juese_json.chenghaoditai" y="111" includeIn="nomax,max"   horizontalCenter="0"/>
+			<e:Image id="imgMedal" y="25" source="juewei_1_7_png" includeIn="nomax,max"   horizontalCenter="0"/>
+			<e:Image id="levelImg" source="juewei_0_7_png" includeIn="nomax,max" y="144" horizontalCenter="0"/>
+
+			</e:Group>
+		</e:Group>
+		<e:Group id="lilian" horizontalCenter="0" width="530" bottom="10" includeIn="nomax">
+			<e:ProgressBar id="bar1" height="17" skinName="bar5Skin" value="100" y="32" width="90" x="76"/>
+			<e:ProgressBar id="bar2" height="17" skinName="bar5Skin" value="100" y="32" width="88" x="225"/>
+			<e:ProgressBar id="bar3" height="17" skinName="bar5Skin" value="100" y="32" width="92" x="370"/>
+			<e:ProgressBar id="bar4" height="17" skinName="bar5Skin" value="100" y="32" width="45" x="421" visible="false"/>
+			<e:Image source="jingyantiao6" left="70" right="50" scale9Grid="26,3,8,19" y="28"/>
+			<e:Image source="touxiangkuang" anchorOffsetX="0" width="80" anchorOffsetY="0" height="80"/>
+			<e:Image source="star2" x="2" y="13" visible="false"/>
+			<e:Label text="今日历练" y="24" size="14" scaleX="1" scaleY="1" x="12" textColor="0x9F946D"/>
+			<e:Label id="lilianed" text="999" y="42" size="22" textColor="0x00FF00" x="10" textAlign="center" width="60"/>
+			<e:Group y="3" x="160" width="72">
+			<e:Label id="lilian1" text="10历练" size="18" y="62" horizontalCenter="0.5" textColor="0xD1C28F"/>
+			<ns1:BaseComponent id="gift1" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" className="ItemBase"/>
+				<e:Group id="eff1" scaleX="0.8" scaleY="0.8" y="30" x="34"/>
+				<e:Group id="isget1" width="90" height="96" scaleX="0.8" scaleY="0.8">
+				</e:Group>
+			<e:Button skinName="Btn0Skin" icon="200116_0_png" visible="false"/>
+			<e:Image id="lingqu1" source="tongyong2_json.yilingqu" y="16" horizontalCenter="0"/>
+				<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" x="50" y="-8" visible="false"/>
+			</e:Group>
+			<e:Group x="306" y="3" width="72">
+			<e:Label id="lilian2" text="25历练" size="18" textColor="0xD1C28F" y="62" horizontalCenter="0.5"/>
+			<e:Button skinName="Btn0Skin" icon="200116_png" visible="false"/>
+			<ns1:BaseComponent id="gift2" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" className="ItemBase"/>
+				<e:Group id="eff2" scaleX="0.8" scaleY="0.8" x="34" y="30"/>
+				<e:Group id="isget2" width="90" height="96" scaleX="0.8" scaleY="0.8"/>
+				<e:Image id="lingqu2" source="tongyong2_json.yilingqu" y="16" horizontalCenter="0" visible="false"/>
+				<e:Image id="redPoint2" touchEnabled="false" source="zjmhongdian" x="50" y="-8" visible="false"/>
+			</e:Group>
+			<e:Group x="456" y="3" width="72">
+			<e:Label id="lilian3" text="38历练" size="18" textColor="0xD1C28F" y="62" horizontalCenter="0.5"/>
+			<ns1:BaseComponent id="gift3" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" className="ItemBase"/>
+				<e:Group id="eff3" scaleX="0.8" scaleY="0.8" x="34" y="30"/>
+				<e:Group id="isget3" height="96" scaleX="0.8" scaleY="0.8" width="90"/>
+				<e:Image id="lingqu3" source="tongyong2_json.yilingqu" y="16" horizontalCenter="0" visible="false"/>
+			<e:Button skinName="Btn0Skin" icon="200116_png" visible="false"/>
+				<e:Image id="redPoint3" touchEnabled="false" source="zjmhongdian" x="50" y="-8" visible="false"/>
+			</e:Group>
+			<e:Group x="460" y="6" width="60" visible="false">
+			<e:Label id="lilian4" text="45历练" size="18" textColor="0xD1C28F" y="60" horizontalCenter="0"/>
+			<ns1:BaseComponent id="gift4" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" className="ItemBase"/>
+				<e:Group id="isget4" height="96" scaleX="0.8" scaleY="0.8" width="90"/>
+				<e:Image id="lingqu4" source="tongyong2_json.yilingqu" y="16" horizontalCenter="0" visible="false"/>
+			<e:Button skinName="Btn0Skin" icon="200116_png" visible="false"/>
+				<e:Image id="redPoint4" touchEnabled="false" source="zjmhongdian" scaleX="1" scaleY="1" x="40" visible="false"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="Activation" horizontalCenter="0" verticalCenter="0" width="512" height="500" x="34" y="138"   visible="false">
+			<e:Group left="0" right="0" top="0" bottom="0">
+			<e:Image source="longhunbg_png" horizontalCenter="0" y="0" locked="true"/>
+			<e:Label id="activeTipsTxt0" text="20级可开启爵位晋升之路" horizontalCenter="0" size="24" textColor="0xD1C28F" y="64"/>
+			<e:Label text="爵位荣耀" bold="true" size="24" horizontalCenter="0" textColor="0xF8B141" y="154"/>
+			<e:Label text="幸运一击" bold="true" size="24" horizontalCenter="0" textColor="0xF8B141" y="214"/>
+			<e:Label text="铸造晶石" bold="true" size="24" horizontalCenter="0" textColor="0xF8B141" y="274"/>
+			<e:Button id="UplevelBtn0" label="开启爵位" skinName="Btn1Skin" width="180" height="60" y="410" horizontalCenter="0"/>
+			<e:Image source="tongyongdian" x="186" y="158"/>
+			<e:Image source="tongyongdian" x="186" y="278"/>
+			<e:Image source="tongyongdian" x="186" y="218"/>
+			<e:Image source="weijihuohuawen" y="424" scale9Grid="0,0,50,31" width="120" horizontalCenter="-160"/>
+			<e:Image source="weijihuohuawen" y="455" scale9Grid="0,0,50,31" width="120" horizontalCenter="160" rotation="180"/>
+			<e:Image source="tongyongline" y="178" horizontalCenter="0"/>
+			<e:Image source="tongyongline" y="239" horizontalCenter="0"/>
+			<e:Image source="tongyongline" y="298" horizontalCenter="0"/>
+			<e:Image id="redPointAct0" source="zjmhongdian" x="332" y="406" visible="false"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--<e:Group y="176" horizontalCenter="-160" locked="true">
+		<e:Image source="zhandoulibg" y="10"/>
+		<e:Image source="zjmzhandouli" x="0" y="0"/>
+	</e:Group>-->
+
+
+	
+
+</e:Skin>

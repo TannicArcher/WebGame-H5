@@ -1,0 +1,14 @@
+{"file":"heir.png","frames":{
+"heir_01":{"x":230,"y":1,"w":24,"h":23,"offX":0,"offY":0,"sourceW":24,"sourceH":24},
+"heir_02":{"x":230,"y":26,"w":23,"h":23,"offX":1,"offY":0,"sourceW":24,"sourceH":24},
+"heir_03":{"x":51,"y":90,"w":24,"h":24,"offX":0,"offY":0,"sourceW":24,"sourceH":24},
+"heir_04":{"x":25,"y":90,"w":24,"h":24,"offX":0,"offY":0,"sourceW":24,"sourceH":24},
+"heirbao":{"x":1,"y":90,"w":22,"h":34,"offX":6,"offY":0,"sourceW":34,"sourceH":34},
+"heirjiao":{"x":165,"y":66,"w":45,"h":46,"offX":0,"offY":0,"sourceW":45,"sourceH":46},
+"heirljjc":{"x":1,"y":1,"w":98,"h":87,"offX":0,"offY":0,"sourceW":98,"sourceH":87},
+"heirqm_0":{"x":138,"y":128,"w":58,"h":61,"offX":3,"offY":1,"sourceW":64,"sourceH":64},
+"heirqm_1":{"x":1,"y":156,"w":58,"h":61,"offX":3,"offY":1,"sourceW":64,"sourceH":64},
+"heirqm_2":{"x":101,"y":66,"w":62,"h":60,"offX":1,"offY":2,"sourceW":64,"sourceH":64},
+"heirqm_3":{"x":101,"y":1,"w":63,"h":63,"offX":0,"offY":1,"sourceW":64,"sourceH":64},
+"heirqm_4":{"x":166,"y":1,"w":62,"h":63,"offX":0,"offY":0,"sourceW":64,"sourceH":64},
+"biaoti_chuanshi":{"x":1,"y":128,"w":135,"h":26,"offX":6,"offY":5,"sourceW":148,"sourceH":34}}}

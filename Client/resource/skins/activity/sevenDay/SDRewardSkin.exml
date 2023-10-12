@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SDRewardSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"   >
+	<e:Rect id="closeBtn" left="0" right="0" top="0" bottom="0" fillAlpha="0.8" x="0" y="0"/>
+	<e:Group anchorOffsetY="0" width="420" y="129" height="550" horizontalCenter="8" anchorOffsetX="0">
+		<e:Image anchorOffsetY="0" anchorOffsetX="0" top="0" left="0" bottom="0" source="tongyongtip1" scale9Grid="10,9,6,7" right="0"/>
+		<e:Image top="0" left="0" right="0" source="tongyongkuang3tou" scale9Grid="203,6,9,41"/>
+		<e:Image source="tongyongtip2" scale9Grid="19,18,2,4" left="0" top="0" bottom="0" right="0"/>
+
+
+		<e:Label id="nametxt" text="任务积分大礼" size="24" bold="true" textColor="0xf8b141" horizontalCenter="0.5" top="11"/>
+
+
+		<e:Group horizontalCenter="0" bottom="5">
+			<e:Image x="0" source="gantanhao" width="20" height="20" y="0"/>
+			<e:Label text="积分大礼只发放最高档次的奖励！" size="20" x="24" textColor="0xf8b141" y="0"/>
+			<e:Image x="0" source="gantanhao" width="20" height="20" y="24"/>
+			<e:Label text="奖励将在活动结束后通过邮件发放！" size="20" x="24" textColor="0xF8B141" y="24"/>
+		</e:Group>
+
+		<e:Image source="sd_projectbg" top="42" left="2" right="2" anchorOffsetY="0" scale9Grid="6,6,3,3" bottom="54"/>
+		<e:Scroller id="rewardShow" height="447" anchorOffsetY="0" scrollPolicyV="on" top="45" horizontalCenter="0">
+			<e:List id="list" itemRendererSkinName="SDShowItemSkin" height="430" anchorOffsetY="0">
+			</e:List>
+		</e:Scroller>
+
+
+
+
+
+	</e:Group>		
+</e:Skin>

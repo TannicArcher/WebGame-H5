@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BtnTab3Skin" states="up,down,disabled"
+        currentState="up" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width.down="150" width.up="150" width="150" height="60">
+	<e:Image touchEnabled="false"  source="yeqian4" verticalCenter="0" right="0" source.up="yeqian4" source.down="yeqian4" touchEnabled.down="false" touchEnabled.disabled="false" touchEnabled.up="false"/>
+	<e:Image source="yeqian6" left="0" right="0" top="2" bottom="3" visible.up="false" visible.disabled="false" touchEnabled="false"/>
+	<e:Group id="redPoint" y="-2" right="0" visible="false">
+		<e:Image source="zjmhongdian"/>
+		<e:Label id="txt0" size="12" width="15" textAlign="center" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+	<e:Label id="labelDisplay" text="{data.name}" x="56" size="22" bold="true" textColor="0x9f946d" textColor.down="0xf8b141" textColor.disabled="0x444134" size.up="22" verticalCenter.up="0" x.up="56" verticalCenter="0"/>
+</e:Skin>

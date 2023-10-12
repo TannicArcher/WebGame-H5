@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleRewarrdItemSkin" width="554" height="110" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="tongyongline" bottom="0" height="2" left="0" right="0" scale9Grid="104,0,11,3"/>
+	<e:Label id="rank" text="第1名" size="20" verticalCenter="0" textColor="0x9F946D" left="30"/>
+	<e:List id="awards" x="100" itemRendererSkinName="ItemSkin" verticalCenter="0">
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:List>
+</e:Skin>

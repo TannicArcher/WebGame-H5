@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PunchEquipAttrSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="15a6a432acd"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group id="anigroup" width="300" height="300" horizontalCenter="0" verticalCenter="0">
+		<e:Image  left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="5,5,15,15"/>
+		<e:Image source="tongyongtip2" left="0" right="0" top="0" bottom="0" scale9Grid="18,17,3,6"/>
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-34" width="400"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-29" textColor="0x7E6437"/>
+		<e:Label text="符文属性" verticalAlign="justify" textAlign="center" textColor="0xbd600d" size="24" bold="true" horizontalCenter="0" y="16"/>
+
+		<e:Label id="currText0" text="(对三角色生效)" y="48" verticalAlign="justify" textAlign="left" size="20" horizontalCenter="0" bold="true" textColor="0x7e6437"/>
+
+
+		<e:Group verticalCenter="30" horizontalCenter="0">
+			<e:Label id="baseAttr" text="攻    击：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率:" size="18" textColor="0xDFD1B5" lineSpacing="10" touchEnabled="false" textAlign="left" y="0" x="0" verticalAlign="middle"/>
+			<e:Label id="extAttr" size="18" textColor="0xDFD1B5" lineSpacing="10" touchEnabled="false" textAlign="left" y="140" x="0" verticalAlign="middle"/>
+			<e:layout>
+				<e:VerticalLayout gap="20"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

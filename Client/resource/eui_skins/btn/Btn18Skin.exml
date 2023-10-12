@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Btn18Skin" states="up,down,disabled"
+        currentState="up" xmlns:e="http://ns.egret.com/eui"  width="91" height="47">
+	<e:Image  horizontalCenter="0" verticalCenter="0" source="bosstouxiangbtn" scaleX.down="0.9" scaleY.down="0.9"/>
+	<e:Label size="16" text="按钮" id="labelDisplay" horizontalCenter="0" verticalCenter="0"  textColor="0xd1c28f" bold="true" scaleX.down="0.9" scaleY.down="0.9" verticalCenter.down="-1" textColor.disabled="0x9e9e9e" verticalCenter.up="-1"/>
+</e:Skin>

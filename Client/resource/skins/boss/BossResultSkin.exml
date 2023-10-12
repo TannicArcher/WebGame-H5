@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BossResultSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        height="930" width="580">
+	<w:Config id="15c8d32c190" />
+
+	<e:Group horizontalCenter="0" verticalCenter="-22">
+		<e:Image id="bg" width="562" height="788"   source="win_png" horizontalCenter="0" verticalCenter="-49" x="9" y="22"/>
+		<e:Button id="closeBtn" label="退出(10s)" skinName="Btn1Skin" width="130" y="629" horizontalCenter="0"/>
+		<e:Label id="labelItem" text="获得道具：" y="298" size="20" textColor="0xDFD1B5" height="40" verticalAlign="middle" x="81"/>
+
+
+
+		<e:Scroller id="scrollerGroup" width="400" height="277"    enabled="true"  horizontalCenter="0" y="341" anchorOffsetY="0">
+			<e:Group id="listGroup" width="414"   horizontalCenter="0" verticalCenter="4">
+
+
+
+
+			<e:List id="listItem" y="11.52" width="380" >
+				<e:layout>
+				<e:TileLayout/>
+				</e:layout>
+			</e:List>
+			<e:layout>
+				<e:VerticalLayout gap="3" horizontalAlign="center"/>
+			</e:layout>
+			</e:Group>
+		</e:Scroller>
+
+
+
+		<e:Group id="effGroup"   touchChildren="false" touchEnabled="false" y="120" horizontalCenter="-60" x="230"  />
+		<e:Group id="winnerGroup"   touchChildren="false" touchEnabled="false" y="217" width="400"   horizontalCenter="0">
+			<e:Label text="BOSS归属者：" textColor="0xdfd1b5" size="20" x="0"   verticalCenter="-20"/>
+			<e:ToggleButton id="roleIcon" skinName="RoleToggleBtn" y="-30" icon="yuanhead11" horizontalCenter="0"/>
+			<e:Label id="belongTxt" text="今晚打老虎" y="60" size="20"   textColor="0x35e62d" horizontalCenter="0"/>
+		</e:Group>
+		<e:Image id="title" source="result_json.win_02" y="113" horizontalCenter="0"/>
+
+
+	</e:Group>
+</e:Skin>

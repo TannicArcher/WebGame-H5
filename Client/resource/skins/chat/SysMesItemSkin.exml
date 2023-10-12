@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SysMesItemSkin" width="548" height="44" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="type" x="16" source="lt_02" verticalCenter="0"/>
+	<e:Image id="bg" scale9Grid="86,1,4,1" bottom="0" left="0" right="0" source="tongyongline" height="2"/>
+	<e:Label id="str" text="聊天内容很长很长，最多40个字" size="18" wordWrap="true" right="20" left="73" height="40" verticalCenter="0" verticalAlign="middle" textColor="0x9f946d"/>
+	
+	
+	
+</e:Skin>

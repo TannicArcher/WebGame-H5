@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KfArenaJoinItemSkin" width="560" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:List id="rewardList" x="367" y="16" itemRendererSkinName="ItemSkin">
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+		<e:ArrayCollection>
+			<e:Array>
+				<e:Object null=""/>
+			</e:Array>
+		</e:ArrayCollection>
+	</e:List>
+	<e:Group id="redPoint" y="0" right="0" anchorOffsetX="0" width="-30" visible="false">
+		<e:Image source="zjmhongdian" x="-128" y="15"/>
+	</e:Group>
+	<e:Label id="get" text="已领取" x="383.5" y="45" textColor="0x21cc10" size="19" bold="true" visible="false"/>
+	<e:Group x="37" y="32">
+		<e:Label text="竞技场获得" x="0" y="0"/>
+		<e:Label id="target" text="50" x="10" y="10" textColor="0x00ff00"/>
+		<e:Label text="巅峰令" x="20" y="20"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

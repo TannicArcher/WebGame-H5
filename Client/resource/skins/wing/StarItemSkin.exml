@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="StarItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1586b20bae4"/>
+	<e:Image id="fullStarImg" source="star1" width="50" height="50"/>
+	<e:Image id="starImg" source="" horizontalCenter="0" verticalCenter="0" width="50" height="50"/>	
+</e:Skin>

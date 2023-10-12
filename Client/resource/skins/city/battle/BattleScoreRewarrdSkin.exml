@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleScoreRewarrdSkin" width="554" height="668" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="tongyongkuang3bg" scale9Grid="10,5,28,31" left="0" right="0" top="0" bottom="0"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+	<e:Label y="13" text="个人积分排名奖励" size="20" horizontalCenter="0" textColor="0xf8b141" bold="true"/>
+	<e:Scroller x="2" height="503" y="45" scrollPolicyH="off">
+		<e:List id="list0" x="-3" y="30" itemRendererSkinName="BattleRewarrdItemSkin">
+		<e:layout>
+			<e:VerticalLayout gap="0"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Image height="158" source="bantoumingkuang3" bottom="0" left="5" right="5" scale9Grid="134,34,7,6"/>
+	<e:Scroller bottom="0" left="10" right="10" scrollPolicyV="off" anchorOffsetY="0" height="113">
+		<e:List id="list1" x="0" y="17" itemRendererSkinName="BattleTargetItemSkin" anchorOffsetY="0">
+		<e:layout>
+			<e:HorizontalLayout gap="0" verticalAlign="middle"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Label text="积分达标奖励" y="519" horizontalCenter="0" size="20" textColor="0xf8b141"/>
+</e:Skin>

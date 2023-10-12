@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TujianzianniuSkin" width="130" height="40" currentState="close" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  states="close,select">
+	<e:Image id="btnName" source.select="yeqian6" source.close="yeqian7" left.select="-24" right.select="0" source="yeqian7" left="0" right="0" top="0" bottom="0" scale9Grid.close="12,14,74,11" scale9Grid.select="32,0,66,40"/>
+	<!--<e:Image source="yeqian7" y="5" includeIn="close" x="31" visible="false"/>
+	<e:Image source="yeqian6" scale9Grid="40,9,46,23"  width="130.4" y="5" includeIn="select" horizontalCenter="-14" visible="false"/>-->
+	<e:Label id="label" text="图鉴名字" size="18" verticalCenter="0" horizontalCenter.select="-2" textColor.close="0x9f946d" verticalCenter.close="0" horizontalCenter.close="-4" size.select="20" bold.select="true" horizontalCenter="0" textColor.select="0xf8b141"/>
+	<e:Image source="zjmhongdian" top="0" id="redPoint" x="118"/>
+</e:Skin>

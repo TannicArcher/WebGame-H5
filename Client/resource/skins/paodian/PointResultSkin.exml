@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PointResultSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group width="580" height="930" y="0" horizontalCenter="0">
+		<e:Image id="bg" y="42" horizontalCenter="0" source="win_png" width="562" scale9Grid="64,516,384,15" height="788" x="9" scaleX="1" scaleY="1"/>
+		<e:Button id="closeBtn" label="确定" skinName="Btn1Skin" width="157" height="60" horizontalCenter="0.5" bottom="183" x="212" y="687" scaleX="1" scaleY="1"/>
+		<e:Image id="result" y="134" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" source="point_result_title" x="146" scaleX="1" scaleY="1"/>
+		<e:Label text="我的奖励:" size="20" x="94" textAlign="left" height="20" textColor="0xFF9900" y="245" scaleX="1" scaleY="1"/>
+		<e:List id="myRewarrd" x="186" itemRendererSkinName="PointResultAwardSkin" y="230" scaleX="1" scaleY="1">
+			<e:layout>
+			<e:HorizontalLayout gap="6"/>
+			</e:layout>
+		</e:List>
+		<e:Image source="bantoutiaobg2" scale9Grid="43,9,4,3" y="300" width="417" height="40" horizontalCenter="0.5" x="82" scaleX="1" scaleY="1"/>
+		<e:Group y="310" scaleX="1" scaleY="1" width="410" horizontalCenter="0">
+			<e:Label text="  名次" y="-1" size="20" x="1" scaleX="1" scaleY="1" textColor="0xFF9900" width="55"/>
+			<e:Label id="NaN" text="玩家名" y="9" size="20" x="10" scaleX="1" scaleY="1" width="130" textColor="0xFF9900" textAlign="center"/>
+			<e:Label text="  公会名" y="19" size="20" x="173" scaleX="1" scaleY="1" width="130" textColor="0xFF9900" textAlign="center"/>
+			<e:Label text="  奖励" y="29" size="20" x="30" scaleX="1" scaleY="1" textAlign="center" width="98" textColor="0xFF9900"/>
+			<e:layout>
+			<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:List id="rankList" y="350" anchorOffsetX="0" anchorOffsetY="0" itemRendererSkinName="PointResultItemSkin" scaleX="1" scaleY="1" horizontalCenter="0">
+			<e:layout>
+			<e:VerticalLayout horizontalAlign="center" gap="0"/>
+			</e:layout>
+		</e:List>
+		<e:Group id="timerGroup" y="723" horizontalCenter="161" x="393" scaleX="1" scaleY="1">
+			<e:Label id="info" text="5" y="8" textColor="0x00ff00" size="18" horizontalCenter="172" x="37" scaleX="1" scaleY="1"/>
+			<e:Label text="秒退出泡点" y="8" textColor="0x00FF00" size="18" horizontalCenter="172" x="37" scaleX="1" scaleY="1"/>
+			<e:layout>
+			<e:HorizontalLayout gap="1"/>
+			</e:layout>
+		</e:Group>
+		<e:Image source="tongyonghd_json.hongbaoline" y="408" horizontalCenter="0.5" x="117" scaleX="1" scaleY="1"/>
+		<e:Image source="tongyonghd_json.hongbaoline" y="468" horizontalCenter="0.5" x="117" scaleX="1" scaleY="1"/>
+		<e:Image source="tongyonghd_json.hongbaoline" y="528" horizontalCenter="0.5" x="117" scaleX="1" scaleY="1"/>
+		<e:Image source="tongyonghd_json.hongbaoline" y="588" horizontalCenter="0.5" x="117" scaleX="1" scaleY="1"/>
+	</e:Group>
+
+
+
+
+
+
+</e:Skin>

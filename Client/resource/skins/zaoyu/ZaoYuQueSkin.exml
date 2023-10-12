@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ZaoYuQueSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="1586bde6cc9"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group id="anigroup" width="400" height="220" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="tongyongtip1" scale9Grid="9,8,8,8" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="19,19,2,3" left="0" right="0" top="0" bottom="0"/>
+		<e:Button id="btnBuy" skinName="Btn1Skin" label="确  定" bottom="30" horizontalCenter="80"/>
+		<e:Button id="btnClose" skinName="Btn1Skin" label="取  消" bottom="30" horizontalCenter="-80"/>
+		<e:Group horizontalCenter="0" top="48">
+			<e:Group y="0" horizontalCenter="0" x="0"  >
+				<e:Label text="当前PK值达到" y="0" size="20" textColor="0xD1C28F"   x="0"  />
+				<e:Label id="pkNow" text="100" size="20" textColor="0xff0000" x="127" y="0"/>
+				<e:Label text="，是否消耗" y="0" size="20" textColor="0xD1C28F"   x="0"  />
+				<e:Image x="306" y="48" source="szyuanbao"/>
+				<e:Label id="ybNum" text="100" y="48"  size="20" x="338" textColor="0xFFE700"/>
+				<e:layout>
+				<e:HorizontalLayout gap="0"/>
+				</e:layout>
+			</e:Group>
+			<e:Group x="1" y="32"  >
+				<e:Label text="减少" y="-2" size="20" textColor="0xD1C28F"   x="1"  />
+				<e:Label id="pkValue" text="25" y="8" size="20"   horizontalCenter="22" textColor="0x35E62D" x="153"  />
+				<e:Label text="点PK值" y="8" size="20" textColor="0xD1C28F"   x="11"  />
+				<e:Label text="立即挑战" y="-2" size="20"   horizontalCenter="22" textColor="0x35e62d" x="143"  />
+				<e:Label text="？" y="8" size="20" textColor="0xD1C28F"   x="11"  />
+				<e:layout>
+				<e:HorizontalLayout gap="0"/>
+				</e:layout>
+			</e:Group>
+			<e:layout>
+				<e:VerticalLayout gap="4" horizontalAlign="left" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+</e:Skin>

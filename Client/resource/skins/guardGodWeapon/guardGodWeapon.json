@@ -1,0 +1,11 @@
+{"file":"guardGodWeapon.png","frames":{
+"bantouyuan":{"x":1,"y":191,"w":63,"h":63,"offX":0,"offY":0,"sourceW":63,"sourceH":63},
+"GWskill1":{"x":1,"y":96,"w":94,"h":93,"offX":0,"offY":0,"sourceW":94,"sourceH":93},
+"GWskill2":{"x":97,"y":1,"w":94,"h":93,"offX":0,"offY":0,"sourceW":94,"sourceH":93},
+"GWskill3":{"x":1,"y":1,"w":94,"h":93,"offX":0,"offY":0,"sourceW":94,"sourceH":93},
+"GWskillS1":{"x":193,"y":1,"w":26,"h":26,"offX":0,"offY":0,"sourceW":26,"sourceH":26},
+"GWskillS2":{"x":66,"y":191,"w":26,"h":26,"offX":0,"offY":0,"sourceW":26,"sourceH":26},
+"GWskillS3":{"x":193,"y":29,"w":26,"h":26,"offX":0,"offY":0,"sourceW":26,"sourceH":26},
+"luckyBossBtn":{"x":97,"y":96,"w":74,"h":75,"offX":0,"offY":0,"sourceW":74,"sourceH":75},
+"newhp":{"x":221,"y":1,"w":24,"h":9,"offX":0,"offY":0,"sourceW":24,"sourceH":9},
+"newhpBg":{"x":97,"y":173,"w":38,"h":17,"offX":0,"offY":0,"sourceW":38,"sourceH":17}}}

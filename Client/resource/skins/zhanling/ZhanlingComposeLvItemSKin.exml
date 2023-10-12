@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ZhanlingComposeLvItemSKin" width="155" height="40" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Button id="child_btn" label="" left="0" right="0" top="0" bottom="0" skinName="Btn14Skin"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" touchEnabled="false">
+		<e:Label id="head" text="神" size="18" horizontalCenter="-65" verticalCenter="0" x="10" y="10" scaleX="1" scaleY="1" textColor="0xfff2be" touchEnabled="false"/>
+		<e:Label text="·" size="18" horizontalCenter="0" verticalCenter="0" x="11" y="10" scaleX="1" scaleY="1" touchEnabled="false"/>
+		<e:Label id="lv" text="10转" size="18" horizontalCenter="0" verticalCenter="0" textColor="0xfff2be" touchEnabled="false"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Image id="chosen" source="xuanzhongkuang2" scale9Grid="8,8,1,1" left="0" right="0" top="0" bottom="0" touchEnabled="false" visible="false"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" x="131" y="0"/>
+</e:Skin>

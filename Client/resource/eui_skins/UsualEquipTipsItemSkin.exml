@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UsualEquipTipsItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"   xmlns:ns1="*" width="300" >
+
+	<e:Group left="0" top="0">
+		<e:Label id="attrType" y="0" text="基础属性" size="20" x="0" bold="true" textColor="0x7e6437"/>
+		<e:Group id="desc1" x="32" y="35">
+			<e:Label y="10" text="" size="18" verticalAlign="justify" x="10" textAlign="left" textColor="0x9F946D" lineSpacing="5" width="22"/>
+			<e:Label id="suit" y="0" text="攻击：" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x9F946D" lineSpacing="5"/>
+			<e:layout>
+			<e:HorizontalLayout gap="0" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+
+		<e:Group x="22" y="25">
+			<e:Label y="10" text="" size="18" verticalAlign="justify" x="10" textAlign="left" textColor="0x9F946D" lineSpacing="5" width="22"/>
+			<e:Label id="attrName" y="0" text="攻击：" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x9f946d" lineSpacing="5"/>
+			<e:Label id="attrValue" y="0" text="100000" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x9f946d" lineSpacing="5"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout gap="7"/>
+		</e:layout>
+
+
+
+	</e:Group>
+
+</e:Skin>

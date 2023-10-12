@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PointResultAwardSkin" width="50" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="icon" source="200304_png" width="50" height="50" horizontalCenter="0" verticalCenter="0"/>
+	<e:Label id="count" size="16" text="999万" stroke="1" strokeColor="0x232323" textColor="0xDDD3B1" horizontalCenter="0" bottom="0"/>
+</e:Skin>

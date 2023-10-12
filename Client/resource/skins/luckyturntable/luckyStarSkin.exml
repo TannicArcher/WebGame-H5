@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="luckyStarSkin" width="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  height="620">
+	<e:Image id="bg" width="554" horizontalCenter="0" x="3" source="chuanglianbg_jpg" height="472" y="0"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50" x="80"/>
+	<e:Image horizontalCenter="0" y="0" x="212" source="biaoti_star"/>
+	<e:Group id="infoBg" y="40" width="391" x="0" height="137">
+		<e:Image x="0" y="3" source="bantoutiaoboss" width="160" height="30"/>
+		<e:Label text="当前积分：" x="10" y="8" size="20" textColor="0x9d946d" bold="true"/>
+		<e:Label id="inte" text="1200" x="110" y="8" size="20" textColor="0x00ff00"/>
+		<e:Label text="当天充值：" x="10" y="40" size="20" textColor="0x9f946d"/>
+		<e:Label id="recharge" text="1200000" x="110" y="40" size="20" textColor="0xd1c28f"/>
+		<e:Label text="累计获得积分：" x="10" y="70" size="20" textColor="0x9f946d"/>
+		<e:Label id="accinte" text="1200/1200" x="144" y="70" size="20" textColor="0xd1c28f"/>
+		<e:Label text="距离本轮活动结束还有：" x="10" y="100" size="20" textColor="0x20cb30"/>
+		<e:Label id="endtime" text="29天" x="230" y="100" size="20" textColor="0x20cb30"/>
+		<e:Button id="help" label="" icon="wenhao" skinName="Btn0Skin" x="166" y="-2"/>
+	</e:Group>
+	<e:Group width="520" height="130" horizontalCenter="0" verticalCenter="-45">
+		<e:Image source="bossbgkuang" scale9Grid="50,27,1,1" left="0" right="0" top="0" bottom="0"/>
+		<e:Group x="30" y="0">
+			<e:Image x="92" y="17" source="luckytxt1"/>
+			<e:Image x="102" y="27" source="luckynum0"/>
+			<e:Image x="112" y="37" source="luckytxt2"/>
+			<e:Image x="454" y="16" source="star4"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="bottom" gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="50" x="40">
+			<e:Image id="star001" x="0" y="0" source="star1"/>
+			<e:Image id="star002" x="10" y="10" source="star1"/>
+			<e:Image id="star003" x="20" y="20" source="star1"/>
+			<e:Image id="star004" x="30" y="30" source="star1"/>
+			<e:Image id="star005" x="40" y="40" source="star1"/>
+			<e:Image id="star006" x="50" y="50" source="star1"/>
+			<e:Image id="star007" x="60" y="60" source="star1"/>
+			<e:Image id="star008" x="70" y="70" source="star1"/>
+			<e:Image id="star009" x="80" y="80" source="star1"/>
+			<e:Image id="star010" x="90" y="90" source="star1"/>
+			<e:Image id="star011" x="100" y="100" source="star1"/>
+			<e:Image id="star012" x="110" y="110" source="star1"/>
+			<e:Image id="star013" x="120" y="120" source="star1"/>
+			<e:Image id="star014" x="130" y="130" source="star1"/>
+			<e:Image id="star015" x="140" y="140" source="star1"/>
+			<e:layout>
+			<e:TileLayout requestedColumnCount="10" horizontalGap="6" verticalGap="2"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group width="520" height="130" horizontalCenter="0" verticalCenter="95">
+		<e:Image source="bossbgkuang" scale9Grid="50,27,1,1" left="0" right="0" top="0" bottom="0"/>
+		<e:Group x="30" y="0">
+			<e:Image x="92" y="17" source="luckytxt1"/>
+			<e:Image x="102" y="27" source="luckynum1"/>
+			<e:Image x="112" y="37" source="luckytxt2"/>
+			<e:Image x="454" y="16" source="star5"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="bottom" gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="60" x="40">
+		<e:Image id="star101" x="0" y="0" source="star1"/>
+		<e:Image id="star102" x="10" y="10" source="star1"/>
+		<e:Image id="star103" x="20" y="20" source="star1"/>
+		<e:Image id="star104" x="30" y="30" source="star1"/>
+		<e:Image id="star105" x="40" y="40" source="star1"/>
+		<e:Image id="star106" x="50" y="50" source="star1"/>
+		<e:Image id="star107" x="60" y="60" source="star1"/>
+		<e:Image id="star108" x="70" y="70" source="star1"/>
+		<e:layout>
+			<e:TileLayout requestedColumnCount="10" horizontalGap="6" verticalGap="2"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group width="520" height="130" horizontalCenter="0" verticalCenter="235">
+		<e:Image source="bossbgkuang" scale9Grid="50,27,1,1" left="0" right="0" top="0" bottom="0"/>
+		<e:Group x="30" y="0">
+			<e:Image x="92" y="17" source="luckytxt1"/>
+			<e:Image x="102" y="27" source="luckynum2"/>
+			<e:Image x="112" y="37" source="luckytxt2"/>
+			<e:Image x="454" y="16" source="star6"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="bottom" gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="60" x="40">
+		<e:Image id="star201" x="0" y="0" source="star1"/>
+		<e:Image id="star202" x="10" y="10" source="star1"/>
+		<e:Image id="star203" x="20" y="20" source="star1"/>
+		<e:Image id="star204" x="30" y="30" source="star1"/>
+		<e:Image id="star205" x="40" y="40" source="star1"/>
+		<e:layout>
+			<e:TileLayout requestedColumnCount="10" horizontalGap="6" verticalGap="2"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Button id="go" label="前往参加" skinName="Btn1Skin" horizontalCenter="0" bottom="30" x="202" y="530" visible="false"/>
+	<e:Label text="拿下龙城后别忘记喊会长建个微信群，" x="80" y="320" size="18" textColor="0x9F946D" visible="false"/>
+	<e:Label text="给兄弟发红包哦！" x="100" y="345" size="18" textColor="0x9F946D" visible="false"/>
+	<e:Button id="luckyzp" label="" x="360" y="70" skinName="Btn0Skin" icon="luckyturn"/>
+	<e:Image id="redPoint" source="zjmhongdian" x="428" y="70" visible="false"/>
+		
+</e:Skin>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SelectRoleSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group name="装备" width="420" height="450" verticalCenter="0" horizontalCenter="0" x="80" y="240">
+		<e:Image source="tongyongkuang3bg" left="0" top="0" bottom="0" right="0" scale9Grid="34,20,1,1"/>
+		<e:Image source="tongyongkuang3tou" left="0" scale9Grid="67,5,272,37" right="0"/>
+		<e:Label text="请选择角色" size="24" horizontalCenter="0" y="11" textColor="0x7E6437" bold="true"/>
+		<e:Scroller width="400" height="302" y="48" horizontalCenter="0" scrollPolicyV="on" scrollPolicyH="off">
+		<e:List id="list" left="0" top="0" bottom="0" right="0" itemRendererSkinName="SelectRoleItemSkin">
+			<e:layout>
+			<e:VerticalLayout gap="0"/>
+			</e:layout>
+		</e:List>
+		</e:Scroller>
+		<e:Button id="btnStart" label="进入游戏" y="370" skinName="Btn1Skin" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

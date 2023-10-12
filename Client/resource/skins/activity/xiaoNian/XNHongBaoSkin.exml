@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="XNHongBaoSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*"
+        xmlns:w="http://ns.egret.com/wing" width="560" height="620" >
+	<w:Config id="15a98a3982e" />
+	<e:Rect id="bgClose" left="3" right="3" top="0" bottom="0" fillAlpha="0.7" width="460" 
+	         height="610"  visible="false"/>
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+	<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_hongbao"/>
+	<e:Image anchorOffsetY="0" source="xn_hongbaoBG_png" height="477" width="554" horizontalCenter="0" verticalCenter="75.5"/>
+	<e:Group id="infoBg" y="36" height="116" left="3" right="3">
+		<e:Image top="0" bottom="0" source="ny_curtain_png" right="0" left="0"/>
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+			<e:Label id="actInfo" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+			<e:Label text="当前积分：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" top="40" left="0"/>
+			<e:Label id="actPoint" text="1000" size="18" width="396" textColor="0xDFD1B5" scaleX="1" scaleY="1" left="90" top="40"/>
+		</e:Group>
+	</e:Group>
+	<e:Button id="onbtn" label="发放红包" skinName="Btn16Skin" horizontalCenter="0" scaleX="1.1" scaleY="1.1" verticalCenter="165.5"/>
+
+	<e:Image width="355" source="bantoutiaobg2" scale9Grid="11,2,70,17" anchorOffsetY="0" height="29" anchorOffsetX="0" horizontalCenter="0" top="158"/>
+	<e:Rect fillAlpha="0.4" bottom="-1" width="554" horizontalCenter="0" height="112"/>
+	<e:Label text="每充值100元宝将获得1点红包积分" size="22" bold="true" horizontalCenter="0" textColor="0xf8b141" top="163"/>
+	<e:Scroller id="barList" bounces="false" scrollPolicyV="on" anchorOffsetX="0" anchorOffsetY="0" width="554" height="112" left="3" bottom="-1">
+		<e:List id="list" x="0" y="-6" itemRendererSkinName="HuntListRendererSkin">
+		<e:layout>
+			<e:VerticalLayout gap="0" horizontalAlign="left"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+
+	<ns1:BaseComponent id="hongbao" horizontalCenter="0.5" skinName="XNHongBaoItem" className="XiaoNianItem" verticalCenter="10.5"/>
+	<e:Image id="redPoint" source="zjmhongdian" touchEnabled="false" horizontalCenter="73" verticalCenter="143"/>
+	<e:Button id="leftBtn" label="" icon="jiantouxuan" skinName="Btn0Skin" scaleX="1" scaleY="1" left="0" verticalCenter="0"/>
+	<e:Button id="rightBtn" label="" icon="jiantouxuan" skinName="Btn0Skin" scaleX="-1" scaleY="1" right="0" verticalCenter="0"/>
+
+</e:Skin>

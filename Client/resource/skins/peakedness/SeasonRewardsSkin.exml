@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SeasonRewardsSkin" width="560" height="730" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Scroller top="10" scrollPolicyH="off" scaleX="1" scaleY="1" left="10" right="10" bottom="10">
+		<e:Group anchorOffsetX="0" anchorOffsetY="0">
+			<e:Group x="0" y="0" width="540" height="50">
+				<e:Image scale9Grid="136,25,4,3" source="bantoumingkuang5" top="0" bottom="0" left="0" width="270"/>
+				<e:Image source="bantoumingkuang5" scale9Grid="136,25,4,3" scaleX="-1" right="0" top="0" bottom="0" y="10" width="270"/>
+				<e:Image source="peakness_danfusai" x="0" verticalCenter="0"/>
+				<e:Label text="奖 励" x="231" verticalCenter="0" size="24" textColor="0xff9900"/>
+				<e:Label text="领取方式" verticalCenter="0" size="24" textColor="0xff9900" horizontalCenter="215"/>
+			</e:Group>
+		<e:List id="curServList" x="0" y="42" itemRendererSkinName="SeasonRewardsItemSkin" width="540">
+		<e:layout>
+			<e:VerticalLayout gap="0"/>
+		</e:layout>
+		</e:List>
+			<e:Group x="10" y="10" width="540" height="50">
+				<e:Image scale9Grid="136,25,4,3" source="bantoumingkuang5" width="270" top="0" bottom="0" left="0"/>
+				<e:Image source="bantoumingkuang5" scale9Grid="136,25,4,3" scaleX="-1" right="0" top="0" bottom="0" x="10" y="10" width="270"/>
+				<e:Image x="0" verticalCenter="0" source="peakness_kuafusai"/>
+				<e:Label text="奖 励" x="231" verticalCenter="0" size="24" textColor="0xFF9900"/>
+				<e:Label text="领取方式" verticalCenter="0" size="24" textColor="0xFF9900" x="424"/>
+			</e:Group>
+			<e:List id="kfServList" x="0" y="684" itemRendererSkinName="SeasonRewardsItemSkin">
+				<e:layout>
+				<e:VerticalLayout gap="0"/>
+				</e:layout>
+			</e:List>
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+</e:Skin>

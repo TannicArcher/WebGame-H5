@@ -1,0 +1,19 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="NewFuncNoticeSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"   xmlns:ns1="*"  height="930" >
+	<w:Config id="1586b349dbe"/>
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="572" horizontalCenter="0" source="tongyongmianbanbg" top="0" bottom="155" scale9Grid="19,12,10,20" anchorOffsetY="0"/>
+
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" width="580" currentState="nohead" horizontalCenter="0" top="0"/>
+	<e:Image id="titleImg" top="12" horizontalCenter="-155" source="newFuncNotice"/>
+	<e:Image id="activityImg" horizontalCenter="-0.5" verticalCenter="-56" source=""/>
+
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+	<e:Label id="daojishi" text="开启倒计时" y="70" textColor="0xDFD1B5" size="22" horizontalCenter="93"/>
+	<e:Label id="daojishi0" text="00:00:00" y="70" size="22" textColor="0x00FF00" horizontalCenter="200"/>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WeiWangItemSkin" width="380" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="title" source="prestige_top_1" y="3" horizontalCenter="-58"/>
+	<e:Label id="value" text="10000000" size="18" verticalCenter="-2" horizontalCenter="111" textColor="0xd1c28f"/>
+	<e:Image source="tongyongline" bottom="3" left="0" right="0"/>
+</e:Skin>

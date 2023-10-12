@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="castingskin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        width="580" height="775">
+	<w:Config id="159bef2916a" />
+	<e:Image horizontalCenter="0" x="34"  source="zhuzaobg2_png" verticalCenter="-15" width="500" height="614" visible="false"/>
+	<e:Image source="jinglianbg_png" width="560" horizontalCenter="0" height="576" top="66"/>
+	<e:Group id="dinghong0" width="556" height="104" bottom="6" horizontalCenter="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" />
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" />
+	</e:Group>
+	<e:Group id="upInfo" height="110" bottom="0" horizontalCenter="0" width="560">
+
+
+
+		<e:Group horizontalCenter="0" bottom="70">
+			<e:Label text="消耗: " size="20" bold="true" x="0" y="2" textColor="0xd1c28f"/>
+			<e:Image x="64" width="40" height="40" verticalCenter="0" source="200136_png"/>
+			<e:Label id="countLabel" text="120/100" size="20" textAlign="left" x="108" y="2" textColor="0xd1c28f"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Button id="upGradeBtn" label="精  炼" skinName="Btn1Skin" horizontalCenter="0" bottom="10"/>
+		<e:Label id="getItemTxt" text="获取道具" size="20" textColor="0x00FF00" bottom="10" horizontalCenter="170" width="100" height="60" verticalAlign="middle" textAlign="center"/>
+	</e:Group>
+	<!--<e:Group id="powerGroup" y="140" horizontalCenter="0">
+		<e:Image source="zhandoulibg" x="2" y="10" />
+		<e:Image id="powerImg" source="zjmzhandouli" />
+	</e:Group>-->
+	<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0" top="96"/>
+	<e:Group width="480" height="100" horizontalCenter="0" bottom="110">
+		<e:Image height="68" y="30" source="shuxingbg" scale9Grid="36,6,113,39" left="0" right="0" />
+		<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="240"  left="0"/>
+		<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="240" scaleX="-1" right="0" />
+		<e:Group x="40" y="44">
+			<e:Label id="attr1" text="攻击+10000" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			<e:Image id="arrow1" x="119" y="1" rotation="90" source="tongyongup"/>
+			<e:Label id="addAttr1" text="22222" size="18" textAlign="center" x="124" textColor="0x32FF00" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="260" y="44">
+			<e:Label id="attr0" text="生命+10000" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			<e:Image id="arrow0" source="tongyongup" x="120" y="1" rotation="90"/>
+			<e:Label id="addAttr0" text="222222" size="18" textAlign="center" textColor="0x32FF00" x="126" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="260" y="68">
+			<e:Label id="attr2" text="物防 +100" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			<e:Image id="arrow2" source="tongyongup" x="112" y="1" rotation="90"/>
+			<e:Label id="addAttr2" text="2222" size="18" textAlign="center" textColor="0x32FF00" x="126" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="40" y="68">
+			<e:Label id="attr3" text="魔防 +100" size="18" textAlign="center" x="0" textColor="0x9F946D" y="0"/>
+			<e:Image id="arrow3" source="tongyongup" x="111" y="1" rotation="90"/>
+			<e:Label id="addAttr3" text="2222" size="18" textAlign="center" textColor="0x32FF00" x="124" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="attr" text="攻击 +100\n法师+9999\n法师+9999\n法师+9999" size="18" textAlign="center" y="40" height="50"
+		         width="400" lineSpacing="5" horizontalCenter="0" verticalAlign="middle"  textColor="0xf8b141" visible="false"/>
+	</e:Group>
+	<ns1:BaseComponent id="itemPanel" x="122" y="180" skinName="castingposlistskin" className="Castingposlist" scaleX="0.8"
+	                   scaleY="0.8"  visible="false"/>
+	<e:Group id="itemGroup" height="460" left="20" right="20" verticalCenter="-15" visible="false">
+		<e:Image source="duanzao_json.zhuzaoxianbg" x="436" y="135" width="40" rotation="75"   height="10" visible="false"/>
+		<e:Image source="duanzao_json.zhuzaoxianbg" x="420" y="213" height="10" rotation="145" width="40"/>
+		<e:Image source="duanzao_json.zhuzaoxianbg" x="370" y="270" height="10" rotation="80" width="40"/>
+		<e:Image source="duanzao_json.zhuzaoxianbg" x="350" y="355" height="10" rotation="155" width="40"/>
+		<e:Image source="duanzao_json.zhuzaoxianbg" x="225" y="335" height="10" rotation="35" width="40"/>
+		<e:Image source="duanzao_json.zhuzaoxianbg" x="135" y="289" height="10" rotation="15" width="40"/>
+		<e:Image source="duanzao_json.zhuzaoxianbg" x="92" y="215" height="10" rotation="75" width="40"/>
+		<e:Image width="76" height="76"  source="touxiangkuang" x="378" y="72"/>
+		<e:Image y="202" width="76" height="76"  source="touxiangkuang" x="320"/>
+		<e:Image y="338" width="76" height="76"  source="touxiangkuang" x="247"/>
+		<e:Image y="247" width="76" height="76"  source="touxiangkuang" x="66"/>
+		<e:Image width="76" height="76"  source="touxiangkuang" x="415" y="165"/>
+		<e:Image y="300" width="76" height="76"  source="touxiangkuang" x="340"/>
+		<e:Image y="281" width="76" height="76"  source="touxiangkuang" x="163"/>
+		<e:Image y="149" width="76" height="76"  source="touxiangkuang" x="50"/>
+		<e:Image id="icon_6" touchEnabled="true" width="50" height="50" y="262" x="79"  source="xb_16"/>
+		<e:Image id="icon_5" touchEnabled="true" width="50" height="50" y="294" x="176"  source="xb_15"/>
+		<e:Image id="icon_2" touchEnabled="true" width="50" height="50" y="215" x="333"  source="xb_12"/>
+		<e:Image id="icon_1" touchEnabled="true" width="50" height="50" y="178" x="428"  source="xb_11"/>
+		<e:Image id="icon_7" touchEnabled="true" width="50" height="50" y="162" x="63"  source="xb_17"/>
+		<e:Image id="icon_4" touchEnabled="true" width="50" height="50" y="351" x="260"  source="xb_14"/>
+		<e:Image id="icon_3" touchEnabled="true" width="50" height="50" y="313" x="353"  source="xb_13"/>
+		<e:Image id="icon_0" touchEnabled="true" width="50" height="50" y="85" x="391"  source="xb_10"/>
+		<e:Image id="selectIcon" width="68" height="68"  source="xuanzhongyuan" x="378" y="72"/>
+		<e:Image x="388" y="82" id="lock_0"  source="touxianglock" width="56" height="56"/>
+		<e:Image id="lock_2" x="330" y="212"  source="touxianglock" width="56" height="56"/>
+		<e:Image id="lock_4" x="257" y="348"  source="touxianglock" width="56" height="56"/>
+		<e:Image id="lock_6" x="76" y="257"  source="touxianglock" width="56" height="56"/>
+		<e:Image id="lock_1" x="425" y="175"  source="touxianglock" width="56" height="56"/>
+		<e:Image id="lock_3" x="350" y="310"  source="touxianglock" width="56" height="56"/>
+		<e:Image id="lock_5" x="173" y="291"  source="touxianglock" width="56" height="56"/>
+		<e:Image x="60" y="159" id="lock_7"  source="touxianglock" width="56" height="56"/>
+		<e:Label id="level_0" text="标签" x="391" y="92" size="18" textAlign="center" textColor="0xd1c28f" width="50"/>
+		<e:Label id="level_1" text="标签" y="185" size="18" textAlign="center" textColor="0xd1c28f" width="50" x="428"/>
+		<e:Label id="level_3" text="标签" y="320" size="18" textAlign="center" textColor="0xd1c28f" width="50" x="353"/>
+		<e:Label id="level_5" text="标签" y="301" size="18" textAlign="center" textColor="0xd1c28f" width="50" right="314"/>
+		<e:Label id="level_7" text="标签" y="168" size="18" textColor="0xd1c28f" width="50" textAlign="center" x="63"/>
+		<e:Label id="level_6" text="标签" x="79" y="267" size="18" textAlign="center" textColor="0xd1c28f" width="50"/>
+		<e:Label id="level_4" text="标签" x="260" y="357" size="18" textAlign="center" textColor="0xd1c28f" width="50"/>
+		<e:Label id="level_2" text="标签" x="333" y="221" size="18" textAlign="center" textColor="0xd1c28f" width="50"/>
+	</e:Group>
+		<e:Group  height="460" width="512" horizontalCenter="0" top="99">
+		<ns1:BaseComponent id="item0" className="ForgeZhuItem" y="0" x="0" skinName="CastingZBItemSkin"/>
+		<ns1:BaseComponent id="item1" className="ForgeZhuItem" y="0" x="436" skinName="CastingZBItemSkin"/>
+		<ns1:BaseComponent id="item2" className="ForgeZhuItem" y="116" x="0" skinName="CastingZBItemSkin"/>
+		<ns1:BaseComponent id="item3" className="ForgeZhuItem" y="116" x="436" skinName="CastingZBItemSkin"/>
+		<ns1:BaseComponent id="item4" className="ForgeZhuItem" y="232" x="0" skinName="CastingZBItemSkin"/>
+		<ns1:BaseComponent id="item5" className="ForgeZhuItem" y="232" x="436" skinName="CastingZBItemSkin"/>
+		<ns1:BaseComponent id="item6" className="ForgeZhuItem" y="348" x="0" skinName="CastingZBItemSkin"/>
+		<ns1:BaseComponent id="item7" className="ForgeZhuItem" y="348" x="436" skinName="CastingZBItemSkin"/>
+	</e:Group>
+	<e:Group id="itemGroup2" width="320" height="248"  horizontalCenter="0" top="240">
+		<e:Image source="zhuzaoBG3_png"   left="0" top="0"/>
+		<e:Image source="zhuzaoBG3_png" scaleX="-1"  y="0" right="0"/>
+		<e:Image source="bantoutiaobg" scale9Grid="106,5,50,35" height="36" width="208" bottom="0" horizontalCenter="0"/>
+		<e:Image id="xjyl" source="duanzao_json.zznext" bottom="7" horizontalCenter="0"/>
+		<ns1:BaseComponent id="now" width="76" height="76" x="6" y="6" skinName="CastingZBItemSkin" className="ForgeZhuItem"/>
+		<ns1:BaseComponent id="new" width="76" height="76" y="125" horizontalCenter="0" skinName="CastingZBItemSkin" className="ForgeZhuItem"/>
+		<e:Group id="rightEff" width="79.5" height="10" x="240.05" y="48.3" rotation="180" />
+		<e:Group id="leftEff" width="79.3" height="10" x="81.45" y="37" />
+		<e:Group id="buttonEff" width="13" height="80.95" x="159.75" y="47.05"  />
+		<e:Group id="rightEff4" width="39.1" height="6" x="198.71" y="205.45" rotation="180" />
+		<e:Group id="obliqueright2" width="14.66" height="6" x="205.34" y="195.47" rotation="134.61"  />
+		<e:Group id="rightEff3" width="67.15" height="6" x="202.96" y="129.4" rotation="90"  />
+		<e:Group id="obliqueright" width="13.06" height="8" x="197" y="120.75" rotation="45"  />
+		<e:Group id="rightEff2" width="37.25" height="6" x="159.09" y="120.51"  />
+		<e:Group id="leftEff4" width="39.15" height="6" x="120.91" y="198.2" />
+		<e:Group id="obliqueleft2" width="13" height="8" x="120.4" y="190.75" rotation="43.74"/>
+		<e:Group id="leftEff3" width="69.1" height="6" x="122.77" y="128.6" rotation="90" />
+		<e:Group id="obliqueleft" width="11.21" height="6" x="127.66" y="124.4" rotation="133.4"  />
+		<e:Group id="leftEff2" width="37.5" height="6" x="160.91" y="128.1" rotation="180" />
+		<ns1:BaseComponent id="prop" width="76" height="76" y="6" x="238" skinName="CastingZBItemSkin" visible="false"/>
+				<e:Image source="quality0" x="238" y="6" width="76" height="76"/>
+		<e:Image x="242" y="12" width="64" height="64" source="200136_png"/>
+	</e:Group>
+	<e:Label id="maxDesc" text="精炼已满级"   horizontalCenter="0" textColor="0x9F946D" size="24" bold="true" bottom="30" visible="false"/>
+</e:Skin>

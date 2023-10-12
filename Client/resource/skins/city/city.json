@@ -1,0 +1,8 @@
+{"file":"city.png","frames":{
+"biaoti_yuanguboss":{"x":1,"y":120,"w":155,"h":26,"offX":1,"offY":4,"sourceW":156,"sourceH":34},
+"yuangu_xianshihuodong":{"x":118,"y":1,"w":132,"h":45,"offX":1,"offY":1,"sourceW":134,"sourceH":48},
+"btn_guaji":{"x":118,"y":48,"w":70,"h":70,"offX":0,"offY":0,"sourceW":70,"sourceH":70},
+"btn_npc":{"x":1,"y":1,"w":115,"h":57,"offX":0,"offY":0,"sourceW":115,"sourceH":60},
+"btn_peace":{"x":190,"y":111,"w":57,"h":61,"offX":1,"offY":1,"sourceW":58,"sourceH":62},
+"btn_attack":{"x":190,"y":48,"w":57,"h":61,"offX":1,"offY":1,"sourceW":58,"sourceH":62},
+"biaoti_npc":{"x":1,"y":60,"w":66,"h":25,"offX":0,"offY":4,"sourceW":66,"sourceH":34}}}

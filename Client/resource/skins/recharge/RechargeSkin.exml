@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RechargeSkin" width="480" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Scroller width="431" height="404" y="169" x="26">
+		<e:List id="list" x="26" y="60" height="409" itemRendererSkinName="RechargeItemSkin">
+		</e:List>
+	</e:Scroller>
+	<e:Button id="closeBtn" label="按钮" x="400" y="618" skinName="Btn0Skin"/>
+	<e:Button id="closeBtn0" label="按钮" x="429" y="47" skinName="Btn0Skin"/>
+</e:Skin>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="hunguStageSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        xmlns:tween="egret.tween.*" includeIn="normalWithPrompt,disabledWithPrompt" width="580"
+        height="930">
+	<w:Declarations></w:Declarations>
+	<w:Config id="158995f2c90"></w:Config>
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" top="0" right="0" bottom="0"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<e:Group id="anigroup" horizontalCenter="0" top="65" width="568" anchorOffsetY="0" height="758">
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-38" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-32" textColor="0x7E6437"/>
+		<e:Image source="tongyongmianbanbg" scale9Grid="23,21,2,2" anchorOffsetX="0" anchorOffsetY="0" left="0" right="0" top="0" bottom="0" height="732"/>
+		<e:Image id="zuoBG" source="chengzhuangkuang_png" y="63" horizontalCenter="-117" width="200" height="190"/>
+		<e:Image id="youBG" source="chengzhuangkuang_png" y="63" horizontalCenter="124" width="200" height="190"/>
+
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,273,47" left="5" right="5"/>
+		<e:Label text="魂骨升阶" size="24" bold="true" y="12" horizontalCenter="0" textColor="0xA67D44"/>
+
+
+
+
+		<ns1:BaseComponent id="nowItemIcon" skinName="ItemSkin" className="ItemBase" x="122" y="122"/>
+		<ns1:BaseComponent id="nextItemIcon" skinName="ItemSkin" className="ItemBase" x="363" y="122"/>
+
+
+
+
+
+
+		<e:Button id="lvUpBtn" label="升   阶" skinName="Btn1Skin" y="659" horizontalCenter="0"/>
+		<e:Image id="redPoint" source="zjmhongdian" touchEnabled="false" y="658" horizontalCenter="65"/>
+
+
+
+
+
+		<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" right="0" top="2" scaleX="0.8" scaleY="0.8"/>
+
+
+
+		<e:Group id="attr" width="521" height="219" y="269" horizontalCenter="0.5">
+			<e:Image id="jiantou" y="47" source="jiantouyou" horizontalCenter="0"/>
+			<e:Image id="attrBg" source="shuxingbg" anchorOffsetX="0" scale9Grid="83,20,2,2" anchorOffsetY="0" left="0" right="0" top="0" bottom="0"/>
+			<e:Group id="nowAttr" y="13" anchorOffsetX="0" width="163" horizontalCenter="-117">
+				<e:Image id="nowbg" y="-6" horizontalCenter="-2" source="teshuwenzibg"/>
+				<e:Label id="attrNowText" text="当前" y="0" size="20" textColor="0xF8B141" horizontalCenter="0"/>
+				<e:Group id="nowFightGroup" horizontalCenter="-4.25" top="155" scaleX="0.75" scaleY="0.75">
+					<ns1:BaseComponent id="powerPanel0" skinName="PowerPanelSkin" className="PowerPanel"/>
+				</e:Group>
+				<e:Label id="attr1Now0" text="攻击：xxx" x="31" y="38" size="20" textColor="0xD1C28F"/>
+				<e:Label id="attr2Now0" text="攻击：xxx" x="31" y="63" size="20" textColor="0xD1C28F"/>
+				<e:Label id="attr3Now0" text="攻击：xxx" x="31" y="88" size="20" textColor="0xD1C28F"/>
+				<e:Label id="hunyuNow" text="魂玉数量：5" y="130" size="20" textColor="0xD1C28F" horizontalCenter="0.5"/>
+			</e:Group>
+			<e:Group id="nextAttr" y="13" anchorOffsetX="0" width="163" horizontalCenter="134">
+				<e:Image id="nextbg" y="-7" source="teshuwenzibg" horizontalCenter="-2"/>
+				<e:Label id="attrNextText" text="下一阶" y="0" size="20" textColor="0xF8B141" horizontalCenter="0"/>
+				<e:Group id="nextFightGroup" horizontalCenter="-4.25" top="155" scaleX="0.75" scaleY="0.75">
+					<ns1:BaseComponent id="powerPanel1" skinName="PowerPanelSkin" className="PowerPanel"/>
+				</e:Group>
+
+				<e:Label id="attr1Next0" text="攻击：xxx" x="30" y="38" size="20" textColor="0x00FF00" textAlign="left"/>
+				<e:Label id="attr2Next0" text="攻击：xxx" x="30" y="63" size="20" textColor="0x00FF00" textAlign="left"/>
+				<e:Label id="attr3Next0" text="攻击：xxx" x="30" y="88" size="20" textColor="0x00FF00" textAlign="left"/>
+				<e:Label id="hunyuNext" text="魂玉数量：5" y="130" size="20" textColor="0x00FF00" textAlign="left" horizontalCenter="0.5"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="cost" width="466" height="108" x="61" y="522">
+			<e:Image id="xiaBG" scale9Grid="5,6,12,11" source="tongyongtip1" left="0" right="0" top="0" bottom="0"/>
+			<e:Image id="xiaBG2" width="521" height="97" scale9Grid="19,19,2,4" source="tongyongtip2" x="0" y="0" visible="false"/>
+			<e:Image id="costBg" width="107" height="43" y="29" source="bantoutiaobg" scale9Grid="117,17,13,12" horizontalCenter="-114.5"/>
+			<e:List id="getItemList" height="85" itemRendererSkinName="ItemSkin" width="90" horizontalCenter="0.5" y="8">
+				<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="30"/>
+				</e:layout>
+			</e:List>
+			<e:Label id="costText" text="升阶消耗" y="40" size="20" textColor="0xF8B141" horizontalCenter="-114.5"/>
+		</e:Group>
+
+
+	</e:Group>
+</e:Skin>

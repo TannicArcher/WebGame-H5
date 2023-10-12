@@ -1,0 +1,14 @@
+<e:Skin class="ChestSkinReward2" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"   states="open,close,wait"  height="188" width="174">
+	<w:Config id="1586b349dbe"/>
+	<e:Group y="108" x="0" alpha.wait="0.6">
+		<e:Image source="juese_json.chenghaoditai" y="16" x="0"/>
+		<e:Image source="baoxiangdiguang" y="0" x="18" visible.wait="false"/>
+	</e:Group>
+	<e:Image id="imgBox0" y="-23" height="180" x="15" visible.wait="false" source="baoxiang_4" width="190"/>
+	<e:Image x="15" y="-23" width="190" height="180" visible.open="false" source="baoxiang_4b" visible="false"/>
+	<e:Image source="bantoutiaobg2" height="28" left="0" right="0" scale9Grid="11,2,70,17" visible.open="false" visible.wait="false" bottom="0"/>
+	<e:Label id="labelTime" text="12:00:00" size="20" textColor="0x20cb30" visible.open="false" visible.wait="false" horizontalCenter="0" bottom="4"/>
+	<e:Image source="shalou" x="12" scaleX="0.8" scaleY="0.8" visible.open="false" visible.wait="false" bottom="0"/>
+	<e:Image visible.close="false" visible.wait="false" x="39" y="5" source=""/>
+</e:Skin>

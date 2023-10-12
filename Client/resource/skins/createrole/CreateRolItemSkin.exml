@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CreateRolItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="20" width="300">
+	<e:Label id="labelInfo" y="2" size="16" text="玩家  玩家名称六字  踏上了传奇之旅！" textColor="0xDFD1B5" textAlign="center" left="0" right="0"/>
+</e:Skin>

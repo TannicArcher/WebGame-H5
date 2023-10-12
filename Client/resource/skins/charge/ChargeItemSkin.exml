@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChargeItemSkin" width="275" height="150" currentState="up" xmlns:e="http://ns.egret.com/eui"          xmlns:w="http://ns.egret.com/wing" states="up,down,firstUp,fistDown" width.up="275" width.firstUp="275">
+	<w:Config id="15d405305d6"/>
+	<e:Image source="chongzhibg_png" left="0" right="0" top="0" bottom="0" />
+	<e:Image bottom="0" left="0" right="0" source="cz_yuanbaobg" />
+	<e:Image id="firstPay" x="0" source="cz_23"  visible="false"/>
+	<e:Image id="give" x="16" y="0" includeIn="firstUp,fistDown" source="shuangbei" width="32" height="64"/>
+	<e:Image left="0" right="0" top="0" bottom="0" visible.up="false"  visible.firstUp="false" source="xuanzhongkuang2" scale9Grid="5,5,6,6"/>
+	<e:Image id="yuanbaoImg"    x="76" y="34" width="122" height="83" source="cz_11"/>
+	<e:Image id="giveBg" source="bantoutiaobg2" x="38.8" y="95"   scale9Grid="11,2,70,17"  width="204.4"  height="24.6" includeIn="firstUp,fistDown" visible="false"/>
+	<e:Label id="gain0" text="送1000元宝" x="84.5" y="97.5" size="21" textColor="0xf8b141"  includeIn="firstUp,fistDown" visible="false"/>
+	<e:Label id="gain1" text="送1000元宝" x="42.51" y="10" size="21" textColor="0xF8B141" includeIn="firstUp,fistDown" visible="false"/>
+	<e:Label id="total" text="共获得" size="22" textColor="0xF8B141" bold="true" x="30" includeIn="firstUp,fistDown" visible="false"/>
+	<e:Group bottom="2"   height="26" y="122" horizontalCenter="0" horizontalCenter.up="0" horizontalCenter.down="0">
+
+		<e:Group id="moneyGroup" x="100" y="-1"></e:Group>
+		<e:Label text="元宝" size="24" bold="true" x="200"  textColor="0xd1c28f" y="1"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="pay" text="￥10" size="28" textColor="0xffd93f"  right="10" bold="true" y="20" textAlign="right"/>
+	<e:Button id="payBtn" label="60元" x="114" skinName="Btn1Skin" verticalCenter="0" visible="false" />
+	<e:Label id="desc" text="2000元=20000元宝   首充送20000元宝" x="103" y="88" size="16" textColor="0xDFD1B5" width="144"
+	         visible="false" />
+	<e:Image id="priceImg" x="103" y="76" source="" visible="false" />
+
+</e:Skin>

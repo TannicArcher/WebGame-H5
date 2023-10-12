@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DETimeBuySkin" width="560" height="622" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50" x="80" scaleX="1"/>
+	<e:Image id="title" y="0" horizontalCenter="0" x="212" scaleX="1" scaleY="1" source="biaoti_zhundianqianggou"/>
+	<e:Group id="infoBg" y="36" height="110" width="540" horizontalCenter="0">
+		<e:Image left="0" right="0" top="0" bottom="0" source="activity_headbg0_png"/>
+		<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="15" bottom="15" visible="false"/>
+		<e:Group verticalCenter="0" left="28">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime1" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actDesc" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+	</e:Group>
+	<e:Scroller width="540" horizontalCenter="0" top="204" bottom="0">
+		<e:List id="gift" itemRendererSkinName="DETimeBuyItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group y="150" horizontalCenter="0">
+		<ns1:BaseComponent id="timeItem0" x="0" y="0" skinName="DETimeBuyTabSkin" className="TimeBuyTab"/>
+		<ns1:BaseComponent id="timeItem1" x="10" y="10" skinName="DETimeBuyTabSkin" className="TimeBuyTab"/>
+		<ns1:BaseComponent id="timeItem2" x="20" y="20" skinName="DETimeBuyTabSkin" className="TimeBuyTab"/>
+		<ns1:BaseComponent id="timeItem3" x="30" y="30" skinName="DETimeBuyTabSkin" className="TimeBuyTab"/>
+		<e:layout>
+			<e:HorizontalLayout gap="6"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

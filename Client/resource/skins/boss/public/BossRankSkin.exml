@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BossRankSkin" width="480" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+	xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<e:Group id="group" x="247" y="529">
+		<e:Image  left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="3,3,19,19"/>
+		<e:Label id="rank0" y="42" size="16" text="1" width="21" height="21" x="10" textColor="0xE48825" />
+		<e:Label id="name0" y="42" textColor="0xE48825" size="16" text="狂拽酷炫叼" width="94" height="21" x="45" />
+		<e:Label id="harm0" y="42" textColor="0xE48825" height="21" text="22.3万" width="75" size="16" x="158"
+		/>
+		<e:Label id="rank1" y="64" textColor="0xE48825" size="16" text="2" width="21" height="21" x="10" />
+		<e:Label id="name1" y="64" textColor="0xE48825" height="21" text="狂拽酷炫叼" width="94" size="16" x="45" />
+		<e:Label id="harm1" y="64" textColor="0xE48825" size="16" text="22.3万" width="75" height="21" x="158"
+		/>
+		<e:Label id="rank2" y="86" textColor="0xE48825" height="21" text="3" width="21" size="16" x="10" />
+		<e:Label id="name2" y="86" textColor="0xE48825" size="16" text="狂拽酷炫叼" width="94" height="21" x="45"
+		/>
+		<e:Label id="myHarm" y="114" size="16" text="我的伤害：12.3万" width="159" height="21" x="8" textColor="0xE9D4B0"
+		/>
+		<e:Label id="myRank" y="134" textColor="0xE9D4B0" height="21" text="我的排名：13" width="151" size="16" x="8"
+		/>
+		<e:Label id="harm2" y="86" textColor="0xE48825" height="21" text="22.3万" width="75" size="16" x="158"
+		/>
+		<e:Image x="75" y="8"  source=""/>
+		<e:Image x="0" y="106" scale9Grid="83,1,9,1" width="233"  source="tongyongline" height="2"/> </e:Group>
+	<e:ToggleButton id="hideBtn" label="按钮" x="440" y="532" skinName="Btn4Skin" /> </e:Skin>

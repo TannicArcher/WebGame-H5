@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CollectionBarSkin" width="281" height="13" xmlns:e="http://ns.egret.com/eui">
+	<e:Image id="thumb" width="100%" scale9Grid="6,3,7,4" height="100%" source="col_progress_bar_1"/>
+</e:Skin>

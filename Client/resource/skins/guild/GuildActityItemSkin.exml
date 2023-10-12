@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GuildActityItemSkin" width="428" height="103" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="guild_json.guild_94" x="0" y="0" width="429" height="104"/>
+	<e:Label id="descLab" text="贡献度+300      资金+1000" x="79" y="68" fontFamily="黑体" size="16" textColor="0xF7B910"/>
+	<e:Label id="nameLab" text="捐献100元宝" x="79" y="14" fontFamily="黑体" size="16" textColor="0xDFDCDC" width="270" height="55"/>
+	<e:Image id="headBG" y="16" x="10" source="quality0"/>
+	<e:Image id="taskIcon" source="guild_json.guild_51" x="16" y="22"/>
+	<e:Group id="getGroup" width="103" height="65" x="330" y="14">
+		<e:Button id="goBtn0" label="前 往" x="17" y="24" skinName="Btn1Skin" width="70" height="30"/>
+		<e:Label id="label" text="5/5" x="18" y="3" size="16" fontFamily="黑体" width="67" textAlign="center"/>
+	</e:Group>
+</e:Skin>

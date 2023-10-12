@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BuySpecialSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="694">
+	<w:Config id="1586bde6cc9"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group width="400" height="320" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-36" scale9Grid="128,2,15,41" width="300" touchEnabled="false"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="18" x="30" bold="true" bottom="-30" textColor="0x7E6437" touchEnabled="false"/>
+		<e:Image left="0" right="0" top="0" bottom="0" source="tongyongtip3" scale9Grid="12,9,7,10"/>
+		<e:Image source="tongyongtip2" left="0" right="0" top="0" bottom="0" scale9Grid="18,18,2,4"/>
+		<e:Image id="imgBg" source="quality0" scale9Grid="9,9,46,46" width="76" height="76" verticalCenter="-92" horizontalCenter="-132"/>
+		<e:Button id="buyBtn" skinName="Btn1Skin" label="购买并扫荡" horizontalCenter="0" width="180" height="60" bottom="20"/>
+		<e:Image id="imgIcon" verticalCenter="-92" horizontalCenter="-132" width="62" height="62" source="luckyBossBtn"/>
+		<e:Label id="itemName" text="购买幸运Boss次数" y="41" size="20" x="146" bold="true" textColor="0xd1c28f"/>
+		<e:Label id="unitPrice" text="1000" y="100" size="20" x="152" textColor="0xf8b141"/>
+		<e:Image id="yuanbao0" x="120" y="98" source="szyuanbao" width="30" height="22"/>
+
+		<e:Label id="allPrice" text="1000" y="100" size="20" x="304" textColor="0xf8b141"/>
+		<e:Image id="yuanbao1" x="268" y="98" source="szyuanbao"/>
+
+		<e:Label text="总价" x="222" y="100" size="20" textColor="0xBCAF96"/>
+		<e:Group width="380" height="60" horizontalCenter="0" bottom="120">
+			<e:Image id="sub2Btn" width="50" height="50" source="btn-" verticalCenter="0" horizontalCenter="-80" visible="false"/>
+			<e:Button id="sub1Btn" label="" skinName="Btn0Skin" icon="btn-" verticalCenter="0" horizontalCenter="-80"/>
+			<e:Button id="add1Btn" label="" skinName="Btn0Skin" icon="btnadd" verticalCenter="0" horizontalCenter="80"/>
+			<e:Image id="add2Btn" width="50" height="50" source="btnadd" verticalCenter="0" horizontalCenter="80" visible="false"/>
+			<e:Button id="add10Btn" label="+10" icon="btnmax" verticalCenter="0" skinName="Btn0Skin" right="10"/>
+			<e:Button id="sub10Btn" label="-10" icon="btnmax" x="60" verticalCenter="0" skinName="Btn0Skin" rotation="180"/>
+			<e:Image id="inputback" width="100" height="55" scale9Grid="6,6,3,3" verticalCenter="0" source="shuzibg" horizontalCenter="0"/>
+			<e:Label id="numLabel" width="90" height="35" x="145" y="16" textAlign="center" size="26" text="3" />
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="soulItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" height="370" width="150">
+	<w:Config id="15dc09958d7"/>
+	<e:Image horizontalCenter="0" bottom="10" source="wpstai"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" width="107">
+		<e:Button id="imgIcon" label="" skinName="Btn0Skin" icon="weapsdao_png" scaleX="1.24" scaleY="1.24" x="15" y="-32"/>
+		<e:Image id="effpos" width="20" height="20"   x="78" y="232" rotation="120"/>
+	</e:Group>
+	<e:Group horizontalCenter="0" bottom="7">
+		<e:Label id="timelabel" text="兵魂名字" size="18" textColor="0xdfd1b5" x="0" y="296"/>
+		<e:Label id="levellabel" text="X阶" size="18" textColor="0xFFC300" y="0" x="17"/>
+		<e:layout>
+			<e:HorizontalLayout gap="4" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Image id="redPoint0" source="zjmhongdian" horizontalCenter="55" bottom="43"/>
+	<e:Group id="huanhuaImage" horizontalCenter="0" bottom="50">
+		<e:Image source="shiyongzhong"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,14 @@
+{"file":"kfboss.png","frames":{
+"kf_boss_area5":{"x":320,"y":116,"w":123,"h":109,"offX":22,"offY":21,"sourceW":166,"sourceH":130},
+"kf_boss_area6":{"x":1,"y":377,"w":134,"h":106,"offX":16,"offY":24,"sourceW":166,"sourceH":130},
+"kf_boss_area7":{"x":1,"y":259,"w":154,"h":116,"offX":6,"offY":14,"sourceW":166,"sourceH":130},
+"kf_boss_area8":{"x":169,"y":1,"w":149,"h":125,"offX":9,"offY":5,"sourceW":166,"sourceH":130},
+"kf_boss_island":{"x":470,"y":1,"w":37,"h":125,"offX":0,"offY":0,"sourceW":37,"sourceH":125},
+"kf_name_85027":{"x":157,"y":268,"w":141,"h":34,"offX":0,"offY":0,"sourceW":141,"sourceH":34},
+"kf_name_85028":{"x":165,"y":232,"w":141,"h":34,"offX":0,"offY":0,"sourceW":141,"sourceH":34},
+"tongyongkuang4":{"x":157,"y":304,"w":119,"h":35,"offX":0,"offY":0,"sourceW":119,"sourceH":35},
+"biaoti_kuafuboss":{"x":1,"y":485,"w":155,"h":25,"offX":1,"offY":5,"sourceW":156,"sourceH":34},
+"kf_boss_area1":{"x":169,"y":128,"w":126,"h":102,"offX":20,"offY":28,"sourceW":166,"sourceH":130},
+"kf_boss_area2":{"x":1,"y":133,"w":162,"h":124,"offX":2,"offY":6,"sourceW":166,"sourceH":130},
+"kf_boss_area3":{"x":1,"y":1,"w":166,"h":130,"offX":0,"offY":0,"sourceW":166,"sourceH":130},
+"kf_boss_area4":{"x":320,"y":1,"w":148,"h":113,"offX":9,"offY":17,"sourceW":166,"sourceH":130}}}

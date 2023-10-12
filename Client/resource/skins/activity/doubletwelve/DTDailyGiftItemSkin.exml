@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DTDailyGiftItemSkin" width="540" height="130" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="scitembg" scale9Grid="56,26,4,3" left="0" right="0" top="0" bottom="0" x="0" y="0"/>
+		<e:Label id="times" text="可购买：1/1" size="18" verticalCenter="34" textColor="0x9F946D" right="20"/>
+		<e:Label id="already" text="已购买" size="20" verticalCenter="0" textColor="0x00ff00" x="441" visible="false"/>
+		<e:Group id="vip" y="11" right="16">
+			<e:Image source="num_json.vipvip_png" x="-3" y="-3" scaleX="1" scaleY="1"/>
+			<e:BitmapLabel id="vipLv" x="48" y="0" font="num_vip_v_fnt" text="6" scaleX="1" scaleY="1"/>
+			<e:Label text="特权" x="25" y="1" size="22" bold="true" textColor="0x00ff00"/>
+			<e:layout>
+			<e:HorizontalLayout gap="4" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group y="39" right="90">
+			<e:Label text="原价：" size="18" verticalCenter="-11" x="0" textColor="0x9f946d" y="11" scaleX="1" scaleY="1"/>
+			<e:Label id="original" text="10000" size="18" verticalCenter="-11" x="48" textColor="0x9f946d" y="11" scaleX="1" scaleY="1"/>
+			<e:Label id="now" text="10000" size="18" verticalCenter="16" x="48" textColor="0xf8b141" y="38" scaleX="1" scaleY="1"/>
+			<e:Label text="现价：" size="18" verticalCenter="16" x="0" textColor="0xf8b141" y="38" scaleX="1" scaleY="1"/>
+			<e:Image source="tongyongline2" x="-2" verticalCenter="-12" y="19"/>
+		</e:Group>
+		<e:Button id="get" label="购买" verticalCenter="0" right="20" skinName="Btn15Skin"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" right="15" verticalCenter="-18" visible="false"/>
+		<ns1:BaseComponent skinName="ItemSkin" className="ItemBase" y="20" x="38" visible="false"/>
+		<e:Image id="discount" x="35" y="23" source="" visible="false"/>
+		<e:Group id="discountSrc" x="12" y="4">
+			<e:Image source="shop_json.shangzk0" y="0" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0"/>
+			<e:BitmapLabel id="discountNum" y="1" font="num_xvip_4_fnt" text="58" letterSpacing="-1" horizontalCenter="0" scaleX="0.8" scaleY="0.8"/>
+		</e:Group>
+		<e:List id="reward" verticalCenter="2" itemRendererSkinName="ItemSkin" x="33">
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:List>
+	</e:Group>
+</e:Skin>

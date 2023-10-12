@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KFBattlListSkin" width="560" height="712" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bossbg_png" left="0" top="0" alpha="0.5" right="0" bottom="0"/>
+	<e:Group y="10" width="540" height="160" x="10">
+		<e:Group id="wjGroup" y="0" width="540" height="160" x="0">
+			<e:Image left="4" right="4" top="4" bottom="4" source="kfwujiBattle_png"/>
+			<e:Image source="bossbgkuang" scale9Grid="49,26,2,1" left="0" right="0" top="0" bottom="0"/>
+			<e:Label id="helpLink0" text="玩法说明" size="20" y="4" x="21" textColor="0x20CB30" width="120" height="50" verticalAlign="middle" textAlign="center"/>
+			<e:Button id="btn0" label="进入" skinName="Btn3Skin" width="100" height="46" verticalCenter="0" right="20" enabled="true"/>
+			<e:Image id="redPoint0" source="zjmhongdian" scaleX="1" scaleY="1" verticalCenter="-16" right="16" visible="false"/>
+			<e:Label id="openTerm0" text="开服第8天 达到3转开启" size="20" textColor="0xF8B141" bold="true" y="121" right="16" width="400" textAlign="right"/>
+			<e:Label id="time0" text="每天 12:00、21:00 开启" size="20" textColor="0xF8B141" bold="true" y="121" right="16" width="400" textAlign="right" visible="false"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

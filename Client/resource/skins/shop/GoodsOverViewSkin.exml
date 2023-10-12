@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GoodsOverViewSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgClose" left="0" right="0" top="0" fillAlpha="0.6" bottom="0"/>
+	<e:Group width="470" horizontalCenter="0" height="500" verticalCenter="0">
+		<e:Image top="0" scale9Grid="8,10,32,23" source="tongyongkuang3bg" left="0" right="0" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="67,5,268,30" left="0" right="0"/>
+		<e:Label text="极品道具预览" size="24" y="11" horizontalCenter="0" bold="true" textColor="0xffff00"/>
+		<e:Scroller id="scroller" top="50" left="10" right="10" bottom="10">
+		<e:Group>
+			<e:List id="shopList" itemRendererSkinName="ItemSkin" anchorOffsetY="0" top="0" bottom="0" horizontalCenter="0">
+				<e:layout>
+					<e:TileLayout requestedColumnCount="3" horizontalAlign="center" orientation="rows" paddingLeft="20" paddingRight="20" paddingTop="20" horizontalGap="40" columnWidth="100" rowAlign="top" columnAlign="left" paddingBottom="20"/>
+				</e:layout>
+			</e:List>
+		</e:Group>
+		</e:Scroller>
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" horizontalCenter="0" bottom="-35">
+			<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+			<e:Button id="closeBtn0" label="按钮" y="-17" skinName="Btn0Skin" right="-10" x="188" visible="false"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChallengeSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group horizontalCenter="0" verticalCenter="0" width="580" height="380">
+		<e:Image source="wangzhebg_png" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="jingji_json.jjbqi" y="54" width="170" height="274" horizontalCenter="-180"/>
+		<e:Image source="jingji_json.jjrqi" y="54" width="170" height="274" horizontalCenter="180"/>
+		<e:Image source="jiantouxuan" x="516" y="149"/>
+		<e:Image source="jiantouxuan" x="423" y="149" scaleX="-1"/>
+		<e:Image id="headBg0" source="touxiangkuang0" y="130" width="80" height="80" scale9Grid="6,6,1,1" horizontalCenter="180"/>
+		<e:Image id="otherHead" y="135" source="head_10" horizontalCenter="179" width="70" height="70"/>
+		<e:Image id="scrollHead" width="70" height="70" y="157" source="head_10" horizontalCenter="179"/>
+		<e:Image id="headBg" y="130" width="80" height="80" source="touxiangkuang0" scale9Grid="6,6,1,1" horizontalCenter="-180"/>
+		<e:Image id="myhead" source="head_10" y="135" width="70" height="70" horizontalCenter="-180"/>
+		<e:Label id="enterTime" text="倒计时时" y="16" size="24" textColor="0xFFAB00" horizontalCenter="0" bold="true"/>
+		<e:Label id="ingImg" text="匹配中..." y="308" size="22" textColor="0xFFAB00" horizontalCenter="0"/>
+		<e:Label id="myname" text="我的名字" y="80" size="20" horizontalCenter="-180" textColor="0x9f946d"/>
+		<e:Label id="othername" text="" y="80" size="20" horizontalCenter="180" textColor="0xf8b141"/>
+		<e:Label id="mylv" text="青铜一阶" y="230" size="20" textColor="0xd1c28f" horizontalCenter="-180"/>
+		<e:Label id="otherlv" text="青铜一阶" y="230" size="20" textColor="0xD1C28F" horizontalCenter="180"/>
+	</e:Group>
+</e:Skin>

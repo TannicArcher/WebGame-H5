@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OSASeriesBigRewardItem" width="90" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" height="100">
+	<ns1:BaseComponent id="reward" className="ItemBaseNoTap" skinName="ItemSkin" horizontalCenter="0" top="2"/>
+	<e:Label id="days" text="累充0/3天" size="20" bottom="0" textColor="0xF8B141" horizontalCenter="0"/>
+	<e:Image id="select" source="xuanzhongkuang2" scale9Grid="5,5,6,6" width="80" height="80" top="0" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" visible="false"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" scaleX="1" scaleY="1" y="0" right="0" visible="false"/>
+	<e:Image id="state" source="tongyong2_json.yilingqu" rotation="28.6" top="0" horizontalCenter="0"/>otation="28.51"/>
+</e:Skin>

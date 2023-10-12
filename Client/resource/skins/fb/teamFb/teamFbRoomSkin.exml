@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="teamFbRoomSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="930" width="580" >
+	<e:Rect left="0" top="0" bottom="0" right="0" fillAlpha="0.8"/>
+	<e:Group width="500" height="690" horizontalCenter="0" bottom="172">
+		<e:Image source="tongyongmianbanbg" scale9Grid="12,12,24,22" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,19,3,4" left="4" top="4" right="4" bottom="4"/>
+		<e:Image height="674" left="8" right="8" top="8" anchorOffsetY="0" source="tfb_bg_png"/>
+		<e:Group id="roleGroup" horizontalCenter="-19" bottom="228" height="430" width="620" scaleX="0.8" scaleY="0.8">
+			<ns1:BaseComponent id="member1" scaleX="0.8" scaleY="0.8" y="42.75" skinName="teamFbRoleItem" className="TeamFbRoleItemRender" horizontalCenter="-175" width="450" height="420"/>
+			<ns1:BaseComponent id="member2" scaleX="0.8" scaleY="0.8" y="41.5" skinName="teamFbRoleItem" className="TeamFbRoleItemRender" horizontalCenter="225" width="450" height="420"/>
+			<ns1:BaseComponent id="leader" y="-26.5" scaleX="1.1" scaleY="1.1" skinName="teamFbRoleItem" className="TeamFbRoleItemRender" horizontalCenter="17.5" width="450" height="420"/>
+		</e:Group>
+		<e:Image height="130" y="481" source="shuxingbg" scale9Grid="74,5,14,34" anchorOffsetX="0" anchorOffsetY="0" right="10" left="10"/>
+
+
+		<e:List id="itemList" itemRendererSkinName="ItemSkin" useVirtualLayout="false" width="450" horizontalCenter="1" anchorOffsetY="0" bottom="109">
+			<e:layout>
+			<e:TileLayout verticalGap="0" requestedColumnCount="5" horizontalGap="0" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:List>
+		<e:Button id="challengeBtn" label="挑   战" skinName="Btn1Skin" horizontalCenter="0" bottom="12"/>
+		<e:Label text="通关奖励本周内只可获取一次" size="18" horizontalCenter="0" bottom="83" textColor="0x00d800" bold="true"/>
+		<e:Image horizontalCenter="0" anchorOffsetX="0" source="tfb_rewardtitle" bottom="212"/>
+		<e:Image y="451" source="shuxingbg2" scale9Grid="188,4,4,24" horizontalCenter="-115" anchorOffsetX="0" width="230"/>
+		<e:Image y="451" source="shuxingbg2" scale9Grid="188,4,4,24" scaleX="-1" horizontalCenter="114" anchorOffsetX="0" width="230"/>
+
+
+
+		<e:Label id="fbName" text="子鼠宫" horizontalCenter="0" top="23" bold="true" textColor="0xffd93f" size="26"/>
+		<e:Label id="infoText" text="通关子鼠宫后可开启挑战" horizontalCenter="0.5" bottom="36" size="28" textColor="0xf8b141" bold="true"/>
+		<e:Label id="passTxt" text="已通关" textColor="0x00ff00" horizontalCenter="0" bottom="26"/>
+	</e:Group>
+	<e:Group id="backBtnGroup" width="100" height="100" horizontalCenter="250" bottom="4">
+		<e:Button id="closeBtn0" label="按钮" skinName="Btn0Skin" icon="zjmfanhui" x="10" y="10"/>
+	</e:Group>
+
+
+
+
+
+
+
+</e:Skin>

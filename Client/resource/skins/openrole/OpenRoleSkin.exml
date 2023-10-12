@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OpenRoleSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" top="0" bottom="0"/>
+	<e:Image horizontalCenter="8" source="oprolebg_png" bottom="0" width="874" height="930"/>
+	<e:Image horizontalCenter="4" y="40" source="biaoti_kaiqijuese"/>
+	<e:Image id="infoImg" horizontalCenter="0" bottom="50" source="" visible="false"/>
+	<e:Label id="needTxt" text="开启需求：" size="22" horizontalCenter="0" textColor="0xdfd1b5" bottom="190"/>
+	<e:Image verticalCenter="100" horizontalCenter="-230" source="opxuanzhuan" scaleX="-1"/>
+	<e:Image horizontalCenter="230" verticalCenter="100" source="opxuanzhuan"/>
+	<e:Group id="roleGroup" horizontalCenter="-2" bottom="348" height="430" width="650">
+		<e:Component id="role1" skinName="OpenRoleItemSkin" scaleX="0.7" scaleY="0.7" y="79" x="-4"/>
+		<e:Component id="role2" skinName="OpenRoleItemSkin" scaleX="0.7" scaleY="0.7" y="79" x="336"/>
+		<e:Component id="role0" skinName="OpenRoleItemSkin" y="-34" scaleX="1.1" scaleY="1.1" x="78"/>
+	</e:Group>
+	<e:Image horizontalCenter="0" verticalCenter="172" source="teshuwenzibg2" width="400" height="100" alpha="0.6"/>
+	<e:Image source="opbn_png" horizontalCenter="4" verticalCenter="136"/>
+	<e:ToggleButton id="sexBtn0" label="按钮" skinName="MaleBtnSkin" horizontalCenter="-70" verticalCenter="180"/>
+	<e:ToggleButton id="sexBtn1" label="按钮" skinName="FemaleBtnSkin" verticalCenter="180" horizontalCenter="70"/>
+	<e:Button id="openBtn" label="开启角色" horizontalCenter="0" skinName="Btn1Skin" width="160" height="60" bottom="120"/>
+</e:Skin>

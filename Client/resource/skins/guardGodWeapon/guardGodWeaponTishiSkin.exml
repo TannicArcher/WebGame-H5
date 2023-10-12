@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="guardGodWeaponTishiSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15ca5ef6a05"/>
+	<e:Rect id="closeBtn" left="0" right="0" top="0" bottom="0" fillAlpha="0"/>
+	<e:Group id="anigroup" verticalCenter="0" horizontalCenter="0" width="400" height="350">
+		<e:Image   source="tongyongtip1" left="0" right="0" top="0" bottom="39" scale9Grid="9,7,10,8"/>
+		<e:Image source="tongyongline" x="72.19" y="265.05999999999995" width="300" visible="false"/>
+		<e:Image source="tongyongline" x="62.19" y="157.35999999999993" width="300" visible="false"/>
+		<e:Group width="400" y="0" height="41" horizontalCenter="0">
+			<e:Image source="teshuwenzibg" left="0" right="0"/>
+			<e:Label id="nameTxt" text="奖励说明" size="24" textColor="0xd1c28f" y="8" horizontalCenter="0"/>
+
+		</e:Group>
+		<e:Image id="giveUp" source="chatclose" y="0" right="0"/>
+
+
+		<e:Group x="25" y="226">
+			<e:Label text="1、击杀怪物波次越多，奖励越好。" size="18" height="20" x="0.009999999999990905" y="0" textColor="0x9f946d"/>
+			<e:Label text="2、击杀BOSS有机会获得心法残页。" size="18" textColor="0x9F946D" height="20" x="0" y="24"/>
+			<e:Label text="3、幸运BOSS高几率掉落心法残页。" size="18" textColor="0x9F946D" height="20" x="0.009999999999990905" y="47.66999999999996"/>
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:Group>
+
+
+		<e:Group width="400" height="133" y="64" x="0">
+			<e:Image left="0" right="0" top="0" bottom="0" x="-5" y="-70" source="bantoutiaobg2" scale9Grid="30,2,32,17"/>
+	<e:Scroller id="itemScroller" height="103" y="29" horizontalCenter="0">
+		<e:List id="itemList" itemRendererSkinName="ItemSkin" x="0" y="0" useVirtualLayout="false" width="353" height="206">
+		<e:layout>
+			<e:TileLayout verticalGap="0" requestedColumnCount="4" horizontalGap="0"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+
+
+
+
+
+
+			<e:Label text="随机掉落以下奖励" x="100" y="2" textColor="0xD1C28F" size="24"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

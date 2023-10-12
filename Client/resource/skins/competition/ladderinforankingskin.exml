@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ladderinforankingskin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" >
+	<w:Config id="159b5e0f988"/>
+	<e:Rect fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/> 
+	<e:Group name="排名" height="740" width="530" horizontalCenter="0" verticalCenter="-55">
+		<e:Image     source="tongyongkuang3bg" scale9Grid="10,5,28,31" left="0" right="0" top="0" bottom="0"/>
+		<e:Image y="0" source="tongyongkuang3tou" left="0" right="0" scale9Grid="74,9,265,38"/>
+		<e:Label id="titleDesc" y="10" text="本周排名" size="24" horizontalCenter="0" textColor="0xA67D44" bold="true"/>
+		<e:Image y="45" width="520" horizontalCenter="0" source="pailietoubg2" scale9Grid="8,0,26,40"/>
+		<e:Image x="100" y="50" source="pailietouline2" height="30"/>
+		<e:Image y="50" x="381" source="pailietouline2" height="30"/>
+		<e:Label y="54" text="排名" size="20" x="34" textColor="0x444134"/>
+		<e:Label y="54" text="名字" size="20" x="224" textColor="0x444134"/>
+		<e:Label y="54" text="净胜场" size="20" x="423" textColor="0x444134"/>
+		<e:Scroller width="520" height="564" y="88"  horizontalCenter="0">
+		<e:List id="list" x="-3" y="30" itemRendererSkinName="TiantiRankItem">
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+		</e:List>
+		</e:Scroller>
+		<e:Image width="520" height="80" horizontalCenter="0" bottom="6" source="bantoumingkuang3" />
+		<e:Label id="rankDesc" text="我的战绩" x="30" y="686" size="20" rotation="359.95" textColor="0x9f946d"/>
+		<e:Label id="myRank" text="排名：100" y="686" size="20" textColor="0x9f946d" horizontalCenter="0"/>
+		<e:Label id="WinNum" text="净胜场：100场" y="686" size="20" x="370" textColor="0xFFB92D"/>
+
+
+		<e:Group x="150" y="674" width="58" height="50">
+			<e:Image id="myDwIng" scaleX="0.4" scaleY="0.4" verticalCenter="0" horizontalCenter="0" source="ladder_rank_1"/>
+			<e:Image id="levelBg" width="30" height="21" x="8" y="30" scale9Grid="5,5,14,6" source=""/>
+			<e:Image id="level" source="laddergradnum_5" scaleX="0.6" scaleY="0.6" rotation="358.96" horizontalCenter="0" verticalCenter="-2"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

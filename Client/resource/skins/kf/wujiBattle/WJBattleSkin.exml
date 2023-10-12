@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WJBattleSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="11,8,12,23"/>
+	<e:Image source="tongyongmianbanbg" width="570" horizontalCenter="0" top="44" bottom="155" scale9Grid="8,15,30,19"/>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  right="0" left="0" currentState="nohead"/>
+	<e:Group horizontalCenter="0" top="52">
+		<e:Image source="wj_img_bg_png" x="1" y="0"/>
+		<e:Image width="560" height="140" x="0" y="378" source="bantoumingkuang3" scale9Grid="2,2,18,18" anchorOffsetY="0"/>
+		<e:Button id="matchBtn" label="匹配对手" skinName="Btn1Skin" y="582" x="209"/>
+		<e:CheckBox id="autoCheckBox" label="人数不足自动扩大转生限制" x="133" y="657" skinName="CheckBox0"/>
+		<e:Label id="timeLabel" text="每天12:00:-13:00,20:00-20:30 开启战场匹配" x="82" y="6" size="20" fontFamily="黑体" textColor="0xE8E3AE"/>
+		<e:Button id="getAwardBtn" label="领取" x="417" y="428" skinName="Btn3Skin"/>
+		<e:Label id="standardLabel" text="本周参与战场累计获得荣誉5000点（500/5000）" x="13" y="384" size="20" fontFamily="黑体" textColor="0xe8e3ae"/>
+		<e:Label id="shopLink" text="功勋商店" size="20" textColor="0x35E62D" x="387" y="612"/>
+		<e:Label id="timesLabel" text="剩余参与次数：6次" size="20" textColor="0x35E62D" x="194" y="540"/>
+		<e:Scroller width="380" height="97" x="12" y="408" anchorOffsetY="0" anchorOffsetX="0">
+			<e:List id="awardList" width="377" height="97" x="1.9" y="8" itemRendererSkinName="ItemSkin" anchorOffsetY="0" anchorOffsetX="0">
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+
+</e:Skin>

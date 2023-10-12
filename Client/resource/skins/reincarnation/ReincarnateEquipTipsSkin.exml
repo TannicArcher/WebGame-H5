@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ReincarnateEquipTipsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" width="580" height="930" states="noSpirit0,doSpirit0,noSpirit1,doSpirit1" >
+	<w:Config id="1586b3502a7"/>
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="anigroup" width="350" horizontalCenter="0" touchEnabled="false" verticalCenter="-45">
+		<e:Image id="background" source="tongyongtip1" scale9Grid="7,6,11,12" left="0" right="0" top="0" bottom="0" touchEnabled="false"/>
+		<e:Image id="quali" left="0" right="0" scale9Grid="9,0,10,54" height="130" source="quali4" top="2"/>
+		<e:Image source="tongyongtip2" left="0" right="0" top="0" bottom="0" scale9Grid="18,18,2,4" touchEnabled="false"/>
+		<e:Image y="140" scale9Grid="85,1,6,1" width="340" horizontalCenter="0" source="bantoutiaobg"/>
+		<e:Group x="20" y="15">
+			<e:Label id="head" text="" size="20" textAlign="left" textColor="0x90F490" y="10" x="10" bold="true"/>
+			<e:Label id="nameLabel" text="地狱斗笠·战 " size="20" textAlign="left" textColor="0x90f490" y="0" x="0" bold="true"/>
+			<e:layout>
+				<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="score" text="评分：123456" size="18" y="15" textAlign="right" textColor="0xffbc00" right="20" width="200"/>
+
+
+		<e:Label y="53" text="部位：" size="18" x="120" textColor="0x966e5a"/>
+		<e:Label id="type" y="53" text="斗笠" size="18" x="180" textColor="0xffd9b5"/>
+		<e:Label y="77" text="转生：" size="18" x="120" textColor="0x966e5a"/>
+		<e:Label id="lv" y="77" text="4转" size="18" x="180" textColor="0x00ff00"/>
+		<e:Label y="101" text="职业：" size="18" x="120" textColor="0x966e5a"/>
+		<e:Label id="career" y="101" text="战士" size="18" x="180" textColor="0xffd9b5"/>
+		<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" x="20" y="47"/>
+
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" y="120" x="0"/>
+		<e:Group x="26" top="190" bottom="10">
+			<e:Group id="baseGroup" x="0" y="0"  >
+				<e:Label y="0" text="基础属性" size="20" x="0" bold="true" textColor="0x7e6437"  />
+				<e:Label y="25" text="攻击：生命：物防：法防：" size="18" verticalAlign="justify" x="22" textAlign="left" textColor="0x9F946D" width="54" lineSpacing="7"   text.noSpirit0="攻击：\n生命：\n物防：\n法防：" text.doSpirit0="攻击：生命：物防：法防："/>
+				<e:Label id="attr0" y="25" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x9F946D"  />
+				<e:Label id="attr1" y="50" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x9f946d"  />
+				<e:Label id="attr2" y="75" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x9F946D"  />
+				<e:Label id="attr3" y="100" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x9F946D"  />
+				<e:Label y="125" text="神圣伤害：神圣精通：" size="18" verticalAlign="justify" x="22" textAlign="left" width="90" lineSpacing="7"   y.noSpirit0="125" y.doSpirit0="125" text.noSpirit1="神圣伤害：" text.doSpirit1="神圣伤害：" textColor="0x9f946d"/>
+				<e:Label id="attr4" y="125" text="100000" size="18" verticalAlign="justify" x="112" textAlign="left"   y.noSpirit0="125" y.doSpirit0="125" textColor="0x9f946d"/>
+				<e:Label id="attr5" y="150" text="100000" size="18" verticalAlign="justify" x="112" textAlign="left"   y.noSpirit0="150" y.doSpirit0="150" includeIn="noSpirit0,doSpirit0" textColor="0x9f946d"/>
+				<e:Label id="soulAddAttr0" y="25" text="1000000" size="18" verticalAlign="justify" x="237" textAlign="left" lineSpacing="7" textColor="0xFFFF00"/>
+				<e:Label id="soulAddAttr1" y="50" text="1000000" size="18" verticalAlign="justify" x="237" textAlign="left" lineSpacing="7" textColor="0xFFFF00"/>
+				<e:Label id="soulAddAttr2" y="75" text="1000000" size="18" verticalAlign="justify" x="237" textAlign="left" lineSpacing="7" textColor="0xFFFF00"/>
+				<e:Label id="soulAddAttr3" y="100" text="1000000" size="18" verticalAlign="justify" x="237" textAlign="left" lineSpacing="7" textColor="0xFFFF00"/>
+				<e:Label id="soulAddAttr4" y="125" text="1000000" size="18" verticalAlign="justify" x="237" textAlign="left" lineSpacing="7" textColor="0xFFFF00"/>
+				<e:Label id="soulDescLable" text="注魂 +注魂 +注魂 +注魂 +注魂 +" x="181" y="25" size="18" textColor="0xffff00" width="56" lineSpacing="7"/>
+			</e:Group>
+			<e:Group id="spiritGroup" x="-2" y="132"   includeIn="doSpirit0,doSpirit1">
+				<e:Group>
+				<e:Label y="0" text="附灵" size="20" x="0" bold="true"   textColor="0x5186fd"/>
+				<e:Label id="spiritLv" y="0" text="Lv10" size="18" x="40" bold="true" textColor="0x5186FD"  />
+				<e:Label id="spiritCost" y="10" text="(1000/20000)" size="18" x="50" bold="true" textColor="0x5186FD"   includeIn="noSpirit0,doSpirit0,noSpirit1,doSpirit1"/>
+				<e:layout>
+					<e:HorizontalLayout gap="3" verticalAlign="bottom"/>
+				</e:layout>
+				</e:Group>
+				<e:Label y="25" text="攻击：生命：物防：法防：" size="18" verticalAlign="justify" x="22" textAlign="left" textColor="0x5186FD" width="54" lineSpacing="7"   text.doSpirit0="攻击：生命：物防：法防："/>
+				<e:Label id="attr6" y="25" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x5186FD"  />
+				<e:Label id="attr7" y="50" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x5186FD"  />
+				<e:Label id="attr8" y="75" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x5186FD"  />
+				<e:Label id="attr9" y="100" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x5186FD"  />
+
+
+
+			</e:Group>
+			<e:Group id="suitGroup" x="8" y="142"  >
+				<e:Group>
+				<e:Label id="suitName" y="0" text="地狱道套装" size="20" x="0" bold="true"   textColor="0xff00ff"/>
+				<e:Label id="suitNum" y="0" text="(0/4)" size="18" x="40" bold="true"   textColor="0xff0000"/>
+				<e:layout>
+					<e:HorizontalLayout gap="3" verticalAlign="bottom"/>
+				</e:layout>
+				</e:Group>
+				<e:Label id="suitState" y="25" text="斗笠、面甲、披风、盾牌" size="18" verticalAlign="justify" x="22" textAlign="left" lineSpacing="7" textColor="0x666666"/>
+				<e:Label id="attrDesc" y="50" text="攻击：生命：物防：法防：" size="18" verticalAlign="justify" x="22" textAlign="left" width="54" lineSpacing="7"   textColor="0x666666"/>
+				<e:Label id="attr12" y="50" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x666666"  />
+				<e:Label id="attr13" y="75" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x666666"  />
+				<e:Label id="attr14" y="100" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x666666"  />
+				<e:Label id="attr15" y="125" text="100000" size="18" verticalAlign="justify" x="76" textAlign="left" textColor="0x666666"  />
+				<e:Label id="attrDesc1" y="150" text="合击伤害减免：" size="18" verticalAlign="justify" x="22" textAlign="left" lineSpacing="7"   textColor="0x666666"/>
+				<e:Label id="attr16" y="150" text="5%" size="18" verticalAlign="justify" x="148" textAlign="left"   textColor="0x666666"/>
+			</e:Group>
+			<e:Group id="chainGroup" x="18" y="152">
+				<e:Group>
+				<e:Label id="chainName" y="0" text="灵魂锁链" size="20" x="0" bold="true" textColor="0xffff00"/>
+					<e:Label id="chainLv" y="10" text="Lv1" size="20" x="10" bold="true" textColor="0xffff00"/>
+				<e:layout>
+					<e:HorizontalLayout gap="3" verticalAlign="bottom"/>
+				</e:layout>
+				</e:Group>
+
+				<e:Group x="22" y="25">
+					<e:Label id="chainPos" y="0" text="[魔魂面甲]" size="18" verticalAlign="justify" x="0" textAlign="left" lineSpacing="7" textColor="0xffff00"/>
+					<e:Label id="chainAttr" y="0" text="伤害加成" size="18" verticalAlign="justify" x="83" textAlign="left" lineSpacing="7" textColor="0xFFFF00"/>
+					<e:Label id="chainState" y="10" text="增加" size="18" verticalAlign="justify" x="93" textAlign="left" lineSpacing="7" textColor="0xFFFF00"/>
+					<e:Label id="chainValue" y="20" text="5%" size="18" verticalAlign="justify" x="103" textAlign="left" lineSpacing="7" textColor="0xFFFF00"/>
+					<e:layout>
+						<e:HorizontalLayout gap="0"/>
+					</e:layout>
+				</e:Group>
+			</e:Group>
+			<e:Group id="soulGroup" x="28" y="162">
+				<e:Group>
+				<e:Label id="soulName" y="0" text="魔化" size="20" x="0" bold="true" textColor="0xFFFF00"/>
+				<e:Label id="soulLv" y="10" text="Lv1" size="20" x="10" bold="true" textColor="0xFFFF00"/>
+				<e:layout>
+					<e:HorizontalLayout gap="3" verticalAlign="bottom"/>
+				</e:layout>
+				</e:Group>
+				<e:Label y="25" text="为当前部位注入上古魔魂，提升基础属性至" size="18" verticalAlign="justify" x="22" textAlign="left" lineSpacing="7" textColor="0xFFFF00" width="279"/>
+				<e:Label id="soulAttr" y="50" text="550%" size="18" verticalAlign="justify" x="94" textAlign="left" lineSpacing="7" textColor="0xFFFF00"/>
+			</e:Group>
+			<e:layout>
+				<e:VerticalLayout gap="5" horizontalAlign="left"/>
+			</e:layout>
+		</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<e:Group horizontalCenter="0" bottom="-94" id="btnGroup">
+			<e:Button id="spiritBtn" label="附 灵" skinName="Btn1Skin" width="140" height="60" x="0" y="31"/>
+			<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" x="116" y="31" visible="false"/>
+			<e:Button id="soulBtn" label="注 魂" skinName="Btn1Skin" width="140" height="60" x="160" y="31"/>
+			<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" x="276" y="31" visible="false"/>
+			<e:Group x="15" y="0">
+				<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" touchEnabled="false" x="-29" y="0"/>
+				<e:Label text="点击空白区域关闭窗口" size="18" x="58" bold="true" textColor="0x7E6437" touchEnabled="false" y="6"/>
+			</e:Group>
+		</e:Group>
+	</e:Group>
+</e:Skin>

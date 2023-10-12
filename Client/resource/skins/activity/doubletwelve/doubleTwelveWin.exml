@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="doubleTwelveWin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  >
+	<e:Group top="0" bottom="0" left="0" right="0">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" x="0" y="0"  />
+		<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" scale9Grid="15,12,2,3" y="0"   horizontalCenter="0"/>
+		<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30" width="570" horizontalCenter="0" top="44" bottom="120"/>
+		<e:Group width="556" horizontalCenter="0" bottom="58">
+			<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+			<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+		</e:Group>
+		<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" currentState="nohead" width="580" y="0" horizontalCenter="0"/>
+		<e:Image source="shang_7" y="-2" height="30" width="181" horizontalCenter="-165"/>
+		<e:Image horizontalCenter="-155" y="6" source="dt_activitytitle"/>
+		<e:ViewStack id="viewStack" width="560" selectedIndex="0" top="82" bottom="226" horizontalCenter="0">
+			<ns1:BaseComponent id="DTDailyGiftSkin" left="0" right="0" top="0" bottom="0" className="DoubleTwelveGift" skinName="DTGiftSkin"/>
+			<ns1:BaseComponent id="DTLuckyTurntableSkin" left="0" right="0" top="0" bottom="0" className = "DoubleTwelveLottery" skinName="DTLuckyTurntableSkin"/>
+		</e:ViewStack>
+		<e:Group width="560" height="100"   horizontalCenter="0" bottom="124">
+			<e:Image top="0" bottom="0" source="bantoumingkuang3" left="0" right="270" />
+			<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" left="271" right="0" />
+		</e:Group>
+		<e:Group width="582" top="38" bottom="118" horizontalCenter="0" touchEnabled="false" touchThrough="true" cacheAsBitmap="true">
+			<e:Image source="shop_json.shang_2" x="0" y="-22"/>
+			<e:Image source="shop_json.shang_2" y="-22" scaleX="-1" right="0"/>
+			<e:Image source="shop_json.shang_1" y="-27" horizontalCenter="0"/>
+			<e:Image rotation="90" x="17" y="45" source="shang_3"/>
+			<e:Image source="shang_3" rotation="90" y="45" scaleY="-1" right="-3"/>
+			<e:Image x="-1" source="shang_10" bottom="-9"/>
+			<e:Image bottom="92" source="shang_9" top="202" scale9Grid="1,3,9,10"/>
+			<e:Image source="shang_10" bottom="-9" right="-1" scaleX="-1"/>
+			<e:Image source="shang_9" bottom="92" top="202" scale9Grid="1,3,9,10" right="0" scaleX="-1"/>
+			<e:Image x="16" bottom="0" source="shang_8" scale9Grid="60,4,7,24" width="275"/>
+			<e:Image bottom="0" source="shang_8" scale9Grid="60,4,7,24" width="275" scaleX="-1" right="16"/>
+			<e:Image x="11" bottom="-6" source="shang_5" touchEnabled="false"/>
+			<e:Image bottom="-2" source="shang_6" right="11" touchEnabled="false"/>
+		</e:Group>
+		<e:Group horizontalCenter="-253" bottom="158">
+		</e:Group>
+		<e:Group horizontalCenter="253" bottom="158">
+		</e:Group>
+		<e:Scroller id="menuScroller" scrollPolicyV="off" scrollPolicyH="on" height="82" horizontalCenter="0" bottom="134" width="450">
+			<e:List id="menuList" y="74" itemRendererSkinName="ActBtnSkin" horizontalCenter="0" scrollEnabled="false">
+			<e:layout>
+				<e:HorizontalLayout gap="10" paddingLeft="0" horizontalAlign="center"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+	</e:Group>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="44" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>		
+</e:Skin>

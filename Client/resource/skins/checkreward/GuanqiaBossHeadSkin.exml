@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="GuanqiaBossHeadSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="70" height="70" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="1586b29e830"/>
+    <e:Image id="imgHead" horizontalCenter="0.5" verticalCenter="0.5" source="" width="43" height="43"/>
+	<e:Image id="imgFrameLittle" horizontalCenter="0" verticalCenter="0" source="xguanqia_16"/>
+	<e:Image id="imgFrameBig" horizontalCenter="0" verticalCenter="0" source="xguanqia_17"/>
+	<e:Image id="imgSelect"  source="xguanqia_13" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SpecialCardSkin" width="540" height="630" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15d35a61f64"/>
+	<e:Group id="monthGroup" left="0" right="0" top="0" bottom="0">
+		<e:Image source="specialcard_bg_jpg" horizontalCenter="0" scale9Grid="0,384,512,20" height="630" top="0"/>
+		<e:Label id="first" text="现在购买，额外赠送 880000 元宝" size="18" horizontalCenter="0" bold="true" textAlign="left" textColor="0x20CB30" verticalCenter="243"/>
+
+
+
+
+		<e:Image source="bantoutiaoboss" scaleX="-1" width="244" horizontalCenter="0" top="196"/>
+		<e:Label text="购买特权月卡不计入VIP和首充" size="18" textColor="0x916625" bold="true" horizontalCenter="0" top="199"/>
+		<e:Label id="feng" text="封测期间不开放月卡功能" size="24" horizontalCenter="0" bottom="20" textColor="0x9f946d" visible="false"/>
+
+		<e:Button id="btn1" label="88元抢购" verticalCenter="281" skinName="Btn16Skin" horizontalCenter="0"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" horizontalCenter="61" verticalCenter="267" visible="false"/>
+		<e:Label id="leftTime" text="月卡剩余：XX天XX小时" horizontalCenter="0" size="20" textColor="0xff9900" verticalCenter="239" visible="false"/>
+		<e:Label id="depictLabel" text="每天免费领取30000威望\n每天免费挑战至尊特权BOSS\n一键扫荡个人BOSS\n一键熔炼背包装备\n一键扫荡材料副本\n背包格子增加100\n每天额外赠送1次烈焰戒指副本\n每天额外赠送1次挖矿次数，单次时间改成20分钟\n" size="18" textColor="0xDFD1B5" lineSpacing="10" textAlign="left" verticalAlign="middle" scaleX="1" scaleY="1" top="282" anchorOffsetX="0" width="400" horizontalCenter="12"/>
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0" top="20" x="119" y="136" scaleX="1" scaleY="1"/>
+		<e:Group id="titleMcGroup" y="130" horizontalCenter="0"/>
+
+		<e:Label text="（三角色时）" size="20" top="42" horizontalCenter="193" textColor="0x00ff00"/>
+		<e:Image source="special_card_tag" horizontalCenter="225" top="266"/>
+		<e:Group horizontalCenter="-206.5" top="284">
+			<e:Image source="tongyongdian2" x="0" y="0"/>
+			<e:Image source="tongyongdian2" x="0" y="0"/>
+			<e:Image source="tongyongdian2" x="10" y="10"/>
+			<e:Image source="tongyongdian2" x="20" y="20"/>
+			<e:Image source="tongyongdian2" x="30" y="30"/>
+			<e:Image source="tongyongdian2" x="40" y="40"/>
+			<e:Image source="tongyongdian2" x="50" y="50"/>
+			<e:Image source="tongyongdian2" x="60" y="60"/>
+			<e:layout>
+				<e:VerticalLayout gap="13"/>
+			</e:layout>
+		</e:Group>
+
+
+
+
+
+
+
+	</e:Group>
+
+
+
+</e:Skin>

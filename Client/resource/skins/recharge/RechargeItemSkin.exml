@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RechargeItemSkin" width="429" height="95" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Button id="rewardBtn" skinName="Btn6Skin" y="29" label="￥6" x="314"/>
+	<e:Image source="quality0" x="20" y="13"/>
+	<e:Image source="award_json.coin" x="27" y="20"/>
+	<e:Label text="60元宝  首充送180元宝" x="99" y="54" fontFamily="黑体" size="18" textColor="0xDFD1B5" width="215" height="23"/>
+</e:Skin>

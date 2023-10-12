@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChengjiuPanelSkin" width="578.66" height="677.33" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15acba6fe63"/>
+	<e:Scroller width="430" height="675" x="0" y="0"  >
+		<e:List id="list" width="485" height="504" x="2" y="0"  itemRendererSkinName="ChengjiuItemSkin"  >
+		</e:List>
+	</e:Scroller>
+	<e:TabBar id="tab" width="145" height="675" x="432" y="0"   itemRendererSkinName="ChengjiuTagSkin" >
+		<e:layout>
+			<e:VerticalLayout/>
+		</e:layout>
+	</e:TabBar>
+</e:Skin>

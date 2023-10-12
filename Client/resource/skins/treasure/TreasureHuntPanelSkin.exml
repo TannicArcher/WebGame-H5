@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TreasureHuntPanelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*" width="554" height="716">
+	<w:Config id="15de4979d7a"/>
+	<e:Image source="xunbaozhuangbeiditu_png" x="275" y="-13"/>
+	<e:Image source="xunbaozhuangbeiditu_png" x="275" y="-13" scaleX="-1"/>
+	<e:Image source="tongyonglabbg" x="0" width="554" bottom="0" top="424" scale9Grid="38,48,54,2"/>
+	<e:Image horizontalCenter="0" verticalCenter="178" source="tongyongditu_png" width="300" height="260"/>
+	<e:Rect top="477" bottom="109" fillAlpha="0.3" width="540" horizontalCenter="0"/>
+
+	<e:Label text="寻宝日志：" x="16" size="22" textColor="0x7e6437" y="440"/>
+	<e:Button id="buy1" label="寻宝一次" icon="xb_25" skinName="Btn1Skin" width="130" height="50" horizontalCenter="-115" bottom="24"/>
+	<e:Button id="buy10" label="寻宝十次" icon="xb_26" skinName="Btn1Skin" width="130" height="50" horizontalCenter="115" bottom="24"/>
+	<e:Group id="zbHunt10" horizontalCenter="115.5" bottom="74">
+		<e:Image source="szyuanbao" width="30" x="0" y="0" scaleX="1" scaleY="1"/>
+		<e:Label id="zb10" text="4980" size="20" textColor="0xF8B141" x="32" y="1" scaleX="1" scaleY="1"/>
+		<e:Label text="（" size="20" textColor="0xF8B141" x="189" y="5" scaleX="1" scaleY="1"/>
+		<e:Image anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" x="215" y="0" scaleX="1" scaleY="1" source="200165_png"/>
+		<e:Label id="num10" text="1000" y="0" size="20" x="136.5" textColor="0x00FF00"/>
+		<e:Label text="/10）" size="20" textColor="0xF8B141" x="199" y="15" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:HorizontalLayout gap="2" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="zbHunt1" horizontalCenter="-115" bottom="74">
+		<e:Image source="szyuanbao" width="30" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="zb1" text="10000" size="20" textColor="0xF8B141" x="32" y="14" scaleX="1" scaleY="1"/>
+		<e:Label text="（" size="20" textColor="0xF8B141" x="189" y="5" scaleX="1" scaleY="1"/>
+		<e:Image anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" x="215" y="0" scaleX="1" scaleY="1" source="200165_png"/>
+		<e:Label id="num1" text="1000" y="0" size="20" x="136.5" textColor="0x00ff00"/>
+		<e:Label text="/1）" size="20" textColor="0xF8B141" x="199" y="15" scaleX="1" scaleY="1"/>
+		<e:layout>
+		<e:HorizontalLayout verticalAlign="middle" gap="2"/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="bdsz" text="(必得神装)" size="20" textColor="0xf8b141" horizontalCenter="115" bottom="2"/>
+	<e:Scroller id="barList" width="540" horizontalCenter="0" bounces="false"  bottom="116" top="480" scrollPolicyV="on" scrollPolicyH="off">
+		<e:List id="list" x="0" y="80" itemRendererSkinName="HuntListRendererSkin">
+		</e:List>
+	</e:Scroller>
+		<e:Group id="chuanqi" y="88"  height="315"  width="148" horizontalCenter="0">
+			<e:Image y="178" horizontalCenter="-2.5" source="wupingkuangNB" width="111" height="111"/>
+			<e:Image y="22" horizontalCenter="-1.5" source="wupingkuangNB" width="111" height="111"/>
+			<e:Image id="icon1" y="40" x="35" source="rx_weapon"/>
+			<e:Image id="icon2" y="195" x="35" source="rx_body"/>
+			<e:Image source="treasure22_json.xunbao_2" x="20" y="155"/>
+			<e:Image source="treasure22_json.xunbao_3" horizontalCenter="0"/>
+	</e:Group>
+
+	<e:List id="list1" width="196" height="437" x="8" y="68"   itemRendererSkinName="ItemSkin" scaleX="0.9" scaleY="0.9">
+		<e:layout>
+		<e:TileLayout horizontalGap="8" verticalGap="0"/>
+		</e:layout>
+	</e:List>
+	<e:List id="list2" width="192" height="434" x="373" y="68"   itemRendererSkinName="ItemSkin" scaleX="0.9" scaleY="0.9">
+		<e:layout>
+		<e:TileLayout horizontalGap="8" verticalGap="0"/>
+		</e:layout>
+	</e:List>
+	<e:Group id="titleMcGroup" y="-11" horizontalCenter="-11">
+		<e:Image   source="xunbao_5" y="21" horizontalCenter="11"/>
+	</e:Group>
+	<e:Group id="btnGroup" y="428" right="20">
+		<e:Button id="outBag" label="寻宝仓库" skinName="Btn6Skin" width="120" height="44" y="2"/>
+		<e:Image id="redPoint2" source="zjmhongdian" touchEnabled="false" right="-10" y="-2"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="tttZhuanpanItemSkin" width="90" height="90" currentState="weilingqu" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" states="weilingqu,yilingqu" >
+	<w:Config id="1586b362dfe"/>
+	<ns1:BaseComponent id="itemIcon" skinName="ItemSkin" className="ItemBase" horizontalCenter="0" y="0" alpha.yilingqu="0.5"/>
+
+	<e:Label id="count" size="16" y="54" text="999" x="16" stroke="1" strokeColor="0x232323" textColor="0xddd3b1" visible.yilingqu="false" visible.weilingqu="false"/>
+	<e:Label id="nameTxt" size="16" textColor="0xDFD1B5" textAlign="center" text="name" strokeColor="0x111111" bottom="0" horizontalCenter="0" stroke="1" visible.yilingqu="false" visible.weilingqu="false"/>
+	<e:Image id="stateImg" source="tongyong2_json.yilingqu" horizontalCenter="0" y="21" visible.weilingqu="false"/>
+</e:Skin>

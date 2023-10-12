@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildInteRewardItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="500" height="110">	
+	<e:Image source="tongyonglabbg" scale9Grid="39,21,56,34" left="0" right="0" top="0" bottom="0"/>
+		<e:List id="list" itemRendererSkinName="ItemSkin" verticalCenter="0" left="84">
+
+		<e:layout>
+			<e:HorizontalLayout gap="10" paddingLeft="5"/>
+		</e:layout>
+		</e:List>
+	<e:Label id="rankLabel" text="第2名" x="35" size="20" textColor="0xFEC90F" verticalCenter="0" visible="false"/>
+	<e:Image id="numImg" source="paihang1" x="33" verticalCenter="0"/>
+</e:Skin>

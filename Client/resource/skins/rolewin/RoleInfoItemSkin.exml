@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleInfoItemSkin" width="90" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="100" states="up,down,disabled">
+	<w:Config id="1586b136e8a"/>
+	<e:Image id="bgImg" width="76" height="76" horizontalCenter="0" verticalCenter="-10" scale9Grid="8,8,48,48" source="quality0"/>
+	<e:Label id="lvTxt" x="20" y="65" size="20" width="65" textAlign="right"
+	         touchEnabled="false"  text="" visible="false"/>
+	<e:Image id="selectIcon" pixelHitTest="true" includeIn="down" width="80" height="80" horizontalCenter="0" source="xuanzhongkuang2" scale9Grid="4,4,8,8" y="0" visible="false"/>
+	<e:Label id="labelDisplay" size="16" textAlign="center" touchEnabled="false" y.up="65" strokeColor="0x000000" bottom="6" textColor="0xdfd1b5" horizontalCenter="0"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" right="0" y="0" visible="false"/>
+</e:Skin>

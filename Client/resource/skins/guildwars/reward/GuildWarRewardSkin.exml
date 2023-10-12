@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildWarRewardSkin" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Image id="title" top="0" horizontalCenter="0" source="" visible="false"/>
+	<e:ViewStack id="viewStack" width="520" selectedIndex="1" horizontalCenter="0" bottom="158" height="720">
+		<!--<ns1:BaseComponent width="562" height="730" x="0" y="0" skinName="PersonInteRewardSkin"/>
+		<ns1:BaseComponent width="562" height="730" x="0" y="0" skinName="GuildInteRewardSkin" visible="false"/>
+		<ns1:BaseComponent width="562" height="730" x="0" y="0" skinName="GuildInteRankSkin" visible="false"/>
+		<ns1:BaseComponent width="562" height="730" x="0" y="0" skinName="PersonalInteRankSkin" visible="false"/>-->
+	</e:ViewStack>
+	<e:Button id="closeBtn0" label="按钮" x="430" y="48" skinName="Btn0Skin" visible="false"/>
+	<e:Button id="closeBtn" label="按钮" x="399" y="618" skinName="Btn0Skin" visible="false"/>
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" selectedIndex="0" horizontalCenter="0" bottom="112" height="48">
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:TabBar>
+		
+</e:Skin>

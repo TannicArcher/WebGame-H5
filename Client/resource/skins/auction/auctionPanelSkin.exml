@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="auctionPanelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="554" height="716">
+	<w:Config id="15d305f2e2d"/>
+
+
+
+	<e:Image left="0" right="0" top="0" bottom="0" source="zjmqipao" scale9Grid="8,6,6,8"/>
+	<e:Image left="0" right="0" height="67" source="tongyongtip1" scale9Grid="3,3,19,19" bottom="0"/>
+
+
+    <e:Scroller id="itemScroller" width="540" horizontalCenter="0" top="51" bottom="69">
+        <e:List itemRendererSkinName="auctionItemSkin" id="list" verticalCenter="0" horizontalCenter="0">
+            <e:layout>
+                <e:VerticalLayout  gap="4"/> </e:layout>
+					<e:ArrayCollection>
+					</e:ArrayCollection>
+        </e:List>
+    </e:Scroller>
+	<e:Group id="title" left="0" right="0" top="0">
+		<e:Image left="4" right="4" top="4" bottom="4" source="pailietou1" scale9Grid="5,11,2,7"/>
+		<e:Image source="pailietouline" horizontalCenter="-137.5" verticalCenter="0"/>
+		<e:Image source="pailietouline" horizontalCenter="-137.5" verticalCenter="0"/>
+		<e:Image source="pailietouline" verticalCenter="0" horizontalCenter="20.5"/>
+		<e:Label id="itemName" text="商品名字" size="20" horizontalCenter="-203" verticalCenter="0" textColor="0xD1C28F"/>
+		<e:Label id="state" text="当前竞价" size="20" horizontalCenter="-61" verticalCenter="0" textColor="0xD1C28F"/>
+		<e:Label id="auctionBtn" text="竞价" size="20" horizontalCenter="145" verticalCenter="0" textColor="0xD1C28F"/>
+	</e:Group>
+	<e:Button id="btn" skinName="Btn3Skin" label="成交记录" horizontalCenter="201" bottom="10"/>
+	<e:Group id="add" width="218" height="60" horizontalCenter="0" bottom="5" x="-190" y="0" scaleX="1" scaleY="1">
+		<e:Button id="maxBtn" label="最大" icon="btnmax" skinName="Btn0Skin" verticalCenter="0" right="4"/>
+		<e:Button id="minBtn" label="最小" icon="btnmax" x="53" skinName="Btn0Skin" rotation="180" verticalCenter="0"/>
+		<e:Image width="100" height="50" source="shuzibg" verticalCenter="0" horizontalCenter="0" scale9Grid="8,4,10,14"/>
+		<e:Label id="pageTxt" text="1/10" horizontalCenter="0.5" size="20" verticalCenter="0" textColor="0x7E6437"/>
+	</e:Group>
+	<e:Label id="null" text="当前没有正在拍卖的商品" horizontalCenter="0" verticalCenter="-37" size="24" textColor="0x7E6437" visible="false"/>
+
+
+</e:Skin>

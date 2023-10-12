@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="snowManItemSkin" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="130" width="100" states="lingqu,normal,done" >
+	<w:Config id="1586b362dfe"/>
+
+
+
+
+	<e:Label id="getLbl" text="已领取" size="16" textColor="0x00FF00" width="100" textAlign="center" verticalAlign="middle" horizontalCenter="0" bottom="19" bold="true" visible.normal="false"/>
+	<e:Group includeIn="normal" y="87" horizontalCenter="0">
+		<e:Label text="需要收集" size="16" width="100" textAlign="center" verticalAlign="middle" bold="true" includeIn="normal" textColor="0xD1C28F" y="0" x="0"/>
+		<e:Label id="schedule" text="100雪球" size="16" width="100" textAlign="center" verticalAlign="middle" bold="true" includeIn="normal" textColor="0xd1c28f" y="0" x="0"/>
+		<e:layout>
+			<e:VerticalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Button id="goBtn" label="领  取" skinName="Btn3Skin" horizontalCenter="0" bottom="6" scaleX="0.8" scaleY="0.8" visible.normal="false" visible.done="false"/>
+	<e:Group id="redPoint" bottom="31" scaleX="0.8" scaleY="0.8" horizontalCenter="29.5" visible.normal="false" visible.done="false">
+		<e:Image source="zjmhongdian" horizontalCenter="0"/>
+	</e:Group>
+
+
+	<ns1:BaseComponent id="reward" skinName="ItemSkin" className="ItemBase" scaleX="0.8" scaleY="0.8" horizontalCenter="-1" verticalCenter="-15.5"/>
+</e:Skin>

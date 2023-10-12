@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CERechargeSkin" width="560" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="622">
+	<w:Config id="1586d1506c8" />
+	<e:Image source="celebration_bg_png" horizontalCenter="0" verticalCenter="63.5"/>
+
+
+	<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50"/>
+	<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_shengdanleichong"/>
+	<e:Image id="bigEgg" horizontalCenter="-114" source="ce_big_egg_0_png" verticalCenter="63"/>
+	<e:Group id="hamer" horizontalCenter="-90" verticalCenter="-32"/>
+	<e:Group id="flower" horizontalCenter="-134" verticalCenter="-32"/>
+	<e:Group id="infoBg" left="3" right="3" height="116" top="35" touchThrough="false">
+		<e:Image left="0" right="0" top="0" bottom="0" source="cd_curtain_png"/>
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime1" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actInfo1" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+	</e:Group>
+
+
+	<e:Group id="rechargeBtn" bottom="15" scaleX="0.8" scaleY="0.8" horizontalCenter="0">
+
+		<e:Button label="我要砸蛋" icon="btnshouchong_png" y="0" horizontalCenter="0" skinName="Btn19Skin"/>
+		<e:Image id="redPoint" source="zjmhongdian" touchEnabled="false" y="12.5" horizontalCenter="84.5" x="117.5" scaleX="1.25" scaleY="1.25"/>
+
+	</e:Group>
+	<e:Label id="already" text="已领取" touchEnabled="false" textColor="0x00ff00" size="20" horizontalCenter="0" bottom="60" visible="false"/>
+
+
+
+
+	<e:List id="reward" itemRendererSkinName="ItemSkin" horizontalCenter="163" verticalCenter="65">
+		<e:layout>
+			<e:TileLayout requestedColumnCount="2" horizontalGap="0" verticalGap="0"/>
+		</e:layout>
+	</e:List>
+	<ns1:BaseComponent x="80" y="80" skinName="CERechargeItemSkin" id="targtet6" className="CelebrationItem" visible="false"/>
+	<e:Group horizontalCenter="0.5" top="153" scaleX="0.9" scaleY="0.9" touchEnabled="false" touchThrough="true">
+		<ns1:BaseComponent x="30" y="30" skinName="CERechargeItemSkin" id="targtet0" className="CelebrationItem"/>
+		<ns1:BaseComponent x="40" y="40" skinName="CERechargeItemSkin" id="targtet1" className="CelebrationItem"/>
+
+
+		<ns1:BaseComponent x="20" y="20" skinName="CERechargeItemSkin" id="targtet2" className="CelebrationItem"/>
+		<ns1:BaseComponent x="50" y="50" skinName="CERechargeItemSkin" id="targtet3" className="CelebrationItem"/>
+		<ns1:BaseComponent x="60" y="60" skinName="CERechargeItemSkin" id="targtet4" className="CelebrationItem"/>
+		<ns1:BaseComponent x="70" y="70" skinName="CERechargeItemSkin" id="targtet5" className="CelebrationItem"/>
+
+
+
+		<e:layout>
+			<e:HorizontalLayout gap="-35" verticalAlign="top"/>
+		</e:layout>
+	</e:Group>
+
+
+
+</e:Skin>

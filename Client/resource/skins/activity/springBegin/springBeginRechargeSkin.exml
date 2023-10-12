@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="springBeginRechargeSkin" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image width="554" horizontalCenter="0" y="0"  height="554" scale9Grid="0,0,386,21" source="lianchongfanlibg_png"/>
+		<e:Group id="infoBg" left="10" right="10" x="10" y="44" scaleX="1" scaleY="1" height="110">
+			<e:Image top="0" bottom="0" source="ny_curtain_png" right="0" left="0"/>
+			<e:Group verticalCenter="0" left="28">
+			<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+			<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+			<e:Label id="actDesc" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+			<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+			</e:Group>
+		</e:Group>
+		<e:List id="reward0" itemRendererSkinName="ItemSkin" y="490" x="40">
+			<e:layout>
+				<e:HorizontalLayout gap="4"/>
+			</e:layout>
+		</e:List>
+		<e:List id="reward1" itemRendererSkinName="ItemSkin" y="300" x="40">
+			<e:layout>
+			<e:HorizontalLayout gap="4"/>
+			</e:layout>
+		</e:List>
+		<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50" x="80" scaleX="1"/>
+		<e:Image id="title" y="0" horizontalCenter="0" x="211" scaleX="1" scaleY="1" source="biaoti_springBeginRecharge"/>
+		<e:Group y="156" horizontalCenter="0" width="466">
+			<e:Image source="jinxian" x="157" scaleX="-1" verticalCenter="0"/>
+			<e:Image id="addchong" horizontalCenter="0" source="l_biaoti_leichong800"/>
+			<e:Image source="jinxian" right="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group horizontalCenter="0" y="224" width="465" height="60">
+			<e:Image height="16" source="jingyantiao2" left="32" right="32" verticalCenter="0" alpha="0.6"/>
+			<e:ProgressBar id="bar" height="17" left="38" right="38" skinName="bar5Skin" verticalCenter="0" value="50"/>
+			<e:Image left="0" right="0" verticalCenter="0" source="jingyantiao1" scale9Grid="64,3,2,19"/>
+			<e:Label id="state" text="累计充值:10000/20000元宝" y="-4" size="22" horizontalCenter="0" textColor="0xf8b141"/>
+		</e:Group>
+		<e:Group y="430" horizontalCenter="0" width="466">
+			<e:Image source="jinxian" x="157" scaleX="-1" verticalCenter="0"/>
+			<e:Image horizontalCenter="0" source="l_biaoti_meiri20"/>
+			<e:Image source="jinxian" right="0" verticalCenter="0"/>
+		</e:Group>
+		<e:Group width="100" height="50" y="502" right="30">
+			<e:Label id="already0" text="已领取" size="20" textColor="0x00FF00" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+			<e:Button id="getBtn0" label="立即领取" left="0" right="0" top="0" bottom="0" skinName="Btn3Skin"/>
+			<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" y="-6" right="-8" visible="false"/>
+		</e:Group>
+		<e:Group width="100" height="50" y="312" right="30">
+			<e:Label id="already1" text="已领取" size="20" textColor="0x00FF00" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+			<e:Button id="getBtn1" label="立即领取" skinName="Btn3Skin" left="0" right="0" top="0" bottom="0"/>
+			<e:Image id="redPoint1" touchEnabled="false" source="zjmhongdian" y="-6" right="-8" visible="false"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

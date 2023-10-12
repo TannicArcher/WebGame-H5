@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SmeltSelectSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="1586b3cc8ef"/>
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0"/>
+	<e:Group width="500" height="700" horizontalCenter="0" verticalCenter="0">
+		<e:Image source="tongyongkuang3bg" scale9Grid="7,3,37,39" left="0" right="0" top="2" bottom="0"/>
+		<e:Image y="0" source="tongyongkuang3tou" left="0" right="0" scale9Grid="66,0,272,47"/>
+		<e:Label text="选择熔炼装备" y="12" horizontalCenter="0" size="24" bold="true" textColor="0xbd600d"/>
+		<e:Button skinName="Btn0Skin" icon="fanhui" label="按钮" id="closeBtn" right="4" bottom="4" visible="false"/>
+		<e:Button skinName="Btn0Skin" y="5" x="510" label="按钮" id="closeBtn0" visible="false"/>
+		<e:Scroller id="itemScroller" right="0" top="44" bottom="90" left="0">
+			<e:List id="itemList" y="2" itemRendererSkinName="SmeltSeletctItemSkin" useVirtualLayout="false" x="0">
+			<e:layout>
+				<e:TileLayout verticalGap="10" horizontalGap="20" paddingLeft="23" rowAlign="top" requestedColumnCount="3" paddingTop="10"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Button skinName="Btn1Skin" label="确 定" id="sureBtn" bottom="30" horizontalCenter="0"/>
+		<e:Label id="countLabel" text="已选：0/9" size="20" textColor="0xA89C88" horizontalCenter="-148" bottom="40"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,243 @@
+html,body{
+    -ms-touch-action: none;
+    background: #000000;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    overflow: hidden;
+}
+.gameDiv{
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    display: block;
+    border: medium none;
+    left: 0;
+    top:0;
+    right: 0;
+}
+#gbox{
+    background:url("../images/game/bzsch5/bg.jpg") no-repeat;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    transform-origin:0px 0px;
+    -ms-transform-origin:0px 0px;
+    -webkit-transform-origin:0px 0px;
+    -moz-transform-origin:0px 0px;
+    -o-transform-origin:0px 0px;
+}
+
+.loading{
+    background:url("../images/game/bzsch5/loading.gif");
+    width:60px;
+    height:60px;
+    position:absolute;
+    top:45%;
+    left:45%;
+    z-index:100;
+}
+
+.exit{
+    background:url("../images/game/bzsch5/win_close.png") no-repeat;
+    width:55px;
+    height:55px;
+    position:absolute;
+    top:88px;
+    right: 9px;
+    z-index:1;
+}
+.announce_exit{
+    top:118px;
+}
+.mainbg{
+    width:429px;
+    height:83px;
+    position:relative;
+    margin:auto;
+    top:878px;
+    cursor: default;
+}
+.scrollwrap{
+    position:absolute;
+    width:65%;
+    height:76%;
+    top:160px;
+    left:32%;
+    overflow-x: hidden;
+}
+.items{
+    position:relative;
+    z-index: 0;
+    margin-top: 5px;
+}
+.item0{
+    background-image:url("../images/game/bzsch5/server_bg.png");
+    background-size:100% 100%;
+    width:343px;
+    height: 59px;
+    line-height:59px;
+    left: -15px;
+    font-size: 22px;
+    color: wheat;
+    font-weight:bold;
+    cursor: default ;
+}
+.gray{
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+.hot{
+    width:66px;
+    height:45px;
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    pointer-events: none;
+    background:url("../images/game/bzsch5/hot.png") no-repeat 0 0;
+}
+.update{
+    width:66px;
+    height:45px;
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    pointer-events: none;
+    background:url("../images/game/bzsch5/wh.png") no-repeat 0 0;
+}
+.new{
+    width:66px;
+    height:45px;
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    pointer-events: none;
+    background:url("../images/game/bzsch5/new.png") no-repeat 0 0;
+}
+.enter{
+    background:url("../images/game/bzsch5/gameStart.png");
+    width:250px;
+    height:88px;
+    background-position: -5px 0px;
+}
+.choosebg{
+    background:url("../images/game/bzsch5/choosebg.png") no-repeat 10px;
+}
+.tag{
+    background:url("../images/game/bzsch5/choose_down.png");
+    width:166px;
+    height:48px;
+    line-height: 41px;
+    font-size: 22px;
+    color: wheat;
+    left:5px;
+    font-weight:bold;
+    cursor: default ;
+}
+.tagc{
+    background:url("../images/game/bzsch5/choose_up.png");
+    width:166px;
+    height:48px;
+}
+.hide{
+    display:none;
+}
+.show{
+    display: block;
+}
+.tagbar{
+    width: 166px;
+    height: 518px;
+    position: absolute;
+    top: 160px;
+    left: 28px;
+}
+.tagbar .last_login{
+    position:relative;
+    margin-top:10px;
+}
+.tagbar .select_server{
+    position:relative;
+    margin-top:10px
+}
+/**隐藏滚动条*/
+::-webkit-scrollbar{
+    display:none;
+}
+.announcebg{
+    background:url("../images/game/bzsch5/notice_bg.png") no-repeat 10px;
+}
+.announce{
+    background:url(../images/game/bzsch5/gameStart.png);
+    width:105px;
+    height:102px;
+    background-position:-8px 115px;
+    position:absolute;
+    top:20px;
+    right:25px;
+}
+.notice_text{
+    position:relative;margin:auto;width:85%;height:68%;padding:5px;top:18%;font-size:20px;overflow-x: hidden;color:white;
+}
+.notice_text h1{
+    font-family:"KaiTi_GB2312";
+    font-size: 1.5em;
+    font-weight:bold;
+    color: #fcf7c3;
+}
+.notice_text p{
+    font-family: "Microsoft YaHei";
+    color: #b5a386;
+    text-align: left;
+    line-height: 30px;
+}
+.cgr{color:#5aff00;margin-left: 10px;text-decoration: underline;}
+.cw{color:wheat;}
+.fs3{font-size:22px;font-weight:bold;}
+.ma{margin:auto;}
+.tc{text-align:center;}
+.pa{position:absolute;left:0px;bottom:-30px;width:100%;height:100%;z-index:2;}
+
+.logout {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    position: absolute;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    padding: 5px;
+    left: 5%;
+    width: 80px;
+    top: 10%;
+    border-radius: 10px;
+    color: #d8c56a;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.8);
+    border: 5px solid transparent;
+    border-bottom-color: rgba(0,0,0,0.35);
+    background: hsla(218, 57%, 85%, 1);
+    cursor: pointer;
+    animation: pulse 1s infinite alternate;
+    transition: background 0.4s, border 0.2s, margin 0.2s;
+}
+.logout:hover {
+    background: hsla(218, 60%, 85%, 1);
+    margin-top: -1px;
+    animation: none;
+}
+.logout:active {
+    border-bottom-width: 0;
+    margin-top: 5px;
+}
+@keyframes pulse {
+    0% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 6px;
+    }
+}

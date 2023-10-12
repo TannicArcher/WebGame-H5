@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LYRMarkSkin" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:PriceIcon="PriceIcon.*" xmlns:ns1="*"  width="554" height="713" states="normal,max" >
+	<w:Config id="15a177a4c02"/>
+	<e:Group left="0" top="0" bottom="0" right="0">
+		<e:Image source="wingbg4_png" top="2" bottom="2" left="2" right="2"/>
+		<ns1:BaseComponent id="power" skinName="PowerPanelSkin" horizontalCenter="5" className="PowerPanel" top="20"/>
+		<e:Image id="nameImg" x="40" verticalCenter="-168.5" source="lym_title"/>
+		<e:Image id="img" source="ring_img2_png" horizontalCenter="2.5" verticalCenter="-142.5"/>
+		<e:Group id="actEff" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="-206.5"/>
+		<e:Group bottom="76" horizontalCenter="0.5" visible.max="false">
+			<e:Label id="costTitle" text="消耗：" size="20" textColor="0x9f946d" x="0" y="1"/>
+			<e:Image id="costImg" source="200015_png" height="24" width="24" x="51" y="0"/>
+			<e:Label id="costCount" text="300/500" size="20" textColor="0x9f946d" x="79" y="2"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="lvupGroup"  horizontalCenter="0" bottom="12" visible.max="false">
+			<e:Button id="lvupBtn" label="升  级" skinName="Btn1Skin" visible.max="false"/>
+		</e:Group>
+		<e:Group id="attr" anchorOffsetX="0" width="483" anchorOffsetY="0" height="256" bottom="107" horizontalCenter="0.5" x="34" y="426" scaleX="1" scaleY="1" horizontalCenter.normal="0.5" bottom.normal="107" height.normal="256">
+			<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="250" right="2" scaleX="-1" top="0"/>
+			<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="250" top="0" left="2"/>
+			<e:Label id="lvtxt" text="Lv.99" size="22" textAlign="center" width="140" horizontalCenter="0" bold="true" textColor="0xF8B141" top="5"/>
+			<e:Image source="shuxingbg" scale9Grid="50,7,65,31" left="0" top="30" bottom="0" right="0" anchorOffsetY="0"/>
+			<e:Image id="arrow" source="jiantouyou" horizontalCenter="0" top="47" visible.max="false" horizontalCenter.normal="0" top.normal="47"/>
+			<e:Label id="nowAttr" text="攻击：10" anchorOffsetY="0" size="22" textColor="0x9f946d" left="53" width="160" height="88" verticalAlign="middle" textAlign="left" top="34" horizontalCenter.max="0.5" top.max="34" height.normal="88" left.normal="53" top.normal="34" left.max="162"/>
+			<e:Label id="nextAttr" text="攻击：10" anchorOffsetY="0" size="22" textColor="0x35e62d" left="280" width="160" height="88" verticalAlign="middle" textAlign="left" top="34" visible.max="false" height.normal="88" left.normal="280" top.normal="34"/>
+			<e:Group id="skill" horizontalCenter="0.5" top="125" horizontalCenter.normal="0.5" top.normal="125">
+				<ns1:BaseComponent id="skill1" x="0" y="1" skinName="markSkillItemSkin" className="LyMarkSkillItem" scaleX="0.9" scaleY="0.9" scaleX.normal="0.9" scaleY.normal="0.9"/>
+				<ns1:BaseComponent x="20" y="20" skinName="markSkillItemSkin" id="skill2" className="LyMarkSkillItem" scaleX="0.9" scaleY="0.9" scaleX.normal="0.9" scaleY.normal="0.9"/>
+				<ns1:BaseComponent id="skill6" x="20" y="20" skinName="markSkillItemSkin" className="LyMarkSkillItem" scaleX="0.9" scaleY="0.9"/>
+				<ns1:BaseComponent x="234" y="-2.6" skinName="markSkillItemSkin" id="skill4" className="LyMarkSkillItem" scaleX="0.9" scaleY="0.9" scaleX.normal="0.9" scaleY.normal="0.9"/>
+				<ns1:BaseComponent x="30" y="30" skinName="markSkillItemSkin" id="skill3" className="LyMarkSkillItem" scaleX="0.9" scaleY="0.9" scaleX.normal="0.9" scaleY.normal="0.9"/>
+
+				<ns1:BaseComponent id="skill5" x="10" y="10" skinName="markSkillItemSkin" className="LyMarkSkillItem" scaleX="0.9" scaleY="0.9" scaleX.normal="0.9" scaleY.normal="0.9"/>
+				<e:layout>
+				<e:HorizontalLayout gap="10"/>
+				</e:layout>
+			</e:Group>
+			<e:Group id="exp" x="42" y="207" y.normal="207" visible.max="false">
+
+				<e:Group id="schedule" x="38" y="9">
+				</e:Group>
+
+			</e:Group>
+
+		</e:Group>
+		<ns1:BaseComponent id="skill0" skinName="markSkillItemSkin" className="LyMarkSkillItem" right="20" top="80" right.normal="20" top.normal="80"/>
+
+		<e:Label id="mixItemTxt" text="合成材料" x="400" textColor="0x00ff00" size="20" bottom="31" bold="true" touchEnabled="true"/>
+		<e:Label text="已满级" includeIn="max" textColor="0xffd93f" bold="true" bottom="36" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

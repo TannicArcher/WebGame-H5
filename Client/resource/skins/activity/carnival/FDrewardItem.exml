@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FDrewardItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"   width="92"  height="76">
+	<ns1:BaseComponent id="itemicon" skinName="ItemSkin" className="ItemBase" scaleX="0.8" scaleY="0.8" horizontalCenter="10.5" top="0"/>
+	<e:Image id="redpoint" source="zjmhongdian" right="4" top="0" scaleX="0.8" scaleY="0.8" touchEnabled="false" visible="false"/>
+	<e:Label id="tsNeed" text="20狂欢值" textColor="0xd1c28f" size="14" horizontalCenter="10.5" bottom="0" bold="true" touchEnabled="false"/>
+	<e:Image id="get" source="duoxuangou" horizontalCenter="10" top="11" width="46" height="46" touchEnabled="false" visible="false"/>
+	<e:Image id="arrow" x="-2" y="14" scaleX="0.8" scaleY="0.8" source="fd_arrow1" touchEnabled="false"/>		
+</e:Skin>

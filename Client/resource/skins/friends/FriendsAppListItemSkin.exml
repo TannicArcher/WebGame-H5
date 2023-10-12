@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FriendsAppListItemSkin" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" width="520">
+	<e:Rect fillAlpha="0.2" left="0" right="0" top="0" bottom="0" touchEnabled="true"/>
+	<e:Image left="0" right="0" bottom="0" source="tongyongline" height="2"/>
+	<e:Group width="116" height="32" x="201" y="7" visible="false">
+		<e:Image x="0"   verticalCenter="0" source="xvip_v2_png"/>
+		<e:Image id="img_vipLv0" x="45"   verticalCenter="0" source=""/>
+		<e:Image id="img_vipLv1" x="55"   verticalCenter="0"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0" horizontalAlign="left" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group width="70" height="70" x="10" verticalCenter="0">
+		<e:Image id="img_userIcon" source="{data.userIcon}" verticalCenter="0" horizontalCenter="0" width="60" height="60"/>
+		<e:Image id="headBg" source="touxiangkuang1" scale9Grid="5,5,3,3" left="0" right="0" top="0" bottom="0"/>
+	</e:Group>
+	<e:Label id="label_name" text="{data.name}" size="20" y="10" x="90" textColor="0xd1c28f"/>
+	<e:Label id="labelGuild" text="帮会名六个字" size="18" y="40" x="90" textColor="0x20cb30"/>
+	<e:Button id="btn_yes" label="同意" verticalCenter="0" right="10" skinName="Btn6Skin" width="80" height="40"/>
+	<e:Button id="btn_no" label="拒绝" verticalCenter="0" right="100" skinName="Btn6Skin" width="80" height="40"/>
+	<e:Group width="66" height="66" x="28" y="14"  />
+
+	
+</e:Skin>

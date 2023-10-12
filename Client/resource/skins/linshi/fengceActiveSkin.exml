@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="fengceActiveSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="580" height="930">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="-25" width="470" height="620" anchorOffsetY="0">
+		<e:Image id="bg" left="0" right="0" top="0" source="tongyongmianbanbg" scale9Grid="13,17,26,12" height="570"/>
+		<e:ViewStack id="viewStack" width="456" height="550" y="10" horizontalCenter="0" selectedIndex="1">
+			<e:Group id="Reward" name="双重豪礼" width="456" height="550" horizontalCenter="0" y="10" visible="false">
+				<e:Image y="61" source="longhunbg_png" width="456" height="418" horizontalCenter="0"/>
+				<e:Image id="titleDaliyRewardBg1" y="-2.49" source="shuxingbg4" anchorOffsetX="0" width="402.06" rotation="0.44" horizontalCenter="2"/>
+				<e:Label id="titleDaliyReward1" text="双重&quot;豪&quot;礼迎封测" y="8" textColor="0xF8B141" anchorOffsetY="0" anchorOffsetX="0" bold="true" horizontalCenter="0"/>
+				<e:Group id="DaliyReward" y="48" anchorOffsetX="0" width="454" horizontalCenter="0" anchorOffsetY="0" height="240">
+				<e:Image id="titleDaliyRewardBg" y="-13.02" source="shuxingbg4" x="58.6" anchorOffsetX="0" width="223.02" rotation="90.44"/>
+				<e:Label id="titleDaliyReward" text="元宝每日领" y="33" textColor="0xf8b141" x="24" anchorOffsetY="0" height="131" anchorOffsetX="0" width="32" bold="true" size="24"/>
+				<e:Image id="desP3" x="62" y="166" source="gantanhao" visible="false"/>
+				<e:Label id="des3" text="领取元宝时会增加等价充值额度记录" y="168" size="18" x="87" textColor="0xd1c28f" visible="false"/>
+				<e:Image id="desP4" x="62" y="182" source="gantanhao"/>
+				<e:Label id="des4" text="元宝将会在每天第一次登录时通过邮件发放" y="184" size="18" x="87" textColor="0xD1C28F"/>
+				<e:Group y="39" horizontalCenter="0">
+					<e:Image id="itemBg" x="0" y="0" source="wupingkuangNB" scale9Grid="48,47,5,5"/>
+					<e:Image id="itemFrame" y="0" source="xuanzhongkuang2" scale9Grid="4,4,8,8" x="0" height="100" width="100"/>
+					<e:Image id="itemImg" y="21" source="cz_13" scaleX="0.6" scaleY="0.6" horizontalCenter="0"/>
+					<e:Label id="count0" text="10000" size="18" textColor="0xE2DFD4" x="37" textAlign="right" scaleX="1" scaleY="1" y="69"/>
+				</e:Group>
+				</e:Group>
+				<e:Group id="LevelReward" y="289" horizontalCenter="0" anchorOffsetX="0" width="454" anchorOffsetY="0" height="251">
+				<e:Image id="titleDaliyRewardBg0" y="-24.99" source="shuxingbg4" x="56.93" anchorOffsetX="0" width="244.99" rotation="90.13"/>
+				<e:Label id="titleDaliyReward0" text="冲级送豪礼" y="30" textColor="0xF8B141" x="24" anchorOffsetY="0" height="161" anchorOffsetX="0" width="31" bold="true" size="24"/>
+				<e:Label id="lvText" text="30级奖励" y="23" size="28" horizontalCenter="0" textColor="0x35e62d"/>
+				<e:Label id="countDesc" text="再升10级可领取" y="184" size="18" horizontalCenter="0.5" textColor="0xf3311e"/>
+				<e:Group y="67" horizontalCenter="0">
+					<e:Image id="itemBg0" x="0" y="0" source="wupingkuangNB" scale9Grid="48,47,5,5"/>
+					<e:Image id="itemFrame0" y="0" source="xuanzhongkuang2" scale9Grid="4,4,8,8" x="0" height="100" width="100"/>
+					<e:Image id="itemImg0" y="21" source="cz_13" scaleX="0.6" scaleY="0.6" horizontalCenter="0"/>
+					<e:Label id="count2" text="10000" size="18" y="70" x="37" textColor="0xe2dfd4" textAlign="right"/>
+				</e:Group>
+				<e:Button id="arrowright" label="Button" x="380" y="98" skinName="Btn0Skin" icon="jiantouxuan" scaleX="-1"/>
+				<e:Button id="arrowleft" label="Button" x="87" y="98" skinName="Btn0Skin" icon="jiantouxuan"/>
+					<e:Image id="desP5" x="99" y="207" source="gantanhao" scaleX="1" scaleY="1"/>
+					<e:Label id="des5" text="等级达标后奖励通过邮件发放" y="210" size="18" x="125" textColor="0xD1C28F" scaleX="1" scaleY="1"/>
+				</e:Group>
+			</e:Group>
+			<e:Group id="Feedback" name="我要反馈" horizontalCenter="0" width="456" height="550" y="10">
+				<e:Image id="titleBg" y="2" source="shuxingbg4" scaleY="1.3" scaleX="2" horizontalCenter="0"/>
+				<e:Image y="61" source="longhunbg_png" width="456" height="418" horizontalCenter="0"/>
+				<e:Label id="titleText" text="我要反馈" x="168" y="20" textColor="0xf8b141" bold="true"/>
+				<e:Group id="Info" x="44" y="67">
+				<e:Image id="desP0" x="0" y="0" source="gantanhao"/>
+				<e:Label id="des0" text="无论您发现了什么问题请发送信息告诉我们" y="2" size="18" x="25" textColor="0xd1c28f"/>
+				<e:Image id="desP1" x="0" y="24" source="gantanhao"/>
+				<e:Label id="des1" text="或者有什么建议和意见也可以发送信息" y="26" size="18" x="24" textColor="0xd1c28f"/>
+				<e:Image id="desP2" x="0" y="48" source="gantanhao"/>
+				<e:Label id="des2" text="一经采纳我们将通过邮件发送丰厚的奖励" y="50" size="18" x="24" textColor="0xd1c28f"/>
+				</e:Group>
+				<e:Image id="chatListBg" width="416" height="311" x="20" y="154" source="tongyongtip1" scale9Grid="5,5,15,14"/>
+				<e:Label id="showText" text="聊天内容很长很长，最多40个字" size="20" textColor="0xDFD1B5" y="164" x="29" visible="false"/>
+				<e:EditableText id="edit" width="400" height="290" text="游戏内容遇到的问题，请咨询客服（不超过100字）" x="28" y="163" size="19" lineSpacing="2" wordWrap="true" multiline="true" maxChars="200" textColor="0x444134"/>
+				<e:Button id="sendBtn" label="提  交" y="476" skinName="Btn1Skin" horizontalCenter="0"/>
+			</e:Group>
+
+		</e:ViewStack>
+		<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}" bottom="5" horizontalCenter="0">
+			<e:layout>
+			<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:TabBar>
+		<e:Group id="taskTip" horizontalCenter="0" height="32" width="320" x="86" y="458" visible="false">
+			<e:Image left="0" right="0" top="0" bottom="0" source="zjmqipao" scale9Grid="6,8,6,8" alpha="0.8"/>
+			<e:Label id="taskTipText0" text="提示文字什么的" size="18" horizontalCenter="0" verticalCenter="1" textColor="0xD1C28F"/>
+		</e:Group>
+
+	</e:Group>
+	<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" horizontalCenter="0" verticalCenter="307">
+		<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7E6437" y="5" horizontalCenter="0"/>
+		<e:Button id="closeBtn0" label="按钮" y="-17" skinName="Btn0Skin" right="-10" x="188" visible="false"/>
+	</e:Group>
+</e:Skin>

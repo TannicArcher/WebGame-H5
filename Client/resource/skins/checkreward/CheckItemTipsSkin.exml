@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CheckItemTipsSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+    	<e:Group id="reward" width="200" height="150" verticalCenter="0" touchEnabled="false">
+			<e:Image id="leftIcon" source="worldMap_json.mapdajiantou" x="-34" width="34" height="88" verticalCenter="0"/>
+				<e:Image id="rightIcon" source="worldMap_json.mapdajiantou" width="34" height="88" verticalCenter="0" right="-34" scaleX="-1"/>
+			<e:Image   source="tongyongtip3" scale9Grid="9,9,11,10" left="0" right="0" top="0" bottom="0"/>
+			<!--<ns1:BaseComponent id="item0" y="46" className="ItemBase" skinName="ItemSkin" scaleX="0.8" scaleY="0.8" x="64"/>-->
+
+			<e:Image source="teshuwenzibg" y="4" horizontalCenter="0"/>
+			<e:Label id="title" text="通关奖励" y="12" size="20" textColor="0xEDB107" bold="true" horizontalCenter="0"/>
+			<e:Label id="rew" text="距离毒蛇山谷还差9999关" size="16" horizontalCenter="0" bottom="14" textColor="0x9f946d"/>
+			<e:Button id="rewardBtn" label="领取" horizontalCenter="0" bottom="8" skinName="Btn6Skin" height="30" width="70" visible="false"/>
+    </e:Group>
+</e:Skin>

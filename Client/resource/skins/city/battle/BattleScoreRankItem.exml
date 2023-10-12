@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleScoreRankItem" width="520" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="tongyongline" bottom="0" height="2" left="0" right="0" scale9Grid="104,0,11,3"/>
+	<e:Image id="rankImg" x="30" verticalCenter="0" source="paihang1"/>
+	<e:Label id="rank" text="1" size="20" x="47" verticalCenter="0" textColor="0x9F946D"/>
+	<e:Label id="nameLabel" text="狂拽酷炫叼去" size="20" textAlign="left" verticalCenter="0" textColor="0x9F946D" x="96"/>
+	<e:Label id="nameGuild" text="布拉格大部落" size="20" textAlign="left" verticalCenter="0" x="241" textColor="0xff00ff"/>
+	<e:Label id="score" size="20" text="100000" textAlign="center" textColor="0xFFB92D" verticalCenter="0" right="40"/>
+</e:Skin>

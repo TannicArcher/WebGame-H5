@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KFBossShowSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect id="bgClose" fillAlpha="0.8" top="0" left="0" right="0" bottom="0"/>
+	<e:Group y="151" width="550" horizontalCenter="0" height="620">
+		<e:Image source="luckyboss_bg_png" scale9Grid="0,512,538,8" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="zhuakuang2" scale9Grid="45,28,2,2" width="280" top="-10" bottom="-10" left="-5"/>
+		<e:Image source="zhuakuang2" scale9Grid="45,28,2,2" width="280" top="-10" bottom="-10" scaleX="-1" right="-5"/>
+		<e:Group id="boss" x="195" y="305"/>
+		<e:Group y="421" horizontalCenter="0">
+			<e:Image width="360" source="shuxingbg" height="107" scale9Grid="30,5,105,34" x="0" y="0"/>
+			<e:Label text="BOSS掉落" size="18" textColor="0xF8B141" x="136" y="5"/>
+			<e:List id="dropRewardList" scaleX="0.8" scaleY="0.8" itemRendererSkinName="ItemSkin" y="28" horizontalCenter="0">
+				<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" gap="13"/>
+				</e:layout>
+			</e:List>
+		</e:Group>
+		<e:Image id="bossName" source="title_yincangboss" horizontalCenter="0.5" top="30"/>
+		<e:Button id="challengeBtn" label="挑战" skinName="Btn1Skin" horizontalCenter="0" height="62" y="538"/>
+	</e:Group>
+</e:Skin>

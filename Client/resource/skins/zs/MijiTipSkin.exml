@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MijiTipSkin" width="480" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Rect id="colorCanvas" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="group" height="200" width="350" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="tongyongtip1" scale9Grid="5,5,14,14" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,18,3,4" left="0" right="0" top="0" bottom="0"/>
+		<e:Label id="power" text="评分：123456" y="10" size="18" textColor="0xf8b141" right="20" textAlign="right"/>
+		<e:Label id="info" text="什么鬼" size="18" x="90" lineSpacing="0" width="240" wordWrap="true" multiline="true" textColor="0xd1c28f" y="50"/>
+		<ns1:BaseComponent id="item" x="10" skinName="MijiItemSkin" className="MijiItem" scaleX="0.8" scaleY="0.8" y="40"/>
+		<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" x="25" y="205"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" x="73" bold="true" textColor="0x7E6437" y="210"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BossTargetSkin" width="220" height="61" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+	xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="1566d4c38d9"/>
+	<e:Image source="xboss_json.xzsboss_09" x="37" y="9"/>
+	<e:Image source="xboss_json.xzsboss_10" x="55" y="28"  width="147.33"/>
+	<e:ProgressBar id="bloodBar" x="52" y="12" width="150" skinName="bar2Skin" value="100"/>
+	<e:Image x="7" y="1" source="touxiangkuang" width="56" height="56"/>
+	<e:Image id="head" x="4" y="-6" source="uihead10_png" width="60" height="60"/>
+	<e:Label id="nameLabel" text="玩家名字七个字" x="62" y="30" size="16" textColor="0xDFD1B5" textAlign="left"/> </e:Skin>

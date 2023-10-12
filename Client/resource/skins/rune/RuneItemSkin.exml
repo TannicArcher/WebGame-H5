@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RuneItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"   states="unlock,ready,lock,emp"  height="110">
+	<e:Group left="0" right="0" height="110" width="100" y="0" >
+		<e:Image y="0" source="zwfwbg" horizontalCenter="0" verticalCenter.emp="0"/>
+		<e:Image id="nameBG" visible.lock="false" y.unlock="86" source="bantoutiaobg" scale9Grid="0,5,238,35" left="0" right="0" height="24" y="84" visible.ready="false" visible.emp="false"/>
+		<e:Label id="nameTF" text="火焰" y="87.5" size="18" touchEnabled="false" textColor="0xf4bc75" visible.lock="false" y.unlock="88" x="0" x.unlock="0" visible.ready="false" textAlign="center" width="100" visible.emp="false"/>
+		<e:Label text="无" y="38" textColor="0x9f946d" size="20" horizontalCenter="0" bold="true" visible.unlock="false" visible.ready="false" visible.lock="false" verticalCenter.emp="0"/>
+		<e:Image y="27" visible.lock="false" horizontalCenter="0" width="40" height="40" visible.emp="false" source.ready="tongyongadd2" source="tongyongadd2"/>
+		<e:Image id="iconImg" visible.lock="false" horizontalCenter="0" y="10" visible.ready="false" y.unlock="10" visible.emp="false" source="501001_png" width="74" height="74" source.unlock="501001_png"/>
+		<e:Image id="selectedImg" y="-18" visible.lock="false" horizontalCenter="0" width="119" height="123" visible.ready="false" source="zwxuanzhong" visible.unlock="false" visible="false"/>
+		<e:Group id="noOpenGroup" y="0" visible.unlock="false" horizontalCenter="0" visible.ready="false" visible.emp="false" height="110">
+			<e:Image id="noOpenImg" visible.ready="false" source="zwfwbg2" horizontalCenter="0"/>
+			<e:Label id="noOpenTF" text="第X个战纹槽" size="14" verticalAlign="middle" touchEnabled="true" strokeColor="0x080708" textAlign="center" textColor="0xbf7e7e" y="91" y.lock="90" textColor.lock="0x9f946d" horizontalCenter="0.5"/>
+			<e:Image includeIn="lock" y="25" horizontalCenter="0" source="suowen"/>
+		</e:Group>
+		<e:Image id="redPoint" y="0" touchEnabled="false" includeIn="unlock" source="zjmhongdian" horizontalCenter="30" visible="false"/>
+	</e:Group>
+</e:Skin>

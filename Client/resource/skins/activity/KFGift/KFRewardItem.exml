@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="KFRewardItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"    height="77" width="70">
+	<ns1:BaseComponent id="itemicon" skinName="ItemIconSkin" className="ItemIcon" scaleX="0.8" scaleY="0.8" horizontalCenter="0" top="0"/>
+	<e:Image id="redPoint" source="zjmhongdian" right="4" top="0" scaleX="0.8" scaleY="0.8" touchEnabled="false" visible="false"/>
+	<e:Label id="tsNeed" text="500" textColor="0xd1c28f" size="16" horizontalCenter="0" bottom="0" bold="true" touchEnabled="false"/>
+	<e:Image id="get" source="duoxuangou" horizontalCenter="0.5" top="11" touchEnabled="false" visible="false"/>
+	<e:Image id="select" x="2" y="-3" source="waifaguang" scale9Grid="16,13,4,5" width="66" height="66" touchEnabled="false" visible="false"/>		
+</e:Skin>

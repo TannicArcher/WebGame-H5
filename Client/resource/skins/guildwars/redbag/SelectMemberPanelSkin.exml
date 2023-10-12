@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SelectMemberPanelSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="rect" left="0" right="0" top="0" bottom="0" fillAlpha="0.6" visible="false"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" scale9Grid="15,12,2,3" width="580" horizontalCenter="0" visible="false"/>
+	<e:Image width="450" height="525" scale9Grid="18,14,12,20" horizontalCenter="0" source="tongyongkuang3bg" verticalCenter="-34.5"   visible="false"/>
+	<e:Image width="450" horizontalCenter="0" source="tongyongkuang3tou" scale9Grid="66,0,271,47" verticalCenter="-311.5" visible="false"/>
+	<e:Label text="查看本帮" size="20" textColor="0xF8B141" horizontalCenter="0" verticalCenter="-313" visible="false"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Button id="closeBtn0" label="按钮" x="434" y="51" skinName="Btn0Skin" visible="false"/>
+	<e:Button id="closeBtn" label="按钮" x="407" y="618" skinName="Btn0Skin" visible="false"/>
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="0">
+		<e:Image width="450" height="525" scale9Grid="18,14,12,20" source="tongyongkuang3bg"   x="0" y="38"/>
+		<e:Image width="450" source="tongyongkuang3tou" scale9Grid="66,0,271,47" x="0" y="0"/>
+		<e:Label text="分配奖励" size="24" textColor="0xF8B141" y="11" horizontalCenter="0"/>
+		<e:Button id="sureBtn" y="491" skinName="Btn1Skin" label="确定" x="160"/>
+		<e:Scroller width="436" height="402" y="46" x="7">
+			<e:List id="list" x="2" y="2" itemRendererSkinName="MemberItem3Skin" useVirtualLayout="false">
+			</e:List>
+		</e:Scroller>
+		<e:Label id="chooseNum" text="已选择: 3/4" y="462" size="18" textColor="0x9f946d" x="181"/>
+	</e:Group>	
+</e:Skin>

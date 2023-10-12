@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="MemberApplyItemSkin" width="490" height="105" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Image source="tongyonglabbg"  left="0" right="0" top="0" bottom="0" scale9Grid="39,21,62,34"/>
+	<e:Image id="vipTitle" x="104" y="11" scaleX="0.9" scaleY="0.9" source="vipv_png"/>
+	<e:Group id="vip" x="103" y="10"  width="56" height="40">
+	</e:Group>
+	<e:Image id="myFace" source="head_10" x="25" width="60" height="60" verticalCenter="0"/>
+	<e:Image x="20" source="touxiangkuang1" width="70" height="70" scale9Grid="7,7,14,14" verticalCenter="0"/>
+	<e:Label id="nameLab" text="玩家名称六字" x="162" y="26" size="20" textColor="0x9f946d" textAlign="left"/>
+	<e:Label id="attack" text="战斗力：" x="109" y="68" size="18" textColor="0x9f946d"/>
+	<e:Label id="attack0" text="9999999999" x="177" y="68" size="18" textColor="0xf8b141"/>
+	<e:Button id="ok" label="同 意" skinName="Btn3Skin" x="290" verticalCenter="0" height="46" width="90"/>
+	<e:Button id="cancel" label="拒 绝" skinName="Btn3Skin" right="10" verticalCenter="0" height="46" width="90"/>
+
+	
+</e:Skin>

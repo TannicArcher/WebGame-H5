@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ResultSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        height="930" width="580">
+	<w:Config id="15c8d32c190" />
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0" visible="false" />
+	<e:Group horizontalCenter="0" verticalCenter="-22">
+		<e:Image id="bg" width="562" height="788"   source="win_png" horizontalCenter="0" verticalCenter="-49" x="9" y="22"/>
+		<e:Image id="bg1"   width="512" horizontalCenter="0" source="win_png" verticalCenter="-49" x="34" y="57" visible="false"/>
+		<e:Label id="txt" text="获得奖励如下：" size="20" textColor="0xdfd1b5" horizontalCenter="-130"   y="207"/>
+		<e:Group y="629"   horizontalCenter="0">
+			<e:Button id="closeBtn" label="退出(10s)" skinName="Btn1Skin" width="130"  y="0" x="85"/>
+			<e:Button id="rewardBtn" label="双倍领取" skinName="Btn1Skin" width="130"  x="170" y="0"/>
+		</e:Group>
+		<e:Scroller id="scrollerGroup" width="400" height="324"    y="230" enabled="true"  horizontalCenter="0">
+			<e:Group id="listGroup" width="414"   horizontalCenter="0" verticalCenter="4">
+			<e:List id="listCoin" y="1.52" width="398" >
+				<e:layout>
+				<e:TileLayout verticalGap="0"/>
+				</e:layout>
+			</e:List>
+			<e:Label id="labelEmblem" text="获得货币：" x="-1" y="551" size="20" textColor="0xdfd1b5" width="100" height="20"/>
+			<e:List id="listEmblem" y="11.52" x="10" width="380">
+				<e:layout>
+				<e:TileLayout/>
+				</e:layout>
+			</e:List>
+			<e:Label id="labelItem" text="获得道具："  y="561" size="20" textColor="0xDFD1B5" height="40" width="398" />
+			<e:List id="listItem" y="11.52" width="380" >
+				<e:layout>
+				<e:TileLayout/>
+				</e:layout>
+			</e:List>
+			<e:layout>
+				<e:VerticalLayout gap="3" horizontalAlign="center"/>
+			</e:layout>
+			</e:Group>
+		</e:Scroller>
+		<e:Group width="431" height="408" id="defeat"   verticalCenter="-45" y="216"   horizontalCenter="0" locked="true">
+			<e:Label id="lostTxt" textColor="0xDFD1B5" text="我要变强"  size="20" y="7" horizontalCenter="0"/>
+			<e:Image id="openRole" scaleX="0.9" scaleY="0.9"  width="478.88888888888886" source=""  height="34.33" horizontalCenter="0" verticalCenter="178.24850000000004"/>
+			<e:Button id="openRole1" label="前往" x="272.05" y="450.62"  width="96" skinName="Btn3Skin" visible="false"/>
+			<e:Scroller width="372" height="393"     verticalCenter="15.5" horizontalCenter="0">
+			<e:List id="list0" y="0" height="392" width="326" itemRendererSkinName="DefeatItemSkin"   horizontalCenter="0">
+				<e:layout>
+				<e:TileLayout horizontalGap="0" verticalGap="0"/>
+				</e:layout>
+			</e:List>
+			</e:Scroller>
+			<e:Image source="anwen1" rotation="180" left="117" verticalCenter="-187"/>
+			<e:Image source="anwen1" right="117" verticalCenter="-187"/>
+			<e:Image source="shuxingbg4"   horizontalCenter="0" verticalCenter="-187.5"/>
+		</e:Group>
+		<e:Group y="113"   horizontalCenter="0">
+			<e:Image id="title"   horizontalCenter="0" verticalCenter="0" source="result_json.win_02"/>
+		</e:Group>
+		<ns1:BaseComponent id="doublePrice" skinName="PriceIconSkin" className="PriceIcon" horizontalCenter="84.5" verticalCenter="177" x="325" y="624"   locked="true"/>
+		<e:Group id="effGroup"   touchChildren="false" touchEnabled="false" y="120" horizontalCenter="-60" x="230"  />
+		<e:Group id="winnerGroup"   touchChildren="false" touchEnabled="false" y="217" width="400"   horizontalCenter="0">
+			<e:Label text="BOSS归属者：" textColor="0xdfd1b5" size="20" x="0"   verticalCenter="-20"/>
+			<e:ToggleButton id="roleIcon" skinName="RoleToggleBtn" y="-30" icon="yuanhead11" horizontalCenter="0"/>
+			<e:Label id="belongTxt" text="今晚打老虎" y="60" size="20"   textColor="0x35e62d" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="nune" width="400" height="20"   verticalCenter="-198" horizontalCenter="0" x="90" y="257"   visible="false">
+			<e:Label id="nameLabel" text="解锁类型：" y="0" textColor="0xDFD1B5" size="20" x="0"/>
+			<e:Label id="nuneValue" text="狂暴：头盔属性加成百分比" size="18" textColor="0x20cf30" x="100" y="1"/>
+			<e:Group id="nuneLock" width="200" height="18" x="120" y="1">
+			<e:Label id="oldValue" text="3" x="0" y="0" size="18" textColor="0xe2dfd4"/>
+			<e:Label id="newValue" text="4" x="61" y="0" textColor="0x20CF30" size="18"/>
+			<e:Image id="rdir" source="tongyongup" x="51" y="1.5" rotation="90" height="30"  />
+			</e:Group>
+		</e:Group>
+		<ns1:BaseComponent id="wpkBoss" className="NewWorldBossResultPanel" width="400" height="480" horizontalCenter="0" verticalCenter="0" skinName="wpkResult" visible="false"/>
+	</e:Group>
+</e:Skin>

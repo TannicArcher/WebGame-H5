@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Btn10Skin" states="up,down,disabled"
+        currentState="up" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  width="169" height="48">
+	<e:Image x.down="1" y.down="1" source="btn40" left="0" right="0" top="0" bottom="0" source.down="btn41" top.down="1" source.disabled="btn42" scale9Grid="7,6,87,34" scale9Grid.up="7,6,87,34" scale9Grid.down="8,6,85,35" scale9Grid.disabled="8,7,85,34" x="0" y="0" scaleX="1" scaleY="1"/>
+	<e:Group verticalCenter="0" horizontalCenter="0">
+		<e:Image source="szyuanbao" x="10" y="9" scaleX="1" scaleY="1"/>
+		<e:Label id="yuanbao" verticalAlign="middle" size="20" text="100" textAlign="center" horizontalCenter="0" verticalCenter="-1" bold="true" x="64" y="13" scaleX="1" scaleY="1" textColor="0xfff2be"/>
+		<e:Label verticalAlign="middle" size="20" text="原地复活" textAlign="center" id="labelDisplay" x.down="1" y.down="1" textColor="0xFFF2BE" horizontalCenter="0" verticalCenter="-1" textColor.up="0xd1c28f" textColor.down="0x9f946d" bold="true" verticalCenter.down="0" textColor.disabled="0x848484" x="44" y="13" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="KFInvasionResultSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"
+        height="930" width="580">
+	<w:Config id="15c8d32c190" />
+
+	<e:Group horizontalCenter="0" verticalCenter="-22">
+		<e:Image id="bg" width="562" height="788"   source="win_png" horizontalCenter="0" verticalCenter="-49" x="9" y="22"/>
+		<e:Button id="closeBtn" label="领取奖励(10s)" skinName="Btn1Skin" width="160" y="629" horizontalCenter="0"/>
+
+
+
+
+
+
+
+
+		<e:Group id="effGroup"   touchChildren="false" touchEnabled="false" y="120" horizontalCenter="-60" x="230"   locked="true"/>
+		<e:Image id="title" source="result_json.win_02" y="113" horizontalCenter="0"/>
+		<e:Group id="winnerGroup"   touchChildren="false" touchEnabled="false" y="217" width="400"   horizontalCenter="0" locked="true">
+			<e:Label text="BOSS归属者：" textColor="0xdfd1b5" size="20" x="0"   verticalCenter="-20"/>
+			<e:ToggleButton id="roleIcon" skinName="RoleToggleBtn" y="-30" icon="yuanhead11" horizontalCenter="0"/>
+			<e:Label id="belongTxt" text="今晚打老虎" y="60" size="20"   textColor="0x35e62d" horizontalCenter="0"/>
+		</e:Group>
+
+		<e:Scroller horizontalCenter="0" top="298" height="320">
+			<e:Group scrollV="1">
+				<e:Label id="saleLabel" text="行会拍卖品：" y="298" size="20" textColor="0xDFD1B5" height="40" verticalAlign="middle" x="81"/>
+			<e:List id="saleList" width="400" x="0" y="0" itemRendererSkinName="ItemSkin">
+				<e:ArrayCollection>
+					<e:Array>
+						<e:Object null=""/>
+						<e:Object null=""/>
+						<e:Object null=""/>
+						<e:Object null=""/>
+						<e:Object null=""/>
+					</e:Array>
+				</e:ArrayCollection>
+				<e:layout>
+					<e:TileLayout paddingLeft="11" paddingRight="11"/>
+				</e:layout>
+
+			</e:List>
+				<e:Label id="rewardLabel" text="我的归属奖：" y="438" size="20" textColor="0xDFD1B5" height="40" verticalAlign="middle" x="81"/>
+				<e:List id="rewardList" width="400" y="0" itemRendererSkinName="ItemSkin" height="130" x="0">
+					<e:ArrayCollection>
+					<e:Array>
+						<e:Object null=""/>
+						<e:Object null=""/>
+						<e:Object null=""/>
+						<e:Object null=""/>
+						<e:Object null=""/>
+					</e:Array>
+					</e:ArrayCollection>
+					<e:layout>
+					<e:TileLayout paddingLeft="11" paddingRight="11"/>
+					</e:layout>
+				</e:List>
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:Group>
+		</e:Scroller>
+
+
+
+
+
+	</e:Group>
+</e:Skin>

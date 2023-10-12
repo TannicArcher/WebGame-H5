@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="KFInvasionSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" xmlns:euiextension="euiextension.*" >
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="120"/>
+
+
+
+	<e:Group horizontalCenter="0" top="52">
+		<e:Image source="invasionbg_jpg" x="0" y="0"/>
+		<e:Group id="bossGroup" width="72" height="48" anchorOffsetX="0" anchorOffsetY="0" x="256" y="345"/>
+		<e:Image id="bossName" source="invasion_boss_name0" x="425" y="55" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Group width="455" height="140" horizontalCenter="0" bottom="306">
+		<e:Image source="shuxingbg" left="0" top="31" bottom="0" right="0"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,4,4,24" width="250"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,4,4,24" width="250" scaleX="-1" right="0"/>
+		<e:Button id="partBtn" label="Button" y="36" skinName="Btn0Skin" icon="invasion_icon_participate" x="261"/>
+		<e:Button id="belongBtn" label="Button" y="36" skinName="Btn0Skin" icon="invasion_icon_belong" x="101"/>
+	</e:Group>
+	<e:Group horizontalCenter="0" bottom="127">
+		<e:Group id="dinghong" width="555" height="100" y="0" x="0">
+		<e:Image width="280" x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+		<e:Image width="280" scaleX="-1" top="0" bottom="0" right="0" source="bantoumingkuang3"/>
+		</e:Group>
+		<e:Group id="leftGroup" y="25" x="5">
+		<e:Button id="leftBtn" label="" icon="jiantouxuan" skinName="Btn0Skin" scaleX="1" scaleY="1" x="0" y="0"/>
+		<e:Image id="leftRed" x="20" y="-8" source="zjmhongdian" touchEnabled="false"/>
+		</e:Group>
+		<e:Scroller id="menuScroller" scrollPolicyV="off" scrollPolicyH="on" height="90" width="450" y="9" x="53">
+		<e:List id="menuList" y="74" horizontalCenter="0" scrollEnabled="false" itemRendererSkinName="KFInvasionItemSkin">
+			<e:layout>
+			<e:HorizontalLayout gap="38" paddingLeft="0" horizontalAlign="center" verticalAlign="top"/>
+			</e:layout>
+			<e:ArrayCollection>
+			<e:Array>
+				<e:Object null=""/>
+				<e:Object null=""/>
+				<e:Object null=""/>
+				<e:Object null=""/>
+				<e:Object null=""/>
+				<e:Object null=""/>
+			</e:Array>
+			</e:ArrayCollection>
+		</e:List>
+		</e:Scroller>
+		<e:Group id="rightGroup" x="518.5" y="17">
+		<e:Button id="rightBtn" label="" icon="jiantouxuan" skinName="Btn0Skin" scaleX="-1" scaleY="1" y="8" x="31.5"/>
+		<e:Image id="rightRed" x="0" y="0" source="zjmhongdian" touchEnabled="false"/>
+		</e:Group>
+	</e:Group>
+
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  width="580" horizontalCenter="0" currentState="nohead"/>
+	<e:Image y="6"  horizontalCenter="-155" source="biaoti_mojieruqin"/>
+
+
+
+
+
+
+	<e:Button id="seeRule" label="按钮" icon="wenhao" skinName="Btn0Skin" horizontalCenter="-246" y="8" scaleX="0.9" scaleY="0.9"/>
+
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+	<e:Button id="challengeBtn" label="挑  战" skinName="Btn1Skin" width="150" height="60" horizontalCenter="0" bottom="237"/>
+	<e:Group horizontalCenter="0" top="70">
+		<e:Image source="bantoutiaobg2" height="32" width="210" x="5" y="0" scale9Grid="45,9,1,1"/>
+		<e:Label text="每日复活时间：" x="12" size="20" textColor="0xff9900" y="6"/>
+		<e:Label id="refreshTime" text="19:30" x="152" size="20" textColor="0x00ff00" y="6"/>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

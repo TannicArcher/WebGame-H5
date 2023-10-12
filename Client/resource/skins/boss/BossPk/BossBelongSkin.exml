@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BossBelongSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui">
+	<e:Group id="attackBtnGroup" bottom="166" horizontalCenter="0" width="322">
+		<ns1:BaseComponent xmlns:ns1="*" id="attackBoss1" skinName="worldBossAtbtn" x="75" y="35" className="BossUIBtnItem" anchorOffsetX="75" anchorOffsetY="35"/>
+		<ns1:BaseComponent xmlns:ns1="*" id="attackPlayer1" skinName="worldBossAtbtn" x="246" y="35" className="BossUIBtnItem" anchorOffsetX="75" anchorOffsetY="35"/>
+	</e:Group>
+	<e:Group width="235" y="110" id="belongGroup" right="12">
+		<e:Rect height="14" y="30" left="77" right="13" fillColor="0x111010"/>
+		<e:Rect left="91" right="32" fillColor="0x111010" height="4" width="92" y="46"/>
+		<e:Rect width="58" height="58" x="8" y="9" ellipseWidth="82" ellipseHeight="82" fillColor="0x111010"/>
+		<e:Image id="roleHead1" source="yuanhead10" width="52" height="52" x="11" y="11.2"/>
+		<e:Image y="5" height="24" width="196" source="bantoutiaobg" x="23" scale9Grid="51,5,136,35"/>
+		<e:ProgressBar id="neigongBar0" width="112" height="4" y="46" value="100" x="89" skinName="bar6Skin"/>
+		<e:ProgressBar id="bloodBar0" y="31" value="50" left="76" right="14" height="12" skinName="bar7Skin"/>
+		<e:Image scale9Grid="92,32,5,7" left="0" right="0" y="1" source="zdbossgueishuzhebg"/>
+		<e:Group x="61" y="8" height="18" width="140">
+		<e:Label text="归属" size="16" textAlign="center" y="1" textColor="0x9F946D" x="0"/>
+		<e:Label id="belongNameTxt1" text="玩家名称真长S6666" size="16" textColor="0xFFCE0B" textAlign="center" y="1" x="32"/>
+		</e:Group>
+		<e:Button id="attguishu1" label="抢夺归属" x="70" y="54" skinName="Btn6Skin" width="80" height="36"/>
+	</e:Group>
+</e:Skin>

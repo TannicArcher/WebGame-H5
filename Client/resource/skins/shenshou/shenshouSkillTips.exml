@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="shenshouSkillTips" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" height="930" width="580">
+	<w:Config id="1586b3502a7"/>
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="anigroup" height="312" width="350" horizontalCenter="0" verticalCenter="-60" touchEnabled="false" anchorOffsetY="0">
+		<e:Image id="background" source="tongyongtip1" scale9Grid="7,6,11,12" left="0" right="0" top="0" bottom="60" touchEnabled="false"/>
+		<e:Image id="quali" source="quali1" y="2" left="0" right="0" scale9Grid="9,0,10,54" height="130"/>
+		<e:Image source="tongyongtip2" left="0" right="0" top="0" bottom="60" scale9Grid="18,18,2,4" touchEnabled="false"/>
+		<e:Image anchorOffsetX="0" right="20" y="115" source="fengexian" scale9Grid="19,0,4,11" left="20"/>
+		<ns1:BaseComponent id="equipIcon" className="ItemIcon" x="19" y="20" skinName="shenshouSkillItem"/>
+		<e:Label id="nameTxt" text="荒咬击" size="30" textAlign="left" y="26" x="102" bold="true" textColor="0xf8b141"/>
+		<e:Label id="targetTxt" text="所有出战兽神生效" size="20" textAlign="left" y="67" x="104" bold="true" textColor="0xd1c28f"/>
+		<e:Label id="targetTxt0" text="兽神攻击提升15%，生命提升20%，物防提升10%，魔防提升10%" size="20" textAlign="left" x="25" anchorOffsetX="0" width="300" anchorOffsetY="0" height="96" lineSpacing="4" top="140" textColor="0x7e6437"/>
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="25" scale9Grid="128,2,15,41" width="300" touchEnabled="false"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="18" x="30" bold="true" bottom="30" textColor="0x7E6437" touchEnabled="false"/>
+	</e:Group>
+</e:Skin>

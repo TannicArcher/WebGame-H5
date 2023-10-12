@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BattleTipsSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" xmlns:euiextension="euiextension.*">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+
+
+
+
+
+
+
+
+
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="0" width="400">
+		<e:Image scale9Grid="25,18,2,2" left="0" right="0" top="0" bottom="0" source="tongyongkuang3bg"/>
+		<e:Image source="tongyongkuang3tou" top="0" scale9Grid="198,5,14,37" left="0" right="0"/>
+		<e:Label text="血战比奇城" horizontalCenter="0" top="11" size="24" textColor="0xff0000"/>
+		<e:Group x="20" y="50" scaleX="1" scaleY="1">
+			<e:Image source="tongyonghd_json.shuxingbg4" scaleX="1" scaleY="1" horizontalCenter="0" y="0"/>
+			<e:Label text="活动描述：" size="20" textColor="0x7e6437" scaleX="1" scaleY="1" horizontalCenter="0" y="10"/>
+		</e:Group>
+		<e:Image source="tongyongline" y="90" width="360" horizontalCenter="0"/>
+		<e:Label id="desc" text="       夜晚的比奇迷人又充满了神秘的气息。在夜黑风高的时候进去一探究竟吧，你一定会大呼过瘾的。" y="105" size="16" width="350" scaleX="1" scaleY="1" textColor="0x9f946d" lineSpacing="10" textAlign="left" horizontalCenter="0"/>
+		<e:Group x="20" y="185" scaleX="1" scaleY="1">
+			<e:Image source="tongyonghd_json.shuxingbg4" scaleX="1" scaleY="1" y="0" x="0"/>
+			<e:Label text="活动规则：" size="20" textColor="0x7e6437" scaleX="1" scaleY="1" x="14" y="10"/>
+		</e:Group>
+		<e:Image source="tongyongline" y="225" width="360" horizontalCenter="0"/>
+		<e:Label id="rule" text="1.活动时间：|C:0x00ff00&amp;T:每周一、三、五 20:30-20:45|\n2.参与活动即可获得|C:0x00ff00&amp;T:功勋|奖励\n3.进入活动后玩家随机分配成|C:0x00ff00&amp;T:2个对立阵营|，每|C：0x00ff00&amp;T:5分钟|重新分配阵营\n4.击败玩家、助攻、杀怪、持续参与活动都可以获得积分，个人积分越高，奖励越丰厚\n5.活动结束后根据玩家综合表现发放排名奖励\n|C:0x5186fd&amp;T:PS：血战比奇城待得越久，获得的功勋越多|" size="18" width="350" scaleX="1" scaleY="1" textColor="0xd1c28f" lineSpacing="10" top="240" bottom="90" horizontalCenter="0"/>
+		<e:Group anchorOffsetX="0" anchorOffsetY="0" top="50" horizontalCenter="0" bottom="85" visible="false">
+
+
+
+
+
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="left"/>
+			</e:layout>
+		</e:Group>
+
+
+
+
+		<e:Button id="goTo" label="进入" skinName="Btn1Skin" bottom="14" horizontalCenter="0"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" bottom="50" horizontalCenter="66"/>
+	</e:Group>
+
+
+
+
+</e:Skin>

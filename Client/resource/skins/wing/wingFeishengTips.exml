@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="wingFeishengTips" currentState="normal" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" height="930" width="580" states="normal,maxLv,noitem" >
+	<w:Config id="1586b36a128"/>
+	<e:Rect id="bgClose" fillAlpha="0.8" left="0" right="0" top="0" bottom="0"/>
+	<e:Group horizontalCenter="-1" width="300" height="587" verticalCenter="-61.5" anchorOffsetY="0">
+		<e:Image id="BG" top="0" bottom="0" left="0" right="0" source="tongyongtip1" scale9Grid="5,5,15,15"/>
+		<e:Image height="130" source="quali5" scale9Grid="3,6,22,42" left="0" top="0" right="0" anchorOffsetY="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="19,19,2,3" left="0" right="0" top="0" bottom="0"/>
+		<e:Group x="46" y="212">
+			<e:Label id="attr1" y="0" text="攻击：100" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x9F946D"/>
+			<e:Image x="124" y="1" source="tongyongup" rotation="90" includeIn="normal"/>
+			<e:Label id="attr1NextLv" y="10" text="100" size="18" verticalAlign="justify" x="10" textAlign="left" textColor="0x00ff00" includeIn="normal"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" horizontalAlign="left"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="46" y="237">
+			<e:Label id="attr2" y="14" text="攻击：100" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x9F946D" />
+			<e:Image x="134" y="0" source="tongyongup" rotation="90" includeIn="normal"/>
+			<e:Label id="attr2NextLv" y="24" text="100" size="18" verticalAlign="justify" x="10" textAlign="left" textColor="0x00ff00"  includeIn="normal"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" horizontalAlign="left"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="46" y="262">
+			<e:Label id="attr3" y="227" text="攻击：100" size="18" verticalAlign="justify" x="26" textAlign="left" textColor="0x9F946D"/>
+			<e:Image x="170" y="198" source="tongyongup" rotation="90" includeIn="normal"/>
+			<e:Label id="attr3NextLv" y="0" text="100" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x00FF00" includeIn="normal"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" horizontalAlign="left"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="46" y="287">
+			<e:Label id="attr4" y="242" text="攻击：100" size="18" verticalAlign="justify" x="16" textAlign="left" textColor="0x9F946D"/>
+			<e:Image x="170" y="198" source="tongyongup" rotation="90" includeIn="normal"/>
+			<e:Label id="attr4NextLv" y="0" text="100" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x00FF00"  includeIn="normal"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" horizontalAlign="left"/>
+			</e:layout>
+		</e:Group>
+		<e:Label y="186" text="基础属性" size="18" x="24" bold="true" textColor="0xffd93f"/>
+		<e:Group x="46" y="341">
+			<e:Label id="attr5" y="0" text="攻击：100" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x9F946D"/>
+			<e:Image x="124" y="1" source="tongyongup" rotation="90" includeIn="normal"/>
+			<e:Label id="attr5NextLv" y="10" text="100" size="18" verticalAlign="justify" x="10" textAlign="left" textColor="0x00FF00" includeIn="normal"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" horizontalAlign="left"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="46" y="366">
+			<e:Label id="attr6" y="14" text="攻击：100" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x9F946D"/>
+			<e:Image x="134" y="0" source="tongyongup" rotation="90" includeIn="normal"/>
+			<e:Label id="attr6NextLv" y="24" text="100" size="18" verticalAlign="justify" x="10" textAlign="left" textColor="0x00FF00" includeIn="normal"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" horizontalAlign="left"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="46" y="391">
+			<e:Label id="attr7" y="227" text="攻击：100" size="18" verticalAlign="justify" x="26" textAlign="left" textColor="0x9F946D"/>
+			<e:Image x="170" y="198" source="tongyongup" rotation="90" includeIn="normal"/>
+			<e:Label id="attr7NextLv" y="0" text="100" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x00FF00" includeIn="normal"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" horizontalAlign="left"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="46" y="416">
+			<e:Label id="attr8" y="242" text="攻击：100" size="18" verticalAlign="justify" x="16" textAlign="left" textColor="0x9F946D"/>
+			<e:Image x="170" y="198" source="tongyongup" rotation="90" includeIn="normal"/>
+			<e:Label id="attr8NextLv" y="0" text="100" size="18" verticalAlign="justify" x="0" textAlign="left" textColor="0x00FF00" includeIn="normal"/>
+			<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" horizontalAlign="left"/>
+			</e:layout>
+		</e:Group>
+		<e:Label y="315" text="极品属性" size="18" x="24" bold="true" textColor="0xFFD93F"/>
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" y="119" x="-5"/>
+		<e:Label y="50" text="部位：" size="18" x="111" textColor="0x966E5A"/>
+		<e:Label y="75" text="等级：" size="18" x="111" textColor="0x966E5A"/>
+		<e:Label y="100" text="职业：" size="18" x="111" textColor="0x966E5A"/>
+		<e:Label text="羽翼飞升" size="20" x="20" y="16" bold="true" textColor="0xf8b141"/>
+
+
+
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" scale9Grid="128,2,15,41" width="300"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-30" textColor="0x7E6437"/>
+		<e:Image x="22" y="45" source="quality3" width="76" height="76" scale9Grid="26,40,8,4"/>
+		<e:Label id="wingName" text="1阶羽翼" x="160" y="50" size="18" textColor="0xffd9b5" />
+		<e:Label id="feishengLv" text="100级" x="160" y="75" size="18" textColor="0xFFD9B5"/>
+		<e:Label id="career" text="战士" x="160" y="100" size="18" textColor="0xFFD9B5"/>
+		<e:Image x="28" y="51" source="200239_png"/>
+		<e:Button id="updateBtn" label="升  级" skinName="Btn1Skin" horizontalCenter="0" bottom="13" includeIn="normal"/>
+		<e:Image source="weijihuohuawen" scale9Grid="45,3,3,25" anchorOffsetX="0" width="168" right="6" bottom="71"/>
+		<e:Image source="weijihuohuawen" scaleX="-1" scale9Grid="46,3,3,25" anchorOffsetX="0" width="166" left="6" bottom="71"/>
+		<e:Label text="羽翼飞升可按照百分比提高羽翼基础属性" size="14" textColor="0xf8b141" bold="true" bottom="124" left="15"/>
+		<e:Label id="maxLvDesc" text="当前羽翼飞升最大等级可提升至 20 级" size="14" textColor="0xF8B141" bold="true" bottom="105" left="16" text.normal="" text.maxLv="" text.noitem=""/>
+		<e:Group includeIn="noitem" horizontalCenter="0" bottom="27">
+			<e:Label text="升级消耗:" includeIn="noitem" x="0" y="7" size="18" textColor="0xd1c28f" bold="true"/>
+			<e:Image id="itemImg" width="32" height="32" includeIn="noitem" x="94" y="0" source="200239_png"/>
+			<e:Label id="costNum" text="X1" includeIn="noitem" x="140" y="6" textColor="0xf71129" bold="true" size="18"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Label text="已满级" includeIn="maxLv" textColor="0xffd93f" horizontalCenter="0" bottom="30" bold="true"/>
+	</e:Group>
+</e:Skin>

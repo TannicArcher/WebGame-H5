@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GwMijingItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group id="Bg" y="0" horizontalCenter="0">
+		<e:Image id="BgLeft" scale9Grid="11,2,70,17" source="godweapon_mjchoose1" x="0" y="0"/>
+		<e:Image id="BgRight" source="godweapon_mjchoose1" scale9Grid="11,2,70,17" scaleX="-1" x="472" y="0"/>
+	</e:Group>
+	<e:Group id="choose" x="0" y="0" visible="false">
+		<e:Image id="chooseLeft" scale9Grid="6,6,4,4" source="godweapon_mjchoose2" y="0" x="0"/>
+		<e:Image id="chooseRight" source="godweapon_mjchoose2" scale9Grid="6,6,4,4" scaleX="-1" x="482" y="0"/>
+		<e:Image id="arrowRight" x="414" y="40" source="godweapon_arrow"/>
+		<e:Image id="arrowLeft" y="40" source="godweapon_arrow" scaleX="-1" left="0"/>
+	</e:Group>
+	<e:List id="list" height="88" x="155" y="7" anchorOffsetY="0" itemRendererSkinName="ItemSkin" anchorOffsetX="0" width="249">
+		<e:layout>
+		<e:HorizontalLayout gap="10"/>
+		</e:layout>
+	</e:List>
+	<e:Label id="storeyCount" text="第1层" x="59" textColor="0xf8b141" bold="true" verticalCenter="0"/>
+	<e:Group id="rank" right="0" verticalCenter="0" visible="false">
+		<e:Image id="rankbg" source="godweapon_rankbg" x="0" y="0"/>
+		<e:Image id="rankImg" source="godweapon_rank1" horizontalCenter="0" verticalCenter="0"/>
+	</e:Group>
+</e:Skin>

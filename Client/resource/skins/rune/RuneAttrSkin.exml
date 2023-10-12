@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuneAttrSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586b1359f6"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group width="350" height="500" verticalCenter="0" horizontalCenter="0">
+		<e:Image id="bg"   source="tongyongtip1" scale9Grid="5,5,15,14" left="0" right="0" top="0" bottom="0"/>
+		<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="fanhui" y="504" right="0" visible="false"/>
+		<e:Label id="attr" text="攻    击：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：\n麻痹几率：" size="20" textColor="0xDFD1B5" lineSpacing="10" touchEnabled="false" horizontalCenter="0" width="300" y="30"/>
+	</e:Group>
+</e:Skin>

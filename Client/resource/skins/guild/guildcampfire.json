@@ -1,0 +1,9 @@
+{"file":"guildcampfire.png","frames":{
+"campfire_button":{"x":310,"y":0,"w":72,"h":72,"offX":0,"offY":0,"sourceW":72,"sourceH":72},
+"campfire_lv1":{"x":0,"y":0,"w":308,"h":169,"offX":0,"offY":0,"sourceW":308,"sourceH":169},
+"campfire_lv2":{"x":0,"y":171,"w":258,"h":163,"offX":0,"offY":0,"sourceW":258,"sourceH":163},
+"campfire_lv3":{"x":0,"y":336,"w":236,"h":138,"offX":0,"offY":0,"sourceW":236,"sourceH":138},
+"campfire_lv4":{"x":238,"y":380,"w":215,"h":126,"offX":0,"offY":0,"sourceW":215,"sourceH":126},
+"campfire_lv5":{"x":449,"y":175,"w":178,"h":117,"offX":0,"offY":0,"sourceW":178,"sourceH":117},
+"campfire_star":{"x":260,"y":171,"w":187,"h":207,"offX":0,"offY":0,"sourceW":187,"sourceH":207},
+"campfire_fire":{"x":449,"y":0,"w":131,"h":173,"offX":0,"offY":0,"sourceW":131,"sourceH":173}}}

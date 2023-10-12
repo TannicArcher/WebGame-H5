@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ArtifactIconSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="shenqi" width="160" height="196" x="0" y="0"   touchEnabled="false">
+		<e:Image id="shenqibg1" y="95" scaleX="0.5" scaleY="0.5" horizontalCenter="0" source="longhunbg2_png"/>
+		<e:Image id="imgItem" scaleX="0.3" scaleY="0.3" rotation="0.3" horizontalCenter="0" source="sq_19_png" y="-7"/>
+		<e:Label id="labelName" text="火龙之心" size="18" horizontalCenter="0"  height="23" verticalAlign="middle" textAlign="center"  width="111.75" textColor="0xFF1111" verticalCenter="26.5" visible="false"/>
+		<e:Group id="shenqieff0" horizontalCenter="0" touchEnabled="false" y="145">
+		<e:Image id="effbg0" rotation="0.23" source="zhandoulibg" y="0" scaleX="0.5" scaleY="0.5" horizontalCenter="0" width="320"/>
+			<e:Image id="imgInfo" rotation="0.23" scaleX="0.5" scaleY="0.5" horizontalCenter="0" y="9" source="" visible="false"/>
+		<e:Label id="labelInfo" text="挂机金币效率提升" size="16" textColor="0xFCB853" y="9" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="partcount0" horizontalCenter="0" touchEnabled="false" width="150" height="40" y="118">
+		<e:Image rotation="0.23" source="shuxingbg4" horizontalCenter="1" y="1" height="30"/>
+		<e:Label id="labelChapter" text="再战20关" size="18" textColor="0xFCB853" horizontalCenter="0" bold="true" y="11"/>
+		</e:Group>
+		<e:Image id="imgName" y="20" horizontalCenter="50" scaleX="0.6" scaleY="0.6" source="sqname_01_png"/>
+	</e:Group>
+	<e:Group id="groupEff" y="75" x="78"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" x="131.3" y="114.2"  />
+	<e:Group id="guiderGroup" width="100" height="100" x="24" y="42"/>
+</e:Skin>

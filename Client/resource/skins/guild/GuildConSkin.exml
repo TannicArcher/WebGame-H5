@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildConSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group id="anigroup" width="450" height="450" verticalCenter="0" horizontalCenter="0">
+		<e:Image scale9Grid="18,14,12,20" source="tongyongkuang3bg"   left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="66,0,271,47" y="0" left="0" right="0"/>
+		<e:Image source="tielian" x="44" y="43"/>
+		<e:Image source="tielian" x="163" y="43"/>
+		<e:Image source="tielian" y="43" right="163"/>
+		<e:Image source="tielian" y="43" right="44"/>
+		<e:Image width="194" height="330" alpha="0.6" source="tongyongtip1" scale9Grid="7,6,11,11" y="85" horizontalCenter="-111"/>
+		<e:Image source="tongyongtip1" scale9Grid="7,6,11,11"  width="194"  height="330" alpha="0.6" y="85" horizontalCenter="111"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,18,3,4" width="194" height="330" y="85" horizontalCenter="111"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,18,3,4" width="194" height="330" y="85" horizontalCenter="-111"/>
+		<e:Group horizontalCenter="0" touchEnabled="false" touchChildren="false" bottom="-34">
+			<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" y="0" x="0"/>
+			<e:Label text="点击空白区域关闭窗口" size="18" bold="true" textColor="0x7E6437" y="7" horizontalCenter="0"/>
+		</e:Group>
+		<e:Label id="info6" text="+200" size="16"  width="43" textColor="0x9f946d" x="124" y="271" visible="false"/>
+		<e:Image source="quality0" y="100" horizontalCenter="-111" width="70" height="70" scale9Grid="8,8,48,48"/>
+		<e:Image source="quality0" y="100" horizontalCenter="111" width="70" height="70" scale9Grid="8,8,48,48"/>
+		<e:Image y="107" width="56" height="56" horizontalCenter="-111" source="ZScoin"/>
+		<e:Image y="107" width="56" height="56" horizontalCenter="111" source="ZSgold"/>
+		<e:Label id="desc0" text="捐献100元宝" size="20" textColor="0x7e6437" y="183" horizontalCenter="-111"/>
+		<e:Label id="desc1" text="捐献100000金币" size="20" textColor="0x7e6437" y="183" horizontalCenter="111"/>
+		<e:Label id="count0" text="1/100" size="18" textColor="0xf8b141" y="330" horizontalCenter="-111"/>
+		<e:Label id="count1" text="1/5" size="18" textColor="0xf8b141" y="330" horizontalCenter="111"/>
+		<e:Label id="info0" text="+300   " size="20" width="120" textColor="0x9f946d" y="222" height="60" verticalAlign="middle" horizontalCenter="-108"/>
+		<e:Label id="info1" text="+200" size="20" width="100" textColor="0x9f946d" y="222" height="60" verticalAlign="middle" horizontalCenter="118"/>
+		<e:Label id="info2" text="资金" size="16"  textColor="0x7e6437" x="54" y="271" visible="false"/>
+		<e:Label id="info5" text="+200" size="16"  width="43" textColor="0x9f946d" x="364" y="271" visible="false"/>
+		<e:Label id="info4" text="贡献" size="16"  textColor="0x7e6437" x="54" y="237" visible="false"/>
+		<e:Label id="info7" text="贡献" size="16" textColor="0x7E6437"  x="297" y="237" visible="false"/>
+		<e:Label id="info3" text="资金" size="16" textColor="0x7e6437" x="296" y="271" visible="false"/>
+		<e:Button id="btn0" label="捐 献" width="100" height="48" skinName="Btn3Skin" y="350" horizontalCenter="-111"/>
+		<e:Button id="btn1" label="捐 献" width="100" height="48" skinName="Btn3Skin" y="350" horizontalCenter="111"/>
+		<e:Label text="行会捐献" size="24" y="11" horizontalCenter="0" textColor="0xa67d44"/>
+		<e:Image height="2" y="310" source="tongyongline" horizontalCenter="-111" width="160"/>
+		<e:Image source="tongyongline" height="2" y="310" horizontalCenter="111" width="160"/>
+	</e:Group>
+</e:Skin>

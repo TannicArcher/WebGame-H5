@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FriendsChatItemSkin" currentState="s0" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="52" states="s0,s1"  height.s1="48">
+	<w:Config id="158483085e3"/>
+	<e:Group width="160" height="18" x.s0="0" x="0">
+		<e:Image source="bantoutiaobg2" left="0" right="0" top="0" bottom="0" scale9Grid="0,5,92,11" source.s0="zjmgonggaobg"/>
+		<e:Label id="label_date" size="14" textAlign="right" verticalAlign="middle" text="11月11日11：11：11" horizontalCenter="0" size.s0="14" textColor="0x7e6437" verticalCenter="0"/>
+	</e:Group>
+	<e:Group height="34" width="430" y="18" height.s1="32" y.s1="16">
+		<e:Group width="62" height="60" x.s0="12" y="4"   left.s0="12" right.s1="12" visible="false">
+			<e:Image id="img_userIcon" source="{data.userIcon}" scaleX="0.63" scaleY="0.63" verticalCenter="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:Group id="group_bubble" right.s1="0" x.s0="85" left.s0="12" left="12" right="0" top="0" bottom="0" left.s1="12">
+			<e:Label id="label_msg" size="16" textColor="0xF7B910" text="发言发言发言发言发言" width="414" textColor.s1="0x9f946d" width.s1="300"   height="17"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+
+	
+</e:Skin>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GainYeLiSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="1586bc24b09"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.7"/>
+	
+	<e:Group id="anigroup" width="450" height="482" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="bg" source="tongyongkuang3bg" scale9Grid="11,11,29,29" left="0" right="0" top="2" bottom="0"/>
+		<e:Image id="bgt" source="tongyongkuang3tou" left="0" right="0"/>
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-35" width="400"/>
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="30" bold="true" bottom="-30" textColor="0x7E6437"/>
+		<e:Label text="获取业力" y="12" size="24" horizontalCenter="0" textColor="0xa67d44"/>
+		<e:Button skinName="Btn0Skin" label="按钮" id="closeBtn" y="510" right="0"/>
+		<ns1:BaseComponent id="priceIcon0" x="325" y="50" skinName="PriceIconSkin" className="PriceIcon" visible="false"/>
+		<e:Group id="gr1" y="46" width="440" height="140" horizontalCenter="0">
+			<e:Image source="tongyonglabbg" scale9Grid="12,8,103,52" left="0" right="0" top="0" bottom="0"/>
+			<e:Label id="yeli0" text="10000" size="20" x="190" y="36" textColor="0x00ff00"/>
+			<e:Label text="获得业力：" size="20" textColor="0xE2B142" y="36" x="90"/>
+			<e:Label text="消耗金币：" size="20" textColor="0xE2B142" x="98" y="64" visible="false"/>
+			<e:Label id="cost0" text="10000" size="20" x="198" y="64" textColor="0x00ff00" visible="false"/>
+			<e:Label id="yeli4" text="等级兑换：降1级" size="20" textColor="0xE2B142" x="90" y="92"/>
+			<e:Group id="time0" y="30" right="10">
+				<e:Label text="今日还可兑换" size="20" textColor="0xA89C88" textAlign="center" y="7" right="48" x="11" scaleX="1" scaleY="1"/>
+				<e:Label id="toDay0" text="5" size="20" textAlign="center" y="7" right="36" x="131" scaleX="1" scaleY="1" textColor="0x00ff00"/>
+				<e:Label text="次" size="20" textColor="0xA89C88" textAlign="center" y="7" right="16" x="143" scaleX="1" scaleY="1"/>
+				<e:layout>
+				<e:HorizontalLayout gap="0"/>
+				</e:layout>
+			</e:Group>
+
+			<e:Button id="btn0" label="兑  换" verticalCenter="10" right="11" skinName="Btn3Skin" width="130"/>
+			<ns1:BaseComponent id="item0" skinName="ItemSkin" className="ItemBase" verticalCenter="10" left="0"/>
+			<e:Image id="redPoint0" y="50" source="zjmhongdian" right="7"/>
+			<e:Label id="limit" text="等级大于110级可兑换" size="18" textColor="0xff0000" x="257" y="111"/>
+		</e:Group>
+		<e:Group id="gr2" y="190" width="440" height="140" horizontalCenter="0">
+			<e:Image   left="0" right="0" top="0" bottom="0" source="tongyonglabbg" scale9Grid="12,9,102,52"/>
+			<e:Label text="获得业力：" size="20" textColor="0xE2B142" x="90" y="36"/>
+			<e:Label id="yeli1" text="10000" size="20" x="190" y="36" textColor="0x00ff00"/>
+			<e:Label id="name1" text="高级轮回丹" size="20" textColor="0xE2B142" x="90" y="86"/>
+			<e:Group y="30" right="10">
+				<e:Label text="今日还可兑换" size="20" textColor="0xA89C88" textAlign="center" y="7" right="48" x="11" scaleX="1" scaleY="1"/>
+				<e:Label id="toDay1" text="5" size="20" textAlign="center" y="7" right="36" x="131" scaleX="1" scaleY="1" textColor="0x00ff00"/>
+				<e:Label text="次" size="20" textColor="0xA89C88" textAlign="center" y="7" right="16" x="143" scaleX="1" scaleY="1"/>
+				<e:layout>
+				<e:HorizontalLayout gap="0"/>
+				</e:layout>
+			</e:Group>
+
+			<e:Button id="btn1" label="购 买" verticalCenter="10" right="11" skinName="Btn3Skin" width="130"/>
+			<ns1:BaseComponent id="item1" skinName="ItemSkin" className="ItemBase" verticalCenter="10" left="0"/>
+			<ns1:BaseComponent id="priceIcon1" skinName="PriceIconSkin" className="PriceIcon" y="77" x="190"/>
+			<e:Image id="redPoint1" y="50" source="zjmhongdian" right="7"/>
+
+		</e:Group>
+		<e:Group id="gr3" y="334" width="440" height="140" horizontalCenter="0">
+			<e:Image   left="0" right="0" top="0" bottom="0" source="tongyonglabbg" scale9Grid="13,9,101,51"/>
+			<e:Label text="获得业力：" size="20" textColor="0xE2B142" x="90" y="36"/>
+			<e:Label id="yeli2" text="10000" size="20" x="190" y="36" textColor="0x00ff00"/>
+			<e:Group y="30" right="10">
+				<e:Label text="今日还可兑换" size="20" textColor="0xA89C88" textAlign="center" y="7" right="48" x="11" scaleX="1" scaleY="1"/>
+				<e:Label id="toDay2" text="5" size="20" textAlign="center" y="7" right="36" x="131" scaleX="1" scaleY="1" textColor="0x00ff00"/>
+				<e:Label text="次" size="20" textColor="0xA89C88" textAlign="center" y="7" right="16" x="143" scaleX="1" scaleY="1"/>
+				<e:layout>
+				<e:HorizontalLayout gap="0"/>
+				</e:layout>
+			</e:Group>
+			<e:Label id="name2" text="超级轮回丹" size="20" textColor="0xE2B142" x="90" y="86"/>
+
+			<e:Button id="btn2" label="购 买" verticalCenter="10" right="11" skinName="Btn3Skin" width="130"/>
+			<ns1:BaseComponent id="item2" skinName="ItemSkin" className="ItemBase" verticalCenter="10" left="0"/>
+			<ns1:BaseComponent id="priceIcon2" skinName="PriceIconSkin" className="PriceIcon" y="77" x="190"/>
+			<e:Image id="redPoint2" y="50" source="zjmhongdian" right="7"/>
+
+		</e:Group>
+		<ns1:BaseComponent id="priceIcon3" skinName="PriceIconSkin" className="PriceIcon" x="327" y="94" visible="false"/>
+	</e:Group>
+	
+</e:Skin>

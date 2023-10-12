@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChatHeadItemSkin" currentState="other" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="other,self,sys" height="70" width.other="440" width="440">
+	<e:Rect left.sys="2" left.other="76" top="2" fillAlpha="0" ellipseWidth="10" ellipseHeight="10" right.self="76" fillAlpha.self="0.2" fillColor.self="0x000000" ellipseWidth.self="20" ellipseHeight.self="20" ellipseWidth.other="20" ellipseHeight.other="20" right.sys="2" ellipseWidth.sys="20" ellipseHeight.sys="20" strokeWeight.self="1" top.self="1" bottom.self="1" top.other="1" bottom.other="1" width.self="300" width.other="300" strokeWeight.other="1" strokeColor.other="0x141414" strokeColor.self="0x2d2d2d" strokeAlpha="0" width="100%" height="100%" touchEnabled="true"/>
+	<e:Image id="head" source="head_10" x="12" right.self="8" visible.sys="false" width="60" height="60" verticalCenter="0" x.other="8"/>
+    <e:Image id="headBg" x="10"  right.self="6" x.other="6" source="touxiangkuang1" width="64" height="64" visible.sys="false" verticalCenter="0" scale9Grid="5,5,3,3"/>
+	<e:Image source="chatbg4" x.sys="82" y="28" scale9Grid="17,12,4,11" width="260" height="37" x.other="72" y.other="24" height.other="40" width.other="290" source.self="chatbg5" scale9Grid.self="4,12,4,11" width.self="290" height.self="40" visible.sys="false" right.self="74" y.self="24" alpha.other="0.6" alpha.self="0.8"/>
+	<e:Image id="type" x="16" verticalCenter="0" source="lt_02" includeIn="sys" visible="false"/>
+    <e:Label id="showText" text="" maxWidth="260" size="16"
+             wordWrap="true" x.other="98" textColor="0x7e6437" y.other="29" y.self="30" textColor.other="0xd1c28f" verticalCenter.sys="0" size.sys="18" verticalCenter.self="9" x.sys="58" right.self="97" verticalCenter="0" text.other="" verticalCenter.other="9" text.self="" text.sys="" textColor.self="0x19160b"/>
+    <e:Image id="monthcard" x="80" y="4" scaleX="0.8" scaleY="0.8"  source="yueka_png" visible="false"/>
+    <e:Group id="nameGrotup" y="0" x="140" visible.sys="false"  right.self="70"  x.other="80"  touchEnabled="false" touchChildren="false" y.other="4" y.self="4">
+			<e:Label id="labelName" text="玩家名字要长" x="2" y="5" size="16" textColor="0x16B2FF"   visible.sys="false" textColor.other="0x9f946d" textColor.self="0x9f946d" size.other="16" size.self="16"/>
+			<e:Label id="labelTitle" text="称号" x="12" y="15" size="16" textColor="0x16B2FF"   size.other="16" size.self="16"/>
+			<e:Image id="vipImg" x.sys="85" x.other="185" y="12" scaleX="0.7" scaleY="0.8" visible.sys="false" right.self="254" y.other="1" y.self="10" source="zjmvipzi" scaleX.other="0.6" scaleX.self="0.6"/>
+			<e:Group id="vip" height="25" scaleX="0.7" scaleY="0.7"  width="20">
+				<e:layout>
+				<e:BasicLayout/>
+				</e:layout>
+				<e:Image id="vipImg0" y="-20"   source="vipv_png" x="-42.5" visible="false"/>
+			</e:Group>
+			<e:Image id="img_yellowVip" x="120" y="7" source=""/>
+        <e:layout>
+            <e:HorizontalLayout horizontalAlign="left" verticalAlign="middle"  horizontalAlign.self="right" gap.other="6"/>
+        </e:layout>
+    </e:Group>
+</e:Skin>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="weaponSoulUse" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15dc1d89cd5"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group id="anigroup" horizontalCenter="0" verticalCenter="-70" height="418" width="450" anchorOffsetY="0">
+		<e:Image source="tongyongkuang3bg" scale9Grid="6,6,38,38" bottom="0" left="0" top="0" right="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="67,5,272,37" y="0" left="0" right="0"/>
+		<e:Image source="weapsbg2_png" y="48" horizontalCenter="0" anchorOffsetY="0" height="366"/>
+		<e:Label id="title" text="请选择使用角色" size="24" y="11" horizontalCenter="0" textColor="0xf8b141" bold="true"/>
+		<e:Group width="440" height="88" bottom="0" horizontalCenter="0">
+			<e:Image width="220" top="0" bottom="0" source="bantoumingkuang3" />
+			<e:Image width="220" scaleX="-1" top="0" bottom="0" right="0" source="bantoumingkuang3" />
+		</e:Group>
+		<e:Group id="tupo" width="400" height="224" horizontalCenter="0" bottom="16">
+			<e:Image source="shuxingbg" left="0" right="0" height="120" y="30" scale9Grid="50,5,65,34"/>
+			<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="230" left="-30"/>
+			<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="230" scaleX="-1" right="-30"/>
+			<e:Group horizontalCenter="-44" top="33" anchorOffsetY="0" height="109">
+				<e:Group id="g0" y="20" x="11" scaleX="1" scaleY="1">
+					<e:Label text="使用数量" size="20" x="40" y="50" bold="true" textColor="0xe5b613"/>
+					<e:Label id="curUse" text="1" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0" scaleX="1" scaleY="1"/>
+					<e:Image id="dir" x="48.33000000000004" y="2" rotation="89.12" source="tongyongup"/>
+					<e:Label id="nextUse" text="2" size="20" textAlign="center" x="52.500000000000114" y="0" textColor="0x20cb30"/>
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+					</e:layout>
+				</e:Group>
+				<e:Group id="g1" y="60" x="11" scaleX="1" scaleY="1">
+					<e:Label id="name0" text="生命" size="20" x="40" textColor="0x9F946D" y="100" bold="true"/>
+					<e:Label id="tpattr0" text="10000" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0" scaleX="1" scaleY="1"/>
+					<e:Image id="dir0" x="65.33000000000004" y="3.5" rotation="89.12" source="tongyongup"/>
+					<e:Label id="ntpattr0" text="99999" size="20" textAlign="center" x="75.00000000000011" y="1" textColor="0x20cb30"/>
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+					</e:layout>
+				</e:Group>
+				<e:Group id="g2" y="70" x="21" scaleX="1" scaleY="1">
+					<e:Label id="name1" text="攻击" size="20" x="40" textColor="0x9F946D" y="100" bold="true"/>
+					<e:Label id="tpattr1" text="10000" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0" scaleX="1" scaleY="1"/>
+					<e:Image id="dir1" x="65.33000000000004" y="3.5" rotation="89.12" source="tongyongup"/>
+					<e:Label id="ntpattr1" text="99999" size="20" textAlign="center" x="75.00000000000011" y="1" textColor="0x20CB30"/>
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+					</e:layout>
+				</e:Group>
+				<e:Group id="g3" y="80" x="31" scaleX="1" scaleY="1">
+					<e:Label id="name2" text="物防" size="20" x="40" textColor="0x9F946D" y="100" bold="true"/>
+					<e:Label id="tpattr2" text="10000" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0" scaleX="1" scaleY="1"/>
+					<e:Image id="dir2" x="65.33000000000004" y="3.5" rotation="89.12" source="tongyongup"/>
+					<e:Label id="ntpattr2" text="99999" size="20" textAlign="center" x="75.00000000000011" y="1" textColor="0x20CB30"/>
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+					</e:layout>
+				</e:Group>
+				<e:Group id="g4" y="90" x="41" scaleX="1" scaleY="1">
+					<e:Label id="name3" text="魔防" size="20" x="40" textColor="0x9F946D" y="100" bold="true"/>
+					<e:Label id="tpattr3" text="10000" size="20" textAlign="center" x="0" textColor="0x9F946D" y="0" scaleX="1" scaleY="1"/>
+					<e:Image id="dir3" x="65.33000000000004" y="3.5" rotation="89.12" source="tongyongup"/>
+					<e:Label id="ntpattr3" text="99999" size="20" textAlign="center" x="75.00000000000011" y="1" textColor="0x20CB30"/>
+					<e:layout>
+					<e:HorizontalLayout verticalAlign="middle" gap="10"/>
+					</e:layout>
+				</e:Group>
+				<e:layout>
+				<e:VerticalLayout horizontalAlign="left" gap="4"/>
+				</e:layout>
+			</e:Group>
+		<ns1:BaseComponent id="material" scaleX="0.9" scaleY="0.9" className="ItemBase" bottom="90" horizontalCenter="130" skinName="ItemSkin"/>
+		<e:Button id="btntupo" label="使  用" skinName="Btn1Skin" horizontalCenter="0" bottom="0" width="156" height="60"/>
+		</e:Group>
+		<e:Group id="headGroup" horizontalCenter="0" width="394" bottom="213" anchorOffsetY="0" height="149">
+			<e:Image source="touxiangkuangbg" scaleY="-1" left="-1" bottom="0"/>
+			<e:Image source="touxiangkuangbg" right="-1" scaleX="-1" scaleY="-1" bottom="0"/>
+			<e:Image id="selectrole3" source="tongyongzuobiao" scaleX="1.1" scaleY="1.3" top="12" x="287"/>
+			<e:Image id="selectrole2" source="tongyongzuobiao" scaleX="1.1" scaleY="1.3" top="12" horizontalCenter="0"/>
+			<e:Image id="selectrole1" source="tongyongzuobiao" scaleX="1.1" scaleY="1.3" top="12" x="76"/>
+			<e:ToggleButton id="role3" skinName="RoleToggleBtn" icon="head_31" x="258" bottom="0"/>
+			<e:ToggleButton id="role2" skinName="RoleToggleBtn" icon="head_20" x="152" bottom="0"/>
+			<e:ToggleButton id="role1" skinName="RoleToggleBtn" icon="head_10" x="46" bottom="0"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="punchSkinInformation" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="1"  width="560" height="124.67">
+	<w:Config id="15a6a784557"/>
+	<e:Label id="informationname" text="套装名称" x="0" size="20" visible.1="false" y="0" fontFamily="幼圆" textColor="0xd04cc1" stroke="1"/>
+	<e:Label id="informationname1" text="（1/8）" x="87.33" size="20" y="0" fontFamily="幼圆" textColor="0xD04CC1" stroke="1"/>
+	<e:Label id="informationname3" text="3件套：合击伤害增加" x="0" size="20" y="50.33" fontFamily="幼圆" stroke="1"   textColor="0xffffff"/>
+	<e:Label id="informationname4" text="5件套：合击伤害增加" x="0" size="20" y="70.33" fontFamily="幼圆" stroke="1"   textColor="0xFFFFFF"/>
+	<e:Label id="informationname5" text="8件套：合击伤害增加" x="0" size="20" y="90.33" fontFamily="幼圆" stroke="1"   textColor="0xFFFFFF"/>
+	<e:Label id="informationname6" text="500%" x="192" size="20" y="91.33" fontFamily="幼圆" stroke="1"   textColor="0x4cef56"/>
+	<e:Label id="informationname7" text="500%" x="192" size="20" y="71.33" fontFamily="幼圆" stroke="1"   textColor="0x4CEF56"/>
+	<e:Label id="informationname8" text="500%" x="192" size="20" y="51.33" fontFamily="幼圆" stroke="1"   textColor="0x4CEF56"/>
+	<e:Group width="560" height="29.33" x="0" y="22"  >
+		<e:Label id="informationname0" text="乾  巽  坎  艮  坤  震  离  兑" x="0" size="20" y="2.8299999999999983" fontFamily="幼圆" stroke="1"   textColor="0x4cd05d" visible="false"/>
+		<e:Label id="informationname2" text="乾  巽  坎  艮  坤  震  离  兑" x="0" size="20" y="2.8" fontFamily="幼圆" stroke="1"   textColor="0x817680"/>
+	</e:Group>
+</e:Skin>

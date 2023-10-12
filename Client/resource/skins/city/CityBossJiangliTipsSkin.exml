@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="CityBossJiangliTipsSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15ca5ef6a05"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0"/>
+	<e:Group verticalCenter="0" horizontalCenter="0" width="400">
+		<e:Image   source="tongyongtip1" left="0" right="0" top="0" bottom="0" scale9Grid="9,7,10,8"/>
+
+		<e:Image source="tongyongline" x="62.19" y="157.35999999999993" width="300"/>
+		<e:Group width="400" y="0" height="41" horizontalCenter="0">
+			<e:Image source="teshuwenzibg" left="0" right="0"/>
+			<e:Label id="nameTxt" text="必定掉落" size="24" textColor="0xd1c28f" y="8" horizontalCenter="0"/>
+			<e:Label id="nameTxt0" text="护盾奖励" size="24" bold="true" textColor="0xD1C28F" horizontalCenter="0" verticalCenter="0" x="127" y="19" visible="false"/>
+		</e:Group>
+		<e:Image id="giveUp" source="chatclose" y="0" right="0"/>
+
+
+
+		<e:Group width="390" horizontalCenter="0" top="54" bottom="5">
+			<e:Image   left="0" right="0" top="0"   source="bantoutiaobg2" scale9Grid="30,2,32,17" height="210"/>
+			<e:Group horizontalCenter="0" top="6" bottom="6">
+				<e:Scroller horizontalCenter="0" top="6" bottom="6" x="-189" y="0" scaleX="1" scaleY="1">
+					<e:Group>
+					<e:List id="belongList" x="0" itemRendererSkinName="ItemSkin">
+						<e:layout>
+						<e:TileLayout requestedRowCount="2" requestedColumnCount="4"/>
+						</e:layout>
+					</e:List>
+					</e:Group>
+				</e:Scroller>
+				<e:Group x="8" y="170">
+
+					<e:Label text="1、归属者必定获得一件神装" size="18" textColor="0x9F946D" height="20" left="10" bottom="31" x="0" y="209" scaleX="1" scaleY="1"/>
+					<e:Label text="2、参与者随机获得剩余神装的1-5件" size="18" textColor="0x9F946D" height="20" bottom="7" left="10" x="0" y="238" scaleX="1" scaleY="1"/>
+				</e:Group>
+				<e:layout>
+					<e:VerticalLayout gap="11"/>
+				</e:layout>
+			</e:Group>
+
+
+
+
+
+
+
+
+
+
+		</e:Group>
+
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PubBossRemindItemSkin" width="426" height="60" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<e:Image y="57" scale9Grid="81,1,13,1" width="420" x="3" source="tongyongline" height="2"/>
+	<e:Label text="BOSS名称" x="13" y="22" size="16" textColor="0x23CA23"/>
+	<e:Label text="80级" x="137" y="22" size="16"/>
+	<e:CheckBox label="自动参与挑战" x="266" y="17" skinName="CheckBox0" scaleX="0.6" scaleY="0.6"/>
+</e:Skin>

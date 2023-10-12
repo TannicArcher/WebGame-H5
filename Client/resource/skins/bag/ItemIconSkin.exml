@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="ItemIconSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="76" height="76" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="1586b29e830"/>
+	<e:Image id="imgBg1" scale9Grid="9,9,46,46" verticalCenter="1.5" horizontalCenter="-0.5" x="10" y="10" source="touxiangkuang" scaleX="0.7" scaleY="0.7" visible="false"/>
+    <e:Image id="imgBg" source="quality0" scale9Grid="9,9,46,46" width="76" height="76" verticalCenter="0" horizontalCenter="0"/>
+	<e:Image id="imgIcon" verticalCenter="0" horizontalCenter="0" width="62" height="62" source="101001_png"/>
+	<e:Image id="imgJob" source="job3Item" alpha="0.8" scaleX="0.8" scaleY="0.8" y="0" right="0"/>
+	<e:Image id="tag" source="rein_soul_tag" y="6" x="6" visible="false"/>
+	<e:Image id="extreme" y="6" x="6" source="extreme_tag" visible="false"/>
+	<e:Image id="imgheirloom" horizontalCenter="0" verticalCenter="0" source="csbk01_png" visible="false"/>
+</e:Skin>

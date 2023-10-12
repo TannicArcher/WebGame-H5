@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="OSASeriesRechargeSkin" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="rechargebg_png" width="554" horizontalCenter="0" y="0" anchorOffsetY="0"  height="570" scale9Grid="0,0,386,21"/>
+		<e:Image id="show1" source="wing100_png" width="372" height="372" horizontalCenter="-133" top="221" visible="false"/>
+		<e:Image id="show0" source="seriesrecharge_day3_png" horizontalCenter="-148" top="240"/>
+		<e:Group id="infoBg" left="10" right="10" top="40" x="10" y="40" scaleX="1" scaleY="1" height="110">
+			<e:Image left="0" right="0" top="0" bottom="0" source="recharge_headbg_png"/>
+			<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="15" bottom="15" visible="false"/>
+			<e:Group verticalCenter="0" left="28">
+			<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+			<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+			<e:Label id="actDesc" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+			<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+			</e:Group>
+		</e:Group>
+		<e:List id="reward" itemRendererSkinName="ItemSkin" horizontalCenter="113" y="320">
+			<e:layout>
+				<e:TileLayout requestedColumnCount="3"/>
+			</e:layout>
+		</e:List>
+		<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" y="50" width="400" height="50" x="80" scaleX="1"/>
+		<e:Image id="title" y="0" horizontalCenter="0" x="211" scaleX="1" scaleY="1" source="biaoti_lianchong"/>
+		<e:Group horizontalCenter="0" bottom="20">
+			<e:Label id="already" text="已领取" size="20" textColor="0x00FF00" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+			<e:Button id="getBtn" label="立即领取" skinName="Btn1Skin" scaleX="1" scaleY="1" horizontalCenter="0" y="0"/>
+			<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" scaleX="1" scaleY="1" x="132" y="0" visible="false"/>
+		</e:Group>
+		<e:Group horizontalCenter="10" y="165" width="465" height="100">
+			<e:ProgressBar id="bar" height="17" left="55" right="34" skinName="bar5Skin" verticalCenter="0" value="50"/>
+			<e:Image source="jingyantiao6" left="50" right="30" scale9Grid="26,3,8,19" verticalCenter="0"/>
+			<e:Image source="touxiangkuang" x="2" anchorOffsetX="0" width="61" anchorOffsetY="0" height="61" verticalCenter="0.5"/>
+			<e:Image source="star2" x="15" verticalCenter="0"/>
+			<e:Label id="state" text="已经达成几天" y="10" size="20" textColor="0x00FF00" scaleX="1" scaleY="1" horizontalCenter="-108.5" visible="false"/>
+			<e:Image source="tongyonghd_json.pailietouline" x="117.5" height="18" verticalCenter="0"/>
+			<e:Image source="tongyonghd_json.pailietouline" x="178" height="18" verticalCenter="0" visible="false"/>
+			<e:Image source="tongyonghd_json.pailietouline" x="305.5" height="18" verticalCenter="0"/>
+			<e:Image source="tongyonghd_json.pailietouline" x="365.9" height="18" verticalCenter="0" visible="false"/>
+			<ns1:BaseComponent id="gift0" skinName="OSASeriesBigRewardItem" className="OSATarget3BigRewardItemRender" x="174" y="10" scaleX="0.9" scaleY="0.9"/>
+			<ns1:BaseComponent id="gift1" skinName="OSASeriesBigRewardItem" className="OSATarget3BigRewardItemRender" x="360" scaleX="0.9" scaleY="0.9" y="10"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

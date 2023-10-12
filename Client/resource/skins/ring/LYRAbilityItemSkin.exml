@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LYRAbilityItemSkin" width="448" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Image top="0" bottom="0" left="0" right="0" source="tongyonglabbg" scale9Grid="60,36,5,4"/>
+
+	<e:Label id="stateLabel" text="已解锁" size="20" textColor="0x00ff00" y="16" left="185"/>
+	<e:Label id="descLabel" text="烈焰戒指威力惊人" y="43" size="18" textColor="0xd1c28f" left="90" width="341" anchorOffsetY="0" height="54" anchorOffsetX="0"/>
+	<e:Image id="skillImg" source="tongyonghd_json.tongyongline" bottom="0" scale9Grid="107,0,9,3" left="0" right="0"/>
+	<e:Image id="imgBg"  source="quality0" scale9Grid="9,9,46,46" anchorOffsetX="0" anchorOffsetY="0" width="76" height="76" x="6" y="12"/>
+	<e:Image id="imgIcon"  anchorOffsetX="0" anchorOffsetY="0" y="19" x="14" source="ability_6N" width="62" height="62"/>
+	<e:Label id="nameTxt" size="20" textAlign="center" text="能力名字" strokeColor="0x111111" bottom="64" horizontalCenter="-94" stroke="1" textColor="0xf8b141" bold="true"/>
+	<e:Image x="84" y="37" source="tongyongline" width="300"/>
+
+
+</e:Skin>

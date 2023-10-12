@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuneRandomTipsSkin" width="640" height="1040" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<w:Config id="1586b36a128"/>
+	<e:Rect top="0" bottom="0" fillAlpha="0.6" x="-1"/>
+	<e:Group width="350" height="414"  horizontalCenter="0" verticalCenter="0">
+		<e:Image left="0" right="0"  top="0" height="414" source="tongyongtip1" scale9Grid="6,6,11,8"/>
+		<e:Image left="0" right="0"  top="0" height="414" source="tongyongtip2" x="0" y="0"   scale9Grid="18,17,4,7"/>
+		<ns1:BaseComponent id="itemIcon" skinName="ItemIconSkin" className="ItemIcon" width="76" height="76" left="20" top="52"/>
+		<e:Label id="nameLabel" text="随机战纹" size="22" bold="true" top="20" textColor="0xe2dfd4" horizontalCenter="0"/>
+		<e:Label id="attrDesc" text="攻击力  + 99999" size="18" width="275" y="200" textAlign="left" x="40" height="215" textColor="0xd1c28f" visible="false"/>
+		<e:Label id="attrValue" text="+15%" size="20"   horizontalCenter="32.5" top="196.5" visible="false"/>
+		<e:Label id="attrName" text="闪避值" size="20" textColor="0xf8b141"   horizontalCenter="-28" top="196.5" visible="false"/>
+		<e:Label text="99999999"  size="20" x="245.33" y="61.67" textColor="0xc78563" bold="true" visible="false"/>
+		<e:Label id="backDesc" text="回收可获得            精华" size="18" x="120" y="60" bold="true" textColor="0xd1c28f" visible="false"/>
+		<e:Image scale9Grid="85,1,6,1" source="tongyongline" left="0" right="0" top="157"/>
+		<e:Label id="power" text="评分：999999" size="20" y="20" textColor="0xffbc00" bold="true" textAlign="right" right="20" visible="false"/>
+		<e:Label text="战纹属性" size="20" x="20" y="170" bold="true" textAlign="right" textColor="0xbd600d"   visible="false"/>
+		<e:Image source="bantoutiaobg" height="30" scale9Grid="128,2,15,41" width="300" y="417" x="25"/>
+		<e:Label text="点击空白区域关闭窗口" size="20" x="73" bold="true" textColor="0x7E6437" y="422"/>
+		<e:Label text="默认解锁" size="20" horizontalCenter="0" top="260" textColor="0x5186fd" visible="false"/>
+		<e:Group height="61"   top="57" left="121" width="154">
+			<e:Label text="等级：数量：" x="3" y="10"  height="42" size="20"  width="60" textColor="0x7e6437"  />
+			<e:Label text="1级" x="69" y="10" size="20" textColor="0xd1c28f"  />
+			<e:Label text="1" x="69" y="31" size="20" textColor="0xD1C28F"  />
+		</e:Group>
+		<e:Label text="本层挑战成功，将在已解锁的战纹类型中获得       个品质随机的战纹"  width="293" size="18" horizontalCenter="0" top="170"/>
+		<e:Label text="3~5" x="103" y="188" size="18" textColor="0x00ff00"/>
+		<e:Label text="当前已解锁的战纹类型" size="18" textColor="0x5186fd" left="29" top="233"/>
+		<e:Label id="attr" text="狂暴：" size="18" textColor="0x20cb30" left="29" top="255"/>
+		<e:Label id="value" text="攻击力加成固定值" size="18" left="83" top="255"/>
+	</e:Group>
+</e:Skin>

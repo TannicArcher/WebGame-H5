@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="fireworkerItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="98" height="98">
+	<w:Config id="1586b362dfe"/>
+	<e:Image id="boxUnder" horizontalCenter="0" source="quality0" width="76" height="76" top="0"/>
+	<e:Image id="box" scaleX="1" scaleY="1" horizontalCenter="0" source="200001_png" y="6"/>
+	<e:Label id="boxSchadule" text="(1200/1200)" size="18" anchorOffsetX="0" anchorOffsetY="0" height="20" y="76" verticalAlign="middle" textAlign="center" textColor="0xD1C28F" horizontalCenter="0"/>
+	<e:Image id="lingqu" y="34" horizontalCenter="0" source="yilingqu" visible="false"/>
+	<e:Group id="redPoint" y="3" right="0" visible="false">
+		<e:Image source="zjmhongdian"/>
+	</e:Group>
+	<e:Label id="count" text="999" x="20" y="53" size="16" textColor="0xddd3b1"/>
+</e:Skin>

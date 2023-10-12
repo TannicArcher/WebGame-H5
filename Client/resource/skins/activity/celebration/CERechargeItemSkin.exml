@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CERechargeItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="120" height="100">
+	<w:Config id="1586b362dfe"/>
+	<e:Image id="ball" source="ce_little_egg_0" horizontalCenter="0" top="14"/>
+	<e:Image id="ball0" horizontalCenter="0" source="ce_egg_selected" top="0"/>
+	<e:Image y="68" scaleX="1.2" scaleY="1.2" source="cd_rechargebg2" anchorOffsetX="0" scale9Grid="9,2,60,17" x="13"/>
+
+	<e:Group y="71" horizontalCenter="0">
+		<e:Label text="（" size="12" anchorOffsetX="0" anchorOffsetY="0" height="20" y="0" verticalAlign="middle" textAlign="center" textColor="0xD1C28F" x="0"/>
+		<e:Label id="now" text="1280" size="12" anchorOffsetX="0" anchorOffsetY="0" height="20" y="10" verticalAlign="middle" textAlign="center" textColor="0xD1C28F" x="0"/>
+		<e:Label text="/" size="12" anchorOffsetX="0" anchorOffsetY="0" height="20" y="20" verticalAlign="middle" textAlign="center" textColor="0xD1C28F" x="10"/>
+		<e:Label id="target" text="1280" size="12" anchorOffsetX="0" anchorOffsetY="0" height="20" y="20" verticalAlign="middle" textAlign="center" textColor="0xD1C28F" x="10"/>
+		<e:Label text="）" size="12" anchorOffsetX="0" anchorOffsetY="0" height="20" y="30" verticalAlign="middle" textAlign="center" textColor="0xD1C28F" x="20"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0" verticalAlign="bottom"/>
+		</e:layout>
+	</e:Group>
+
+	<e:Image id="already" y="62" rotation="-35" source="yilingqu" horizontalCenter="0"/>
+	<e:Image id="redPoint" source="zjmhongdian" touchEnabled="false" y="3" horizontalCenter="22"/>
+</e:Skin>

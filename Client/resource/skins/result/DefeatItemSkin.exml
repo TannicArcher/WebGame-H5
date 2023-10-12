@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DefeatItemSkin" width="372" height="79" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="icon" source="zjmduanzao" left="20" verticalCenter="0"/>
+	<e:Label id="iconName" text="首充提升海量战力" size="20" verticalCenter="0.5" textColor="0xf8b141" left="106"/>
+	<e:Label id="desc" text="可提升" size="18" width="150" textAlign="center" horizontalCenter="53" textColor="0xf8b141" verticalCenter="0" visible="false"/>
+	<e:Button id="openRole0" label="前往"  width="96" x="271" skinName="Btn6Skin" verticalCenter="0" visible="false"/>
+	<e:Image id="method" source="siwangydqh_png" verticalCenter="0" x="55" visible="false"/>
+	<e:Image id="up" source="tongyongup" verticalCenter="0" horizontalCenter="12.5" visible="false"/>
+	<e:Group right="15" verticalCenter="4.5">
+		<e:Label id="jump" text="前往" size="20" textColor="0x6bce08" x="-40" y="-6" scaleX="1" scaleY="1"/>
+	</e:Group>
+
+	<e:Image source="tongyongline" y="74" width="370"/>
+</e:Skin>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KFInvasionJiangLiTishiSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0"/>
+	<e:Group verticalCenter="0" horizontalCenter="0" width="400">
+		<e:Image   source="tongyongtip1" left="0" right="0" top="0" bottom="0" scale9Grid="9,7,10,8"/>
+		<e:Group width="400" y="0" height="41" horizontalCenter="0">
+			<e:Image source="teshuwenzibg" left="0" right="0"/>
+			<e:Label id="nameTxt" text="奖励说明" size="24" textColor="0xd1c28f" y="8" horizontalCenter="0"/>
+			<e:Label id="nameTxt0" text="护盾奖励" size="24" bold="true" textColor="0xD1C28F" horizontalCenter="0" verticalCenter="0" x="127" y="19" visible="false"/>
+		</e:Group>
+		<e:Image id="giveUp" source="chatclose" y="0" right="0"/>
+		<e:Group top="50" horizontalCenter="0" bottom="5">
+			<e:Group x="5" y="0">
+				<e:Label text="归属奖" size="22" bold="true" x="0" y="0" scaleX="1" scaleY="1" textColor="0xFF00FF"/>
+				<e:Group x="0" y="30">
+				<e:Label text="归属者同行会在场景内成员可获得：" size="18" bold="true" x="0" y="0" scaleX="1" scaleY="1" textColor="0x00FF00"/>
+				<e:List id="belongReward1" x="2" y="25" itemRendererSkinName="ItemSkin" width="474" scaleX="0.8" scaleY="0.8">
+					<e:layout>
+						<e:TileLayout/>
+					</e:layout>
+
+				</e:List>
+				<e:Label text="归属者行会几率获得拍卖品：" size="18" bold="true" x="0" y="190" scaleX="1" scaleY="1" textColor="0xFFFF00"/>
+				<e:List id="saleReward1" x="2" y="215" width="474" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8">
+					<e:layout>
+						<e:TileLayout/>
+					</e:layout>
+
+				</e:List>
+				<e:layout>
+					<e:VerticalLayout gap="7"/>
+				</e:layout>
+				</e:Group>
+			</e:Group>
+			<e:Group x="5" y="0">
+				<e:Label text="参与奖" size="22" bold="true" x="0" y="0" scaleX="1" scaleY="1" textColor="0x00ff00"/>
+				<e:Group y="30">
+				<e:Label text="参与者同行会在场景内成员可获得：" size="18" bold="true" x="0" y="0" scaleX="1" scaleY="1" textColor="0x00FF00"/>
+				<e:List id="belongReward0" x="2" y="25" width="474" scaleX="0.8" scaleY="0.8" itemRendererSkinName="ItemSkin">
+					<e:layout>
+						<e:TileLayout/>
+					</e:layout>
+
+				</e:List>
+				<e:Label text="参与者行会几率获得拍卖品：" size="18" bold="true" x="0" y="190" scaleX="1" scaleY="1" textColor="0xFFFF00"/>
+				<e:List id="saleReward0" x="2" y="215" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8" width="474">
+					<e:layout>
+						<e:TileLayout/>
+					</e:layout>
+
+				</e:List>
+				<e:layout>
+					<e:VerticalLayout gap="7"/>
+				</e:layout>
+				</e:Group>
+			</e:Group>
+			<e:Group x="0" y="212">
+				<e:Label text="1、首个对BOSS造成伤害的玩家可以获得归属" size="18" height="20" x="0.009999999999990905" y="0" textColor="0x9f946d"/>
+				<e:Label text="2、当归属的玩家被其他玩家击败，移交归属权" size="18" textColor="0x9F946D" height="20" x="0" y="24"/>
+				<e:Label text="3、BOSS死亡时最终归属的玩家获得归属奖励" size="18" textColor="0x9F946D" height="20" x="0.009999999999990905" y="47.66999999999996"/>
+			</e:Group>
+			<e:layout>
+				<e:VerticalLayout gap="10"/>
+			</e:layout>
+		</e:Group>
+
+
+	</e:Group>
+</e:Skin>

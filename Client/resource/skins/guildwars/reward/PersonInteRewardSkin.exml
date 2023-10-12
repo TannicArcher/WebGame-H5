@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PersonInteRewardSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="520" height="720">
+	<e:Image source="tongyongkuang3bg" left="0" right="0" top="0" bottom="0" scale9Grid="12,12,10,10"/>
+	<e:Image source="tongyongkuang3tou" left="0" right="0" y="0" scale9Grid="66,0,271,47"/>
+	<e:Group id="dinghong" height="181" bottom="0" left="6" right="6">
+		<e:Image x="0" top="0" source="bantoumingkuang3" width="255" bottom="0" />
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" width="255" right="0" />
+	</e:Group>
+	<e:Image source="shuxingbg4" y="41" horizontalCenter="0"/>
+	<e:Image source="teshuwenzibg" horizontalCenter="0" bottom="135"/>
+	<e:Label text="个人排名" size="24" textAlign="center" verticalAlign="middle" textColor="0xa67d44" horizontalCenter="0" y="11"/>
+	<e:Label text="积分排名奖励" size="20" textAlign="center" horizontalCenter="0" bottom="147" textColor="0x7e6437" bold="true"/>
+	<e:Scroller width="500" height="450" y="90"  horizontalCenter="0">
+		<e:List id="list1" x="3" y="4" itemRendererSkinName="GuildInteRewardItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>	
+	<e:Scroller width="490" horizontalCenter="0" bottom="20"  height="110">
+		<e:List id="list" x="0" y="449" itemRendererSkinName="PersonRewardRendererSkin">
+		<e:layout>
+			<e:HorizontalLayout gap="10"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Image source="tielian" y="45" horizontalCenter="-175"/>
+	<e:Image source="tielian" y="46" horizontalCenter="175"/>
+	<e:Image y="54" source="anwen1" horizontalCenter="110"/>
+	<e:Image y="54" scaleX="-1" source="anwen1" horizontalCenter="-110"/>
+	<e:Image source="jineng_json.jinengline1" scale9Grid="16,0,4,11" width="250" y="79" x="10"/>
+	<e:Image source="jineng_json.jinengline1" scale9Grid="16,0,4,11" width="280" scaleX="-1" y="79" right="10"/>
+	<e:Label y="56" text="个人积分排名奖励" size="20" textAlign="center" verticalAlign="middle" horizontalCenter="0" textColor="0x7e6437" bold="true"/>
+</e:Skin>

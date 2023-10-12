@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildManageItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" width="554" height="130">
+	<e:Image source="tongyonglabbg" y="0"   width="554" height="131" x="0" scale9Grid="41,32,48,23"/>
+	<e:Image id="manege" right="2" width="466" top="2" bottom="2" source="guildmn1_png"/>
+	<e:Rect id="progressblack" height="13" y="16" fillColor="0x111010" width="220" x="305"/>
+	<e:ProgressBar id="progress" width="220" height="13" x="305" y="16" value="60" skinName="bar5Skin"/>
+	<e:Image id="progressbg" x="290" y="12" width="248" source="jingyantiao4" scale9Grid="24,0,8,21"/>
+	<e:Label id="nameLab" text="2级管理大厅" x="24" y="11" size="22" textColor="0xd1c28f"/>
+	<e:Label id="needMoney" text="需资金：9999" x="290" y="76" size="18" textColor="0xd1c28f"/>
+	<e:Label id="levelLab" text="等级 99" x="228" y="14" size="18" textColor="0x9f946d"/>
+	<e:Label id="upLevelLab" text="升级要求管理大厅升到2级" x="24" y="40" size="18" textColor="0x20cb30"/>
+	<e:Label id="money" text="999999/5252" x="308" y="15" size="14" width="214" textAlign="center" textColor="0xefdda0"/>
+	<e:Button id="upBtn" y="60" label="升 级" width="100" height="46" skinName="Btn3Skin" right="20"/>
+	<e:Label id="buildingLab" text="决定行会等级" x="32" y="76" size="18" textColor="0x7e6437"/>
+	<e:Image source="tongyongdian2" x="16" y="77"/>
+	<e:Image id="buildImg" source="tongyongdian2" x="16" y="96"/>
+	<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" y="52" right="12"/>
+
+
+	
+</e:Skin>

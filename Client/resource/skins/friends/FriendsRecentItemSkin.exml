@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FriendsRecentItemSkin" height="90" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" width="90"  states="up,down" >
+	<e:Label id="label_name" text="玩家名六个字" size="16" textColor="0xFFB727" bottom="0" horizontalCenter="0" size.up="14" horizontalCenter.up="0" bottom.up="4" horizontalCenter.down="0" bottom.down="1"/>
+	<e:Group width="70" height="70" y="0" horizontalCenter="0" y.down="2">
+		<e:Image id="img_userIcon" source="{data.userIcon}" verticalCenter="0" horizontalCenter="0" width="60" height="60"/>
+		<e:Image id="imgBg" source="touxiangkuang1" scale9Grid="5,5,3,3" left="0" right="0" top="0" bottom="0"/>
+		<e:Image id="redPoint" source="zjmhongdian"   right="-10" top="-10" visible="false"/>
+		<e:Image includeIn="down" width="70" height="70" x="0" y="0" source="xuanzhongkuang2" scale9Grid="4,4,8,8"/>
+	</e:Group>
+
+	
+</e:Skin>

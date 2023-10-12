@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="hunguRongluMainSkin" height="600" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" width="480">
+	<w:Config id="1586b3b34b9"/>
+	<e:List id="itemList" height="360" itemRendererSkinName="ItemSkin"  width="400" horizontalCenter="0" verticalCenter="-120">
+		<e:layout>
+			<e:TileLayout requestedColumnCount="4"  verticalGap="20" requestedRowCount="3" paddingLeft="0" paddingTop="0" horizontalGap="14"/>
+		</e:layout>
+	</e:List>
+
+
+	
+	<e:Group id="btnGroup" horizontalCenter="0" bottom="20">
+		<e:Button id="smeltBtn" skinName="Btn1Skin" label="分  解" height="60" x="0" y="0" width="156"/>
+	</e:Group>
+	<e:Button id="backbtn" label="Button" skinName="Btn0Skin" icon="fanhui" right="10" bottom="10"/>
+	<e:Label id="fenjieText" text="分解可得" x="17" y="408" size="20" textColor="0xF8B141"/>
+	<e:Scroller x="104" y="374">
+		<e:Group width="334">
+			<e:List id="getItemList" height="124" itemRendererSkinName="ItemSkin" width="320" x="0" y="0">
+				<e:layout>
+				<e:HorizontalLayout gap="6"/>
+				</e:layout>
+			</e:List>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Scroller>
+
+</e:Skin>

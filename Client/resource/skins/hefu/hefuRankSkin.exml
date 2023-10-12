@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="hefuRankSkin" width="560" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="teshuwenzibg2" scaleY="-1" horizontalCenter="0" width="400" height="50" x="80" scaleX="1" top="0"/>
+		<e:Image id="title" horizontalCenter="0" x="211" scaleX="1" scaleY="1" source="biaoti_zhuangbeibang" top="0"/>
+		<e:Group id="infoBg" left="10" right="10" top="40" x="10" y="0" scaleX="1" scaleY="1" height="110">
+			<e:Image left="0" right="0" top="0" bottom="0" source="activity_headbg0_png"/>
+			<e:Image source="shuxingbg" scale9Grid="77,5,15,34" left="0" right="0" top="15" bottom="15" visible="false"/>
+			<e:Group left="28" y="36">
+			<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" x="0" y="0"/>
+			<e:Label id="actTime" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" x="90" y="0"/>
+			<e:Label id="actDesc" text="开服活动期间，率先达到指定等级获得限量奖励。" x="90" y="20" size="18" width="400" textColor="0xDFD1B5"/>
+			<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" x="0" y="20"/>
+			</e:Group>
+		</e:Group>
+
+		<e:Group id="rank" height="390" width="560" horizontalCenter="0" y="155">
+			<e:Image id="background" source="tongyongtip1" scale9Grid="7,6,11,12" left="0" right="0" top="0" bottom="0" touchEnabled="false" scaleX="1" scaleY="1"/>
+			<e:Image source="tongyongtip2" scale9Grid="18,18,2,4" touchEnabled="false" bottom="0" top="0" left="0" right="0" scaleX="1" scaleY="1"/>
+			<e:Group width="280" height="330" horizontalCenter="-135" y="4">
+				<e:Image source="zhandoulibg" top="0" scale9Grid="50,16,203,4" left="0" right="0" bottom="0"/>
+				<e:Image source="teshuwenzibg" width="240" y="18" horizontalCenter="0"/>
+				<e:List id="reward0" itemRendererSkinName="ItemSkin" horizontalCenter="0" verticalCenter="29">
+					<e:layout>
+					<e:TileLayout requestedRowCount="1" horizontalGap="0"/>
+					</e:layout>
+				</e:List>
+				<e:Label text="第一名" size="26" textColor="0xffff00" horizontalCenter="0" y="22" bold="true"/>
+				<e:Label id="name0" text="布拉格の神话" size="22" scaleX="1" scaleY="1" textColor="0x18a5eb" bottom="52" horizontalCenter="0" bold="true"/>
+				<e:Label id="attrValue0" text="3转100级" size="22" textColor="0xff9900" bottom="24" horizontalCenter="0"/>
+				<e:Image id="titleName" horizontalCenter="0" source="ch_41_png" y="61"/>
+			</e:Group>
+			<e:Group horizontalCenter="140" y="18">
+				<e:Group x="-109" y="32" width="270" height="96">
+					<e:Image anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="7,6,11,12"/>
+					<e:Image anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" source="tongyongtip2" scale9Grid="19,18,2,6"/>
+					<e:List id="reward1" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8" verticalCenter="0" right="10">
+						<e:layout>
+						<e:TileLayout requestedRowCount="1" horizontalGap="0"/>
+						</e:layout>
+					</e:List>
+					<e:Label text="布拉格の神话" id="name1" size="18" textColor="0x18a5eb" x="10" y="40"/>
+					<e:Label id="attrValue1" text="3转100级" size="18" scaleX="1" scaleY="1" textColor="0xff9900" x="10" y="66"/>
+					<e:Label text="第2名" size="20" textColor="0xffff00" x="10" y="14"/>
+				</e:Group>
+				<e:Group x="-99" y="42" width="270" height="96">
+					<e:Image anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="7,6,11,12"/>
+					<e:Image anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" source="tongyongtip2" scale9Grid="19,18,2,6"/>
+					<e:List id="reward2" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8" verticalCenter="0" right="10">
+						<e:layout>
+						<e:TileLayout requestedRowCount="1" horizontalGap="0"/>
+						</e:layout>
+					</e:List>
+					<e:Label text="布拉格の神话" id="name2" size="18" scaleX="1" scaleY="1" textColor="0x18a5eb" x="10" y="40"/>
+					<e:Label id="attrValue2" text="3转100级" size="18" scaleX="1" scaleY="1" textColor="0xff9900" x="10" y="66"/>
+					<e:Label text="第3名" size="20" textColor="0xffff00" x="10" y="14"/>
+				</e:Group>
+				<e:Group x="80" y="52" width="270" height="96">
+					<e:Image anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="7,6,11,12"/>
+					<e:Image anchorOffsetY="0" scaleX="1" scaleY="1" left="0" right="0" top="0" bottom="0" source="tongyongtip2" scale9Grid="19,18,2,6"/>
+					<e:List id="reward3" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8" verticalCenter="0" right="10">
+						<e:layout>
+						<e:TileLayout requestedRowCount="1" horizontalGap="0"/>
+						</e:layout>
+					</e:List>
+					<e:Label text="第4-20名" size="20" textColor="0xffff00" verticalCenter="0" x="10"/>
+				</e:Group>
+				<e:layout>
+					<e:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="6"/>
+				</e:layout>
+
+			</e:Group>
+
+
+		<e:Group bottom="10" height="34" horizontalCenter="0">
+			<e:Group x="20" verticalCenter="0">
+				<e:Label id="attr" text="我的装备总评分：" size="22" x="0" textColor="0x9f946d" y="2"/>
+				<e:Label id="myAttrValue" text="300 0000" size="22" x="170" textColor="0xf8b141" y="0"/>
+				<e:layout>
+					<e:HorizontalLayout verticalAlign="middle"/>
+				</e:layout>
+			</e:Group>
+			<e:Group verticalCenter="0" right="20">
+				<e:Label text="我的排名：" size="22" textColor="0x9f946d" x="0" y="2"/>
+				<e:Label id="myRanking" text="20名以后" size="22" textColor="0xf8b141" x="108" y="0"/>
+				<e:layout>
+					<e:HorizontalLayout verticalAlign="middle"/>
+				</e:layout>
+			</e:Group>
+			<e:layout>
+				<e:HorizontalLayout gap="19" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+</e:Group>
+		<e:Scroller scrollPolicyH="off" scrollPolicyV="on" left="10" right="10" top="108" bottom="0" visible="false">
+			<e:List id="rankList" y="8" x="14" useVirtualLayout="false" itemRendererSkinName="OSARankListItemSkin" visible="false">
+			<e:layout>
+				<e:VerticalLayout gap="-1" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Button id="seek" label="查看排行" skinName="Btn1Skin" scaleX="1" scaleY="1" bottom="10" horizontalCenter="0"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" scaleX="1" scaleY="1" horizontalCenter="66" bottom="46" visible="false"/>
+
+	</e:Group>
+</e:Skin>

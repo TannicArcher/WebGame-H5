@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KfArenaMacthSkin" width="580" height="731" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15dbfa8e636"/>
+	<e:Group id="matchGroup" x="39" y="68">
+		<e:Image anchorOffsetY="0" source="tfb_bg_png" scale9Grid="49,382,295,6" width="464" x="38" y="0"/>
+		<e:Group id="roleGroup" height="430" width="620" scaleX="0.8" scaleY="0.8" x="0" y="17">
+			<ns1:BaseComponent id="member1" scaleX="0.8" scaleY="0.8" y="42.75" skinName="teamFbRoleItem" className="KfArenaRoleItemRender" horizontalCenter="-175" width="450" height="420"/>
+			<ns1:BaseComponent id="member2" scaleX="0.8" scaleY="0.8" y="41.5" skinName="teamFbRoleItem" className="KfArenaRoleItemRender" horizontalCenter="225" width="450" height="420"/>
+			<ns1:BaseComponent id="leader" y="-26.5" scaleX="1.1" scaleY="1.1" skinName="teamFbRoleItem" className="KfArenaRoleItemRender" horizontalCenter="18.5" width="450" height="420"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="waitGroup" y="68" horizontalCenter="0" visible="false">
+		<e:Image anchorOffsetY="0" source="tfb_bg_png" scale9Grid="49,382,295,6" width="464" x="38" y="0"/>
+	</e:Group>
+	<e:Label id="duanLabel" size="20" text="段位： 黄金" y="449" bold="true" textColor="0x35E62D" x="82"/>
+	<e:Label id="scoreLabel" size="20" text="积分：1000" y="449" bold="true" textColor="0x35E62D" x="321"/>
+	<e:Label id="curMonthLabel" size="20" text="本月战绩：1胜1负1平" y="501" bold="true" textColor="0x35E62D" x="78"/>
+	<e:Label id="historyLabel" size="20" text="历史战绩：1胜1负1平" y="500" bold="true" textColor="0x35E62D" anchorOffsetY="0" height="21" x="321"/>
+	<e:Group y="544" horizontalCenter="0" x="226">
+		<e:Label text="剩余次数：" x="0" y="0" size="20"/>
+		<e:Label id="countLabel" text="6/6" x="100" y="0" size="20" textColor="0x00FF00"/>
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Group y="576" horizontalCenter="0.5" x="163">
+		<e:Label text="每天恢复" x="0" y="0" size="20"/>
+		<e:Label id="dailyTime" text="5" x="10" y="10" size="20" textColor="0x00FF00"/>
+		<e:Label text="次，最多累计" x="10" y="10" size="20"/>
+		<e:Label id="maxTime" text="10" x="20" y="20" size="20" textColor="0x00FF00"/>
+		<e:Label text="次" x="30" y="30" size="20"/>
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Button id="disBtn" label="解散队伍" width="120" height="50" skinName="Btn1Skin" y="628" horizontalCenter="-117" x="113"/>
+	<e:Button id="macthBtn" label="开始匹配" width="120" height="50" skinName="Btn1Skin" y="628" horizontalCenter="117" x="347"/>
+	<e:Label id="macthingLabel" size="20" text="匹配中..." y="680" bold="true" textColor="0x35E62D" x="366" visible="false"/>
+
+
+
+
+
+
+
+
+</e:Skin>

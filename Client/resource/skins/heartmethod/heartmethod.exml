@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="heartmethod" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="554" height="716" states="open,narmal,stage,max"  height.max="716">
+
+	<e:Image id="ditu" horizontalCenter="0" source.narmal="heartmethodBG_png" source.open="heartmethodBG_png" source="heartmethodBG_png" scale9Grid.open="8,590,539,10" horizontalCenter.open="0" height.open="708" horizontalCenter.narmal="0" y.narmal="0" scale9Grid="6,597,544,9" height="716" width="554" top="0"/>
+
+	<e:Group id="showGroup" horizontalCenter="0.5" height="105" top="252">
+		<e:Image id="bigIcon" scaleX="1" scaleY="1" source="wydBg" horizontalCenter="0" visible.max="false" visible.stage="false" visible.narmal="false" verticalCenter="0"/>
+		<e:Group id="effGroup" scaleX="1" scaleY="1" horizontalCenter="0" visible.open="false" verticalCenter="0"/>
+	</e:Group>
+
+	<e:Group name="心法" left="0" right="0" top="0" bottom="0">
+
+		<e:Group y="89" height="160" visible.open="false" horizontalCenter.max="-227.5" horizontalCenter="-227.5">
+			<e:Image source="bantoutiaobg" rotation="90" top="0" bottom="0" scale9Grid="29,5,180,35" width="160" height="32" x="36"/>
+			<e:Label id="xinfaName" text="无影心法" italic="false" width="24" size="24" textColor="0xf8b141" verticalCenter="0" x="8"/>
+			<ns1:BaseComponent id="heartmethodStage" width="40" height="109" skinName="jiejiSkin" className="LevelImage" top="-37" horizontalCenter="19.5"/>
+		</e:Group>
+		
+
+		<e:Group height="77" x.max="30" x.stage="30" x.open="30" visible.open="false" height.narmal="77" y.narmal="419" horizontalCenter.max="0" horizontalCenter.stage="0" horizontalCenter.open="0" horizontalCenter.narmal="0" horizontalCenter="0" touchEnabled.stage="false" bottom="220">
+			<ns1:BaseComponent id="item1" skinName="heartmethodPosSkin" className="HeartMethodItemRenderer" x="0" y="0" skinName.stage="heartmethodPosSkin" className.stage="HeartMethodItemRenderer" className.narmal="HeartMethodItemRenderer"/>
+			<ns1:BaseComponent id="item2" skinName="heartmethodPosSkin" className="HeartMethodItemRenderer" y="0" x="100" skinName.stage="heartmethodPosSkin" className.stage="HeartMethodItemRenderer" className.narmal="HeartMethodItemRenderer"/>
+			<ns1:BaseComponent id="item3" skinName="heartmethodPosSkin" className="HeartMethodItemRenderer" x="200" y="0" skinName.stage="heartmethodPosSkin" className.stage="HeartMethodItemRenderer" className.narmal="HeartMethodItemRenderer"/>
+			<ns1:BaseComponent id="item4" skinName="heartmethodPosSkin" className="HeartMethodItemRenderer" x="300" y="0" skinName.stage="heartmethodPosSkin" className.stage="HeartMethodItemRenderer" className.narmal="HeartMethodItemRenderer"/>
+			<ns1:BaseComponent id="item5" skinName="heartmethodPosSkin" className="HeartMethodItemRenderer" y="0" x="400" skinName.stage="heartmethodPosSkin" className.stage="HeartMethodItemRenderer" className.narmal="HeartMethodItemRenderer"/>
+		</e:Group>
+		<e:Image id="fenjie" visible.open="false" source="fenjie" horizontalCenter="226" bottom="359"/>
+		<e:Image id="redPoint" source="zjmhongdian" horizontalCenter="251" visible.open="false" touchEnabled="false" bottom="418"/>
+		<e:Image id="skill" visible.open="false" source="wydIcon" horizontalCenter="-223" bottom="359"/>
+	</e:Group>
+	<e:Group id="xiabuditu" width="556" height="117" horizontalCenter="0" visible.open="false" bottom="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" />
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" />
+	</e:Group>
+	<e:Group id="fightGroup" horizontalCenter="0" top="90" visible.open="false" touchEnabled.max="false">
+		<!--<e:Image source="zhandoulibg" x="2" y="10"/>
+		<e:Image source="zjmzhandouli" x="0" y="0"/>-->
+		<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" visible.open="false"/>
+	</e:Group>
+	<e:Button id="xiangxishuxing" label="" horizontalCenter="152" visible.open="false" top="90">
+		<e:Skin states="up,down,disabled">
+		<e:Image width="100%" height="100%" source="tongyongxiangxi"/>
+		<e:Label id="labelDisplay0" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+	</e:Button>
+
+	<e:Label id="countLabel" text="心法已满阶" size="20" textAlign="center" horizontalCenter="0" textColor="0xd1c28f" visible.open="false" visible.stage="false" visible.narmal="false" bottom="41"/>
+
+	<e:Group id="shuxingbianhua" width="460" height="90" horizontalCenter="0" visible.open="false" horizontalCenter.narmal="0" horizontalCenter.max="0" horizontalCenter.stage="0" verticalCenter.max="187" bottom="126">
+		<e:Image id="nextAttBG0" source="shuxingbg" left="0" right="0" top="0" bottom="-10" scale9Grid="50,5,65,34" left.narmal="0" right.narmal="0" top.narmal="0" bottom.narmal="-7"/>
+		<e:Label id="nextAtt0" text="生命：xxx\n攻击：xxx\n物防：xxx\n法防：xxx\n追命伤害：xxx" size="18" textColor="0x2ECA22" height="92" width="160" textAlign="left" verticalAlign="middle" verticalCenter="3" horizontalCenter="140" visible.max="false" text.narmal="生命：xxx\n攻击：xxx\n物防：xxx\n法防：xxx\n追命伤害：xxx" height.narmal="92" horizontalCenter.narmal="140" verticalCenter.narmal="3"/>
+		<e:Image id="cursor0" source="jiantouyou" verticalCenter="0" horizontalCenter="0" visible.max="false"/>
+		<e:Label id="curAtt0" text="生命：xxx\n攻击：xxx\n物防：xxx\n法防：xxx\n追命伤害：xxx" size="18" height="92" width="160" textAlign="left" verticalAlign="middle" horizontalCenter="-100" verticalCenter="3" textColor="0x9F946D" horizontalCenter.max="36" verticalCenter.max="0" text.narmal="生命：xxx\n攻击：xxx\n物防：xxx\n法防：xxx\n追命伤害：xxx" horizontalCenter.narmal="-100" verticalCenter.narmal="3" height.narmal="92"/>
+	</e:Group>
+	<e:Group id="upInfo" bottom.stage="0" bottom.open="0" height="110" horizontalCenter="0" width="554" visible.open="false" width.narmal="554" verticalCenter.max="303" y.narmal="606" bottom="0">
+
+		<e:Label id="getItemTxt0" text="获取道具" size="20" textColor="0x00FF00" horizontalCenter="175" bottom="20" height="60" verticalAlign="middle" width="100" textAlign="center" visible.stage="false" visible.max="false"/>
+		<e:Button id="boostBtn" label="修 炼" skinName="Btn1Skin" width="160" height="60" horizontalCenter="0" bottom="13" label.stage="进 阶" visible.max="false"/>
+		<e:Group id="costGroup0" horizontalCenter="0" bottom="71" visible.stage="false" visible.max="false">
+			<e:Label id="expendLabel0" text="消耗: " size="20" bold.max="true" bold.stage="true" bold.open="true" textColor="0xD1C28F" x="0" y="12"/>
+			<e:Image id="icon0" source="200002_png" width="40" height="40" x="57" y="0"/>
+			<e:Label id="countLabel0" text="12000/100" size="20" textAlign="left" textColor="0xD1C28F" x="107" y="12"/>
+		</e:Group>
+		<e:Label id="conditionDesc" text="集齐5件开启修炼" includeIn="narmal" bottom="76" horizontalCenter="0" size="24" textColor="0x9F946D"/>
+		<e:Image id="redPoint0" touchEnabled="false" source="zjmhongdian" horizontalCenter="68" bottom="56" visible.max="false"/>
+
+	</e:Group>
+	<e:Group id="jihuoGroup" bottom.stage="37" bottom.narmal="37" height="160" visible.narmal="false" visible.stage="false" horizontalCenter.open="4" verticalCenter.max="241" visible.max="false" bottom.max="44" horizontalCenter="0" top.open="505">
+		<e:Label id="sysDescText0" text="无影心法可提升攻击效果\n\n4转可学习" textAlign="center" touchEnabled="false" horizontalCenter="0" y="0" textColor="0xF8B141" size="22" bold.max="true" bold.stage="true" bold.narmal="true" text.open="无影心法可提升攻击效果\n\n4转可学习" bold.open="true" bold="true"/>
+		<e:Button id="activeBtn0" label="学  习" skinName="Btn1Skin" horizontalCenter="0" height="60" width="180" bottom="10"/>
+		<e:Image id="redPoint1" source="zjmhongdian" horizontalCenter="83" touchEnabled="false" bottom="53"/>
+
+	</e:Group>
+	<e:Group width="500" height="60" id="starGroup" scaleX="0.8" scaleY="0.8" visible.open="false" horizontalCenter="0" bottom="298"/>
+	<e:Button id="leftBtn" label="按钮" skinName="Btn0Skin" icon="jiantouxuan" scaleX="1.2" scaleY="1.2" visible.open="false" left.stage="68" left.narmal="68" left.open="68" horizontalCenter="-185.6" verticalCenter="-139.8"/>
+	<e:Image id="redPoint2" source="zjmhongdian" visible.open="false" touchEnabled="false" horizontalCenter="-181" horizontalCenter.narmal="-179" verticalCenter.narmal="-154" verticalCenter="-154"/>
+	<e:Button id="rightBtn" label="按钮" skinName="Btn0Skin" icon="jiantouxuan" scaleX="-1.2" scaleY="1.2" width="78" visible.open="false" horizontalCenter="201.2" verticalCenter="-139.8"/>
+	<e:Image id="redPoint3" source="zjmhongdian" visible.open="false" touchEnabled="false" horizontalCenter="193" verticalCenter="-154"/>
+</e:Skin>

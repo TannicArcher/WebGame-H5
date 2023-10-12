@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GainGoodsItemSkin" width="430" height="60" currentState="up" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down" >
+	<w:Config id="15c493970d9"/>
+	<e:Image left="0" right="0" top="0" bottom="0" source="btn42" scale9Grid="16,3,54,31" top.down="0" bottom.down="0" source.down="btn40"/>
+	<e:Image source="anwen2" x="44" verticalCenter="0" visible="false"/>
+	<e:Image id="dir" verticalCenter="0" scale9Grid="6,5,9,10" source="jiantouxia" rotation="270" right="21"/>
+	<e:Label id="desc" text="击杀附近的人" size="22" touchEnabled="false" bold="true" verticalCenter="0" textColor="0x20ad2a" textColor.down="0xd1c28f" left="44"/>
+	<e:Label id="desc2" text="前往" size="22" touchEnabled="false" verticalCenter="0" textColor="0xd1c28f" bold="true" right="53"/>
+	<e:Group id="stars" verticalCenter="0" left="200" visible="false">
+		<e:Image id="star1" width="20" height="20" x="127" y="4"   source="star3"/>
+		<e:Image id="star2" width="20" height="20" x="161" y="4"   source="star3"/>
+		<e:Image id="star3" width="20" height="20" x="194" y="4"   source="star3"/>
+		<e:Image id="star4" width="20" height="20" x="227" y="4"   source="star3"/>
+		<e:Image id="star5" width="20" height="20" x="259" y="4"   source="star3"/>
+		<e:layout>
+			<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

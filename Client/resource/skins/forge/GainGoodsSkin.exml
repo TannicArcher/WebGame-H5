@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GainGoodsSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586bddbcf0"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>	
+	<e:Group id="bgGroup" width="450" verticalCenter="-28"  horizontalCenter="0">
+		<e:Group x="0" y="0" width="450" >
+			<e:Image id="frame" source="tongyongkuang3bg" scale9Grid="9,5,30,27"   left="0" right="0" touchEnabled="false" x="0"   top="0" bottom="0"/>
+			<e:Image horizontalCenter="0" y="-3" source="tongyongditu_png"/>
+			<e:Image id="tou" y="0" source="tongyongkuang3tou" left="0" right="0" scale9Grid="66,0,269,47" x="0"  />
+			<e:Label id="titleTxt" horizontalCenter="0" y="12" text="道具不足" size="22" x="180" bold="true" textColor="0xa67d44"  />
+			<e:Group id="goodsGroup" touchEnabled="false" y="60" width="400" height="303" x="29"  >
+				<e:Image source="teshuwenzibg" y="-18"   horizontalCenter="0"/>
+				<e:Label text="商城购买" y="-8" size="22" bold="true" textColor="0x9f946d" horizontalCenter="0"/>
+				<ns1:BaseComponent id="price" x="104" y="134" skinName="PriceIconSkin" className="PriceIcon"/>
+				<e:Label y="144" textColor="0xA89C88" text="总价：" size="18" x="213" bold="true"/>
+				<e:Label y="144" textColor="0xA89C88" text="单价：" size="18" x="59" bold="true"/>
+				<e:Image y="180" scale9Grid="6,6,3,3" width="80" height="37" source="shuzibg" horizontalCenter="0"/>
+				<e:TextInput id="countTxt" textColor="0xDFD1B5" text="1" maxChars="6" y="180" skinName="skins.TextInputSkin" height="37" horizontalCenter="0" width="68"/>
+				<e:Button id="decBtn" label="按钮" skinName="Btn0Skin" icon="btn-" x="100" verticalCenter="48"/>
+				<e:Button id="addBtn" label="按钮" skinName="Btn0Skin" icon="btnadd" right="100" verticalCenter="48"/>
+				<e:Button id="dec10Btn" label="-10" skinName="Btn0Skin" icon="btnmax" rotation="180" x="80" verticalCenter="48"/>
+				<e:Button id="add10Btn" label="+10" skinName="Btn0Skin" icon="btnmax" right="30" verticalCenter="48"/>
+				<ns1:BaseComponent id="totalPrice" x="255.99" y="134" skinName="PriceIconSkin" className="PriceIcon"/>
+				<e:Button id="buyBtn" label="购 买" y="240" skinName="Btn3Skin" width="110" height="46" right="70"/>
+				<e:Button id="topUpBtn" label="充 值" y="240" skinName="Btn3Skin" x="70" width="110" height="46"/>
+			</e:Group>
+			<e:Group id="listGroup" touchEnabled="false" width="450" x="0" y="0"  >
+				<ns1:BaseComponent id="itemIcon" y="89" skinName="ItemIconSkin" className="ItemIcon" horizontalCenter="0" locked="true"/>
+				<e:Label id="nameTxt" text="强化石啊啊" y="167" size="22" textAlign="left" bold="true" textColor="0x9f946d" horizontalCenter="0" locked="true"/>
+				<e:Group id="gainListGroup" y="352" width="450" x="0" >
+				<e:Group x="6">
+					<e:Label text="获取途径" size="20" bold="true" textColor="0x7e6437" x="177" y="15"/>
+					<e:Image source="tongyongline" scale9Grid="27,0,166,3" width="350" x="44" y="0"/>
+					<e:Image source="tielian" x="52"   y="3"/>
+					<e:Image source="tielian" x="364" y="3"/>
+					<e:Image source="shuxingline" x="0" scale9Grid="18,8,2,1" width="220" y="35"/>
+					<e:Image source="shuxingline" scale9Grid="18,8,2,1" width="220" scaleX="-1" x="438" y="35"/>
+				</e:Group>
+				<e:List id="gainList" itemRendererSkinName="GainGoodsItemSkin" x="10" y="50">
+					<e:layout>
+					<e:VerticalLayout gap="2"/>
+					</e:layout>
+				</e:List>
+				</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group id="tipGroup" touchChildren="false" touchEnabled="false" y="487" x="25">
+			<e:Image source="bantoutiaobg" height="30" y="0" horizontalCenter="0" scale9Grid="128,2,15,41" width="300"/>
+			<e:Label text="点击空白区域关闭窗口" size="20" bold="true" textColor="0x7e6437" y="5" horizontalCenter="0"/>
+			<e:Button id="closeBtn" label="按钮" y="-17" skinName="Btn0Skin" right="-10" x="188"   visible="false"/>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout gap="5" horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

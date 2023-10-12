@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="FullBagSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="1586b35a531"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.7"/>
+	<e:Button id="closeBtn0" label="按钮" skinName="Btn0Skin" visible="false"/>
+
+	<e:Group width="350" height="250" verticalCenter="0" horizontalCenter="0">
+		<e:Image source="tongyongkuang3bg" left="0" top="0" bottom="0" right="0" scale9Grid="34,20,1,1"/>
+		<e:Image source="tongyongkuang3tou" left="0" scale9Grid="67,5,272,37" right="0"/>
+
+		<e:Button skinName="Btn1Skin" label="前往熔炼" id="sureBtn" horizontalCenter="0" bottom="20"/>
+		<e:Label text="提  示" y="10" size="24" bold="true" horizontalCenter="0.5" textColor="0xf8b141"/>
+		<e:Label text="背包空间不足         ，请先清理背包，以免不能获得奖励。" size="18" width="300" lineSpacing="10" textAlign="center" horizontalCenter="0" textColor="0xd1c28f" y="90"/>
+		<e:Label id="numText" text="20" size="20" width="40" lineSpacing="10" textAlign="center" textColor="0xFF0000" y="89" horizontalCenter="-17.5" bold="true"/>
+		<e:Button id="closeBtn1" label="按钮" skinName="Btn0Skin" right="0" bottom="0" width="80" height="80" visible="false"/>
+		<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" right="0"/>
+	</e:Group>
+</e:Skin>

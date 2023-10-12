@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="highRewardItemSkin" width="340" currentState="normal" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="87" states="normal,kelingqu,done"  height.done="88">
+	<w:Config id="1586d1506c8" />
+	<e:Image bottom="0" source="ny_projectbg" left="-5" top="0" scale9Grid="83,19,5,5" right="-7"/>
+
+
+
+
+	<e:Group x="8" verticalCenter="0.5" verticalCenter.kelingqu="-16.5" visible.done="false">
+		<e:Label id="count" text="350" x="0" y="1" size="18" textColor="0x00ff00"/>
+		<e:Label text="嗨积分" x="48" y="0" size="18" textColor="0xd1c28f" bold="true"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+	<e:Image id="lingqu" source="yilingqu" includeIn="done" left="10" verticalCenter="0" rotation="-35"/>
+	<e:Button id="get" label="可领取" includeIn="kelingqu" x="19" skinName="Btn6Skin" verticalCenter="16.5"/>
+	<e:List id="list" x="117" anchorOffsetY="0" scaleX="0.8" scaleY="0.8" itemRendererSkinName="ItemSkin" anchorOffsetX="0" verticalCenter="-0.5">
+
+		<e:layout>
+			<e:HorizontalLayout gap="-4"/>
+		</e:layout>
+	</e:List>
+	<e:Image id="redPoint" width="20" height="20" horizontalCenter="-89" source="zjmhongdian" bottom="33" includeIn="kelingqu" scaleX="0.8" scaleY="0.8"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

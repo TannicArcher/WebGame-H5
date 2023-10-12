@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="PunchExchangeSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group verticalCenter="-50" horizontalCenter="0" width="520" height="720">
+		<e:Image  source="tongyongkuang3bg" scale9Grid="7,3,34,37" left="0" right="0" top="2" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="74,5,261,37" left="0" right="0"/>
+		<e:Label text="符文兑换" y="12" size="24" horizontalCenter="0" bold="true" textColor="0xbd600d"/>
+		<e:Image source="tongyongtip1" width="378" height="610" y="44" scale9Grid="5,5,15,15" x="6"/>
+		<e:Scroller width="368" height="600" y="48" x="10">
+			<e:List id="exchangelist" x="265" y="2" itemRendererSkinName="PunchExchangeItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="0"/>
+			</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Scroller width="141" height="600" y="48" x="369">
+			<e:List id="equiplist" x="24.24" y="-22.73" itemRendererSkinName="PunchExchangeBtnSkin">
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<e:Group bottom="3" left="6" right="6" height="61" x="0" y="699" scaleX="1" scaleY="1">
+			<e:Image source="tongyongtip1" left="0" right="0" top="0" bottom="0" scale9Grid="11,11,1,1"/>
+			<e:Group verticalCenter="0.5" y="-13" scaleX="1" scaleY="1" right="173">
+				<e:Image x="-2" y="-1" width="26" height="26" source="hejisuipian"/>
+				<e:Label id="suipian" text="2000" size="22" x="163" textColor="0xF8B141" scaleX="1" scaleY="1" verticalCenter="0.5" y="-12"/>
+				<e:layout>
+				<e:HorizontalLayout gap="5" verticalAlign="bottom"/>
+				</e:layout>
+			</e:Group>
+			<e:Group verticalCenter="0.5" y="-13" scaleX="1" scaleY="1" left="74">
+				<e:Image x="-2" y="-1" source="hejisuipian1"/>
+				<e:Label id="suipian1" text="2000" size="22" x="163" textColor="0xF8B141" scaleX="1" scaleY="1" verticalCenter="0.5" y="-12"/>
+				<e:layout>
+				<e:HorizontalLayout gap="5" verticalAlign="bottom"/>
+				</e:layout>
+			</e:Group>
+			<e:Label id="goturn" text="碎片兑换" textColor="0x00ff00" bold="true" size="20" verticalCenter="0.5" right="35"/>
+		</e:Group>
+	</e:Group>
+</e:Skin>

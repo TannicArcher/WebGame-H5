@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChengjiuItemSkin" width="430" height="91" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15aeb974388"/>
+	<e:Image source="task_json.cj_itembg" x="0" y="0"  width="430"/>
+	<e:Label id="titleTF" text="累计登录10天累计登录1" x="30.5" y="2.5" size="16" fontFamily="黑体" textColor="0xffb82a"  width="231.33"  height="19.33"/>
+	<e:Label id="progressTF" text="进度：19999/29999" x="284" y="17.5" size="16" fontFamily="黑体" textColor="0xFFB82A"  width="193.66"  height="19.33"/>
+	<e:Button id="btn" label="按钮" x="296.5" skinName="Btn1Skin" scaleX="0.9" scaleY="0.8" y="40"/>
+	<e:Scroller width="148" height="62" x="50" y="21"  >
+		<e:List id="list" itemRendererSkinName="ItemSkin" height="76.25" x="45" y="-2"  width="182.5" scaleX="0.8" scaleY="0.8" >
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="heirloomItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="76" height="90">
+	<w:Config id="1586b362dfe"/>
+	<ns1:BaseComponent id="itemIcon" className="HeirloomItemIcon" horizontalCenter="0" verticalCenter="-9" skinName="heirloomItemIcon"/>
+	<e:Image id="bless" horizontalCenter="0" verticalCenter="-12" source="" visible="false"/>
+	<e:Image id="lvBg" source="heir_json.heirjiao" y="-2" right="0"/>
+	<e:Image id="lv" source="heir_json.heir_01" y="0" right="0"/>
+	<e:Image id="selectIcon" width="76" height="76" source="qianghuaxzk" scale9Grid="4,4,8,8" y="-1" horizontalCenter="0" visible="false"/>
+	<e:Label id="equipName" text="传世之刃" size="14" horizontalCenter="0" verticalCenter="36" textColor="0xd1c28f"/>
+	<e:Group id="redPoint" right="0" visible="false">
+		<e:Image   source="zjmhongdian"/>
+	</e:Group>
+</e:Skin>

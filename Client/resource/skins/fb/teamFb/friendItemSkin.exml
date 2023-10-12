@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="friendItemSkin" width="450" height="107" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image left="0" right="0" top="0" bottom="0" source="tongyonglabbg" scale9Grid="42,20,48,41"/>
+	<e:Label id="labelName" text="名字有六个字" x="99" y="23" size="18" textColor="0xBD600D" bold="true"/>
+	<e:Label id="labelGuild" text="行会名字多少" x="99" y="69" size="16" textColor="0x9F946D"/>
+	<e:Label id="labelLv" text="12转100级" x="99" y="47" size="16" textColor="0x9F946D"/>
+	<e:Image id="imgHead" source="head_10" x="22" height="62" width="62" verticalCenter="0"/>
+	<e:Image id="imgBg" x="18" height="70" width="70" source="touxiangkuang0" scale9Grid="4,4,5,5" verticalCenter="0"/>
+	<e:Button id="inviteBtn" skinName="Btn1Skin" label="发送邀请" name="changeBtn" x="280" width="140" verticalCenter="0"/>
+</e:Skin>

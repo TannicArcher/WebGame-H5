@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ApplyItemSkin" width="400" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<e:Image left="2" right="2" top="2" bottom="2" source="tongyonglabbg" scale9Grid="38,27,49,29"/>
+	<e:Label text="战斗力：" x="293" y="10" size="16" textColor="0x9F946D" visible="false"/>
+	<e:Label id="nameLab" text="公会名字六个" x="60" y="16" size="20" bold="true" textColor="0xf8b141"/>
+
+
+
+	<e:Group y="45" x="60">
+		<e:Label text="会长:" x="0" y="0" size="16" textColor="0x9f946d"/>
+		<e:Label id="president" text="会长名字很长" x="40" y="0" size="16" textColor="0xd1c28f"/>
+		<e:Label text="  " x="150" y="10" size="16" textColor="0x5186FD"/>
+		<e:Label text="人数:" x="140" y="0" size="16" textColor="0x49abc9"/>
+		<e:Label id="member" text="19/50" x="180" y="0" size="16" textAlign="left" textColor="0x49abc9"/>
+		<e:layout>
+			<e:HorizontalLayout gap="2"/>
+		</e:layout>
+	</e:Group>
+	<e:Button id="applyBtn" label="申请" width="100" height="40" verticalCenter="10" skinName="Btn3Skin" right="10"/>
+	<e:Label id="numLab" text="100" size="24" verticalCenter="0" bold="true" horizontalCenter="-170" textColor="0xbd600d"/>
+	<e:Label id="attrLabel" text="战力要求:50W" y="12" size="16" textColor="0xf8b141" right="10"/>
+
+
+	
+</e:Skin>

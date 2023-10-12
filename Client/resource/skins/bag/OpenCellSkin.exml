@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OpenCellSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="1586b38ac83"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group width="400" height="300" horizontalCenter="0" verticalCenter="0">
+		<e:Image left="0" right="0" top="0" bottom="0" source="tongyongkuang3bg" scale9Grid="13,5,29,13"/>
+		<e:Image source="tongyongkuang3tou" y="0" width="400" x="0"/>
+		<ns1:BaseComponent id="price" skinName="PriceIconSkin" className="PriceIcon" y="194" x="229"/>
+		<e:Button id="decBtn" label="按钮" skinName="Btn0Skin" icon="btn-" width="50" height="50" bottom="140" horizontalCenter="-100"/>
+		<e:Button id="addBtn" label="按钮" skinName="Btn0Skin" icon="btnadd" width="50" height="50" bottom="140" horizontalCenter="100"/>
+		<e:Image width="140" height="52" scale9Grid="6,6,3,3" source="shuzibg" horizontalCenter="0" bottom="141"/>
+		<e:Label id="count" text="1" width="120" textAlign="center" size="24" height="50" verticalAlign="middle" horizontalCenter="0" bottom="143"/>
+		<e:Button skinName="Btn1Skin" label="确  定" id="sureBtn" bottom="20" horizontalCenter="80" width="130" height="50"/>
+		<e:Button skinName="Btn1Skin" label="取  消" id="cancelBtn" bottom="20" horizontalCenter="-80" width="130" height="50"/>
+		<e:Label text="开启背包" y="12" size="24" bold="true" horizontalCenter="0" textColor="0xbd600d"/>
+	</e:Group>
+</e:Skin>

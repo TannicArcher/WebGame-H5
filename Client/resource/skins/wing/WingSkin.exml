@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WingSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:PriceIcon="PriceIcon.*" xmlns:ns1="*" width="580" height="770">
+	<w:Config id="15d35efe574" />
+	<e:Group id="weijihuo" horizontalCenter="0" top="52" width="560" height="718" visible="false">
+		<e:Image id="bgImg"    top="0" bottom="0" left="0" right="0"
+		         source="wingstartbg_png" />
+		<e:Image id="dor1" source="wingbg2_png" x="2" top="0" bottom="0" width="278" />
+		<e:Image id="dor2" source="wingbg2_png" x="558" top="0" bottom="0" width="278" scaleX="-1" />
+		<e:Group id="wing" width="553" height="304" x="3" y="204"    >
+			<e:Image id="wingMid" source="wingbg3_png" horizontalCenter="0" verticalCenter="-4.5" x="78" y="14" 
+			          />
+			<e:Group id="wingeff" x="-14" y="-257" width="580" height="770" />
+			<e:Image id="wingR" source="wingbg1_png" x="321" y="45" rotation="-20"   />
+			<e:Image id="wingL" source="wingbg1_png" x="232" y="45" scaleX="-1" rotation="20"  />
+		</e:Group>
+		<e:Button id="openStatusBtn" skinName="Btn1Skin" label="激 活 羽 翼" width="200" height="70" bottom="94"
+		          horizontalCenter="0" />
+		<e:Label id="jihuolv" text="16级可激活" size="20" horizontalCenter="0" bottom="70" textColor="0x7e6437" />
+		<e:Rect id="shan" width="559" height="719" x="0" y="0"   fillColor="0xeee9e3"
+		        visible="false" />
+	</e:Group>
+	<e:Group id="jihuo" top="52" horizontalCenter="0" bottom="0" width="560">
+		<e:Image source="wingbg4_png" width="554" horizontalCenter="0" top="0" bottom="2" />
+		<e:Image id="wingImg" touchEnabled="false" scaleX="0.8" scaleY="0.8" source="wing01_png"  horizontalCenter="29" verticalCenter="-114"/>
+		<e:Group id="actEff" scaleX="1" scaleY="1" horizontalCenter="-17" verticalCenter="-147"/>
+		<e:Button id="rightBtn" label="按钮" icon="jiantouxuan" skinName="Btn0Skin" right="10" scaleX="-1.2"
+		          scaleY="1.3"  verticalCenter="-90"/>
+		<e:Button id="leftBtn" label="按钮" icon="jiantouxuan" skinName="Btn0Skin" x="10" scaleX="1.2" scaleY="1.3"  verticalCenter="-90"/>
+		<!--<e:Group id="powerGroup" x="189" y="80">
+		<e:Image source="zhandoulibg" y="10" x="1" />
+		<e:Image id="powerImg" y="0" x="0" source="zjmzhandouli" />
+	</e:Group>
+	-->
+	<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0"  top="80"/>
+	<e:Group id="skillGroup" width="500" height="230" horizontalCenter="0" bottom="128">
+		<e:Image source="shuxingbg4" horizontalCenter="0" height="30" />
+		<e:Image left="0" right="0" bottom="0" source="shuxingbg" scale9Grid="50,5,65,34" top="31" />
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="250" x="2" />
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="250" right="2" scaleX="-1" />
+		<e:Label id="nameTxt" text="羽翼名字" size="22" textAlign="center" width="140" horizontalCenter="0" y="4" bold="true"
+		         textColor="0xf8b141" />
+		<ns1:BaseComponent id="itemicon0" skinName="WingSkillItemSkin" className="WingSkillItemRender"
+		                   horizontalCenter="-199.5" scaleX="0.9" scaleY="0.9" bottom="51" />
+		<e:Label id="openTxt0" text="4阶开启" size="16" horizontalCenter="-199.5" textColor="0x7e6437" bottom="33" />
+		<ns1:BaseComponent id="itemicon1" skinName="WingSkillItemSkin" className="WingSkillItemRender"
+		                   horizontalCenter="-99.5" scaleX="0.9" scaleY="0.9" bottom="51" />
+		<e:Label id="openTxt1" text="6阶开启" size="16" horizontalCenter="-99.5" textColor="0x7e6437" bottom="33" />
+		<ns1:BaseComponent id="itemicon2" skinName="WingSkillItemSkin" className="WingSkillItemRender" horizontalCenter="0.5"
+		                   scaleX="0.9" scaleY="0.9" bottom="51" />
+		<e:Label id="openTxt2" text="8阶开启" size="16" horizontalCenter="0.5" textColor="0x7e6437" bottom="33" />
+		<ns1:BaseComponent id="itemicon3" skinName="WingSkillItemSkin" className="WingSkillItemRender"
+		                   horizontalCenter="100.5" scaleX="0.9" scaleY="0.9" bottom="51" />
+		<e:Label id="openTxt3" text="10阶开启" size="16" horizontalCenter="100" textColor="0x7e6437" bottom="33" />
+		<ns1:BaseComponent id="itemicon4" skinName="WingSkillItemSkin" className="WingSkillItemRender"
+		                   horizontalCenter="200.5" scaleX="0.9" scaleY="0.9" bottom="51" />
+		<e:Label id="openTxt4" text="10阶开启" size="16" horizontalCenter="200" textColor="0x7e6437" bottom="33" />
+		<e:Group y="36" horizontalCenter="0">
+			<e:Group id="attrGroup" y="0" x="0">
+				<e:Label id="attrLabel" text="234" y="36" size="18" horizontalCenter="-100" height="74" verticalAlign="middle" textColor="0x9f946d"/>
+				<e:Label id="attrTempLabel" text="345" y="36" size="18" horizontalCenter="-100" height="74" verticalAlign="middle" textColor="0x3ec148"/>
+				<e:layout>
+				<e:HorizontalLayout/>
+				</e:layout>
+			</e:Group>
+			<e:Image id="arrows" source="jiantouyou" y="4" x="169"/>
+			<e:Label id="nextAttrLabel" text="123" y="0" size="18" height="74" verticalAlign="middle" textColor="0x3ec148" x="234"/>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="expGroup" height="140" width="560" bottom="2" horizontalCenter="0">
+		<e:CheckBox label="元宝自动购买" x="296" skinName="CheckBox0" id="checkBoxs" bottom="6" />
+		<e:Button id="boostBtn0" label="一键升阶" width="156" height="60" skinName="Btn1Skin" x="302" y="30" />
+		<e:Button id="boostBtn1" label="升  阶" width="156" height="60" skinName="Btn1Skin" y="30" x="102" />
+		<ns1:BaseComponent id="boostPrice1" skinName="PriceIconSkin" className="PriceIcon" x="130" bottom="8" />
+		<e:Label id="noclean" text="本阶祝福值不清空" y="-15" textColor="0xf8b141" size="16" horizontalCenter="0" />
+		<e:Group id="clearGroup" y="-14" horizontalCenter="0">
+			<e:Label text="祝福值:" y="0" size="16" x="32" textColor="0x9f946d" />
+			<e:Label id="desc" text="本阶祝福值会在获得后24小时清空。" y="0" size="16" x="0" textColor="0xf8b141" />
+			<e:Label id="lastTime" text="剩余时间:" y="0" size="16" x="32" textColor="0x9f946d" />
+			<e:Label id="timeLabel" text="23:59:59" y="0" size="16" x="33" textColor="0xff5555" />
+			<e:layout>
+				<e:HorizontalLayout gap="4" />
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Group id="maxInfo" horizontalCenter="0" bottom="60">
+		<e:Label text="羽翼已满级"   textColor="0x9f946d" bold="true" size="24" />
+	</e:Group>
+	<e:Button id="bigUpLevelBtn" label="" y="97" x="38">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="mingmaizsd"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+		<e:Button id="feishengBtn" label="" horizontalCenter="-180" skinName="Btn0Skin" icon="wing_feisheng_png" bottom="333">
+
+		</e:Button>
+		<e:Image id="redPoint1" source="zjmhongdian" touchEnabled="false" horizontalCenter="-158" bottom="383"/>
+		<e:Button id="zizhiBtn" label="" horizontalCenter="180" skinName="Btn0Skin" icon="wing_zizhi_png" bottom="333">
+
+		</e:Button>
+		<e:Image id="redPoint2" source="zjmhongdian" touchEnabled="false" horizontalCenter="204" bottom="383"/>
+		<e:Image id="redPoint" source="zjmhongdian" touchEnabled="false" y="97" x="87"/>
+		<e:Button id="shenyu" label="" y="97" x="449">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_shenyu"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image id="redPoint0" source="zjmhongdian" touchEnabled="false" y="107" x="499"/>
+</e:Group>
+</e:Skin>

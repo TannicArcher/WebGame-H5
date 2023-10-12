@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LYRFbSkin" currentState="challenge" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing" width="554" height="710"       states="challenge,free,sdfb,sdget" >
+	<w:Config id="15a98a3982e"/>
+	<e:Image width="554" horizontalCenter="0" height="630" verticalCenter="0" source="lyr_fuben_bg_png" horizontalCenter.challenge="0" verticalCenter.challenge="-17"/>
+	<e:Button id="btnChallenge" label="挑  战" skinName="Btn1Skin" width="160" height="55" bottom="40" y="9" visible.free="false" visible.sdfb="false" visible.sdget="false" horizontalCenter="0" horizontalCenter.challenge="0" bottom.challenge="46"/>
+	<e:Label text="今日可挑战次数：" textColor="0x35e62b" size="20" visible.free="false" visible.sdget="false" x.challenge="192" horizontalCenter="-11" bottom="20" includeIn="free,sdget"/>
+	<e:Label id="lbTime" text="10" size="20" textColor="0x35e62b" visible.free="false" visible.sdget="false" horizontalCenter="76" bottom="20" text.challenge="今日可挑战次数：10" horizontalCenter.challenge="0" text.sdfb="今日可挑战次数：10" horizontalCenter.sdfb="1.5" bottom.sdfb="57"/>
+	<e:Label text="贵族增加20%经验" x="379" y="644" textColor="0x20cb30" size="20" visible="false"/>
+	<e:Image source="ring_fubenslogen1_png" horizontalCenter="0" top="38" visible.free="false" visible.sdget="false"/>
+	<e:Group width="300" height="100" visible.free="false" visible.sdget="false" visible.challenge="false" horizontalCenter="0" bottom="10">
+		<e:Button id="btnSD" label="扫荡" skinName="Btn1Skin" width="160" height="55" y="14" horizontalCenter="0" visible="false"/>
+		<e:Label id="lbVip" text="VIP10可额外挑战1次" y="72" horizontalCenter="0" x="14" textColor="0x35e62b" size="20" visible.sdfb="false" visible="false"/>
+		<e:Label id="lbVip0" text="今日可扫荡次数10次" y="72" horizontalCenter="0" x="24"   textColor="0x35E62B" size="20" includeIn="sdfb" visible="false"/>
+	</e:Group>
+	<e:Group id="barGroup" width="500" height="20" y="673"  horizontalCenter="0" visible.challenge="false" visible.free="false" visible.sdget="false" visible.sdfb="false" visible="false">
+		<e:Image width="500" height="20" horizontalCenter="0" verticalCenter="0" source="jingyantiao4" scale9Grid="21,6,16,6"/>
+		<e:ProgressBar id="bar" width="470" height="16" verticalCenter="0" skinName="bar5Skin" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group left="0" right="0" top="0" bottom="0" visible.challenge="false" visible.sdfb="false">
+		<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+		<e:Rect height="250" left="0" right="0" fillAlpha="0.5" verticalCenter="0"/>
+		<e:Group id="g0" width="170" height="200" x="10" verticalCenter="0">
+			<e:Image source="tongyonglabbg" y="0" scale9Grid="38,21,50,22" height="200" width="170"   x="0"/>
+			<e:Label id="lbFree" text="（免费）" y="122" textColor="0xffd93f" size="20"   horizontalCenter="0" visible.sdget="false"/>
+			<e:Image source="chuangtianguan_json.fb1bei"   horizontalCenter="0" top="25"/>
+			<e:Label id="lbExp0" text="X999" textColor="0x35e62b" size="18"   horizontalCenter="31.5" top="72"/>
+			<e:Button id="btnGet0" label="领取" skinName="Btn1Skin" width="120" height="50"   horizontalCenter="0" bottom="5" label.sdget="快速扫荡"/>
+			<ns1:BaseComponent id="gold0" skinName="PriceIconSkin" className="PriceIcon" horizontalCenter="0" bottom="50" visible.free="false"/>
+			<e:Image width="40" height="40" x="45" y="61" source="200015_png"/>
+		</e:Group>
+		<e:Group id="g1" width="170" height="200" verticalCenter="0" horizontalCenter="0">
+			<e:Image source="tongyonglabbg" y="-1" scale9Grid="38,21,50,22" height="200" width="170"   horizontalCenter="0"/>
+			<e:Image source="chuangtianguan_json.fb2bei"   horizontalCenter="0" top="20"/>
+			<e:Label id="lbExp1" text="X999" textColor="0x35E62B" size="18"   horizontalCenter="31.5" top="72"/>
+			<e:Image width="40" height="40" x="45" y="61" source="200015_png"/>
+			<e:Button id="btnGet1" label="领取" skinName="Btn1Skin" width="120" height="50"   horizontalCenter="0" bottom="5" label.sdget="快速扫荡"/>
+			<ns1:BaseComponent id="gold1" skinName="PriceIconSkin" className="PriceIcon" horizontalCenter="0" bottom="50"/>
+		</e:Group>
+		<e:Group id="g2" width="170" height="200" right="10" verticalCenter="0">
+			<e:Image source="tongyonglabbg" scale9Grid="38,21,50,22" height="200" width="170"   horizontalCenter="0" verticalCenter="0"/>
+			<e:Image source="chuangtianguan_json.fb3bei"   horizontalCenter="0" top="20"/>
+			<e:Label id="lbExp2" text="X999" textColor="0x35E62B" size="18"   horizontalCenter="31.5" top="72"/>
+			<e:Image width="40" height="40" x="45" y="61" source="200015_png"/>
+			<e:Button id="btnGet2" label="领取" skinName="Btn1Skin" width="120" height="50"   horizontalCenter="0" bottom="5" label.sdget="快速扫荡"/>
+			<ns1:BaseComponent id="gold2" skinName="PriceIconSkin" className="PriceIcon" horizontalCenter="0" bottom="50"/>
+		</e:Group>
+	</e:Group>
+	<e:Group width="283" height="43"  horizontalCenter="0.5" visible.free="false" visible.sdget="false" bottom="110" anchorOffsetY="0">
+		<e:Label id="lbdesc" text="可获得：" size="20" verticalCenter="0" x="0" textColor="0xd1c28f"/>
+		<e:Image x="158" y="3" source="200015_png" width="28" height="28"/>
+		<e:Label id="lbExp" text="  0" textColor="0x35e62b" size="20" verticalCenter="0" x="120"/>
+		<e:layout>
+			<e:HorizontalLayout horizontalAlign="center" gap="0" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="lbSweepTime" size="20" textColor="0x35e62b" visible.free="false" horizontalCenter="8.5" bottom="153" text="今日可挑战次数：10" horizontalCenter.challenge="0" visible.sdfb="false" visible.challenge="false"/>
+	<e:Group height="20" horizontalCenter="180" bottom="52">
+		<e:layout>
+			<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

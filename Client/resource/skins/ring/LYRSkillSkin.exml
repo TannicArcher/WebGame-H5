@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LYRSkillSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:PriceIcon="PriceIcon.*" xmlns:ns1="*"  width="550" height="713" states="update,study" >
+	<w:Config id="15a177a4c02"/>
+	<e:Image source.update="lyr_skill_bg_png" source="lyr_skill_bg_png" left="0" right="0" top="0" bottom="0" x="0" y="0"/>
+	<ns1:BaseComponent id="power" skinName="PowerPanelSkin" horizontalCenter="90" className="PowerPanel" y="36" x="202" y.study="36"/>
+	<e:Image id="listBg" width="191" height="571" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="14" source="tongyongtip1" scale9Grid="4,4,17,17" left="2" x="2" y="85" visible="false"/>
+	<e:Group id="nowLv" anchorOffsetX="0" width="330" anchorOffsetY="0" height="120" y.study="150" y.update="120" verticalCenter="-166" horizontalCenter.study="90" horizontalCenter.update="90" horizontalCenter="90">
+		<e:Image source="shuxingbg" left="0" top="0" bottom="0" right="0" scale9Grid="20,5,125,34"/>
+		<e:Image source="shuxingbg" anchorOffsetX="0" anchorOffsetY="0" left="0" top="0" bottom="0" right="0" scale9Grid="20,5,125,34" scaleY="-1" visible="false"/>
+		<e:Label text="当前属性" y="8" size="22" textColor="0x9f946d" bold="true" horizontalCenter="0" text.study="技能属性" textColor.update="0xf8b141" textColor.study="0xf8b141"/>
+		<e:Label id="nowLvDesc" text="这个技能就是非常牛逼，描述可以贼鸡巴多，超级长攻击加爆高，防御加爆多，血量涨到爆炸" x="8" size="18" width="314" textAlign="left" textColor="0xd1c28f" verticalCenter.update="5" verticalCenter="5"/>
+	</e:Group>
+	<e:Image source="jiantouyou" rotation="90" x.study="396" x.update="396" verticalCenter.study="-82" horizontalCenter="90" visible.study="false" y.update="266" verticalCenter="-70"/>
+	<e:Group id="nextLv" width="330" height="120" y.study="307" x.study="200" x.update="200" verticalCenter.study="21" horizontalCenter="90" visible.study="false" y.update="320" verticalCenter="25">
+		<e:Image source="shuxingbg" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="20,5,125,34" left="0" top="0" bottom="0" right="0" visible="false"/>
+		<e:Image source="shuxingbg" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="20,5,125,34" left="0" top="0" bottom="0" right="0" scaleY="-1"/>
+		<e:Label text="下一级属性" y="8" size="22" textColor="0x9F946D" bold="true" horizontalCenter="0" textColor.update="0xf8b141"/>
+		<e:Label id="nextLvDesc" text="这个技能就是非常牛逼，描述可以贼鸡巴多，超级长攻击加爆高，防御加爆多，血量涨到爆炸" x="8" size="18" width="314" textAlign="left" textColor="0xd1c28f" verticalCenter.update="5" verticalCenter="5"/>
+	</e:Group>
+	<e:Button id="opraBtn" label="升  级" skinName="Btn1Skin" label.study="学  习" x.update="285" bottom="50" horizontalCenter="90"/>
+	<e:Group id="updateGroup" includeIn="update" horizontalCenter="90" bottom="120">
+		<e:Label text="消耗:" x="0" y="26" textColor="0xd1c28f" size="24"/>
+		<ns1:BaseComponent id="needItem" x="62" y="0" skinName="ItemSkin" className="ItemBase"/>
+		<e:Label id="cost" text="X 22" x="161" y="27" size="22" textColor="0x35e62d" bold="true"/>
+	</e:Group>
+	<e:List id="learnList" itemRendererSkinName="ItemSkin" includeIn="study" scaleX="0.9" scaleY="0.9" horizontalCenter="90" bottom="160">
+		<e:layout>
+		<e:TileLayout horizontalAlign="center" verticalAlign="middle" horizontalGap="0" verticalGap="6" requestedColumnCount="4"/>
+		</e:layout>
+	</e:List>
+	<e:Scroller x="2" top="52" bottom="50">
+		<e:List id="list" itemRendererSkinName="LYRSkillItemSkin" x="0" y="40">
+		<e:layout>
+			<e:VerticalLayout gap="4"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<e:Group bottom="0" top="0" width="100" x="50" touchEnabled="false" touchThrough="true" touchChildren="false">
+		<e:Image x="0" top="0" source="tielian"/>
+		<e:Image y="0" right="0" source="tielian"/>
+		<e:Image x="0" bottom="0" source="tielian"/>
+		<e:Image bottom="0" right="0" source="tielian"/>
+		<e:Rect width="166" horizontalCenter="0" top="44" bottom="44" fillAlpha="0.2" visible="false"/>
+		<e:Image source="zhuakuang2" scale9Grid="41,30,9,2" width="100" left="-50" top="36" bottom="34"/>
+		<e:Image source="zhuakuang2" scale9Grid="41,30,9,2" width="100" top="36" bottom="34" right="-50" scaleX="-1"/>
+	</e:Group>
+	<e:Label id="nobook" text="背包内没有可学习的技能书" includeIn="study" x="259" size="18" textColor="0xf8b141" bold="true" bottom="175"/>
+	<e:Label text="请选择技能学习" y.update="274" size="22" horizontalCenter="90" textColor="0x9f946d" bold="true" visible.update="false" textColor.study="0xf8b141" horizontalCenter.study="90" bottom.study="120" size.study="20"/>
+	<e:Image id="updateRp" source="zjmhongdian" bottom="88" horizontalCenter="155" includeIn="update" visible="false"/>
+
+
+</e:Skin>

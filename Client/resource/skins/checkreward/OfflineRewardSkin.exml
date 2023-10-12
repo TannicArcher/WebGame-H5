@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OfflineRewardSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<w:Config id="159bf027b06"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group width="400" height="470" horizontalCenter="0" verticalCenter="0">
+		<e:Image top="0" bottom="0" source="offline2" width="200" x="0" scale9Grid="16,35,10,9"/>
+		<e:Image top="0" bottom="0" source="offline2" scale9Grid="16,35,10,9" width="200" scaleX="-1" right="0"/>
+		<e:Image y="3" source="offline1" x="85"/>
+		<e:Image source="offline1" y="3" scaleX="-1" right="85"/>
+		<e:Group width="390" height="350" horizontalCenter="0" y="53">
+			<e:Image height="28" y="0" source="offline4" scale9Grid="0,2,2,2" left="0" right="0"/>
+			<e:Label id="time" text="离线时间：" size="20" y="4" textColor="0xd1c28f" horizontalCenter="0"/>
+
+		<e:Label text="月卡" y="130" size="16" x="239" id="label0" textColor="0x3bff34" visible="false"/>
+		<e:Label text="神器" y="130" size="16" x="322" textColor="0x3BFF34" id="label2" visible="false"/>
+		<e:Label text="100000" y="195" size="18" x="296" id="label6" textColor="0x3BFF34" width="80" textAlign="center" visible="false"/>
+		<e:Label text="100000" y="155" size="18" x="296" id="label4" textColor="0x3BFF34" width="80" textAlign="center" visible="false"/>
+		<e:Group y="110" horizontalCenter="-96" width="180" height="210">
+			<e:Image alpha="0.5" top="6" bottom="0" source="offline3" width="90" x="0" scale9Grid="23,8,1,2"/>
+			<e:Image source="offline3" scale9Grid="23,8,1,2" alpha="0.5" top="6" bottom="0" width="90" scaleX="-1" right="0"/>
+			<e:Image width="20" height="20" x="24" y="38" source="offjb"/>
+			<e:Image width="20" height="20" x="24" y="78" source="offexp"/>
+			<e:Image width="20" height="20" x="24" y="118" source="offzb"/>
+			<e:Image width="20" height="20" x="24" y="158" source="offjl"/>
+
+			<e:Label text="离线收益" y="0" size="18" bold="true" horizontalCenter="0" textColor="0xd1c28f"/>
+			<e:Label text="金币" y="40" size="18" x="50" textColor="0xBD600D"/>
+			<e:Label id="money" text="100000" y="40" size="18" x="90" textColor="0xd1c28f" width="88"/>
+			<e:Label text="经验" y="80" size="18" x="50" textColor="0xBD600D"/>
+			<e:Label id="exp" text="100000" y="80" size="18" x="90" textColor="0xd1c28f" width="88"/>
+			<e:Label text="装备" y="120" size="18" x="50" textColor="0xBD600D"/>
+			<e:Label id="equipNum" text="100000" y="120" size="18" x="90" textColor="0xd1c28f" width="88"/>
+			<e:Label text="精炼" y="160" size="18" x="50" textColor="0xBD600D"/>
+			<e:Label id="jinglianshiNum" text="100000" y="160" size="18" x="90" textColor="0xD1C28F" width="88"/>
+		</e:Group>
+		<e:Group y="110" horizontalCenter="96" width="180" height="210">
+
+
+			<e:Image alpha="0.5" top="6" bottom="0" source="offline3" width="90" x="0" scale9Grid="23,8,1,2"/>
+			<e:Image source="offline3" scale9Grid="23,8,1,2" alpha="0.5" top="6" bottom="0" width="90" scaleX="-1" right="0" x="10" y="10"/>
+			<e:Image width="20" height="20" x="24" y="38" source="offjb"/>
+			<e:Image width="20" height="20" x="24" y="78" source="offexp"/>
+			<e:Label text="金币" y="40" size="18" x="50" textColor="0xBD600D"/>
+			<e:Label text="经验" y="80" size="18" x="50" textColor="0xBD600D"/>
+			<e:Label id="label1" text="月卡额外收益" y="0" size="18" bold="true" horizontalCenter="0" textColor="0xa12abf"/>
+			<e:Label text="1000" y="40" size="18" x="90" id="label3" textAlign="center" textColor="0x20cb30"/>
+			<e:Label text="100000" y="80" size="18" x="90" id="label5" textAlign="center" textColor="0x20cb30"/>
+		</e:Group>
+
+		<e:Label id="bagFull" text="背包已满，自动熔炼      件装备" size="20" horizontalCenter="0" bottom="0" textColor="0xf8b141"/>
+		<e:Label text="最多累计24小时离线收益" size="16" textAlign="left" y="47" horizontalCenter="0" textColor="0x7e6437"/>
+		<e:Label text="离线超过8小时后，只能获得80%离线收益" size="16" textAlign="left" y="66" horizontalCenter="0" textColor="0x7e6437"/>
+		</e:Group>
+		<e:Label text="离线收益" size="24" y="12" bold="true" horizontalCenter="0" textColor="0xf8b141"/>
+		<e:Label text="点击任意位置关闭" size="20" horizontalCenter="0" bottom="40" textColor="0x20cb30"/>
+	</e:Group>
+	<e:Button id="okBtn" bottom="0" skinName="Btn0Skin" left="0" right="0" top="0"/>
+	<e:Label id="getmc" text="激活月卡" size="22" horizontalCenter="98" textColor="0x20CB30" verticalCenter="100" visible="false"/>
+
+	
+	
+</e:Skin>

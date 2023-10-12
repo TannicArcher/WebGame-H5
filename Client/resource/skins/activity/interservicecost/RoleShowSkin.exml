@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="RoleShowSkin" width="580" height="770" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="groupRole" x="0" width="580" height="770" y="0">
+		<e:Image id="wingImg" touchEnabled="false" scaleX="0.9" scaleY="0.9" horizontalCenter="53.5" verticalCenter="-33.5" source=""/>
+		<e:Image id="weaponImg" touchEnabled="false" scaleX="0.9" scaleY="0.9" verticalCenter="133.5" horizontalCenter="-214.5" source=""/>
+		<e:Group id="soulEff" x="289" y="434">
+		<e:Image id="sef1" width="20" height="20" x="0" y="-44"/>
+		<e:Image id="sef2" width="20" height="20" x="3" y="-50" source=""/>
+		<e:Image id="sef3" width="20" height="20" x="17" y="-34"/>
+		<e:Image id="wsef0" width="20" height="20" x="2" y="-68"/>
+		<e:Image id="wsef1" width="20" height="20" x="-9" y="-70" source=""/>
+		</e:Group>
+		<e:Image id="bodyImg" touchEnabled="false" scaleX="0.9" scaleY="0.9" verticalCenter="-19.5" horizontalCenter="0" source="body00_png"/>
+		<e:Group id="bodyEff" x="286" y="430">
+		<e:Image id="bodyEffect0" height="20" x="8" y="-44" width="20"/>
+		<e:Image id="bodyEffect1" width="20" height="20" x="3" y="-50" source=""/>
+		</e:Group>
+		<e:Image id="suitImg" width="20" height="20" x="284" y="376"/>
+		<e:Group id="titleMcGroup" anchorOffsetX="0" anchorOffsetY="0" scaleX="1" scaleY="1" verticalCenter="-164.5" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

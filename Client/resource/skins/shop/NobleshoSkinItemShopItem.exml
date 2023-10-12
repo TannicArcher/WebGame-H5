@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="NobleshoSkinItemShopItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="560" height="108">
+	<w:Config id="1586bdedfef"/>
+	<e:Image left="0" right="0" top="0" bottom="0" scale9Grid="26,25,61,4" source="scitembg"/>
+	<ns1:BaseComponent id="itemIcon" x="21" verticalCenter="0" skinName="ItemIconSkin" className="ItemIcon"/>
+	<e:Button id="buyBtn" label="购 买" verticalCenter="0" name="buy" right="20" skinName="Btn14Skin" width="100" height="48"/>
+	<e:Image id="textBG" x="110" y="44" source="tongyongline2"/>
+	<e:Label id="itemName" text="商品名称" x="110" y="20" size="22" textColor="0xBCAF96"/>
+	<e:Label id="money" text="1000" y="60" size="22" x="194" textColor="0x9f946d"/>
+	<e:Label id="used" text="（商品用途）" x="230" y="20" size="22" textColor="0xBCAF96"/>
+	<e:Image x="160" y="59" source="szyuanbao"/>
+	<e:Label id="money0" text="1000" y="60" size="22" x="352" textColor="0xf8b141"/>
+	<e:Image x="318" y="59" source="szyuanbao"/>
+	<e:Label text="原价" x="110" y="60" size="22" textColor="0x9f946d"/>
+	<e:Label text="折后" x="270" y="60" textColor="0x9F946D" size="22"/>
+ 
+</e:Skin>

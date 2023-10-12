@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OSATarget5" width="560" height="638" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Group id="title" horizontalCenter="0" top="10">
+		<e:Image source="fuli_json.fulibiaoti" x="182" y="0"  />
+		<e:Image source="fuli_json.fulibiaoti" x="182" y="0" scaleX="-1" />
+			<e:Image source="juese_json.biaoti_chengzhuang" verticalCenter="0" horizontalCenter="-44.5"/>
+			<e:Image source="jingji_json.biaoti_jingji0" verticalCenter="0" horizontalCenter="44.5"/>
+		</e:Group>
+		<e:Group x="10" y="80">
+		<e:Group id="infoBg" y="0" horizontalCenter="0" width="540" x="0"  >
+			<e:Image source="shuxingbg"   scale9Grid="77,5,15,34" left="0" right="0" top="0" bottom="0"/>
+			<e:Label text="剩余时间：" x="14" y="12" size="18" textColor="0xFF9900"/>
+			<e:Label id="actTime" text="2天23小时55分" x="104" y="12" size="18" textColor="0x00FF00"/>
+			<e:Label id="actInfo" text="神装竞赛开始了！开服活动期间，所有角色所有神装总转生数率先达到目标数目获得限量奖励！" x="104" y="32" size="18" width="344" bottom="12" top="32" right="14" left="104" textColor="0xdfd1b5"/>
+			<e:Label text="活动说明：" x="14" y="32" size="18" textColor="0xFF9900"/>
+		</e:Group>
+		<e:List id="content" width="540" height="477" y="72"  horizontalCenter="0" itemRendererSkinName="OSATargetItem" x="0"  >
+			<e:layout>
+			<e:VerticalLayout gap="-1" horizontalAlign="center" verticalAlign="middle"/>
+			</e:layout>
+		</e:List>
+		<e:layout>
+			<e:VerticalLayout gap="5" horizontalAlign="center" verticalAlign="middle"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>		
+</e:Skin>

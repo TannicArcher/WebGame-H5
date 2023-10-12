@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="VipGiftItemSkin" width="560" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image source="zhandoulibg" scale9Grid="37,14,228,5" height="236" width="250" right="-10" verticalCenter="-37"/>
+		<e:Label id="already" text="已购买" scaleX="1" scaleY="1" size="22" horizontalCenter="0" bottom="47" bold="true" textColor="0x00ff00"/>
+		<e:Image id="ggtxt" source="vipgiftgg01_png"/>
+		<e:Image id="tu" x="30" verticalCenter="30" source="vipgift01_png"/>
+		<e:Image id="txt" x="30" y="140" source="vipgifttxt01_png"/>
+		<e:Group width="320" height="30" horizontalCenter="0" bottom="3">
+			<e:Image source="bantoutiaobg" left="0" right="0" top="0" bottom="0" scale9Grid="50,5,138,35" visible="false"/>
+			<e:Label text="VIP等级越高 奖励越丰富" size="20" textColor="0xf8b141" bold="true" verticalCenter="0" horizontalCenter="0"/>
+		</e:Group>
+		<e:List id="reward" itemRendererSkinName="ItemSkin" right="24" verticalCenter="-36">
+			<e:layout>
+			<e:TileLayout requestedRowCount="2" requestedColumnCount="2"/>
+			</e:layout>
+		</e:List>
+		<e:Button id="getBtn" label="100元宝" skinName="Btn1Skin" horizontalCenter="0" bottom="30"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" horizontalCenter="68" bottom="66" visible="false"/>
+	</e:Group>
+</e:Skin>

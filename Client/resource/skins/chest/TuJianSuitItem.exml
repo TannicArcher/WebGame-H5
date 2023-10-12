@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TuJianSuitItem" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="350" height="100" horizontalCenter="0" verticalCenter="0">
+		<e:Rect left="1" right="-1" top="0" fillAlpha="0.6" bottom="0" x="0" y="0"   visible="false"/>
+		<e:Image y="0" source="bantoutiaoboss" x="0" scale9Grid="5,3,53,18" width="274" height="32"/>
+		<e:Label id="jieduan" text="一阶" y="6" size="20" textColor="0xF8B141" bold="true" x="10"/>
+		<e:Image height="248" width="347" touchEnabled="false"   x="0" y="0" source="tongyongtip1" scale9Grid="8,6,7,10" visible="false"/>
+		<e:Label text="【当前效果】" x="9" y="14" size="20"   textColor="0xf8b141" visible="false"/>
+		<e:Label text="套装件数：" x="60" y="6" size="20" textColor="0xf8b141"/>
+		<e:Label id="num" text="3" x="160" y="6" size="20" textColor="0xf8b141"/>
+		<e:Label id="suitNum" text="（2/3）" x="220" y="6" size="20" textColor="0x444134"/>
+		<e:Label id="activated" text="已激活" x="220" y="56" size="20"   textColor="0x35e62d" visible="false"/>
+		<e:Label id="value0" text="攻击+1000" x="50" y="40" size="18" textColor="0x444134"/>
+		<e:Label id="value1" text="生命+1000" x="200" y="40" size="18" textColor="0x444134"/>
+		<e:Label id="value2" text="物防+1000" x="50" y="60" size="18" textColor="0x444134"/>
+		<e:Label id="value3" text="魔防+1000" x="200" y="60" size="18" textColor="0x444134"/>
+	</e:Group>
+</e:Skin>

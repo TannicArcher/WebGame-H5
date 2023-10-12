@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MijiZhSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*">
+	<e:Rect id="bgClose" top="0" bottom="0" left="0" right="0" fillAlpha="0.8"/>
+	<e:Group id="anigroup" width="450" height="550" horizontalCenter="0" verticalCenter="0">
+		<e:Image  source="tongyongkuang3bg" scale9Grid="9,6,29,27" left="0" right="0" top="0" bottom="0"/>
+		<e:Image left="0" right="0" source="tongyongkuang3tou" y="0" scale9Grid="68,6,273,27"/>
+		<e:Image y="153"  source="tongyongline" left="0" right="0"/>
+		<e:Label text="消耗三本已有秘籍随机置换一本新秘籍" textColor="0xc28522" size="20" y="12"
+		         horizontalCenter="2" />
+		<e:Label text="选择要消耗的秘籍" textColor="0xC28522" size="18" y="160" horizontalCenter="-8"
+		         />
+		<e:Image x="296" y="88"  source="jiantouyou2"/>
+		<e:Image width="410" height="290" y="186" horizontalCenter="0" source="tongyongtip1" scale9Grid="7,10,11,7"/>
+		<e:Scroller id="itemScroller" width="400" height="270" y="196" horizontalCenter="0">
+			<e:List id="itemList" itemRendererSkinName="ItemSkin">
+				<e:layout>
+					<e:TileLayout requestedColumnCount="4" verticalGap="0" horizontalGap="10" paddingLeft="5"/>
+				</e:layout>
+			</e:List>
+		</e:Scroller>
+		<ns1:BaseComponent id="mijiItem0" x="20" y="60" skinName="MijiItemSkin" className="MijiItem" />
+		<ns1:BaseComponent x="110" y="60" skinName="MijiItemSkin" id="mijiItem1" className="MijiItem" />
+		<ns1:BaseComponent x="200" y="60" skinName="MijiItemSkin" id="mijiItem2" className="MijiItem" />
+		<ns1:BaseComponent x="330" y="60" skinName="MijiItemSkin" id="mijiItem3" className="MijiItem" />
+		<e:Button id="smeltBtn" label="置    换" skinName="Btn1Skin" horizontalCenter="0" bottom="20"/>
+	</e:Group>
+	<e:Button id="closeBtn0" skinName="Btn0Skin" label="按钮" y="76" x="433"  visible="false"/>
+</e:Skin>

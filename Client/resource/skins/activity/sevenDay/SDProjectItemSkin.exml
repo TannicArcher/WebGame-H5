@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SDProjectItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  width="410" height="105" states="normal,done" >
+	<e:Image source="recharge_headbg_png" right="0" left="0" top="0" bottom="0"/>
+	<e:Label id="pName" text="累计登录1天" x="9" y="3" size="20" bold="true" fontFamily="SimHei" textColor="0xd1c28f"/>
+	<e:List id="list" x="9" y="24" anchorOffsetY="0" itemRendererSkinName="ItemSkin" scaleX="0.8" scaleY="0.8">
+		<e:layout>
+			<e:HorizontalLayout paddingLeft="-8" gap="0"/>
+		</e:layout>
+	</e:List>
+	<e:Button id="actBtn" label="领  取" x="301" y="28" skinName="Btn15Skin" visible.done="false" verticalCenter.normal="-3.5" right.normal="7"/>
+	<e:Label id="scedule" text="10000/10000" includeIn="normal" size="16" right="12" verticalCenter="30.5" width="94" verticalAlign="middle" textAlign="center"/>
+	<e:Image includeIn="done" x="310" source="yilingqu" rotation="-25" verticalCenter="0"/>
+	<e:Image id="redpoint" source="zjmhongdian" right="6" verticalCenter="-22" scaleX="0.8" scaleY="0.8" includeIn="normal" visible="false"/>	
+</e:Skin>

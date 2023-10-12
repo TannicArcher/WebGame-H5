@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="auctionRecordItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="500" height="104">
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--<e:Label id="infoTxt" text="争夺：0人" size="18" lineSpacing="0" y="22" textColor="0x9f946d" horizontalCenter="190"/>-->
+	<e:Group x="0" y="0" width="500">
+		<e:Image id="bg" alpha="0.7" scale9Grid="36,22,60,38" source="tongyonglabbg" height="104" width="500" x="0" y="0"/>
+		<ns1:BaseComponent id="item" skinName="ItemSkin" horizontalCenter="-201" verticalCenter="0" className="ItemBase"/>
+
+
+
+		<e:Label id="text2" text="一口价成交" size="20" textAlign="center" y="67" stroke="1" textColor="0xFFD93F" horizontalCenter="48" visible="false"/>
+		<e:Label id="text1" text="竞拍价成交" size="20" textAlign="center" y="67" stroke="1" textColor="0xFFD93F" horizontalCenter="48"/>
+		<e:Label id="successTime" text="2月26日 22:20" size="20" textAlign="center" stroke="1" textColor="0xFFD93F" horizontalCenter="181.5" verticalCenter="0"/>
+		<e:Label id="playerName" text="玩家名字多长" size="20" textAlign="center" stroke="1" horizontalCenter="-77" textColor="0x20CB30" verticalCenter="0"/>
+		<e:Label id="price" text="49800" size="20" textColor="0xF8B141" scaleX="1" scaleY="1" horizontalCenter="60.5" verticalCenter="1"/>
+		<e:Image source="szyuanbao" width="30" scaleX="1" scaleY="1" horizontalCenter="17" verticalCenter="0"/>
+		<e:Image source="pailietouline" horizontalCenter="-148.5" verticalCenter="1" height="90"/>
+		<e:Image source="pailietouline" horizontalCenter="-11.5" verticalCenter="1" height="90"/>
+		<e:Image source="pailietouline" horizontalCenter="108.5" verticalCenter="1" height="90"/>
+
+
+	</e:Group>
+
+</e:Skin>

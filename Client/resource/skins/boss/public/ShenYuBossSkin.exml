@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShenYuBossSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="554" height="716">
+	<w:Config id="15d305f2e2d"/>
+
+
+
+	<e:Image source="bossbg_png" left="0" right="0" top="0" bottom="0"/>
+	<e:Group y="0" width="554" horizontalCenter="0" height="60">
+		<e:Image source="tielian1" x="50" y="60"/>
+		<e:Image y="60" right="50" source="tielian1"/>
+		<e:Image left="0" right="0" top="0" bottom="0" source="tongyongtip1" scale9Grid="10,5,8,12" visible="false"/>
+		<e:Image left="0" right="0" top="0" bottom="0" source="tongyongtip2" scale9Grid="19,18,2,5" visible="false"/>
+		<e:Image left="0" right="0" top="0" bottom="0" source="shitouban" scale9Grid="19,18,9,5"/>
+		<e:Label textColor="0xA89C88" text="挑战次数：" size="20" x="4" verticalCenter="0"/>
+		<e:Label id="timeTxt" text="24:24:24后恢复1点" size="20" x="235" textColor="0xE19426" verticalCenter="0" textAlign="center" width="210"/>
+		<e:Label id="challengeCountTxt" textColor="0x21C629" text="12/20" size="20" x="99" textAlign="center" verticalAlign="middle" verticalCenter="0"/>
+		<e:Label id="setting" text="提醒设置" size="20" textColor="0x23C42A" x="440" verticalCenter="0"/>
+		<e:Image source="shuxingline" x="2" y="73" width="275" scale9Grid="16,1,4,9"/>
+		<e:Image source="shuxingline" y="73" width="275" scale9Grid="16,1,4,9" right="2" scaleX="-1"/>
+		<e:Button id="buyBtn" label="" x="165" y="8.66" visible="false">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btnadd"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="juan" height="21" x="158" y="20">
+			<e:Image id="jicon" scaleX="1" scaleY="1" source="200156_png" width="24" height="24" x="22" y="-1"/>
+			<e:Label text="（" size="20" scaleX="1" scaleY="1" textColor="0x21C629" x="-1" y="0" bold="true"/>
+			<e:Label id="jcount" text="100" size="20" scaleX="1" scaleY="1" textColor="0x21C629" y="0" horizontalCenter="-38"/>
+			<e:Label text="）" size="20" scaleX="1" scaleY="1" textColor="0x21C629" x="9" y="10" bold="true"/>
+			<e:layout>
+				<e:HorizontalLayout gap="-1"/>
+			</e:layout>
+		</e:Group>
+
+	</e:Group>
+
+    <e:Scroller id="bossScroller" width="540" horizontalCenter="0" top="86" bottom="0">
+        <e:List itemRendererSkinName="BossItemSkin" id="list" verticalCenter="0" horizontalCenter="0">
+            <e:layout>
+                <e:VerticalLayout  gap="4"/> </e:layout>
+        </e:List>
+    </e:Scroller>
+	<e:Group horizontalCenter="0" top="62">
+		<e:Image source="gantanhao" y="-11" scaleX="1" scaleY="1" x="0"/>
+		<e:Label text="参与神域BOSS有概率获得神羽" size="18" textColor="0x9F946D" x="53" y="-9" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:HorizontalLayout verticalAlign="middle" gap="6"/>
+		</e:layout>
+	</e:Group>
+
+
+</e:Skin>

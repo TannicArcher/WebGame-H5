@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BattleLittleRankSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" xmlns:euiextension="euiextension.*">
+	<e:Group width="270" height="143" left="5" top="5">
+		<e:Image left="0" right="0" top="0" scale9Grid="6,5,12,12" bottom="0" x="-35" y="-22" scaleX="1" scaleY="1" source="tongyongtip3"/>
+		<e:Image source="bantoutiaoboss" y="6" scale9Grid="16,0,2,24" height="28" width="125"/>
+		<e:Label text="积分排名" x="11" size="20" y="10" bold="true" textColor="0x9F946D"/>
+		<e:Image id="rank0" x="19" source="paihangs1" y="38"/>
+		<e:Label id="name0" text="布拉格の鑫爷" y="40" size="16" left="55" textColor="0xFFFF00"/>
+		<e:Label id="num0" text="36重天10层" y="40" size="16" right="14" textColor="0xFFFF00"/>
+
+		<e:Image id="rank1" x="19" source="paihangs2" y="63"/>
+
+
+		<e:Label id="name1" text="极光" y="65" size="16" x="55" textColor="0xFF00FF"/>
+		<e:Label id="num1" text="9重天1层" y="65" size="16" textColor="0xFF00FF" right="14"/>
+		<e:Image id="rank2" x="19" source="paihangs3" y="88"/>
+		<e:Label id="name2" text="梦里画" y="90" size="16" x="55" textColor="0x00FF00"/>
+		<e:Label id="num2" text="1重天1层" y="90" size="16" textColor="0x00FF00" right="14"/>
+		<e:Image x="16" y="110" scale9Grid="128,20,4,4" width="241" height="26" source="bantoutiaobg"/>
+		<e:Label id="rank3" text="15" y="116" size="16" horizontalCenter="-105" textColor="0xe2dfd4"/>
+		<e:Label id="name3" text="我的积分" y="116" size="16" x="55" textColor="0xe2dfd4"/>
+		<e:Label id="num3" text="1重天1层" y="116" size="16" right="14" textColor="0xe2dfd4"/>
+		<e:Label id="jump" text="查看排行" y="3" size="18" textColor="0x00FF00" textAlign="center" height="34" verticalAlign="middle" anchorOffsetX="0" right="14"/>
+	</e:Group>
+	<e:Group id="giftGroup" bottom="150" right="10" width="124" height="90">
+		<e:Image source="tongyonghd_json.bantoutiaobg" scale9Grid="119,18,5,6" anchorOffsetY="0" scaleX="1" scaleY="1" left="0" top="0" right="0" bottom="0"/>
+		<e:Image id="giftBtn" source="220008_png" scaleX="1" scaleY="1" touchEnabled="true" horizontalCenter="0" y="5"/>
+		<e:Label id="scoreTxt" text="战绩:100" x="60" y="35" size="18" scaleX="1" scaleY="1" textColor="0xD1C28F" visible="false"/>
+		<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian" horizontalCenter="20" y="5"/>
+		<e:Group y="67" horizontalCenter="0">
+		<e:Label text="积分" x="2" y="-26" size="18" scaleX="1" scaleY="1" textColor="0xFF9900"/>
+		<e:Label id="scoreTxt2" text="(100/500)" x="12" y="-16" size="18" scaleX="1" scaleY="1" textColor="0xFF0000"/>
+		<e:layout>
+			<e:HorizontalLayout gap="0" verticalAlign="middle"/>
+		</e:layout>
+		</e:Group>
+	</e:Group>
+
+
+	<e:Group id="bigTimeGroup" horizontalCenter="20.5" top="270">
+		<e:Image horizontalCenter="0" verticalCenter="0" source="battle_camp"/>
+		<e:BitmapLabel id="countDown" scaleX="1" scaleY="1" text="3" font="num_9_fnt" letterSpacing="-10" left="19" verticalCenter="4.5"/>
+		<e:layout>
+			<e:BasicLayout/>
+		</e:layout>
+
+
+	</e:Group>
+	<e:Group scaleX="1" scaleY="1" width="130" top="5" right="5">
+		<e:Image scale9Grid="6,5,12,12" x="0" y="0" scaleX="1" scaleY="1" source="tongyongtip3" width="130" height="50"/>
+		<e:Label text="玩法剩余时间:" y="6" size="18" scaleX="1" scaleY="1" textColor="0xFF9900" horizontalCenter="0"/>
+		<e:Label id="wholeLeftTime" text="14分30秒" y="26" size="18" scaleX="1" scaleY="1" textColor="0xFF0000" horizontalCenter="0"/>
+		<e:layout>
+		<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="assignPer" scaleX="1" scaleY="1" width="130" right="5" top="55" height="50">
+		<e:Image left="0" right="0" top="0" scale9Grid="6,5,12,12" bottom="0" x="-10" y="-61" scaleX="1" scaleY="1" source="tongyongtip3"/>
+		<e:Label text="阵营更换时间:" y="6" size="18" scaleX="1" scaleY="1" textColor="0xFF9900" horizontalCenter="0"/>
+		<e:Label id="campLeftTime0" text="03分30秒" y="26" size="18" scaleX="1" scaleY="1" textColor="0xFF0000" horizontalCenter="0.5"/>
+		<e:layout>
+		<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="skillGroup0" touchThrough="true" top="200" left="70" visible="false">
+		<e:BitmapLabel id="lztitle0" font="lianzhan_fnt" text="d"/>
+		<e:BitmapLabel id="lzlabel0" text="88" font="lianzhan_fnt" letterSpacing="-10" x="152" y="8"/>
+	</e:Group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</e:Skin>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShenYuEquipSkin" width="554" height="716" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="15dbfa8e636"/>
+	<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0" top="133"/>
+	<ns1:BaseComponent id="skill" top="33" skinName="ShenYuItem" right="9" className="GodWingItem"/>
+	<e:Button id="attr" label="" left="9" top="33">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="btn_shenyudashi"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+
+
+	</e:Button>
+
+
+	<e:Group id="skillGroup" width="500" height="235" horizontalCenter="0" anchorOffsetY="0" bottom="114">
+
+		<e:Image left="0" right="0" bottom="0" source="shuxingbg" scale9Grid="50,5,65,34" top="31"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="250" x="2"/>
+		<e:Image source="shuxingbg2" scale9Grid="187,0,8,32" width="250" right="2" scaleX="-1"/>
+
+
+
+		<e:Label id="attr0" text="攻击：1000000000" size="18" textAlign="left" y="110" width="170" anchorOffsetX="0" textColor="0x9f946d" x="180" visible="false"/>
+
+
+
+
+
+		<e:Label id="power0" text="战斗力：10000" y="76" size="20" textColor="0xFF9900" bold="true" x="180" visible="false"/>
+		<e:Label id="state0" text="合成预览" y="45" textColor="0xff750f" bold="true" size="20" horizontalCenter="0" visible="false"/>
+		<e:Label id="attr3" text="攻击：1000000000" size="18" textAlign="left" y="110" width="170" anchorOffsetX="0" textColor="0x9F946D" x="180"/>
+		<e:Label id="power3" text="战斗力：10000" y="76" size="20" textColor="0xFF9900" bold="true" x="180"/>
+		<e:Label id="state3" text="已满阶" y="45" textColor="0xFF750F" bold="true" size="20" horizontalCenter="0"/>
+		<e:Label id="attr1" text="攻击：100\n物防：1000\n魔防：1000\n闪避：20%\n命中：1.2%" size="18" textAlign="left" textColor="0x9F946D" y="110" width="170" anchorOffsetX="0" x="70" visible="false"/>
+		<e:Label id="power1" text="战斗力：5" x="70" y="76" size="20" textColor="0xFF9900" visible="false"/>
+		<e:Label text="升阶前" x="70" y="45" textColor="0xFF750F" bold="true" size="20" id="state1" visible="false"/>
+		<e:Label id="attr2" text="攻击：1000000000" size="18" textAlign="left" y="110" width="170" anchorOffsetX="0" textColor="0x00ff00" x="280" visible="false"/>
+		<e:Label id="power2" text="战斗力：10000" x="280" y="76" size="20" textColor="0xFF9900" bold="true" visible="false"/>
+		<e:Label text="升阶后" x="280" y="45" textColor="0xFF750F" bold="true" size="20" id="state2" visible="false"/>
+	</e:Group>
+	<e:Group y="254" horizontalCenter="0">
+		<ns1:BaseComponent id="item0" className="GodWingItem" y="31" x="25" scaleX="1" scaleY="1" skinName="ShenYuItem"/>
+		<ns1:BaseComponent id="item1" className="GodWingItem" y="41" x="35" scaleX="1" scaleY="1" skinName="ShenYuItem"/>
+		<ns1:BaseComponent id="item2" className="GodWingItem" y="51" x="45" scaleX="1" scaleY="1" skinName="ShenYuItem"/>
+		<ns1:BaseComponent id="item3" className="GodWingItem" y="21" x="15" scaleX="1" scaleY="1" skinName="ShenYuItem"/>
+
+
+
+		<e:layout>
+		<e:HorizontalLayout/>
+		</e:layout>
+	</e:Group>
+	<e:Group width="554" height="92" bottom="0" horizontalCenter="0">
+		<e:Image width="280" x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+		<e:Image width="280" scaleX="-1" top="0" bottom="0" right="0" source="bantoumingkuang3"/>
+		<e:Label id="getItemTxt" text="获取神羽" size="20" textColor="0x00FF00" bottom="0" height="60" verticalAlign="middle" width="100" textAlign="center" right="10"/>
+		<e:Button id="replace" label="装备神羽" skinName="Btn1Skin" width="130" height="50" horizontalCenter="-80" bottom="9"/>
+		<e:Image id="redPointReplace" touchEnabled="false" source="zjmhongdian" horizontalCenter="-27" bottom="35"/>
+		<e:Button id="replace0" label="快速合成" skinName="Btn1Skin" width="130" height="50" horizontalCenter="80" bottom="9"/>
+		<e:Image id="costImg0" width="20" height="20" x="0" y="0" source="601000_png" visible="false"/>
+		<e:Group horizontalCenter="80" bottom="59">
+			<e:Label id="costName" text="消耗飞羽(1阶):" x="8" y="6" size="20" textColor="0x00ff00"/>
+
+			<e:Label id="cost0" text="99/99" size="20" textAlign="left" textColor="0xD1C28F" x="28" y="0"/>
+			<e:layout>
+			<e:HorizontalLayout gap="5" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Image id="redPointReplace0" touchEnabled="false" source="zjmhongdian" horizontalCenter="133" bottom="35"/>
+	</e:Group>
+	<e:Image source="" x="42" y="198"/>
+
+
+
+</e:Skin>

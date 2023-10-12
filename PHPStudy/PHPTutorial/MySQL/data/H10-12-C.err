@@ -1,0 +1,169 @@
+190210 19:15:37 [Note] Plugin 'FEDERATED' is disabled.
+190210 19:15:37 InnoDB: The InnoDB memory heap is disabled
+190210 19:15:37 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+190210 19:15:37 InnoDB: Compressed tables use zlib 1.2.3
+190210 19:15:37 InnoDB: Initializing buffer pool, size = 47.0M
+190210 19:15:37 InnoDB: Completed initialization of buffer pool
+190210 19:15:37 InnoDB: highest supported file format is Barracuda.
+190210 19:15:37  InnoDB: Waiting for the background threads to start
+190210 19:15:38 InnoDB: 5.5.53 started; log sequence number 1595675
+190210 19:15:38 [Note] Server hostname (bind-address): '0.0.0.0'; port: 3306
+190210 19:15:38 [Note]   - '0.0.0.0' resolves to '0.0.0.0';
+190210 19:15:38 [Note] Server socket created on IP: '0.0.0.0'.
+190210 19:15:38 [Note] Event Scheduler: Loaded 0 events
+190210 19:15:38 [Note] D:\phpStudy\PHPTutorial\MySQL\bin\mysqld.exe: ready for connections.
+Version: '5.5.53'  socket: ''  port: 3306  MySQL Community Server (GPL)
+190210 19:23:38 [Note] Plugin 'FEDERATED' is disabled.
+190210 19:23:38 InnoDB: The InnoDB memory heap is disabled
+190210 19:23:38 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+190210 19:23:38 InnoDB: Compressed tables use zlib 1.2.3
+190210 19:23:38 InnoDB: Initializing buffer pool, size = 47.0M
+190210 19:23:38 InnoDB: Completed initialization of buffer pool
+190210 19:23:38 InnoDB: highest supported file format is Barracuda.
+190210 19:23:38  InnoDB: Waiting for the background threads to start
+190210 19:23:39 InnoDB: 5.5.53 started; log sequence number 1595675
+190210 19:23:39 [Note] Server hostname (bind-address): '0.0.0.0'; port: 3306
+190210 19:23:39 [Note]   - '0.0.0.0' resolves to '0.0.0.0';
+190210 19:23:39 [Note] Server socket created on IP: '0.0.0.0'.
+190210 19:23:39 [Note] Event Scheduler: Loaded 0 events
+190210 19:23:39 [Note] D:\phpStudy\PHPTutorial\MySQL\bin\mysqld.exe: ready for connections.
+Version: '5.5.53'  socket: ''  port: 3306  MySQL Community Server (GPL)
+190210 19:25:48 [Note] Plugin 'FEDERATED' is disabled.
+190210 19:25:48 InnoDB: The InnoDB memory heap is disabled
+190210 19:25:48 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+190210 19:25:48 InnoDB: Compressed tables use zlib 1.2.3
+190210 19:25:49 InnoDB: Initializing buffer pool, size = 47.0M
+190210 19:25:49 InnoDB: Completed initialization of buffer pool
+190210 19:25:49 InnoDB: highest supported file format is Barracuda.
+190210 19:25:49  InnoDB: Waiting for the background threads to start
+190210 19:25:50 InnoDB: 5.5.53 started; log sequence number 1595675
+190210 19:25:50 [Note] Server hostname (bind-address): '0.0.0.0'; port: 3306
+190210 19:25:50 [Note]   - '0.0.0.0' resolves to '0.0.0.0';
+190210 19:25:50 [Note] Server socket created on IP: '0.0.0.0'.
+190210 19:25:50 [Note] Event Scheduler: Loaded 0 events
+190210 19:25:50 [Note] D:\phpStudy\PHPTutorial\MySQL\bin\mysqld.exe: ready for connections.
+Version: '5.5.53'  socket: ''  port: 3306  MySQL Community Server (GPL)
+190210 19:36:04 [Note] Plugin 'FEDERATED' is disabled.
+190210 19:36:04 InnoDB: The InnoDB memory heap is disabled
+190210 19:36:04 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+190210 19:36:04 InnoDB: Compressed tables use zlib 1.2.3
+190210 19:36:04 InnoDB: Initializing buffer pool, size = 47.0M
+190210 19:36:04 InnoDB: Completed initialization of buffer pool
+190210 19:36:04 InnoDB: highest supported file format is Barracuda.
+190210 19:36:04  InnoDB: Waiting for the background threads to start
+190210 19:36:05 InnoDB: 5.5.53 started; log sequence number 1595675
+190210 19:36:05 [Note] Server hostname (bind-address): '0.0.0.0'; port: 3306
+190210 19:36:05 [Note]   - '0.0.0.0' resolves to '0.0.0.0';
+190210 19:36:05 [Note] Server socket created on IP: '0.0.0.0'.
+190210 19:36:05 [Note] Event Scheduler: Loaded 0 events
+190210 19:36:05 [Note] D:\phpStudy\PHPTutorial\MySQL\bin\mysqld.exe: ready for connections.
+Version: '5.5.53'  socket: ''  port: 3306  MySQL Community Server (GPL)
+190210 19:36:51 [Note] Plugin 'FEDERATED' is disabled.
+190210 19:36:51 InnoDB: The InnoDB memory heap is disabled
+190210 19:36:51 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+190210 19:36:51 InnoDB: Compressed tables use zlib 1.2.3
+190210 19:36:51 InnoDB: Initializing buffer pool, size = 47.0M
+190210 19:36:51 InnoDB: Completed initialization of buffer pool
+190210 19:36:51 InnoDB: highest supported file format is Barracuda.
+190210 19:36:51  InnoDB: Waiting for the background threads to start
+190210 19:36:52 InnoDB: 5.5.53 started; log sequence number 1595675
+190210 19:36:52 [Note] Server hostname (bind-address): '0.0.0.0'; port: 3306
+190210 19:36:52 [Note]   - '0.0.0.0' resolves to '0.0.0.0';
+190210 19:36:52 [Note] Server socket created on IP: '0.0.0.0'.
+190210 19:36:52 [Note] Event Scheduler: Loaded 0 events
+190210 19:36:52 [Note] D:\phpStudy\PHPTutorial\MySQL\bin\mysqld.exe: ready for connections.
+Version: '5.5.53'  socket: ''  port: 3306  MySQL Community Server (GPL)
+190210 19:40:47 [Note] Plugin 'FEDERATED' is disabled.
+190210 19:40:47 InnoDB: The InnoDB memory heap is disabled
+190210 19:40:47 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+190210 19:40:47 InnoDB: Compressed tables use zlib 1.2.3
+190210 19:40:47 InnoDB: Initializing buffer pool, size = 47.0M
+190210 19:40:47 InnoDB: Completed initialization of buffer pool
+190210 19:40:47 InnoDB: highest supported file format is Barracuda.
+190210 19:40:47  InnoDB: Waiting for the background threads to start
+190210 19:40:48 InnoDB: 5.5.53 started; log sequence number 1595675
+190210 19:40:48 [Note] Server hostname (bind-address): '0.0.0.0'; port: 3306
+190210 19:40:48 [Note]   - '0.0.0.0' resolves to '0.0.0.0';
+190210 19:40:48 [Note] Server socket created on IP: '0.0.0.0'.
+190210 19:40:49 [Note] Event Scheduler: Loaded 0 events
+190210 19:40:49 [Note] MySQLa: ready for connections.
+Version: '5.5.53'  socket: ''  port: 3306  MySQL Community Server (GPL)
+190210 19:41:54 [Note] Plugin 'FEDERATED' is disabled.
+190210 19:41:54 InnoDB: The InnoDB memory heap is disabled
+190210 19:41:54 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+190210 19:41:54 InnoDB: Compressed tables use zlib 1.2.3
+190210 19:41:54 InnoDB: Initializing buffer pool, size = 47.0M
+190210 19:41:54 InnoDB: Completed initialization of buffer pool
+190210 19:41:54 InnoDB: highest supported file format is Barracuda.
+190210 19:41:55  InnoDB: Waiting for the background threads to start
+190210 19:41:56 InnoDB: 5.5.53 started; log sequence number 1595675
+190210 19:41:56 [Note] Server hostname (bind-address): '0.0.0.0'; port: 3306
+190210 19:41:56 [Note]   - '0.0.0.0' resolves to '0.0.0.0';
+190210 19:41:56 [Note] Server socket created on IP: '0.0.0.0'.
+190210 19:41:56 [Note] Event Scheduler: Loaded 0 events
+190210 19:41:56 [Note] D:\phpStudy\PHPTutorial\MySQL\bin\mysqld.exe: ready for connections.
+Version: '5.5.53'  socket: ''  port: 3306  MySQL Community Server (GPL)
+190210 19:43:08 [Note] Plugin 'FEDERATED' is disabled.
+190210 19:43:08 InnoDB: The InnoDB memory heap is disabled
+190210 19:43:08 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+190210 19:43:08 InnoDB: Compressed tables use zlib 1.2.3
+190210 19:43:08 InnoDB: Initializing buffer pool, size = 47.0M
+190210 19:43:08 InnoDB: Completed initialization of buffer pool
+190210 19:43:08 InnoDB: highest supported file format is Barracuda.
+190210 19:43:08  InnoDB: Waiting for the background threads to start
+190210 19:43:09 InnoDB: 5.5.53 started; log sequence number 1595675
+190210 19:43:09 [Note] Server hostname (bind-address): '0.0.0.0'; port: 3306
+190210 19:43:09 [Note]   - '0.0.0.0' resolves to '0.0.0.0';
+190210 19:43:09 [Note] Server socket created on IP: '0.0.0.0'.
+190210 19:43:09 [Note] Event Scheduler: Loaded 0 events
+190210 19:43:09 [Note] D:\phpStudy\PHPTutorial\MySQL\bin\mysqld.exe: ready for connections.
+Version: '5.5.53'  socket: ''  port: 3306  MySQL Community Server (GPL)
+190210 19:44:45 [Note] Plugin 'FEDERATED' is disabled.
+190210 19:44:45 InnoDB: The InnoDB memory heap is disabled
+190210 19:44:45 InnoDB: Mutexes and rw_locks use Windows interlocked functions
+190210 19:44:45 InnoDB: Compressed tables use zlib 1.2.3
+190210 19:44:45 InnoDB: Initializing buffer pool, size = 47.0M
+190210 19:44:45 InnoDB: Completed initialization of buffer pool
+190210 19:44:45 InnoDB: highest supported file format is Barracuda.
+190210 19:44:45  InnoDB: Waiting for the background threads to start
+190210 19:44:46 InnoDB: 5.5.53 started; log sequence number 1595675
+190210 19:44:46 [Note] Server hostname (bind-address): '0.0.0.0'; port: 3306
+190210 19:44:46 [Note]   - '0.0.0.0' resolves to '0.0.0.0';
+190210 19:44:46 [Note] Server socket created on IP: '0.0.0.0'.
+190210 19:44:46 [Note] Event Scheduler: Loaded 0 events
+190210 19:44:46 [Note] D:\phpStudy\PHPTutorial\MySQL\bin\mysqld.exe: ready for connections.
+Version: '5.5.53'  socket: ''  port: 3306  MySQL Community Server (GPL)
+190210 21:20:46 [Warning] IP address '45.199.178.251' could not be resolved: 这是在主机名解析时通常出现的暂时错误，它意味着本地服务器没有从权威服务器上收到响应。 
+190211  0:04:12 [Warning] IP address '196.52.43.97' could not be resolved: 不知道这样的主机。 
+190211  4:29:44 [Warning] IP address '122.228.19.79' could not be resolved: 不知道这样的主机。 
+190211 15:18:58 [Warning] IP address '125.65.46.248' could not be resolved: 不知道这样的主机。 
+190211 16:01:03 [Warning] IP address '113.96.223.207' could not be resolved: 这是在主机名解析时通常出现的暂时错误，它意味着本地服务器没有从权威服务器上收到响应。 
+190211 16:09:38 [Warning] IP address '123.161.201.100' could not be resolved: 不知道这样的主机。 
+190211 18:01:29 [Warning] IP address '123.206.49.2' could not be resolved: 请求的名称有效，但是找不到请求的类型的数据。 
+190211 19:41:58 [Warning] IP address '27.148.159.137' could not be resolved: 不知道这样的主机。 
+190211 19:49:28 [Warning] IP address '222.35.8.61' could not be resolved: 不知道这样的主机。 
+190211 20:39:23 [Warning] IP address '222.186.136.97' could not be resolved: 不知道这样的主机。 
+190211 20:58:05 [Warning] IP address '58.218.66.195' could not be resolved: 不知道这样的主机。 
+190211 21:25:12 [Warning] IP address '198.55.103.173' has been resolved to the host name '198.55.103.173.static.quadranet.com', which resembles IPv4-address itself.
+190212  0:52:15 [Warning] IP address '191.101.128.33' has been resolved to the host name '191.101.128.33.netsystemsresearch.com', which resembles IPv4-address itself.
+190212 11:26:44 [Warning] IP address '60.191.38.78' could not be resolved: 不知道这样的主机。 
+190212 21:16:11 [Warning] IP address '129.28.72.12' could not be resolved: 不知道这样的主机。 
+190212 23:13:08 [Warning] IP address '117.50.51.238' could not be resolved: 这是在主机名解析时通常出现的暂时错误，它意味着本地服务器没有从权威服务器上收到响应。 
+190213  1:26:29 [Warning] IP address '196.52.43.110' could not be resolved: 不知道这样的主机。 
+190213  8:06:11 [Warning] IP address '122.114.180.183' could not be resolved: 这是在主机名解析时通常出现的暂时错误，它意味着本地服务器没有从权威服务器上收到响应。 
+190213  9:05:29 [Warning] IP address '122.114.180.183' could not be resolved: 这是在主机名解析时通常出现的暂时错误，它意味着本地服务器没有从权威服务器上收到响应。 
+190213 10:46:20 [Warning] IP address '58.211.147.182' could not be resolved: 不知道这样的主机。 
+190213 13:25:19 [Warning] IP address '122.114.224.149' could not be resolved: 这是在主机名解析时通常出现的暂时错误，它意味着本地服务器没有从权威服务器上收到响应。 
+190213 14:29:03 [Warning] IP address '218.61.16.153' could not be resolved: 不知道这样的主机。 
+190213 19:01:14 [Warning] IP address '58.218.66.92' could not be resolved: 不知道这样的主机。 
+190213 21:21:17 [Warning] IP address '122.224.170.114' could not be resolved: 不知道这样的主机。 
+190214  0:21:41 [Warning] IP address '196.52.43.122' could not be resolved: 不知道这样的主机。 
+190214  1:18:35 [Warning] IP address '122.114.180.183' could not be resolved: 这是在主机名解析时通常出现的暂时错误，它意味着本地服务器没有从权威服务器上收到响应。 
+190214 15:27:19 [Warning] IP address '123.59.52.206' could not be resolved: 不知道这样的主机。 
+190214 15:27:22 [Warning] IP address '123.59.52.206' could not be resolved: 不知道这样的主机。 
+190214 19:49:25 [Warning] IP address '125.64.94.197' could not be resolved: 不知道这样的主机。 
+190215  1:10:51 [Warning] IP address '196.52.43.84' could not be resolved: 不知道这样的主机。 
+190215  3:01:52 [Warning] IP address '45.199.178.74' could not be resolved: 这是在主机名解析时通常出现的暂时错误，它意味着本地服务器没有从权威服务器上收到响应。 
+190215  3:22:44 [Warning] IP address '58.218.66.85' could not be resolved: 不知道这样的主机。 
+190215  4:16:16 [Warning] IP address '222.186.46.9' could not be resolved: 不知道这样的主机。 
+190215 15:24:31 [Warning] IP address '122.114.9.185' could not be resolved: 这是在主机名解析时通常出现的暂时错误，它意味着本地服务器没有从权威服务器上收到响应。 

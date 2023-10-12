@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TreasureRune" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*" width="554" height="716">
+
+	<e:Image source="tongyonglabbg" x="1" width="552" bottom="0" top="0" scale9Grid="40,47,49,1"/>
+	<e:Image horizontalCenter="-34" verticalCenter="-129.5" source="tongyongditu_png"/>
+	<e:Group id="dinghong" width="556" height="62" horizontalCenter="-1" top="0" scaleY="-1">
+		<e:Image top="0" bottom="0" source="bantoumingkuang3" left="0" scale9Grid="34,11,11,6"/>
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" scale9Grid="34,11,8,7"/>
+	</e:Group>
+	<e:Label text="已解锁战纹列表：" size="22" textColor="0x7e6437" left="12" top="24"/>
+	<e:Button id="buy10" label="寻宝十次" icon="xb_26" skinName="Btn1Skin" width="130" height="50" bottom="24" horizontalCenter="115"/>
+	<e:Button id="buy1" label="寻宝一次" icon="xb_25" skinName="Btn1Skin" width="130" height="50" horizontalCenter="-115" bottom="24"/>
+	<e:Group id="zwHunt10" horizontalCenter="115" bottom="74">
+		<e:Image source="szyuanbao" width="30" y="0" scaleX="1" scaleY="1" x="0"/>
+		<e:Label id="zw10" text="1980" size="20" textColor="0xF8B141" x="32" y="1" scaleX="1" scaleY="1"/>
+		<e:Label text="（" size="20" textColor="0xF8B141" x="189" y="5" scaleX="1" scaleY="1"/>
+		<e:Image anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" source="200166_png" x="215" y="0" scaleX="1" scaleY="1"/>
+		<e:Label id="num10" text="1000" size="20" x="133" textColor="0x00FF00"/>
+		<e:Label text="/10）" size="20" textColor="0xF8B141" x="199" y="15" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:HorizontalLayout gap="2" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group id="zwHunt1" horizontalCenter="-115" bottom="74">
+		<e:Image source="szyuanbao" width="30" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="zw1" text="100" size="20" textColor="0xF8B141" x="32" y="14" scaleX="1" scaleY="1"/>
+		<e:Label text="（" size="20" textColor="0xF8B141" x="189" y="5" scaleX="1" scaleY="1"/>
+		<e:Image anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" source="200166_png" x="215" y="0" scaleX="1" scaleY="1"/>
+		<e:Label id="num1" text="1000" size="20" x="133" textColor="0x00ff00"/>
+		<e:Label text="/1）" size="20" textColor="0xF8B141" x="199" y="15" scaleX="1" scaleY="1"/>
+		<e:layout>
+		<e:HorizontalLayout verticalAlign="middle" gap="2"/>
+		</e:layout>
+	</e:Group>
+
+	<e:Group id="btnGroup" right="15" y="10">
+		<e:Button id="outBag" label="寻宝仓库" width="120" height="44" skinName="Btn3Skin" y="2"/>
+		<e:Image id="redPoint2" source="zjmhongdian" touchEnabled="false" right="-10" y="-2"/>
+	</e:Group>
+	<e:Group id="btnGroup0" right="155" y="10">
+		<e:Button id="outBag0" label="碎片商店" skinName="Btn3Skin" width="120" height="44" y="2"/>
+		<e:Image id="redPoint0" source="zjmhongdian" touchEnabled="false" y="-2" right="-10"/>
+	</e:Group>
+	<e:Rect top="64" bottom="288" fillAlpha="0.3" left="7" right="85" visible="false"/>
+
+
+	<e:Scroller left="12" scrollPolicyV="on" top="63" bottom="271" right="100">
+		<e:List id="list1" itemRendererSkinName="RuneItemSkin">
+			<e:layout>
+				<e:TileLayout paddingLeft="10" paddingRight="10" requestedColumnCount="4"/>
+			</e:layout>
+
+		</e:List>
+
+	</e:Scroller>
+	<e:Image top="442" horizontalCenter="-3" source="runetreasurebg_png"/>
+	<e:Group top="63" right="2">
+		<e:Image source="treasurerune_json.morerewardbg" scaleX="1" scaleY="1" top="0" horizontalCenter="0" scale9Grid="47,60,5,3" height="390"/>
+		<e:Image source="runemoregiftbg" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" width="93" horizontalCenter="0" top="0"/>
+		<e:Label text="额外奖励" size="16" textColor="0xff9900" top="9" horizontalCenter="0"/>
+		<e:Label id="boxcount" text="本周累积" size="16" textColor="0xFF9900" top="28" horizontalCenter="0"/>
+		<e:BitmapLabel id="times" font="num_lv__fnt" text="160" top="44" letterSpacing="-3" right="31"/>
+		<e:Label text="次" size="16" textColor="0xFF9900" top="47" horizontalCenter="24.5"/>
+	</e:Group>
+	<e:Group   width="79" top="142" right="14">
+
+
+		<e:Group y="-484"   x="-224">
+			<e:Image source="touxiangkuang" width="60" height="60" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image id="box0"   source="200116_png" width="60" height="60" verticalCenter="0" horizontalCenter="0"/>
+			<e:Image source="tongyonghd_json.bantoutiaobg" width="60" height="20" horizontalCenter="0" bottom="0" scale9Grid="121,19,7,7"/>
+			<e:Label id="time0" text="10次" size="16"   textColor="0xDFD1B5" bottom="2" horizontalCenter="0"/>
+			<e:Label id="done0" text="已领取" size="16"   textColor="0x00FF00" bottom="0" horizontalCenter="0" visible="false"/>
+			<e:Image id="boxPoint0" source="zjmhongdian" touchEnabled="false" scaleX="1" scaleY="1" right="0" top="0" visible="false"/>
+		</e:Group>
+		<e:Group x="-468" y="-414"  >
+			<e:Image source="touxiangkuang" width="60" height="60" horizontalCenter="0" verticalCenter="0" x="2" y="70" scaleX="1" scaleY="1"/>
+			<e:Image id="box1"   horizontalCenter="0" source="200116_png" width="60" height="60"/>
+			<e:Image source="tongyonghd_json.bantoutiaobg" width="60" height="20" horizontalCenter="0" bottom="0" scale9Grid="121,19,7,7"/>
+			<e:Label id="time1" text="20次" size="16"   textColor="0xDFD1B5" bottom="2" horizontalCenter="0"/>
+			<e:Label id="done1" text="已领取" size="16" textColor="0x00FF00"   bottom="0" horizontalCenter="0" visible="false"/>
+			<e:Image id="boxPoint1" source="zjmhongdian" touchEnabled="false" scaleX="1" scaleY="1" right="0" top="0" visible="false"/>
+		</e:Group>
+		<e:Group x="-468" y="-344"  >
+			<e:Image source="touxiangkuang" width="60" height="60" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image id="box2"   horizontalCenter="0" source="200116_0_png" width="60" height="60"/>
+			<e:Image source="tongyonghd_json.bantoutiaobg" width="60" height="20" horizontalCenter="0" bottom="0" scale9Grid="121,19,7,7"/>
+			<e:Label id="time2" text="50次" size="16"   textColor="0xDFD1B5" horizontalCenter="0" bottom="2"/>
+			<e:Label text="已领取" size="16" textColor="0x00FF00"   id="done2" bottom="0" horizontalCenter="0" visible="false"/>
+			<e:Image id="boxPoint2" source="zjmhongdian" touchEnabled="false" scaleX="1" scaleY="1" right="0" top="0" x="36" y="-60" visible="false"/>
+		</e:Group>
+		<e:Group x="-468" y="-274"  >
+			<e:Image source="touxiangkuang" width="60" height="60" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image id="box3"   horizontalCenter="0" source="200116_0_png" width="60" height="60"/>
+			<e:Image source="tongyonghd_json.bantoutiaobg" width="60" height="20" horizontalCenter="0" bottom="0" scale9Grid="121,19,7,7"/>
+			<e:Label id="time3" text="100次" size="16"   textColor="0xDFD1B5" bottom="2" horizontalCenter="0"/>
+			<e:Label text="已领取" size="16" textColor="0x00FF00"   id="done3" bottom="0" horizontalCenter="0" visible="false"/>
+			<e:Image id="boxPoint3" source="zjmhongdian" touchEnabled="false" scaleX="1" scaleY="1" right="0" top="0" x="36" y="-60" visible="false"/>
+		</e:Group>
+		<e:Group x="-458" y="-264">
+			<e:Image source="touxiangkuang" width="60" height="60" horizontalCenter="0" verticalCenter="0"/>
+			<e:Image id="box4" horizontalCenter="0" source="200116_0_png" width="60" height="60"/>
+			<e:Image source="tongyonghd_json.bantoutiaobg" width="60" height="20" horizontalCenter="0" bottom="0" scale9Grid="121,19,7,7"/>
+			<e:Label id="time4" text="100次" size="16" textColor="0xDFD1B5" bottom="2" horizontalCenter="0"/>
+			<e:Label text="已领取" size="16" textColor="0x00FF00" id="done4" bottom="0" horizontalCenter="0" visible="false"/>
+			<e:Image id="boxPoint4" source="zjmhongdian" touchEnabled="false" scaleX="1" scaleY="1" right="0" top="0" x="36" y="-60" visible="false"/>
+		</e:Group>
+		<e:layout>
+			<e:VerticalLayout gap="0" horizontalAlign="center"/>
+		</e:layout>
+	</e:Group>
+	<e:Label id="leftTime" text="累计重置剩余时间：6天 04:23:01" size="18" right="13" top="464" textColor="0xf8b141" visible="false"/>
+	<e:Label id="hope" text="500" size="18" top="578" x="66" y="2" scaleX="1" scaleY="1" visible="false"/>
+	<e:Group horizontalCenter="140" top="482">
+		<e:Group top="478" x="5" y="8" scaleX="1" scaleY="1">
+			<e:Label text="当前祝福值：" size="18" top="161" x="4" y="2" scaleX="1" scaleY="1" textColor="0xff9900"/>
+			<e:BitmapLabel id="hopeValue" x="78" y="5" font="num_g0_fnt" text="1000" letterSpacing="-7"/>
+			<e:layout>
+			<e:HorizontalLayout gap="0" verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Label text="祝福值越高，获得稀有物品的机会就越大！祝福值满，必定获得一个已解锁的金色战纹！" anchorOffsetX="0" width="236" size="18" textColor="0xd1c28f" textAlign="left" top="512" x="5" y="42" scaleX="1" scaleY="1"/>
+		<e:layout>
+			<e:VerticalLayout horizontalAlign="left"/>
+		</e:layout>
+	</e:Group>
+
+	<e:Group horizontalCenter="-113" top="450">
+		<e:Image id="maxHopeValue" source="luckvalue" scaleX="1" scaleY="1" anchorOffsetX="0" anchorOffsetY="0" x="1" y="12"/>
+	</e:Group>
+
+
+
+</e:Skin>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="richmanItemSkin" width="54" height="54" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Image id="Img" scale9Grid="19,11,14,29" anchorOffsetX="0" anchorOffsetY="0" x="0" y="11" source="richman_blank"/>
+	<e:Image id="shadow" scale9Grid="19,11,14,29" anchorOffsetX="0" anchorOffsetY="0" x="11" y="41" source="richman_shadow"/>
+	<e:Image id="itemicon" x="7" y="0" scaleX="1" scaleY="1" source="200001_png" width="40" height="40"/>
+
+
+
+
+
+
+
+
+</e:Skin>

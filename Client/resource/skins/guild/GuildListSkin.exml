@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildListSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" width="570" height="731">
+	<e:Image source="tongyongmianbanbg" scale9Grid="20,18,8,14" top="0" bottom="0" left="0" right="0"/>
+	<e:Group horizontalCenter="0" y="6" width="554">
+		<e:Image source="tielian" x="40" y="0"/>
+		<e:Image source="tielian" right="40"/>
+		<e:Image source="jineng_json.jinengline1" scale9Grid="16,0,4,11" width="280" x="6" y="32"/>
+		<e:Image source="jineng_json.jinengline1" scale9Grid="16,0,4,11" width="280" scaleX="-1" y="32" right="6"/>
+	</e:Group>
+	<e:Scroller width="550" horizontalCenter="0" top="52" bottom="10">
+		<e:List id="list" x="1" y="-1" itemRendererSkinName="GuildListItemSkin">
+			<e:layout>
+				<e:VerticalLayout gap="2"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+	
+</e:Skin>

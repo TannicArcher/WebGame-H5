@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SevenDayLogSkin" width="540" height="620" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<w:Config id="1586d12ec20"/>
+	
+	<e:Scroller left="0" right="0" top="0" bottom="0">
+			<e:List id="list" x="65" y="101" itemRendererSkinName="SevenDayLogItemSkin">
+				<e:layout>
+					<e:VerticalLayout gap="2"/>
+				</e:layout>
+			</e:List>
+	</e:Scroller>
+	<e:Button id="closeBtn" label="按钮" x="400" y="624" skinName="Btn0Skin" visible="false"/>
+	<e:Button id="closeBtn0" label="按钮" x="436" y="50" skinName="Btn0Skin" visible="false"/>
+</e:Skin>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChoseWorkerSin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*"  height="930" >
+	<w:Config id="1586b349dbe"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="132"/>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" right="0" left="0" currentState="nohead" className="RoleSelectPanel"/>
+
+	<e:Group name="装备" width="580" horizontalCenter="0" top="0" bottom="130">
+
+
+
+
+		<e:Group left="10" right="10" bottom="8" height="169">
+			<e:Group id="dinghong" bottom="0" height="168" width="556" horizontalCenter="0">
+				<e:Image top="0" bottom="0" source="bantoumingkuang3"  scale9Grid="34,36,210,16"/>
+				<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" scale9Grid="34,36,210,16" right="0" />
+			</e:Group>
+
+
+			<e:Image source="tongyongline" y="69" horizontalCenter="0" scale9Grid="103,0,19,3" width="426"/>
+		</e:Group>
+		<e:List id="record" itemRendererSkinName="ChoseWorkerItemSkin"  width="550" horizontalCenter="0" y="47">
+			<e:layout>
+				<e:VerticalLayout gap="4" horizontalAlign="center"/>
+			</e:layout>
+		</e:List>
+		<e:Button id="advance" label="提升品质" icon="xb_25" skinName="Btn1Skin" horizontalCenter="-130" bottom="16"/>
+		<e:Button id="start" label="雇佣开采" icon="xb_25" skinName="Btn1Skin" horizontalCenter="130" bottom="16"/>
+		<e:Label text="祝福值提升成功几率，满值必定成功，成功后祝福值清空" size="18" horizontalCenter="0" bottom="146" textColor="0x7e6437"/>
+		<e:Group horizontalCenter="0" bottom="105">
+			<e:Label text="祝福值" x="-23" y="20" textColor="0xff9900" size="20"  />
+			<e:Group id="barGroup" width="430" height="40" horizontalCenter="0" y="11" x="43"  >
+				<e:ProgressBar id="expBar0" maximum="100" value="40" skinName="WingExpBarSkin" slideDuration="0" height="16" left="39" right="36" verticalCenter="0" anchorOffsetX="0"/>
+				<e:Image id="barBg0" left="0" right="0" source="jingyantiao1" scale9Grid="60,15,5,3" verticalCenter="0"/>
+			</e:Group>
+			<e:layout>
+				<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Group horizontalCenter="-130" bottom="76">
+			<e:Label text="消耗：" x="14" y="-4" textColor="0xd1c38f" size="18"  />
+			<e:Label id="yuanbaoNum" text="0" x="140" y="-4" size="18"   textColor="0x00ff00"/>
+			<e:Image source="szyuanbao" x="156" y="-2"  />
+			<e:Label text="或" x="24" y="6" textColor="0xD1C38F" size="18" width="24" textAlign="center"/>
+			<e:CheckBox id="checkBox" label="" x="103" y="-1" skinName="CheckBox0" scaleX="0.7" scaleY="0.7"/>
+			<e:Image anchorOffsetX="0" width="30" anchorOffsetY="0" height="30" x="1" y="-18" scaleX="1" scaleY="1" source="200936_png"/>
+			<e:Label id="num1" text="10000" y="-18" size="20" x="63.5" textColor="0x00FF00" scaleX="1" scaleY="1"/>
+			<e:Label id="needlabel" text="/1" size="20" textColor="0xF8B141" x="126" y="-3" scaleX="1" scaleY="1"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" gap="2"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="countTxt" text="今日采矿次数：2/3" textColor="0xD1C38F" size="18"   horizontalCenter="130" bottom="76" height="31" verticalAlign="middle"/>
+		<e:Image source="biaoti_employworker" horizontalCenter="-169" top="6"/>
+	</e:Group>
+</e:Skin>

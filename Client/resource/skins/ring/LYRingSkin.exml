@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LYRingSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:PriceIcon="PriceIcon.*" xmlns:ns1="*" height="930" >
+	<w:Config id="15a177a4c02"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" scale9Grid="15,12,2,3" width="580" horizontalCenter="0"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30" width="570" horizontalCenter="0" top="44" bottom="155"/>
+	<e:ViewStack id="viewStack" width="554" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" top="52" bottom="163" selectedIndex="2">
+		<ns1:BaseComponent id="LYRBase" name="升 星" left="0" bottom="0" right="0" top="0" skinName="LYRBaseSkin" className="FireRingInfoPanel"/>
+		<ns1:BaseComponent id="LYRSkill" name="技 能" left="0" bottom="0" right="0" top="0" skinName="LYRSkillSkin" visible="false" className="FireRingSkillPanel"/>
+		<ns1:BaseComponent id="LYRFb" name="副 本" left="0" bottom="0" right="0" top="0" x="10" y="10" skinName="LYRFbSkin" className="FireRingFb" visible="false"/>
+		<ns1:BaseComponent id="LYRMark" name="烈焰印记" left="0" bottom="0" right="0" top="0" x="10" y="10" skinName="LYRMarkSkin" className="LyMarkPanel" visible="false"/>
+	</e:ViewStack>
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  width="580" horizontalCenter="0" currentState="nohead"/>
+	<e:Image y="5" source="biaoti_tejie" horizontalCenter="-155"/>
+		<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}" selectedIndex="0" horizontalCenter="0" bottom="112">
+		<e:layout>
+		<e:HorizontalLayout gap="0"/>
+		</e:layout>
+	</e:TabBar>
+	<e:Image id="redPoint0" source="zjmhongdian" bottom="141" horizontalCenter="-135" visible="false"/>
+	<e:Image id="redPoint1" source="zjmhongdian" horizontalCenter="-14" bottom="141" visible="false"/>
+	<e:Image id="redPoint2" source="zjmhongdian" bottom="141" horizontalCenter="107" visible="false"/>
+	<e:Image id="redPoint3" source="zjmhongdian" bottom="141" horizontalCenter="229" visible="false"/>
+
+</e:Skin>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="LimitTimeItem" width="275" height="75" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<w:Config id="15c9c7ab18c"/>
+	<e:Image left="0" right="0" source="tongyonglabbg" top="0" bottom="0" scale9Grid="40,20,54,36"/>
+	<e:Image id="headBG" x="10" width="70" height="70" verticalCenter="0" scale9Grid="15,14,36,36" source="" visible="false"/>
+	<!--<e:Group id="conGroup" width="119" height="87" x="310" y="2" visible="false">
+		<e:Button id="conBtn" label="捐 献" x="29" y="40" skinName="Btn1Skin" width="70" height="30"/>
+		<e:Label id="numLab" text="1/5" x="29" y="13" fontFamily="黑体" size="16" textColor="0xDFDCDC" width="71" textAlign="center"/>
+	</e:Group>-->
+	<e:Label id="progTxt" text="(100/100)" size="16" textAlign="left" textColor="0xc41200" left="69" verticalCenter="14.5" />
+	<e:Label id="taskNameTxt" text="激活神器：神·道玄剑" size="16" bold="true" width="175" height="20" textColor="0x9f946d"    left="69" verticalCenter="-12.5"/>
+	<e:Button id="goBtn" label="前往" icon="jiantouyou2" skinName="Btn3Skin" scaleX="0.98" scaleY="0.98" right="5" bottom="4" width="80" height="38"  />
+	<ns1:BaseComponent id="taskIcon" skinName="ItemSkin" className="ItemBase" scaleX="0.8" scaleY="0.8" verticalCenter="9" left="0"/>
+	<e:Image id="redPoint" source="zjmhongdian"  touchEnabled="false" right="1.1699999999999875" top="2.01"/>
+	<e:Label id="stateTxt" text="已完成" size="20" textAlign="center" bold="true" textColor="0x20cb30"   right="12" bottom="14.5" visible="false"/>
+	<e:Label id="done" text="已完成" size="18" textAlign="center" textColor="0x499b4f" bold="true" y="41" x="202"   visible="false"/>
+</e:Skin>

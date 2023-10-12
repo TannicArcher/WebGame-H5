@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="boostskin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="730">
+	<w:Config id="159bef2916a"/>
+	<e:Image source="qianghuabg_png" width="554" alpha="0.7" horizontalCenter="0" top="6" bottom="110"/>
+	<e:Group id="dinghong0" width="556" height="104" bottom="6" horizontalCenter="0">
+		<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3" />
+		<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0" />
+	</e:Group>
+	<e:Image horizontalCenter="-22" source="qianghuarenbg_png" verticalCenter="-24.5"/>
+	<!--<e:Group id="powerGroup" y="140" horizontalCenter="0" visible="false">
+		<e:Image source="zhandoulibg" x="2" y="10"/>
+		<e:Image id="powerImg" x="0" y="0" source="zjmzhandouli"/>
+	</e:Group>-->
+	<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0" verticalCenter="-237"/>
+
+	<e:Group id="upInfo" bottom="0" height="110" horizontalCenter="0" width="560">
+		<e:Group id="costGroup" horizontalCenter="0" bottom="70">
+			<e:Label id="expendLabel" text="消耗: " size="20" bold="true" x="0" y="0" textColor="0xd1c28f"/>
+			<e:Image id="icon" x="55" source="200002_png" width="40" height="40" y="28"/>
+			<e:Label id="countLabel" text="12000/100" size="20" textAlign="left" textColor="0xd1c28f" x="94" y="12"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Label id="getItemTxt" text="获取道具" size="20" textColor="0x00FF00"   horizontalCenter="170" bottom="10" height="60" verticalAlign="middle" width="100" textAlign="center"/>
+		<e:Button id="upGradeBtn" label="强  化" skinName="Btn1Skin" horizontalCenter="0" bottom="10"/>
+		<e:Button id="upGradeBtn0" label="一键强化" skinName="Btn1Skin" bottom="14" x="285" visible="false"/>
+	</e:Group>
+	<e:Group width="480" height="100" bottom="110" horizontalCenter="0">
+		<e:Image height="68" y="30" source="shuxingbg" scale9Grid="36,6,113,39" left="0" right="0"/>
+		<e:Image x="0" source="shuxingbg2" scale9Grid="188,0,5,32" width="240" y="0"/>
+		<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="240" scaleX="-1" y="0" right="0"/>
+		<e:Group y="44" x="40">
+			<e:Label id="attr0" text="攻击+10000" size="18" textAlign="center" x="0" textColor="0x9f946d" y="0"/>
+			<e:Image id="arrow0" x="139" y="1" rotation="90" source="tongyongup"/>
+			<e:Label id="addAttr0" text="22222" size="18" textAlign="center" x="124" textColor="0x32FF00" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="260" y="44">
+			<e:Label id="attr1" text="生命+10000" size="18" textAlign="center" x="0" textColor="0x9f946d" y="0"/>
+			<e:Image id="arrow1" source="tongyongup" x="139" y="1" rotation="90"/>
+			<e:Label id="addAttr1" text="222222" size="18" textAlign="center" textColor="0x32FF00" x="126" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="260" y="68">
+			<e:Label id="attr3" text="物防 +100" size="18" textAlign="center" x="0" textColor="0x9f946d" y="0"/>
+			<e:Image id="arrow3" source="tongyongup" x="139" y="1" rotation="90"/>
+			<e:Label id="addAttr3" text="2222" size="18" textAlign="center" textColor="0x32FF00" x="126" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+		<e:Group x="40" y="68">
+			<e:Label id="attr2" text="魔防 +100" size="18" textAlign="center" x="0" textColor="0x9f946d" y="0"/>
+			<e:Image id="arrow2" source="tongyongup" x="139" y="1" rotation="90"/>
+			<e:Label id="addAttr2" text="2222" size="18" textAlign="center" textColor="0x32FF00" x="124" y="0"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle"/>
+			</e:layout>
+		</e:Group>
+	</e:Group>
+	<e:Image id="show1" source="qianghuarenwuqi" horizontalCenter="-155" verticalCenter="43"/>
+	<e:Image id="show5" source="qianghuarenhuwan" width="181" horizontalCenter="33.5" scale9Grid="45,9,8,58" verticalCenter="-83.5"/>
+	<e:Image id="show6" source="qianghuarenwuyaodai" horizontalCenter="22" verticalCenter="-16.5"/>
+	<e:Image id="show3" source="qianghuarenyifu" verticalCenter="-142" horizontalCenter="22.5"/>
+	<e:Image id="show4" source="qianghuarenxianglian" horizontalCenter="14" verticalCenter="-147.5"/>
+	<e:Image id="show7" source="qianghuarenjiezhi" width="177" scale9Grid="32,5,8,31" horizontalCenter="31.5" verticalCenter="-49"/>
+	<e:Image id="show8" source="qianghuarenwujiao" width="196" scale9Grid="73,16,9,98"   height="148" horizontalCenter="19" verticalCenter="109.5"/>
+	<e:Image id="show2" source="qianghuarentou" horizontalCenter="22" verticalCenter="-188"/>
+	<e:Group id="itemGroup" height="460" touchChildren="false" touchEnabled="false" horizontalCenter="0" verticalCenter="-36.5">
+		<e:Image source="quality0" width="76" height="76"/>
+		<e:Image source="quality0" y="116" width="76" height="76"/>
+		<e:Image source="quality0" y="236" width="76" height="76"/>
+		<e:Image source="quality0" y="356" width="76" height="76"/>
+		<e:Image source="quality0" width="76" height="76" x="436"/>
+		<e:Image source="quality0" y="116" width="76" height="76" x="436"/>
+		<e:Image source="quality0" y="236" width="76" height="76" x="436"/>
+		<e:Image source="quality0" y="356" width="76" height="76" x="436"/>
+		<e:Image id="pos0" touchEnabled="true" width="56" height="56" x="9" y="9" source="dz_10"/>
+		<e:Image id="pos2" touchEnabled="true" width="56" height="56" y="125" x="9" source="dz_12"/>
+		<e:Image id="pos4" touchEnabled="true" width="56" height="56" y="245" x="9" source="dz_14"/>
+		<e:Image id="pos6" touchEnabled="true" width="56" height="56" y="365" x="9" source="dz_16"/>
+		<e:Image id="pos1" touchEnabled="true" width="56" height="56" y="9" source="dz_11" x="446"/>
+		<e:Image id="pos3" touchEnabled="true" width="56" height="56" y="125" source="dz_13" x="446"/>
+		<e:Image id="pos5" touchEnabled="true" width="56" height="56" y="245" source="dz_15" x="446"/>
+		<e:Image id="pos7" touchEnabled="true" width="56" height="56" y="365" source="dz_17" x="446"/>
+		<e:Group id="lv0" width="52.98" height="24" x="20" y="4" visible="false">
+		<e:Image id="add" source="lv_+_png" x="1" y="0"/>
+		<e:Image id="num0" x="12.66" y="0" source="lv_2_png"/>
+		<e:Image id="num1" x="24.339999999999996" y="0" source="lv_0_png"/>
+		<e:Image id="num2" x="37.98" y="0" source="lv_0_png"/>
+		</e:Group>
+		<e:Group id="lv1" width="52.98" height="24" x="456" y="4" visible="false">
+		<e:Image id="add0" source="lv_+_png" x="1" y="0"/>
+		<e:Image id="num3" x="12.66" y="0" source="lv_2_png"/>
+		<e:Image id="num4" x="24.339999999999996" y="0" source="lv_0_png"/>
+		<e:Image id="num5" x="37.98" y="0" source="lv_0_png"/>
+		</e:Group>
+		<e:Group id="lv2" width="52.98" height="24" x="20" y="124" visible="false">
+		<e:Image id="add1" source="lv_+_png" x="1" y="0"/>
+		<e:Image id="num6" x="12.66" y="0" source="lv_2_png"/>
+		<e:Image id="num7" x="24.339999999999996" y="0" source="lv_0_png"/>
+		<e:Image id="num8" x="37.98" y="0" source="lv_0_png"/>
+		</e:Group>
+		<e:Group id="lv3" width="52.98" height="24" x="456" y="124" visible="false">
+		<e:Image id="add2" source="lv_+_png" x="1" y="0"/>
+		<e:Image id="num9" x="12.66" y="0" source="lv_2_png"/>
+		<e:Image id="num10" x="24.339999999999996" y="0" source="lv_0_png"/>
+		<e:Image id="num11" x="37.98" y="0" source="lv_0_png"/>
+		</e:Group>
+		<e:Group id="lv4" width="52.98" height="24" x="20" y="244" visible="false">
+		<e:Image id="add3" source="lv_+_png" x="1" y="0"/>
+		<e:Image id="num12" x="12.66" y="0" source="lv_2_png"/>
+		<e:Image id="num13" x="24.339999999999996" y="0" source="lv_0_png"/>
+		<e:Image id="num14" x="37.98" y="0" source="lv_0_png"/>
+		</e:Group>
+		<e:Group id="lv5" width="52.98" height="24" x="456" y="244" visible="false">
+		<e:Image id="add4" source="lv_+_png" x="1" y="0"/>
+		<e:Image id="num15" x="12.66" y="0" source="lv_2_png"/>
+		<e:Image id="num16" x="24.339999999999996" y="0" source="lv_0_png"/>
+		<e:Image id="num17" x="37.98" y="0" source="lv_0_png"/>
+		</e:Group>
+		<e:Group id="lv6" width="52.98" height="24" x="20" y="364" visible="false">
+		<e:Image id="add5" source="lv_+_png" x="1" y="0"/>
+		<e:Image id="num18" x="12.66" y="0" source="lv_2_png"/>
+		<e:Image id="num19" x="24.339999999999996" y="0" source="lv_0_png"/>
+		<e:Image id="num20" x="37.98" y="0" source="lv_0_png"/>
+		</e:Group>
+		<e:Group id="lv7" width="52.98" height="24" x="456" y="364" visible="false">
+		<e:Image id="add6" source="lv_+_png" x="1" y="0"/>
+		<e:Image id="num21" x="12.66" y="0" source="lv_2_png"/>
+		<e:Image id="num22" x="24.339999999999996" y="0" source="lv_0_png"/>
+		<e:Image id="num23" x="37.98" y="0" source="lv_0_png"/>
+		</e:Group>
+		<e:Label id="level_0" text="+10" x="0" size="20" textAlign="right" width="66" y="10" textColor="0xffe75b"/>
+		<e:Label id="level_2" text="+10" x="0" size="20" textAlign="right" width="66" y="126" textColor="0xffe75b"/>
+		<e:Label id="level_4" text="+10" x="0" size="20" textAlign="right" width="66" y="246" textColor="0xffe75b"/>
+		<e:Label id="level_6" text="+10" x="0" size="20" textAlign="right" width="66" y="366" textColor="0xffe75b"/>
+		<e:Label id="level_1" text="+10" size="20" textAlign="right" x="438" y="10" width="66" textColor="0xffe75b"/>
+		<e:Label id="level_3" text="+10" size="20" textAlign="right" x="438" y="126" width="66" textColor="0xffe75b"/>
+		<e:Label id="level_5" text="+10" size="20" textAlign="right" x="438" y="246" width="66" textColor="0xffe75b"/>
+		<e:Label id="level_7" text="+10" size="20" textAlign="right" x="438" y="366" width="66" textColor="0xffe75b"/>
+	</e:Group>
+	<e:Group id="flameGroup" width="200" height="200" horizontalCenter="61" y="225"/>
+	<e:Label id="maxDesc" text="强化已满级"   textColor="0x9f946d" size="24" bold="true" bottom="50" horizontalCenter="0" visible="false"/>
+	<e:Group id="lianjiexian0" height="460" horizontalCenter="0" width="512" verticalCenter="-36.5">
+		<e:Image id="t1" source="qianghuaxian" x="74" y="34" scale9Grid="1,1,6,6" width="58"   />
+		<e:Image id="t2" source="qianghuaxian" x="134.89" y="36.81" scale9Grid="1,1,6,6" width="232.33" rotation="90"   />
+
+
+
+		<e:Image x="114" y="252"   source="qianghuadian"/>
+		<e:Image width="74" height="74" x="0" y="0" source="qianghuaxzk" scale9Grid="4,4,8,8"/>
+	</e:Group>
+	<e:Group height="460" id="lianjiexian1" horizontalCenter="0" width="512" verticalCenter="-36.5">
+		<e:Image id="t3" source="qianghuaxian" x="390" y="32" scale9Grid="1,1,6,6" width="49"   />
+		<e:Image id="t4" source="qianghuaxian" x="395.3" y="34.849999999999994" scale9Grid="1,1,6,6" width="34" rotation="90"  />
+		<e:Image id="t5" source="qianghuaxian" x="290" y="64" scale9Grid="1,1,6,6"    width="102.75"/>
+
+
+
+		<e:Image x="273" y="51"   source="qianghuadian"/>
+		<e:Image width="74" height="74" x="438" y="0" source="qianghuaxzk" scale9Grid="4,4,8,8"/>
+	</e:Group>
+	<e:Group id="lianjiexian2" height="460" horizontalCenter="0" width="512" verticalCenter="-36.5">
+		<e:Image source="qianghuaxian" x="70" y="150" scale9Grid="1,1,6,6" width="114"   />
+		<e:Image source="qianghuaxian" x="187.99" y="126.84" scale9Grid="1,1,6,6" width="28.33"   rotation="90" />
+		<e:Image source="qianghuaxian" x="182.35" y="123.92" scale9Grid="1,1,6,6"    width="99.92"/>
+
+
+
+		<e:Image x="265.01" y="111"   source="qianghuadian"/>
+		<e:Image width="74" height="74" x="0" y="117" source="qianghuaxzk" scale9Grid="4,4,8,8"/>
+	</e:Group>
+	<e:Group height="460" id="lianjiexian3" horizontalCenter="0" width="512" verticalCenter="-36.5">
+		<e:Image source="qianghuaxian" x="386" y="150"   scale9Grid="1,1,6,6" width="56" />
+		<e:Image source="qianghuaxian" x="391.14" y="112.2"   scale9Grid="1,1,6,6" width="43.33" rotation="90" />
+		<e:Image source="qianghuaxian" x="264" y="109"   scale9Grid="1,1,6,6"  width="124.67"/>
+
+
+
+		<e:Image x="247" y="96"   source="qianghuadian"/>
+		<e:Image width="74" height="74" x="438" y="117" source="qianghuaxzk" scale9Grid="4,4,8,8"/>
+	</e:Group>
+	<e:Group height="460" id="lianjiexian4" horizontalCenter="0" width="512" verticalCenter="-36.5">
+		<e:Image source="qianghuaxian" x="70" y="270"   scale9Grid="1,1,6,6" width="44" />
+		<e:Image source="qianghuaxian" x="117.75" y="191" scale9Grid="1,1,6,6"   width="84.5" rotation="90" />
+		<e:Image source="qianghuaxian" x="112.2" y="188" scale9Grid="1,1,6,6"    width="115"/>
+
+
+
+		<e:Image x="210" y="175"   source="qianghuadian"/>
+		<e:Image width="74" height="74" x="0" y="237" source="qianghuaxzk" scale9Grid="4,4,8,8"/>
+	</e:Group>
+	<e:Group height="460" id="lianjiexian5" horizontalCenter="0" width="512" verticalCenter="-36.5">
+		<e:Image source="qianghuaxian" x="334" y="270"   scale9Grid="1,1,6,6"  width="105"/>
+		<e:Image source="qianghuaxian" x="339.34" y="190.67" scale9Grid="1,1,6,6"   width="84.5" rotation="90" />
+		<e:Image source="qianghuaxian" x="285" y="188" scale9Grid="1,1,6,6"    width="51.5"/>
+
+
+
+		<e:Image x="268" y="175"   source="qianghuadian"/>
+		<e:Image width="74" height="74" x="438" y="237" source="qianghuaxzk" scale9Grid="4,4,8,8"/>
+	</e:Group>
+	<e:Group id="lianjiexian6" height="460" horizontalCenter="0" width="512" verticalCenter="-36.5">
+		<e:Image source="qianghuaxian" x="72" y="390" scale9Grid="1,1,6,6"   width="58" />
+		<e:Image source="qianghuaxian" x="133.5" y="217.84" scale9Grid="1,1,6,6"   width="177.33" rotation="90" />
+		<e:Image source="qianghuaxian" x="128.33" y="215.2" scale9Grid="1,1,6,6"    width="88.67"/>
+
+
+
+		<e:Image x="200" y="202.2"   source="qianghuadian"/>
+		<e:Image width="74" height="74" x="0" y="356" source="qianghuaxzk" scale9Grid="4,4,8,8"/>
+	</e:Group>
+	<e:Group height="460" id="lianjiexian7" horizontalCenter="0" width="512" verticalCenter="-36.5">
+		<e:Image source="qianghuaxian" x="371" y="390"   scale9Grid="1,1,6,6" width="66" />
+		<e:Image x="354" y="377"   source="qianghuadian"/>
+		<e:Image width="74" height="74" x="437" y="356" source="qianghuaxzk" scale9Grid="4,4,8,8"/>
+	</e:Group>
+
+
+</e:Skin>

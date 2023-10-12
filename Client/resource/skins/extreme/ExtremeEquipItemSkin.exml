@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ExtremeEquipItemSkin" width="82" height="82" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="gwmix_kuang" left="0" right="0" top="0" bottom="0" scale9Grid="0,0,98,98"/>
+	<e:Image id="itemIcon" horizontalCenter="0" verticalCenter="0" source="icon_extreme_00"/>
+	<e:Image id="selectIcon" pixelHitTest="true" source="xuanzhongyuan" left="0" right="0" top="0" bottom="0"/>
+	<e:Group id="redPoint" y="0" right="0" touchEnabled="false">
+		<e:Image x="0" y="0" source="zjmhongdian" touchEnabled="false"/>
+	</e:Group>
+	<e:Label id="nameLabel" text="赤血魔剑" size="16" horizontalCenter="0" bottom="0" textColor="0xd1c28f" bold="true"/>
+</e:Skin>

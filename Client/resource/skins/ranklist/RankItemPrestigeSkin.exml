@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RankItemPrestigeSkin" width="500" height="50" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+
+
+	<e:Image id="t3" left="0" right="0" top="0" bottom="0" source="bantoutiaobg" scale9Grid="59,5,119,35"/>
+	<e:Label id="pos" text="100" size="28" textAlign="center" verticalCenter="0" italic="true" textColor="0xf8b141" bold="true" horizontalCenter="-196"/>
+	<e:Label id="player" text="战力排行名字" size="24" x="136" textColor="0xd1c28f" verticalCenter="0"/>
+	<e:Image id="t1" x="26" y="0" source="paihang2" visible="false"/>
+	<e:Image id="weiWang" rotation="0" right="50" verticalCenter="0" source="prestige_title_8"/>
+	<e:Image id="vip" x="96" source="xvip_v2_png" verticalCenter="0"/>
+</e:Skin>

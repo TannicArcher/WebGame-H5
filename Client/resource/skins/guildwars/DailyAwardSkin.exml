@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DailyAwardSkin" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*" xmlns:ns1="*" height="930" width="580">
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image width="480" height="360" scale9Grid="18,14,12,20" horizontalCenter="0" source="tongyongkuang3bg" verticalCenter="-47"  />
+	<e:Image source="tongyongline" width="270" horizontalCenter="0" verticalCenter="43.5"/>
+	<e:Image width="480" horizontalCenter="0" source="tongyongkuang3tou" scale9Grid="66,0,271,47" verticalCenter="-215.5"/>
+	<e:Label id="desc" y="297" height="38" text="龙城占领行会成员可以领取每日奖励" size="20" textAlign="left" verticalAlign="middle" horizontalCenter="0" textColor="0x9f946d"/>
+	<e:Image source="teshuwenzibg" y="232" horizontalCenter="0.5"/>
+	<e:Label y="238" text="每日奖励" size="24" horizontalCenter="0" textColor="0xa67d44"/>
+	<e:Button skinName="Btn0Skin" y="256" x="390" label="按钮" id="closeBtn" visible="false"/>
+	<e:Button id="sure" label="领 取" y="527" skinName="Btn1Skin" horizontalCenter="0"/>
+	<e:Button id="closeBtn1" label="按钮" x="360" y="475" skinName="Btn0Skin" visible="false"/>
+	<e:Scroller y="374" horizontalCenter="0">
+			<e:List id="list" width="360" height="102" y="2" itemRendererSkinName="ItemSkin" x="0">
+				<e:layout>
+					<e:HorizontalLayout paddingLeft="10" gap="34"/>
+				</e:layout>
+			</e:List>
+	</e:Scroller>
+</e:Skin>

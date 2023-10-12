@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MijiLockSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+	<e:Rect id="otherRect" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Group width="500" height="731" horizontalCenter="0" verticalCenter="-30.5" anchorOffsetY="0">
+		<e:Image source="tongyongkuang3bg" left="0" right="0" top="0" bottom="0" scale9Grid="10,11,27,24" anchorOffsetY="0"/>
+		<e:Group id="dinghong" height="104" left="6" right="6" bottom="6">
+			<e:Image x="0" top="0" bottom="0" source="bantoumingkuang3"/>
+			<e:Image scaleX="-1" top="0" bottom="0" source="bantoumingkuang3" right="0"/>
+		</e:Group>
+		<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" width="580" y="0" className="RoleSelectPanel" x="-40"/>
+		<e:Image left="0" right="0" source="tongyongkuang3tou" scale9Grid="65,11,270,24" y="0"/>
+		<e:Label text="秘籍烙印" y="11" horizontalCenter="0" bold="true" size="24" textColor="0x7e6437"/>
+		<e:Image horizontalCenter="0.5" source="mijibg2_png" width="521" height="521" y="139" scaleX="0.9" scaleY="0.9"/>
+	<e:Group y="137" scaleX="0.9" scaleY="0.9" horizontalCenter="-0.5">
+		<ns1:BaseComponent id="mijiBtn0" y="0" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" x="213"/>
+		<ns1:BaseComponent id="mijiBtn1" y="61" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" x="363"/>
+		<ns1:BaseComponent id="mijiBtn2" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" y="213" x="426"/>
+		<ns1:BaseComponent id="mijiBtn3" y="362" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" x="365"/>
+		<ns1:BaseComponent id="mijiBtn4" y="426" skinName="MijiItemSkin"   className="MijiItem" width="100" height="100" x="213"/>
+		<ns1:BaseComponent id="mijiBtn5" y="362" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" x="61"/>
+		<ns1:BaseComponent id="mijiBtn6" y="213" skinName="MijiItemSkin" className="MijiItem" width="100" height="100" x="0"/>
+		<ns1:BaseComponent y="61" skinName="MijiItemSkin" id="mijiBtn7" className="MijiItem" width="100" height="100" x="63"/>
+	</e:Group>
+		<e:Label id="link" text="获取秘籍" size="20" textColor="0x00ff00" bottom="36" right="47"/>
+		<e:Label id="labCount" text="" size="20" textColor="0x00FF00" bottom="36" right="37"/>
+		<e:Button id="smeltBtn" label="孔位加锁" skinName="Btn1Skin" horizontalCenter="2" bottom="16" width="160" height="60"/>
+		<e:Button skinName="Btn0Skin" icon="chatclose" label="按钮" id="closeBtn" right="0"/>
+		<e:Image x="104" source="gantanhao" bottom="81"/>
+		<e:Label text="被锁定的秘籍在学习时不会被替换" x="131" size="18" textColor="0xf8b141" bottom="84"/>
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="WorldBossGoldSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="930">
+	<w:Config id="1586bd3e6ef"/>
+	<e:Group height="109" verticalCenter="210" y="661"   horizontalCenter="0">
+		<e:Image   source="bantoutiaobg2" scale9Grid="11,2,70,17" width="365.33" height="109" y="0" horizontalCenter="0"/>
+		<e:Group width="350" height="42" y="10" horizontalCenter="0">
+			<e:Label text="自动复活" size="20"   textColor="0x7e6437" x="152.99" y="22"/>
+			<e:Label id="reliveTimesTxt" text="180s" size="20" textColor="0xf8b141" x="105.66" y="22.34"/>
+			<e:Label id="killTips" text="您被干死了" y="0" textAlign="center" size="18" horizontalCenter="0" textColor="0xb5a592"/>
+			<e:Image source="gantanhao" x="50.83" y="-1.17"/>
+		</e:Group>
+		<e:Group width="240" bottom="10" horizontalCenter="0">
+			<e:Button id="reliveBtn" label="100原地复活" y="5" skinName="Btn3Skin" width="191" horizontalCenter="0"/>
+			<e:Button id="exitBtn" label="退出" x="0" y="0" skinName="Btn3Skin" width="110" visible="false"/>
+			<e:Label id="alive" text="复活道具 0/1" x="183" y="22" size="12" textColor="0x00ff00" visible="false"/>
+			<e:Image id="moneyIcon" source="szyuanbao" touchEnabled="false" y="17" horizontalCenter="-71"/>
+		</e:Group>
+		<e:Image source="shuxingbg2" y="-30.67" scale9Grid="52,18,15,7"  width="170.33" horizontalCenter="-111"/>
+		<e:Image source="shuxingbg2" y="-30.67" scale9Grid="52,18,15,7"  width="164.67" scaleX="-1" horizontalCenter="111"/>
+		<e:Image source="shuxingbg4" y="-38.33000000000004"   horizontalCenter="0"/>
+		<e:Label text="复活提示" y="-21.33000000000004" size="18"   textColor="0xf8b141" horizontalCenter="0"/>
+	</e:Group>
+</e:Skin>

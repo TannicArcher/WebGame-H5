@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PunchskillTips" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*">
+	<w:Config id="15a6a787b32"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.8"/>
+	<e:Group id="anigroup" height="450" width="350" horizontalCenter="0" verticalCenter="0">
+		<e:Image id="background"   source="tongyongtip1" scale9Grid="6,5,13,13" left="0" right="0" top="0" bottom="0"/>
+		<e:Image source="tongyongtip2" scale9Grid="18,16,4,7" left="0" right="0" top="0" bottom="0"/>
+		<ns1:BaseComponent id="skillitem" x="20" y="20" skinName="PunchSkillItem" className="PunchSkillItemRender"/>
+		<e:Label id="nameLabel" text="技能名称" x="103" y="20" size="22" bold="true" textColor="0x47a4ee" stroke="1" visible="false"/>
+		<e:Label id="nameLabel0" text="合击技能" x="100" y="31" size="24" stroke="1" textColor="0xbd600d" bold="true"/>
+		<e:Label id="nameLabel1" text="造成3角色攻击力总和伤害" x="103" y="70" size="20" textColor="0x8BE8ED" stroke="1"/>
+		<e:Label id="desc0" y="110" text="技能说明技能说明技能说明技能说明\n技能说明技能说明技能说明技能说明\n技能说明技能说明技能说明技能说明" size="18" stroke="1" width="320" horizontalCenter="0" textColor="0xd1c28f" height="60" verticalAlign="middle"/>
+		<e:Label y="44" text="部位：" fontFamily="黑体" size="16" x="189" textColor="0xD2C76A" visible="false"/>
+		<e:Label id="type" y="44" text="武器" fontFamily="黑体" size="16" x="235" textColor="0xFFFFFF" visible="false"/>
+		<e:Group width="320" horizontalCenter="0" verticalCenter="70">
+			<e:Label y="0" text="技能效果" size="24" x="0" textColor="0xCA8A00"   stroke="1" bold="true"/>
+			<e:Label y="87" text="合击加成" size="22" x="0" textColor="0xCA8A00"   stroke="1" bold="true"/>
+			<e:Label y="28" text="对玩家造成伤害" size="20" x="0"   stroke="1" textColor="0x9f946d"/>
+			<e:Label id="desc3" y="114" text="" size="20"   stroke="1" textColor="0x9f946d"/>
+			<e:Label y="53" text="对怪物造成伤害" size="20"   stroke="1" textColor="0x9f946d"/>
+			<e:Label y="53" text="1050%" size="20"   stroke="1" x="141.34" textColor="0x20cb30"/>
+			<e:Label y="28.67" text="480%" size="20"   stroke="1" textColor="0x20CB30" x="140.41"/>
+			<e:Label id="desc5" y="139" text="" size="20" x="0"   stroke="1" textColor="0x9f946d"/>
+			<e:Label id="desc8" y="164" text="" size="20"   stroke="1" textColor="0x9f946d"/>
+		</e:Group>
+		<e:Image source="bantoutiaobg" height="30" horizontalCenter="0" bottom="-38" width="400" x="-25" y="458"  />
+		<e:Label horizontalCenter="0" text="点击空白区域关闭窗口" size="20" x="73" bold="true" bottom="-33" textColor="0x7E6437" y="463"  />
+	</e:Group>
+</e:Skin>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="DropDownSkin" minWidth="100" minHeight="31" currentState="down" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+	states="up,down">
+	<e:Group x="0" y="1">
+		<e:Image source="bantoutiaobg2" scale9Grid="11,2,70,17" top.down="0" bottom.down="0" left="0" right="0" top="0" bottom="0"/>
+		<e:List id="list" touchEnabled.up="false" touchEnabled.down="true" itemRendererSkinName="DropDownItemSkin" y="25" x="0" right.down="40" y.down="34" includeIn="down">
+			<e:layout>
+				<e:VerticalLayout horizontalAlign="right" gap="0"/>
+			</e:layout>
+		</e:List>
+		<e:Label id="value" size="18" textColor="0xDFD1B5" text="名字什么的" y="11" x="0" right.down="40" right.up="40"/>
+		<e:ToggleButton id="btn" touchEnabled="false" label="按钮" skinName="Btn4Skin" selected.down="true" scaleX="0.8" scaleY="0.8" y.up="1" y.down="1" y="0" x="96" right.down="0" right.up="0"/>
+	</e:Group> </e:Skin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="WJBattleStartTipSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image x="227" y="350" source="biaoti_xianshi_png"/>
+	<e:Label text="持续占领旗子获得积分，积分达到1200则获胜" x="90" y="418" size="20" fontFamily="黑体" textColor="0x7EFA55"/>
+	<e:Image width="581" height="177" x="0" y="317" source="shuxingbg" scale9Grid="90,19,4,5"/>
+	<e:Image source="shuxingline" y="73" width="290" scale9Grid="16,1,4,9" right="288" visible="false"/>
+	<e:Image source="shuxingline" y="73" width="290" scale9Grid="16,1,4,9" scaleX="-1" x="290" visible="false"/>
+</e:Skin>

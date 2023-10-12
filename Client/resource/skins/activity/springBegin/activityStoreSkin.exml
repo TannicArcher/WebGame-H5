@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="activityStoreSkin" currentState="activityStore" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="560" height="620" states="activityStore,integralStore" >
+	<e:Image left="0" right="0" height="620" source="shitouban" scale9Grid="22,18,1,1" visible="false"/>
+	<e:Group id="costGroup" bottom="0" width="270" height="93" visible.integralStore="false" horizontalCenter="145">
+		<e:Image x="-1" source="szyuanbao" y="2" scaleX="1" scaleY="1"/>
+		<e:Label id="price" text="200" x="28" size="20" textColor="0xf8b141" y="3" scaleX="1" scaleY="1" textAlign="left"/>
+		<e:Label id="or" text="或" x="63" size="20" textColor="0xF8B141" y="3" scaleX="1" scaleY="1" textAlign="left"/>
+		<e:Image id="refreshItem" x="85" source="szyuanbao" y="2" scaleX="1" scaleY="1" width="30" height="22"/>
+		<e:Label id="refreshItemNum" text="2" size="20" y="3" scaleX="1" scaleY="1" textAlign="center" textColor="0x41F843" horizontalCenter="-2"/>
+		<e:Label id="num" text="/1" x="151" size="20" textColor="0xF8B141" y="3" scaleX="1" scaleY="1" textAlign="left"/>
+		<e:Label id="refreshTime" text="00:00:00" size="20" width="108" textAlign="center" height="36" verticalAlign="middle" visible.integralStore="false" x="162" y="-6" textColor="0x7E6437"/>
+		<e:Label id="refreshTips" text="后免费刷新" size="20" width="108" textAlign="center" height="36" verticalAlign="middle" visible.integralStore="false" y="14" x="160" textColor="0x7E6437"/>
+		<e:layout>
+		<e:BasicLayout/>
+		</e:layout>
+	</e:Group>
+
+
+
+
+
+	<e:Label id="integralTips" text="活动商店每消耗1元宝获得1积分\n\n活动结束后清空积分" size="20" bottom="25" textAlign="center" verticalAlign="middle" width="290" height="61" visible.activityStore="false" right="2" textColor="0xF8B141"/>
+
+	<e:Button id="closeBtn" label="按钮" x="391" y="628" skinName="Btn0Skin" visible="false"/>
+	<e:TabBar id="tab" height="50" width="280" x="52" y="634" itemRendererSkinName="BtnTab0Skin" visible="false">
+	</e:TabBar>
+	<e:Button id="integralStoreBtn" label="积分商店" width="130" height="50" bottom="16" horizontalCenter="-91" label.integralStore="活动商店" skinName="Btn16Skin"/>
+	<e:Button id="refreshShopBtn" label="刷   新" width="130" height="50" bottom="16" horizontalCenter="91" skinName="Btn16Skin" visible.integralStore="false"/>
+	<e:Image id="redPoint1" source="zjmhongdian" horizontalCenter="137" bottom="45" includeIn="activityStore"/>
+	<e:Image id="redPoint0" source="zjmhongdian" horizontalCenter="-48" bottom="49" includeIn="activityStore"/>
+	<e:Image id="redPoint" source="zjmhongdian" horizontalCenter="147" bottom="51" visible="false" visible.integralStore="false"/>
+	<e:Label id="noGoods" text=" 商品已全部售完，请刷新" size="24" textColor="0xFF8534" horizontalCenter="0" verticalCenter="0" visible="false"/>
+
+
+	<e:Label id="point" text="我的积分：20000" x="105" width="213" size="20"  textAlign="left" bottom="15" visible="false"/>
+
+	<e:Group id="integral" horizontalCenter="-122" width="86" height="22" bottom="67">
+		<e:Label id="integralName" text="当前积分：" x="0" size="20" y="0" scaleX="1" scaleY="1" textColor="0x35E62D" verticalAlign="middle"/>
+		<e:Label id="integralNum" text="2000" x="0" size="20" y="0" scaleX="1" scaleY="1" textColor="0x35E62D"/>
+		<e:layout>
+			<e:HorizontalLayout gap="-6"/>
+		</e:layout>
+	</e:Group>
+	<e:Scroller width="552" horizontalCenter="0" height="373" y="154">
+				<e:List id="listView" x="54" y="37" itemRendererSkinName="activityStoreItem">
+					<e:layout>
+						<e:TileLayout/>
+					</e:layout>
+
+		</e:List>
+	</e:Scroller>
+	<e:Label id="goodsOverView" text="极品预览" size="20" bottom="11" verticalAlign="middle" textAlign="center" touchEnabled="true" visible.integralStore="false" right="17" textColor="0x35E62D"/>
+	<e:Image id="title" y="0" horizontalCenter="0" source="biaoti_activityStore"/>
+	<e:Group id="infoBg" left="3" right="3" x="10" y="36" height="116">
+		<e:Image top="0" bottom="0" source="ny_curtain_png" right="0" left="0"/>
+		<e:Group left="28" y="30">
+		<e:Label text="剩余时间：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="0"/>
+		<e:Label id="actTime0" text="6天23小时55分" size="18" textColor="0x00FF00" scaleX="1" scaleY="1" top="0" left="90"/>
+		<e:Label id="actInfo0" text="开服活动期间，率先达到指定等级获得限量奖励。" x="63" y="-14" size="18" width="396" top="20" left="90" textColor="0xDFD1B5" scaleX="1" scaleY="1"/>
+		<e:Label text="活动说明：" size="18" textColor="0xFF9900" scaleX="1" scaleY="1" left="0" top="20"/>
+		</e:Group>
+	</e:Group> 
+</e:Skin>

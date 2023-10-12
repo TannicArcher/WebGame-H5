@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ChatMessage" width="429" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="1562a1e64b5"/>
+	<e:Rect id="bg" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Label id="lab" text="Tips" size="20" textColor="0xdfd1b5" touchEnabled="false" textAlign="left" verticalAlign="justify" wordWrap="false" multiline="false" left="10" right="0" height="25" verticalCenter="0"/>
+</e:Skin>

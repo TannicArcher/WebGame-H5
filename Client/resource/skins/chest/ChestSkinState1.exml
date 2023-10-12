@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<e:Skin class="ChestSkinState1" minHeight="50" minWidth="100" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"  width="226" height="300" states="wait,open,wait2,wait3,kong,kong2" >
+	<w:Config id="15a6a784557"/>
+	<e:Image     top="0" source.kong2="shitouban" scale9Grid.kong2="20,17,11,11" y.kong2="0" left="0" right="0" bottom="0" top.kong2="0" bottom.kong2="0" right.kong2="0" left.kong2="0" source="tongyonglabbg" scale9Grid.wait3="38,19,51,42" scale9Grid.wait2="38,19,51,42" scale9Grid.open="38,19,51,42" scale9Grid.wait="38,19,51,42" source.kong="tongyongtip3" scale9Grid.kong="10,8,10,11"/>
+	<e:Image source="gglongwen_png" y.kong2="54" horizontalCenter="0" verticalCenter="0" visible.wait="false" visible.open="false" visible.wait2="false" visible.wait3="false" alpha.kong="0.5" alpha.kong2="0.5"/>
+	<e:Image     top="0" left="0" right="0" bottom="0" visible.wait="false" visible.wait3="false" visible.kong="false" visible.kong2="false" source="xuanzhongkuang2" scale9Grid="4,4,8,8"/>
+	<e:Image source="quali5" y="300" scaleY="-1" scale9Grid="1,1,26,47"  width="227"  height="300" horizontalCenter="0" visible.wait2="false" visible.wait="false" visible.wait3="false" visible.kong="false" visible.kong2="false"/>
+
+	<e:Image source="dianjijiesuo" horizontalCenter="0" visible.wait="false" visible.wait3="false" visible.kong="false" visible.kong2="false" y="0" visible.open="false"/>
+	<e:Image source="shangweijiesuo" y="14" horizontalCenter="0" visible.wait="false" visible.wait2="false" visible.kong2="false" visible.open="false" visible.kong="false"/>
+	<e:Label id="boxName" text="BOSS宝箱" y="265" size="20" horizontalCenter="0" visible.wait="false" visible.open="false" visible.kong="false" visible.kong2="false" textColor="0xd1c28f" horizontalCenter.wait2="0" y.wait2="268" y.wait3="268"/>
+	<e:Label text="点击立即打开" y="265" textColor="0x20cd30" size="20" horizontalCenter="0" visible.open="false" visible.wait2="false" visible.wait3="false" visible.kong="false" visible.kong2="false" y.wait="268"/>
+	<e:Image source="baoxiangdaojishi2" y="8" visible.wait2="false" visible.wait3="false" visible.kong="false" visible.kong2="false" left="0" right="0" scale9Grid="4,4,137,26" visible.open="false"/>
+	<e:Image source="baoxiangt1" x="7.29" y="7.31" visible.wait2="false" visible.wait3="false" visible.kong="false" visible.kong2="false" visible.open="false"/>
+	<e:Image id="imgNeedle" source="baoxiangt2" x="24.66" y="24.01" visible.wait2="false" visible.wait3="false" visible.kong2="false" visible.open="false" visible.kong="false" anchorOffsetX="17" anchorOffsetY="17"/>
+	<e:Label id="t3" text="11：59：59" y="12" textColor="0xf8b141" size="22" visible.open="false" visible.wait2="false" visible.wait3="false" visible.kong="false" visible.kong2="false" horizontalCenter="0" y.wait="14"/>
+	<e:Image source="tongyongtip1" y="240.72" scale9Grid="3,3,19,19"  width="77"  height="23" horizontalCenter="4" visible.wait2="false" visible.wait3="false" visible.kong="false" visible.kong2="false" visible.wait="false" visible.open="false"/>
+	<e:Group y="239.73000000000002" horizontalCenter="0" horizontalCenter.wait="0.5" y.wait="242" visible.open="false" visible.wait2="false" visible.wait3="false" visible.kong="false">
+		<e:Image source="szyuanbao" x="0" y="0" visible.open="false" visible.wait2="false" visible.wait3="false" visible.kong="false" visible.kong2="false" x.wait="64.31"/>
+		<e:Label id="payNum" text="9999" x="31.69999999999999" y="3.269999999999982" textColor="0xf8b141" size="20"  visible.open="false" visible.wait2="false" visible.wait3="false" visible.kong="false" visible.kong2="false" textAlign.wait="center"/>
+		<e:layout>
+			<e:HorizontalLayout gap="2" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Image source="juese_json.chenghaoditai" y="190" horizontalCenter="0" alpha.kong="0.4" visible.kong2="false" visible.kong="false"/>
+	<e:Image source="baoxiangdiguang" y="174" horizontalCenter="3" visible.kong="false" visible.kong2="false" y.open="174"/>
+	<e:Image id="baoxiang" source="baoxiang_1" x="31" y="8" visible.kong="false" visible.kong2="false" height="210"/>
+	<e:Label text="可打开" y="259" textColor="0xf8b141" size="20" horizontalCenter="0" visible.wait2="false" visible.wait="false" visible.wait3="false" visible.kong="false" visible.kong2="false" textColor.open="0x20cb30" text.open="可开启" size.open="24" bold.open="true" y.open="256"/>
+	<e:Label id="jishi" text="12小时" y="240.99" textColor="0xF8B141" size="20" horizontalCenter="0" visible.wait="false" visible.kong="false" visible.open="false" visible.kong2="false" y.wait2="242" y.wait3="242"/>
+	<e:Label text="空箱位" y.kong2="153.63" y.wait3="153.63" y.wait2="153.63" y.open="153.63" y.wait="153.63" size="20" textColor="0x9f946d" horizontalCenter="0" visible.wait2="false" visible.wait3="false" visible.open="false" visible.wait="false" visible.kong2="false" text.kong="空箱位\n点击查看获取途径" textColor.kong="0x7e6437" textAlign.kong="center" size.kong="20" bottom.kong="16"/>
+	<e:Image y.kong="108.63" y.wait3="108.63" y.wait2="108.63" y.open="108.63" y.wait="108.63" horizontalCenter="0" visible.wait3="false" visible.wait2="false" visible.wait="false" visible.kong="false" horizontalCenter.kong2="0" source="touxiangkuang" verticalCenter="0" source.kong2="touxiangkuang" visible.open="false" visible.kong2="false"/>
+	<e:Image horizontalCenter="0" source="touxianglock" verticalCenter="0" visible.wait="false" visible.open="false" visible.wait2="false" visible.wait3="false" visible.kong="false" source.kong2="suo_01" width.kong2="50" height.kong2="60"/>
+	<e:Image source="tongyongadd" verticalCenter="0" horizontalCenter="0" visible.wait="false" visible.open="false" visible.wait2="false" visible.wait3="false" width.kong="60" height.kong="60" visible.kong2="false"/>
+	<e:Label id="openDesc" text="第10关开启" x="63" y="70" size="20" textColor="0xd1c28f" visible.wait="false" visible.open="false" visible.wait2="false" visible.wait3="false" visible.kong="false" horizontalCenter.kong2="0" y.kong2="265" textColor.kong2="0x7e6437"/>
+</e:Skin>

@@ -1,0 +1,10 @@
+{"file":"paodian.png","frames":{
+"point_result_title":{"x":1,"y":1,"w":287,"h":81,"offX":0,"offY":2,"sourceW":288,"sourceH":83},
+"npc_jqpd":{"x":396,"y":105,"w":98,"h":22,"offX":0,"offY":0,"sourceW":98,"sourceH":22},
+"jqpd_5":{"x":290,"y":1,"w":104,"h":113,"offX":0,"offY":0,"sourceW":104,"sourceH":113},
+"jqpd_blue_btn":{"x":60,"y":84,"w":57,"h":41,"offX":0,"offY":0,"sourceW":57,"sourceH":41},
+"jqpd_grap_btn":{"x":1,"y":84,"w":57,"h":41,"offX":0,"offY":0,"sourceW":57,"sourceH":41},
+"jqpd_green_btn":{"x":178,"y":84,"w":57,"h":41,"offX":0,"offY":0,"sourceW":57,"sourceH":41},
+"jqpd_yellow_btn":{"x":119,"y":84,"w":57,"h":41,"offX":0,"offY":0,"sourceW":57,"sourceH":41},
+"jqpd_bantoumingkuang":{"x":506,"y":1,"w":5,"h":133,"offX":0,"offY":0,"sourceW":5,"sourceH":133},
+"jqpd_3":{"x":396,"y":1,"w":108,"h":102,"offX":0,"offY":0,"sourceW":108,"sourceH":102}}}

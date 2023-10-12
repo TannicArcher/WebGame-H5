@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="OSATargetItem" width="540" height="130" currentState="can" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*"  states="already,zero,can" >
+	<e:Group left="0" right="0" top="0" bottom="0">
+		<e:Image id="bg" source="scitembg" scale9Grid="56,26,4,3" left="0" right="0" top="0" bottom="0" x="0" y="0"  />
+		<e:Group id="level"   horizontalCenter="0" verticalCenter="0" visible="false">
+			<e:Image id="lv1" source="num_json.attr6_png" x="-76" y="-48"   visible="false"/>
+			<e:Image id="lv0" source="num_json.attr0_png" x="-59" y="-48"   visible="false"/>
+			<e:layout>
+			<e:HorizontalLayout gap="0"/>
+			</e:layout>
+		</e:Group>
+		<e:Group id="zhuan" x="5" y="32"   visible="false">
+			<e:Image id="zhuanLv" x="0" y="0"   source="num_json.attr1_png"/>
+			<e:Label text="转" x="20" y="0" textColor="0xFFFF00" size="20"  />
+		</e:Group>
+		<e:Label id="target" text="累计充值3000元宝" size="18" scaleX="1" scaleY="1" textColor="0xFF9900" right="13" verticalCenter="-40" visible="false"/>
+		<e:Label id="recharge" text="123456/12345" size="18" textColor="0x00FF00" verticalCenter="29" horizontalCenter="186"/>
+		<e:Group   right="23" verticalCenter="4">
+			<e:Button id="get" label="领取" includeIn="can"     verticalCenter="-8" horizontalCenter="0" skinName="Btn15Skin"/>
+			<e:Image id="redPoint" touchEnabled="false" source="zjmhongdian"   x="96" visible="false"/>
+			<e:Label id="num" text="剩余3000份" size="16" textColor="0x00ff00" includeIn="can"   y="52" horizontalCenter="0"/>
+		</e:Group>
+		<e:Label id="none" text="被抢光" size="20" includeIn="zero" textColor="0xff0000"   x="432" y="55"/>
+		<e:Label id="already" text="已领取" textColor="0x00ff00" size="20" includeIn="already"   x="432" y="55"/>
+		<e:Group left="27" x="2"   verticalCenter="0">
+			<e:Label id="lvName" text="总转生数" x="4" y="2" size="20"   textColor="0xf8b141"/>
+			<e:Label id="lvName0" text="1转" x="14" y="12" size="20"   textColor="0xffff00" textAlign="center"/>
+			<e:layout>
+			<e:VerticalLayout horizontalAlign="center"/>
+			</e:layout>
+		</e:Group>
+		<ns1:BaseComponent id="item0" x="120" skinName="ItemSkin"   className="ItemBase" verticalCenter="0" y="0"/>
+		<ns1:BaseComponent id="item1" x="210" skinName="ItemSkin"   className="ItemBase" verticalCenter="0" y="0"/>
+		<ns1:BaseComponent id="item2" x="300" skinName="ItemSkin"   className="ItemBase" verticalCenter="0" y="0"/>
+	</e:Group>		
+</e:Skin>

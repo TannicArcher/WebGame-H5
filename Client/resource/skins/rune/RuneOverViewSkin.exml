@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RuneOverViewSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="930" width="580" >
+	<w:Config id="1586b1c98a7"/>
+	<e:Rect left="0" right="0" top="0" fillAlpha="0.6" bottom="0"/>
+	<e:Group width="580" horizontalCenter="0" top="40" bottom="110">
+		<e:Image top="0" scale9Grid="8,10,32,23"   source="tongyongkuang3bg" left="0" right="0" bottom="0"/>
+		<e:Image source="tongyongkuang3tou" scale9Grid="67,5,268,30" left="0" right="0"/>
+		<e:Label text="战纹总览" size="24"   y="11" horizontalCenter="0" bold="true" textColor="0xa67d44"/>
+		<ns1:BaseComponent id="title" skinName="RoleSelectPanelSkin" className="RoleSelectPanel" width="580" horizontalCenter="0" currentState="nohead" x="0"   top="0" visible="false"/>
+		<e:Image source="rune_json.biaoti_zhanwen" horizontalCenter="-155" x="84"   top="5" visible="false"/>
+		<e:Scroller id="scroller" top="50" width="570" horizontalCenter="0" bottom="10">
+			<e:Group>
+			<e:List id="nuneList" width="570" x="0" y="0" itemRendererSkinName="RuneOverViewItem"/>
+			</e:Group>
+		</e:Scroller>
+	</e:Group>
+</e:Skin>

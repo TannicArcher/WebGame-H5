@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="LiLianItem1Skin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="22" width="238">
+	<e:Label y="3" text="攻击：999999" fontFamily="黑体" size="16" x="8" touchEnabled="false" textColor="0xDFD1B5"/>
+	<e:Label y="2" text="10086（下级）" fontFamily="黑体" size="16" x="133" touchEnabled="false" textColor="0x1AFF00"/>
+	<e:Image source="shengong_json.shengong_9" x="113" y="2"/>
+
+
+
+
+</e:Skin>

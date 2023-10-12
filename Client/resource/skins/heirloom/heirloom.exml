@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="heirloom" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" width="580" height="930">
+	<w:Config id="159bef2916a"/>
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" scale9Grid="15,12,2,3" width="580" horizontalCenter="0"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image source="tongyongmianbanbg" scale9Grid="10,9,27,30" width="570" horizontalCenter="0" top="44" bottom="120"/>
+	<e:Image y="128" horizontalCenter="0" source="longhunbg_png" x="34"  />
+	<e:Image id="bgMc" source="LegendEquipeff_png" y="116" horizontalCenter="0" touchEnabled="false" x="-1"  />
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" width="580" horizontalCenter="0" className="RoleSelectPanel"/>
+	<e:Image y="6" horizontalCenter="-155" source="biaoti_chuanshi"/>
+	<ns1:BaseComponent id="powerPanel" skinName="PowerPanelSkin" className="PowerPanel" horizontalCenter="0" y="140"/>
+	<!--<e:Group id="powerGroup" y="140" horizontalCenter="0" visible="false">
+		<e:Image source="zhandoulibg" x="2" y="10"/>
+		<e:Image id="powerImg" x="0" y="0" source="zjmzhandouli"/>
+	</e:Group>-->
+	<e:Group id="dinghong" width="556" height="110" horizontalCenter="0" x="7" bottom="124">
+
+		<e:Image top="0" bottom="0" left="0" width="287" source="bantoumingkuang3" horizontalCenter="-134.5" anchorOffsetX="0" />
+		<e:Image width="286" scaleX="-1" top="0" bottom="0" right="0" source="bantoumingkuang3" anchorOffsetX="0" />
+	</e:Group>
+	<e:Group id="upInfo" bottom="140" width="500" horizontalCenter="0" height="86">
+		<e:Group id="costGroup" y="0" horizontalCenter="0">
+			<e:Label id="expendLabel" text="消耗: " size="20" bold="true" x="0" y="0" textColor="0xd1c28f"/>
+			<e:Image id="icon" x="55" y="28" source="200141_png" scaleX="0.5" scaleY="0.5"/>
+			<e:Label id="countLabel" text="12000/100" size="20" textAlign="left" textColor="0xd1c28f" x="94" y="12"/>
+			<e:layout>
+				<e:HorizontalLayout verticalAlign="middle" gap="0"/>
+			</e:layout>
+		</e:Group>
+
+		<e:Button id="jihuo" label="激  活" skinName="Btn1Skin" horizontalCenter="0" width="156" height="60" bottom="0"/>
+		<e:Group y="60" right="0">
+			<e:Label id="getItemTxt" text="合成道具" size="20" textColor="0x00FF00" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Group width="480" height="125" horizontalCenter="0" bottom="234">
+		<e:Image source="shuxingbg" left="0" right="0" top="30" bottom="0" scale9Grid="20,5,125,34"/>
+		<e:Image x="0" source="shuxingbg2" scale9Grid="188,0,5,32" width="240" y="0"/>
+		<e:Image source="shuxingbg2" scale9Grid="188,0,5,32" width="240" scaleX="-1" y="0" right="0"/>
+		<e:Group y="40" x="70">
+			<e:Label id="desc0" text="攻　击" size="18" x="0" textColor="0x9f946d" y="0"/>
+			<e:Label id="attr0" text="+123456" size="18" x="70" textColor="0x32FF00" y="0"/>
+		</e:Group>
+		<e:Group y="40" x="270">
+			<e:Label id="desc1" text="生　命" size="18" x="0" textColor="0x9f946d" y="0"/>
+			<e:Label id="attr1" text="+123456" size="18" textColor="0x32FF00" x="70" y="0"/>
+		</e:Group>
+		<e:Group y="60" x="70">
+			<e:Label id="desc2" text="生　命" size="18" x="0" textColor="0x9F946D" y="0"/>
+			<e:Label id="attr2" text="+123456" size="18" textColor="0x32FF00" x="70" y="0"/>
+		</e:Group>
+		<e:Group y="60" x="270">
+			<e:Label id="desc3" text="生　命" size="18" x="0" textColor="0x9F946D" y="0"/>
+			<e:Label id="attr3" text="+123456" size="18" textColor="0x32FF00" x="70" y="0"/>
+		</e:Group>
+		<e:Group y="80" x="70">
+			<e:Label id="desc4" text="生　命" size="18" x="0" textColor="0x9F946D" y="0"/>
+			<e:Label id="attr4" text="+123456" size="18" textColor="0x32FF00" x="70" y="0"/>
+		</e:Group>
+		<e:Group y="80" x="270">
+			<e:Label id="desc5" text="生　命" size="18" x="0" textColor="0x9F946D" y="0"/>
+			<e:Label id="attr5" text="+123456" size="18" textColor="0x32FF00" x="70" y="0"/>
+		</e:Group>
+		<e:Group y="100" x="70">
+			<e:Label id="desc6" text="武器部件所有属性" size="18" textColor="0x9F946D" y="0"/>
+			<e:Label id="attr6" text="+123456" size="18" textColor="0x32FF00" x="156" y="0"/>
+		</e:Group>
+	</e:Group>
+	<e:Label id="maxDesc" text="该部位已满级"   textColor="0x9f946d" size="24" bold="true" bottom="196" horizontalCenter="0" visible="false"/>
+	<e:Group id="itemGroup" height="450" width="500" horizontalCenter="0" verticalCenter="-90">
+		<e:Image id="icon0" source="longhun_01_png" y="72" height="256" width="211" x="145"/>
+		<e:Button id="rightBtn" label="按钮" icon="jiantouxuan" skinName="Btn0Skin" right="95" scaleX="-1.2" scaleY="1.3" verticalCenter="-10"/>
+		<e:Button id="leftBtn" label="按钮" icon="jiantouxuan" skinName="Btn0Skin" x="95" scaleX="1.2" scaleY="1.3" verticalCenter="-10"/>
+		<ns1:BaseComponent id="pos0" skinName="heirloomItemSkin" className="HeirloomItem"/>
+		<ns1:BaseComponent id="pos1" skinName="heirloomItemSkin" className="HeirloomItem" x="424"/>
+		<ns1:BaseComponent id="pos2" y="120" skinName="heirloomItemSkin" className="HeirloomItem"/>
+		<ns1:BaseComponent id="pos3" x="424" y="120" skinName="heirloomItemSkin" className="HeirloomItem"/>
+		<ns1:BaseComponent id="pos4" y="240" skinName="heirloomItemSkin" className="HeirloomItem"/>
+		<ns1:BaseComponent id="pos5" x="424" y="240" skinName="heirloomItemSkin" className="HeirloomItem"/>
+		<ns1:BaseComponent id="pos6" y="360" skinName="heirloomItemSkin" className="HeirloomItem"/>
+		<ns1:BaseComponent id="pos7" x="424" y="360" skinName="heirloomItemSkin" className="HeirloomItem"/>
+		<ns1:BaseComponent id="skill" skinName="heirloomItemSkin" className="HeirloomItem" scaleX="0.8" scaleY="0.8" bottom="41" horizontalCenter="0"/>
+		<e:Label id="itemName" text="星☆传世之刃" x="193" y="427.5" size="20" textColor="0xd1c28f"/>
+	</e:Group>
+	<e:Button id="attrSet" label="Button" x="30" y="70" skinName="Btn0Skin" icon="hejishuxing" visible="false"/>
+	<e:Button id="neatSet" label="Button" y="73" icon="hejishuxing" skinName="heirloomqmbtn" horizontalCenter="220"/>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+
+</e:Skin>

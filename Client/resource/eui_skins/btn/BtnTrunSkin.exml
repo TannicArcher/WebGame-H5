@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="BtnTrunSkin" states="up,down,disabled"
+        xmlns:e="http://ns.egret.com/eui" width.up="115" height.up="127" width.down="115" height.down="127">
+	<e:Image x="-1" y="0" visible.disabled="false" source="trun_004" scaleX.down="0.95" scaleY.down="0.95" x.down="3" y.down="3"/>
+	<e:Image x="9" y="35" visible.disabled="false" source="trun_003" x.down="13" y.down="34" scaleX.down="0.95" scaleY.down="0.95"/>
+</e:Skin>

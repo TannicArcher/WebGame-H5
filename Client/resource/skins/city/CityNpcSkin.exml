@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CityNpcSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:ns1="*" xmlns:euiextension="euiextension.*">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0" scale9Grid="15,12,2,3"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image width="570" horizontalCenter="0" source="tongyongmianbanbg" scale9Grid="19,12,14,25" top="44" bottom="120"/>
+	<e:Image source="bossbg_png" top="52" bottom="128" alpha="0.5" width="554" horizontalCenter="0"/>
+	<e:Scroller top="63" bottom="139" horizontalCenter="0">
+		<e:List id="list1" y="11.33" x="1" useVirtualLayout="false" itemRendererSkinName="CityNpcItemSkin">
+		<e:layout>
+			<e:VerticalLayout gap="2"/>
+		</e:layout>
+		</e:List>
+	</e:Scroller>
+	<ns1:BaseComponent id="roleSelect" y="0" skinName="RoleSelectPanelSkin" className="RoleSelectPanel"  width="580" horizontalCenter="0" currentState="nohead"/>
+	<e:Image y="6"  horizontalCenter="-155" source="biaoti_npc"/>
+
+
+
+	<e:Image id="redPoint1" touchEnabled="false"  bottom="138" horizontalCenter="101" source="zjmhongdian" visible="false"/>
+
+
+	<e:Button id="seeRule" label="按钮" icon="wenhao" skinName="Btn0Skin" horizontalCenter="-246" y="8" scaleX="0.9" scaleY="0.9"/>
+
+</e:Skin>

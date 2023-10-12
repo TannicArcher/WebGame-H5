@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="GuildSkin" width="580" height="930" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:euiextension="euiextension.*" xmlns:ns1="*">
+	<e:Rect fillAlpha="0.6" left="0" right="0" top="0" bottom="0" />
+	<e:Group horizontalCenter="0" width="580" top="0" bottom="0">
+		<e:Image top="0" bottom="0" source="tongyongmianbanbg2" scale9Grid="15,12,2,3" width="580" horizontalCenter="0" />
+		<e:Image source="guilddating_bg_png"  horizontalCenter="0"/>
+		<e:Button id="practiseBtn" y="187" x="368">
+			<e:Skin states="up,down,disabled">
+				<e:Image source="guild_title2a" scaleX="2" scaleY="2" includeIn="up,down,disabled" x="38"
+				         alpha.up="0" visible.disabled="false" x.down="38" />
+				<e:Image source="guildrukou_bg" x="44" y="31" visible.disabled="false" y.down="33" x.down="44" />
+				<e:Image x="48" y="36" visible.disabled="false" source="guildgongnengicon" y.down="38" x.down="48" />
+				<e:Image x="54" y="83" source="guild_title2" visible.disabled="false" y.down="85" x.down="54" />
+			</e:Skin>
+		</e:Button>
+		<e:Button id="cityBtn" y="263" x="176">
+			<e:Skin states="up,down,disabled">
+				<e:Image source="guild_title3a" scaleX="2" scaleY="2" includeIn="up,down,disabled" x="32"
+				         alpha.up="0" y="15" visible.disabled="false" x.down="32" y.down="15" />
+				<e:Image source="guildrukou_bg" y="16" x="2" visible.disabled="false" y.down="18" x.down="2" />
+				<e:Image x="6" y="23" source="guildwaricon" visible.disabled="false" y.down="25" x.down="6" />
+				<e:Image source="guild_title3" x="12" y="67" visible.disabled="false" y.down="69" x.down="12" />
+			</e:Skin>
+		</e:Button>
+		<e:Button id="manageBtn" y="550" x="90">
+			<e:Skin states="up,down,disabled">
+				<e:Image source="guild_title4a" scaleX="2" scaleY="2" includeIn="up,down,disabled" x="44" y="0"
+				         alpha.up="0" visible.disabled="false" x.down="44" y.down="0"  scaleX.down="1.95" scaleY.down="1.95"/>
+				<e:Image source="guildrukou_bg" x="1" y="4" visible.disabled="false" y.down="6" x.down="1" />
+				<e:Image source="guild_title4" x="12" y="54" visible.disabled="false" y.down="56" x.down="12" />
+				<e:Image source="guilddatingicon" x="6" y="7" visible.disabled="false" y.down="9" x.down="6" />
+			</e:Skin>
+		</e:Button>
+		<e:Button id="shopBtn" x="370" y="663">
+			<e:Skin states="up,down,disabled">
+				<e:Image source="guild_title6a" scaleX="2" scaleY="2" includeIn="up,down,disabled" x="0" alpha.up="0"
+				         y="26" visible.disabled="false" x.down="0" y.down="26" />
+				<e:Image source="guildrukou_bg" x="100" y="0" visible.disabled="false" y.down="2" x.down="100" />
+				<e:Image x="104" y="5" visible.disabled="false" source="guildbossicon" y.down="7" x.down="104" />
+				<e:Image x="111" y="46" visible.disabled="false" y.down="48" x.down="111"  source="guild_title6"/>
+			</e:Skin>
+		</e:Button>
+		<e:Image id="redPoint1" x="447" y="214" source="zjmhongdian"  visible="false"/>
+		<e:Image id="redPoint2" source="zjmhongdian"  x="213" y="275" visible="false"/>
+		<e:Group id="message" x="10" y="768" touchEnabled="false">
+			<e:Image id="chatBtn" touchEnabled="true" pixelHitTest="true" source="zjmliaotian" />
+		</e:Group>
+		<e:Image id="redPoint0" source="zjmhongdian"  x="128" y="552" visible="false"/>
+		<e:Image id="redPoint3" x="505" y="658" source="zjmhongdian"  visible="false"/>
+		<e:Image source="guilddibang1" scaleX="2" scaleY="2" bottom="0" horizontalCenter="-146" />
+		<e:Scroller width="246" height="76" bottom="5" horizontalCenter="-164">
+			<e:List id="list" itemRendererSkinName="gongxianitemSkin" bottom="-621" x="15.5">
+			</e:List>
+		</e:Scroller>
+		<e:Image source="guilddibang2" scaleX="2" scaleY="2" bottom="0" horizontalCenter="144" />
+		<e:Button id="closeBtn" label="Button" skinName="Btn0Skin" icon="fanhui" bottom="0" horizontalCenter="244" />
+		<e:Label text="本日贡献排行" size="20" textColor="0x9f946d" bottom="90" horizontalCenter="-169" />
+		<e:Image source="teshuwenzibg" bottom="80" horizontalCenter="-170.5" />
+		<e:Group id="reward" y="40"  horizontalCenter="214"/>
+	</e:Group>
+</e:Skin>

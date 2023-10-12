@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SwitchCDSkin" width="580" height="930" currentState="revive" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:euiextension="euiextension.*"
+	xmlns:ns1="*" states="revive,switch,exit" >
+	<w:Config id="15c44cc4323"/>
+	<e:Rect id="bgClose" left="0" right="0" top="0" bottom="0" fillAlpha="0.6"/>
+	<e:Image id="background" scale9Grid="21,19,18,32" source=""/>
+	<e:Group horizontalCenter="0" verticalCenter="0" width="280" height="70">
+		<e:Image source="bantoutiaobg2" left="0" right="0" top="0" bottom="0" scale9Grid="11,2,70,17"/>
+		<e:Label id="killName" text="你被xxxx玩家击败！" size="20" textColor="0xDFD1B5" x.exit="98" x.switch="98" textAlign.revive="center" height.revive="27" width.revive="302" visible.switch="false" textAlign="center" text.exit="即将退出龙城争霸活动" includeIn="revive,switch" y.revive="200" x.revive="89" horizontalCenter.revive="0" horizontalCenter="0" y="7"/>
+		<e:Label id="guildName" text="来自行会：这是行会名称" size="16" textAlign="center" includeIn="revive" textColor="0x2F6FF6" horizontalCenter="0" y="29"/>
+		<e:Label text="即将退出龙城争霸活动" size="20" textColor="0xDFD1B5" textAlign="center" includeIn="exit" verticalCenter="0" horizontalCenter="0"/>
+		<e:Label id="mapName" text="皇宫前殿" size="20" includeIn="switch" textColor="0xFFB82A" horizontalCenter="44" verticalCenter="0"/>
+		<e:Label id="timeDown" size="16" horizontalCenter.switch="0" textColor="0x23CA23" textAlign="center" textAlign.exit="center" text="22：22：22" horizontalCenter="0" verticalCenter="21"/>
+		<e:Label text="即将前往：" includeIn="switch" size="20" textColor="0xDFD1B5" horizontalCenter="-50" verticalCenter="0"/>
+	</e:Group>
+	<e:Button id="closeBtn" label="关闭" visible.revive="false" x.switch="361" y.switch="503" x.exit="361" y.exit="503" skinName="Btn6Skin" width="89" horizontalCenter="0" verticalCenter="61"/>
+</e:Skin>

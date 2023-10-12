@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DailyChargeSkin" width="480" height="800" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="cjsc_01_jpg" x="0" y="0"/>
+	<e:Image x="18" y="628" width="440" scale9Grid="3,2,20,19" height="65" source="sc_15"/>
+	<e:Image x="20" y="405" scale9Grid="18,18,114,114" width="439" height="224" source="first_04_png"/>
+	<e:Image id="titleImg" x="15" y="88" source="daily_01_png"/>
+	<e:Image source="dailyCharge_json.sc_13" x="0" y="50" scale9Grid="213,287,60,4" height="653"/>
+	<e:List id="list" y="412" height="206" itemRendererSkinName="ItemSkin" horizontalCenter="0" width="426">
+		<e:layout>
+		<e:TileLayout horizontalGap="18" verticalGap="4" requestedColumnCount="5"/>
+		</e:layout>
+	</e:List>
+	<e:Button id="closeBtn" label="按钮" x="408" y="638" skinName="Btn0Skin"/>
+	<e:Button id="closeBtn0" label="按钮" x="439" y="54" skinName="Btn0Skin"/>
+	<e:Button id="goUpBtn" label="按钮" y="642" skinName="Btn13Skin" icon="sc_05" horizontalCenter="0.5"/>
+	<e:Button id="awardsBtn" label="按钮" x="179" y="642" icon="sc_17" skinName="Btn0Skin" visible="false"/>
+	<e:Label id="awardsTxt" text="已领取" y="656" fontFamily="黑体" size="20" textColor="0xFFB82A" horizontalCenter="2" visible="false"/>
+	<e:TabBar id="tab" width="200" height="48" x="30" y="365" itemRendererSkinName="BtnTab1Skin">
+		<e:layout>
+			<e:HorizontalLayout gap="5"/>
+		</e:layout>
+	</e:TabBar>
+	<e:Image id="redPoint0" x="130" y="355" source="zjmhongdian" touchEnabled="false" visible="false"/>
+	<e:Image id="redPoint1" x="265" y="357" source="zjmhongdian" touchEnabled="false" visible="false"/>
+	<e:Image id="redPoint2" x="400" y="336" source="zjmhongdian" touchEnabled="false" visible="false"/>
+	<e:Image y="42" x="175" source="dailyCharge_json.sc_11"/>
+</e:Skin>

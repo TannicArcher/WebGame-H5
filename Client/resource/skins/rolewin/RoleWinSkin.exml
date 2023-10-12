@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="RoleWinSkin" width="580" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" height="930">
+	<w:Config id="15acfc4e171" />
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="0.6" />
+	<e:Image top="0" bottom="0" source="tongyongmianbanbg2" width="580" horizontalCenter="0"  scale9Grid="11,8,12,23"/>
+	<e:Group width="556" horizontalCenter="0" bottom="58">
+		<e:Image source="tongyong2_json.bantoumingkuang4" x="0" top="0" bottom="0" width="278" height="90"/>
+		<e:Image source="tongyong2_json.bantoumingkuang4" scaleX="-1" right="0" top="0" bottom="0" width="278" height="90"/>
+	</e:Group>
+	<e:Image source="tongyongmianbanbg" width="570" horizontalCenter="0" top="44" bottom="155"  scale9Grid="8,15,30,19"/>
+	<e:Group id="dinghong" width="556" height="92" bottom="162" horizontalCenter="0" visible="false">
+		<e:Image x="0" top="0" bottom="0"  source="bantoumingkuang3"/>
+		<e:Image scaleX="-1" top="0" bottom="0"  source="bantoumingkuang3" right="0"/>
+	</e:Group>
+	<e:TabBar id="tab" itemRendererSkinName="BtnTab0Skin" dataProvider="{viewStack}" selectedIndex="0" horizontalCenter="0"
+	          bottom="112">
+		<e:layout>
+			<e:HorizontalLayout  gap="-8"/>
+		</e:layout>
+	</e:TabBar>
+	         scale9Grid="32,32,6,6" touchEnabled="false" />
+	<e:ViewStack id="viewStack" width="580" selectedIndex="4" horizontalCenter="0" top="0" bottom="160" x="0" y="0"  >
+		<ns1:BaseComponent id="roleInfoPanel" skinName="RoleInfoSkin" name="角色" left="0" right="0" top="0" bottom="0" className="RoleInfoPanel"/>
+		<ns1:BaseComponent id="hejiPanel" name="合击" skinName="PunchEquip" left="0" right="0" top="0" bottom="0" className="HejiPanel" visible="false"/>
+		<ns1:BaseComponent id="zsPanel" skinName="ZsPanelSkin" name="转生" left="0" right="0" top="0" bottom="0" className="ZsPanel" visible="false"/>
+		<ns1:BaseComponent id="wingPanel" skinName="WingSkin" name="羽翼" left="0" right="0" top="0" bottom="0" className="WingPanel" visible="false"/>
+		<ns1:BaseComponent id="reincarnationPanel" skinName="ReincarnationWinSkin" name="轮回" left="0" right="0" top="0" bottom="0" className="SamsaraPanel" visible="false"/>
+
+	</e:ViewStack>
+	<ns1:BaseComponent id="roleSelect" skinName="RoleSelectPanelSkin" width="580" horizontalCenter="0" x="0" y="0"   className="RoleSelectPanel"/>
+	<e:Button id="help" label="按钮" skinName="Btn0Skin" icon="wenhao" horizontalCenter="-246" y="8" scaleX="0.9" scaleY="0.9" visible="false"/>
+	<e:Image id="biaoti" y="6" source="biaoti_juese" horizontalCenter="-150" />
+
+
+
+
+	<e:Group id="redPointGroup" bottom="139" touchEnabled="false" horizontalCenter="42">
+		<e:layout>
+			<e:HorizontalLayout gap="87"/>
+		</e:layout>
+		<e:Image id="redPoint0" touchEnabled="false" bottom="139" horizontalCenter="-183" source="zjmhongdian" x="-195" y="-24" scaleX="1" scaleY="1"/>
+		<e:Image id="redPoint1" touchEnabled="false" bottom="139" horizontalCenter="-71" source="zjmhongdian" x="-83" y="-24" scaleX="1" scaleY="1"/>
+		<e:Image id="redPoint2" touchEnabled="false" bottom="139" horizontalCenter="43" source="zjmhongdian" x="31" y="-24" scaleX="1" scaleY="1"/>
+		<e:Image id="redPoint3" touchEnabled="false" bottom="139" horizontalCenter="153" source="zjmhongdian" x="141" y="-24" scaleX="1" scaleY="1"/>
+		<e:Image id="redPoint4" touchEnabled="false" bottom="139" horizontalCenter="264" source="zjmhongdian" x="252" y="-24" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<e:Button id="closeBtn" label="按钮" skinName="Btn0Skin" icon="chatclose" y="46" scaleX="0.8" scaleY="0.8" horizontalCenter="266"/>
+</e:Skin>
