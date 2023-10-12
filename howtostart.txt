@@ -1,0 +1,65 @@
+﻿Unzip the game to drive D: D:\WebGame-H5. The decompression directory is different on each end.
+
+Game IP:127.0.0.1
+
+------------------Virtual network card settings-------------------------------- -----------------------
+
+Local stand-alone play does not require setting up a virtual network card
+
+-------------------------------------------------- ----------------------------------
+Start setting up:
+
+Follow the prompts and follow the steps (each terminal is different).
+
+
+The first step: [0].phpStudy shows two green lights, which means it is normal.
+
+
+Step 2: [2] Start service area 1.bat
+
+To play by yourself, just open one zone. For cross-server, you need to open zone 7.
+
+This end is H5 and can be used directly with the browser
+
+http://127.0.0.1
+
+Test account: zgymw
+Test password: zgymwcom
+
+
+
+-------------------------------------------------- ----------------------------------
+
+GM tool address: http://your ip or domain name/gm/gm.php GM code ragezone
+Zone 2 backend: http://your ip or domain name/gm2/gm.php GM code ragezone
+
+-------------------------------------------------- ----------------------------------
+
+Tutorial on setting up and modifying external network:
+
+D:\WebGame-H5\Client\config.php line 16
+D:\WebGame-H5\bin\S1\gameworld\data\client.lua line 4
+D:\WebGame-H5\bin\S1\gameworld\GameWorld.txt line 37.50
+D:\WebGame-H5\bin\S2\gameworld\data\client.lua line 4
+D:\WebGame-H5\bin\S2\gameworld\GameWorld.txt line 37.50
+Modify the IP in the above address to your external network IP with port and port
+
+Use N11 to connect to the database root database password: 0987abc123
+
+Modify the IP in the server in the database globaldata to your external network IP
+
+The name of the district server is also changed here.
+-------------------------------------------------- ----------------------------------
+
+-------------------------------------------------- ----------------------------------
+China Source Code Network————
+-------------------------------------------------- ----------------------------------
+
+
+-------------------------------------------------- ----------------------------------
+
+Source code sources and networks. This source code is only for everyone's research and study purposes. Please do not use it for commercial purposes. Otherwise, if it causes any disputes and I have nothing to do with the forum, you will be responsible for the consequences. Please delete it within 24 hours after downloading! ! !
+
+
+-------------------------------------------------- ----------------------------------
+
