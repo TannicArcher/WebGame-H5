@@ -1,0 +1,136 @@
+﻿--#include "..\language\LangCode.txt"
+--全局的配置，一些零散的配置放在这里读取
+ClientGlobalConfig =
+{
+	defaultAttackSpeed = 650,
+
+	--背包物品分类
+	bagItemCategory =
+	{
+		{
+			name = Lang.ClientGlobalConfig.t1,--分类名称
+			itemTypes = {1,2,3,4,5,6,7,8,9,10,15,16,50,51,52,53,61,62,63,64,65,66,67,68,69,707,71,72,88},--属于该分类的物品类型列表
+		},
+		{
+			name = Lang.ClientGlobalConfig.t2,--分类名称
+			itemTypes = {85,87},--属于该分类的物品类型列表
+		},
+		{
+			name = Lang.ClientGlobalConfig.t3,--分类名称
+			itemTypes = {83,84,90,92,93,94,},--属于该分类的物品类型列表
+		},
+	},
+
+	roleModel =
+	{
+		1201000,1211000,
+		1202000,1212000,
+		1203000,1213000,
+	},
+
+	--物品品质颜色，按从低到高的顺序分别为：白、绿、蓝、紫、橙、红
+	itemColors = {0xFFFFFF, 0x66FF66, 0x35C3F7, 0xFF49F4, 0xFFC000, 0xFF0000},
+
+	levelGiftItems = {18203, 18204, 18205,18206,18207,18208,18209}, --依次是10 20 30 40 50 60 70级的礼包道具ID
+
+	--开启一个背包格子需要的元宝
+	openBagCellCost = 5,
+
+	--NPC任务对话界面的任何地方的点击都等同领取任务和提交任务（小于或等于26级）
+	autoAcceptAndSubmitLevel = 26,
+
+	-- 功能预告配置
+	functionOpenLevel =
+	{
+		{ name = Lang.Xianzun.n1, level = 12, iconId = 1, sysId = 13,info = Lang.Xianzun.info1, desc = Lang.Xianzun.desc1 }, -- 功能配置顺序对应图片顺序从0开始
+		{ name = Lang.Xianzun.n2, level = 22, iconId = 2, sysId = 0, info = Lang.Xianzun.info2, desc = Lang.Xianzun.desc2 },
+		{ name = Lang.Xianzun.n3, level = 27, iconId = 3, sysId = 29, info = Lang.Xianzun.info3, desc = Lang.Xianzun.desc3 },
+		{ name = Lang.Xianzun.n4, level = 29, iconId = 4, sysId = 6, info = Lang.Xianzun.info4, desc = Lang.Xianzun.desc4 },
+		{ name = Lang.Xianzun.n7, level = 37, iconId = 7, sysId = 14, info = Lang.Xianzun.info7, desc = Lang.Xianzun.desc7 },
+		{ name = Lang.Xianzun.n5, level = 38, iconId = 5, sysId = 8, info = Lang.Xianzun.info5, desc = Lang.Xianzun.desc5 },
+		{ name = Lang.Xianzun.n8, level = 40, iconId = 8, sysId = 15, info = Lang.Xianzun.info8, desc = Lang.Xianzun.desc8 },
+		{ name = Lang.Xianzun.n11, level = 40, iconId = 11, sysId = 3, info = Lang.Xianzun.info11, desc = Lang.Xianzun.desc11 },
+		{ name = Lang.Xianzun.n10, level = 41, iconId = 10, sysId = 9, info = Lang.Xianzun.info10, desc = Lang.Xianzun.desc10 },	
+		{ name = Lang.Xianzun.n12, level = 45, iconId = 12, sysId = 25, info = Lang.Xianzun.info12, desc = Lang.Xianzun.desc12 },
+		{ name = Lang.Xianzun.n6, level = 46, iconId = 6, sysId = 2, info = Lang.Xianzun.info6, desc = Lang.Xianzun.desc6 },
+		{ name = Lang.Xianzun.n18, level = 47, iconId = 18, sysId = 26, info = Lang.Xianzun.info18, desc = Lang.Xianzun.desc18 },
+		{ name = Lang.Xianzun.n13, level = 48, iconId = 13, sysId = 27, info = Lang.Xianzun.info13, desc = Lang.Xianzun.desc13 },
+		{ name = Lang.Xianzun.n19, level = 49, iconId = 19, sysId = -1, info = Lang.Xianzun.info19, desc = Lang.Xianzun.desc19 },
+		{ name = Lang.Xianzun.n14, level = 50, iconId = 14, sysId = 16, info = Lang.Xianzun.info14, desc = Lang.Xianzun.desc14 },
+		{ name = Lang.Xianzun.n21, level = 60, iconId = 21, sysId = -1, info = Lang.Xianzun.info21, desc = Lang.Xianzun.desc21 },
+		{ name = Lang.Xianzun.n22, level = 70, iconId = 22, sysId = -1, info = Lang.Xianzun.info22, desc = Lang.Xianzun.desc22 },
+		{ name = Lang.Xianzun.n15, level = 72, iconId = 15, sysId = -1, info = Lang.Xianzun.info15, desc = Lang.Xianzun.desc15 },
+		{ name = Lang.Xianzun.n16, level = 75, iconId = 16, sysId = -1, info = Lang.Xianzun.info16, desc = Lang.Xianzun.desc16 },
+		{ name = Lang.Xianzun.n17, level = 85, iconId = 17, sysId = 30, info = Lang.Xianzun.info17, desc = Lang.Xianzun.desc17 },
+		{ name = Lang.Xianzun.n20, level = 100, iconId = 20, sysId = -1, info = Lang.Xianzun.info20, desc = Lang.Xianzun.desc20 },
+	},
+
+	--翻牌积分段
+	fanpaiPoint =
+	{
+		{ point = 8, id = 18654, count = 1},
+		{ point = 24, id = 18654, count = 1},
+		{ point = 80, id = 18654, count = 2},
+		{ point = 160, id = 18654, count = 2},
+		{ point = 320, id = 18654, count = 3},
+		{ point = 480, id = 18654, count = 3},
+		{ point = 640, id = 18654, count = 3},
+	},
+
+	--自动学习技能
+	autoLearnSkillList = 
+	{
+		13,14,23,24,33,34,
+	},
+
+	--[[
+	--	极限产出经验系数
+	--	1~99     		a + b * (lv - c)
+	--	100 ~ +无穷   	人物当前等级升级所需经验 * (1-b) / a
+	 ]]
+	-- 1~99
+	expCoeff = {40000000,1000000,41},
+	-- 100 ~ +无穷
+	heiLvCoeff = {3.48,0.4},
+
+	--连服预告50级开启
+	lfNoticeNeedLv = 50,
+	--连服预告，启动连服机制第3天出现
+	lfNotiveOpenLF = 3,
+	--发送坐标不显示传送云的地图（王飞是逗逼吗？）
+	preventFlyScene = {15,20,22,1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1015,1016,1017,
+					   1018,1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1033,1034,1035,
+					   1036,1037,1038,1039,1040,1041,1042,1043,1044,1045,1046,1047,1048,1049,1050,1051,1052,1053,
+					   1054,1055,1056,1057,1058,1059,1060,1061,1062,1063,1064,1065,1066,1067,1068,1069,1070,1071,
+					   1072,1073,1074,1075,1076,1077,1078,1079,1080,1081,1082,1083,1084,1085,1086,1087,1088,1089,
+					   1090,1091,1092,1093,1094,1095,1096,1097,1098,1099,1100,1101,1102,1103,1104,1105,1106,1107,
+					   1108,1109,1110,1111,1112,1113,1114,1115,1116,1117,1118,1119,1120,1121,1122,1123,1124,1125,
+					   1126,1127,1128,1129,1130,1131,1132,1133,1134,1135,1136,1137,1138,1139,1140,1141,1142,1143,
+					   1144,1145,1176,1177,1178,1179,1180,1181,1182,1183,1184,1199,1200,1201,1208,1209,1210,1211,
+					   1212,1213,1214,1215,1203,1204,1205,1206,1207},
+	--无法通过坐标寻路到达的场景（是的！！）
+	preventautogolist = {1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1011,1012,1013,1014,1015,1016,1017,1018,
+						 1019,1020,1021,1022,1023,1024,1025,1026,1027,1028,1029,1030,1031,1032,1033,1034,1035,1036,
+						 1037,1038,1039,1040,1041,1042,1045,1046,1047,1048,1049,1050,1051,1052,1053,1054,1055,1056,
+						 1057,1058,1059,1060,1061,1062,1063,1064,1065,1065,1066,1067,1068,1069,1070,1071,1072,1073,
+						 1074,1075,1076,1077,1078,1079,1080,1081,1082,1083,1088,1089,1090,1091,1092,1093,1094,1095,
+						 1096,1097,1098,1099,1100,1101,1102,1103,1104,1105,1106,1107,1108,1109,1110,1111,1112,1113,
+						 1114,1115,1116,1117,1118,1119,1120,1121,1122,1123,1124,1125,1126,1127,1128,1129,1130,1131,
+						 1132,1133,1134,1135,1136,1137,1138,1139,1140,1144,1145,1176,1177,1178,1179,1180,1181,1182,
+						 1183,1184,1208,1209,1210,1211,1212,1213,1214,1215,1203,1204,1205,1206,1207},
+
+	petSkillNames =
+	{
+		608,--击晕
+		610,--恐吓
+	},
+	
+	--可放入快捷栏的物品id列表
+	shortcutItemIdList = { 19300, 18233, 18234, 18241, 18242},
+	
+	--暴击震屏配置
+	--bangShakeConfig = { rangX = 2, rangY = 3, dur = 200 },
+
+	--不可速传的地图id
+	noFastMove  = {20,15},
+}

@@ -1,0 +1,70 @@
+﻿GameServer =
+{
+	--服务器名称
+	ServerName = "GameWorld2",
+	ServerIndex = 7,
+
+	
+	--数据库连接配置
+	SQL = 
+	{ 
+		Host = "127.0.0.1", 
+		Port = 3306, 
+		DBName = "actor7", 
+		DBUser = "root", 
+		--DBPass = "jdusVRPm8XI+vYJb5gNZiw==" 
+		DBPass = "jdusVRPm8XI+vYJb5gNZiw=="
+	}, --0987abc123
+	
+	GlobalSQL = 
+	{ 
+		Host = "127.0.0.1",
+		Port = 3306, 
+		DBName = "globaldata", 
+		DBUser = "root", 
+		DBPass = "jdusVRPm8XI+vYJb5gNZiw=="
+	}, --0987abc123
+
+	--网关绑定地址和端口
+	GateService = 
+	{ 
+		Address = "127.0.0.1", 
+		Port = 6007
+	},
+
+	--会话服务器地址和端口
+	LoginServer = 
+	{ 
+		Address = "127.0.0.1", 
+		Port = 10107
+	},
+	
+	--Log服务器绑定地址和端口
+	LogServer = 
+	{ 
+		Address = "127.0.0.1", 
+		Port = 7001
+	},
+	
+	--数据服务器绑定地址和端口
+	DbServer = 
+	{ 
+		Address = "127.0.0.1", 
+		Port = 5007
+	},
+	
+	-- 跨服服务地址和端口
+	CrossService = 
+	{
+		Address = "0.0.0.0", 
+		Port = 3101
+	},
+	-- 中心服务器
+	CenterServer =
+	{
+		Address = "127.0.0.1",
+		Port = 8001
+	},
+
+	
+}

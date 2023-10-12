@@ -1,0 +1,1 @@
+total        max          times        lMin         lMax         last         func                

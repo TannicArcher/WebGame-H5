@@ -1,0 +1,29 @@
+
+--本文件用于临时性的活动的功能实现
+
+--七夕活动：在中国农历七夕（2011年8月6日）当日，从0点起在全部玩家屏幕上播放玫瑰花雨效果（即999玫瑰的特效）持续15秒，其后每间隔4小时执行一次全体玩家15秒花雨效果。该活动进当日有效，至24点终止。
+
+--注册个时间，在8月6日凌晨执行，4个小时执行一次
+function registTimeQixi(npcobj)
+	--如果时间在8月6日之后了，那不用注册这个时间了，没用了
+	local year=0
+	local month=0
+	local day=0
+	year,month,day= System.getDate(year,month,day)       --获取天 
+	if year <= 2011 and month <= 8 and day <= 6 then
+		System.registerTimeCall(npcobj,"playQixiEffectOnTime","2011-08-06 00:00:00",4*3600,false)
+	end
+end
+
+function playQixiEffectOnTime()
+	local year=0
+	local month=0
+	local day=0
+	year,month,day= System.getDate(year,month,day)       --获取天 
+	if year == 2011 and month == 8 and day == 6 then
+		System.playScrEffectCode(1,20)
+	end
+end
+
+--插入到全局npc的初始化函数里
+table.insert(InitFnTable,registTimeQixi)

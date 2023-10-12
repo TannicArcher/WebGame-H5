@@ -1,0 +1,68 @@
+﻿require("escort.escortconf")
+require("protocol")
+
+local EscortConf = EscortConf
+
+local actormisc = require("systems.actorsystem.actormisc")
+
+--#include "data\language\LangCode.txt" once          -- 语言表  once
+--#include "data\envir\npc\npcs.txt" once
+
+	--#include "data\script\normalfubennpcfunc.txt" once
+--#include "data\functions\utils\questfunc\normalfuncforquest.txt" once   -- 普通任务通用脚本函数  once
+	--#include "data\functions\utils\questfunc\normalfuncforstarquest.txt" once
+--#include "data\functions\systems\tasks\xunzhaoxiaohuoban\xunzhaoxiaohuoban.txt" once
+--#include "data\functions\utils\questfunc\refreshstarfunc.txt" once
+
+--#include "data\config\quest\stdquests.txt" once -- 包含所有任务列表，要节省内存也可以需要的才包含
+
+IdNpcList = {}
+IdQuestList = {}
+
+-- NPC主函数, npcId : NPC id
+function npcMain(actor, npcId)
+	local conf = IdNpcList[npcId]
+	if conf == nil then return "" end
+
+	local mainFunc = conf.main
+	if mainFunc ~= nil then 
+		return mainFunc(actor, npcId)
+	end
+
+	if conf.isFuben and (not LActor.getQuestList(actor)) then -- 副本NPC
+		LActor.openDialogs(actor, diNormalFuben)
+		return 
+	end
+
+	-- TODO:护送类NPC处理，能不能做一个NPC类型，根据类型处理
+
+	return commonQuestNpcMain(actor, nil, npcId)
+end
+
+-- 根据ID获取NPC的配置
+function getNpcConf(npcId)
+	return IdNpcList[npcId]
+end
+
+for i=1,#NpcList do
+	local conf = NpcList[i]
+	local npcId = conf.id
+	IdNpcList[npcId] = conf
+
+	conf.InitFnTable = {}
+	conf.FinaFnTable = {}
+	conf.MainFnTable = {}
+end
+
+for i=1,#StdQuest do
+	local conf = StdQuest[i]
+	IdQuestList[conf.id] = conf
+end
+
+-- 根据ID获取任务的配置
+function getQuestConf(questId)
+	return IdQuestList[questId]
+end
+
+
+-- NPC的特殊处理在这后面做(MainFnTable的)

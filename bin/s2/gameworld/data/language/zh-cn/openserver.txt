@@ -1,0 +1,36 @@
+﻿openserver =
+{
+	 --七日登陆
+	 openserver001= "<font color='#feb12b'>活动时间：开服第一天至开服第七天</font>\n<font color='#feb12b'>活动规则：活动期间，登陆</font>",
+
+	 --冲级礼包
+	 openserver002= "<font color='#feb12b'>活动时间：开服第一天至开服第二天</font>\n<font color='#feb12b'>活动规则：活动期间，达到特定等级即可领取限量冲级大礼。</font>",
+
+	 --逍遥争霸
+	 openserver003= "<font color='#feb12b'>活动时间：开服第一天至开服第七天</font>\n<font color='#feb12b'>活动规则：首轮王城争夺战中，夺得逍遥城的帮派帮主及其成员可以领取对应奖励。</font>",
+
+	 --累计充值
+	 openserver004= "<font color='#feb12b'>活动时间：开服第一天至开服第七天</font>\n<font color='#feb12b'>活动规则：活动期间，充值达到特定额度即可领取累计充值大礼。</font>",
+
+	 --仙尊团购
+	 openserver005= "<font color='#feb12b'>活动时间：开服第一天至开服第三天</font>\n<font color='#feb12b'>活动规则：活动期间，全服仙尊玩家达到一定数量时，仙尊玩家可以领取团购大礼。</font>",
+
+	 --疯抢礼包
+	 openserver006= "<font color='#32ff67'>活动规则：</font>\n<font color='#feb12b'>活动期间，特惠礼包限时出售，限量购买。</font>",
+	 
+	 --武神台
+	 openserver007= "<font color='#feb12b'>活动时间：开服第一天至开服第四天</font>\n<font color='#feb12b'>活动规则：活动期间，武神台结算奖励时，夺取对应名次即可领取额外排名奖励。</font>",
+
+	 --境界
+	 openserver008= "<font color='#feb12b'>活动时间：开服第一天至开服第三天</font>\n<font color='#feb12b'>活动规则：活动期间，通关特定境界即可领取境界通关大礼。</font>",
+	 
+	 --投资理财团购
+	 openserver009 = "<font color='#feb12b'>活动时间：开服第一天至开服第三天</font>\n<font color='#feb12b'>活动规则：活动期间，全服购买投资理财的玩家达到一定数量时，购买过投资理财的玩家可以领取团购大礼。</font>",
+
+
+
+
+
+--聚宝盆活动
+	treasureofgold001="活动说明：\n1. 每个角色每天都有1次点金的机会，将一定数量的元宝变换成绑定元宝。\n2. 有一定几率获得四倍、五倍奖励，最低为三倍。\n3. 点金次数可累积，最高累积7次",
+}

@@ -1,0 +1,109 @@
+--怪物行为(AI)配置样本
+{
+  id=0, --此处填写id，防止文件名或索引文件中顺序不同，用于检测
+  aggressive=1,  --是否主动， 0被动 1主动 （护送过程中也有主动攻击和被动攻击的区别，去掉3和4.
+  --dead_time=10, -- 用于等待执行事件的时间，没有的话立即死亡回收
+  home_range= 15, -- 可以配置小于等于0表示不回归，超过该范围后返回出生点或主人位置
+          -- 无限大和0的区别在于当目标死亡后是否回去
+  vision =10,   -- 视野，主动怪警戒范围, （是否需要追击的时候超出视野不追了，感觉没必要了，尤其是格斗游戏） 
+
+  skills= { --按以前的思路 所有怪物可以复用同样的技能，所以配在ai里
+      -- 上面的优先级高
+      -- 两个相同的技能独立计算cd，没有cd可用时就随机移动了
+      -- first_delay 第一次释放延迟，默认0
+      -- 取消了技能等级和事件配置，事件的可以直接配置在events中，没有特殊情况技能都是1级所以去掉了
+       {id=40,cd=5000,first_delay=2000, x = 10, y = 10,}, 
+       {id=40,cd=5000, x = 10, y = 10},
+    },
+
+  born = { --刚刷出时进行的行为，全部执行通过后进入下一状态，可进行喊话，附加状态，触发场景事件等行为。
+    {
+      actions={{type=1, talk=Lang.Actions.a000003, talkType=2 }}
+    }
+  },
+  idle = { --待机时状态，可切换到战斗状态，可添加巡逻，喊话，不定时对自己放buff等行为
+    {-- events
+      delay= 20, --进入状态后延迟20秒执行 默认为1
+      count= 1,-- 0为不限次数 默认为1
+      interval = 10,
+      -- 此处只是举例
+      conditions = {
+          {type=1, min = 120, max= 600}, -- 进入战斗的时间，min默认为0， max默认为0但表示无限大
+        {type=2, min = 10, max = 50}, -- 自己血量 min 默认为0 max 默认为100
+        {type=3, min = 10, max = 50}, -- 目标血量 min 默认为0 max 默认为100
+        {type=4, min = 3, max=4}, -- 与目标距离 min 默认0， max默认100
+        {type=5, id=123}, -- 自己是否有buff
+        {type=6, id=123}, -- 目标是否有buff
+        {type=7, id=123, min=1, max=10}, --与指定怪距离
+        {type=8, px=100, py=100, min=1, max=10}, --与指定位置距离
+        {type=9, min=0, max=0}, --视野内怪物数量
+        {type=10, min=0, max=0},  -- 周围玩家数量, 检测是否为敌人太耗性能
+      },
+      actions = {  --duration 为最多执行时间，action执行成功或者到期则执行下一个action, 默认为0
+        -- interval 为执行action成功后下一个action的间隔时间，默认为0
+        { type = 1, talk=Lang.Actions.a000003, talkType=2 }, --对白，talk：说话内容，talkType类型，定义见上面
+
+
+        --[[原来的action：{ type=1, duration=2, talk=Lang.Actions.a000003, talkType=2 },
+        现在的action：{ type=1, duration=1, interval=5, talk=Lang.Actions.a000003, talkType=2},
+        不过正常持续时间和间隔都默认为0就行了，所以可以这样写：
+                { type=1, id=100000},  --释放技能，参数id，技能类型id
+                { type=1, ctype=0},  --切换目标，ctype切换类型
+        duration持续时间只有移动类的行为才需要， interval是需要延迟执行下一个行为时才填的
+        所以格式基本上差不多，以前的行为基本都不用填duration
+        --]]
+      }
+    },
+    {
+    },
+  },
+  battle = { --战斗状态，(之前做法是不填表示没有战斗状态，但是如果有战斗状态，可以实现非战斗时跟随或护送巡逻，进战斗后停止或逃跑或其他行为，脱战后恢复)
+  },
+  back = { -- 返回状态， 仅处理移动和执行部分行为（喊话等），如没有特殊行为，可以考虑省略该状态
+  },
+  dead = { -- 执行某些行为， 或者复活前判断
+  }
+},
+
+--[[    条件说明
+类型定义
+1 acTime,       // 进入该阶段时间
+2 acSelfHp,     // 自己的血量
+3 acTargetHp,     // 当前目标血量
+4 acTargetDistance, // 与目标距离
+5 acSelfBuff,     // 自己是否有指定buff
+6 acTargetBuff,   // 目标是否有指定buff
+7 acMonsterDistance,  // 与指定怪的距离， 找到的第一个为准
+8   acPostionDistance,  // 与指定位置的距离
+9 acMonsterCount,   // 周围怪物数量
+10  acPlayerCount,    // 周围玩家数量
+参数定义
+conditions = {
+    {type=1, min = 120, max= 600}, -- 进入战斗的时间，min默认为0， max默认为0但表示无限大
+  {type=2, min = 10, max = 50}, -- 自己血量 min 默认为0 max 默认为100
+  {type=3, min = 10, max = 50}, -- 目标血量 min 默认为0 max 默认为100
+  {type=4, min = 3, max=4}, -- 与目标距离 min 默认0， max默认100
+  {type=5, id=123}, -- 自己是否有buff
+  {type=6, id=123}, -- 目标是否有buff
+  {type=7, id=123, min=1, max=10}, --与指定怪距离
+  {type=8, px=100, py=100, min=1, max=10}, --与指定位置距离
+  {type=9, min=0, max=0}, --视野内怪物数量
+  {type=10, min=0, max=0},  -- 周围玩家数量, 检测是否为敌人太耗性能
+}
+--]]
+
+--[[有些增加buff和移除buff的action看起来可以通过技能实现，具体看技能支不支持了
+ai流程是born->idle->battle->back->idle
+            ->dead
+需要一个额外的配置，将每个状态可支持的action类型配置一下，用于检测配置
+循环时，born状态不检测condition，所有event执行一遍，不管是否成功都进入idle状态
+dead状态在配置的时间内与其他状态相同，超时后结束，从场景中回收
+battle状态：
+  尝试执行event（施法状态下跳过，action执行中状态下跳过，不可控状态下跳过）
+  尝试释放自身技能（不可控状态，施法状态，action执行中状态，沉默状态下跳过）
+  尝试计算移动（不可控状态，action执行中状态，限制移动状态，施法状态下跳过）
+  尝试按结果路径移动（同上）
+
+锁状态类的action目前只有移动和技能，技能本身有施法动作不需要处理，
+  移动到目标这种如果移动成功，则解除，否则按duration锁定。
+--]]

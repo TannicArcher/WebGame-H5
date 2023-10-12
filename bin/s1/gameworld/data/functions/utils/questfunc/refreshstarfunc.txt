@@ -1,0 +1,169 @@
+﻿--#include "data\language\LangCode.txt" once
+--#include "data\config\quest\RefreshQuests.txt" once
+
+RefreshFunc = {}
+
+RefreshFunc.ShowStarTask = function( sysarg, id, grade, star, quest, questState, times )
+	id = tonumber( id )
+	grade = tonumber( grade )
+	star = tonumber( star )
+	quest = tonumber( quest )
+	questState = tonumber( questState )
+	times = tonumber(times)
+	
+	local var = LActor.getStaticVar( sysarg )
+	local starVar = var.star --刷星任务相关变量
+	if starVar == nil then 
+		var.star = {}
+		starVar = var.star
+	end
+
+	-- print( "id:"..id )
+	-- print( "grade:"..grade )
+	-- print( "star:"..star )
+	-- print( "quest:"..quest )
+	-- print( "quest state:"..questState )
+
+	--print("times:"..times)
+
+	if questState == 0 and times < 1 then -- 任务未接且次数已经用完
+		return Lang.ScriptTips.sx013
+	end
+
+	local info = starVar[id]
+	if info == nil then
+		starVar[id] = {}
+		info = starVar[id]
+	end
+
+	info.grade = grade
+	info.star = star
+	info.quest = quest
+
+	local task = RefreshQuests[id]	--刷星任务ID，暂时只能配一个
+
+	--计算剩余免费刷星次数
+	local refreshCount = info.refresh
+	if refreshCount == nil then
+		refreshCount = 0
+	end
+	refreshCount = task.refreshFree - refreshCount
+	if refreshCount < 0 then refreshCount = 0 end
+
+	local npcName = ""-- LActor.getTalkNpcName( sysarg )
+
+	local params = string.format( "%s,%d,%d,%d,%d,%d,%d,%d", npcName,id, grade, star, quest, questState, times, refreshCount )
+	--print( params )
+	if task.type ~= nil and task.type == 2 then
+		LActor.openDialogs(sysarg, diProtection, params)
+	else
+		LActor.openDialogs(sysarg, diRefreshTask, params)
+	end
+end
+
+RefreshFunc.CalcGradeByLevel = function( grades, level )
+	local ret = 0
+	for i = 1, #grades do
+		if level < grades[i].miniLevel then
+			break
+		end
+		ret = i
+	end
+	return ret
+end
+
+-- 打开刷星窗口
+RefreshFunc.OpenRefreshDialog = function(sysarg, id)
+	local str = ""
+	local task = RefreshQuests[id]
+	
+	local info = nil
+
+	local var = LActor.getStaticVar( sysarg )
+	if var ~= nil and var.star ~= nil then
+		info = var.star[task.id]
+	end
+
+	--今天剩余刷星任务次数
+	local times
+	local vipLevel = LActor.getVIPLevel( sysarg ) -- VIP用户和普通任务的总次数
+	if vipLevel > 0 then
+		times = task.timesVips[vipLevel]
+	else
+		times = task.times
+	end
+	if info ~= nil and info.count ~= nil then -- 减去已经使用的次数
+		times = times - info.count
+	end
+
+	--print(info.count)
+	--print( "refresh star quest left times:"..times )
+
+	-- 任务状态
+	local state = 0
+	local grade = nil
+	local star = nil
+	local quest = nil
+
+	-- 上次任务信息
+	if info ~= nil then
+		grade = info.grade -- 等级段
+		star = info.star -- 星级
+		quest = info.quest -- 任务id
+
+		if grade ~= nil and grade < 1 then
+			info.grade = nil
+			grade = nil
+		end
+	end
+
+	--处理上次的任务
+	--state 0：可接 1： 可完成 2：进行中
+	if quest ~= nil then
+		if LActor.hasQuest( sysarg, quest ) then
+			if LActor.canFinishQuest( sysarg, quest ) then
+				state = 1
+			else
+				state = 2
+			end
+		else --任务已经完成或放弃
+			state = 0
+		end
+	end
+
+	if state == 0 and times < 1 then -- 没有剩余次数
+		LActor.sendTipmsg(sysarg, Lang.ScriptTips.sx022, ttMessage)
+		return 
+	end
+
+	--[[
+	if state == 0 then
+		grade = nil
+		star = nil
+		quest = nil
+	end
+	]]
+
+	-- 如果上次没有任务，或任务已经完成或放弃，重新计算等级，星级和任务ID
+	if grade == nil then
+		local playerLevel = LActor.getRealLevel( sysarg )
+		grade = RefreshFunc.CalcGradeByLevel( task.grades, playerLevel )
+	end
+
+	-- grade == nil or grade < 1 : 没达到刷星等级
+	-- print(grade)
+	if grade == nil or grade < 1 then	--没有可接任务或可完成任务直接弹窗刷星任务窗口
+		LActor.sendTipmsg( sysarg,Lang.ScriptTips.sx005,ttMessage )
+		return
+	end
+
+	if star == nil then
+		star = 1
+	end
+	if quest == nil then
+		local quests = task.grades[grade].starLevels[star]
+		quest =  quests[System.getRandomNumber(#quests)+1]--随机分配一个任务
+	end
+
+	RefreshFunc.ShowStarTask( sysarg, task.id, grade, star, quest, state, times )
+end

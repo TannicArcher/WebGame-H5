@@ -1,0 +1,464 @@
+--系统提示的配置表，每一个引号括起来的表示一条系统提示，从0开始编号
+--注意：每行提示语要严格按照一定的格式写："****** ",	--varname,	//中文注释
+--其中******是表示提示语,提示语不要出现半角的"这样的字符，可以用全角的“， varname是用于c++程序的常量名,后面加 ","， 另外--和逗号这些都是必须要有的
+--另外：%s 和%d 这类的在前后要加空格，每句结尾也加个空格
+--
+
+System =
+{
+"没有错误 ",				--tpNoError=0,			//没有错误
+"技能配置错误 ",				--tpSkillConfigError,		//技能配置错误
+"等级不够无法升级技能 ",				--tpSkillTrainLevelLimited,   //等级不够无法升级
+"金币不足，暂时无法升级该技能 ",				--tpSkillTrainCoinLimited,   //金币不够，无法升级
+"金币不足，暂时无法升级该技能 ",				--tpSkillTrainBindcoinLimited,   //绑定金币不够，无法升级
+"经验不够，无法升级 ",				--tpSkillTrainExpLimited,    //经验不够，无法升级
+"职业不符合，无法升级 ",				--tpSkillTrainVocationLimited, //职业不符合，无法升级
+"已经是技能的最高等级了 ",				--tpSkillTrainHasLearned,  //已经升级了这个技能无需要升级
+"生命值不够，无法释放 ",				--tpSkillSpellHpLimited,    //生命值不够，无法释放
+"法力不足，无法释放技能 ",				--tpSkillSpellMpLimited,   //蓝不够，无法释放技能
+"身中不良状态，无法释放技能 ",				--tpSkillSpellBuffLimited,  //身上有指定的状态，无法释放技能
+"没有学习该技能，无法释放 ",				--tpSkillSpellNotLeared,   //没有学习这个技能，无法使用技能
+"技能冷却中 ",				--tpSkillSellCDLimited,   //当前技能正在冷却中
+"施放技能请先选择目标 ",				--tpSkillSpellNoTarget,  //请先选择施法对象或者施法点
+"需要有道具才能升级技能 ",				--tpSkillTrainItemLimited ,//物品不够，无法升级
+"修为不够，无法升级技能 ",				--tpSkillTrainXiuweiLimited ,//修为不够
+"身上存在状态，无法使用技能 ",				--tpSkillTrainWithBuff ,//存在buff
+"身上不存在状态，无法使用技能 ",				--tpSkillTrainWithoutBuff ,//不存在buff
+"目标的距离过远,无法攻击 ",				--tpSkillTrainDistance ,//和目标的距离
+"和目标重叠，无法使用技能 ",				--tpSkillTrainOverLap ,//和目标的重合
+"需要面向目标 ",				--tpSkillTrainFaceTarget, //需要面向目标
+"需要在目标背后使用 ",				--tpSkillTrainOneDirTarget, //需要和目标的方向
+"怒气值不够 ",				--tpAngerLimited, //
+"自身的生命比率过高，不能使用技能 ",				--tpSkillTrainHpRateBelow,   //自身的血的百分比必须低于一定的值
+"必须选择友方目标使用 ",				--tpSkillTrainFriendTarget , //必须需要友好目标
+"必须选择敌对目标使用 ",				--tpSkillTrainEnemyTarget ,  //必须选择敌对目标
+"该目标不能够攻击 ",				--tpSkillTrainCanAttackTarget ,  //能够攻击目标
+"该目标不能够攻击-%d ",				--tpSkillTrainCanAttackTarget1 ,  //能够攻击目标,调试用
+"熟练度不够 ",				--tpSkillTrainEfficicyNotEnough ,  //生活技能的熟练度不够
+"跳跃所需的轻功值不足 ",				--tpSkillTrainJumpPowerNotEnough, //体力不够，无法使用
+"跳跃距离过远 ",				--tpSkillTrainJumpTooLong,  //跳跃距离太远
+"阵营的职位不匹配，无法学习技能 ",				--tpSkillTrainCampTitleLimit,    //阵营的职位不满足，无法学习技能
+"目标的纵向距离过远,无法攻击 ",				--tpSkillTrainYDistance,         //与目标的纵向距离过远
+" %s 给[ %s ] %d 点内攻伤害 ",				--tpSkillInnerDamage,  //技能 %s 对 %s 造成了 %d 点内功攻击
+" %s 给[ %s ] %d 点外攻伤害 ",				--tpSkillOutDamage,    //技能 %s 对 %s 造成了 %d 点外功攻击
+"[ %s ]使用 %s 对我造成了 %d 点内功伤害 ",				--tpSkillGiveSelfInnerDamage, // %s 的技能 %s 对我造成了 %d 点内功伤害
+"[ %s ]使用 %s 对我造成了 %d 点外功伤害 ",				--tpSkillGiveSelfOutDamage, // %s 的技能 %s 对我造成了 %d 点外功伤害
+"普通攻击 ",				--tpNearAttackSkillName,  //普通攻击
+"你击败了[ %s ] ",				--tpSkillKillEntity,  //你杀死了  %s
+"你在战斗中被[ %s ]击败 ",				--tpBeSkilled,       //"你在战斗中被[ %s ]击败 ",
+" %s 技能无法配置该秘籍 ",				--tpSkillMijiNotMatch, // %s 技能无法配置该秘籍
+"需要将技能提升到 %d 级才能使用这个秘籍 ",				--tpSkillMijiLevelLimit, //需要将技能提升到 %d 级才能使用这个秘籍
+"已经学习了另外一个秘籍，请先移除该秘籍 ",				--tpSkillMijiHasLearn,  //已经学习了另外一个秘籍，请先移除该秘籍
+" %s 技能成功配置了秘籍  %s   ",				--tpSkillMijiLearnSucceed, //成功学习了一个秘籍
+"技能 %s 无法使用了 ",				--tpSkillForgetSkill,    //技能[ %s ]已经不能使用
+"获得经验 %d  ",				--tpSkillGetExp,         //获得经验 %d 点
+"获得经验 %d 点，额外加成 %d 点 ",				--tpSkillGetMultiplyExp, //获得经验 %d 点，其中 %d 点为多倍经验
+"获得经验 %d 点，衰减 %d 点 ",				--tpSkillGetSubExp ,     //获得经验 %d ，因每日经验上限衰减了 %d 点,实际获得 %d 点
+" %d 点经验存入经验封存宝盒。 ",				--tpSkillAbsortExp,      //吸收经验 %d 点
+"特殊状态下，你不能使用技能。 ",						--tpSkillNotUseSkill,			//不能使用飞行技能
+"您的经验封存宝盒已经充满经验！ ",				--tpExpPotIsFull,       //您的经验封存宝盒已经充满经验！
+"已经是最高等级了 ",				--tpSkillIsUpMostLevel , //已经是最高级了
+"该技能无法释放 ",				--tpSkillCannotSpell, //技能无法使用
+"吟唱技能使用失败 ",				--tpSkillSingParamError, //吟唱技能的参数不一致
+"非常抱歉，这个任务不能中途放弃！ ",				--tpQuestNotGiveUp,	//任务不能放弃
+"你已经放弃了本任务！ ",				--tpGiveUpSucc,		//任务放弃成功
+"你已经成功完成了任务：  %s   ",				--tpQuestFinishSucc,	//任务完成成功
+"你无法领取奖励，请检查背包  ",				--tpQuestFullBag,		//你无法领取奖励，请检查背包
+"任务   %s   无法自动完成，请检查背包是否已满 ",				--tpQuestAutoFinishErr,	//"任务   %s   无法自动完成，请检查背包是否已满,重新登陆即可自动完成 ",
+"剩下： ",				--tpQuestRemain,      //剩下：
+"你已被禁言 ",				--tpChatPlayerBeShutup,	// 你已被禁言
+"对方已经离线 ",				--tpChatTargetOffLine, //目标已经离线
+"查看的装备已经过期，无法查看 ",				--tpChatEquipIsDelete,  //查看的装备已经被删除了
+"物品配置错误 ",				--tpItemConfigError,     //物品配置错误
+"物品不存在 ",				--tpItemNotExist,   //要穿戴的物品不存在
+"物品无法穿戴 ",				--tpItemCannotTakeOn,   //物品不能穿戴
+"因无法取下当前位置的装备，无法装备 ",				--tpItemCannotTakeoff,   //因无法取下当前位置的装备，无法装备
+"背包已满，无法取下装备 ",				--tpItemTakeoffFailForBagFull,   //背包已满，无法取下物品的消息
+"等级不够，无法使用 ",				--tpItemCannotTakeOnForLevel, //等级不够，无法装备
+"性别不符，无法装备 ",				--tpItemCannotTakeOnForSex, //性别不符，无法装备
+"职业不符，无法装备 ",				--tpItemCannotTakeOnForVocation, //职业不符，无法装备
+"扩展 %d 格背包需要花费 %d  %s，是否愿意 ？  ",				--tpItemNotifyEnlargeMoney, //扩展 %d 格背包需要花费 %d 元宝，是否愿意？
+"物品拆分失败 ",				--tpItemSplitBagFail , //背包物品拆分失败
+"该物品无法合并 ",				--tpItemMergeFail , //背包物品合并失败
+"你正在交易中，无法整理背包 ",		--tpBagSortInDeal,
+"你的背包已满，无法获得任务物品！ ",				--tpBagFullQuest,		//背包已满影响任务接收
+"活力已到上限,使用物品无法补充更多的活力 ",				--tpEnergyIsFull,  //"活力已到上限,不需要使用物品补充 ",
+"修为已经到了上限,不需要使用物品补充 ",				--tpXiuweiIsFull,  //修为已经到了上限,不需要使用物品补充"
+"杀戮值已经不能再清除 ",				--tpPkValueIsEmpty,  //杀戮值无需要减
+"获得[ %s ]× %d  ",				--tpItemBagGetItem,  //背包里获得物品获得 %d 件[ %s ]
+"失去[ %s ]× %d  ",				--tpItemBagLostItem, //失去[ %d ]个[ %s ]
+"该物品不能销毁 ",				--tpItemCanNotDelete, //该物品不能销毁
+"背包已经满了 ",				--tpBagIsFull,       //背包已经满
+"装备[ %s ]穿戴后绑定了 ",				--tpItemTakenOnBinded, //[ %s ]穿戴后被绑定
+"当前状态无法使用该道具 ",				--tpItemCanNotUseNow, //当前状态无法使用道具
+"需要再清理出 %d 个背包格子才能领取奖励 ",				--tpItemNeedMoreGrid,  //需要清理出 %d 个格子才能领取
+"系统转发给你的物品无法接收，请清理背包 ",				--tpBagFullNotGetSysItem,//需要清理背包以接收系统转发的物品
+"本区域内不允许使用本物品 ",				--tpItemRegionCanNotUseItem, //本区域内不能使用物品
+"物品还在冷却中 ",				--tpItemInCD,					// 该物品正在冷却中
+"没有出战的宠物，无法使用技能 ",				--tpSkillNoBattlePet,        //没有出战的宠物
+"宠物没有学习该技能 ",				--tpSkillPetHaveNot,
+"仓库已满，请增加仓库栏",				--tpDepotBagIsFull, //仓库背包已经满了，不能再添加
+"花费 %d %s 开启 %d 格仓库位 ",				--tpDeportEnlargeFee, //扩展仓库花费
+"该物品不能放到仓库 ",				--tpItemCanNotPutDepot,//该物品不能放仓库
+"交易的时候物品不能放仓库 ",				--tpFailForDealing, //在交易的时候不能这么做
+"该物品不是装备，不可强化。 ",				--tpEquipEnhanceNotEquip, //该物品不是装备，不可强化。
+"强化已是最高级，不可再强化。 ",				--tpEquipEnhanceMaxLevel, //强化已是最高级，不可再强化。
+"强化该装备所需金币不足。 ",				--tpEquipEnhanceMoneyLack, //强化该装备所需金币不足。
+"强化该装备所需强化石不足。 ",				--tpEquipEnhanceStoneLack, //强化该装备所需强化石不足。
+"强化成功。 ",				--tpEquipEnhanceSuccess, //强化成功。
+"强化失败。 ",				--tpEquipEnhanceFaile, //强化失败。
+"分解所需金币不足。 ",				--tpEquipBreakMoney,  //分解所需金币不足。
+"注入所需金币不足。 ",				--tpInjectionMoney,  //注入所需金币不足。
+"您没有天地归元符。 ",				--tpInjectionAssistItem,  //您没有天地归元符。
+"精锻所需金币不足。 ",				--tpForgeMoney,  //精锻所需金币不足。
+"元灵物品不足。 ",				--tpForgeAssistItem,  //元灵物品不足。
+"当前在线时间超过3小时，为防沉迷状态，您",				--tpJobMakeAssistItem,  //没有足够材料可制作。
+"当前在线时间超过5小时，为不健康游戏时间，您",				--tpJobMakeToolItem,  //无制作工具。
+"体力不足。 ",				--tpEngLack,  //体力不足。
+" %s 制作出 %s 。 ",				--tpJobMakeBorad,  // %s 制作出 %s 。
+"你现在不够等级创建，等到了 %d 级再来吧 ",				--tpCreateGuildErrorLevel,		//不够等级创建帮派
+"非常抱歉，大侠还没有凑足金币来创建帮派！ ",				--tpCreateGuildNotEnough,			//不够金币创建帮派
+"您已经加入了一个帮派，不能再创建帮派了！ ",				--tpCreateGuildHasInGuild,		//已经在一个帮派里了，不能再另外创建帮派
+"您没有解散帮派的权利！ ",				--tpNoRightToDelete,				//不够权限解散帮派
+"你输入的帮派名含有非法字符或长度不对，请检查后重试 ",				--tpCreateGuildNameErr,			//帮派名含有非法字符
+"非常抱歉，帮派名称已被使用，请输入其他名称 ",				--tpCreateGuildNameInUse,			//帮派名称已被使用
+"我辈修帮派同心，<(c0x%s)[ %s ]>创建了帮派<(c0xFFFAE003)【 %s 】>，号召各位仙友加入！<#c0xFF00FE00#申请入帮/@@joinGuild,%d> ",	--tpCreateGuildBroadcast,			//数据服务器的内部错误
+"我辈修帮派同心，<(c0x%s)[ %s ]>创建了帮派<(c0xFFFAE003)【 %s 】>，号召各位仙友加入！ ",	--tpCreateGuildBroadcast1,
+"【入帮】热烈欢迎[ %s ]加入本帮!  热烈欢迎",				--tpJoinGuildSucc,				//成功加入帮派,这个一般是广播给帮派成员的消息
+"您已经脱离了帮派: %s  ",				--tpLeftGuild,					//被开除或者脱离了帮派
+"你已经被踢出了帮派: %s  ",				--tpKickGuild,				//
+"你在主动脱离帮派12小时内，不能加入其他帮派，也不能创建新帮派 ",				--tpLeftGuildCanNotJoin,			//脱离帮派后，要在规定的时间内，不能加入其他帮派，也不能接受邀请
+"你在被踢出帮派1小时内，不能加入或创建帮派 ",				--tpKickoutGuildCanNotJoin,
+"你并没有加入任何帮派！ ",				--tpNotInGuild,					//还没有加入帮派
+"恭喜你，你已经成为了 %s 的帮主！ ",				--tpBeLeader,						//成为帮主
+"恭喜你，你被帮派升职了！ ",				--tpUpPos,						//被升职了
+"你被帮派降职了！ ",				--tpDownPos,						//被降职了
+"你解散帮派成功！ ",				--tpDeleteGuildSucc,				//解散帮派成功
+"你解散帮派失败，请稍后重试！ ",				--tpDeleteGuildErr,				//解散帮派失败
+"帮派福利每日只能领取一次！ ",				--tpZjOneDayOneTime,				//帮派福利每日只能领取一次！
+"成功领取帮派福利 %s X %d ",				--tpGetWealSucc,					//获取帮派福利成功
+"您的帮派贡献不够，不能领取福利 ",				--tpGuildWealNotGX,						//
+"您的贡献值不足以购买此物品 ",				--tpGuildStoreNotGx,					//购买帮派物品不够贡献值
+"恭喜，贵帮成功升级了！ ",				--tpGuildUpgrade,					//帮派成功升级
+"您必须任职72小时后才能解散帮派！ ",				--tpDelGuildTimeErr,				//你必须任职一定的时间后才能解散帮派
+"有新玩家申请加入帮派，请尽快审核吧。 ",				--tpGuildHasApply,				//有新玩家申请加入帮派，请尽快审核吧。
+"您所在的帮派已被解散！ ",				--tpDeleteGuildMemo,				//解散后发给帮众的公告
+"对方拒绝了你的召唤 ",				--tpRefuseCall,					//拒绝召唤
+"对方目前无法加入帮派 ",				--tpLeftGuildCannotJoin,				//
+" [ %s ] 已离开了我们的帮派 ",				--tpOtherLeftGuild,				//某人离开了仙宗
+"对方拒绝了你的帮派邀请 ",				--tpRefuseInviteGuild,			//拒绝帮派邀请
+"<(c0x%s)[ %s ]> 被<(c0x%s)[ %s ]>降职为普通成员! ",			--tpChangeGuildPos_pt,
+"恭喜 <(c0x%s)[ %s ]> 被任命为精英! ",				--tpChangeGuildPos_jy,				//
+"恭喜 <(c0x%s)[ %s ]> 被任命为护法! ",				--tpChangeGuildPos_hf,
+"恭喜 <(c0x%s)[ %s ]> 被任命为副帮主! ",				--tpChangeGuildPos_fbz,
+"恭喜 <(c0x%s)[ %s ]> 被任命为帮主! ",				--tpChangeGuildPos_bz,
+--这四句次序不能变，而且要连续的
+"【<(c0xFFF0F906)禅让>】[%s] 慧眼识珠，将帮主之位传给<(c0xFF00CBFF) %s >，希望各位仙友多多支持！  ", 	--tpGuildLeaderChange,
+"你身上没有足够兴帮令！ ",				--tpGuildNoItemFr,				//没有增加繁荣度的兴帮令
+"你背包已满，无法领取帮派福利，请整理背包后再试 ",				--tpGuildFullBag,					//背包已满，无法领取福利
+"只可邀请同阵营的玩家加入帮派 ",				--tpOtherZyCanNotEnter,           //别的阵营的人不能加入本帮派
+"只可加入同阵营的帮派 ",												--tpCanJoinSameCampGuild,
+"商品不存在 ",				--tpStoreItemNotExists,	//商品不存在
+"背包已满，无法购买此物品 ",				--tpStoreNotEnoughBagSpace,//背包已满，无法购买商品
+"金钱不足，无法购买此物品 ",				--tpStoreNotEnoughMoney,	//余额不足购买商品
+"没有可提取的元宝 ",				--tpStoreNoYuanBaoCanWithdraw,	// 没有可提取的元宝
+"系统出错，错误码 %d  ",				--tpStoreWithdrawYuanBaoFailed,	// 查询或者提取元宝错误
+"你已经在交易了，请先完成本次交易 ",				--tpYouAreDealingNow,		//你已经在交易了，请先完成本次交易
+"对方不在线，无法进行此操作 ",				--tpDealTargetNotExists,	//交易对方不在线
+"跨服中，不能交易。 ",			--tpOtherServerDeal1,	//连服或跨服副本中不能交易
+"对方正在跨服场景，无法交易 ",	--tpOtherServerDeal2,	//对方在连服或跨服副本中，不能交易
+"不是同一个服务器的玩家，无法交易 ",	--tpOtherServerDeal3,	//不是同一个服务器的玩家
+"对方正在交易，请稍后再试 ",				--tpTargetIsDealing,		//对方正在交易，请稍后再试
+"交易请求已经发出，请等待 %s 回应 ",				--tpAlreadyInvaiteDeal,	//交易请求已经发出，请等待对方回应
+"对方取消锁定，请确认交易物品后重新锁定 ",           --tpCancelLock, //取消锁定
+" %s 拒绝与你进行交易 ",				--tpTargetDoNotDealWithYou,//对方拒绝与你交易
+"交易对方已经离开，交易被取消 ",				--tpDealRequesterHasLeaved,//交易对方已经离开，交易被取消
+"对方取消交易，交易被取消 ",				--tpDealRequesterCancel,//对方取消交易，交易被取消
+"对方背包已经无法放下更多物品，无法继续添加 ",				--tpDealBlankWasFull,
+"交易物品已达上限，无法再添加 ",				--tpDealBlankWasFullSelf,
+"添加交易物品失败，对方的背包无法继续容纳更多的物品 ",				--tpTargetBagMaybeFull,	//交易对方的背包无法继续容纳更多的物品
+"只能在双发都锁定交易后才能完成交易 ",				--tpYouMustLockDealFirst,	//只能在双发都锁定交易后才能完成交易
+"由于你的背包无法完全容纳交易对方放入的物品，交易已被取消 ",				--tpDealCanceledOfMyBagWasFull,//由于你的背包无法完全容纳交易对方放入的物品，交易已被取消
+"由于对方背包无法完全容纳你放入的物品，交易已被取消 ",				--tpDealcanceldOfTargetBagWasFull,//由于对方背包无法完全容纳你放入的物品，交易已被取消
+"交易数据验证失败，交易已被取消 ",				--tpDealDataValidateFailure,//交易数据验证失败，交易已被取消
+"交易数据验证失败，可能是交易期间物品数量发生了改变，交易取消！ ",			--tpDealCountChange,
+"对方已经确认交易，您现在可以按下交易键完成交易 ",				--tpDealTargetConfimed,	//对方已经确认交易，您现在可以按下交易键完成交易
+"对方已经锁定交易，您现在可以按下锁定按钮后点击交易按钮 ",				--tpTargetHasLockedDeal,	//对方已经锁定交易，您现在可以按下锁定按钮后点击交易按钮
+"对方已经锁定交易，您现在可以按下锁交易按钮等待对方完成交易 ",				--tpYouMayClickDealBtnNow,//对方已经锁定交易，您现在可以按下锁交易按钮等待对方完成交易
+"您已经锁定交易，请等待对方按下锁定按钮 ",				--tpWaitTargetLockDeal,	//您已经锁定交易，请等待对方按下锁定按钮
+"绑定物品无法交易 ",				--tpItemIsBinded,         //绑定物品无法交易
+"任务物品无法交易 ",				--tpItemIsQuestItem,		// 任务物品无法交易
+"你没有足够的交易金钱 ",				--tpDealNoMoney,			// 距离太远，交易取消
+"本物品不在交易列表中",										--tpNoDealItem,
+"已锁定 ",				--tpDealHasLocked,			// 已锁定
+"对方金钱已经超过最大数量 ",				--tpTargetMoneyIsFull,        //对方金钱已经超过最大数量
+"自己的金钱超过最大数量 ",				--tpSelfMoneryIsFull,         //自己的金钱超过最大限度
+"掉落包裹距离过远 ", 				--tpLootBagTooFar,   //
+"该物品不属于自己，不能拾取 ",    				--tpLootItemIsnotYou, //
+"物品已经被拾取或者不存在这个物品 ",				--tpItemNotExisting, //背包里的物品已经不存在
+"背包满了，拾取失败 ",				--tpLootFailForBagFull, //背包满了，拾取失败
+" %s 拾取了[ %s ] ",				--tpLootItem, // %s 拾取了[ %s ]
+"背包已满，无法继续获得任务道具 ",				--tpLootTaskItemBagFull,	// 添加任务物品失败，背包已经满
+"恭喜<(c0xFF8000FF)【 %s 】><(c0xFF8000FF) %s >击败<(c0xFF8000FF) %s >，获得物品<(c0xFF8000FF) %s >！ ",				--tpLootBroadcast,    // 恭喜 【 %s 】  %s   击败 %s ，获得物品 %s ！
+"获得 <(c0xFFFFF000)绑定金币 x %d>  ",				--tpGetBindCoin,   //获得金币 %d
+"失去 <(c0xFFFFF000)绑定金币 x %d>  ",				--tpLostBindCoin,   //失去金币 %d
+"获得 <(c0xFFFFF000)金币 x %d>  ",				--tpGetCoin,      //获得金钱 %d
+"失去 <(c0xFFFFF000)金币 x %d>  ",				--tpLostCoin,      //失去金钱 %d
+"获得 <(c0xFFFFF000)绑定元宝 x %d>  ",				--tpGetBindYuanbao,   //"获得礼金 %d  ",
+"失去 <(c0xFFFFF000)绑定元宝 x %d>  ",				--tpLostBindYuanbao,   //"失去礼金 %d  ",
+"获得 <(c0xFFFFF000)元宝 x %d>  ",				--tpGetYuanbao,   //"获得元宝 %d  ",
+"失去 <(c0xFFFFF000)元宝 x %d>  ",				--tpLostYuanbao,   //"失去元宝 %d  ",
+"对方不在线，无法进行此操作 ",				--tpTeamOpOfflineUser,         //玩家 %s 离线，不能进行操作
+"您创建了队伍！ ",				--tpTeamCreated,				 // 您创建了队伍
+"没有加入队伍，不能使用队伍频道发送消息 ",				--tpTeamChatFail,               //没有加入队伍，无法队伍发言
+"队长已经移交给了  %s   ",				--tpSetNewCaptin,               //队长已经移交给了   %s
+"你不能在这个地方打坐，请到安全的地方再开始打坐 ",				--tpSceneErr,			//不能在战斗场景里打坐
+"你的经验不足，不能转换！ ",				--tpExpNotEnough,		//经验不足
+"你还没有装备坐骑！ ",				--tpNoMount,			//没有装备坐骑
+"PK状态下禁止使用坐骑",				--tpPkCannotMount,
+"你已在一个副本中，如果要创建新的副本，请先退出原有的副本 ",				--tpInFuben,		//你已在一个副本中，如果要创建新的副本，请先退出原有的副本
+"距离NPC过远，无法对话！ ",				--tpNpcTooFar,	//
+"你正在切磋中，不允许邀请其他人 ",					--tpMatchIng,		//正在切磋中
+"您在本次切磋中实力相当，打成平局。 ",				--tpMatchTimeout,		//切磋超时，双方打平了
+"这里不允许武艺切磋，请移步其他地方！ ",				--tpSceneCannotMatch,	//场景不能切磋
+"对方拒绝了你的切磋邀请 ",				--tpRefuseMatch,		//对方拒绝了你的切磋邀请
+"对方已经在同别人切磋中！ ",				--tpOtherIsMatching,	//对方已经在切磋中
+"因对方脱逃，您获得本次切磋胜利    ",				--tpWinmatch1,		//因对手脱逃而胜利
+"您已逃脱，切磋结束    ",				--tpMatchLost1,		//因自己脱逃而失败
+"您获得本次切磋的胜利    ",				--tpWinmatch2,		//切磋胜利
+"您虽失败，强化实力后再切磋武艺    ",				--tpMatchLost2,		//切磋失败
+"你要到 %d 级才可以设置自由PK模式！    ",				--tpFreePkLevelErr,	//等级不够，设置自由pk模式
+"你的杀戮值已变成了 %d  ",				--tpPkChange,				//杀戮值改变
+"你的战魂值提高了 %d  ",				--tpZhanHunChange,		//战魂值改变
+"你的切磋邀请已发送，请等待对方回复 ",				--tpSendMatchInvite,		//邀请已发送，等待回复
+"所需费用不足。 ",				--tpNPCTradeMoneyLack,  //金钱不足。
+"背包已满。 ",				--tpNPCTradeBagFull,    //背包已满。
+"元宝不足。 ",				--tpStorehouseExtendYBLack,  //元宝不足。
+"你没有这个物品或者数量不足，请重新选择寄售物品 ",				--tpConsiHaveNotItem,			//没有这个物品或者数量不足
+"此物品已被绑定，不能售卖！ ",				--tpConsiItemBinded,			//物品已被绑定，不能售卖
+"本物品耐久度未达到最大值，不允许售卖！ ",				--tpConsiDuraErr,				//非完整物品，耐久度不等于最大值
+"此物品有时间限制，不允许寄售！ ",				--tpConsiTimeLimit,			//物品有时间限制
+"亲爱的<(c0xFF38FF33) %s >您好，您在市场寄售的物品到期下架了，请注意查收。 ",				--tpConsiHasItemTimeout,		//有物品到期，这个是发送到客户端的离线消息
+"亲爱的<(c0xFF399DF2) %s >，您在市场寄售的物品 <(c0xFF32FF67) %s > 被<(c0xFF399DF2) %s >以 <(c0xFF38FF33) %d ><(c0xFF38FF33) %s > 购得，请注意查收。 ",				--tpConsiSellGetMoney,		//提示用户有物品卖出，可以领取收益
+"领取收益 ",				--tpConsiSellGetMoneyButton,	//提示用户有物品卖出，可以领取收益,这个是在客户端显示时的按钮的文字
+"此物品不能交易！ ",				--tpConsiItemCannotDeal,		//此物品不能交易
+"<(c0xFFFFCE9D)抵制不良游戏 拒绝盗版游戏>\\<(c0xFFFFCE9D)注意自我保护 谨防上当受骗>\\<(c0xFFFFCE9D)适度游戏益脑 沉迷游戏伤身>\\<(c0xFFFFCE9D)合理安排时间 享受健康生活>\\<(c0xFFFFCE9D)欢迎进入$GAMENAME$！> ",				--tpFcmNotifyBeFcm, //您已经被纳入了防沉迷，抵制不良游戏,拒绝盗版游戏,...
+"您已在线游戏时间1小时，请您合理安排您的游戏时间。 ",				--tpFcm1Hour,        //您已在线游戏时间1小时，请您合理安排您的游戏时间。
+"您累计在线时间已满2小时。 ",				--tpFcm2Hour,       //游戏2小时，出现防沉迷提示
+"您的账户防沉迷剩余时间将在5分钟后进入沉迷状态，系统将自动将您离线休息一段时间。 ",				--tpFcm2Hour55Minute, //游戏2小时55分时，出现防沉迷提示
+"您已进入不健康游戏时间，请您暂离游戏进行适当的休息和运动，合理安排您的游戏时间。点击确定退出游戏。 ",				--tpFcm3Hour,      //	一个身份证下的所有账号累计游戏时间满3个小时
+"您的累计下线时间不满足5小时，为了保证您能正常游戏，请您稍后登陆。 ",				--tpFcm5Hour,          //	一个身份证下的所有账号累计游戏时间满5个小时
+"你没有足够的金币以发送坐标",						--tpChatPosNotMoney,				//
+"服务器将在<(c0xFFDA4547) %d >秒后维护！请及时下线，避免不必要的损失！ ",				--tpSystemClosing,                //服务器将在 %d 秒后关闭！请及时下线，避免不必要的损失！
+"确定 ",				--tpConfirm,                     //确定
+"你完成了成就<(c0xFF00FF00)[ %s ]> ",				--tpAchieveGetAchieve,    //您获得了成就 xxx
+"恭喜<(c0xFF00FF00)[ %s ]>完成了成就<(c0xFF00FF00)[ %s ]> ",				--tpAchieveBroadcastGetAchieve,  //XX获得了成就xxx
+"你失去称号[ %s ] ",				--tpAchieveLostTitle, //你失去了称号  %s
+"元宝 ",				--tpMoneyTypeYuanbao, //元宝
+"绑定元宝 ",				--tpMoneyTyeBindYuanbao, //绑定元宝
+"金币 ",				--tpMoneyTypeCoin,    //金币
+"金币 ",				--tpMoneyTypeBindCoin, //绑定金币
+"（ ",				--tpLeftParentheses, //全角的方括号，左边部分（
+" ） ",				--tpRightParentheses, //全角的方括号，右边部分）
+"获得历练 %d  ",				--tpAddRenown, //获取历练 %d
+"失去历练 %d  ",				--tpDelRenown,  //失去历练 %d
+"您当前的历练已经达到了上限，本次添加的 %d 历练失败 ",				--tpAddRenowFail,  //"您当前的历练已经达到了上限，本次添加的 %d 历练失败 ",
+"您的江湖地位已经达到 %s ，不可再手动提升江湖地位 ",				--tpCampArrivedTopCampStatus,		// 您的江湖地位已经达到 %s ，不可再手动提升江湖地位。
+"您还需 %d 阵营贡献值才能获得更高的江湖地位 ",				--tpCampNeedMoreContribute,		// 您还需 %d 阵营贡献值才能获得更高的江湖地位。
+"您还需 %d 历练值才能获得更高的江湖地位 ",				--tpCampNeedMoreFame,				// 您还需 %d 历练值才能获得更高的江湖地位。
+"该玩家不存在，请输入正确的名字 ",				--tpCampNameInvalid,				// 该玩家不存在，请输入正确的名字
+"对方不在线或此玩家不存在，无法任命 ",				--tpCampNotOnline,				// 对方不在线，无法任命。
+"该玩家不属于本阵营，无法被任命 ",				--tpCampNotInSameCamp,			// 该玩家不属于本阵营，无法被任命。
+"等级大于20级，方可被任命 ",				--tpCampPlayerLevelTooLow,		// 等级大于20级，方可被任命。
+"对方阵营贡献值过低，阵营贡献值达到 %d ,方可担任此职位 ",				--tpCampPlayerCampContrTooLow,	// 对方阵营贡献值过低，阵营贡献值达到 %d ,方可担任此职位。
+"您还没有权限对此职位进行操作 ",				--tpCampHaveNoRightToSetTitle,	// 您还没有权限对此职位进行操作。
+"对方拒绝了你的任职邀请 ",				--tpCampRejectTitleInvite,		// 对方拒绝了你的任职邀请
+"由于您累积三天未上线，盟主职位已经被解除 ",				--tpCampKingFiredBecauseOfOffline,	// 由于您累积三天未上线，盟主职位已经被解除。
+"由于您累积两天未上线， %s 职位已经被解除 ",				--tpCampTitleFiredBecauseOfOffline,	// 由于您累积两天未上线， %s 职位已经被解除。
+"已经发出邀请，等待对方回应 ",				--tpCampWaitTargetAck,				// 已经发出邀请，等待对方回应
+"获得阵营贡献值 %d  ",				--tpCampGetCampContributeVal,			// 获得阵营贡献值 %d
+"抱歉，您不属于本阵营，无法为您服务！ ",				--tpCampNpcFail,                   //不能使用别的阵营的NPC
+"对方已经有职位，不能任命 ",				--tpCampTargetHasTitle,			// 对方已经有职位，无法任命
+"您还没有权限修改阵营公告 ",				--tpCampCannotSetBulletin,		// 您还没有权限修改阵营公告
+"承天之命，演武江湖。<(c0xFF00FF00) %s >阵营的<(c0xFF00FF00) %s >被任命为<(c0xFF8000FF) %s >。将享有无上的权力和荣誉 ",				--tpCampSetTitleSuccBoardCast,	// 承天之命，演武江湖。 %s 阵营的 %s 被任命为 %s 。将享有无上的权力和荣誉
+" %s 和 %s 解除了结盟 ",				--tpCampAllyDismissed,			//  %s 和 %s 解除了结盟
+"对方阵营没有盟主 ",				--tpCampHasNoKing,				// 对方阵营没有盟主
+"对方阵营盟主不在线 ",				--tpCampKingOffLine,				// 对方阵营盟主不在线
+"结盟成功，<(c0xFF00FF00) %s >和<(c0xFF00FF00) %s >结成联盟关系 ",				--tpCampAllySucc,					// 结盟成功， %s 和 %s 结成联盟关系
+"<(c0xFFFAE003) %s >和<(c0xFFFAE003) %s >结成联盟，两阵营的仙友将携手叱咤仙界！ ",				--tpCampAllySuccBulletin,			// X1和X2结成联盟，两阵营的侠士将携手仗剑江湖
+" %s 的盟主拒绝您的结盟请求，结盟失败。 ",				--tpCampRefuseAlly,				// X1的盟主拒绝您的结盟请求，结盟失败。
+"您已经向 %s 阵营提出了联盟申请，请等候对方盟主回应 ",				--tpCampHasSendAlly,				// 您已经向XXX阵营提出了联盟申请，请等候对方盟主回应。
+" %d 小时 %d 分钟后才能进行此操作 ",				--tpCampAllyCD,					//  %d 小时 %d 分钟后才能进行此操作
+" %d 分钟后才能进行此操作 ",				--tpCampAllyCD2,					//  %d 分钟后才能进行此操作
+"此宝物槽位还未开启 ",				--tpGemSlotNotOpen,				// 此宝物槽位还未开启
+"此槽位已经有宝物了 ",				--tpGemExistGemInTheSlot,			// 此槽位已经存在宝物
+"装佩宝物的时间间隔太短，5秒后才能装佩该宝物 ",				--tpGemEquipGemInCD,				// 装佩宝物的时间间隔太短，5秒后才能装佩该宝物
+"宝物获得经验%I64d ",				--tpGemAddExp,					// 宝物获得经验 %d
+"宝物等级提升到 %d 级 ",				--tpGemUpLevel,					// 宝物等级提升到 %d
+"宝物档次提升到 %d 档 ",				--tpGemUpGrade,					// 宝物档次提升到 %d
+"获得 %d 祝福值 ",				--tpGemGotWish,					// 获得 %d 祝福值
+"宝物没有灵气 ",				--tpGemLackSpriteStren,			// 宝物没有灵力
+"此区域禁止骑乘 ",				--tpCannotMountInTheArea,			// 此区域禁止骑乘
+"当前正在打坐 ",				--tpCannotMountInPractise,		// 当前正在打坐状态
+"此功能将在 %d 级开放 ",				--tpGemLevelUpLmt,				// 此功能将在 %d 级开放
+"宝物已经达到当前等级上限，不可再注入经验，请提升宝物档次 ",				--tpGemLevelUpToTop,				// 宝物等级达到上限
+"获得修为  %d  点  ",				--tpGetXiuwei,                   //获得修为 %d 点
+"失去修为 %d 点 ",				--tpLostXiuwei,                  //失去修为 %d 点
+"获得修为 %d 点（其中 %d 点为仙尊修为加成） ",				--tpGetVipXiuwei,               //获得修为 %d 点（其中 %d 点为vip修为加成）
+"您取消了双修 ",				--tpSelfCancelDoublePractice, //您取消了双修
+"对方取消了双修 ",				--tpOtherCancleDoublePractice, //对方取消了双修
+"<(c0xFF8000FF)【 %s 】><(c0xFF8000FF) %s >从<(c0xFF8000FF) %s >中获得<(c0xFF8000FF) %s >！ ",				--tpLootCatherMonsterBroadCast,  //【 %s 】  %s   从  %s ，获得物品 %s ！
+"<(c0xFF8000FF) %s >在商城中花费<(c0xFF8000FF) %d >元宝购买了<(c0xFF8000FF) %d >个<(c0xFF8000FF) %s >！ ",				--tpStoreBroadCast , //xx从城花费xx购买了
+
+-- 灵根系统
+"灵气不足，无法点亮 ",						--tpRootFail,
+"银币不足，无法点亮 ",						--tpRootFailCoin,
+"暂时不能购买,请1分钟后再购买 ",										--tpStoreItemLaterbuy,
+"参与限时优惠抢购的商品，每人每天只能购买1件 ",				--tpStoreItemActorLimitCount,
+"物品已抢购完  ",							--tpStoreItemLimitCount,
+"没有此人的排行榜信息 ",					--tpRankNoActor,
+"没有那么多的数量  ",					--tpStoreItemMax,
+"鼓掌欢迎%s ",						--tpGuildJoin,
+"获得灵气 %d  ",						--tpAddRootExp,
+
+"你没有足够的元宝快速完成任务 ",				--tpNoYuanbaoToQuickFinish,
+"该任务无法快速完成 ",				--tpQuestUnableQuickFinish,
+"你获得了 %d 帮派贡献		",			--tpGuildGX,
+"偷吃蟠桃的灵猴又出现了，赶跑它们可获得享用蟠桃的次数上限      ",     --tpGuildPeach,
+"你损失了 %d 帮派贡献		",			--tpdecGuildGx,
+"只有仙尊用户才能增加进入副本次数      ",     --tpNotVIPForAddFunbenCount,
+"你今天的副本增加次数已达上限      ",     --tpMaxAddFubenCount,
+"元宝不足      ",     --tpNoYuanbaoAddFubenCount,
+"物品拆分失败", --tpSplitDepotFail,
+"物品合并失败", --tpMergeDepotFail,
+"护送任务中,不可以使用坐骑	", 		--tpNotUseMount,
+"护送任务中,不可以传送		",		--tpNotTeleprot,
+"你等级不够 %d 级，不能进入此场景 ",					--tpCannotEnterSceneLevelLimit,
+"相同属性的能量只能装备一个 ",			--tpExistSoulType,
+"<(c0x%s)%s%s>在万众瞩目下，激活<(c0xFFFAE003)全身宝石级别 %d >效果，脚下发出绚丽的<(c0xFFED0EE1) %s 光环>！属性大增！ ", --tpStoneNotice,
+"<(c0x%s)%s%s>在万众瞩目下，激活<(c0xFFFAE003)全身宝石级别 %d >效果，脚下发出绚丽的<(c0xFFED0EE1) %s 光环>！属性大增！ <#c0xFF00FE00#宝石镶嵌/@@showSysWin,4,1> ", --tpStoneNoticeChat,
+"该道具在背包中无法直接使用 ",	--tpBagItemUnableUse,
+"对方不在线，无法进行此操作 ", 	--tpActorOffline,
+"您获得了 %d 生命值和 %d 绑定元宝 ",	--tpAchieveAwardTips,
+"战斗中无法使用坐骑 ", --tpNoMountWithBattle,
+"您的元宝不足，不能进行此操作 ", --tpNoYB,
+"当前区域无法切换攻击模式 ", --tpNotChangePKMode,
+"护送任务期间，不能进行此操作 ", --tpNotMountForProtection,
+"和平模式不可攻击其他玩家 ",		--tpImIsPeaceful,
+"不可以攻击和平模式的玩家 ",		--tpOtherIsPeaceful,
+"联盟模式不能手动切换  ",			--tpNoChangeUnionMode,
+"背包已满，无法取出  ",				--tpBagFullLottery,
+"获得灵气 %d 点，额外加成 %d 点 ",				--tpGetMultiplyRootExp,
+"<(c0xFFED0EE1)阵营试练活动将于三分钟后结束，众仙友抓紧试练时间>  ",			--tpCampBattleEndTips1,
+"<(c0xFFED0EE1)阵营试练活动将于一分钟后结束，众仙友抓紧试练时间>  ",			--tpCampBattleEndTips2,
+"你的背包已满，任务<(c0xFFFFCC33) %s >奖励发送到仓库中  ",			--tpQuestAwardToDepot,
+"获得声望 %d  ",				--tpAddShengWang,
+"失去声望 %d  ",				--tpDelShengWang,
+"该宠物未处于出战状态，无法进行此操作！",				--tpPetOpOfflinePet,
+"未到%d级不能在%s发言",		--tpChatLevelLimit,
+"信箱即将达到存储上限200封，请及时清理。信箱满后将无法接收邮件.",                  --tpMailBoxWillFull,
+"信件删除成功",													--tpMailDeleteSucess,
+"信箱已满",														--tpMailBoxAlreadyFull,
+"邮资金币不足", 													--tpSendMailNoEnoughMoney,
+"收信人不能为空",													--tpMailAcceptorNoNull,
+"邮件内容不能为空",												--tpMailContextNoNull,
+"收信人不能是自己",										    --tpMailAcceptorIsMine,
+"邮件系统20级以后才开放",											--tpMailNoOPenLevelLack,
+"不存在这个玩家",											--tpMailObjectNotExist,
+"武器时装经验加成 %d 点 ",			--tpBangBangTangExp,
+"世界等级加成 %d",				--tpWorldLevelExp,
+"获得荣誉值 %d  ",				--tpAddHonor,
+"失去荣誉值 %d  ",				--tpDelHonor,
+"此装备不能卸下 ",				--tpEquipDenyTakeoff,   //
+"只有帮主和副帮主才能整理帮派仓库 ",		--tpSortGuildDepotPos,
+"普通成员每日最多取出物品 %d 次！ ",			--tpGuildDepotCount,
+"只有帮主和副帮主才能取出紫色及以上品质的物品！ ",			--tpGuildDepotColor,
+"帮派仓库只能存入非绑定的物品！ ",			--tpGuildDepotBind,
+"^<img src='character#41' width='22' height='23'/> %s 在帮派仓库内存入了 %d 个 %s ！ ",		--tpGuildDepotStoreMsg,
+"^%s X %d 个 被 %s 从帮派仓库中取出！ ",		--tpGuildDepotGetMsg,
+"你已经领取过该奖励",		--tpHasGetActivityAward,
+"你不能领取该奖励",		--tpCannotGetActivityAward,
+"系统邮件",		--tpMailTypeSystem,
+"玩家个人邮件",		--tpMailTypePrivate,
+"带有附件的邮件",		--tpMailTypeAttachment,
+"你禁止发送邮件",		--tpForbidSendMail,
+"由于您的发言违反了CF用户协议与玩家条例，您已被禁言，还有 %d 小时 %d 分 %d 秒才可以发言!",		--tpForbidChat,
+"阵营",		--tpCampDesc,
+"职业",		--tpJobDesc,
+"天雷",		--tpJob1,
+"蜀山",		--tpJob2,
+"圆月",		--tpJob3,
+"云华",		--tpJob4,
+"逍遥",		--tpCamp1,
+"星辰",		--tpCamp2,
+"逸仙",		--tpCamp3,
+"帮派仓库数据有问题，请重试",	--tpGuildDepotNotUpdate,
+"数据出错，请重试",				--tpActorDataErr,
+"%s 灵气逼人，点亮全身 %s 战纹，属性大增 ",				--tpLingWenNotice,
+"%s 灵气逼人，点亮全身 %s 战纹，属性大增。<#c0xFF00FE00#我要凝纹/@@showSysWin,1,6> ",				--tpLingWenNoticeChat,
+"对方不在线，无法进行此操作 ",				--tpWarTeamUserOffline,
+"无法邀请自己加入战队 ",				--tpWarTeamSelfForbid,
+"你没有加入战队 ",				--tpWarNotInTeam,
+"你不是队长 ",				--tpWarNotTeamLeader,
+"战队人数已经达到上限 ",				--tpWarTeamIsFull,
+"你已经在战队中 ",				--tpInWarTeam,
+"该战队不存在 ",				--tpWarTeamNotExist,
+"不同阵营的玩家不能加入战队 ",				--tpWarTeamCampDiff,
+"队长不在线 ",				--tpWarTeamLeaderOffline,
+"你不是队长 ",				--tpNotWarTeamLeader,
+"该玩家已经下线 ",				--tpWarTeamActorOffline,
+"该玩家已经加入战队 ",				--tpWarTeamJoin,
+"对方拒绝了您的入队邀请 ",				--tpWarTeamReject,
+"你的申请已经发送，请耐心等待 ",				--tpWarTeamSendJoin,
+"对方拒绝了您的入队邀请 ",					--tpWarTeamJoinReject,
+"战队没这个成员 ",					--tpWarTeamHaveNotMember,
+"每次切换队长必须等待1小时 ",		--tpWarTeamChangeLeaderTimeErr,
+"离开战队后必须等待1小时才可以加入或者创建战队 ", 		--tpWarTeamTimeErr,
+"弹劾期间无法进行人事变动等相关操作，请先取消弹劾再操作。 ",	--tpImpeachChangeLeader,
+"弹劾期间帮主无法剔除帮派成员，请先取消弹劾再剔除。 ",	--tpImpeachKickCandidate,
+"弹劾期间副帮主无法剔除帮派成员。 ",	--tpKickByAssistLeader,
+"候选人无法退出帮派，请先取消弹劾再退出。 ", 	--tpCandidateExitInImpeach,
+"副本次数经验加成 %d",				--tpTotalExpRate,
+"帮派盟友已达到上限 ",        	   --tpHasAlliance,
+"帮派等级必须大于2级 ",            --tpAllinaceLimitLevel,
+"解除盟约后，1小时之内不可再次结盟 ", --tpAllianceDisTime,
+"与 %s 帮派的同盟关系已经解除  ", --tpAllianceDisMsg,
+"<(c0xFFFC00FF) %s >帮派与<(c0xFFFC00FF) %s >帮派的同盟关系已经解除  ", --tpAllianceDisBroadGuildMsg,
+"<(c0xFFFC00FF) %s >帮派发送同盟邀请，点击确定打开操作界面。 ", --tpInviteAlliance,
+"<(c0xFFFC00FF) %s >帮派拒绝结盟 ",     --tpRejectAlliance,
+" %d 月 %d 日 %d 时，<(c0xFFFC00FF) %s >帮派与<(c0xFFFC00FF) %s >帮派缔结同盟。 ", --tpMakeAlliance,
+"<(c0xFFFC00FF) %s >帮派与<(c0xFFFC00FF) %s >歃血为盟，从今之后有福同享有难同当。 ", --tpBroadMakeAlliance,
+" 没有联盟时不可以切换。 ", --tpCannotChangeAlliance,
+"仙尊 %d 以上或者等级 %d 级以上的玩家才可以创建帮派 ",		--tpCreateGuildErrorVIPLevel,	//仙尊等级大于等于2或者等级大于等于47时,才能创建帮派
+"需要 %d 小时后才能创建帮派或者接受禅让 ",   --tpGuildLeaderAgainError, //再次成为帮主
+"组队经验加成 %d 点 ",			--tpTeamBuffExp,
+"PK区域不能切换到和平模式 ",			--tpNotChangePKArea,
+"进入强制PK区域 ",			--tpEnterPKArea,
+"%s集天地之气运，激活了传奇勋章<#c0x%s#%s/b%d,%d>！ ",	--tpReachAchieveMedal,
+"帮派 %s 已经达到人数上限了！ ",				--tpMaxMemberCount,				//达到人数上限，不能新增人
+"帮派系统没有开启！",		--tpGuildSystemNotOpen,
+"非常抱歉，您没有权限进行此操作 ",				--tpNoRight,
+"非常抱歉，指定的帮派不存在或者已被解散 ",				--tpNoThisGuild,					//不存在这个仙宗，或者已被解散
+"【踢出】[ %s ]被踢出了帮派 ", --tpKickOut, //踢出仙宗
+"在特殊场景,不能进入此副本 ",	--tpCheckScene,//不能进入到这个副本中
+"尚未开启该系统",				--tpSysNoOpen,	//尚未开启该系统
+"宠物该装备孔尚未开启",			--tpPetHoleNoOpen, //宠物该装备孔尚未开启
+"当前在线时间超过5小时，为不健康游戏时间，您无法获得道具奖励",		--tp5hourFcmItemTips, //
+"和平模式",				--tpFpPeaceful,
+"团队模式",				--tpFpTeam,
+"帮派模式",				--tpFpGuild,
+"阵营模式",				--tpFpZY,
+"杀戮模式",				--tpFpPk,
+"盟友模式",				--tpFpAlly,
+"联盟模式",				--tpFpUnion,
+"区服模式",				--tpFpServer,
+"反击模式",				--tpFpSpecialPeaceful,
+"已自动切换至 %s 模式，可手动更改 ",		--tpPkModleAutoChange,
+"该区域禁止切换至 %s 模式 ",		--tpForbiddenSpecialPkmodel,
+"从帮派仓库取出 %s * %d个 ",		--tpGuildDepotToBag,
+"由于帮派仓库已满，击杀BOSS所得的珍稀物品通过邮件发放给您保存 ",	--tpGuildDepotMail1, //帮主邮件内容
+"由于帮派仓库已满，击杀BOSS所得的珍稀物品已通过邮件发放给帮主保存。 ", --tpGuildDepotMail2, //帮派通知的内容
+"特殊活动中不能切换PK模式 ",		--tpNotChangePKModeSp,
+"转生等级不够，无法使用 ",			--tpItemCannotTakeOnForReincarnation, //等级不够，无法装备
+}
+

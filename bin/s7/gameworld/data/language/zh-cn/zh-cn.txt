@@ -1,0 +1,212 @@
+﻿zh_CN =
+{
+--#include "System.txt" once
+  ,
+--#include "Market.txt" once
+  ,
+--#include "Misc.txt" once
+  ,
+--#include "Item.txt" once
+  ,
+--#include "Quest.txt" once
+  ,
+--#include "Skill.txt" once
+  ,
+--#include "Event.txt" once
+  ,
+--#include "Store.txt" once
+  ,
+--#include "Questionclass.txt" once
+  ,
+--#include "Talk.txt" once
+  ,
+--#include "NormalTalk.txt" once
+  ,
+--#include "SceneName.txt" once
+  ,
+--#include "EntityName.txt" once
+  ,
+--#include "MonsterName.txt" once
+  ,
+--#include "FubenName.txt" once
+  ,
+--#include "NPCStoreTags.txt" once
+  ,
+--#include "ScriptTips.txt" once
+  ,
+--#include "WarmTips.txt" once
+  ,
+--#include "AchieveName.txt" once
+ ,
+--#include "ExpWarmTips.txt" once
+ ,
+--#include "Rank.txt" once
+,
+--#include "Title.txt" once
+,
+--#include "NpcTitle.txt" once
+,
+--#include "TaskTalk.txt" once
+,
+--#include "Target.txt" once
+,
+--#include "Guide.txt" once
+,
+--#include "SCIntroduction.txt" once
+,
+--#include "ActivityName.txt" once
+,
+--#include "BossName.txt" once
+,
+--#include "Paopao.txt" once
+,
+--#include "SystemNotify.txt" once
+,
+--#include "FBTalk.txt" once
+,
+--#include "Guild.txt" once
+,
+--#include "Camp.txt" once
+,
+--#include "Flower.txt" once
+,
+--#include "MonserSay.txt" once
+,
+--#include "Gem.txt" once
+,
+--#include "AnswerTip.txt" once
+,
+--#include "Mount.txt" once
+,
+--#include "Root.txt" once
+,
+--#include "EquipEnhance.txt" once
+,
+--#include "ClientGlobalConfig.txt" once
+,
+--#include "Actions.txt" once
+,
+--#include "Plot.txt" once
+,
+--#include "FubenTongji.txt" once
+,
+--#include "PlotName.txt" once
+,
+--#include "worldbossname.txt" once
+,
+--#include "functitle.txt" once
+,
+--#include "zhaohuanxuaner.txt" once
+,
+--#include "Bath.txt" once
+,
+--#include "liudao.txt" once
+,
+--#include "pet.txt" once
+,
+--#include "wing.txt" once
+,
+--#include "slave.txt" once
+,
+--#include "recenttarget.txt" once
+,
+--#include "icontip.txt" once
+,
+--#include "Dongfu.txt" once
+,
+--#include "shenqi.txt" once
+,
+--#include "xianzun.txt" once
+,
+--#include "crosswar.txt" once
+,
+--#include "kuafuzudui.txt" once
+,
+--#include "chat.txt" once
+,
+--#include "chatmsg.txt" once
+,
+--#include "miji.txt" once
+,
+--#include "tongtianta.txt" once
+,
+--#include "mail.txt" once
+,
+--#include "userbag.txt" once
+,
+--#include "userdepot.txt" once
+,
+--#include "team.txt" once
+,
+--#include "actorsys.txt" once
+,
+--#include "medal.txt" once
+,
+--#include "achievemedal.txt" once
+,
+--#include "friend.txt" once
+,
+--#include "xiandaohui.txt" once
+,
+--#include "wyyj.txt" once
+,
+--#include "buff.txt" once
+,
+--#include "fightvalue.txt" once
+,
+--#include "npctalk.txt" once
+,
+--#include "question.txt" once
+,
+--#include "dress.txt" once
+,
+--#include "awards.txt" once
+,
+--#include "superexptime.txt" once
+,
+--#include "routinequest.txt" once
+,
+--#include "tournament.txt" once
+,
+--#include "fishing.txt" once
+,
+--#include "horserace.txt" once
+,
+--#include "activitytime.txt" once
+,
+--#include "fubentips.txt" once
+,
+--#include "vip.txt" once
+,
+--#include "campbattle.txt" once
+,
+--#include "cross.txt" once
+,
+--#include "liveness.txt" once
+,
+--#include "exchange.txt" once
+,
+--#include "retrieve.txt" once
+,
+--#include "fstan.txt" once
+,
+--#include "betaactivity.txt" once
+,
+--#include "lianfu.txt" once
+,
+--#include "weixin.txt" once
+,
+--#include "platform.txt" once
+,
+--#include "openserver.txt" once
+,
+--#include "xianshi.txt" once
+,
+--#include "qqmgr.txt" once
+,
+--#include "cangbaoge.txt" once
+,
+--#include "anheishendian.txt" once
+,
+--#include "marry.txt" once
+}

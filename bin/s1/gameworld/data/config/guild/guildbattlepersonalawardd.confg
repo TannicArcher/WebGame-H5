@@ -1,0 +1,72 @@
+GuildBattlePersonalAward={
+[1] = {
+	id = 1,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[2] = {
+	id = 2,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[3] = {
+	id = 3,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[4] = {
+	id = 4,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[5] = {
+	id = 5,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[6] = {
+	id = 6,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[7] = {
+	id = 7,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[8] = {
+	id = 8,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[9] = {
+	id = 9,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[10] = {
+	id = 10,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[11] = {
+	id = 11,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[12] = {
+	id = 12,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[13] = {
+	id = 13,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+[14] = {
+	id = 14,
+	integral = 100,
+	award = {{type=0,id=1,count=100000}},
+},
+}

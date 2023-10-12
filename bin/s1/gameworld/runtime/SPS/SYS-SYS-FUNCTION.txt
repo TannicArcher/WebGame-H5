@@ -1,0 +1,1923 @@
+FUNCTION                                 MIN      MAX      COUNT    AVG      SOURCE
+Lua::<NA>                                0        2        362      0        ./data/config/globalconfig.txt:5
++--Lua:global:getVarList                 0        1        362      0        ./data/functions/globaldefine.txt:1
+|  +--C:field:getHandle                  0        1        362      0        
+|  
++--Lua:field:func                        0        2        265      0        ./data/config/language/lang/character.config:416
+|  +--C:field:isImage                    0        1        265      0        
+|  |  
+|  +--Lua:field:postScriptEventLite      0        1        265      0        ./data/config/language/lang/character.config:60
+|  |  +--Lua:global:postScriptEvent      0        1        265      0        ./data/config/language/lang/character.config:31
+|  |  |  +--Lua:global:getVarList        0        1        265      0        ./data/functions/globaldefine.tx
+|  |  |  |  
+|  |  |  +--Lua:global:getEid            0        1        265      0        ./data/language/langcode.txt:5
+|  |  |  |  
+|  |  |  +--C:field:postScriptEvent      0        1        265      0        
+|  |  
+|  +--Lua:upvalue:SendHaveReward         0        2        265      0        ./data/config/language/lang/character.config:101
+|  |  +--C:field:insert                  0        1        48       0        
+|  |  |  
+|  |  +--Lua:field:dropGroup             0        1        137      0        ./data/config/language/lang/character.config:31
+|  |  |  +--Lua:upvalue:dropTable        0        1        154      0        ./data/language/langcode.txt:6
+|  |  |  |  +--C:local:(for generator)   0        1        370      0        
+|  |  |  
+|  |  +--C:field:writeInt                0        1        352      0        
+|  |  |  
+|  |  +--Lua:field:get                   0        1        530      0        ./data/functions/globaldefine.txt:18
+|  |  |  +--Lua:upvalue:getData          0        1        530      0        ./data/language/langcode.txt:8
+|  |  |  |  +--Lua:field:getDynamicVar   0        1        530      0        ./data/config/language/lang/character.config
+|  |  |  
+|  |  +--Lua:global:getStaticData        0        1        265      0        ./data/functions/globaldefine.txt:18
+|  |  |  +--C:field:getStaticVar         0        1        265      0        
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        530      0        
+|  |  
+|  +--Lua:upvalue:getDynamicData         0        1        265      0        ./data/dataconfig.txt:1
+|  |  +--Lua:field:getDynamicVar         0        1        265      0        ./data/config/language/lang/character.config:37
+|  |  |  +--C:field:getEntityType        0        1        265      0        
+|  |  
+|  +--Lua:global:getStaticData           0        1        265      0        ./data/functions/globaldefine.txt:18
+|  |  +--C::<NA>                         0        1        530      0        
+|  
++--C:global:unpack                       0        1        362      0        
+
+Lua::<NA>                                269      269      1        269      ./data/functions/globalfunction.txt:71
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:162
+|  +--Lua:field:reg                      0        1        4        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        4        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:644
+|  +--Lua:field:reg                      0        1        2        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        2        0        ./data/functions/globalfunction.txt:5
+|  |  |  +--C:field:insert               0        1        2        0        
+|  
++--Lua:field:?                           0        1        3        0        ./data/config/language/lang/character.config:90
+|  +--Lua:field:reg                      0        1        6        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        6        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           15       15       1        15       ./data/config/language/lang/character.config:36
+|  +--Lua:global:IsCommonSrv             0        1        426      0        ./data/functions/globaldefine.txt:12
+|  |  +--C:local:(for generator)         0        1        2910     0        
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:233
+|  +--Lua:field:reg                      0        1        2        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        2        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:958
+|  +--Lua:field:registerInstanceExit     0        1        10       0        ./data/config/language/lang/character.config:19
+|  |  +--Lua:upvalue:regFbEvent          0        1        10       0        ./data/functions/globaldefine.txt:17
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:1006
+|  +--Lua:field:reg                      0        1        2        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        2        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:359
+|  +--Lua:field:reg                      0        1        3        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        3        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           2        2        1        2        ./data/config/language/lang/character.config:389
+|  +--Lua:upvalue:subInit                1        1        1        1        ./data/config/language/lang/character.config:364
+|  |  +--Lua:field:?                     0        1        2        0        ./data/config/language/lang/character.config:102
+|  |  |  +--Lua:field:reg                0        1        6        0        ./data/functions/globaldefine.txt:9
+|  |  |  |  +--Lua:upvalue:regEventToTab 0        1        6        0        ./data/functions/globalfunction.tx
+|  |  
+|  +--Lua:field:reg                      0        1        4        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        4        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           0        1        3        0        ./data/config/language/lang/character.config:168
+|  +--Lua:field:reg                      0        1        4        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        4        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:175
+|  +--Lua:field:reg                      0        1        2        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        2        0        ./data/functions/globalfunction.txt:5
+|  |  |  +--C:local:(for generator)      0        1        119      0        
+|  
++--Lua:field:?                           33       33       1        33       ./data/config/language/lang/character.config:699
+|  +--Lua:upvalue:onStart                30       30       1        30       ./data/config/language/lang/character.config:363
+|  |  +--Lua:upvalue:loadConfig          30       30       1        30       ./data/config/language/lang/character.config:288
+|  |  |  +--Lua:upvalue:checkHefuTimeLt  0        1        160      0        ./data/config/language/lang/character.config:226
+|  |  |  |  
+|  |  |  +--Lua:upvalue:checkHefuTimes   0        1        158      0        ./data/config/language/lang/character.config:282
+|  |  |  |  +--Lua:field:getHeFuCount    0        1        33       0        ./data/config/globalconfig.txt
+|  |  |  |  
+|  |  |  +--Lua:upvalue:loadTime         0        1        141      0        ./data/config/language/lang/character.config:100
+|  |  |  |  +--C:field:match             0        1        282      0        
+|  |  |  |  |  
+|  |  |  |  +--C:field:timeEncode        0        1        180      0        
+|  |  |  |  
+|  |  |  +--C:local:(for generator)      0        1        782      0        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:checkOpenTimeLt  0        1        390      0        ./data/config/language/lang/character.config:196
+|  |  |  |  +--C:field:timeEncode        0        1        230      0        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:checkServerIdOpen 0        1        158      0        ./data/config/language/lang/character.config:273
+|  |  |  |  +--Lua:upvalue:findId        0        1        85       0        ./data/config/language/lang/character.config:
+|  |  
+|  +--Lua:upvalue:subInit                3        3        1        3        ./data/config/language/lang/character.config:527
+|  |  +--Lua:field:init                  0        1        14       0        ./data/config/language/lang/character.config:25
+|  |  |  +--Lua:field:?                  1        1        1        1        ./data/config/language/lang/character.config:127
+|  |  |  |  +--Lua:field:reg             0        1        3        0        ./data/functions/globaldefine.txt:9
+|  |  |  |  |  +--Lua:upvalue:regEventToTab 0        1        3        0        ./data/functions/globalfunction.tx
+|  |  |  |  
+|  |  |  +--Lua:field:?                  1        1        1        1        ./data/config/language/lang/character.config:123
+|  |  |  |  +--Lua:field:reg             0        1        2        0        ./data/functions/globaldefine.txt:9
+|  |  |  |  |  +--Lua:upvalue:regEventToTab 0        1        2        0        ./data/functions/globalfunction.tx
+|  |  |  |  
+|  |  |  +--Lua:field:?                  0        1        9        0        ./data/config/language/lang/character.config:158
+|  |  |  |  +--Lua:field:reg             0        1        9        0        ./data/functions/globaldefine.txt:9
+|  |  |  |  |  +--Lua:upvalue:regEventToTab 0        1        9        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:553
+|  +--Lua:field:reg                      1        1        1        1        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       1        1        1        1        ./data/functions/globalfunction.txt:5
+|  |  |  +--C:local:(for generator)      0        1        81       0        
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:171
+|  +--Lua:field:reg                      0        1        3        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        3        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           179      179      1        179      ./data/config/language/lang/character.config:1780
+|  +--Lua:field:reg                      0        1        3        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        3        0        ./data/functions/globalfunction.tx
+|  |  
+|  +--Lua:field:registerInstanceMonsterDamage 0        1        64       0        ./data/config/language/lang/character.config
+|  |  
+|  +--Lua:upvalue:getBossData            0        1        92       0        ./data/dataconfig.txt:2
+|  |  
+|  +--Lua:upvalue:initBossDataFb         1        3        92       1        ./data/config/language/lang/character.config:245
+|  |  +--C:field:getToday                0        1        21       0        
+|  |  |  
+|  |  +--C:field:createFuBen             1        3        92       1        
+|  |  |  +--Lua::<NA>                    1        2        92       1        ./data/language/langcode.txt:4
+|  |  |  |  +--Lua:method:new            0        2        92       1        ./data/config/language/lang/character.config:73
+|  |  |  |  |  +--Lua:field:table_clone  0        2        92       1        ./data/functions/globalfunction.txt:4
+|  |  |  |  |  |  +--C:global:type       0        1        7176     0        
+|  |  |  |  |  |  |  
+|  |  |  |  |  |  +--C:local:(for generator) 0        1        7176     0        
+|  |  |  |  |  |  |  
+|  |  |  |  |  |  +--Lua:field:table_clone 0        1        1472     0        ./data/functions/globalfunction.txt:4
+|  |  |  |  |  |  |  +--C:global:pairs   0        1        1472     0        
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--C:global:type    0        1        1472     0        
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--C:local:(for generator) 0        1        1472     0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:method:init           0        1        92       0        ./data/config/language/lang/character.config:81
+|  |  |  |  |  +--Lua:method:initEvents  0        1        92       0        ./data/config/language/lang/character.config:
+|  |  |  |  |  |  
+|  |  |  |  |  +--C:local:(for generator) 0        1        92       0        
+|  |  |  |  |  |  
+|  |  |  |  |  +--C:global:print         0        1        92       0        
+|  |  |  |  |  |  +--C::<NA>             0        1        92       0        
+|  |  
+|  +--Lua:field:registerInstanceExit     0        1        64       0        ./data/config/language/lang/character.config
+|  |  
+|  +--Lua:field:registerSwitchTargetBeforeFun 0        1        64       0        ./data/config/globalconfig.tx
+|  |  
+|  +--Lua:field:registerInstanceActorDie 0        1        64       0        ./data/config/language/lang/character.config:31
+|  |  +--Lua:upvalue:regFbEvent          0        1        64       0        ./data/functions/globaldefine.txt:17
+|  |  
+|  +--Lua:upvalue:refreshTimer           0        3        92       0        ./data/config/language/lang/character.config:284
+|  |  +--C:field:createMonster           0        3        92       0        
+|  |  |  +--Lua::<NA>                    0        1        92       0        ./data/config/language/lang/character.config:78
+|  |  |  |  +--Lua:field:dispatch        0        1        92       0        ./data/functions/globaldefine.txt:9
+|  |  |  |  |  +--Lua:local:eventCall    0        1        92       0        ./data/config/language/lang/character.config:69
+|  |  |  |  |  |  +--C:field:addSkillEffect 0        1        92       0        
+|  |  |  |  |  |  
+|  |  |  |  |  +--Lua:upvalue:getConfig  0        1        92       0        ./data/language/langcode.tx
+|  |  |  |  
+|  |  |  +--Lua::<NA>                    0        1        92       0        ./data/config/language/lang/character.config:34
+|  |  |  |  +--Lua:upvalue:onChangeTarget 0        1        92       0        ./data/config/language/lang/character.config:8
+|  |  |  |  |  +--C:field:getNowTime     0        1        92       0        
+|  |  |  |  
+|  |  |  +--Lua::<NA>                    0        1        92       0        ./data/config/language/lang/character.config:80
+|  |  |  |  +--Lua:method:onMonsterCreate 0        1        92       0        ./data/config/language/lang/character.config:457
+|  |  |  |  |  +--C:global:print         0        1        92       0     
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:onMonsterCreate 0        1        92       0        ./data/config/language/lang/character.config:41
+|  |  |  |  |  +--C:field:isBoss         0        1        92       0        
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:263
+|  +--Lua:field:reg                      0        1        5        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        5        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:117
+|  +--Lua:field:reg                      1        1        1        1        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       1        1        1        1        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           3        3        1        3        ./data/config/language/lang/character.config:877
+|  +--Lua:field:registerInstanceExit     1        1        1        1        ./data/config/language/lang/character.config
+|  |  
+|  +--C:field:createFuBen                2        2        1        2        
+|  |  +--Lua::<NA>                       2        2        1        2        ./data/language/langcode.txt:4
+|  |  |  +--Lua:method:new               1        1        1        1        ./data/config/language/lang/character.config:73
+|  |  |  |  +--Lua:field:table_clone     1        1        1        1        ./data/functions/globalfunction.tx
+|  |  |  |  
+|  |  |  +--Lua:method:init              1        1        1        1        ./data/config/language/lang/character.config:81
+|  |  |  |  +--C:global:print            1        1        1        1        
+|  |  |  |  |  +--C::<NA>                1        1        1        1        
+|  
++--Lua:field:?                           2        2        1        2        ./data/config/language/lang/character.config:408
+|  +--Lua:field:reg                      0        1        2        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        2        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:595
+|  +--Lua:field:reg                      0        1        2        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        2        0        ./data/functions/globalfunction.txt:5
+|  |  |  +--C:local:(for generator)      0        1        96       0        
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:1011
+|  +--Lua:upvalue:getOpenTime            1        1        1        1        ./data/config/language/lang/character.config:67
+|  |  +--C:field:match                   1        1        1        1        
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:904
+|  +--Lua:field:initData                 1        1        1        1        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           7        7        1        7        ./data/config/language/lang/character.config:924
+|  +--Lua:upvalue:openServerBoss         6        6        1        6        ./data/config/language/lang/character.config:856
+|  |  +--Lua:upvalue:createBossFb        5        5        1        5        ./data/config/language/lang/character.config:818
+|  |  |  +--Lua:upvalue:refreshFlagTimer 1        1        1        1        ./data/config/language/lang/character.config:184
+|  |  |  |  +--C:field:createMonster     1        1        1        1        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:refreshBossTimer 2        2        1        2        ./data/config/language/lang/character.config:153
+|  |  |  |  +--Lua:upvalue:sendBossInfo  1        1        1        1        ./data/config/language/lang/character.config:53
+|  |  |  |  |  +--Lua:field:sendBossData 1        1        1        1        ./data/config/language/lang/character.config:159
+|  |  |  |  |  |  +--C:field:broadcastData 1        1        1        1        
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:broadCastNotice 1        1        1        1        ./data/config/language/lang/character.config:55
+|  |  |  |  |  +--Lua:global:broadcastNotice 1        1        1        1        ./data/config/language/lang/character.config:90
+|  |  |  |  |  |  +--Lua:upvalue:addNoticeList 1        1        1        1        ./data/functions/globaldefine.txt:8
+|  |  |  |  |  |  |  +--Lua:upvalue:getNoticeData 1        1        1        1        ./data/functions/globalfunction.txt:6
+|  |  |  |  |  |  |  |  +--Lua:field:getStaticChatVar 1        1        1        1        ./data/config/language/lang/character.config:134
+|  |  |  |  |  |  |  |  |  +--Lua:upvalue:getStaticVarByName 1        1        1        1        ./data/config/language/lang/character.config:102
+|  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:loadConfData 1        1        1        1        ./data/config/language/lang/character.config:15
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:global:loadData 1        1        1        1        ./data/config/globalconfig.txt:3
+|  |  |  |  |  |  |  |  |  |  |  |  +--C:method:read 1        1        1        1        
+|  |  |  |  
+|  |  |  +--C:field:createFuBen          2        2        1        2        
+|  |  |  |  +--Lua::<NA>                 2        2        1        2        ./data/language/langcode.txt:4
+|  |  |  |  |  +--Lua:method:new         1        1        1        1        ./data/config/language/lang/character.config:73
+|  |  |  |  |  |  +--Lua:field:table_clone 1        1        1        1        ./data/functions/globalfunction.tx
+|  |  |  |  |  |  
+|  |  |  |  |  +--Lua:method:init        1        1        1        1        ./data/config/language/lang/character.config:81
+|  |  |  |  |  |  +--Lua:field:onInitFuben 1        1        1        1        ./data/config/language/lang/character.config:
+|  |  |  
+|  |  +--Lua:field:isOpenCrossBoss       1        1        1        1        ./data/config/language/lang/character.config
+|  |  
+|  +--Lua:field:registerInstanceMonsterDamage 0        1        8        0        ./data/config/language/lang/character.config
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:232
+|  +--Lua:field:reg                      0        1        2        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        2        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:405
+|  +--Lua:field:reg                      0        1        2        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        2        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:43
+|  +--Lua:field:reg                      0        1        5        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        5        0        ./data/functions/globalfunction.txt:5
+|  |  |  +--C:local:(for generator)      0        1        152      0        
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:586
+|  +--Lua:field:registerInstanceMonsterDie 0        1        9        0        ./data/config/language/lang/character.config:27
+|  |  +--Lua:upvalue:regFbEvent          0        1        9        0        ./data/functions/globaldefine.txt:17
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:1260
+|  +--Lua:field:reg                      0        1        2        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        2        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:802
+|  +--Lua:field:reg                      0        1        2        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        2        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           1        1        1        1        ./data/config/language/lang/character.config:169
+|  +--Lua:field:reg                      0        1        5        0        ./data/functions/globaldefine.txt:9
+|  |  +--Lua:upvalue:regEventToTab       0        1        5        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:initScriptTimer             1        1        1        1        ./data/config/language/lang/character.config:17
+|  +--Lua:field:getHeFuDayStartTime      0        1        4        0        ./data/language/langcode.tx
+
+Lua::<NA>                                0        42       30       1        ./data/config/language/lang/character.config:78
++--Lua:field:loadServerRoute             1        1        1        1        ./data/functions/globalfunction.txt:3
+|  +--C:field:dbConnect                  1        1        1        1        
+|  
++--Lua:upvalue:onEvent                   41       41       1        41       ./data/language/langcode.txt:6
+|  +--Lua:field:callFuncInTbl            41       41       1        41       ./data/language/langcode.txt:8
+|  |  +--Lua:local:proc                  1        1        1        1        ./data/config/language/lang/character.config:604
+|  |  |  +--C:field:save                 1        1        1        1        
+|  |  |  
+|  |  +--Lua:local:proc                  2        2        1        2        ./data/functions/globaldefine.txt:10
+|  |  |  +--C:field:save                 1        1        1        1        
+|  |  |  |  
+|  |  |  +--C:field:load                 1        1        1        1        
+|  |  |  
+|  |  +--Lua:local:proc                  1        1        1        1        ./data/config/language/lang/character.config:142
+|  |  |  +--C:field:getOnlineActorList   1        1        1        1        
+|  |  |  
+|  |  +--Lua:local:proc                  1        1        1        1        ./data/config/language/lang/character.config:74
+|  |  |  +--Lua:field:log                0        1        10       0        ./data/dataconfig.txt:1
+|  |  |  |  +--Lua:global:paramFormat    0        1        10       0        ./data/language/langcode.txt:8
+|  |  |  |  |  +--C:local:format         0        1        20       0        
+|  |  |  
+|  |  +--Lua:local:proc                  1        2        2        1        ./data/functions/globaldefine.txt:15
+|  |  |  +--C:field:save                 1        1        2        1        
+|  |  |  |  
+|  |  |  +--C:field:load                 0        1        2        0        
+|  |  |  
+|  |  +--Lua:local:proc                  1        1        1        1        ./data/functions/globaldefine.txt:13
+|  |  |  +--C:field:save                 1        1        1        1        
+|  |  |  
+|  |  +--Lua:local:proc                  1        1        1        1        ./data/dataconfig.txt:2
+|  |  |  +--C:field:save                 1        1        1        1        
+|  |  |  
+|  |  +--Lua:local:proc                  21       21       1        21       ./data/config/language/lang/character.config:73
+|  |  |  +--Lua:global:IsCommonSrv       0        1        426      0        ./data/functions/globaldefine.txt:12
+|  |  |  |  +--C:local:(for generator)   0        1        2910     0        
+|  |  |  |  
+|  |  |  +--C:global:print               0        1        429      0        
+|  |  |  |  +--C::<NA>                   0        1        429      0        
+|  |  |  
+|  |  +--Lua:local:proc                  0        2        2        1        ./data/language/langcode.txt:4
+|  |  |  +--C:field:save                 1        1        1        1        
+|  |  |  |  
+|  |  |  +--C:field:load                 1        1        1        1        
+|  |  |  
+|  |  +--Lua:local:proc                  3        3        1        3        ./data/config/language/lang/character.config:10
+|  |  |  +--C:field:dbQuery              3        3        1        3        
+|  |  |  
+|  |  +--Lua:local:proc                  2        2        1        2        ./data/language/langcode.txt:2
+|  |  |  +--C:field:save                 1        1        1        1        
+|  |  |  |  
+|  |  |  +--C:field:load                 1        1        1        1        
+|  |  |  
+|  |  +--Lua:local:proc                  2        2        1        2        ./data/config/language/lang/character.config:618
+|  |  |  +--C:field:dbQuery              2        2        1        2        
+|  |  |  
+|  |  +--Lua:local:proc                  1        1        1        1        ./data/config/language/lang/character.config:33
+|  |  |  +--C:field:save                 1        1        1        1        
+
+Lua::<NA>                                0        75       1183     1        ./data/config/language/lang/character.config:3
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:338
+|  +--Lua:upvalue:updatePrivilegeAttr    0        1        7        0        ./data/config/language/lang/character.config:109
+|  |  +--Lua:global:isOpenPrivilege      0        1        7        0        ./data/config/language/lang/character.config:15
+|  |  |  +--Lua:upvalue:getData          0        1        7        0        ./data/language/langcode.tx
+|  |  
+|  +--Lua:upvalue:addMonthCardAttr       0        1        7        0        ./data/config/language/lang/character.config:43
+|  |  +--C:field:reCalcAttr              0        1        3        0        
+|  
++--Lua:field:?                           0        2        7        0        ./data/config/language/lang/character.config:565
+|  +--Lua:upvalue:refreshDay             0        1        7        0        ./data/config/language/lang/character.config:247
+|  |  +--C:global:print                  0        1        7        0        
+|  |  |  +--C::<NA>                      0        1        7        0        
+|  |  
+|  +--Lua:global:refreshWeek             0        1        7        0        ./data/config/language/lang/character.config:261
+|  |  +--Lua:upvalue:isOpen              0        1        7        0        ./data/config/globalconfig.tx
+|  |  
+|  +--Lua:upvalue:initData               0        1        7        0        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:436
+|  +--Lua:global:wingAttrInit            0        1        17       0        ./data/config/language/lang/character.config:304
+|  |  +--Lua:global:addWingAttr          0        1        17       0        ./data/config/language/lang/character.config:177
+|  |  |  +--Lua:field:getPrecent         0        1        6        0        ./data/config/language/lang/character.config:8
+|  |  |  |  +--Lua:upvalue:getMinLevel   0        1        6        0        ./data/dataconfig.txt:2
+|  |  |  |  |  +--C:field:insert         0        1        24       0        
+|  
++--Lua:field:?                           0        2        7        1        ./data/config/language/lang/character.config:295
+|  +--Lua:upvalue:updateAttr             0        1        17       0        ./data/config/language/lang/character.config:26
+|  |  +--Lua:global:getPrecent           0        1        17       0        ./data/config/language/lang/character.config:8
+|  |  |  +--Lua:upvalue:getMinLevel      0        1        17       0        ./data/dataconfig.txt:2
+|  |  |  |  +--C:field:insert            0        1        68       0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        68       0        
+|  |  |  
+|  |  +--C:method:SetExtraPower          0        1        17       0        
+|  |  |  
+|  |  +--Lua:upvalue:addSuitAttr         0        1        17       0        ./data/config/language/lang/character.config:16
+|  |  |  +--Lua:upvalue:getMinLevel      0        1        17       0        ./data/dataconfig.tx
+|  
++--Lua:field:?                           0        2        7        0        ./data/config/language/lang/character.config:198
+|  +--Lua:upvalue:updateAttr             0        1        17       0        ./data/config/language/lang/character.config:58
+|  |  +--Lua:upvalue:getAttrConfig       0        1        136      0        ./data/language/langcode.txt:6
+|  |  |  
+|  |  +--C:local:(for generator)         0        1        153      0        
+|  
++--Lua:field:?                           1        5        1132     1        ./data/config/language/lang/character.config:768
+|  +--Lua:global:getRecord               0        1        1132     0        ./data/language/langcode.txt:3
+|  |  +--C:field:getStaticVar            0        1        1132     0        
+|  |  |  
+|  |  +--C::<NA>                         0        1        2271     0        
+|  |  
+|  +--Lua:upvalue:updateTask             1        5        1132     1        ./data/config/language/lang/character.config:21
+|  |  +--Lua:field:updateTask            0        1        1132     0        ./data/config/language/lang/character.config:44
+|  |  |  +--C:field:getGuildId           0        1        1132     0        
+|  |  |  
+|  |  +--Lua:field:updateAchieveTask     0        1        1132     0        ./data/config/language/lang/character.config:121
+|  |  |  +--Lua:field:getTaskListByType  0        1        1132     0        ./data/config/language/lang/character.config:226
+|  |  |  |  
+|  |  |  +--Lua:field:checkParam         0        1        1132     0        ./data/config/language/lang/character.config:199
+|  |  |  |  
+|  |  |  +--C:global:pairs               0        1        1132     0        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:getStaticData    0        1        1132     0        ./data/language/langcode.txt:8
+|  |  |  |  +--C:field:getStaticVar      0        1        1132     0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        2271     0        
+|  |  |  |  
+|  |  |  +--C:local:(for generator)      0        1        2264     0        
+|  |  |  
+|  |  +--Lua:field:updateTask            0        1        1132     0        ./data/config/language/lang/character.config:3
+|  |  |  +--C:local:(for generator)      0        1        7924     0        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:getStaticData    0        1        1132     0        ./data/functions/globaldefine.txt:8
+|  |  |  |  +--C:field:getStaticVar      0        1        1132     0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        2271     0        
+|  |  |  |  
+|  |  |  +--C:global:ipairs              0        1        1132     0        
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        2278     0        
+|  |  |  
+|  |  +--Lua:field:addGodweaponTaskTarget 0        1        1132     0        ./data/config/language/lang/character.config:525
+|  |  |  +--Lua:upvalue:getActorVar      0        1        1132     0        ./data/functions/globaldefine.txt:6
+|  |  |  |  +--C:field:getStaticVar      0        1        1132     0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        2299     0        
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        1132     0        
+|  |  |  
+|  |  +--Lua:field:updateTask            0        3        1132     0        ./data/config/language/lang/character.config:357
+|  |  |  +--Lua:field:updateTask         0        1        1132     0        ./data/config/language/lang/character.config:17
+|  |  |  |  +--Lua:field:activityTimeIsEnd 0        1        13584    0        ./data/config/language/lang/character.config:393
+|  |  |  |  |  
+|  |  |  |  +--C:local:(for generator)   0        1        14716    0        
+|  |  |  |  
+|  |  |  +--Lua:field:updateTask         0        2        1132     0        ./data/config/language/lang.config:2
+|  |  |  |  +--C:global:pairs            0        1        1132     0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:activityTimeIsEnd 0        1        10188    0        ./data/config/language/lang/character.config:393
+|  |  |  |  |  +--C:field:getNowTime     0        1        1132     0        
+|  |  |  |  |  
+|  |  |  |  +--C:field:getActorId        0        1        1132     0        
+|  |  |  |  |  
+|  |  |  |  +--C:local:(for generator)   0        1        125652   0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:getSubVar       0        1        1132     0        ./data/config/language/lang/character.config:55
+|  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        1132     0        ./data/config/language/lang/character.config:22
+|  |  |  |  |  |  +--C::<NA>             0        1        2278     0        
+|  |  |  |  |  |  
+|  |  |  |  |  +--C::<NA>                0        1        4556     0        
+|  |  |  |  |  
+|  |  |  |  +--C:global:ipairs           0        1        1132     0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        1139     0        
+|  |  |  
+|  |  +--Lua:field:updateTask            0        1        1132     0        ./data/config/language/lang/character.config:33
+|  |  |  +--C:local:(for generator)      0        1        66788    0        
+|  |  |  
+|  |  +--Lua:field:updateDailyTask       0        1        1132     0        ./data/config/language/lang/character.config:52
+|  |  |  +--C:local:(for generator)      0        1        12452    0        
+|  |  
+|  +--C::<NA>                            0        1        5667     0        
+|  
++--Lua:field:?                           1        2        7        1        ./data/config/language/lang/character.config:25
+|  +--Lua:global:updateAttribute         1        2        7        1        ./data/config/language/lang/character.config:16
+|  |  +--Lua:field:updateAttributes      0        1        7        0        ./data/config/language/lang/character.config:106
+|  |  |  +--Lua:upvalue:getStaticData    0        1        7        0        ./data/config/globalconfig.tx
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        163      0        
+|  |  |  
+|  |  +--Lua:field:updateAttributes      0        1        7        0        ./data/config/language/lang/character.config:21
+|  |  |  +--Lua:field:add                0        1        6        0        ./data/dataconfig.txt:2
+|  |  |  |  +--Lua:upvalue:getData       0        1        6        0        ./data/language/langcode.txt:8
+|  |  |  |  |  +--Lua:field:getDynamicVar 0        1        6        0        ./data/config/language/lang/character.config
+|  |  |  |  
+|  |  |  +--Lua:global:isOpenMonthCard   0        1        7        0        ./data/config/language/lang/character.config:9
+|  |  |  |  +--Lua:upvalue:getData       0        1        7        0        ./data/language/langcode.txt:8
+|  |  |  |  |  +--C::<NA>                0        1        98       0        
+|  |  |  
+|  |  +--Lua:field:updateAttributes      0        1        7        0        ./data/config/language/lang/character.config:58
+|  |  |  +--C::<NA>                      0        1        392      0        
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:218
+|  +--Lua:global:updateAttr              0        1        7        0        ./data/config/language/lang/character.config:48
+|  |  +--C:field:reCalcAttr              0        1        7        0        
+|  |  |  
+|  |  +--C::<NA>                         0        1        63       0        
+|  
++--C:local:(for generator)               0        1        2860     0        
+|  
++--Lua:field:?                           0        2        7        1        ./data/config/language/lang/character.config:41
+|  +--Lua:upvalue:getStaticData          0        1        7        0        ./data/functions/globaldefine.txt:3
+|  |  +--C::<NA>                         0        1        14       0        
+|  |  
+|  +--C:field:refreshMiJi                0        1        17       0        
+|  |  
+|  +--C::<NA>                            0        1        677      0        
+|  
++--C:global:ipairs                       0        1        1183     0        
+|  
++--Lua:field:?                           0        1        11       0        ./data/config/language/lang/character.config:79
+|  +--Lua:upvalue:initData               0        1        7        0        ./data/functions/globaldefine.tx
+|  
++--Lua:field:?                           0        1        9        0        ./data/config/language/lang/character.config:282
+|  +--Lua:global:updateVipAttr           0        1        7        0        ./data/config/language/lang/character.config:160
+|  |  +--C:field:reCalcAttr              0        1        3        0        
+|  
++--Lua:field:?                           3        6        7        4        ./data/config/language/lang/character.config:412
+|  +--Lua:global:setInvalidTimer         3        6        7        4        ./data/config/language/lang/character.config:348
+|  |  +--Lua:global:calcAttr             1        3        7        2        ./data/config/language/lang/character.config:270
+|  |  |  +--Lua:upvalue:getLevel         0        1        9        0        ./data/config/language/lang/character.config
+|  |  |  |  
+|  |  |  +--C:local:(for generator)      0        1        817      0        
+|  |  |  |  
+|  |  |  +--C:field:reCalcAttr           0        1        7        0        
+|  |  |  |  
+|  |  |  +--Lua:local:tableAddMulit      0        1        9        0        ./data/config/language/lang/character.config:273
+|  |  |  |  +--C:local:(for generator)   0        1        45       0        
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        1608     0     
+|  |  |  
+|  |  +--C:local:(for generator)         0        1        777      0        
+|  |  |  
+|  |  +--C::<NA>                         0        1        1512     0        
+|  
++--Lua:field:?                           1        7        7        4        ./data/config/language/lang/character.config:362
+|  +--Lua:global:updateAttr              0        3        17       1        ./data/config/language/lang/character.config:352
+|  |  +--Lua:upvalue:addFuWenAttr        0        3        17       1        ./data/config/language/lang/character.config:292
+|  |  |  +--Lua:field:updateAttribute    0        2        17       1        ./data/config/language/lang/character.config:16
+|  |  |  |  +--Lua:field:updateAttributes 0        1        17       0        ./data/config/language/lang/character.config:106
+|  |  |  |  |  +--Lua:upvalue:getStaticDataById 0        1        117      0        ./data/functions/globalfunction.tx
+|  |  |  |  |  |  
+|  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        17       0        ./data/config/globalconfig.tx
+|  |  |  |  |  |  
+|  |  |  |  |  +--C::<NA>                0        1        485      0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:updateAttributes 0        1        17       0        ./data/config/language/lang/character.config:58
+|  |  |  |  |  +--Lua:upvalue:getImbaData 0        1        17       0        ./data/functions/globaldefine.txt:2
+|  |  |  |  |  |  +--C::<NA>             0        1        102      0        
+|  |  |  |  |  |  
+|  |  |  |  |  +--C::<NA>                0        1        952      0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:updateAttributes 0        1        17       0        ./data/config/language/lang/character.config:267
+|  |  |  |  |  +--C:global:pairs         0        1        94       0        
+|  |  |  
+|  |  +--C:field:reCalcRoleAttr          0        1        17       0        
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:199
+|  +--Lua:upvalue:checkIsOpen            0        1        17       0        ./data/config/globalconfig.txt:6
+|  |  +--Lua:upvalue:getRoleData         0        1        17       0        ./data/language/langcode.txt:4
+|  |  |  +--Lua:upvalue:getData          0        1        17       0        ./data/functions/globalfunction.txt:3
+|  |  |  |  +--C::<NA>                   0        1        34       0        
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:203
+|  +--Lua:upvalue:updataAttrs            0        1        17       0        ./data/language/langcode.txt:3
+|  |  +--C:field:reCalcRoleAttr          0        1        17       0        
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:421
+|  +--Lua:upvalue:initData               0        1        7        0        ./data/language/langcode.txt:7
+|  |  +--Lua:upvalue:getData             0        1        7        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:1943
+|  +--Lua:upvalue:initData               0        1        7        0        ./data/config/globalconfig.tx
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:557
+|  +--Lua:upvalue:initData               0        1        7        0        ./data/language/langcode.txt:6
+|  |  +--Lua:upvalue:getData             0        1        7        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           0        7        14       1        ./data/config/language/lang/character.config:124
+|  +--Lua:upvalue:updateAttr             1        7        7        3        ./data/config/language/lang/character.config:54
+|  |  +--Lua:upvalue:getKitAttrByCout    0        1        70       0        ./data/config/language/lang/character.config:25
+|  |  |  +--C:local:(for generator)      0        1        315      0        
+|  |  |  
+|  |  +--Lua:upvalue:SendAllCardsInfo    0        1        7        0        ./data/config/language/lang/character.config:37
+|  |  |  +--Lua:upvalue:getStaticDataById 0        1        39       0        ./data/functions/globalfunction.txt:3
+|  |  |  |  +--C:field:getStaticVar      0        1        39       0        
+|  |  |  |  
+|  |  |  +--C:field:flush                0        1        7        0        
+|  |  |  
+|  |  +--C:field:reCalcAttr              0        1        7        0        
+|  |  |  
+|  |  +--Lua:field:updateAttribute       0        2        7        1        ./data/config/language/lang/character.config:16
+|  |  |  +--Lua:field:updateAttributes   0        1        7        0        ./data/config/language/lang/character.config:106
+|  |  |  |  +--Lua:field:add             0        1        3        0        ./data/dataconfig.tx
+|  |  |  |  |  
+|  |  |  |  +--Lua:upvalue:getStaticDataById 0        1        39       0        ./data/functions/globalfunction.txt:3
+|  |  |  |  |  +--C::<NA>                0        1        195      0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:upvalue:getStaticData 0        1        7        0        ./data/config/globalconfig.tx
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        7        0        ./data/config/language/lang/character.config
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        7        0        ./data/config/language/lang/character.config:267
+|  |  |  |  +--C:global:pairs            0        1        34       0        
+|  |  
+|  +--Lua:upvalue:updateAttr             0        1        3        0        ./data/config/language/lang/character.config:35
+|  |  +--C:field:reCalcAttr              0        1        3        0        
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:144
+|  +--C:field:reCalcAttr                 0        1        7        0        
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:581
+|  +--Lua:upvalue:getActorVar            0        1        7        0        ./data/functions/globaldefine.txt:6
+|  |  +--C::<NA>                         0        1        14       0        
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:140
+|  +--Lua:upvalue:loadAttrs              0        1        7        0        ./data/config/language/lang/character.config:41
+|  |  +--C:field:reCalcAttr              0        1        3        0        
+|  |  |  
+|  |  +--Lua:upvalue:isOpen              0        1        7        0        ./data/functions/globalfunction.txt:4
+|  |  |  +--Lua:field:checkActive        0        1        7        0        ./data/functions/globaldefine.txt:14
+|  |  |  |  +--Lua:upvalue:getImbaData   0        1        7        0        ./data/functions/globaldefine.tx
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:133
+|  +--Lua:upvalue:updateAttr             0        1        3        0        ./data/dataconfig.txt:2
+|  |  +--C:field:reCalcAttr              0        1        3        0        
+|  
++--Lua:field:?                           0        1        9        0        ./data/config/language/lang/character.config:320
+|  +--Lua:upvalue:updateAttr             1        1        5        1        ./data/config/language/lang/character.config:115
+|  |  +--C:field:reCalcAttr              0        1        5        0        
+|  
++--Lua:field:?                           0        2        7        0        ./data/config/language/lang/character.config:300
+|  +--Lua:upvalue:updateAttr             0        1        15       0        ./data/config/language/lang/character.config:87
+|  |  +--C:field:reCalcRoleAttr          0        1        15       0        
+|  |  |  
+|  |  +--Lua:upvalue:addAttr             0        1        15       0        ./data/config/language/lang/character.config:27
+|  |  |  +--Lua:upvalue:getStaticData    0        1        15       0        ./data/functions/globaldefine.txt:14
+|  |  |  |  +--C:field:getStaticVar      0        1        15       0        
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:191
+|  +--Lua:upvalue:initAttr               0        1        5        0        ./data/functions/globaldefine.txt
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:86
+|  +--Lua:upvalue:initAttr               0        1        7        0        ./data/functions/globaldefine.tx
+|  
++--Lua:field:?                           0        3        7        1        ./data/config/language/lang/character.config:149
+|  +--Lua:upvalue:initAttr               0        2        17       0        ./data/language/langcode.txt:8
+|  |  +--C:field:getEquipAttr            0        1        15       0        
+|  |  |  
+|  |  +--C:field:getZhulingInfo          0        1        15       0        
+|  |  |  
+|  |  +--C:field:reCalcAttr              0        1        17       0        
+|  |  |  
+|  |  +--C::<NA>                         0        1        335      0        
+|  |  |  +--C::<NA>                      0        1        156      0        
+|  
++--Lua:field:?                           0        2        7        1        ./data/config/language/lang/character.config:335
+|  +--Lua:upvalue:initAttr               0        1        17       0        ./data/config/language/lang/character.config:64
+|  |  +--C:field:GetWeaponSoulAttrs      0        1        17       0        
+|  |  |  
+|  |  +--Lua:upvalue:getRoleData         0        1        17       0        ./data/functions/globaldefine.txt
+|  |  |  
+|  |  +--C:field:GetWeaponSoulExAttrs    0        1        17       0        
+|  |  |  
+|  |  +--C:field:getUseingWeaponSoulId   0        1        17       0        
+|  |  |  
+|  |  +--C:field:reCalcAttr              0        1        17       0        
+|  
++--Lua:field:?                           0        2        7        0        ./data/config/language/lang/character.config:238
+|  +--Lua:upvalue:updateAttr             0        1        17       0        ./data/config/language/lang/character.config:79
+|  |  +--C:field:reCalcAttr              0        1        17       0        
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:135
+|  +--Lua:upvalue:initSuitAttr           0        1        17       0        ./data/language/langcode.txt:9
+|  |  +--C:method:Reset                  0        1        34       0        
+|  |  
+|  +--Lua:upvalue:updateAttr             0        1        17       0        ./data/config/language/lang/character.confi
+|  
++--Lua:field:?                           3        6        7        3        ./data/config/language/lang/character.config:70
+|  +--Lua:global:updateAttr              3        6        7        3        ./data/config/language/lang/character.config:46
+|  |  +--Lua:upvalue:addImbaAttr         2        3        7        2        ./data/config/globalconfig.txt:3
+|  |  |  +--C:local:(for generator)      0        1        510      0        
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        1701     0        
+|  |  |  
+|  |  +--Lua:field:updateAttribute       1        3        7        1        ./data/config/language/lang/character.config:16
+|  |  |  +--Lua:field:updateAttributes   0        1        7        0        ./data/config/language/lang/character.config:106
+|  |  |  |  +--Lua:field:add             0        1        3        0        ./data/dataconfig.tx
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        7        0        ./data/config/language/lang/character.config:21
+|  |  |  |  +--Lua:field:add             0        1        6        0        ./data/dataconfig.tx
+|  |  |  |  |  
+|  |  |  |  +--Lua:global:isOpenMonthCard 0        1        7        0        ./data/config/language/lang/character.config:9
+|  |  |  |  |  +--Lua:upvalue:getData    0        1        7        0        ./data/language/langcode.txt:8
+|  |  |  |  |  |  +--C:field:getStaticVar 0        1        7        0        
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        7        0        ./data/config/language/lang/character.config
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        7        0        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           1        1        4        1        ./data/config/language/lang/character.config:73
+|  +--Lua:upvalue:getExtMask             0        1        48       0        ./data/functions/globaldefine.tx
+|  |  
+|  +--C:local:(for generator)            0        1        50       0        
+|  |  
+|  +--Lua:upvalue:notifyData             1        1        2        1        ./data/functions/globaldefine.txt:14
+|  |  +--C::<NA>                         0        1        196      0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:213
+|  +--Lua:global:updateBasicData         0        1        2        0        ./data/functions/globaldefine.txt:11
+|  |  +--Lua:field:checkActive           0        1        2        0        ./data/functions/globaldefine.txt:14
+|  |  |  +--C::<NA>                      0        1        4        0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:54
+|  +--Lua:upvalue:sendRechargeInfo       0        1        2        0        ./data/config/language/lang/character.config:22
+|  |  +--Lua:upvalue:getStaticData       0        1        2        0        ./data/config/globalconfig.tx
+|  
++--Lua:field:?                           0        1        4        0        ./data/config/language/lang/character.config:179
+|  +--Lua:upvalue:challengeInfoSync      0        1        2        0        ./data/config/language/lang/character.config
+|  
++--Lua:field:?                           0        1        4        0        ./data/config/language/lang/character.config:244
+|  +--Lua:upvalue:sendShutUpTime         0        1        2        0        ./data/config/language/lang/character.config:
+|  |  
+|  +--Lua:upvalue:sendData               0        1        6        0        ./data/config/language/lang/character.config:55
+|  |  +--Lua:upvalue:writeData           0        1        6        0        ./data/config/language/lang/character.config
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:572
+|  +--Lua:global:getDanAwardMail         0        1        2        0        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:71
+|  +--Lua:upvalue:sendPrivilegeData      0        1        2        0        ./data/functions/globaldefine.tx
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:46
+|  +--Lua:upvalue:sendTodayLook          0        1        2        0        ./data/config/language/lang/character.config
+|  
++--Lua:field:?                           0        1        14       0        ./data/config/language/lang/character.config:82
+|  +--Lua:upvalue:updateAttr             0        1        17       0        ./data/functions/globaldefine.txt:4
+|  |  +--C:field:reCalcAttr              0        1        17       0        
+|  |  
+|  +--Lua:upvalue:updateAttr             0        1        17       0        ./data/language/langcode.txt:2
+|  |  +--C:field:reCalcAttr              0        1        17       0        
+|  |  |  
+|  |  +--C:method:Reset                  0        1        34       0        
+|  
++--Lua:field:?                           5        5        2        5        ./data/config/language/lang/character.config:460
+|  +--Lua:upvalue:onLoginOfflineReward   5        5        2        5        ./data/config/language/lang/character.config:366
+|  |  +--Lua:upvalue:sendWorldReward     5        5        2        5        ./data/config/language/lang/character.config:281
+|  |  |  +--C::<NA>                      0        1        1126     0        
+|  
++--Lua:field:?                           1        2        2        1        ./data/config/language/lang/character.config:195
+|  +--Lua:global:updateInfo              0        1        2        0        ./data/config/language/lang/character.config:169
+|  |  +--Lua:upvalue:getStaticData       0        1        2        0        ./data/functions/globaldefine.txt:15
+|  |  |  +--C::<NA>                      0        1        4        0        
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:148
+|  +--Lua:upvalue:updateAttr             0        1        9        0        ./data/config/language/lang/character.config:141
+|  |  +--Lua:upvalue:addAttr             0        1        9        0        ./data/config/language/lang/character.config
+|  |  |  
+|  |  +--C:field:reCalcRoleAttr          0        1        9        0        
+|  
++--Lua:field:?                           1        2        2        1        ./data/config/language/lang/character.config:263
+|  +--Lua:global:mailListSync            1        1        2        1        ./data/config/language/lang/character.config:39
+|  |  +--C:field:getMailList             0        1        2        0        
+|  |  
+|  +--Lua:global:deleteTimeOutMail       0        1        2        0        ./data/config/language/lang/character.config:217
+|  |  +--C:field:getMailList             0        1        2        0        
+|  
++--Lua:field:?                           2        2        2        2        ./data/config/language/lang/character.config
+|  
++--Lua:field:?                           0        1        7        0        ./data/config/language/lang/character.config:157
+|  +--C:field:reCalcAttr                 0        1        7        0        
+|  
++--Lua:field:?                           0        27       2        13       ./data/config/language/lang/character.config:497
+|  +--Lua:field:giveAward                0        2        20       1        ./data/functions/globaldefine.txt:16
+|  |  +--Lua:global:giveAwardBase        0        2        20       1        ./data/functions/globalfunction.txt:5
+|  |  |  +--C:field:giveItem             1        2        18       1        
+|  |  |  |  +--Lua::<NA>                 1        2        18       1        ./data/config/language/lang/character.config:3
+|  |  |  |  |  +--Lua:field:?            1        2        18       1        ./data/config/language/lang/character.config:768
+|  |  |  |  |  |  +--Lua:upvalue:updateTask 1        1        18       1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        18       0        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        126      0        
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        18       0        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        18       0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        18       0        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        1998     0        
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        18       0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  
+|  |  |  |  |  |  +--C::<NA>             0        1        90       0        
+|  |  |  |  
+|  |  |  +--C:global:print               0        1        20       0     
+|  |  
+|  +--Lua:field:dropGroupExpected        1        1        2        1        ./data/config/language/lang/character.config:73
+|  |  +--Lua:upvalue:dropTableExpected   0        1        6        0        ./data/config/language/lang/character.config:9
+|  |  |  +--C:field:floor                0        1        98       0        
+|  |  
+|  +--Lua:field:addExp                   1        1        1        1        ./data/config/globalconfig.txt:5
+|  |  +--Lua:upvalue:onAddExp            1        1        1        1        ./data/language/langcode.txt:5
+|  |  |  +--Lua:global:confirmExp        1        1        1        1        ./data/config/language/lang/character.confi
+|  
++--Lua:field:?                           1        7        4        4        ./data/config/language/lang/character.config:234
+|  +--Lua:upvalue:sendRewardMail         0        2        16       0        ./data/config/language/lang/character.config:177
+|  |  +--C:global:pairs                  0        1        44       0        
+|  |  |  
+|  |  +--Lua:field:getSubVar             0        1        16       0        ./data/config/language/lang/character.config:55
+|  |  |  +--Lua:upvalue:getStaticData    0        1        16       0        ./data/config/language/lang/character.config
+|  |  |  
+|  |  +--Lua:upvalue:getTotalScore       0        2        16       0        ./data/config/language/lang/character.config:36
+|  |  |  +--C::<NA>                      0        1        1420     0        
+|  |  
+|  +--Lua:upvalue:achieveInfoListSync    1        1        2        1        ./data/config/language/lang/character.config:181
+|  |  +--Lua:upvalue:getStaticData       0        1        2        0        ./data/language/langcode.tx
+|  |  |  
+|  |  +--C::<NA>                         0        1        80       0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:262
+|  +--Lua:global:dailyInfoListSync       0        1        2        0        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:294
+|  +--Lua:upvalue:LearnPassiveSkills     0        1        6        0        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           6        7        2        6        ./data/config/language/lang/character.config:428
+|  +--Lua:global:setInvalidTimer         5        5        2        5        ./data/config/language/lang/character.config:348
+|  |  +--Lua:global:calcAttr             3        3        2        3        ./data/config/language/lang/character.config:270
+|  |  |  +--Lua:upvalue:getLevel         0        1        6        0        ./data/config/language/lang/character.config:40
+|  |  |  |  +--Lua:global:getStaticVar   0        1        6        0        ./data/config/globalconfig.txt:5
+|  |  |  |  |  +--C:field:getStaticVar   0        1        6        0        
+|  |  |  |  
+|  |  |  +--C:local:(for generator)      0        1        254      0        
+|  |  |  |  
+|  |  |  +--C:field:reCalcAttr           1        1        2        1        
+|  |  |  
+|  |  +--C::<NA>                         0        1        432      0        
+|  |  
+|  +--Lua:global:handleQuery             1        2        2        1        ./data/config/language/lang/character.config:46
+|  |  +--C::<NA>                         0        1        462      0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:193
+|  +--Lua:upvalue:neiGongDataSync        0        1        6        0        ./data/config/language/lang/character.config:12
+|  |  +--Lua:upvalue:getRoleData         0        1        6        0        ./data/language/langcode.txt:4
+|  |  |  +--C::<NA>                      0        1        12       0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:310
+|  +--Lua:upvalue:checkOpen              0        1        2        0        ./data/config/globalconfig.tx
+|  
++--Lua:field:?                           1        1        2        1        ./data/config/language/lang/character.config:358
+|  +--Lua:global:getStoreVar             0        1        4        0        ./data/functions/globalfunction.tx
+|  |  
+|  +--C:field:StoreDataSync              0        1        2        0        
+|  |  +--Lua::<NA>                       0        1        2        0        ./data/config/language/lang/character.config:413
+|  |  |  +--Lua:global:getStoreVar       0        1        2        0        ./data/functions/globalfunction.tx
+|  
++--Lua:field:?                           0        8        4        3        ./data/config/language/lang/character.config:128
+|  +--Lua:upvalue:updateAttr             5        8        2        6        ./data/config/language/lang/character.config:54
+|  |  +--Lua:upvalue:getStaticDataById   0        1        29       0        ./data/functions/globalfunction.txt:3
+|  |  |  +--C::<NA>                      0        1        145      0        
+|  |  |  
+|  |  +--Lua:upvalue:getKitAttrByCout    0        1        20       0        ./data/config/language/lang/character.config
+|  |  |  
+|  |  +--Lua:upvalue:SendAllCardsInfo    0        2        2        1        ./data/config/language/lang/character.config:37
+|  |  |  +--Lua:upvalue:getStaticDataById 0        1        29       0        ./data/functions/globalfunction.tx
+|  |  |  
+|  |  +--Lua:upvalue:getStaticData       0        1        2        0        ./data/config/globalconfig.tx
+|  |  |  
+|  |  +--C:field:reCalcAttr              0        1        2        0        
+|  |  |  
+|  |  +--Lua:field:updateAttribute       2        2        2        2        ./data/config/language/lang/character.config:16
+|  |  |  +--Lua:field:updateAttributes   1        1        2        1        ./data/config/language/lang/character.config:106
+|  |  |  |  +--Lua:upvalue:getStaticDataById 0        1        29       0        ./data/functions/globalfunction.tx
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        2        0        ./data/config/language/lang/character.config:21
+|  |  |  |  +--Lua:global:isOpenMonthCard 0        1        2        0        ./data/config/language/lang/character.config:9
+|  |  |  |  |  +--Lua:upvalue:getData    0        1        2        0        ./data/language/langcode.tx
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        2        0        ./data/config/language/lang/character.config
+|  
++--Lua:field:?                           0        1        6        0        ./data/config/language/lang/character.config:180
+|  +--Lua:field:getSubVar                0        1        2        0        ./data/config/language/lang/character.config:14
+|  |  +--Lua:upvalue:initData            0        1        2        0        ./data/config/language/lang/character.confi
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:326
+|  +--Lua:upvalue:sendInfo               0        1        2        0        ./data/config/language/lang/character.config
+|  
++--Lua:field:?                           1        1        2        1        ./data/config/language/lang/character.config:324
+|  +--Lua:global:getTitlesInfo           1        1        2        1        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:130
+|  +--Lua:upvalue:sendInfo               0        1        2        0        ./data/config/language/lang/character.confi
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:81
+|  +--Lua:upvalue:sendPuncheInfo         0        1        2        0        ./data/config/language/lang/character.config
+|  
++--Lua:field:?                           0        1        4        0        ./data/config/language/lang/character.config:36
+|  +--Lua:field:isPActivityEnd           0        1        4        0        ./data/config/language/lang/character.config:34
+|  |  +--Lua:global:getEndTime           0        1        4        0        ./data/config/language/lang/character.config:26
+|  |  |  +--Lua:global:getBeginTime      0        1        4        0        ./data/config/language/lang/character.config:20
+|  |  |  |  +--Lua:global:getStaticVar   0        1        4        0        ./data/config/globalconfig.txt
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config
+|  
++--Lua:field:?                           0        1        2        0        ./data/language/langcode.tx
+|  
++--Lua:field:?                           14       15       2        14       ./data/config/language/lang/character.config:437
+|  +--Lua:global:callBackSubActorLogin   0        1        2        0        ./data/config/language/lang/character.config:
+|  |  
+|  +--Lua:field:writeRecord              0        8        28       0        ./data/config/language/lang/character.config:33
+|  |  +--Lua:field:?                     0        1        2        0        ./data/config/language/lang/character.config:236
+|  |  |  +--Lua:upvalue:getLog2          0        1        2        0        ./data/functions/globaldefine.txt
+|  |  |  
+|  |  +--Lua:field:?                     0        1        18       0        ./data/functions/globalfunction.txt:7
+|  |  |  +--C:field:writeShort           0        1        262      0        
+|  |  |  
+|  |  +--Lua:field:?                     7        8        2        7        ./data/functions/globaldefine.txt:2
+|  |  |  +--C:field:writeShort           0        1        1052     0        
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        2106     0        
+|  |  |  
+|  |  +--Lua:field:?                     0        1        2        0        ./data/config/language/lang/character.config:70
+|  |  |  +--C:field:writeShort           0        1        24       0        
+|  |  |  
+|  |  +--Lua:field:?                     2        2        2        2        ./data/language/langcode.txt:8
+|  |  |  +--C::<NA>                      0        1        488      0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:192
+|  +--Lua:upvalue:sendExpFubenInfo       0        1        2        0        ./data/config/globalconfig.tx
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:1948
+|  +--Lua:global:sendWinGuidInof         0        1        2        0        ./data/config/language/lang/character.config:311
+|  |  +--Lua:global:makeWinGuidInfo      0        1        2        0        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:713
+|  +--Lua:upvalue:sendActorExRingData    0        1        2        0        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           4        4        2        4        ./data/config/language/lang/character.config:298
+|  +--Lua:upvalue:handleOpened           3        3        2        3        ./data/config/language/lang/character.config:289
+|  |  +--Lua:upvalue:writeRecord         2        2        2        2        ./data/config/language/lang/character.config:232
+|  |  |  +--Lua:global:getBeginTime      0        1        12       0        ./data/config/language/lang/character.config:20
+|  |  |  |  +--Lua:global:getStaticVar   0        1        12       0        ./data/config/globalconfig.txt
+|  |  |  |  
+|  |  |  +--Lua:global:getEndTime        0        1        12       0        ./data/config/language/lang/character.config:26
+|  |  |  |  +--Lua:global:getBeginTime   0        1        12       0        ./data/config/language/lang/character.config:20
+|  |  |  |  |  +--Lua:global:getStaticVar 0        1        12       0        ./data/config/globalconfig.txt
+|  |  |  |  
+|  |  |  +--Lua:field:?                  0        1        4        0        ./data/functions/globalfunction.tx
+|  |  |  
+|  |  +--Lua:upvalue:openExistActivity   1        1        2        1        ./data/config/language/lang/character.config:270
+|  |  |  +--Lua:global:getEndTime        0        1        12       0        ./data/config/language/lang/character.config:26
+|  |  |  |  +--Lua:global:getBeginTime   0        1        12       0        ./data/config/language/lang/character.config:20
+|  |  |  |  |  +--Lua:global:getStaticVar 0        1        12       0        ./data/config/globalconfig.txt
+|  |  
+|  +--Lua:upvalue:loadConfig             1        1        2        1        ./data/config/language/lang/character.config:192
+|  |  +--Lua:global:isPActivityOpened    0        1        12       0        ./data/config/language/lang/character.config:41
+|  |  |  +--C::<NA>                      0        1        36       0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:354
+|  +--Lua:upvalue:initScriptEvent        0        1        2        0        ./data/config/language/lang/character.config:302
+|  |  +--Lua:upvalue:SendLimitTimeTaskInitInfo 0        1        2        0        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:547
+|  +--Lua:upvalue:sendBaseInfo           0        1        2        0        ./data/config/language/lang/character.config
+|  
++--Lua:field:?                           1        1        2        1        ./data/config/language/lang/character.config:165
+|  +--Lua:upvalue:syncImbaData           1        1        2        1        ./data/config/language/lang/character.config
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:833
+|  +--Lua:upvalue:sendCityEnterCd        0        1        2        0        ./data/config/language/lang/character.config:4
+|  |  +--Lua:upvalue:getStaticData       0        1        2        0        ./data/functions/globaldefine.txt
+|  
++--Lua:field:?                           2        2        2        2        ./data/config/language/lang/character.config:342
+|  +--Lua:upvalue:SendRoleWeaponSoulsData 0        1        6        0        ./data/config/language/lang.config:1
+|  |  +--C:local:(for generator)         0        1        330      0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:670
+|  +--Lua:upvalue:getStaticData          0        1        2        0        ./data/config/language/lang/character.config:38
+|  |  +--C::<NA>                         0        1        4        0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:403
+|  +--Lua:upvalue:sendInfo               0        1        2        0        ./data/config/globalconfig.tx
+|  
++--Lua:field:?                           1        2        2        1        ./data/config/language/lang/character.config:1530
+|  +--Lua:upvalue:SendSetClientData      1        2        2        1        ./data/config/language/lang/character.config:1509
+|  |  +--C:field:writeShort              0        1        186      0        
+|  |  |  
+|  |  +--C::<NA>                         0        1        374      0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/dataconfig.txt:4
+|  +--C::<NA>                            0        1        56       0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/language/lang/character.config:138
+|  +--Lua:global:sendBossData            0        1        2        0        ./data/config/language/lang/character.config:
+|  
++--Lua:field:?                           1        6        38       1        ./data/config/language/lang/character.config:52
+|  +--Lua:global:getRecord               0        1        38       0        ./data/language/langcode.txt:3
+|  |  +--C:field:getStaticVar            0        1        38       0        
+|  |  
+|  +--Lua:upvalue:updateTask             1        5        38       1        ./data/config/language/lang/character.config:21
+|  |  +--Lua:field:updateAchieveTask     0        1        38       0        ./data/config/language/lang/character.config:121
+|  |  |  +--Lua:upvalue:getStaticData    0        1        38       0        ./data/language/langcode.txt:8
+|  |  |  |  +--C:field:getStaticVar      0        1        38       0        
+|  |  |  
+|  |  +--Lua:field:updateTask            0        1        38       0        ./data/config/language/lang/character.config:3
+|  |  |  +--Lua:upvalue:getStaticData    0        1        38       0        ./data/functions/globaldefine.txt:8
+|  |  |  |  +--C:field:getStaticVar      0        1        38       0        
+|  |  |  
+|  |  +--Lua:field:addGodweaponTaskTarget 0        1        38       0        ./data/config/language/lang/character.config:525
+|  |  |  +--Lua:upvalue:getActorVar      0        1        38       0        ./data/functions/globaldefine.tx
+|  |  |  
+|  |  +--Lua:field:updateTask            0        3        38       0        ./data/config/language/lang/character.config:357
+|  |  |  +--Lua:field:updateTask         0        1        38       0        ./data/config/language/lang/character.config
+|  |  |  |  
+|  |  |  +--Lua:field:updateTask         0        2        38       0        ./data/config/language/lang.config:2
+|  |  |  |  +--C:local:(for generator)   0        1        4218     0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:getSubVar       0        1        38       0        ./data/config/language/lang/character.config:55
+|  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        38       0        ./data/config/language/lang/character.config:22
+|  |  |  |  |  |  +--C::<NA>             0        1        76       0        
+|  |  |  
+|  |  +--Lua:field:updateTask            0        1        38       0        ./data/config/language/lang/character.config:33
+|  |  |  +--C:local:(for generator)      0        1        2242     0        
+|  |  |  
+|  |  +--Lua:field:updateDailyTask       0        1        38       0        ./data/config/language/lang/character.config
+|  |  
+|  +--C::<NA>                            0        1        76       0        
+|  
++--Lua:field:?                           0        1        2        0        ./data/config/globalconfig.txt:6
+|  +--C:field:logDKMLog                  0        1        4        0        
+|  
++--Lua:field:?                           1        1        2        1        ./data/config/language/lang/character.config:664
+|  +--Lua:global:onlineChange            1        1        2        1        ./data/config/language/lang/character.config:602
+|  |  +--Lua:global:broadCast            0        1        2        0        ./data/config/language/lang/character.config:
+
+Lua::<NA>                                2        3        7        2        ./data/config/language/lang/character.config:135
++--Lua:field:onLogin                     1        2        7        1        ./data/config/language/lang/character.config:239
+|  +--Lua:field:getTitlesInfo            0        1        7        0        ./data/config/language/lang/character.config:
+|  |  
+|  +--C:field:getStaticRank              0        1        54       0        
+|  |  
+|  +--Lua:field:delitle                  0        1        33       0        ./data/config/language/lang/character.config:69
+|  |  +--Lua:upvalue:getVar              0        1        33       0        ./data/functions/globalfunction.tx
+|  
++--Lua:upvalue:updateAttr                1        2        7        1        ./data/language/langcode.txt:6
+|  +--C:field:reCalcTitleAttr            0        1        7        0        
+|  |  
+|  +--C::<NA>                            0        1        622      0        
+
+Lua::<NA>                                0        3        34       0        ./data/config/language/lang/character.config:106
++--Lua:global:addZhulingAttr             0        1        17       0        ./data/config/language/lang/character.config:30
+|  +--C:field:getZhulingInfo             0        1        17       0        
+|  
++--Lua:global:addEnhanceAttr             0        2        17       0        ./data/config/language/lang/character.config:28
+|  +--C:local:(for generator)            0        1        663      0        
+|  |  
+|  +--C:field:floor                      0        1        68       0        
+
+Lua::<NA>                                4        28       746      5        ./data/functions/globaldefine.txt:9
++--Lua:field:onTimer                     0        1        70037    0        ./data/config/language/lang/character.config:82
+|  +--C:local:(for generator)            0        1        364      0        
+|  |  
+|  +--Lua:upvalue:notify                 0        1        135      0        ./data/config/language/lang/character.config:52
+|  |  +--C:field:writeDouble             0        1        270      0        
+|  |  |  
+|  |  +--C:field:allocPacket             0        1        135      0        
+|  |  
+|  +--Lua:upvalue:sortDamage             0        1        229      0        ./data/dataconfig.tx
+|  |  
+|  +--Lua:method:getActorList            0        1        229      0        ./data/config/language/lang/character.config:6
+|  |  +--C:global:pairs                  0        1        229      0        
+|  |  |  
+|  |  +--C:field:getActorById            0        1        135      0        
+|  
++--C:local:(for generator)               0        1        71533    0        
+|  
++--Lua:method:runOne                     0        2        70037    0        ./data/config/language/lang/character.config:272
+|  +--C:global:pairs                     0        1        210018   0        
+|  |  
+|  +--C:local:(for generator)            0        1        280024   0        
+|  |  
+|  +--Lua:method:release                 0        1        4        0        ./data/config/language/lang/character.config:
+|  |  
+|  +--C:global:ipairs                    0        1        70006    0        
+
+Lua::<NA>                                0        1        1905     0        ./data/config/language/lang/character.config:73
++--Lua:field:onMonsterDamage             0        1        1905     0        ./data/config/language/lang/character.config:168
+|  +--Lua:upvalue:call                   0        1        1905     0        ./data/config/language/lang/character.config:84
+|  |  +--Lua:local:func                  0        1        1905     0        ./data/config/language/lang/character.config:855
+|  |  |  +--C:field:setAITarget          0        1        5        0        
+|  |  |  |  +--Lua::<NA>                 0        1        5        0        ./data/config/language/lang/character.config:34
+|  |  |  |  |  +--Lua:upvalue:onChangeTarget 0        1        5        0        ./data/config/language/lang/character.config:8
+|  |  |  |  |  |  +--Lua:global:onTimer  0        1        5        0        ./data/config/language/lang/character.config:82
+|  |  |  |  |  |  |  +--Lua:upvalue:sortDamage 0        1        5        0        ./data/dataconfig.tx
+|  |  |  |  
+|  |  |  +--Lua:upvalue:getBossData      0        1        1905     0        ./data/dataconfig.txt:2
+|  |  |  |  
+|  |  |  +--C:field:getHp                0        1        1905     0        
+|  |  |  |  
+|  |  |  +--C:field:getHpMax             0        1        1909     0        
+|  |  |  
+|  |  +--C:local:(for generator)         0        1        3810     0        
+
+Lua::<NA>                                0        2        2286     0        ./data/config/language/lang/character.config:18
++--Lua:field:getInsByHdl                 0        1        2279     0        ./data/config/language/lang/character.config:155
+|  
++--C:field:reCalcAttr                    0        1        7        0        
+|  
++--Lua:upvalue:onDamage                  0        1        2279     0        ./data/functions/globaldefine.txt:8
+|  +--C:field:getActor                   0        1        2279     0        
+|  |  
+|  +--Lua:global:onTimer                 0        1        4        0        ./data/config/language/lang/character.config:82
+|  |  +--Lua:upvalue:notify              0        1        4        0        ./data/config/language/lang/character.config
+
+Lua::<NA>                                0        20       524      4        ./data/functions/globaldefine.txt:4
++--Lua:local:func                        1        1        2        1        ./data/config/language/lang/character.config:102
+|  +--Lua:upvalue:ReqAllMorship          1        1        2        1        ./data/config/language/lang/character.config:57
+|  |  +--C::<NA>                         0        1        152      0        
+|  
++--Lua:local:func                        0        17       4        10       ./data/config/language/lang/character.config:657
+|  +--Lua:global:sendActivityData        0        17       4        10       ./data/config/language/lang/character.config:490
+|  |  +--Lua:field:writeRecord           0        17       4        10       ./data/config/language/lang/character.config:33
+|  |  |  +--Lua:field:?                  13       17       3        14       ./data/functions/globaldefine.txt:2
+|  |  |  |  +--C::<NA>                   0        1        6309     0        
+|  
++--Lua:local:func                        0        4        145      0        ./data/config/language/lang/character.config:669
+|  +--Lua:field:addExp                   0        1        97       0        ./data/config/globalconfig.txt:5
+|  |  +--C:field:logCounter              0        1        97       0        
+|  |  |  
+|  |  +--C:global:tostring               0        1        291      0        
+|  |  
+|  +--Lua:field:canGiveAwards            0        1        145      0        ./data/config/language/lang/character.config:9
+|  |  +--Lua:global:awardsNeedCount      0        1        145      0        ./data/dataconfig.tx
+|  |  
+|  +--Lua:field:giveAwards               0        4        145      0        ./data/config/globalconfig.txt:6
+|  |  +--Lua:global:giveAward            0        2        56       0        ./data/functions/globaldefine.txt:16
+|  |  |  +--Lua:global:giveAwardEx       0        2        56       0        ./data/functions/globaldefine.txt:4
+|  |  |  |  +--Lua:global:giveAwardBase  0        2        56       0        ./data/functions/globalfunction.txt:5
+|  |  |  |  |  +--C:field:giveItem       1        2        7        1        
+|  |  |  |  |  |  +--Lua::<NA>           1        2        7        1        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  +--Lua:field:?      1        2        7        1        ./data/config/language/lang/character.config:768
+|  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        2        7        1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        7        0        ./data/config/language/lang/character.confi
+|  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        7        0        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        7        0        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:getSubVar 0        1        7        0        ./data/config/language/lang/character.config:55
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        7        0        ./data/config/language/lang/character.config:22
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        14       0        
+|  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        7        0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  +--Lua:field:updateDailyTask 0        1        7        0        ./data/config/language/lang/character.config:52
+|  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        77       0        
+|  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  +--C::<NA>       0        1        35       0        
+|  |  |  |  |  |  
+|  |  |  |  |  +--C:field:getActorId     0        1        56       0        
+|  |  |  |  |  |  
+|  |  |  |  |  +--C:global:print         0        1        56       0        
+|  |  |  |  |  |  +--C::<NA>             0        1        56       0        
+|  |  |  
+|  |  +--C:global:ipairs                 0        1        145      0        
+|  |  
+|  +--Lua:upvalue:getDynamicData         0        1        145      0        ./data/dataconfig.txt:1
+|  |  +--Lua:field:getDynamicVar         0        1        145      0        ./data/config/language/lang/character.config:37
+|  |  |  +--C:upvalue:getActorId         0        1        145      0        
+|  |  
+|  +--Lua:global:getStaticData           0        1        97       0        ./data/functions/globaldefine.txt:18
+|  |  +--C:field:getStaticVar            0        1        97       0        
+|  
++--Lua:local:func                        0        1        2        0        ./data/config/language/lang/character.config:808
+|  +--Lua:field:sendBasicInfo            0        1        2        0        ./data/functions/globaldefine.txt:18
+|  |  +--Lua:global:getActorVar          0        1        2        0        ./data/functions/globalfunction.txt:8
+|  |  |  +--C::<NA>                      0        1        4        0        
+|  
++--Lua:local:func                        2        2        2        2        ./data/config/language/lang/character.config:384
+|  +--Lua:upvalue:useItem                2        2        2        2        ./data/config/language/lang/character.config:294
+|  |  +--Lua:local:use_func              2        2        2        2        ./data/config/language/lang/character.config:223
+|  |  |  +--Lua:field:consumeItem        0        1        2        0        ./data/functions/globaldefine.txt:15
+|  |  |  |  +--C:field:costItem          0        1        2        0        
+|  |  |  |  
+|  |  |  +--Lua:field:giveAward          1        2        2        1        ./data/functions/globaldefine.txt:16
+|  |  |  |  +--Lua:global:giveAwardBase  1        2        2        1        ./data/functions/globalfunction.txt:5
+|  |  |  |  |  +--C:field:giveItem       1        2        2        1        
+|  |  |  |  |  |  +--Lua::<NA>           1        1        2        1        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  +--Lua:field:?      1        1        2        1        ./data/config/language/lang/character.config:768
+|  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        1        2        1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        2        0        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        2        0        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        222      0        
+|  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        2        0        ./data/config/language/lang/character.config
+|  
++--Lua:local:func                        0        1        9        0        ./data/config/language/lang/character.config:150
+|  +--Lua:global:sendTogetherHitLv       0        1        9        0        ./data/config/language/lang/character.config:82
+|  |  +--C:field:flush                   0        1        9        0        
+|  
++--Lua:global:getMailVar                 0        1        2        0        ./data/functions/globalfunction.tx
+|  
++--Lua:local:func                        0        1        4        0        ./data/config/language/lang/character.config:697
+|  +--C:field:setPosition                0        1        8        0        
+|  
++--Lua:local:func                        0        6        72       2        ./data/config/language/lang/character.config:1208
+|  +--Lua:upvalue:checkTimeRecoverCounts 0        1        72       0        ./data/config/language/lang/character.config:132
+|  |  +--C:local:(for generator)         0        1        576      0        
+|  |  |  
+|  |  +--Lua:upvalue:getStaticData       0        1        72       0        ./data/config/language/lang/character.config:21
+|  |  |  +--C::<NA>                      0        1        864      0        
+|  |  
+|  +--Lua:upvalue:sendBossViewData       0        6        72       2        ./data/config/language/lang/character.config:970
+|  |  +--C:field:writeShort              0        1        2896     0        
+|  |  |  
+|  |  +--C:field:getNowTime              0        1        1304     0        
+|  |  |  
+|  |  +--C:field:writeByte               0        1        2536     0        
+|  |  |  
+|  |  +--C:field:writeInt                0        1        2464     0        
+|  |  |  
+|  |  +--C:local:(for generator)         0        1        1304     0        
+|  |  |  
+|  |  +--Lua:upvalue:getBossData         0        1        1232     0        ./data/dataconfig.txt:2
+|  |  |  
+|  |  +--C:field:writeString             0        1        2464     0        
+|  |  |  
+|  |  +--Lua:upvalue:getStaticData       0        1        72       0        ./data/config/language/lang/character.config
+|  |  |  
+|  |  +--Lua:upvalue:getRecoverTime      0        1        72       0        ./data/config/language/lang/character.config:155
+|  |  |  +--Lua:upvalue:getStaticData    0        1        72       0        ./data/config/language/lang/character.config:21
+|  |  |  |  +--C::<NA>                   0        1        864      0        
+|  |  |  
+|  |  +--C::<NA>                         0        1        648      0        
+|  
++--Lua:local:func                        6        9        5        6        ./data/config/language/lang/character.config:1375
+|  +--Lua:upvalue:checkEnter             6        9        5        6        ./data/config/language/lang/character.config:1285
+|  |  +--Lua:upvalue:enter               5        8        5        5        ./data/config/language/lang/character.config:1200
+|  |  |  +--C:field:enterFuBen           5        8        5        5        
+|  |  |  |  +--Lua::<NA>                 4        7        5        5        ./data/config/language/lang/character.config:24
+|  |  |  |  |  +--Lua:method:onEnter     4        7        5        5        ./data/config/language/lang/character.config:173
+|  |  |  |  |  |  +--Lua:method:runOne   0        1        5        0        ./data/config/language/lang/character.config:
+|  |  |  |  |  |  |  
+|  |  |  |  |  |  +--Lua:method:onStart  0        1        5        0        ./data/config/language/lang/character.config:
+|  |  |  |  |  |  |  
+|  |  |  |  |  |  +--Lua:field:onEnter   3        7        5        4        ./data/config/language/lang/character.config:121
+|  |  |  |  |  |  |  +--Lua:field:onEvent 3        6        5        4        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  +--Lua:field:?   0        1        5        0        ./data/config/language/lang/character.config:224
+|  |  |  |  |  |  |  |  |  +--Lua:global:sendTogetherHitLv 0        1        5        0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  +--Lua:field:?   3        5        5        4        ./data/config/language/lang/character.config:99
+|  |  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        3        10       1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:updateAchieveTask 0        1        10       0        ./data/config/language/lang/character.config:
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        10       0        ./data/config/language/lang/character.confi
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:addGodweaponTaskTarget 0        1        10       0        ./data/config/language/lang/character.config:
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        2        10       0        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        10       0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        2        10       0        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        1110     0        
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        2        10       0        ./data/config/language/lang/character.config:33
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:onEvent 2        2        1        2        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:? 2        2        1        2        ./data/config/language/lang/character.config:753
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        1        1        1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 1        1        1        1        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 1        1        1        1        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        111      0        
+|  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:CheckTaskIdIsActive 0        1        6        0        ./data/config/language/lang/character.config:12
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:getLimitTimeVar 0        1        6        0        ./data/functions/globaldefine.txt:3
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        36       0        
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:updateDailyTask 0        1        10       0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  +--C::<NA>    0        1        50       0        
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--Lua:upvalue:call 0        1        5        0        ./data/config/language/lang/character.config:84
+|  |  |  |  |  |  |  |  +--Lua:local:func 0        1        5        0        ./data/config/language/lang/character.config:662
+|  |  |  |  |  |  |  |  |  +--C:global:print 0        1        5        0        
+|  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        5        0        
+|  |  |  |  |  |  
+|  |  |  |  |  +--Lua:field:onEnter      0        1        5        0        ./data/config/language/lang/character.config:75
+|  |  |  |  |  |  +--Lua:upvalue:notify  0        1        5        0        ./data/config/language/lang/character.config
+|  |  |  |  |  
+|  |  |  |  +--Lua::<NA>                 0        1        30       0        ./data/config/language/lang/character.config:77
+|  |  |  |  |  +--Lua:upvalue:lua_string_split 0        1        30       0        ./data/config/language/lang/character.config:67
+|  |  |  |  |  |  +--C:field:gsub        0        1        30       0        
+|  |  |  |  |  |  |  +--Lua::<NA>        0        1        60       0        ./data/config/language/lang/character.config
+|  |  |  
+|  |  +--C:field:isInFuben               0        1        5        0        
+|  |  |  
+|  |  +--Lua:upvalue:checkTimeRecoverCounts 0        1        5        0        ./data/config/language/lang/character.config:132
+|  |  |  +--Lua:upvalue:getStaticData    0        1        5        0        ./data/config/language/lang/character.config:21
+|  |  |  |  +--C::<NA>                   0        1        60       0        
+|  
++--Lua:local:func                        11       20       5        14       ./data/config/language/lang/character.config:120
+|  +--C:field:exitFuben                  11       20       5        14       
+|  |  +--Lua::<NA>                       4        8        5        5        ./data/config/language/lang/character.config:31
+|  |  |  +--Lua:method:onExit            4        8        5        5        ./data/config/language/lang/character.config:360
+|  |  |  |  +--Lua:field:onExit          4        8        5        5        ./data/config/language/lang/character.config:135
+|  |  |  |  |  +--Lua:upvalue:call       4        8        5        5        ./data/config/language/lang/character.config:84
+|  |  |  |  |  |  +--Lua:local:func      4        8        5        5        ./data/config/language/lang/character.config:1023
+|  |  |  |  |  |  |  +--Lua:upvalue:sendBossViewData 4        7        5        5        ./data/config/language/lang/character.config:970
+|  |  |  |  |  |  |  |  +--Lua:field:getInsByHdl 0        1        145      0        ./data/config/language/lang/character.config:155
+|  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  +--C:field:writeShort 0        1        340      0        
+|  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  +--C:field:getNowTime 0        1        160      0        
+|  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        5        0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--C:field:getAllDropBag 0        1        4        0        
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        5        0        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  +--C::<NA>       0        1        60       0        
+|  |  |  
+|  |  +--Lua::<NA>                       6        11       5        7        ./data/config/language/lang/character.config:24
+|  |  |  +--Lua:method:onEnter           6        11       5        7        ./data/config/language/lang/character.config:173
+|  |  |  |  +--Lua:method:runOne         0        1        5        0        ./data/config/language/lang/character.config:
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:onEnter         5        10       5        6        ./data/config/language/lang/character.config:121
+|  |  |  |  |  +--Lua:field:onEvent      5        9        5        6        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  +--Lua:field:?         0        1        5        0        ./data/config/language/lang/character.config:
+|  |  |  |  |  |  |  
+|  |  |  |  |  |  +--Lua:field:?         5        8        5        5        ./data/config/language/lang/character.config:99
+|  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        3        15       1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  +--Lua:field:updateAchieveTask 0        1        15       0        ./data/config/language/lang/character.config:121
+|  |  |  |  |  |  |  |  |  +--Lua:field:checkParam 0        1        85       0        ./data/config/language/lang/character.config:199
+|  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        15       0        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  |  +--C:global:ipairs 0        1        15       0        
+|  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        2        15       1        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        15       0        ./data/config/language/lang/character.config:17
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:activityTimeIsEnd 0        1        180      0        ./data/config/language/lang/character.config:393
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        195      0        
+|  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        2        15       0        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:activityTimeIsEnd 0        1        135      0        ./data/config/language/lang/character.config:393
+|  |  |  |  |  |  |  |  |  |  |  +--C:field:getNowTime 0        1        15       0        
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        1665     0        
+|  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        15       0        ./data/config/language/lang/character.config:33
+|  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        885      0        
+|  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  +--Lua:field:updateDailyTask 0        1        15       0        ./data/config/language/lang/character.config:52
+|  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        165      0        
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--C::<NA>          0        1        55       0        
+|  |  |  |  |  |  
+|  |  |  |  |  +--Lua:upvalue:call       0        1        5        0        ./data/config/language/lang/character.config:84
+|  |  |  |  |  |  +--Lua:local:func      0        1        5        0        ./data/config/language/lang/character.config:464
+|  |  |  |  |  |  |  +--Lua:upvalue:regScriptTimer 0        1        5        0        ./data/config/language/lang/character.config:442
+|  |  |  |  |  |  |  |  +--Lua:field:postScriptEventLite 0        1        15       0        ./data/config/language/lang/character.config:60
+|  |  |  |  |  |  |  |  |  +--Lua:global:postScriptEvent 0        1        15       0        ./data/config/language/lang/character.config
+|  |  |  
+|  |  +--Lua::<NA>                       0        1        30       0        ./data/config/language/lang/character.config:77
+|  |  |  +--Lua:upvalue:lua_string_split 0        1        30       0        ./data/config/language/lang/character.config:67
+|  |  |  |  +--C:field:gsub              0        1        30       0     
+|  
++--Lua:local:func                        0        17       22       3        ./data/config/language/lang/character.config:568
+|  +--Lua:field:onGetReward              0        17       22       3        ./data/config/language/lang/character.config:40
+|  |  +--Lua:field:?                     0        1        3        0        ./data/config/language/lang/character.config:39
+|  |  |  +--Lua:field:giveAwards         0        1        3        0        ./data/config/globalconfig.txt:6
+|  |  |  |  +--Lua:global:giveAward      0        1        3        0        ./data/functions/globaldefine.txt:16
+|  |  |  |  |  +--Lua:global:giveAwardEx 0        1        3        0        ./data/functions/globaldefine.txt:4
+|  |  |  |  |  |  +--Lua:global:giveAwardBase 0        1        3        0        ./data/functions/globalfunction.txt:5
+|  |  |  |  |  |  |  +--C:field:giveItem 0        1        3        0        
+|  |  |  
+|  |  +--Lua:field:?                     2        17       17       4        ./data/config/language/lang/character.config:60
+|  |  |  +--C:field:writeByte            0        1        17       0        
+|  |  |  |  
+|  |  |  +--C:field:changeCurrency       1        17       17       3        
+|  |  |  |  +--Lua::<NA>                 1        17       17       3        ./data/config/language/lang/character.config:3
+|  |  |  |  |  +--Lua:field:?            1        17       17       3        ./data/config/language/lang/character.config:406
+|  |  |  |  |  |  +--Lua:global:getRecord 0        1        17       0        ./data/language/langcode.txt:3
+|  |  |  |  |  |  |  +--C::<NA>          0        1        34       0        
+|  |  |  |  |  |  |  
+|  |  |  |  |  |  +--Lua:upvalue:updateTask 1        17       17       2        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        17       0        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        17       0        ./data/functions/globaldefine.tx
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--Lua:field:addGodweaponTaskTarget 0        1        17       0        ./data/config/language/lang/character.config:
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--Lua:field:updateTask 0        16       17       2        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        16       17       2        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        1887     0        
+|  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  +--Lua:field:sendActivityData 2        3        9        2        ./data/config/language/lang/character.config:490
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:writeRecord 2        3        9        2        ./data/config/language/lang/character.config:33
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:? 2        3        9        2        ./data/language/langcode.txt:8
+|  |  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        990      0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  +--C:field:setPosition 0        1        18       0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        2070     0        
+|  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  +--C::<NA>    0        1        847      0        
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        17       0        ./data/config/language/lang/character.config:33
+|  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        1003     0        
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--Lua:field:updateDailyTask 0        1        17       0        ./data/config/language/lang/character.config
+|  |  |  |  
+|  |  |  +--Lua:field:giveAwards         0        3        17       1        ./data/config/globalconfig.txt:6
+|  |  |  |  +--Lua:global:giveAward      0        2        44       0        ./data/functions/globaldefine.txt:16
+|  |  |  |  |  +--Lua:global:giveAwardEx 0        2        44       0        ./data/functions/globaldefine.txt:4
+|  |  |  |  |  |  +--Lua:global:giveAwardBase 0        2        44       0        ./data/functions/globalfunction.txt:5
+|  |  |  |  |  |  |  +--C:field:giveItem 0        2        44       0        
+|  |  |  |  |  |  |  |  +--Lua::<NA>     1        2        8        1        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  |  +--Lua:field:? 1        2        8        1        ./data/config/language/lang/character.config:768
+|  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        2        8        1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang/character.config:44
+|  |  |  |  |  |  |  |  |  |  |  |  +--C:field:getGuildId 0        1        8        0        
+|  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        8        0        ./data/functions/globaldefine.tx
+|  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:getSubVar 0        1        8        0        ./data/config/language/lang/character.config:55
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        32       0        
+|  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang/character.config
+|  |  |  |  |  
+|  |  |  |  +--C:local:(for generator)   0        1        61       0        
+|  |  |  
+|  |  +--Lua:field:?                     2        2        2        2        ./data/config/language/lang/character.config:89
+|  |  |  +--Lua:field:giveAwards         2        2        2        2        ./data/config/globalconfig.txt:6
+|  |  |  |  +--Lua:global:giveAward      0        2        6        0        ./data/functions/globaldefine.txt:16
+|  |  |  |  |  +--Lua:global:giveAwardEx 0        2        6        0        ./data/functions/globaldefine.txt:4
+|  |  |  |  |  |  +--Lua:global:giveAwardBase 0        2        6        0        ./data/functions/globalfunction.txt:5
+|  |  |  |  |  |  |  +--C:field:giveItem 0        2        4        1        
+|  |  |  |  |  |  |  |  +--Lua::<NA>     1        2        2        1        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  |  +--Lua:field:? 1        2        2        1        ./data/config/language/lang/character.config:768
+|  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        2        2        1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        2        0        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        2        0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 1        1        2        1        ./data/config/language/lang/character.config:33
+|  |  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        118      0        
+|  
++--Lua:local:func                        8        13       9        9        ./data/config/language/lang/character.config:136
+|  +--C:field:costItem                   0        1        9        0        
+|  |  
+|  +--Lua:upvalue:updateAttr             6        10       9        7        ./data/config/language/lang/character.config:54
+|  |  +--Lua:upvalue:getStaticDataById   0        1        135      0        ./data/functions/globalfunction.txt:3
+|  |  |  +--C::<NA>                      0        1        675      0        
+|  |  |  
+|  |  +--Lua:upvalue:getKitAttrByCout    0        1        90       0        ./data/config/language/lang/character.config:25
+|  |  |  +--C:local:(for generator)      0        1        405      0        
+|  |  |  
+|  |  +--Lua:upvalue:SendAllCardsInfo    1        2        9        1        ./data/config/language/lang/character.config:37
+|  |  |  +--Lua:upvalue:getStaticDataById 0        1        135      0        ./data/functions/globalfunction.txt:3
+|  |  |  |  +--C::<NA>                   0        1        675      0        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:getStaticData    0        1        9        0        ./data/config/globalconfig.tx
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        567      0        
+|  |  |  
+|  |  +--Lua:upvalue:getSuitDataById     0        1        90       0        ./data/language/langcode.txt:9
+|  |  |  +--C::<NA>                      0        1        450      0        
+|  |  |  
+|  |  +--C:field:reCalcAttr              0        1        9        0        
+|  |  |  
+|  |  +--Lua:field:updateAttribute       1        4        9        2        ./data/config/language/lang/character.config:16
+|  |  |  +--Lua:field:updateAttributes   1        2        9        1        ./data/config/language/lang/character.config:106
+|  |  |  |  +--Lua:field:add             0        1        9        0        ./data/dataconfig.txt:2
+|  |  |  |  |  +--Lua:upvalue:getData    0        1        9        0        ./data/language/langcode.tx
+|  |  |  |  |  
+|  |  |  |  +--Lua:upvalue:getStaticDataById 0        1        135      0        ./data/functions/globalfunction.txt:3
+|  |  |  |  |  +--C::<NA>                0        1        675      0        
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        9        0        ./data/config/language/lang/character.config:21
+|  |  |  |  +--Lua:field:add             0        1        18       0        ./data/dataconfig.txt:2
+|  |  |  |  |  +--Lua:upvalue:getData    0        1        18       0        ./data/language/langcode.txt:8
+|  |  |  |  |  |  +--Lua:field:getDynamicVar 0        1        18       0        ./data/config/language/lang/character.config
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        9        0        ./data/config/language/lang/character.config:58
+|  |  |  |  +--Lua:upvalue:getImbaData   0        1        9        0        ./data/functions/globaldefine.tx
+|  |  |  |  |  
+|  |  |  |  +--C:global:ipairs           0        1        36       0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        504      0        
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        9        0        ./data/config/language/lang/character.config:
+|  |  |  
+|  |  +--C::<NA>                         0        1        1302     0        
+|  |  
+|  +--Lua:field:onEvent                  1        2        9        1        ./data/config/language/lang/character.config:3
+|  |  +--Lua:field:?                     1        2        9        1        ./data/config/language/lang/character.config:187
+|  |  |  +--Lua:upvalue:updateTask       1        2        9        1        ./data/config/language/lang/character.config:21
+|  |  |  |  +--Lua:field:updateTask      0        1        9        0        ./data/config/language/lang/character.config:3
+|  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        9        0        ./data/functions/globaldefine.tx
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:addGodweaponTaskTarget 0        1        9        0        ./data/config/language/lang/character.config:
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:updateTask      0        2        9        0        ./data/config/language/lang/character.config:357
+|  |  |  |  |  +--Lua:field:updateTask   0        1        9        0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  
+|  |  |  |  |  +--Lua:field:updateTask   0        1        9        0        ./data/config/language/lang.config:2
+|  |  |  |  |  |  +--Lua:field:getSubVar 0        1        9        0        ./data/config/language/lang/character.config:55
+|  |  |  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        9        0        ./data/config/language/lang/character.config
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:updateTask      0        1        9        0        ./data/config/language/lang/character.config
+|  |  
+|  +--Lua:upvalue:getSuitDataById        0        1        9        0        ./data/language/langcode.tx
+|  |  
+|  +--C::<NA>                            0        1        144      0        
+|  
++--Lua:local:func                        7        14       104      8        ./data/config/language/lang/character.config:196
+|  +--C:field:costItem                   0        1        104      0        
+|  |  
+|  +--Lua:upvalue:updateAttr             7        13       104      8        ./data/config/language/lang/character.config:54
+|  |  +--C:method:Add                    0        1        9360     0        
+|  |  |  
+|  |  +--Lua:upvalue:getStaticDataById   0        2        1976     0        ./data/functions/globalfunction.txt:3
+|  |  |  +--C:field:getStaticVar         0        1        1976     0        
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        9880     0        
+|  |  |  
+|  |  +--C:global:pairs                  0        1        2288     0        
+|  |  |  
+|  |  +--Lua:upvalue:getKitAttrByCout    0        1        1040     0        ./data/config/language/lang/character.config:25
+|  |  |  +--C:local:(for generator)      0        1        4680     0        
+|  |  |  
+|  |  +--Lua:upvalue:SendAllCardsInfo    1        3        104      1        ./data/config/language/lang/character.config:37
+|  |  |  +--C:field:writeShort           0        1        3952     0        
+|  |  |  |  
+|  |  |  +--C:field:allocPacket          0        1        104      0        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:getStaticDataById 0        1        1976     0        ./data/functions/globalfunction.txt:3
+|  |  |  |  +--C:field:getStaticVar      0        1        1976     0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        9880     0        
+|  |  |  |  
+|  |  |  +--C:field:writeInt             0        1        208      0        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:getStaticData    0        1        104      0        ./data/config/globalconfig.txt:3
+|  |  |  |  +--C::<NA>                   0        1        832      0        
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        8216     0        
+|  |  |  
+|  |  +--C:local:(for generator)         0        1        11648    0        
+|  |  |  
+|  |  +--Lua:upvalue:getSuitDataById     0        1        1040     0        ./data/language/langcode.txt:9
+|  |  |  +--C::<NA>                      0        1        5200     0        
+|  |  |  
+|  |  +--C:method:Reset                  0        1        104      0        
+|  |  |  
+|  |  +--C:field:reCalcAttr              0        1        104      0        
+|  |  |  
+|  |  +--Lua:field:updateAttribute       2        5        104      2        ./data/config/language/lang/character.config:16
+|  |  |  +--Lua:field:updateAttributes   1        3        104      1        ./data/config/language/lang/character.config:106
+|  |  |  |  +--Lua:field:add             0        1        104      0        ./data/dataconfig.txt:2
+|  |  |  |  |  +--Lua:upvalue:getData    0        1        104      0        ./data/language/langcode.txt:8
+|  |  |  |  |  |  +--Lua:field:getDynamicVar 0        1        104      0        ./data/config/language/lang/character.config:37
+|  |  |  |  |  |  |  +--C:field:getEntityType 0        1        104      0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:upvalue:getStaticDataById 0        1        1976     0        ./data/functions/globalfunction.txt:3
+|  |  |  |  |  +--C:field:getStaticVar   0        1        1976     0        
+|  |  |  |  |  |  
+|  |  |  |  |  +--C::<NA>                0        1        9880     0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:upvalue:getStaticData 0        1        104      0        ./data/config/globalconfig.txt:3
+|  |  |  |  |  +--C::<NA>                0        1        832      0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        8008     0        
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        104      0        ./data/config/language/lang/character.config:21
+|  |  |  |  +--Lua:field:add             0        1        208      0        ./data/dataconfig.txt:2
+|  |  |  |  |  +--Lua:upvalue:getData    0        1        208      0        ./data/language/langcode.txt:8
+|  |  |  |  |  |  +--Lua:field:getDynamicVar 0        1        208      0        ./data/config/language/lang/character.config
+|  |  |  |  |  
+|  |  |  |  +--Lua:global:isOpenMonthCard 0        1        104      0        ./data/config/language/lang/character.config:9
+|  |  |  |  |  +--Lua:upvalue:getData    0        1        104      0        ./data/language/langcode.txt:8
+|  |  |  |  |  |  +--C::<NA>             0        1        1456     0        
+|  |  |  |  |  |  
+|  |  |  |  |  +--C::<NA>                0        1        104      0        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:clearData        0        1        104      0        ./data/functions/globaldefine.txt:10
+|  |  |  |  +--Lua:field:getDynamicVar   0        1        104      0        ./data/config/language/lang/character.config:37
+|  |  |  |  |  +--C:upvalue:getActorId   0        1        104      0        
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        104      0        ./data/config/language/lang/character.config:58
+|  |  |  |  +--C:global:pairs            0        1        104      0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:upvalue:getImbaData   0        1        104      0        ./data/functions/globaldefine.txt:2
+|  |  |  |  |  +--C::<NA>                0        1        624      0        
+|  |  |  |  |  
+|  |  |  |  +--C:local:(for generator)   0        1        3432     0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        5824     0        
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        104      0        ./data/config/language/lang/character.config:267
+|  |  |  |  +--C:field:getFuWenuIdInfo   0        1        312      0        
+|  |  |  |  |  
+|  |  |  |  +--C:local:(for generator)   0        1        3120     0        
+|  |  |  
+|  |  +--C::<NA>                         0        1        18512    0        
+|  |  
+|  +--C:field:getItemCount               0        1        104      0        
+|  |  
+|  +--C::<NA>                            0        1        208      0        
+|  
++--Lua:local:func                        7        12       130      8        ./data/config/language/lang/character.config:219
+|  +--Lua:upvalue:updateAttr             7        12       130      8        ./data/config/language/lang/character.config:54
+|  |  +--C:field:getActorsystemAttr      0        1        130      0        
+|  |  |  
+|  |  +--C:method:Add                    0        1        11700    0        
+|  |  |  
+|  |  +--Lua:upvalue:getStaticDataById   0        1        2470     0        ./data/functions/globalfunction.txt:3
+|  |  |  +--C:field:getStaticVar         0        1        2470     0        
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        12350    0        
+|  |  |  
+|  |  +--C:global:pairs                  0        1        2860     0        
+|  |  |  
+|  |  +--Lua:upvalue:getKitAttrByCout    0        2        1300     0        ./data/config/language/lang/character.config:25
+|  |  |  +--C:local:(for generator)      0        1        5850     0        
+|  |  |  |  
+|  |  |  +--C:global:ipairs              0        1        1300     0        
+|  |  |  
+|  |  +--Lua:upvalue:SendAllCardsInfo    1        4        130      1        ./data/config/language/lang/character.config:37
+|  |  |  +--C:field:writeDouble          0        1        130      0        
+|  |  |  |  
+|  |  |  +--C:field:writeShort           0        1        4940     0        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:getStaticDataById 0        3        2470     0        ./data/functions/globalfunction.txt:3
+|  |  |  |  +--C:field:getStaticVar      0        1        2470     0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        3        12350    0        
+|  |  |  |  
+|  |  |  +--C:field:flush                0        1        130      0        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:getStaticData    0        1        130      0        ./data/config/globalconfig.txt:3
+|  |  |  |  +--C:field:getStaticVar      0        1        130      0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        1040     0        
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        10270    0        
+|  |  |  
+|  |  +--C:local:(for generator)         0        1        14560    0        
+|  |  |  
+|  |  +--Lua:upvalue:getStaticData       0        1        130      0        ./data/config/globalconfig.txt:3
+|  |  |  +--C::<NA>                      0        1        1040     0        
+|  |  |  
+|  |  +--Lua:upvalue:getSuitDataById     0        1        1300     0        ./data/language/langcode.txt:9
+|  |  |  +--C:field:getStaticVar         0        1        1300     0        
+|  |  |  |  
+|  |  |  +--C::<NA>                      0        1        6500     0        
+|  |  |  
+|  |  +--C:field:reCalcAttr              0        3        130      0        
+|  |  |  
+|  |  +--Lua:field:updateAttribute       2        4        130      2        ./data/config/language/lang/character.config:16
+|  |  |  +--Lua:field:updateAttributes   1        2        130      1        ./data/config/language/lang/character.config:106
+|  |  |  |  +--Lua:field:add             0        1        130      0        ./data/dataconfig.txt:2
+|  |  |  |  |  +--Lua:upvalue:getData    0        1        130      0        ./data/language/langcode.txt:8
+|  |  |  |  |  |  +--Lua:field:getDynamicVar 0        1        130      0        ./data/config/language/lang/character.config
+|  |  |  |  |  
+|  |  |  |  +--Lua:upvalue:getStaticDataById 0        1        2470     0        ./data/functions/globalfunction.txt:3
+|  |  |  |  |  +--C:field:getStaticVar   0        1        2470     0        
+|  |  |  |  |  |  
+|  |  |  |  |  +--C::<NA>                0        1        12350    0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:upvalue:getStaticData 0        1        130      0        ./data/config/globalconfig.txt:3
+|  |  |  |  |  +--C::<NA>                0        1        1040     0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        10010    0        
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        130      0        ./data/config/language/lang/character.config:21
+|  |  |  |  +--Lua:field:add             0        1        260      0        ./data/dataconfig.txt:2
+|  |  |  |  |  +--Lua:upvalue:getData    0        1        260      0        ./data/language/langcode.txt:8
+|  |  |  |  |  |  +--Lua:field:getDynamicVar 0        1        260      0        ./data/config/language/lang/character.config
+|  |  |  |  |  
+|  |  |  |  +--Lua:global:isOpenMonthCard 0        1        130      0        ./data/config/language/lang/character.config:9
+|  |  |  |  |  +--Lua:upvalue:getData    0        1        130      0        ./data/language/langcode.txt:8
+|  |  |  |  |  |  +--C::<NA>             0        1        1820     0        
+|  |  |  |  
+|  |  |  +--Lua:upvalue:clearData        0        1        130      0        ./data/functions/globaldefine.txt:10
+|  |  |  |  +--Lua:field:getDynamicVar   0        1        130      0        ./data/config/language/lang/character.config:37
+|  |  |  |  |  +--C:upvalue:getActorId   0        1        130      0        
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        2        130      0        ./data/config/language/lang/character.config:58
+|  |  |  |  +--Lua:upvalue:getImbaData   0        1        130      0        ./data/functions/globaldefine.txt:2
+|  |  |  |  |  +--C::<NA>                0        1        780      0        
+|  |  |  |  |  
+|  |  |  |  +--C:local:(for generator)   0        1        4290     0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        7280     0        
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttributes   0        1        130      0        ./data/config/language/lang/character.config:267
+|  |  |  |  +--C:field:getFuWenuIdInfo   0        1        390      0        
+|  |  |  |  |  
+|  |  |  |  +--C:field:getRoleCount      0        1        130      0        
+|  |  |  |  |  
+|  |  |  |  +--C:global:pairs            0        1        780      0        
+|  |  |  |  |  
+|  |  |  |  +--C:local:(for generator)   0        1        3900     0        
+|  |  |  
+|  |  +--C::<NA>                         0        1        23140    0        
+|  |  
+|  +--Lua:upvalue:getStaticDataById      0        1        130      0        ./data/functions/globalfunction.tx
+|  |  
+|  +--Lua:upvalue:getStaticData          0        1        130      0        ./data/config/globalconfig.tx
+|  
++--Lua:local:func                        7        7        1        7        ./data/config/language/lang/character.config:201
+|  +--Lua:upvalue:doActImbaItem          7        7        1        7        ./data/config/language/lang/character.config:136
+|  |  +--Lua:field:onEvent               1        1        1        1        ./data/config/language/lang/character.config:3
+|  |  |  +--Lua:field:?                  1        1        1        1        ./data/config/language/lang/character.config:691
+|  |  |  |  +--Lua:upvalue:updateTask    1        1        1        1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  +--Lua:field:updateTask   1        1        1        1        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  +--Lua:field:updateTask 1        1        1        1        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  +--Lua:field:getSubVar 1        1        1        1        ./data/config/language/lang/character.config
+|  |  |  
+|  |  +--Lua:global:updateAttr           6        6        1        6        ./data/config/language/lang/character.config:46
+|  |  |  +--Lua:upvalue:addImbaAttr      3        3        1        3        ./data/config/globalconfig.txt:3
+|  |  |  |  +--C:local:(for generator)   0        1        118      0        
+|  |  |  |  |  
+|  |  |  |  +--C::<NA>                   0        1        243      0        
+|  |  |  |  
+|  |  |  +--Lua:field:updateAttribute    3        3        1        3        ./data/config/language/lang/character.config:16
+|  |  |  |  +--Lua:field:updateAttributes 1        1        1        1        ./data/config/language/lang/character.config:
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:updateAttributes 1        1        1        1        ./data/config/language/lang/character.config:58
+|  |  |  |  |  +--C::<NA>                0        1        56       0        
+|  |  |  |  |  
+|  |  |  |  +--Lua:field:updateAttributes 1        1        1        1        ./data/config/language/lang/character.config:
+
+Lua::<NA>                                52       54       4        53       ./data/config/language/lang/character.config:50
++--Lua:method:onEntityDie                52       54       4        53       ./data/config/language/lang/character.config:395
+|  +--Lua:method:onMonsterDie            52       54       4        53       ./data/config/language/lang/character.config:415
+|  |  +--Lua:field:onMonsterDie          52       54       4        53       ./data/config/language/lang/character.config:152
+|  |  |  +--Lua:upvalue:call             52       54       4        53       ./data/config/language/lang/character.config:84
+|  |  |  |  +--Lua:local:func            52       54       4        53       ./data/config/language/lang/character.config:1591
+|  |  |  |  |  +--Lua:field:onOutsideBossDie 0        1        4        0        ./data/config/language/lang/character.config:134
+|  |  |  |  |  |  +--Lua:upvalue:sendBossProgress 1        1        1        1        ./data/config/language/lang/character.config:56
+|  |  |  |  |  |  |  +--C:field:writeShort 1        1        1        1        
+|  |  |  |  |  |  
+|  |  |  |  |  +--Lua:method:win         50       54       4        53       ./data/config/language/lang/character.config:235
+|  |  |  |  |  |  +--Lua:field:onWin     50       54       4        53       ./data/config/language/lang/character.config:98
+|  |  |  |  |  |  |  +--Lua:field:onEvent 4        5        4        4        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  +--Lua:field:?   4        5        4        4        ./data/config/language/lang/character.config:372
+|  |  |  |  |  |  |  |  |  +--Lua:global:onLoseFinishFuben 1        2        4        1        ./data/config/language/lang/character.config:363
+|  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        2        4        1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        4        0        ./data/config/language/lang/character.confi
+|  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:addGodweaponTaskTarget 0        1        4        0        ./data/config/language/lang/character.config:
+|  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        4        0        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        4        0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        4        0        ./data/config/language/lang.confi
+|  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        2        8        1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang/character.confi
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        888      0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:getSubVar 0        1        8        0        ./data/config/language/lang/character.config:55
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        8        0        ./data/config/language/lang/character.config:22
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        16       0        
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  +--C::<NA>    0        1        40       0        
+|  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  +--Lua:upvalue:call 46       50       4        48       ./data/config/language/lang/character.config:84
+|  |  |  |  |  |  |  |  +--Lua:local:func 46       50       4        48       ./data/config/language/lang/character.config:493
+|  |  |  |  |  |  |  |  |  +--Lua:upvalue:sendJoinReward 22       25       4        24       ./data/config/language/lang/character.config:353
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:onEvent 22       25       4        23       ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:? 22       25       4        23       ./data/config/language/lang/character.config:548
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        24       8        11       ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang/character.confi
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:addGodweaponTaskTarget 0        1        8        0        ./data/config/language/lang/character.config:525
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:getActorVar 0        1        8        0        ./data/functions/globaldefine.txt:6
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C:field:getStaticVar 0        1        8        0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        22       8        10       ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        21       8        10       ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:activityTimeIsEnd 0        1        72       0        ./data/config/language/lang/character.config:
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        888      0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:sendActivityData 2        3        27       2        ./data/config/language/lang/character.config:490
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:writeRecord 2        3        27       2        ./data/config/language/lang/character.config:33
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:? 2        3        27       2        ./data/language/langcode.txt:8
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        2970     0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        7596     0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        433      0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        8        0        ./data/config/language/lang/character.config:33
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        472      0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateDailyTask 0        3        8        1        ./data/config/language/lang/character.config:52
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:addTrainExp 2        3        4        2        ./data/config/globalconfig.txt:1
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:global:getTrainVar 0        1        4        0        ./data/functions/globalfunction.txt:9
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        32       0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:onEvent 1        2        4        1        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:? 1        2        4        1        ./data/config/language/lang/character.config:737
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        2        4        1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        4        0        ./data/config/language/lang/character.confi
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 1        1        4        1        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 1        1        4        1        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:activityTimeIsEnd 0        1        36       0        ./data/config/language/lang/character.config:
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:global:trainInfoSync 0        1        4        0        ./data/config/language/lang/character.config:146
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        24       0        
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:getTreasureBox 0        1        4        0        ./data/config/language/lang/character.config:
+|  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  +--Lua:global:sendBelongReward 24       26       4        24       ./data/config/language/lang/character.config:774
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:dropGroup 1        1        4        1        ./data/config/language/lang/character.config:31
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:dropTable 0        1        39       0        ./data/language/langcode.tx
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:onEvent 0        10       12       3        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:? 1        2        4        1        ./data/config/language/lang/character.config:628
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        2        4        1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        4        0        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        4        0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        4        0        ./data/config/language/lang.confi
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        4        0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:field:? 8        10       4        9        ./data/config/language/lang/character.config:92
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:sendActivityData 8        10       4        9        ./data/config/language/lang/character.config:490
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:writeRecord 7        10       4        8        ./data/config/language/lang/character.config:33
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:? 7        10       4        8        ./data/functions/globaldefine.txt:2
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        4212     0        
+|  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  +--C:global:ipairs 0        1        12       0        
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:SendWorldBossRewardWindow 0        1        4        0        ./data/config/language/lang/character.config:334
+|  |  |  |  |  |  |  |  |  |  |  +--C:field:writeInt 0        1        162      0        
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:canGiveAwards 0        1        4        0        ./data/config/language/lang/character.config:9
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:global:awardsNeedCount 0        1        4        0        ./data/dataconfig.tx
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:field:giveAwards 10       12       4        11       ./data/config/globalconfig.txt:6
+|  |  |  |  |  |  |  |  |  |  |  +--Lua:global:giveAward 0        2        54       0        ./data/functions/globaldefine.txt:16
+|  |  |  |  |  |  |  |  |  |  |  |  +--Lua:global:giveAwardEx 0        2        54       0        ./data/functions/globaldefine.txt:4
+|  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:global:giveAwardBase 0        2        54       0        ./data/functions/globalfunction.txt:5
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C:field:giveItem 0        2        46       0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua::<NA> 1        2        30       1        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:? 1        2        30       1        ./data/config/language/lang/character.config:768
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:global:getRecord 0        1        30       0        ./data/language/langcode.tx
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:updateTask 1        2        30       1        ./data/config/language/lang/character.config:21
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        30       0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateAchieveTask 0        1        30       0        ./data/config/language/lang/character.config:121
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        30       0        ./data/language/langcode.txt:8
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        60       0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        30       0        ./data/config/language/lang/character.config:3
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:getStaticData 0        1        30       0        ./data/functions/globaldefine.txt:8
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        60       0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:addGodweaponTaskTarget 0        1        30       0        ./data/config/language/lang/character.config:525
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:upvalue:getActorVar 0        1        30       0        ./data/functions/globaldefine.txt:6
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C::<NA> 0        1        60       0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        30       0        ./data/config/language/lang/character.config:357
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        30       0        ./data/config/language/lang/character.config:17
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:activityTimeIsEnd 0        1        360      0        ./data/config/language/lang/character.config:393
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        390      0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        30       0        ./data/config/language/lang.config:2
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        3330     0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateTask 0        1        30       0        ./data/config/language/lang/character.config:33
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        1770     0        
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  +--Lua:field:updateDailyTask 0        1        30       0        ./data/config/language/lang/character.config
+|  |  |  |  |  |  |  |  |  |  |  
+|  |  |  |  |  |  |  |  |  |  +--Lua:global:checkRewardNotice 0        1        4        0        ./data/config/language/lang/character.config:732
+|  |  |  |  |  |  |  |  |  |  |  +--C:local:(for generator) 0        1        58       0        
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,30 @@
+{
+	fbid = 1,
+	type = 1,
+	totalTime = 1800,
+	closeTime = 180,
+	remainTime = 600,
+	scenes = {1001},
+	monsterGroup = {id=1,scene=1,{gid=monId=20001}},
+	events = {
+  {
+    conditions={type=1,id=1}, --条件: 击杀第1组怪（10波boss)
+    actions={
+      {type=1}, --胜利
+    }
+  },
+  {
+  conditions={type=0,time=0}, --时间条件0秒
+  actions={
+  {type=3,id=1}, --刷怪 id 1，延迟3秒
+  }
+  },
+  {
+  conditions={type=5,count=1}, --死亡
+  actions={
+  {type=2},
+  }
+  }
+  },
+  templateType = 0,
+},

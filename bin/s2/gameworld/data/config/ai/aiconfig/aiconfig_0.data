@@ -1,0 +1,149 @@
+{
+	id = 0,
+	aggressive = 1,
+	home_range = 15,
+	vision = 10,
+	skills = {
+       {id=40,cd=5000,first_delay=2000}, 
+       {id=40,cd=5000},
+     },
+	born = { 
+        {
+             actions={{type=1, talk=Lang.Actions.a000003, talkType=2 }}
+        }
+},
+	idle = { --待机时状态，可切换到战斗状态，可添加巡逻，喊话，不定时对自己放buff等行为
+    {-- events
+      delay= 20, --进入状态后延迟20秒执行 默认为1
+      count= 1,-- 0为不限次数 默认为1
+      interval = 10,
+      -- 此处只是举例
+      conditions = {
+          {type=1, min = 120, max= 600}, -- 进入战斗的时间，min默认为0， max默认为0但表示无限大
+        {type=2, min = 10, max = 50}, -- 自己血量 min 默认为0 max 默认为100
+        {type=3, min = 10, max = 50}, -- 目标血量 min 默认为0 max 默认为100
+        {type=4, min = 3, max=4}, -- 与目标距离 min 默认0， max默认100
+        {type=5, id=123}, -- 自己是否有buff
+        {type=6, id=123}, -- 目标是否有buff
+        {type=7, id=123, min=1, max=10}, --与指定怪距离
+        {type=8, px=100, py=100, min=1, max=10}, --与指定位置距离
+        {type=9, min=0, max=0}, --视野内怪物数量
+        {type=10, min=0, max=0},  -- 周围玩家数量, 检测是否为敌人太耗性能
+      },
+      actions = {  --duration 为最多执行时间，action执行成功或者到期则执行下一个action, 默认为0
+        -- interval 为执行action成功后下一个action的间隔时间，默认为0
+        { type = 1, talk=Lang.Actions.a000003, talkType=2 }, --对白，talk：说话内容，talkType类型，定义见上面
+        { type = 2, id = 1, time = 20 }  , --播放全屏特效, id：特效id，time：持续时间
+        { type = 3, buffType=1, groupId=1, value=1, times=1,  interval=1, buffName="", targetId = 0 },--添加buff,不配targetId、或者targetId=0表示给自己加buff，targetId=-1表示给所有怪物加buff，targetId=目标ID表示给目标添加buff
+        { type = 4, buffType=1, groupId=1, targetId = 0},  --删除buff,不配targetId、或者targetId=0表示删除自己的buff，targetId=-1表示删除所有怪物的buff，targetId=目标ID表示删除目标添的buff
+        { type = 5, posX=100, posY=100, relative=true }, --怪物移动，posX,posY表示位置，relative表示是否相对位移
+        { type = 6, mosterId=10, posX = -2, posY = 0, liveTime = 100000, relative = true, asPartner = true },  --召唤怪物(有怪物拥有者)
+        { type = 7, func = "callEvent" },  --调用脚本，func：函数名
+        { type = 8, talk=Lang.Actions.a000004, talkType=2 }, --伙伴对白，必须在召唤怪物时把asPartner设为true
+        { type = 9, id = 3, value = 10 } , --设置实体整数类型的属性, id为属性ID， value为属性值
+        { type = 10, msg=Lang.Actions.a000003, msgType=0, tipType=2 }, --屏幕公告 msg表示公告内容
+        { type = 11, id = 12, posX =0, posY=0, needLearn=true, level=0 },  --使用技能
+        { type = 12 },  -- 原来是动作列表，单独判断条件和执行其他动作 考虑和其他行为配在同一个序列里的可能性不大，如果单独配置一个event那用新的机制就可以自带这个功能了。
+        { type = 13, id = 3, value = 10 }  , --设置实体整数类型的属性, id为属性ID， value为属性值百份比
+        { type = 14, id = 3, name = "怪物名" }  , --删除召唤怪物,id=要删除的召唤怪
+        { type = 15, preKillMonster = {1,2,3} , addTargetMonster = {1,2,3} , buffType=1, groupId=1, value=1, times=1,  interval=1, buffName="" },  --必须先杀某些怪物preKill 否则向preKill怪物增加buff
+        { type = 16, position = { {x=13,y=9}, {x=8,y=8}, }, range = 2,effectId = 20059, effectType = 4, time = 8000, delay = 0, addBuffConfigId = 1 }, --怪物选点释放特效,特效释放完毕若有玩家不在范围内,则给怪物加buff
+        { type = 17, range = 3, addBuffConfigId = 1 }, --怪物range范围内向玩家添加buff(怪物位置range范围)
+        { type = 18, effectId = 20059, effectType = 4, time = 1000, delay = 0 },--定点添加场景特效(怪物位置)
+        { type = 19, mosterId=10, posX = 8, posY = 11, liveTime = 100000, relative = false },  --召唤怪物(没有怪物拥有者)
+        { type = 20, target= { { monsterId = 1098, addBuffConfigId = 1}, } },  --向指定目标添加某个buff
+        { type = 21, target= { { monsterId = 1098, addBuffConfigId = 1}, } }, --向指定目标删除某个buff
+        { type = 22, resurrectTime = 10, monsterId=10, liveTime = 100000 }, --必须与某目标在一定时间内一起死,否则重生 与monsterId共同死亡, 否则重生liveTime重生后存活时间
+        { type = 23, timerMsgType = 33, actionType = 1,EffectConfigId = 1, interval = 10, EffectRange = 0 }, --天火效果（ 掉火,伤害, 火墙, 伤害 )
+        { type = 24, addBuffConfigId = 1 } , --向怪物自身添加buff
+        { type = 25, delBuffConfigId = 1 } , --向怪物自身删除buff
+        { type = 26, BuffConfigId = 1 }, --怪物释放一个buff，且将玩家拉到自己身边
+        { type = 27, denySee = true}, --设置是否可见
+        { type = 28, DenyBeAttack = true,setDenyAttackActor = true},--设置是否攻击玩家和被攻击
+        { type = 29, targetId = 100 },--设置一个怪物血量并让其现身
+        { type = 30, skillId = 10, level = 1, event =1, firstDelay = 0, cd = 1, dist = 1},--为怪物添加一个额外技能
+        { type = 31 },  -- 需要回调执行的，不要了
+        { type = 32 }, --清空时间回调器  如果是上面的那个不要了
+        { type = 33, DenyMove = true, DenyBeMove = true}, --设置不能移动和被移动
+        --type = 34 只能用在initSequence
+        { type = 35, monsterId = 10, addBuffConfigId = 1} , --根据有多少个指定怪物为自己添加多少次buff(自己除外-如果自己和指定怪物相同)
+        { type = 36, EffectConfigId = 4, EffectRange = 5, addBuffConfigId = 1, position = { {x=13,y=9}, {x=8,y=8}, } }, --随机位置丢下光圈，需要2名玩家站入2秒否则产生AOE效果buffConfig
+        { type = 37, EffectConfigId = 4, EffectRange = 3, damage = 100000, addBuffConfigId = 1}, --怪物朝向前方丢下特效，3人站入，消失时分担伤害，且判定少于3人 怪物加buff
+        { type = 38, EffectConfigId = 4, EffectRange = 3, addBuffConfigId = 1, position = { {x=13,y=9}, {x=8,y=8}, } }, --场景position随机一个位置产生特效，范围内玩家添加buff
+        { type = 39, addBuffConfigId=22, x=8, y=8, EffectRange=3, Interval=2}, --场景(x,y)，范围内对怪物自身添加buff
+        { type = 40, targetType = 0, range = 0, addBuffConfigId = 1}, --对范围内(range=0表示整个场景)某种类型的实体(targetType=0:玩家,-1:怪物,-2:宠物)加buff (某一个)
+        { type = 41, monsterId = 1231 }, --使怪物进入下一阶段
+        { type = 42, monsterId = 1231, addBuffConfigId = 1},--向某怪物添加buff，且需要判断怪物是否存在可以添加标识
+        { type = 43, refuseAdd = 1 }, --设置不允许添加buff,针对EventCalls[42]
+        { type = 44, EffectConfigId = 4, EffectRange = 3, damage = 100000},--释放光圈，光圈消失后，圈内分摊伤害，圈外直接伤害
+        { type = 45, EffectRange = 2, monsterId = 1240, addBuffConfigId = 44}, --向某怪物目标移动
+        { type = 46, addBuffConfigId = 1, range = 0}, --对范围内所有怪物加buff，除了自己和设置了不能添加buff的信息 即type = 43的标识
+        { type = 47, addBuffConfigId = 1, range = 8, monsterId = {10}}, --怪物range范围内向怪物添加buff
+        { type = 48, addBuffConfigId = 1, delayBuffConfigId = 2 },--全地图所有玩家拉到BOSS所在位置并且随机指定1个玩家添加buff
+        { type = 49, monsterList = {10,11} , posX = 8, posY = 11, liveTime = 100000, relative = false },
+        { type = 50, monsterId = 10, addBuffConfigId = 1 },  --与某个怪物交换位置，如果无法交换，则加buff
+        { type = 51, EffectConfigId = 3, BeforeEffectConfigId = 1, range = 3},
+        { type = 52, randomPosX=100, randomPosY=100, relative=true }, --怪物随机移动，posX,posY表示随机正负移动多少格子，relative表示是否相对位移
+        { type = 53, drops = {{id = 123, rate=80, count={1,5}},{id=456,rate=20,count={1,1}} } }, --设置掉落，随机一组，随机数量
+        --[[原来的action：{ type=1, duration=2, talk=Lang.Actions.a000003, talkType=2 },
+        现在的action：{ type=1, duration=1, interval=5, talk=Lang.Actions.a000003, talkType=2},
+        不过正常持续时间和间隔都默认为0就行了，所以可以这样写：
+                { type=1, talk=Lang.Actions.a000003, talkType=2},  
+        duration持续时间只有移动类的行为才需要， interval是需要延迟执行下一个行为时才填的
+        所以格式基本上差不多，以前的行为基本都不用填duration
+        --]]
+      }
+    },
+    {
+      actions = { -- 巡逻 这个以后再实现
+        {type=5, duration=10, posX=100, posY=100, relative=false },
+        {type=5, duration=10, posX=150, posY=100, relative=false },
+        {type=5, duration=10, posX=150, posY=150, relative=false },
+        {type=5, duration=10, posX=100, posY=150, relative=false },
+      }
+    },
+  },
+	battle = { --战斗状态，(可以实现非战斗时跟随或护送巡逻，进战斗后停止或逃跑或其他行为，脱战后恢复)
+    --[[{
+      delay=5,
+      count=0,
+      action = {{type="changeTarget",duration=1, interval=5, method=0}} --切换目标，方式0按累计伤害，1按攻击者列表血量，2随机，3仇恨？
+    },
+    {
+      delay=30,
+      action={
+        {type="summon", method=0, id=123}, --两种召唤方式
+        {type="summon", interval=10, method=1, id=123, pos={12,34}},
+      }
+    },
+    {
+      delay=25,
+      actions={type="wait", time=5}, --等待5秒， 用于事件
+    },
+    { -- 与目标距离超过 释放特殊技能拉近或是别的
+      conditions = {{type="targetDistance", min=20}}
+      actions={{type="skill", id=321}}
+    },
+    { -- 与目标距离过近，释放特殊技能
+      conditions = {{type="targetDistance", max=5}}
+      actions={{type="skill", id=322}}
+    }
+    --]]
+  },
+	back = { -- 返回状态， 仅处理移动和执行部分行为（喊话等），如没有特殊行为，可以考虑省略该状态
+    --{ actions={{type="speak", value="hahah", range=1} } }
+  },
+	dead = { -- 执行某些行为， 或者复活前判断
+    --[[{
+      delay=5,
+      conditions = {{type="position", pos={50,50}, range=5}}, --在目标位置附近5格范围内 
+      actions = {{type="revive", hp=100}} --满血复活 
+    },
+    {
+      delay=5,
+      condtions = {{type="ExistMonster", id="123"}} --存在怪物 
+      actions={{type="revive", hp=100}} --复活 
+    }-]]
+}
+,
+},

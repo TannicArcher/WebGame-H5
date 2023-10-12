@@ -1,0 +1,97 @@
+_G.SystemPackagePath = _G.SystemPackagePath or package.path
+package.path = _G.SystemPackagePath .. ";./?.lua;./data/config/?.lua;./data/functions/?.lua"
+
+thisNPC = nil
+
+InitFnTable = {}
+FinaFnTable = {}
+MainFnTable = {}
+
+--#include "data/language/langcode.txt" once
+--#include "data/functions/gameconfig.txt" once
+
+--#include "data/functions/csproto.lua" once
+require("actorevent.actorevent")
+--#include "data/functions/base/base.txt" once
+
+require("version")
+require("debug")
+require("utils.log")
+require("utils.utils")
+require("utils.net.netmsgdispatcher")
+
+
+require("utils.systemfunc")
+require("utils.net.dbretdispatcher")
+require("monevent.monevent")
+require("utils.thread.asyncworkerfunc")
+require("systems.actorsystem.actorsystem")
+require("test.test")
+require("crossserver.csmsgdispatcher")
+require("crossserver.crossnet")
+require("crossserver.csbase")
+require("crossserver.cscheck")
+require("crossserver.crossquery")
+
+----#include "logs/logs_inc.txt" once
+
+-- 兼容之前的代码
+DataPack = LDataPack
+
+--#include "data/functions/utils/utils.txt" once
+--#include "data/functions/systems/systems.txt" once
+--#include "data/functions/actorevent/actorevents.txt" once
+----#include "data/functions/itemex/itemex.txt" once
+----#include "data/functions/monevent\monsteractionimpl.txt" once
+----#include "data/functions/activity/activitys.txt" once
+----#include "data/functions/systems/miscs/miscsystems.txt" once
+----#include "systems/tasks/taskinclude.txt" once
+----#include "data/script/npcfunction.txt" once
+
+-- 其他文件放在这上面
+--#if OSTYPE == WIN
+--#define _UNIT_TEST_
+----#include "data/functions/test/test_inc.txt" once
+--#endif
+
+-- 每次读入全局脚本都输出下日志
+print("load global function!!!!")
+math.randomseed(os.time())
+
+function main(sysarg)
+	return Lang.Talk.t02466
+end
+
+function openServerTime(sysarg, year, mon, day, hour, m)
+	System.setOpenServerTime(year, mon, day, hour, m)
+end
+
+
+--[[初始化函数]]--
+function initialization(npcobj)
+	thisNPC = npcobj
+	if thisNPC == System.getReserveNpc() then
+		_G.isReserveNpc = true
+	end
+
+	--只有真实的才load
+	--if not _G.lianfuLoaded and thisNPC == System.getGlobalNpc() then
+	--	_G.lianfuLoaded = true
+	--	loadLianfuConfig()
+	--end
+
+	for i = 1, #InitFnTable do
+		--print("initialization..table.getn="..table.getn(InitFnTable))
+		InitFnTable[i]( npcobj )
+	end
+	
+	scripttimer.initScriptTimer()
+end
+
+--[[析构化函数]]--
+function finalization(npcobj)
+	for i = 1, table.getn(FinaFnTable) do
+		FinaFnTable[i]( npcobj )
+	end
+	thisNPC = nil
+end

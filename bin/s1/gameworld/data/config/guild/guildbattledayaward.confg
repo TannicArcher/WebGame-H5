@@ -1,0 +1,35 @@
+--G-公会战.xlsx 每天奖励
+GuildBattleDayAward={
+[1] = {
+	day = 1,
+	award = {{type=0,id=4,count=50000},{type=0,id=5,count=10000},{type=0,id=1,count=3000000}},
+},
+[2] = {
+	day = 2,
+	award = {{type=0,id=4,count=50000},{type=0,id=5,count=10000},{type=0,id=1,count=3000000}},
+},
+[3] = {
+	day = 3,
+	award = {{type=0,id=4,count=50000},{type=0,id=5,count=10000},{type=0,id=1,count=3000000}},
+},
+[4] = {
+	day = 4,
+	award = {{type=0,id=4,count=50000},{type=0,id=5,count=10000},{type=0,id=1,count=3000000}},
+},
+[5] = {
+	day = 5,
+	award = {{type=0,id=4,count=50000},{type=0,id=5,count=10000},{type=0,id=1,count=3000000}},
+},
+[6] = {
+	day = 6,
+	award = {{type=0,id=4,count=50000},{type=0,id=5,count=10000},{type=0,id=1,count=3000000}},
+},
+[7] = {
+	day = 7,
+	award = {{type=0,id=4,count=50000},{type=0,id=5,count=10000},{type=0,id=1,count=3000000}},
+},
+[8] = {
+	day = 8,
+	award = {{type=0,id=4,count=50000},{type=0,id=5,count=10000},{type=0,id=1,count=3000000}},
+},
+}

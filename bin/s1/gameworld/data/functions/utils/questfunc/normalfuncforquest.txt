@@ -1,0 +1,236 @@
+--#include "data\functions\globaldefine.txt"
+package.path = package.path .. ";./data/config/?.lua;./data/functions/?.lua"
+local actormisc = require("systems.actorsystem.actormisc")
+MISSION_RTV_IDX_MISSIONID	 = 0	 -- 任务ID的存储位置
+MISSION_RTV_IDX_MISSIONIDX	= 1	 -- 人物在NPC当前表的索引位置
+MISSION_RTV_IDX_MISSIONSTEP = 2	 -- 玩家对话的步骤存储的位置（初始值为 1）
+--[[
+    函数名称：continueQuestTalk
+    函数描述：继续与NPC进行任务对话，如果没有任务状态则关闭对话窗口
+    参数 actor 的描述：
+]]
+local function continueQuestTalk(actor, conf)
+	--如果交任务后还有可继续的任务状态，则返回主界面
+	local thisNPC = LActor.getTalkNpcPtr(actor)
+	local newState = LActor.getQuestStateType( actor, thisNPC )
+	if newState == 1 or newState == 2 then
+		return main(actor, conf.id)
+	else
+		LActor.closeNPCDialog( actor )
+	end
+end
+
+function commonAcceptMissions(npcId, actor, mission)
+	local conf = getNpcConf(npcId)
+	local PromMs = conf.PromMs
+	local mid = tonumber(mission)
+	local ms = nil
+	for i=1,#PromMs do
+		if PromMs[i] == mid then
+			ms = getQuestConf(mid)
+			break
+		end
+	end
+
+	if ms == nil then
+		return "ms is nil"
+	end
+
+	local ck = true
+	local id = ""
+	if ms.PromCheck then
+		ck,id = ms.PromCheck(actor,mission)
+		if not ck then
+			LActor.sendTipmsg(actor,id,ttDialog)
+		end
+	end
+
+	if ck then
+		if  LActor.getQuestCount(actor) >= 30 then
+			LActor.sendTipmsg(actor,Lang.ScriptTips.x00044,ttTipmsgWindow)
+		else
+			if LActor.addQuest( actor, mission ) then
+				if ms.PromCallBack then
+					ms.PromCallBack(actor,mission)
+				end
+				if ms.acceptNext then
+					return continueQuestTalk( actor, conf )
+				end
+			end
+		end
+	end
+	LActor.closeNPCDialog( actor )
+end
+
+
+
+function completeMession(npcId, actor, mission)
+	local conf = getNpcConf(npcId)
+	local CompMs = conf.CompMs
+	local mid = tonumber(mission)
+	local ms = nil
+	-- for i,v in pairs(CompMs) do
+	-- 	if v.id == mid then
+	-- 		ms = v
+	-- 		break
+	-- 	end
+	-- end
+
+	for i=1,#CompMs do
+		if CompMs[i] == mid then
+			ms = getQuestConf(mid)
+			break
+		end
+	end
+
+ 	if ms == nil then return end
+
+	local ck,rt
+	if ms.CompCheck then
+		ck,rt = ms.CompCheck(actor,mission)
+		if not ck then
+			return rt
+		end
+	end
+
+	if LActor.finishQuest( actor, mission, -1 ) then
+		rt = nil
+		if ms.CompCallBack then
+			 --这个函数用于完成任务后的特别处理，比如回收某个物品等
+			rt = ms.CompCallBack(actor,mission)
+		end
+		if not rt or type(rt) ~= "string" then
+			if ms.finishNext then
+				return continueQuestTalk( actor, conf )
+			end
+		end
+	end
+	LActor.closeNPCDialog( actor )
+end
+
+--------------------------------------------------------------------------------
+-- 过程任务暂时为空
+--------------------------------------------------------------------------------
+
+-- 暂时没用
+--[[
+function getCompMissionIndex(missionid)
+  local i
+  for i = 1, table.getn(CompMs) do
+    if CompMs[i].id == missionid then
+      return i
+    end
+  end
+  return 0
+end
+
+--这里执行放弃任务时候的操作
+function GiveUpQuest(actor,questid)
+	local qid = tonumber(questid)
+	local idx = getCompMissionIndex(qid)
+	--有这个任务
+	if idx > 0 then
+		local ms = CompMs[idx]
+		--执行放弃任务的处理
+		if ms.GiveUpCallBack then
+    		ms.GiveUpCallBack( actor, qid )
+    	end
+	end
+end
+
+]]
+
+---------------------------------------------------------------------------------------
+-- 过程任务（对话任务）
+-- TODO:对话任务以后再修改
+
+function talkWithNPC(actor,qid,tid)
+	local tid = tonumber(tid)
+	qid = tonumber(qid)
+	for qidx=1,#PassMs do
+		if PassMs[qidx].id == qid then
+			local q = PassMs[qidx]
+			local index = 0
+			for i = 1,#q.target do
+				if q.target[i].id == tid then
+					index = i
+					LActor.setQuestValue(actor,qid,tid,1)
+					return q.PassMsTip[index]
+				end
+			end
+		end
+	end
+end
+----------------------------------------------------------------------------------------
+function enterFubenForQuestFunc(actor,fbid,Sceneid)
+	local fbid = tonumber(fbid)
+	local Hfuben = Fuben.createFuBen(fbid)
+	LActor.enterFuBen(actor,Hfuben,-1,-1,-1)
+end
+
+function commonQuestNpcMain(actor, specificTid, npcId)
+	local conf = getNpcConf(npcId)
+	local MainFnTable = conf.MainFnTable
+	local NpcDialogue = conf.NpcDialogue
+	local thisNPC = LActor.getTalkNpcPtr(actor)
+
+	local questList = LActor.getQuestList(actor) or {}
+	--否则若多个任务则显示列表
+	local handle = LActor.getHandle(thisNPC)
+	local npcTalkId = 1 --默认为1
+	if specificTid then
+		npcTalkId = specificTid
+	else
+		local dialogCount = #NpcDialogue
+		if dialogCount == 1 then
+			npcTalkId = NpcDialogue[dialogCount]
+		elseif dialogCount > 1 then
+			npcTalkId = NpcDialogue[System.getRandomNumber(#NpcDialogue) + 1]
+		end
+	end
+
+	local pack = LDataPack.allocPacket(actor, 0, 11)
+	if not pack then return end
+
+	local writeInt = LDataPack.writeInt
+	LDataPack.writeInt64(pack, handle)
+	LDataPack.writeByte(pack, 1) --打开对话框
+	writeInt(pack, npcTalkId)
+	writeInt(pack, #questList/2)
+
+	--0-已完成 1-可接
+	for i=1, #questList, 2 do
+		writeInt(pack, questList[i])
+		LDataPack.writeByte(pack, questList[i+1])
+	end
+
+	--额外信息这里添加, 仍然援用字符串
+	local str = ""
+	for i = 1, table.getn(MainFnTable) do
+		str = string.format("%s%s", str, MainFnTable[i](actor))
+	end
+	LDataPack.writeString(pack, str)
+
+	LDataPack.flush(pack)
+end
+
+-- 检查护送任务
+-- 暂时没用
+--[[
+function checkProtection(actor)
+	for i=1,#CompMs do
+		local qid = CompMs[i].id
+		if LActor.hasQuest(actor, qid) then
+			local ms = CompMs[i]
+			local target = ms.target
+			if target ~= nil then
+				for i = 1,#target do -- 自动完成任务目标
+					LActor.setQuestValue(actor,qid,target[i].id,target[i].count)
+				end
+			end
+			return ShowQuestDetail(ms, 1) -- 完成状态
+		end
+	end
+end
+]]
+

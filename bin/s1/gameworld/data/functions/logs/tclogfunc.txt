@@ -1,0 +1,187 @@
+
+--用于处理腾讯各类日志
+
+--#include "data\functions\GlobalDefine.txt" once
+
+
+TcLogFunc={}
+
+
+TcLogFunc.getPfId = function(sysarg)
+	local pf = string.lower(LActor.getPf(sysarg))
+	local pfid = GlobalConfig.pfListId[pf]
+	pfid = pfid or 0
+
+	return pfid
+end
+
+TcLogFunc.dcApiLogHead = function(sysarg, actionId)
+	local account = LActor.getAccountName(sysarg)
+	local wid = System.getServerId()
+	local dom = TcLogFunc.getPfId(sysarg)
+	local unixTime = System.getUnixTime()  --腾讯那边以毫秒算
+	local uip = LActor.getLastLoginIp(sysarg)
+	local sip = "127.0.0.1" --System.getServerIP()
+	local msgHead = "APPV=1.0&MSGV=1.1&VER=1.3.6&APPID=100634204&OID="..account.."&WID="..wid.."&UIP="..uip.."&OKY=&SIP="..sip.."&MTM="..unixTime.."&DOM="..dom.."&MLV=0&AID="..actionId
+	return msgHead
+end
+
+-- 6.1 帐号登录
+TcLogFunc.dcApiLoginLog = function(sysarg)
+	local msgHead = TcLogFunc.dcApiLogHead(sysarg, 1)
+
+	local jobDesc = {"xiaohai", "zhanshi", "lieren", "fashi" }
+	local ACT = "0"
+	local PAY = "0"
+	if LActor.getIntProperty(sysarg, P_RECHARGE) > 0 then
+		PAY = "1"
+	end
+	local RID = LActor.getActorId(sysarg)
+	local RNA = LActor.getName(sysarg)
+	local RNA_encode = RNA
+	--local RNA_encode = ""
+	--System.urlEncode(RNA,RNA_encode) --这里会导致内存溢出，暂时不用它
+	local RLV = LActor.getIntProperty(sysarg, P_LEVEL)
+	local EXP = LActor.getActorCurExp(sysarg)
+	local RTN = "3"
+	local RTI_JOB = "job"
+	local job = LActor.getIntProperty(sysarg,P_VOCATION)
+	local RTP_JOB = jobDesc[job+1]
+	local RTI_CAMP = "camp"
+	local zy = LActor.getIntProperty(sysarg,P_CAMP)
+	local RTP_CAMP = Zy_cn[zy]
+	local RTI_SEX = "sex"
+	local sex = LActor.getIntProperty(sysarg,P_SEX)
+	local RTP_SEX = "boy"
+	if sex == 1 then
+		RTP_SEX = "girl"
+	end
+	local GTN = "4"
+	local GTI_YB = "gold"
+	local GOD_YB = LActor.getMoneyCount(sysarg, mtYuanbao)
+	local GTI_BYB = "bindgold"
+	local GOD_BYB = LActor.getMoneyCount(sysarg, mtBindYuanbao)
+	local GTI_COIN = "silver"
+	local GOD_COIN = LActor.getMoneyCount(sysarg, mtCoin)
+	local GTI_BCOIN = "bindsilver"
+	local GOD_BCOIN = LActor.getMoneyCount(sysarg, mtBindCoin)
+	local CTN = "0"
+	local CTI = ""
+	local CAS = ""
+	local RCT = "0"
+	local msg = msgHead .. "&ACT="..ACT.."&PAY="..PAY.."&RID="..RID.."&RNA="..RNA_encode.."&RLV="..RLV.."&EXP="..EXP.."&RTN="..RTN.."&RTI="..RTI_JOB.."&RTP="..RTP_JOB.."&RTI="..RTI_CAMP.."&RTP="..RTP_CAMP.."&RTI="..RTI_SEX.."&RTP="..RTP_SEX.."&GTN="..GTN.."&GTI="..GTI_YB.."&GOD="..GOD_YB.."&GTI="..GTI_BYB.."&GOD="..GOD_BYB.."&GTI="..GTI_COIN.."&GOD="..GOD_COIN.."&GTI="..GTI_BCOIN.."&GOD="..GOD_BCOIN.."&CTN="..CTN.."&RCT="..RCT
+	
+	LActor.logDcApiLog("appoperlog", msg)
+end
+
+-- 6.2 帐号登出
+TcLogFunc.dcApiLogoutLog = function(sysarg,arg)
+
+local jobDesc = {"tianlei", "shushang", "yuanyue", "yunhua" }
+
+local msgHead = TcLogFunc.dcApiLogHead(sysarg, 2)
+local PTM = arg[2]
+local RID = LActor.getActorId(sysarg)
+local RNA = LActor.getName(sysarg)
+local EXP = LActor.getActorCurExp(sysarg)
+local RTN = "3"
+local RTI_JOB = "job"
+local job = LActor.getIntProperty(sysarg,P_VOCATION)
+local RTP_JOB = jobDesc[job]
+
+local RTI_CAMP = "camp"
+local zy = LActor.getIntProperty(sysarg,P_CAMP)
+local RTP_CAMP = Zy_cn[zy]
+local RTI_SEX = "sex"
+local sex = LActor.getIntProperty(sysarg,P_SEX)
+local RTP_SEX = "boy"
+if sex == 1 then
+	RTP_SEX = "girl"
+end
+
+
+local GTN = "4"
+local GTI_YB = "gold"
+local GOD_YB = LActor.getMoneyCount(sysarg, mtYuanbao)
+local GTI_BYB = "bindgold"
+local GOD_BYB = LActor.getMoneyCount(sysarg, mtBindYuanbao)
+local GTI_COIN = "silver"
+local GOD_COIN = LActor.getMoneyCount(sysarg, mtCoin)
+local GTI_BCOIN = "bindsilver"
+local GOD_BCOIN = LActor.getMoneyCount(sysarg, mtBindCoin)
+local CTN = mtYuanbao
+local CTI = ""
+local CAS = ""
+local RCT = LActor.getCreateTime(sysarg)
+
+local msg = msgHead.."&PTM="..PTM.."&RID="..RID.."&RNA="..RNA.."&EXP="..EXP.."&RTN="..RTN.."&RTI="..RTI_JOB.."&RTP="..RTP_JOB.."&RTI="..RTI_CAMP.."&RTP="..RTP_CAMP.."&RTI="..RTI_SEX.."&RTP="..RTP_SEX.."&GTN="..GTN.."&GTI="..GTI_YB.."&GOD="..GOD_YB.."&GTI="..GTI_BYB.."&GOD="..GOD_BYB.."&GTI="..GTI_COIN.."&GOD="..GOD_COIN.."&GTI="..GTI_BCOIN.."&GOD="..GOD_BCOIN.."&CTN="..CTN.."&RCT="..RCT
+
+LActor.logDcApiLog("appoperlog", msg)
+
+end
+
+
+
+-- pk
+TcLogFunc.dcApiPVPResualtLog = function(sysarg,arg)
+
+	local pfb = LActor.getFubenPrt(sysarg)
+	Fuben.setFubenProgress(pfb, 100)
+
+	local retfbtime = Fuben.GetFubenGameTime(pfb)
+	local ORNA = 1
+	local OIDA1 = LActor.getAccountName(sysarg)
+	local RIDA1 = LActor.getActorId(sysarg)
+	local ORNB = 1
+	local actorb = LActor.getActorById(arg[1])
+	local OIDB1 =  LActor.getAccountName(actorb)
+	local RIDB1 = LActor.getActorId(actorb)
+	local RST = arg[2]
+	local PTM = FightConf.pkTime - retfbtime
+
+
+	local msgHead = TcLogFunc.dcApiLogHead(sysarg, 7)
+
+	local msg = msgHead.."&ORNA="..ORNA.."&OIDA="..OIDA1.."&RIDA="..RIDA1.."&ORNB="..ORNB.."&OIDB="..OIDB1.."&RIDB="..RIDB1.."&RST="..RST.."&PTM="..PTM
+
+	--print(msg)
+	LActor.logDcApiLog("appoperlog", msg)
+end
+
+--创建角色,,,还需要。。。
+TcLogFunc.dcApicreaterolelog = function(accountid, accountname, name, sex, job, icon, camp, aid, pf)
+	local jobDesc = {"tianlei", "shushang", "yuanyue", "yunhua" }
+
+	local msgHead = ""--= TcLogFunc.dcApiLogHead(sysarg, 14) daigaijing
+	local RTN = 3
+	local RTI_JOB = "job"
+	local RTP_JOB = jobDesc[job]
+	local RTI_CAMP = "camp"
+	local RTP_CAMP = Zy_cn[camp]
+	local RTI_SEX = "sex"
+	local RTP_SEX = "boy"
+	if sex == 1 then
+		RTP_SEX = "girl"
+	end
+	local RLV = 1
+	local RCH = pf
+	local msg = msgHead.."&RNA="..name.."&RID="..aid.."&RTN="..RTN.."&RTI="..RTI_JOB.."&RTP="..RTP_JOB.."&RTI="..RTI_CAMP.."&RTP="..RTP_CAMP.."&RTI="..RTI_SEX.."&RTP="..RTP_SEX.."&RLV="..RLV.."&RCH="..RCH
+	LActor.logDcApiLog("appoperlog", msg)
+	--print(accountid, accountname, name, sex, job, icon, camp, aid, pf)
+	--print(msg)
+end
+
+-- --副本通关，sysarg,发送者角色对象指针，list
+-- TcLogFunc.dcApicopyresaultlog = function(sysarg, list_user_oid, list_user_rid, resault,  time_use )
+-- 	local msgHead = TcLogFunc.dcApiLogHead(sysarg, 8)
+-- 	local OIN = table.getn(list_user_oid)
+
+-- 	local msg = msgHead.."&OIN="..OIN
+-- 	for i,v in ipairs(table_name) do
+-- 		msg = msg.."&OID="..v
+-- 	end
+-- 	for i,v in ipairs(table_name) do
+-- 		msg = msg.."&RID="..v
+-- 	end
+-- 	msg = msg .. "&RST"	
+-- end

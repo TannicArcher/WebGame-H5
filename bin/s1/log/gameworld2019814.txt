@@ -1,0 +1,1078 @@
+[2019-08-14 14:29:23]watch thread start 
+[2019-08-14 14:29:23]loading server config 
+[2019-08-14 14:29:23]open server time is : 2019-5-20 11:2:47 
+[2019-08-14 14:29:23]load server config complete 
+[2019-08-14 14:29:23]start server................... 
+[2019-08-14 14:29:23]Start Load Luaguage Config! 
+[2019-08-14 14:29:24][LANGUAGE]Luaguage Load Complete! 
+[2019-08-14 14:29:30]ai skill config error, skill :1 is not found 
+[2019-08-14 14:29:30]ai skill config error, skill :1 is not found 
+[2019-08-14 14:29:30]ai skill config error, skill :1 is not found 
+[2019-08-14 14:29:30]ai skill config error, skill :1 is not found 
+[2019-08-14 14:29:30]all game config load complete! 
+[2019-08-14 14:29:30]DBClientMgr start! 
+[2019-08-14 14:29:30]DBClientMgr start! 
+[2019-08-14 14:29:30]data server server succ 
+[2019-08-14 14:29:30]data server server succ 
+[2019-08-14 14:29:30]********npc script too big:./data/functions/globalfunction.txt 
+[2019-08-14 14:29:31]new gate connect,idx=0 
+[2019-08-14 14:29:31]gateway client (127.0.0.1:51446:0) registe success (GameWorld) 
+[2019-08-14 14:29:31]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:29:35]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:29:41]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:29:46]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:29:48]dispatcher reg 0 2 
+[2019-08-14 14:29:48]dispatcher reg 0 100 
+[2019-08-14 14:29:48]dispatcher reg 12 1 
+[2019-08-14 14:29:49]dispatcher reg 1 35 
+[2019-08-14 14:29:51]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:29:52]dispatcher reg 12 2 
+[2019-08-14 14:29:52][PACKAGE->guildbattle][FUN->initGlobalData] call, 
+[2019-08-14 14:29:52]file runtime/system_var_1.bin not exist 
+[2019-08-14 14:29:52][PACKAGE->guildbattlepersonalaward][FUN->initGlobalData] call, 
+[2019-08-14 14:29:53]dispatcher reg 6 5 
+[2019-08-14 14:29:53]load global function!!!! 
+[2019-08-14 14:29:53]loadCrossConfigPre start 
+[2019-08-14 14:29:53]loadCrossConfigPre finish, serverType : 0 
+[2019-08-14 14:29:53]instance init fid:22019 handle:3720347903 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31019,fbId:22019 
+[2019-08-14 14:29:53]instance init fid:23002 handle:2667577598 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33002,fbId:23002 
+[2019-08-14 14:29:53]instance init fid:23008 handle:656408829 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33008,fbId:23008 
+[2019-08-14 14:29:53]instance init fid:22501 handle:4273996028 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31501,fbId:22501 
+[2019-08-14 14:29:53]instance init fid:22502 handle:2812281083 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31502,fbId:22502 
+[2019-08-14 14:29:53]instance init fid:22503 handle:2321547514 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31503,fbId:22503 
+[2019-08-14 14:29:53]instance init fid:22504 handle:1570767097 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31504,fbId:22504 
+[2019-08-14 14:29:53]instance init fid:23009 handle:3565158648 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33009,fbId:23009 
+[2019-08-14 14:29:53]instance init fid:22505 handle:1193279735 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31505,fbId:22505 
+[2019-08-14 14:29:53]instance init fid:22506 handle:1560281334 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31506,fbId:22506 
+[2019-08-14 14:29:53]instance init fid:22507 handle:3303014645 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31507,fbId:22507 
+[2019-08-14 14:29:53]instance init fid:22508 handle:2902458612 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31508,fbId:22508 
+[2019-08-14 14:29:53]instance init fid:23010 handle:1176502515 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33010,fbId:23010 
+[2019-08-14 14:29:53]instance init fid:22508 handle:895484146 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31508,fbId:22508 
+[2019-08-14 14:29:53]instance init fid:22509 handle:132120817 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31509,fbId:22509 
+[2019-08-14 14:29:53]instance init fid:22510 handle:4041212144 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31510,fbId:22510 
+[2019-08-14 14:29:53]instance init fid:22511 handle:2453668079 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31511,fbId:22511 
+[2019-08-14 14:29:53]instance init fid:23011 handle:918552814 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33011,fbId:23011 
+[2019-08-14 14:29:53]instance init fid:22512 handle:2296381677 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31512,fbId:22512 
+[2019-08-14 14:29:53]instance init fid:22513 handle:3774873836 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31513,fbId:22513 
+[2019-08-14 14:29:53]instance init fid:22513 handle:3735027947 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31513,fbId:22513 
+[2019-08-14 14:29:53]instance init fid:23003 handle:3779068138 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33003,fbId:23003 
+[2019-08-14 14:29:53]instance init fid:23012 handle:2543845609 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33012,fbId:23012 
+[2019-08-14 14:29:53]instance init fid:22515 handle:3835691240 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31515,fbId:22515 
+[2019-08-14 14:29:53]instance init fid:22516 handle:1270874343 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31516,fbId:22516 
+[2019-08-14 14:29:53]instance init fid:22517 handle:249561318 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31517,fbId:22517 
+[2019-08-14 14:29:53]instance init fid:22518 handle:4097835237 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31518,fbId:22518 
+[2019-08-14 14:29:53]instance init fid:22001 handle:3925868772 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31001,fbId:22001 
+[2019-08-14 14:29:53]instance init fid:22519 handle:887095523 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31519,fbId:22519 
+[2019-08-14 14:29:53]instance init fid:51000 handle:4177527010 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31101,fbId:51000 
+[2019-08-14 14:29:53]instance init fid:51000 handle:2499805409 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31102,fbId:51000 
+[2019-08-14 14:29:53]instance init fid:51000 handle:3714056416 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31103,fbId:51000 
+[2019-08-14 14:29:53]instance init fid:22002 handle:421527775 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31002,fbId:22002 
+[2019-08-14 14:29:53]instance init fid:51000 handle:1463812318 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31104,fbId:51000 
+[2019-08-14 14:29:53]instance init fid:51000 handle:4273995997 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31105,fbId:51000 
+[2019-08-14 14:29:53]instance init fid:51000 handle:2856321244 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31106,fbId:51000 
+[2019-08-14 14:29:53]instance init fid:51000 handle:3640656091 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31107,fbId:51000 
+[2019-08-14 14:29:53]instance init fid:22003 handle:610271450 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31003,fbId:22003 
+[2019-08-14 14:29:53]instance init fid:51000 handle:2128609497 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31108,fbId:51000 
+[2019-08-14 14:29:53]instance init fid:51000 handle:2128609496 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31109,fbId:51000 
+[2019-08-14 14:29:53]instance init fid:51000 handle:2409627863 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31110,fbId:51000 
+[2019-08-14 14:29:53]instance init fid:23001 handle:207618262 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33001,fbId:23001 
+[2019-08-14 14:29:53]instance init fid:23004 handle:1965031637 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33004,fbId:23004 
+[2019-08-14 14:29:53]instance init fid:22004 handle:515899604 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31004,fbId:22004 
+[2019-08-14 14:29:53]instance init fid:51000 handle:2518679763 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31112,fbId:51000 
+[2019-08-14 14:29:53]instance init fid:50005 handle:1646264530 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83116,fbId:50005 
+[2019-08-14 14:29:53]worldboss refreshTimer nextShield is NULL,id:65 
+[2019-08-14 14:29:53]instance init fid:50005 handle:2011168977 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83117,fbId:50005 
+[2019-08-14 14:29:53]worldboss refreshTimer nextShield is NULL,id:66 
+[2019-08-14 14:29:53]instance init fid:22005 handle:3835691216 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31005,fbId:22005 
+[2019-08-14 14:29:53]instance init fid:50006 handle:4066377935 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83119,fbId:50006 
+[2019-08-14 14:29:53]instance init fid:50006 handle:1853882574 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83120,fbId:50006 
+[2019-08-14 14:29:53]instance init fid:50006 handle:3495952589 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83121,fbId:50006 
+[2019-08-14 14:29:53]instance init fid:22006 handle:1180696780 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31006,fbId:22006 
+[2019-08-14 14:29:53]instance init fid:50006 handle:3422552267 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83123,fbId:50006 
+[2019-08-14 14:29:53]instance init fid:40002 handle:2898264266 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83200,fbId:40002 
+[2019-08-14 14:29:53]instance init fid:40003 handle:1864368329 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83201,fbId:40003 
+[2019-08-14 14:29:53]instance init fid:22007 handle:996147400 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31007,fbId:22007 
+[2019-08-14 14:29:53]instance init fid:40002 handle:3636461767 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83203,fbId:40002 
+[2019-08-14 14:29:53]instance init fid:40003 handle:4030726342 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83204,fbId:40003 
+[2019-08-14 14:29:53]instance init fid:23005 handle:2646606021 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33005,fbId:23005 
+[2019-08-14 14:29:53]instance init fid:22008 handle:2950693060 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31008,fbId:22008 
+[2019-08-14 14:29:53]instance init fid:40003 handle:1044381891 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83207,fbId:40003 
+[2019-08-14 14:29:53]instance init fid:40004 handle:1530921154 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83208,fbId:40004 
+[2019-08-14 14:29:53]instance init fid:40002 handle:2174746817 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83209,fbId:40002 
+[2019-08-14 14:29:53]instance init fid:22009 handle:2659188928 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31009,fbId:22009 
+[2019-08-14 14:29:53]instance init fid:40004 handle:4018143423 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:83211,fbId:40004 
+[2019-08-14 14:29:53]instance init fid:51011 handle:3034579134 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:85011,fbId:51011 
+[2019-08-14 14:29:53]instance init fid:51012 handle:3055550653 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:85012,fbId:51012 
+[2019-08-14 14:29:53]instance init fid:22010 handle:1681916092 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31010,fbId:22010 
+[2019-08-14 14:29:53]instance init fid:51014 handle:2428502203 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:85014,fbId:51014 
+[2019-08-14 14:29:53]instance init fid:51015 handle:2462056634 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:85015,fbId:51015 
+[2019-08-14 14:29:53]instance init fid:51016 handle:360710329 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:85016,fbId:51016 
+[2019-08-14 14:29:53]instance init fid:22011 handle:2107637944 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31011,fbId:22011 
+[2019-08-14 14:29:53]instance init fid:51018 handle:551551159 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:85018,fbId:51018 
+[2019-08-14 14:29:53]instance init fid:23006 handle:1035993270 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33006,fbId:23006 
+[2019-08-14 14:29:53]instance init fid:22012 handle:1170210997 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31012,fbId:22012 
+[2019-08-14 14:29:53]instance init fid:22013 handle:239075508 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31013,fbId:22013 
+[2019-08-14 14:29:53]instance init fid:22014 handle:2894069939 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31014,fbId:22014 
+[2019-08-14 14:29:53]instance init fid:22015 handle:341835954 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31015,fbId:22015 
+[2019-08-14 14:29:53]instance init fid:51017 handle:572522673 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:85017,fbId:51017 
+[2019-08-14 14:29:53]instance init fid:51013 handle:1981808816 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:85013,fbId:51013 
+[2019-08-14 14:29:53]instance init fid:23007 handle:297795759 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:33007,fbId:23007 
+[2019-08-14 14:29:53]instance init fid:22016 handle:3890217134 
+[2019-08-14 14:29:53]instance:onMonsterCreate: monster_id:31016,fbId:22016 
+[2019-08-14 14:29:54]instance init fid:40003 handle:4263510189 
+[2019-08-14 14:29:54]instance:onMonsterCreate: monster_id:83210,fbId:40003 
+[2019-08-14 14:29:54]instance init fid:40002 handle:3332374700 
+[2019-08-14 14:29:54]instance:onMonsterCreate: monster_id:83206,fbId:40002 
+[2019-08-14 14:29:54]instance init fid:40004 handle:1860173995 
+[2019-08-14 14:29:54]instance:onMonsterCreate: monster_id:83205,fbId:40004 
+[2019-08-14 14:29:54]instance init fid:22017 handle:2847932586 
+[2019-08-14 14:29:54]instance:onMonsterCreate: monster_id:31017,fbId:22017 
+[2019-08-14 14:29:54]instance init fid:40004 handle:2164261033 
+[2019-08-14 14:29:54]instance:onMonsterCreate: monster_id:83202,fbId:40004 
+[2019-08-14 14:29:54]instance init fid:50006 handle:2495611048 
+[2019-08-14 14:29:54]instance:onMonsterCreate: monster_id:83122,fbId:50006 
+[2019-08-14 14:29:54]instance init fid:50005 handle:171966631 
+[2019-08-14 14:29:54]instance:onMonsterCreate: monster_id:83118,fbId:50005 
+[2019-08-14 14:29:54]worldboss refreshTimer nextShield is NULL,id:67 
+[2019-08-14 14:29:54]instance init fid:22018 handle:4137681062 
+[2019-08-14 14:29:54]instance:onMonsterCreate: monster_id:31018,fbId:22018 
+[2019-08-14 14:29:54]instance init fid:51000 handle:3074424997 
+[2019-08-14 14:29:54]instance:onMonsterCreate: monster_id:31111,fbId:51000 
+[2019-08-14 14:29:54]instance init fid:22514 handle:3992977572 
+[2019-08-14 14:29:54]instance:onMonsterCreate: monster_id:31514,fbId:22514 
+[2019-08-14 14:29:54]instance init fid:50002 handle:2801795235 
+[2019-08-14 14:29:54]peakracerank.resetRankingList start 
+[2019-08-14 14:29:54]peakracesystem.RegTimerEvent curStartTime:2019-8-12 0:0:0 
+[2019-08-14 14:29:54]peakracesystem.RegTimerEvent st:3,dotime:2019-8-14 21:0:0 
+[2019-08-14 14:29:54]peakracesystem.RegTimerEvent st:4,dotime:2019-8-14 21:30:0 
+[2019-08-14 14:29:54]peakracesystem.RegTimerEvent st:5,dotime:2019-8-14 22:0:0 
+[2019-08-14 14:29:54]peakracesystem.RegTimerEvent st:6,dotime:2019-8-14 22:30:0 
+[2019-08-14 14:29:54]instance init fid:51003 handle:3615490210 
+[2019-08-14 14:29:54]instance:onMonsterCreate: monster_id:85028,fbId:51003 
+[2019-08-14 14:29:54]file runtime/system_chat_1.bin not exist 
+[2019-08-14 14:29:54]crossbossfb.refreshBossTimer: refresh monster success, id:1 
+[2019-08-14 14:29:54]crossbossfb.refreshFlagTimer: refresh flag success, id:1 
+[2019-08-14 14:29:54]createBossFb success, id:1 
+[2019-08-14 14:29:54]crossbossfb.openServerBoss:server fb create success:1 
+[2019-08-14 14:29:54]instance init fid:0 handle:2013266081 
+[2019-08-14 14:29:54]__SQL__:select * from globalmails; 
+[2019-08-14 14:29:54]__SQL__:select * from actors where serverindex=1 and (status & 2)=2 
+[2019-08-14 14:29:54]load all actor completed. size:4 
+[2019-08-14 14:29:54]__SQL__:call loadguildbasicdata(1); 
+[2019-08-14 14:29:54][PACKAGE->guildcommon][FUN->initBuildingLevel] mark1,[65536] [2] [293047526] [table: 0000000020BB7C10] [4]  
+[2019-08-14 14:29:54][PACKAGE->guildcommon][FUN->initBuildingLevel] mark1,[65537] [2] [298738561] [table: 0000000020BB7C10] [4]  
+[2019-08-14 14:29:54]__SQL__:call loadguildmembers(65536); 
+[2019-08-14 14:29:54]__SQL__:call loadguildlog(65536) 
+[2019-08-14 14:29:54]__SQL__:select type, date, actorid, content from guildchat where guildid = 65536 order by date 
+[2019-08-14 14:29:54]__SQL__:select logdate, actorid, itemid from guildstorelog where guildid = 65536 order by logdate desc limit 50 
+[2019-08-14 14:29:54]__SQL__:call loadguildmembers(65537); 
+[2019-08-14 14:29:54]__SQL__:call loadguildlog(65537) 
+[2019-08-14 14:29:54]__SQL__:select type, date, actorid, content from guildchat where guildid = 65537 order by date 
+[2019-08-14 14:29:54]__SQL__:select logdate, actorid, itemid from guildstorelog where guildid = 65537 order by logdate desc limit 50 
+[2019-08-14 14:29:54]StartEngine, load global data finish!!!!!! 
+[2019-08-14 14:29:55]__SQL__:call loadmaxactoridseries(1) 
+[2019-08-14 14:29:55]********** load max actorid series is:6 ********** 
+[2019-08-14 14:29:55]__SQL__:call loadallactorname(1) 
+[2019-08-14 14:29:55]6 actor name loaded 
+[2019-08-14 14:29:55]__SQL__:call loadfilternames() 
+[2019-08-14 14:29:55]0 filter name loaded 
+[2019-08-14 14:29:55]__SQL__:select oldname, actorid from actoroldname; 
+[2019-08-14 14:29:55]0 actor old name loaded 
+[2019-08-14 14:29:55]load allowword.txt 
+[2019-08-14 14:29:55]actor mar thread start! 
+[2019-08-14 14:29:55]1565764195 before connect. 
+[2019-08-14 14:29:55]start server...................[ok] 
+[2019-08-14 14:29:55]   _  ___  _  __  ___   _          
+[2019-08-14 14:29:55]  |_   |  |_| |_|  |   | | |_/     
+[2019-08-14 14:29:55]   _|  |  | | | \  |   |_| | \_      
+[2019-08-14 14:29:55]                                    
+[2019-08-14 14:29:55]start server...................[ok] 
+[2019-08-14 14:29:55]================================================ 
+[2019-08-14 14:29:55]gameworld start ok,kernal:2.0 
+[2019-08-14 14:29:55]quit:stop server and exit 
+[2019-08-14 14:29:55]================================================ 
+[2019-08-14 14:29:55]AsyncWorker start! 
+[2019-08-14 14:29:55]1565764195 after connect. 
+[2019-08-14 14:29:55]ChatManager::ReloadFilterDb:23089 loaded FilterWords 
+[2019-08-14 14:29:55]loadServerRoute start ... 
+[2019-08-14 14:29:55]__SQL__:call loadserverroute() 
+[2019-08-14 14:29:55]ResetGameRoute 
+[2019-08-14 14:29:55]add route,Host=127.0.0.1,port=9001,serverid=1 
+[2019-08-14 14:29:55]add route,Host=127.0.0.1,port=9002,serverid=2 
+[2019-08-14 14:29:55]add route,Host=127.0.0.1,port=9007,serverid=7 
+[2019-08-14 14:29:55]loadServerRoute suces ... 
+[2019-08-14 14:29:55]serverroute.saveSelfRoute count:1 
+[2019-08-14 14:29:55]serverroute.saveSelfRoute host = 127.0.0.1, port = 9001 
+[2019-08-14 14:29:55]tianti,CheckTianti 
+[2019-08-14 14:29:55]OpenTianti,isNotice:false 
+[2019-08-14 14:29:55]tiantirank,initRankingList 
+[2019-08-14 14:29:55]loadCrossConfig start 
+[2019-08-14 14:29:55]loadCrossConfig is Common server 
+[2019-08-14 14:29:55]startOneGameClient : ip = 127.0.0.1, port = 3101, serverId = 7 
+[2019-08-14 14:29:55]loadCrossConfig finish, serverType : 0 
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] oinfo,[{
+	min=0,
+	hours=20,
+	day=4,
+}] [1]  
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] info,[{
+	min=0,
+	week=6,
+	hours=20,
+}] [1]  
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] hefu_info,[{
+	[1] = {
+		min=30,
+		hours=20,
+		day=3,
+	},
+	[2] = {
+		min=30,
+		hours=20,
+		day=5,
+	},
+	[3] = {
+		min=30,
+		hours=20,
+		day=7,
+	},
+}] [1]  
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] var,[{
+	open_size=0,
+	save_sec=0,
+	open_sec=0,
+}] [1]  
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] open_server_day,[87] [1]  
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] mark2, 
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] mark4, 
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] mark5, 
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] mark6, 
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] mark10, 
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] timer_sec:279005, 
+[2019-08-14 14:29:55][PACKAGE->guildbattle][FUN->setGlobalTimer] var.save_sec:08/17/19, 
+[2019-08-14 14:29:55]init red pack time out call back 
+[2019-08-14 14:29:55]guildboss: On GameServerStart... 
+[2019-08-14 14:29:55]offlinemails.gameStar: begin 
+[2019-08-14 14:29:55]__SQL__:select `actorid`, `head`,`context`,`file0_type`,`file0_id`,`file0_num` from offlinemails; 
+[2019-08-14 14:29:55]__SQL__:delete from offlinemails; 
+[2019-08-14 14:29:55]offlinemails.gameStar: end 
+[2019-08-14 14:29:55]__SQL__:select * from auction where serverid=1 
+[2019-08-14 14:29:55]create image actor 1!!!!! 
+[2019-08-14 14:29:55]create image actor 262145!!!!! 
+[2019-08-14 14:29:55]create image actor 65537!!!!! 
+[2019-08-14 14:29:55]create image actor 196609!!!!! 
+[2019-08-14 14:29:55] 等待采集时间超时  
+[2019-08-14 14:29:55]engineevent.onPrecisionTimer newday now:303488995,last:nil 
+[2019-08-14 14:29:55]resetRankingList on newday 
+[2019-08-14 14:29:55]init actor 1, logout:293056374:10213686 
+[2019-08-14 14:29:55]OnDbRetRole, rolecount:3 
+[2019-08-14 14:29:55]load actor cross LUA var actorid;1 
+[2019-08-14 14:29:55]LoadCSScriptData:actorid=1,buf_size=90 
+[2019-08-14 14:29:55]tianti.refreshDay,actor_id:1 
+[2019-08-14 14:29:55]1 guildbattlefb.initData 
+[2019-08-14 14:29:55]User Init Finish, actorid=1 
+[2019-08-14 14:29:55]init actor 262145, logout:298742486:2154358647 
+[2019-08-14 14:29:55]OnDbRetRole, rolecount:3 
+[2019-08-14 14:29:56]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:29:56]load actor cross LUA var actorid;262145 
+[2019-08-14 14:29:56]LoadCSScriptData:actorid=262145,buf_size=73 
+[2019-08-14 14:29:56]tianti.refreshDay,actor_id:262145 
+[2019-08-14 14:29:56]262145 guildbattlefb.initData 
+[2019-08-14 14:29:56]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:29:56]User Init Finish, actorid=262145 
+[2019-08-14 14:29:56]init actor 65537, logout:292961009:10361152 
+[2019-08-14 14:29:56]OnDbRetRole, rolecount:3 
+[2019-08-14 14:29:56]load actor cross LUA var actorid;65537 
+[2019-08-14 14:29:56]LoadCSScriptData:actorid=65537,buf_size=90 
+[2019-08-14 14:29:56]tianti.refreshDay,actor_id:65537 
+[2019-08-14 14:29:56]65537 guildbattlefb.initData 
+[2019-08-14 14:29:56]User Init Finish, actorid=65537 
+[2019-08-14 14:29:56]init actor 196609, logout:292470426:10010000 
+[2019-08-14 14:29:56]OnDbRetRole, rolecount:1 
+[2019-08-14 14:29:56]load actor cross LUA var actorid;196609 
+[2019-08-14 14:29:56]LoadCSScriptData:actorid=196609,buf_size=39 
+[2019-08-14 14:29:56]tianti.refreshDay,actor_id:196609 
+[2019-08-14 14:29:56]196609 guildbattlefb.initData 
+[2019-08-14 14:29:56]User Init Finish, actorid=196609 
+[2019-08-14 14:29:56]OnDbReturnDispatcher:1 35 
+[2019-08-14 14:29:56]OnDbReturnDispatcher:1 35 
+[2019-08-14 14:29:56]OnDbReturnDispatcher:1 35 
+[2019-08-14 14:29:56]OnDbReturnDispatcher:1 35 
+[2019-08-14 14:30:01]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:01]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:06]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:06]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:11]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:11]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:16]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:16]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:21]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:21]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:26]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:26]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:31]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:31]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:36]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:36]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:41]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:41]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:45]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:46]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:47]openuser:35719696, reset all data 
+[2019-08-14 14:30:47]zgymw password ok,accountID =12 
+[2019-08-14 14:30:47]actor enterGame:0,account:zgymw,loginip:127.0.0.1 
+[2019-08-14 14:30:47]actormgr.enterGame err:0account:zgymw 
+[2019-08-14 14:30:47]update actors set `appid`='',`pfid`='' where `actorid`=262145 and `serverindex`=1; 
+[2019-08-14 14:30:47]actormgr.enterGame aid:262145,account:zgymw,pf:,pfid:,appid: 
+[2019-08-14 14:30:50]actor is image and waiting for login,actorid:262145 
+[2019-08-14 14:30:50]image actor timeout. id:262145, flag:2047 
+[2019-08-14 14:30:50]can't find actor[actorid=262145] in namelist 
+[2019-08-14 14:30:50]actor login actorid=262145, gateuser=35719696 
+[2019-08-14 14:30:50]user Login, actorid=262145,accountid=12,serverid=1 
+[2019-08-14 14:30:50]init actor 262145, logout:298742486:2154358647 
+[2019-08-14 14:30:50]OnDbRetRole, rolecount:3 
+[2019-08-14 14:30:50]load actor cross LUA var actorid;262145 
+[2019-08-14 14:30:50]LoadCSScriptData:actorid=262145,buf_size=73 
+[2019-08-14 14:30:50]tianti.refreshDay,actor_id:262145 
+[2019-08-14 14:30:50]262145 guildbattlefb.initData 
+[2019-08-14 14:30:50]chapter.onBeforeLogin aid:262145, effTime:79109 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 101001 25 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 111001 44 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 121001 32 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 131001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 141001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 151001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 161001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 171001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 102001 25 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 112001 44 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 122001 32 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 132001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 142001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 152001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 162001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 172001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 103001 25 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 113001 44 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 123001 32 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 133001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 143001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 153001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 163001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 173001 47 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 101201 17 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 111201 29 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 121201 21 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 131201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 141201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 151201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 161201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 171201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 102201 17 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 112201 29 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 122201 21 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 132201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 142201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 152201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 162201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 172201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 103201 17 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 113201 29 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 123201 21 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 133201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 143201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 153201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 163201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 1 173201 31 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 0 1 20000 
+[2019-08-14 14:30:50]aid:262145, change soul. v:20, ret:22 
+[2019-08-14 14:30:50]262145 giveAwardBase: ok 0 4 20 
+[2019-08-14 14:30:50]User Init Finish, actorid=262145 
+[2019-08-14 14:30:50]actor 262145, senddata,handle:241892558110846 
+[2019-08-14 14:30:50]rolesystem onEnter roledata:3 0 1 0 365751.000000
+ 
+[2019-08-14 14:30:50]instance:onEnter aid:262145,fbId:0,isLogin:true 
+[2019-08-14 14:30:50]onEnter event fid:0 aid:262145 
+[2019-08-14 14:30:50]on zhuanshengsys new day. aid:262145 
+[2019-08-14 14:30:50]actor vip:10 actorid:262145 
+[2019-08-14 14:30:50]dailyrecharge.sendDailyRewardMail:send success, day:1, index:0, actorId:262145 
+[2019-08-14 14:30:50]dailyrecharge.sendDailyRewardMail:send success, day:1, index:1, actorId:262145 
+[2019-08-14 14:30:50]dailyrecharge.sendDailyRewardMail:send success, day:1, index:2, actorId:262145 
+[2019-08-14 14:30:50]dailyrecharge.sendDailyRewardMail:send success, day:1, index:3, actorId:262145 
+[2019-08-14 14:30:50]dailyrecharge.sendDailyRewardMail:send success, day:1, index:4, actorId:262145 
+[2019-08-14 14:30:50]dailyrecharge.sendDailyRewardMail:send success, day:1, index:5, actorId:262145 
+[2019-08-14 14:30:50]dailyrecharge.sendDailyRewardMail:send success, day:1, index:6, actorId:262145 
+[2019-08-14 14:30:50]dailyrecharge.sendDailyRewardMail:send success, day:1, index:7, actorId:262145 
+[2019-08-14 14:30:50]tianti.refreshDay,actor_id:262145 
+[2019-08-14 14:30:50]dailyfuben on new day..262145 
+[2019-08-14 14:30:50]on dailytask new day. aid:262145 
+[2019-08-14 14:30:50]MailSystem::SendOffLineMail actorId == 0 
+[2019-08-14 14:30:50]262145 worldboss.resetCounts diff_day:55 
+[2019-08-14 14:30:50]262145 crossboss resetCounts diff_day:0 
+[2019-08-14 14:30:50]OnNewDayArrive time: 61000 us 
+[2019-08-14 14:30:50]actor vip:10 actorid:262145 
+[2019-08-14 14:30:50][PACKAGE->guildbattleredpacket][FUN->initGuildData] call,[65537] [1]  
+[2019-08-14 14:30:50][ACTOR->262145] [FUN->guildbattleredpacket.sendRedPacketData] [mark1] [65537] [2]  
+[2019-08-14 14:30:50]262145 initFieldPlayer rnum=0 
+[2019-08-14 14:30:50]LimitTimeTask, reqReceive: LimitTimeConfig not have rec_id(4) config 
+[2019-08-14 14:30:50]peakracesystem.sendAllStatusChange st:0,sto:0,cst:0,csto:0 
+[2019-08-14 14:30:50]Actor::SendDataValid start aid:262145,flag:0 
+[2019-08-14 14:30:50]Actor::SendDataValid send aid:262145,flag:0 
+[2019-08-14 14:30:50]OnDbReturnDispatcher:1 35 
+[2019-08-14 14:30:51]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:51]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:55]262145 reviveFieldPlayer, idx:1 
+[2019-08-14 14:30:55]262145 createFieldPlayer: maxNum=2, sp=1, ep=1 
+[2019-08-14 14:30:55]262145 createFieldPlayerData index 1, pos_x:960, pos_y:1920, actionType:1, isForay:0 
+[2019-08-14 14:30:56]262145 reviveFieldPlayer, idx:2 
+[2019-08-14 14:30:56]262145 createFieldPlayer: maxNum=2, sp=2, ep=2 
+[2019-08-14 14:30:56]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:30:56]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:01]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:01]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:06]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:06]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:09]262145 giveAwardBase: ok 1 163001 1 
+[2019-08-14 14:31:11]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:11]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:12]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:31:15]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:16]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:17]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:31:21]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:21]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:24]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:31:26]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:26]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:31]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:31]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:32]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:31:36]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:36]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:38]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:31:41]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:41]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:43]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:31:46]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:46]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:46]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:31:51]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:51]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:51]262145 giveAwardBase: ok 0 1 316 
+[2019-08-14 14:31:56]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:56]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:31:57]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:32:01]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:01]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:02]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:32:06]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:06]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:08]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:32:10]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:32:10]262145 giveAwardBase: ok 1 131001 1 
+[2019-08-14 14:32:11]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:11]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:16]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:16]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:21]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:21]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:24]262145 giveAwardBase: ok 0 1 316 
+[2019-08-14 14:32:26]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:26]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:30]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:32:31]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:31]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:36]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:36]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:37]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:32:41]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:41]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:42]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:32:46]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:46]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:51]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:51]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:52]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:32:56]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:56]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:32:59]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:33:01]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:01]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:06]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:06]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:07]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:33:11]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:11]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:11]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:33:16]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:16]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:20]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:33:21]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:21]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:26]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:26]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:28]262145 giveAwardBase: ok 0 1 316 
+[2019-08-14 14:33:31]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:31]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:34]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:33:34]262145 giveAwardBase: ok 1 131001 1 
+[2019-08-14 14:33:36]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:36]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:41]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:41]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:46]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:46]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:47]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:33:50]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:33:51]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:51]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:56]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:33:56]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:01]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:01]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:02]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:34:03]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:34:06]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:06]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:09]262145 giveAwardBase: ok 1 142001 1 
+[2019-08-14 14:34:11]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:11]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:15]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:34:16]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:16]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:20]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:34:21]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:21]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:26]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:26]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:26]262145 giveAwardBase: ok 0 1 316 
+[2019-08-14 14:34:30]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:34:31]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:31]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:32]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:34:36]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:36]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:36]262145 giveAwardBase: ok 0 1 316 
+[2019-08-14 14:34:41]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:41]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:44]262145 giveAwardBase: ok 0 1 474 
+[2019-08-14 14:34:44]262145 giveAwardBase: ok 1 161001 1 
+[2019-08-14 14:34:46]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:46]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:51]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:51]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:51]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:34:56]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:34:56]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:00]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:35:01]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:01]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:05]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:35:06]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:06]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:11]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:11]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:16]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:16]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:21]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:21]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:22]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:35:23]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:35:26]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:26]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:31]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:31]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:31]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:35:36]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:36]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:41]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:41]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:46]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:46]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:49]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:35:51]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:51]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:56]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:56]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:35:59]262145 giveAwardBase: ok 0 1 316 
+[2019-08-14 14:36:01]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:01]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:05]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:36:06]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:06]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:11]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:11]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:11]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:36:16]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:16]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:16]262145 giveAwardBase: ok 0 1 316 
+[2019-08-14 14:36:19]262145 giveAwardBase: ok 1 200978 1 
+[2019-08-14 14:36:19]aid:262145, change yb. v:10000, ret:-2140598649 
+[2019-08-14 14:36:19]262145 giveAwardBase: ok 0 2 10000 
+[2019-08-14 14:36:19]262145 giveAwardBase: ok 0 1 300000 
+[2019-08-14 14:36:21]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:21]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:22]262145 giveAwardBase: ok 1 200978 1 
+[2019-08-14 14:36:22]262145 giveAwardBase: ok 1 200167 100 
+[2019-08-14 14:36:24]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:36:26]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:26]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:27]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:36:30]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:31]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:33]262145 giveAwardBase: ok 0 1 316 
+[2019-08-14 14:36:36]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:36]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:40]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:36:41]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:41]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:42]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:36:46]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:46]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:50]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:51]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:56]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:36:56]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:01]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:01]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:06]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:06]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:10]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:37:11]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:11]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:13]262145 giveAwardBase: ok 1 161001 1 
+[2019-08-14 14:37:13]262145 giveAwardBase: ok 1 143001 1 
+[2019-08-14 14:37:16]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:16]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:19]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:37:21]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:21]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:26]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:26]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:28]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:37:30]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:30]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:36]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:36]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:40]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:41]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:42]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:37:42]262145 giveAwardBase: ok 1 172001 1 
+[2019-08-14 14:37:46]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:46]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:47]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:37:51]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:51]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:55]262145 giveAwardBase: ok 1 102001 1 
+[2019-08-14 14:37:55]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:37:56]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:56]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:37:58]instance:onExit, aid:262145,fbId:0, handle:2013266081 
+[2019-08-14 14:37:58]instance:onEnter aid:262145,fbId:50002,isLogin:false 
+[2019-08-14 14:37:58]onEnter event fid:50002 aid:262145 
+[2019-08-14 14:37:58]262145 teamfuben.ExitRoom not gdata.aidRoomId 
+[2019-08-14 14:38:00]Role,onStopMove,aid:262145,roldId:2,dst:(2511,1809), now:(2511,1809) 
+[2019-08-14 14:38:00]Role,onStopMove,aid:262145,roldId:1,dst:(2453,1885), now:(2453,1885) 
+[2019-08-14 14:38:00]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:01]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:01]Role,onStopMove,aid:262145,roldId:2,dst:(2313,1773), now:(2313,1773) 
+[2019-08-14 14:38:03]Role,onStopMove,aid:262145,roldId:0,dst:(1947,1492), now:(1947,1492) 
+[2019-08-14 14:38:03]Role,onStopMove,aid:262145,roldId:2,dst:(2011,1556), now:(2011,1556) 
+[2019-08-14 14:38:03]Role,onStopMove,aid:262145,roldId:1,dst:(2011,1556), now:(2011,1556) 
+[2019-08-14 14:38:04]Role,onStopMove,aid:262145,roldId:0,dst:(2091,1627), now:(2091,1627) 
+[2019-08-14 14:38:04]Role,onStopMove,aid:262145,roldId:1,dst:(2016,1553), now:(2016,1553) 
+[2019-08-14 14:38:04]Role,onStopMove,aid:262145,roldId:1,dst:(2027,1563), now:(2027,1563) 
+[2019-08-14 14:38:04]Role,onStopMove,aid:262145,roldId:2,dst:(2027,1563), now:(2027,1563) 
+[2019-08-14 14:38:04]262145 giveAwardBase: ok 1 122001 1 
+[2019-08-14 14:38:06]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:06]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:06]262145 giveAwardBase: ok 0 1 2000 
+[2019-08-14 14:38:06]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [make1] [4] [0] [0] [4]  
+[2019-08-14 14:38:10][PACKAGE->guildtask][FUN->updateTaskValue] mark1,[4] [9] [2]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [make2] [4] [2] [5] [4]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [giveAward] [0] [5] [2] [4]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildcommon.changeContrib] [make1] [5012] [2]  
+[2019-08-14 14:38:10]262145 giveAwardBase: ok 0 5 2 
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [giveAward] [0] [6] [2] [4]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildcommon.changeGuildFund] [make1] [65537] [12] [3]  
+[2019-08-14 14:38:10]262145 giveAwardBase: ok 0 6 2 
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [giveAward] [0] [5] [2] [4]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildcommon.changeContrib] [make1] [5014] [2]  
+[2019-08-14 14:38:10]262145 giveAwardBase: ok 0 5 2 
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [giveAward] [0] [6] [2] [4]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildcommon.changeGuildFund] [make1] [65537] [14] [3]  
+[2019-08-14 14:38:10]262145 giveAwardBase: ok 0 6 2 
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [giveAward] [0] [5] [2] [4]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildcommon.changeContrib] [make1] [5016] [2]  
+[2019-08-14 14:38:10]262145 giveAwardBase: ok 0 5 2 
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [giveAward] [0] [6] [2] [4]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildcommon.changeGuildFund] [make1] [65537] [16] [3]  
+[2019-08-14 14:38:10]262145 giveAwardBase: ok 0 6 2 
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [giveAward] [0] [5] [2] [4]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildcommon.changeContrib] [make1] [5018] [2]  
+[2019-08-14 14:38:10]262145 giveAwardBase: ok 0 5 2 
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [giveAward] [0] [6] [2] [4]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildcommon.changeGuildFund] [make1] [65537] [18] [3]  
+[2019-08-14 14:38:10]262145 giveAwardBase: ok 0 6 2 
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [giveAward] [0] [5] [2] [4]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildcommon.changeContrib] [make1] [5020] [2]  
+[2019-08-14 14:38:10]262145 giveAwardBase: ok 0 5 2 
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildtask.updateTask] [giveAward] [0] [6] [2] [4]  
+[2019-08-14 14:38:10][ACTOR->262145] [FUN->guildcommon.changeGuildFund] [make1] [65537] [20] [3]  
+[2019-08-14 14:38:10]262145 giveAwardBase: ok 0 6 2 
+[2019-08-14 14:38:11]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:11]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:12]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:38:16]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:16]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:16]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:38:18]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:38:20]262145 giveAwardBase: ok 0 1 158 
+[2019-08-14 14:38:21]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:21]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:22]262145 giveAwardBase: ok 1 151001 1 
+[2019-08-14 14:38:22]262145 giveAwardBase: ok 1 152001 1 
+[2019-08-14 14:38:22]262145 giveAwardBase: ok 1 153001 1 
+[2019-08-14 14:38:24]instance:onExit, aid:262145,fbId:50002, handle:2801795235 
+[2019-08-14 14:38:24]instance:onEnter aid:262145,fbId:0,isLogin:false 
+[2019-08-14 14:38:24]onEnter event fid:0 aid:262145 
+[2019-08-14 14:38:24]262145 achievetask.updateAchieveTask, achieveId:1000, taskId:100008, curValue:3, status:0 
+[2019-08-14 14:38:24]262145 initFieldPlayer rnum=2 
+[2019-08-14 14:38:24]262145 createFieldPlayer: maxNum=2, sp=1, ep=2 
+[2019-08-14 14:38:24]262145 createFieldPlayerData index 1, pos_x:960, pos_y:1920, actionType:1, isForay:0 
+[2019-08-14 14:38:24]262145 createFieldPlayerData index 2, pos_x:960, pos_y:1920, actionType:1, isForay:0 
+[2019-08-14 14:38:26]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:26]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:27]instance init fid:3 handle:83886240 
+[2019-08-14 14:38:27]262145 chapter.onChallengeBoss x:697,y:1593 
+[2019-08-14 14:38:27]instance:onExit, aid:262145,fbId:0, handle:2013266081 
+[2019-08-14 14:38:27]instance:onEnter aid:262145,fbId:3,isLogin:false 
+[2019-08-14 14:38:27]instance:doAction, type:3,fbId:3,handle:83886240 
+[2019-08-14 14:38:27]instance:onMonsterCreate: monster_id:20003,fbId:3 
+[2019-08-14 14:38:27]onEnter event fid:3 aid:262145 
+[2019-08-14 14:38:27]262145 teamfuben.ExitRoom not gdata.aidRoomId 
+[2019-08-14 14:38:27]actor:262145, handle:250,etype:1, RequestFubenPathLine, (697,1593)=>(1390,972) 
+[2019-08-14 14:38:27]actor:262145, handle:251,etype:1, RequestFubenPathLine, (697,1593)=>(1309,1044) 
+[2019-08-14 14:38:28]actor:262145, handle:929,etype:2, RequestFubenPathLine, (672,1568)=>(1354,999) 
+[2019-08-14 14:38:28]actor:262145, handle:252,etype:1, RequestFubenPathLine, (736,1632)=>(1293,1074) 
+[2019-08-14 14:38:31]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:31]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:31]actor:262145, handle:252,etype:1, RequestFubenPathLine, (795,1062)=>(1202,973) 
+[2019-08-14 14:38:31]entity,onStopMove,type:2,id:34001,dst:(1283,947), now:(915,1006) 
+[2019-08-14 14:38:31]entity,onStopMove,type:2,id:34001,dst:(1271,948), now:(936,1002) 
+[2019-08-14 14:38:31]entity,onStopMove,type:2,id:34001,dst:(1263,948), now:(952,999) 
+[2019-08-14 14:38:31]Role,onStopMove,aid:262145,roldId:1,dst:(1193,945), now:(1193,945) 
+[2019-08-14 14:38:32]entity,onStopMove,type:2,id:20003,dst:(1290,936), now:(1343,933) 
+[2019-08-14 14:38:32]Role,onStopMove,aid:262145,roldId:0,dst:(1282,936), now:(1282,936) 
+[2019-08-14 14:38:32]instance:doAction, type:1,fbId:3,handle:83886240 
+[2019-08-14 14:38:32]instance:win, fbId:3, handle:83886240, destroy_time:303489542, closeTime:30 
+[2019-08-14 14:38:32]chapter.onBossWin aid:262145 
+[2019-08-14 14:38:32]instancesystem.setInsRewards, actor_id:262145 
+[2019-08-14 14:38:32]instance:onEntityDie, entype:2,eid:20003, fbId:3 
+[2019-08-14 14:38:32]Role,onStopMove,aid:262145,roldId:2,dst:(1136,947), now:(1136,947) 
+[2019-08-14 14:38:32]entity,onStopMove,type:2,id:34001,dst:(1233,950), now:(1233,950) 
+[2019-08-14 14:38:35]262145 giveAwardBase: ok 1 200925 1 
+[2019-08-14 14:38:35]262145 giveAwardBase: ok 1 204041 1 
+[2019-08-14 14:38:35]262145 giveAwardBase: ok 1 500006 2 
+[2019-08-14 14:38:35]262145 giveAwardBase: ok 1 500011 100 
+[2019-08-14 14:38:35]262145 giveAwardBase: ok 1 204083 1 
+[2019-08-14 14:38:36]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:36]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 0 1 51943 
+[2019-08-14 14:38:39]aid:262145, change yb. v:2000, ret:-2140596649 
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 0 2 2000 
+[2019-08-14 14:38:39]aid:262145, change yb. v:2000, ret:-2140594649 
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 0 2 2000 
+[2019-08-14 14:38:39]aid:262145, change yb. v:2000, ret:-2140592649 
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 0 2 2000 
+[2019-08-14 14:38:39]aid:262145, change yb. v:2000, ret:-2140590649 
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 0 2 2000 
+[2019-08-14 14:38:39]aid:262145, change yb. v:2000, ret:-2140588649 
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 0 2 2000 
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 1 151001 1 
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 1 152001 1 
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 1 153001 1 
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 1 171001 1 
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 1 172001 1 
+[2019-08-14 14:38:39]262145 giveAwardBase: ok 1 173001 1 
+[2019-08-14 14:38:39]onReqInsReward, actor_id:262145 
+[2019-08-14 14:38:39]instance:onExit, aid:262145,fbId:3, handle:83886240 
+[2019-08-14 14:38:39]instance:onEnter aid:262145,fbId:0,isLogin:false 
+[2019-08-14 14:38:39]onEnter event fid:0 aid:262145 
+[2019-08-14 14:38:39]262145 achievetask.updateAchieveTask, achieveId:1000, taskId:100008, curValue:4, status:1 
+[2019-08-14 14:38:39]262145 initFieldPlayer rnum=0 
+[2019-08-14 14:38:40]instance:release, fbId:3, handle:83886240 
+[2019-08-14 14:38:40]releaseInstance fb:83886240 
+[2019-08-14 14:38:40]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:41]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:42]262145 giveAwardBase: ok 1 111001 1 
+[2019-08-14 14:38:43]262145 reviveFieldPlayer, idx:2 
+[2019-08-14 14:38:43]262145 createFieldPlayer: maxNum=2, sp=2, ep=2 
+[2019-08-14 14:38:43]262145 createFieldPlayerData index 2, pos_x:1216, pos_y:832, actionType:1, isForay:0 
+[2019-08-14 14:38:44]262145 giveAwardBase: ok 1 173001 1 
+[2019-08-14 14:38:45]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:46]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:46]262145 reviveFieldPlayer, idx:1 
+[2019-08-14 14:38:46]262145 createFieldPlayer: maxNum=2, sp=1, ep=1 
+[2019-08-14 14:38:47]aid:262145, change yb. v:288800, ret:-2140299849 
+[2019-08-14 14:38:47]262145 giveAwardBase: ok 0 2 288800 
+[2019-08-14 14:38:47]262145 giveAwardBase: ok 1 204064 5 
+[2019-08-14 14:38:47]262145 giveAwardBase: ok 1 200015 20000 
+[2019-08-14 14:38:47]262145 giveAwardBase: ok 0 1 320 
+[2019-08-14 14:38:47]262145 giveAwardBase: ok 1 163001 1 
+[2019-08-14 14:38:48]aid:262145, change yb. v:288800, ret:-2140011049 
+[2019-08-14 14:38:48]262145 giveAwardBase: ok 0 2 288800 
+[2019-08-14 14:38:48]262145 giveAwardBase: ok 1 204065 1 
+[2019-08-14 14:38:48]262145 giveAwardBase: ok 1 200015 20000 
+[2019-08-14 14:38:48]262145 giveAwardBase: ok 1 200951 1 
+[2019-08-14 14:38:48]262145 giveAwardBase: ok 1 200301 100 
+[2019-08-14 14:38:48]262145 giveAwardBase: ok 1 200015 30000 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200997 1 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 204071 1 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200015 40000 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200973 1 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200326 1 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200015 50000 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 204029 1 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200301 300 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200208 50000 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 990001 1 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 204105 1 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200951 1 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200208 80000 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 993001 1 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200927 1 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200301 600 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 200208 120000 
+[2019-08-14 14:38:49]262145 giveAwardBase: ok 1 204167 1 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 200928 1 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 200301 1000 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 200208 160000 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 204166 1 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 204106 1 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 200301 120000 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 200208 200000 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 990002 1 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 204077 1 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 200301 150000 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 200208 250000 
+[2019-08-14 14:38:50]262145 giveAwardBase: ok 1 990003 1 
+[2019-08-14 14:38:51]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:51]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:51]262145 giveAwardBase: ok 1 143001 1 
+[2019-08-14 14:38:51]262145 giveAwardBase: ok 1 151001 1 
+[2019-08-14 14:38:55]262145 giveAwardBase: ok 0 1 2000 
+[2019-08-14 14:38:55]262145 giveAwardBase: ok 1 141001 1 
+[2019-08-14 14:38:56]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:56]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:38:56]262145 achievetask.updateAchieveTask, achieveId:1000, taskId:100009, curValue:1, status:1 
+[2019-08-14 14:39:01]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:01]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:04]262145 giveAwardBase: ok 0 1 160 
+[2019-08-14 14:39:04]262145 giveAwardBase: ok 1 141001 1 
+[2019-08-14 14:39:06]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:06]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:10]262145 giveAwardBase: ok 1 172001 1 
+[2019-08-14 14:39:10]262145 giveAwardBase: ok 1 113001 1 
+[2019-08-14 14:39:11]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:11]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:14]262145 giveAwardBase: ok 1 151001 1 
+[2019-08-14 14:39:14]262145 giveAwardBase: ok 0 1 160 
+[2019-08-14 14:39:16]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:16]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:16]262145 giveAwardBase: ok 1 111001 1 
+[2019-08-14 14:39:19]262145 giveAwardBase: ok 0 1 160 
+[2019-08-14 14:39:20]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:21]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:26]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:26]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:29]262145 giveAwardBase: ok 0 1 160 
+[2019-08-14 14:39:31]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:31]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:36]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:36]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:39]262145 giveAwardBase: ok 1 153001 1 
+[2019-08-14 14:39:39]262145 giveAwardBase: ok 0 1 160 
+[2019-08-14 14:39:39]262145 giveAwardBase: ok 1 142001 1 
+[2019-08-14 14:39:41]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:41]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:44]262145 giveAwardBase: ok 0 1 160 
+[2019-08-14 14:39:44]262145 giveAwardBase: ok 1 153001 1 
+[2019-08-14 14:39:45]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:46]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:51]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:51]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:52]262145 giveAwardBase: ok 0 1 480 
+[2019-08-14 14:39:52]262145 giveAwardBase: ok 1 123001 1 
+[2019-08-14 14:39:52]262145 giveAwardBase: ok 1 162001 1 
+[2019-08-14 14:39:53]262145 giveAwardBase: ok 1 200137 1 
+[2019-08-14 14:39:53]262145 giveAwardBase: ok 0 1 2000000 
+[2019-08-14 14:39:53]262145 giveAwardBase: ok 1 200158 1 
+[2019-08-14 14:39:53]262145 giveAwardBase: ok 1 200159 1 
+[2019-08-14 14:39:53]262145 giveAwardBase: ok 1 201003 1 
+[2019-08-14 14:39:53]262145 giveAwardBase: ok 1 260048 1 
+[2019-08-14 14:39:56]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:56]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:39:56]image actor timeout. id:1, flag:2047 
+[2019-08-14 14:39:56]can't find actor[actorid=1] in namelist 
+[2019-08-14 14:39:56]image actor timeout. id:65537, flag:2047 
+[2019-08-14 14:39:56]can't find actor[actorid=65537] in namelist 
+[2019-08-14 14:39:56]image actor timeout. id:196609, flag:2047 
+[2019-08-14 14:39:56]can't find actor[actorid=196609] in namelist 
+[2019-08-14 14:39:57]262145 giveAwardBase: ok 1 152001 1 
+[2019-08-14 14:39:57]262145 giveAwardBase: ok 1 113001 1 
+[2019-08-14 14:40:01]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:01]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200165 1 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200003 30 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200137 1 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200004 30 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 201008 1 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200165 10 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200004 100 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 0 1 3000000 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 201007 2 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200165 5 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200004 50 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 0 1 2000000 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 201007 1 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200165 5 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200004 40 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 0 1 1500000 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 201007 1 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200165 5 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200004 30 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 0 1 1250000 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 201006 1 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200003 60 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200004 20 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 0 1 1000000 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 201006 1 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200003 60 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200004 10 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 0 1 750000 
+[2019-08-14 14:40:04]aid:262145, change yb. v:50000, ret:-2139961049 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 0 2 50000 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200003 20 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200137 1 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 200318 10 
+[2019-08-14 14:40:04]aid:262145, change yb. v:60000, ret:-2139901049 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 0 2 60000 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 910004 1 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 910018 1 
+[2019-08-14 14:40:04]262145 giveAwardBase: ok 1 910028 1 
+[2019-08-14 14:40:05]262145 giveAwardBase: ok 1 121001 1 
+[2019-08-14 14:40:05]262145 giveAwardBase: ok 0 1 160 
+[2019-08-14 14:40:06]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:06]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:11]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:11]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:11]262145 giveAwardBase: ok 0 1 320 
+[2019-08-14 14:40:16]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:16]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:20]262145 giveAwardBase: ok 0 1 640 
+[2019-08-14 14:40:20]262145 giveAwardBase: ok 1 153001 1 
+[2019-08-14 14:40:20]262145 giveAwardBase: ok 1 162001 1 
+[2019-08-14 14:40:20]262145 giveAwardBase: ok 1 142001 1 
+[2019-08-14 14:40:20]262145 giveAwardBase: ok 1 161001 1 
+[2019-08-14 14:40:21]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:21]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:25]user closed.actorid=262145,accountId=12,ptr=35719696 
+[2019-08-14 14:40:25]post actor logout msg:actorid=262145, ptr=35719696,reason=GW_CLOSE 
+[2019-08-14 14:40:25]clear ActorList idx:1.1951080294723e-309 
+[2019-08-14 14:40:25]262145 teamfuben.ExitRoom not gdata.aidRoomId 
+[2019-08-14 14:40:25]Actor::SendDataValid start aid:262145,flag:1 
+[2019-08-14 14:40:25]Actor::SendDataValid send aid:262145,flag:1 
+[2019-08-14 14:40:25][涓浗婧愮爜缃慮Logout, actorID=262145, account=12, reason=GW_CLOS, notic=no notice, gate=0 
+[2019-08-14 14:40:26]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:26]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:31]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:31]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:36]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:36]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:41]connect fail! logger server  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:41]connect fail! gameworld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:40:43]data server server disconnect! 
+[2019-08-14 14:40:43]data server client socket error! 10054 远程主机强迫关闭了一个现有的连接。

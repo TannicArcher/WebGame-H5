@@ -1,0 +1,85 @@
+﻿-- BI相关函数
+
+BiFunc = {}
+
+BiFubenName = {
+	[4] = "li_lian",
+	[8] = "shang_jin",
+	[11] = "zhu_xian",
+	-- [12] = "shen_hai", -- 深海副本特殊处理
+	[58] = "xin_mo",
+	[60] = "mo_jie", -- 塔防副本
+	-- [61] = "xishui",
+	[63] = "chong_wu",
+	[67] = "lgf1",
+	[68] = "lgf2",
+}
+
+-- 新的BI需求用到
+BiFbLog = {
+	[4] = { "lilian", true, false }, -- 副本名称，是否进入时记录，是否记录层数
+	[8] = { "shangjin", true, false }, 
+	-- [11] = { "zhuxian", true, false }, -- 诛仙阵特殊处理
+	-- [12] = { "shenhai", true, false }, -- 深海副本特殊处理
+	[58] = { "xinmo", true, false }, 
+	[60] = { "mojie", true, false }, 
+	[63] = { "chongwu", true, false }, 
+	[64] = { "tianmo", true, false }, 
+	[65] = { "huantian", false, true },  -- 幻天秘境退出的时候记录
+	[66] = { "xuantian", true, false }, 
+}
+
+
+-- 副本统计
+BiFunc.LogFubenEnter = function(sysarg, logname, extra)
+	System.logCounter(LActor.getActorId(sysarg), LActor.getAccountName(sysarg), tostring(LActor.getLevel(sysarg))
+				, "fuben", tostring(LActor.getIntProperty(sysarg, P_FIGHT_VALUE)), extra, logname, "", "", "", "", lfBI)
+end
+
+-- 退出副本统计
+BiFunc.LogFubenExit = function(sysarg, logname, extra)
+	System.logCounter(LActor.getActorId(sysarg), LActor.getAccountName(sysarg), tostring(LActor.getLevel(sysarg))
+				, "fuben_exit", tostring(LActor.getIntProperty(sysarg, P_FIGHT_VALUE)), extra, logname, "", "", "", "", lfBI)
+end
+
+
+-- 副本统计,新的BI需求
+BiFunc.LogFuben = function(sysarg, logname, phylum, genus, extra)
+	if genus == nil then genus = "" end
+	if extra == nil then extra = "" end
+
+	System.logCounter(LActor.getActorId(sysarg), LActor.getAccountName(sysarg), tostring(LActor.getLevel(sysarg))
+				, "fuben", "", extra, logname, phylum, "", "", genus, lfBI)
+end
+
+
+-- 记录仙灵封印活动日志
+-- gid : 仙宗号
+-- xlnum : 仙灵号
+-- kill_t : 打败仙灵时间(minitime)，没打败就用0
+BiFunc.LogFengYin = function(gid, xlnum, kill_t)
+	--[[ -- 屏蔽
+	local year, month, day, hour, minute, sec = System.timeDecode(kill_t)
+	local tmStr = string.format("%d-%d-%d %d:%d:%d", year, month, day, hour, minute, sec)
+	System.logCounter(0, "", "", "campaign", "", tmStr, "feng_yin", tostring(gid), "", "", "", lfBI)
+	]]
+end
+
+-- 记录玩家参与蟠桃盛宴活动
+BiFunc.LogEnterPanTao = function(sysarg)
+	System.logCounter(LActor.getActorId(sysarg), LActor.getAccountName(sysarg), tostring(LActor.getLevel(sysarg))
+				, "daily_act", "", "", "pantao", "", "", "", "", lfBI)
+end
+
+-- 记录玩家参与仙灵封印活动
+BiFunc.LogEnterFengYin = function(sysarg)
+	System.logCounter(LActor.getActorId(sysarg), LActor.getAccountName(sysarg), tostring(LActor.getLevel(sysarg))
+				, "daily_act", "", "", "xianling", "", "", "", "", lfBI)
+end
+
+--[[
+function testbi(sysarg)
+	BiFunc.LogEnterPanTao(sysarg)
+	BiFunc.LogEnterFengYin(sysarg)
+end
+]]

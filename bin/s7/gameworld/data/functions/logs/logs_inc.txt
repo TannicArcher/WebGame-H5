@@ -1,0 +1,2 @@
+﻿--#include "data/functions/logs/tclogfunc.txt" once
+--#include "data/functions/logs/tlogfunc.txt" once

@@ -1,0 +1,10 @@
+﻿CenterServer = 
+{
+	--服务器参数配置
+	Server = 
+		{ 
+			BindAddress = "0.0.0.0", 
+			Port = 8101 ,
+			ServiceName="CenterServer"
+		},
+}

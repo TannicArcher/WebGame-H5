@@ -1,0 +1,89 @@
+﻿--c++用到的配置
+--lang = nil --置空逻辑脚本中强制导入的lang变量，否则将导致无法读取tipmsg
+--#include "language/langcode.txt" once
+--新写的语言包
+--#include "config/language/lang.config" once
+--#include "config/globalconfig.txt" once
+----#include "config/vocation/vocationconfig.txt" once
+----#include "config/property/levelupexp.txt" once
+----#include "config/property/skillmonsterexp.txt"  once
+----#include "config/property/actornamecolor.txt" once
+----#include "config/item/suitconfig.txt" once
+----#include "config/scenenpcdynprop/dynpropconfig.txt" once
+----#include "config/property/renownlimitlevels.txt" once
+
+----#include "config/vip/vip.txt" once
+----#include "data/config/item/hpmpstore.txt" once
+
+
+--新写的配置
+
+--#include "config/instance/scene.config" once
+--#include "config/monster/monsters.config" once
+--#include "config/monster/chaptermonster.config" once
+for k, v in pairs( ChapterMonstersConfig or {} ) do
+    MonstersConfig[k] = v
+end
+ChapterMonstersConfig = nil
+--#include "config/actor/role.config" once
+--#include "config/instance/instance.config" once
+--#include "config/item/item.config" once
+--#include "config/item/itemdesc.config" once
+ItemConfigDefault = {
+	level = 1,
+	zsLevel = 0,
+	__index = function(table, key) return ItemConfigDefault[key] end
+}
+for _,Item in pairs(ItemConfig) do
+	local dcfg = ItemDescConfig[Item.descIndex]
+	if dcfg then
+		Item.type = dcfg.type
+		Item.subType = dcfg.subType
+		Item.job = dcfg.job
+		Item.quality = dcfg.quality
+	end
+	setmetatable(Item, ItemConfigDefault)
+end
+ItemDescConfig = nil
+--#include "config/item/itemcompose.config" once
+--#include "config/item/equip.config" once
+--#include "config/skill/skills.config" once
+--#include "config/skill/skillsdesc.config" once
+for k,v in pairs( SkillsConfig or {} ) do
+	local dcfg = SkillsDescConfig[v.desc]
+	if dcfg then
+		v.cd = dcfg.cd
+		v.castRange = dcfg.castRange
+		v.herdMonRate = dcfg.herdMonRate
+		v.herdBossRate = dcfg.herdBossRate
+		v.herdPlayerRate = dcfg.herdPlayerRate
+	end
+end
+SkillsDescConfig = nil
+--#include "config/skill/effect.config" once
+--#include "config/skill/imbaskillrevise.config" once
+--#include "config/skill/gwskillrevise.config" once
+--#include "config/ai/aiconfig.config" once
+----#include "config/item/smelt.config" once
+
+----#include "config/skill/skillsbreak.config" once
+
+--#include "config/legend/legendlevelup.config" once
+--#include "config/legend/legendcompose.config" once
+--#include "config/legend/legendattrrate.config" once
+
+--#include "config/attr/attrpower.config" once
+--#include "config/bag/base.config" once
+--#include "config/bag/expand.config" once
+--#include "config/bag/vipgrid.config" once
+
+--#include "config/skill/skillpower.config" once
+--#include "config/guild/guild.config" once
+--#include "config/guild/guildlevel.config" once
+--#include "config/guild/guildtask.config" once
+--#include "config/guild/guilddonate.config" once
+--#include "config/guild/guildcommonskill.config" once
+--#include "config/guild/guildstore.config" once
+--#include "config/guild/guildstorelevel.config" once
+--#include "config/neigong/neigongbase.config" once
+--#include "config/prestige/prestigebase.config" once

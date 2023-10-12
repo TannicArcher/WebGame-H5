@@ -1,0 +1,411 @@
+--lua script
+--#include "..\language\LangCode.txt"
+Summon =
+{
+SummonUpExp = 
+{
+	--name为任务的名字，具体名字在语言包里包含如：诛仙阵。
+	--minLevel是进入副本的最低等级要求。
+	--type类型 1：任务 2：打开窗口 3:特殊需求当背包有某物品时打开某界面否则显示任务
+	--entityName是超链接名，具体名字在语言包里包含如：诛仙阵 张天师
+	--value如果是任务为场景名 否则为窗口编号
+	--starLevel评价
+	
+	{
+		name= Lang.zhaohuanxuaner.z3 ,  --精彩活动 
+		des = Lang.zhaohuanxuaner.des0301,
+		minLevel = 25,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到” 
+		value= Lang.zhaohuanxuaner.func1,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=5,
+	},	--精彩活动
+
+	{
+		name= Lang.FubenName.fname0009,  --诛仙阵 
+		des = Lang.zhaohuanxuaner.des0001,
+		minLevel = 26,
+		type = 1,                         --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n63,   --诛仙阵 
+		value= Lang.SceneName.s11,         --地图id 
+		starLevel=5,
+	},	--诛仙阵
+
+	{
+		name= Lang.FubenName.fname0060,  --魔界入口 
+		des = Lang.zhaohuanxuaner.des0005,
+		minLevel = 42,
+		type = 1,                         --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n83,   --魔界入口 
+		value= Lang.SceneName.s11,         --地图id 
+		starLevel=5,
+	},	--魔界入口
+
+	{
+		name= Lang.FubenName.fname0085,  --炼狱幻界 
+		des = Lang.zhaohuanxuaner.des0008,
+		minLevel = 65,
+		type = 1,                         --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n113,   --魔界入口 
+		value= Lang.SceneName.s11,         --地图id 
+		starLevel=5,
+	},	--炼狱幻界
+	
+	{
+		name= Lang.Quest.n8001 ,  --斩妖除魔
+		des = Lang.zhaohuanxuaner.des0101,
+		minLevel = 25,
+		type = 3,                          --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n26,   --张天师 
+		value= Lang.SceneName.s11,         --地图id
+		entityName2 = Lang.zhaohuanxuaner.z1,   --
+		value2 = 123;
+		starLevel=5,
+		goodId = 18220;
+	},	--斩妖除魔
+
+	{
+		name= Lang.zhaohuanxuaner.z10 ,  --每周跑环
+		des = Lang.zhaohuanxuaner.des0102,
+		minLevel = 31,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.Quest.n8568,   --跑环任务 
+		value= 68,         		--地图id
+		starLevel=5,
+	},	--每周跑环
+	
+	{
+		name= Lang.zhaohuanxuaner.z11 ,  --洞府
+		des = Lang.zhaohuanxuaner.des0201,
+		minLevel = 44,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --跑环任务 
+		value= 108,         		--地图id
+		starLevel=5,
+	},	--洞府
+
+	{
+		name= Lang.FubenName.fname0065,  --幻天秘境 
+		des = Lang.zhaohuanxuaner.des0002,
+		minLevel = 31,
+		type = 1,                         --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n92,   --幻天秘境 
+		value= Lang.SceneName.s11,         --地图id 
+		starLevel=4,
+	},	--幻天秘境
+
+	{
+		name= Lang.FubenName.fname0058,  --心魔幻境
+		des = Lang.zhaohuanxuaner.des0004,
+		minLevel = 38,
+		type = 1,                         --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n76,   --心魔幻境
+		value= Lang.SceneName.s11,         --地图id 
+		starLevel=4,
+	},	--心魔幻境
+
+	{
+		name= Lang.FubenName.fname0064,  --天魔塔
+		des = Lang.zhaohuanxuaner.des0007,
+		minLevel = 55,
+		type = 1,                         --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n89,   --天魔塔
+		value= Lang.SceneName.s11,         --地图id 
+		starLevel=4,
+	},	--天魔塔
+
+	{
+		name= Lang.zhaohuanxuaner.z9 ,  --护送仙女 
+		des = Lang.zhaohuanxuaner.des0104,
+		minLevel = 26,
+		type = 1,                          --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n84,   --潇月 
+		value= Lang.SceneName.s11,         --地图id
+		starLevel=4,
+	},	--护送仙女
+
+	{
+		name= Lang.zhaohuanxuaner.z12 ,  --欢乐斗
+		des = Lang.zhaohuanxuaner.des0202,
+		minLevel = 31,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --欢乐斗
+		value= 52,         		--地图id
+		starLevel=4,
+	},	--欢乐斗
+
+	{
+		name= Lang.FubenName.fname0010,  --深海之恋 
+		des = Lang.zhaohuanxuaner.des0003,
+		minLevel = 34,
+		type = 1,                         --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n62,   --深海之恋 
+		value= Lang.SceneName.s11,         --地图id 
+		starLevel=3,
+	},	--深海之恋
+
+	{
+		name= Lang.FubenName.fname0066,  --玄天封印
+		des = Lang.zhaohuanxuaner.des0006,
+		minLevel = 44,
+		type = 1,                         --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n93,   --玄天封印 
+		value= Lang.SceneName.s11,         --地图id 
+		starLevel=3,
+	},	--玄天封印
+
+	{
+		name= Lang.Quest.n8191 ,  --仙踪任务 
+		des = Lang.zhaohuanxuaner.des0103,
+		minLevel = 25,
+		type = 1,                          --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n19,   --仙踪管理员 
+		value= Lang.SceneName.s11,         --地图id
+		starLevel=3,
+	},	--仙踪任务
+
+},
+
+  SummonAddActive =
+{
+	{
+		name= Lang.zhaohuanxuaner.z14 ,  --神宠培养
+		des = Lang.zhaohuanxuaner.des1007,
+		minLevel = 7,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 49,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=5,
+	},	--神宠培养
+
+	{
+		name= Lang.zhaohuanxuaner.z4 ,  --装备打造
+		des = Lang.zhaohuanxuaner.des1001,
+		minLevel = 24,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 12,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=5,
+	},	--装备打造
+
+	{
+		name= Lang.zhaohuanxuaner.z16,  --翅膀
+		des = Lang.zhaohuanxuaner.des1009,
+		minLevel = 29,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 47,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=5,
+	},	--翅膀
+
+	{
+		name= Lang.zhaohuanxuaner.z18,  --神器
+		des = Lang.zhaohuanxuaner.des1011,
+		minLevel = 55,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 116,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=5,
+	},	--神器
+
+	{
+		name= Lang.zhaohuanxuaner.z19 ,  --百变时装
+		des = Lang.zhaohuanxuaner.des1012,
+		minLevel = 40,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 124,  --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=4,
+	},	--百变时装
+
+	{
+		name= Lang.zhaohuanxuaner.z13 ,  --技能升级
+		des = Lang.zhaohuanxuaner.des1006,
+		minLevel = 1,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 2,  --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=4,
+	},	--技能升级
+
+	{
+		name= Lang.zhaohuanxuaner.z7 ,  --渡劫飞升
+		des = Lang.zhaohuanxuaner.des1004,
+		minLevel = 22,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 37,  --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=4,
+	},	--渡劫飞升
+
+	{
+		name= Lang.zhaohuanxuaner.z8 ,  --灵根参悟
+		des = Lang.zhaohuanxuaner.des1005,
+		minLevel = 28,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 34,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=4,
+	},	--灵根参悟
+
+	{
+		name= Lang.zhaohuanxuaner.z17,  --仙侣情缘
+		des = Lang.zhaohuanxuaner.des1010,
+		minLevel = 41,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 84,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=4,
+	},	--仙侣情缘
+
+	{
+		name= Lang.zhaohuanxuaner.z6 ,  --法宝
+		des = Lang.zhaohuanxuaner.des1003,
+		minLevel = 43,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 7,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=4,
+	},	--法宝提升
+
+	{
+		name= Lang.zhaohuanxuaner.z5 ,  --坐骑
+		des = Lang.zhaohuanxuaner.des1002,
+		minLevel = 17,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 8,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=3,
+	},	--坐骑升级
+
+	{
+		name= Lang.zhaohuanxuaner.z15 ,  --仙踪神兽
+		des = Lang.zhaohuanxuaner.des1008,
+		minLevel = 25,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= Lang.zhaohuanxuaner.func3,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=3,
+	},	--仙踪神兽
+
+},
+
+  SummonAddGold =
+{
+	{
+		name= Lang.zhaohuanxuaner.z3 ,  --精彩活动
+		des = Lang.zhaohuanxuaner.des2032,
+		minLevel = 25,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= Lang.zhaohuanxuaner.func1,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=5,
+	},	--精彩活动
+
+	{
+		name= Lang.FubenName.fname0006 ,  --赏金副本
+		des = Lang.zhaohuanxuaner.des2001,
+		minLevel = 30,
+		type = 1,                          --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n51,   --仙踪管理员
+		value= Lang.SceneName.s11,         --地图id
+		starLevel=5,
+	},	--赏金副本
+
+	{
+		name= Lang.zhaohuanxuaner.z9 ,  --护送仙女 
+		des = Lang.zhaohuanxuaner.des2012,
+		minLevel = 26,
+		type = 1,                          --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n84,   --潇月 
+		value= Lang.SceneName.s11,         --地图id
+		starLevel=5,
+	},	--护送仙女
+
+	{
+		name= Lang.zhaohuanxuaner.z20,  --招财进宝
+		des = Lang.zhaohuanxuaner.des2021,
+		minLevel = 25,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 23,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=5,
+	},	--招财进宝
+
+	{
+		name= Lang.zhaohuanxuaner.z22,  --BOSS挑战
+		des = Lang.zhaohuanxuaner.des2031,
+		minLevel = 20,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= Lang.zhaohuanxuaner.func2,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=5,
+	},	--BOSS挑战
+	
+	{
+		name= Lang.Quest.n8359 ,  --银两任务
+		des = Lang.zhaohuanxuaner.des2011,
+		minLevel = 25,
+		type = 1,                          --1：任务 2：打开窗口
+		entityName= Lang.EntityName.n23,   --仙踪管理员
+		value= Lang.SceneName.s11,         --地图id
+		starLevel=4,
+	},	--银两任务
+
+	{
+		name= Lang.zhaohuanxuaner.z21,  --寄售交易
+		des = Lang.zhaohuanxuaner.des2022,
+		minLevel = 1,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 15,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=4,
+	},	--寄售交易
+
+},
+
+SummonChallenge =
+{
+	{
+		name= Lang.zhaohuanxuaner.z3 ,  --精彩活动
+		des = Lang.zhaohuanxuaner.des3021,
+		minLevel = 25,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= Lang.zhaohuanxuaner.func1,   --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=5,
+	},	--精彩活动
+
+	{
+		name= Lang.zhaohuanxuaner.z23,  --斗法台
+		des = Lang.zhaohuanxuaner.des3011,
+		minLevel = 31,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 46,  --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=5,
+	},	--斗法台
+
+	{
+		name= Lang.zhaohuanxuaner.z24,  --仙道会
+		des = Lang.zhaohuanxuaner.des3012,
+		minLevel = 40,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 77,  --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=5,
+	},	--仙道会
+
+	{
+		name= Lang.zhaohuanxuaner.z7 ,  --渡劫飞升
+		des = Lang.zhaohuanxuaner.des3001,
+		minLevel = 22,
+		type = 2,                          --1：任务 2：打开窗口
+		entityName= Lang.zhaohuanxuaner.z1,   --这边配置一个语言包“查看和传到”
+		value= 37,  --窗口id 7:法宝 8:坐骑 12:炼器 34:灵根 37:渡劫 -1:未开通 
+		starLevel=4,
+	},	--渡劫飞升
+
+},
+
+}

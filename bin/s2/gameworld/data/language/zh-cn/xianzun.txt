@@ -1,0 +1,126 @@
+﻿ Xianzun =
+ {
+ j1 = "<font color='#fafed0'>1、每日领取<font color='#38ff33'>5</font>绑定元宝<BR>2、每日免费速传<font color='#38ff33'>10</font>次<BR>3、每日招财进宝次数上限为<font color='#38FF33'>3</font>次<BR>4、<font color='#fcff00'>开启元宝进阶坐骑的功能</font><BR>5、开启<font color='#38FF33'>随身商店</font>功能<BR>6、开启<font color='#38FF33'>随身仓库</font>功能<BR>7、每日可完成的日常任务数<font color='#38FF33'>+1</font><BR>8、每日蟠桃采摘数<font color='#38FF33'>+1</font><BR>9、打坐经验加成<font color='#38FF33'>10%</font><BR>10、打坐灵气加成<font color='#38FF33'>10%</font></font>",
+ j2 = "<font color='#fafed0'>1、每日领取<font color='#38FF33'>10</font>绑定元宝<BR>2、每日免费速传<font color='#38FF33'>20</font>次<BR>3、每日招财进宝次数上限为<font color='#38FF33'>5</font>次<BR>4、每日可完成的日常任务数<font color='#38FF33'>+2</font><BR>5、每日蟠桃采摘数<font color='#38FF33'>+2</font><BR>6、打坐经验加成<font color='#38FF33'>20</font>%<BR>7、打坐灵气加成<font color='#38FF33'>20</font>%<BR>8、开启创建帮派功能<BR>9、包含仙尊1的其他功能</font>",
+ j3 = "<font color='#fafed0'>1、每日免费领取<font color='#38FF33'>15</font>绑定元宝<BR>2、<font color='#fcff00'>免费无限速传</font><BR>3、<font color='#fcff00'>开启元宝洗炼坐骑的功能</font><BR>4、<font color='#fcff00'>副本挑战次数上限+1</font><BR>5、<font color='#fcff00'>开启日常任务立即完成功能</font><BR>6、每日招财进宝次数上限为<font color='#38FF33'>7</font>次<BR>7、每日可完成的日常任务数<font color='#38FF33'>+3</font><BR>8、每日蟠桃采摘数<font color='#38FF33'>+3</font><BR>9、打坐经验加成<font color='#38FF33'>30</font>%<BR>10、打坐灵气加成<font color='#38FF33'>30</font>%<BR>11、包含仙尊2级的其他功能</font>",
+ j4 = "<font color='#fafed0'>1、每日免费领取<font color='#38FF33'>20</font>绑定元宝<BR>2、<font color='#fcff00'>开启秘藏一键10次功能</font><BR>3、<font color='#fcff00'>开启一键炼魂功能</font><BR>4、<font color='#fcff00'>开启神器回忆自动选择碎片功能</font><BR>5、每日招财进宝次数上限为<font color='#38FF33'>9</font>次<BR>6、每日可完成的日常任务数<font color='#38FF33'>+4</font><BR>7、每日蟠桃采摘数<font color='#38FF33'>+4</font><BR>8、打坐经验加成<font color='#38FF33'>40</font>%<BR>9、打坐灵气加成<font color='#38FF33'>40</font>%<BR>10、包含仙尊3级的其他功能</font>",
+ j5 = "<font color='#fafed0'>1、每日免费领取<font color='#38FF33'>40</font>绑定元宝<BR>2、<font color='#fcff00'>强化成功率固定+3%</font><BR>3、<font color='#fcff00'>开启批量招财进宝功能</font><BR>4、<font color='#fcff00'>开启法宝炼魂中直接召唤阴阳印的功能</font><BR>5、<font color='#fcff00'>开启装备至尊洗炼功能</font><BR>6、<font color='#fcff00'>开启坐骑一键洗练功能</font><BR>7、每日招财进宝次数上限为<font color='#38FF33'>30</font>次<BR>8、每日可完成的日常任务数<font color='#38FF33'>+5</font><BR>9、每日蟠桃采摘数<font color='#38FF33'>+5</font><BR>10、打坐经验加成<font color='#38FF33'>50</font>%<BR>11、打坐灵气加成<font color='#38FF33'>50</font>%<BR>12、包含仙尊4级的其他功能</font>",			
+ j6 = "<font color='#fafed0'>1、每日免费领取<font color='#38FF33'>50</font>绑定元宝<BR>2、<font color='#fcff00'>开启秘藏一键50次功能</font><BR>3、<font color='#fcff00'>开放元宝进阶50次坐骑的功能</font><BR>4、<font color='#fcff00'>开启神器自动回忆10次功能</font><BR>5、每日招财进宝次数上限为<font color='#38FF33'>40</font>次<BR>6、每日可完成的日常任务数<font color='#38FF33'>+6</font><BR>7、每日蟠桃采摘数<font color='#38FF33'>+6</font><BR>8、打坐经验加成<font color='#38FF33'>60</font>%<BR>9、打坐灵气加成<font color='#38FF33'>60</font>%<BR>10、包含仙尊5级的其他功能</font>",
+ j7 = "<font color='#fafed0'>1、每日招财进宝次数上限为<font color='#38FF33'>50</font>次<BR>2、每日可完成的日常任务数<font color='#38FF33'>+7</font><BR>3、每日蟠桃采摘数<font color='#38FF33'>+7</font><BR>4、打坐经验加成<font color='#38FF33'>70</font>%<BR>5、打坐灵气加成<font color='#38FF33'>70</font>%<BR>6、包含仙尊6级的其他功能</font>",
+ j8 = "<font color='#fafed0'>1、每日招财进宝次数上限为<font color='#38FF33'>60</font>次<BR>2、每日可完成的日常任务数<font color='#38FF33'>+8</font><BR>3、每日蟠桃采摘数<font color='#38FF33'>+8</font><BR>4、打坐经验加成<font color='#38FF33'>80</font>%<BR>5、打坐灵气加成<font color='#38FF33'>80</font>%<BR>6、包含仙尊7级的其他功能</font>",
+ j9 = "<font color='#fafed0'>1、每日招财进宝次数上限为<font color='#38FF33'>70</font>次<BR>2、每日可完成的日常任务数<font color='#38FF33'>+9</font><BR>3、每日蟠桃采摘数<font color='#38FF33'>+9</font><BR>4、打坐经验加成<font color='#38FF33'>90</font>%<BR>5、打坐灵气加成<font color='#38FF33'>90</font>%<BR>6、包含仙尊8级的其他功能</font>",
+ j10 = "<font color='#fafed0'>1、每日招财进宝次数上限为<font color='#38FF33'>100</font>次<BR>2、每日可完成的日常任务数<font color='#38FF33'>+10</font><BR>3、每日蟠桃采摘数<font color='#38FF33'>+10</font><BR>4、打坐经验加成<font color='#38FF33'>100</font>%<BR>5、打坐灵气加成<font color='#38FF33'>100</font>%<BR>6、包含仙尊9级的其他功能</font>",
+ 
+
+cangbaotufb1 = "%s 在挖宝时碰到了幽明魔穴，一番斩妖除魔，神清气爽，获得了大量经验",
+cangbaotufb2 = "%s 在挖宝时遇到了魔狐之穴，浴血奋战之后获得了大量珍宝，真是收获颇丰啊",
+cangbaotusg1 = "您发现了盗宝小妖！",
+cangbaotusg2 = "%s 在挖宝时遇到了天邪妖龙，正在与其浴血奋战！",
+cangbaotusg3 = "%s 在挖宝时遇到了万年树魔，正在与其浴血奋战！",
+cangbaotusg4 = "%s 在挖宝时遇到了琉璃土灵，正在与其浴血奋战！",
+cangbaotudj1 ="%s人品大爆发，在轰轰烈烈的挖宝行动中挖到了碧琉宝珠，真是羡煞旁人！",
+cangbaotudj2 ="%s人品大爆发，在轰轰烈烈的挖宝行动中挖到了时装碎片，真是羡煞旁人！",
+cangbaotudj3 ="您发现了宝贝，赶快拾取吧！",
+cangbaotujy1 ="您在本次挖宝中获得了50000经验！",
+cangbaotujy2 ="您在本次挖宝中获得了100000经验！",
+cangbaotujy3 ="您在本次挖宝中获得了200000经验！",
+caiji1 = "您发现了怪物！",
+caiji2 = "%s人品大爆发，在混沌逐鹿原中发现了 %s，从中获得了战神宝箱，真是大机缘！",
+caiji3 = "触发了小经验机缘，您获得了300000经验！",
+caiji4 = "触发了中经验机缘，您获得了600000经验！",
+caiji5 = "触发了大经验机缘，您获得了900000经验！",
+
+  
+
+ 
+ n1 = "伙伴",
+ info1 = "12级主线任务开启",
+ desc1 = "强力伙伴伴你一路逍遥",
+ 
+ n2 = "坐骑",
+ info2 = "22级主线任务开启",
+ desc2 = "提高移速，旅途不再寂寞",
+
+  n3 = "签到",
+ info3 = "27级主线任务开启",
+ desc3 = "每日签到，领取丰厚奖励",
+
+  n4 = "必杀技",
+ info4 = "29级主线任务开启",
+ desc4 = "超强群攻，清怪练级神技",
+
+  n7 = "武神台",
+ info7 = "37级主线任务开启",
+ desc7 = "论天下英雄，且看武神台上风采",
+ 
+ n5 = "星图",
+ info5 = "38级主线任务开启",
+ desc5 = "夜观星图，知前后，万物皆明",
+
+   n8 = "诛魔殿",
+ info8 = "40级主线任务开启",
+ desc8 = "职业装备，轻松获得",
+
+    n11 = "锻造",
+ info11 = "40级主线任务开启",
+ desc11 = "提升装备，无往不利",
+
+  n10 = "境界",
+ info10 = "41级主线任务开启",
+ desc10 = "以力证道，令牌装备唾手可得",
+
+   n13 = "日常任务",
+ info13 = "48级主线任务开启",
+ desc13 = "完成每日任务，升级快人一步",
+
+      n12 = "好友",
+ info12 = "45级主线任务开启",
+ desc12 = "莫愁前路无知己，天下谁人不识君",
+
+  n6 = "帮派",
+ info6 = "46级主线任务开启",
+ desc6 = "一个篱笆三个桩，一个好汉三个帮",
+
+   n18 = "寻宝",
+ info18 = "47级主线任务开启",
+ desc18 = "琳琅宝藏，助你君临天下",
+
+    n19 = "黑暗神殿",
+ info19 = "角色达到49级开启",
+ desc19 = "黑暗角逐，斩获职业神装",
+
+ n14 = "结婚",
+ info14 = "角色达到50级开启",
+ desc14 = "待我长发及腰，我们浪迹逍遥",
+
+    n21 = "神器",
+ info21 = "角色达到60级开启",
+ desc21 = "手执神兵，横扫天下",
+
+    n22 = "装备精炼",
+ info22 = "角色达到70级开启",
+ desc22 = "神炉精炼，煞气冲天",
+
+  n15 = "精灵",
+ info15 = "角色达到72级开启",
+ desc15 = "玲珑觉醒，灵动笑语",
+
+   n16 = "翅膀神通",
+ info16 = "角色达到75级开启",
+ desc16 = "巅峰属性现世，风暴来袭",
+
+   n17 = "镶嵌",
+ info17 = "85级主线任务开启",
+ desc17 = "五彩宝石，成就巅峰",
+
+    n20 = "转生",
+ info20 = "角色达到100级开启",
+ desc20 = "涅磐重生，不灭传说",
+
+
+
+ 
+ 
+ zhuyi = "<(c0xFFFFFF00)注：使用时装后将会激活对应的图鉴>",
+ hecheng = "【合成说明】<BR>1.只有相同颜色并且在背包中的时装才可以用于时装合成<BR>2.只有永久的时装，才可以用于时装合成。<BR>3.合成后的时装炫彩值为参与合成的时装的炫彩值之和。<BR>4.到达对应炫彩值时，时装会升阶并且带来大量的属性加成，每一点炫彩值也会获得额外的属性加成。"
+}

@@ -1,0 +1,9 @@
+{
+	fbid = 0,
+	type = 0,
+	totalTime = 0,
+	closeTime = 0,
+	remainTime = 0,
+	scenes = {0},
+	templateType = 0,
+},

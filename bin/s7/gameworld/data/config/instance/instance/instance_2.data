@@ -1,0 +1,10 @@
+{
+	fbid = 2,
+	type = 1,
+	totalTime = 300,
+	closeTime = 20,
+	remainTime = 0,
+	scenes = {102},
+	templateType = 1,
+	templateConfig = 1002,
+},

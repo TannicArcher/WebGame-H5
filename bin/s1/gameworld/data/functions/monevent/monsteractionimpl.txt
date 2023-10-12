@@ -1,0 +1,1624 @@
+--怪物行为实现
+--#include "data\config\monster\actions\actioneffect.txt" once
+--   #include "data\config\monster\actions\actions.txt" once
+--#include "data\config\monster\actions\actionbuff.txt" once
+--#include "data\config\ai\aiconfig.txt" once
+--#include "data\functions\globaldefine.txt" once
+
+MonsterActionImpl = {}
+MonsterActionImpl.EventCalls = {}
+MonsterActionFunc = {}		--怪物行为函数
+MonsterActionCondition = {}  --怪物行为条件
+
+--#include "data\functions\monevent\monsteractiontimemsg.txt" once
+local AiConfigs = {}
+for _, conf in ipairs(AiConfig) do
+	AiConfigs[conf.id] = conf
+end
+
+local stateName = {"born", "idle", "battle", "back", "dead", "","",""}
+local getConfig = function(id, param)
+	local ai = AiConfigs[id]	--sample ai=0
+	if ai == nil then return nil end
+	local action_idx = param % 32 + 1
+	local event_idx = math.floor(param / 32) % 256 + 1
+	local state = stateName[math.floor(param / 8192) % 8 + 1]
+
+	if ai[state] == nil then return nil end
+	if ai[state][event_idx] == nil then return nil end
+	if ai[state][event_idx].actions == nil then return nil end
+	return ai[state][event_idx].actions[action_idx]
+end
+--返回0未执行下次重新执行 1 执行完毕 2 下次继续执行（与0区别在于有超时机制)
+MonsterActionImpl.dispatch = function(monster, monId, aiId, param)
+	local item = getConfig(aiId, param)
+	if item == nil then
+		print( "can't find actionconfig: id:"..aiId.." , param: "..param)
+		return 0
+	end
+	if item.type == nil then
+		print( "action type not define. id:"..aiId.." , param: "..param)
+		return 0
+	end
+	local eventCall = MonsterActionImpl.EventCalls[item.type]	--根据类型选择处理函数
+	if eventCall == nil then
+		print( "can't find eventCall:"..item.type )
+		return 0
+	end
+	--local item, err = loadstring(" local args = {"..param.."} return args ")
+
+	--if (item == nil) then
+	--	print(err)
+	--end
+	return eventCall(monster, monId, item)
+end
+
+
+--对白
+--特效
+-- buff
+--移动
+--创建怪物
+--触发脚本
+
+--对白
+MonsterActionImpl.EventCalls[1] = function( monster, monId, item )
+	LActor.monsterSay( monster, item.talk, item.talkType )
+	--print("monster say:"..tostring(item.talk))
+	return 1
+end
+
+--特效
+MonsterActionImpl.EventCalls[2] = function( monster, monId, item )
+	--print( "monster effect" )
+	local players = LuaHelp.getSceneActorList( monster )
+	if players == nil then return end
+	for i=1,#players do
+		LActor.playScrEffectCode( players[i], item.id, item.time )
+	end
+	return 1
+end
+
+-- buff
+MonsterActionImpl.EventCalls[3] = function( monster, monId, item )
+	-- print( "monster add buff" )
+	if item.targetId == nil or item.targetId == 0 then
+		LActor.addBuff( monster, item.buffType, item.groupId, item.value, item.times,  item.interval, item.buffName )
+	else
+		local monsterlist = LuaHelp.getSceneMonsterList(monster)
+		if monsterlist ~= nil then
+			local monsterid = 0
+			for i=1, #monsterlist do
+				monsterid = LActor.getIntProperty(monsterlist[i], P_ID)
+				if item.targetId == -1 or item.targetId == monsterid then
+					LActor.addBuff( monster, item.buffType, item.groupId, item.value, item.times,  item.interval, item.buffName )
+				end
+			end
+		end
+	end
+	return 1
+end
+
+--取消
+MonsterActionImpl.EventCalls[4] = function( monster, monId, item )
+	-- print( "monster del buff" )
+	if item.targetId == nil or item.targetId == 0 then
+		LActor.delBuff( monster, item.buffType, item.groupId )
+	else
+		local monsterlist = LuaHelp.getSceneMonsterList(monster)
+		if monsterlist ~= nil then
+			local monsterid = 0
+			for i=1, #monsterlist do
+				monsterid = LActor.getIntProperty(monsterlist[i], P_ID)
+				if item.targetId == -1 or item.targetId == monsterid then
+					LActor.delBuff( monsterlist[i], item.buffType, item.groupId )
+				end
+			end
+		end
+	end
+	return 1
+end
+
+--移动
+MonsterActionImpl.EventCalls[5] = function( monster, monId, item )
+	--print( "monster move" )
+	--检查当前位置，未到则继续移动
+	local tx, ty = item.posX,item.posY
+	if item.relative then
+		local bx, by = LActor.getMonsterBornPoint(monster)
+		tx = bx + tx
+		ty = by + ty
+	end
+	local cx, cy = LActor.getEntityPosition(monster)
+	if cx == tx and cy == ty then
+		return 1
+	end
+
+	LActor.pathToTarget(monster, tx, ty)
+	--print("monster move to ("..tx..","..ty..")\n")
+	return 2
+end
+
+--召唤怪物(调用的是LActor.createMonster,会有拥有者monster)
+MonsterActionImpl.EventCalls[6] = function( monster, monId, item )
+	--print( "monster create" )
+	local posX = item.posX
+	local posY = item.posY
+	if item.relative then	--相对位置
+		posX = LActor.getIntProperty( monster, P_POS_X ) + posX
+		posY = LActor.getIntProperty( monster, P_POS_Y ) + posY
+	end
+
+	local monPtr = LActor.createMonster( monster, item.mosterId, posX, posY, item.liveTime )
+	if monPtr ~= nil and item.asPartner then	--设置为伙伴
+		LActor.setMonsterPartner( monster, monPtr )
+	end
+	return 1
+end
+
+--触发脚本
+MonsterActionImpl.EventCalls[7] = function( monster, monId, item )
+	--print( "monster event" )
+	local funcName = item.func
+	if funcName == nil then
+		print( "unable find monster action func name, config error" )
+		return
+	end
+	--print( funcName )
+	local func = MonsterActionFunc[funcName]
+	if func == nil then
+		print( "unable find monster action func name:"..funcName )
+		return
+	end
+	func( monster, monId, item )
+	return 1
+end
+
+--同伴说话
+MonsterActionImpl.EventCalls[8] = function( monster, monId, item )
+	--print( "monster partner say" )
+	local partner = LActor.getMonsterPartner( monster )
+	if partner == nil then
+		print( "no monster partner" )
+		return 1
+	end
+	LActor.monsterSay( partner, item.talk, item.talkType )
+	return 1
+end
+
+--设置属性
+MonsterActionImpl.EventCalls[9] = function( monster, monId, item )
+	LActor.setIntProperty( monster, item.id, item.value )
+	--[[
+	if item.id == P_MODELID then -- 如果是外观属性，设置禁止刷新外观buff
+		LActor.addBuff( monster, 79, 0, 1, 20, 1, Lang.Actions.b002 )
+	end
+	]]
+	return 1
+end
+
+--屏幕公告
+MonsterActionImpl.EventCalls[10] = function( monster, monId, item )
+	local msgType = item.msgType
+	if msgType == nil then msgType = 0 end -- 默认是场景广播
+	local tipType = item.tipType
+	if tipType == nil then tipType = ttScreenCenter end -- 默认是屏幕广播
+	if msgType == 0 then
+		local hScene = LActor.getSceneHandle( monster )
+		Fuben.sendMsgToScene( hScene, item.msg, tipType )
+	elseif msgType == 1 then
+		local hFuben = LActor.getFubenHandle( monster )
+		Fuben.sendMsgToFb( hFuben, item.msg, tipType )
+	elseif msgType == 2 then
+		System.broadcastTipmsg( item.msg, tipType )
+	end
+	return 1
+end
+
+--使用技能
+MonsterActionImpl.EventCalls[11] = function( monster, monId, item )
+	local posX, posY, needLearn, level = item.posX, item.posY, item.needLearn, item.level
+	if posX == nil then posX = 0 end
+	if posY == nil then posY = 0 end
+	if needLearn == nil then needLearn = false end
+	if level == nil then level = 0 end
+	LActor.useSkill( monster, item.id, posX, posY, needLearn, level )
+	print("on monster use skill: "..item.id)
+	return 1
+end
+
+--播放动作列表
+MonsterActionImpl.EventCalls[12] = function( monster, monId, item )
+	local items = item.items
+
+	--增加condition判断逻辑
+	if MonsterActionCondition.Judge(monster,item.conditions) == false then
+		return 0;
+	end
+	for i=1, #items do
+		item = items[i]
+		local eventCall = MonsterActionImpl.EventCalls[item.type]
+		eventCall( monster, monId, item )
+	end
+	return 1
+end
+
+--设置属性百份比
+MonsterActionImpl.EventCalls[13] = function( monster, monId, item )
+	local property = LActor.getIntProperty(monster, item.id)
+	local value = (property / 100) * item.value
+	if value == nil or value < 0 then return end
+	property = property + value
+	LActor.setIntProperty( monster, item.id, property )
+	return 1
+end
+
+--删除召唤怪
+MonsterActionImpl.EventCalls[14] = function( monster, monId, item )
+	--local hfb = LActor.getFubenHandle(monster)
+	local hlScene = LActor.getSceneHandle(monster)
+	--Fuben.deleteEntity(hlScene, hfb, item.name)
+	Fuben.clearMonster(hlScene, item.id)
+	return 1
+end
+
+--击杀前置怪物
+MonsterActionImpl.EventCalls[15] = function( monster, monId, item )
+
+	if item == nil or item.preKillMonster == nil then
+		return 1;
+	end
+	local flag = false ;
+	local monsterPtr ;
+	--判断条件
+	for i=1, #item.preKillMonster do
+		monsterPtr = LuaHelp.getSceneMonsterList(monster) ;
+		for j=1, #monsterPtr do
+			local monsterId = Fuben.getMonsterId(monsterPtr[j]);
+			if monsterId == item.preKillMonster[i] then
+				print("preMonster not dead ...!");
+				flag = true ;
+				break ;
+			end
+		end
+
+		if flag == true then
+			break ;
+		end
+	end
+	--不符合条件return
+	if flag ~= true then
+		return 1;
+	end
+	--触发效果
+	monsterPtr = LuaHelp.getSceneMonsterList(monster) ;
+	for i=1, #monsterPtr do
+		for j=1, #item.addTargetMonster do
+			local monsterId = Fuben.getMonsterId(monsterPtr[i]) ;
+			if monsterId == item.addTargetMonster[j] then
+				LActor.addBuff(monsterPtr[i], item.buffType, item.groupId, item.value, item.times, item.interval, item.buffName);
+			end
+		end
+	end
+	return 1
+end
+
+
+--保护罩(随机地点中出现一个罩子,且消失后,有玩家不在罩子内,会给生成者加入buffer)
+MonsterActionImpl.EventCalls[16] = function( monster, monId, item )
+	if item.position == nil then
+		print("function[baohuzhao] position config error!");
+		return 1;
+	end
+
+	local totalCount = #item.position ;
+	local rand = System.getRandomNumber(totalCount) + 1 ;
+	--添加场景特效
+	LActor.addSceneEffect(	monster,
+							item.effectId,
+							item.effectType,
+							item.time,
+							item.delay,
+							item.position[rand].x,
+							item.position[rand].y,
+							false );
+	--print(item.position[rand].x .. "," .. item.position[rand].y );
+	--添加罩子消失后回调
+	LActor.postEntityScriptDelayMsg(monster, item.time, result, 42, item.position[rand].x, item.position[rand].y, item.range, item.addBuffConfigId );
+	print("call MonsterActionFunc[baohuzhao]....");
+end
+
+--怪物range范围内向玩家添加buff
+MonsterActionImpl.EventCalls[17] = function( monster, monId, item )
+	local actor_ptrs = LuaHelp.getSceneActorList(monster);
+	if actor_ptrs == nil or #actor_ptrs < 1 then
+		return 1;
+	end
+	local buffInfo = getActionBuffConfigByIndex(item.addBuffConfigId);
+
+	local limit_x, limit_y = LActor.getEntityPosition(monster)
+	local px = 0 ;
+	local py = 0 ;
+	for i=1 , #actor_ptrs do
+		px , py = LActor.getEntityPosition(actor_ptrs[i])
+		if MonsterActionFunc.isInRange(px, py, limit_x, limit_y, item.range) == true then
+			MonsterActionFunc.addBuffByActionBuffConfig(actor_ptrs[i], buffInfo);
+		end
+	end
+	return 1
+end
+
+--定点添加场景特效
+MonsterActionImpl.EventCalls[18] = function( monster, monId, item )
+	local x , y = LActor.getEntityPosition(monster)
+	LActor.addSceneEffect(	monster,
+							item.effectId,
+							item.effectType,
+							item.time,
+							item.delay,
+							x,
+							y,
+							false );
+	return 1
+end
+
+--召唤怪物(调用的是Fuben.createMonster,不具有拥有者)
+MonsterActionImpl.EventCalls[19] = function( monster, monId, item )
+	local posX = item.posX
+	local posY = item.posY
+	if item.relative then	--相对位置
+		posX = LActor.getIntProperty( monster, P_POS_X ) + posX
+		posY = LActor.getIntProperty( monster, P_POS_Y ) + posY
+	end
+
+	local hScene = LActor.getSceneHandle(monster);
+	if hScene == nil then
+		return 1;
+	end
+	local monPtr = Fuben.createMonster( hScene, item.mosterId, posX, posY, item.liveTime )
+	return 1
+end
+
+--给制定targetId的怪物加入buff
+MonsterActionImpl.EventCalls[20] = function( monster, monId, item)
+	MonsterActionFunc.TargetBuffAction(monster,monId,item,1);
+	return 1
+end
+
+--向指定目标删除buff
+MonsterActionImpl.EventCalls[21] = function( monster, monId, item )
+	MonsterActionFunc.TargetBuffAction(monster,monId,item,0);
+	return 1
+end
+
+--必须与某目标在一定时间内一起死,否则重生
+MonsterActionImpl.EventCalls[22] = function( monster, monId, item )
+	if item.monsterId == nil or item.resurrectTime == nil then
+		print("MonsterActionImpl.EventCalls[22] config Error");
+		return 1;
+	end
+	--若无值设置默认值
+	local liveTime = item.liveTime or 10000 ;
+	local x = 0 ;
+	local y = 0 ;
+	local hlScene = LActor.getSceneHandle(monster);
+	if hlScene == nil then
+		return 1;
+	end
+	local resurrectId = Fuben.getMonsterId(monster);
+	if resurrectId == nil then
+		return 1;
+	end
+	x , y = LActor.getEntityPosition(monster)
+	Fuben.postSceneTimeCall(hlScene, TimerMsg.MonsterResurrectTimer, item.resurrectTime , 1, item.monsterId, resurrectId, x, y, liveTime);
+	return 1
+end
+
+--天火技能(天上掉下火,且掉后生成火墙)
+MonsterActionImpl.EventCalls[23] = function( monster, monId, item )
+	if item.EffectConfigId == nil
+		or item.actionType == nil
+		or item.interval == nil
+		or item.beforeEffectConfigId == nil then
+		return 1;
+	end
+	MonsterActionFunc.postMonsterTimeCall(monster,2, item.interval, -1, item.actionType, item.EffectConfigId, item.EffectRange, item.beforeEffectConfigId )
+	return 1
+end
+
+--怪物自身添加buff
+MonsterActionImpl.EventCalls[24] = function( monster, monId, item)
+	if item.addBuffConfigId == nil then
+		return 1;
+	end
+	local buffInfo = getActionBuffConfigByIndex(item.addBuffConfigId);
+	MonsterActionFunc.addBuffByActionBuffConfig(monster, buffInfo);
+	return 1
+end
+
+--怪物删除自身buff
+MonsterActionImpl.EventCalls[25] = function( monster, monId, item)
+	if item.delBuffConfigId == nil then
+		return 1;
+	end
+	local buffInfo = getActionBuffConfigByIndex(item.delBuffConfigId);
+	MonsterActionFunc.delBuffByActionBuffConfig(monster, delBuffConfigId);
+	return 1
+end
+
+--怪物每隔Interval 释放一个buff，且将玩家拉到自己身边
+MonsterActionImpl.EventCalls[26] = function( monster, monId, item)
+	if item.BuffConfigId == nil  then
+		return 1;
+	end
+	local x = 0 ;
+	local y = 0 ;
+	local pScene = LActor.getScenePtr(monster);
+	if pScene == nil then
+		return 1;
+	end
+	x, y = LActor.getEntityPosition(monster)
+
+	local actorPtr = LuaHelp.getSceneActorListByPtr(pScene);
+	if actorPtr == nil then
+		return 1;
+	end
+	for i=1, #actorPtr do
+		LActor.catchTargetToXY( actorPtr[i], x, y);
+	end
+	local buffInfo = getActionBuffConfigByIndex(item.BuffConfigId);
+	MonsterActionFunc.addBuffByActionBuffConfig(monster,buffInfo);
+	--MonsterActionFunc.postMonsterTimeCall(monster,3, item.interval, -1, item.BuffConfigId);
+	return 1
+end
+
+--设置是否可见
+MonsterActionImpl.EventCalls[27] = function( monster, monId, item)
+	if item.denySee == nil then
+		return 1;
+	end
+	LActor.setDenySee(monster, item.denySee);
+	return 1
+end
+
+--设置是否攻击玩家和被攻击
+MonsterActionImpl.EventCalls[28] = function( monster, monId, item)
+	if item.DenyBeAttack ~= nil then
+		LActor.setDenyBeAttack( monster, item.DenyBeAttack );
+	end
+
+	if item.setDenyAttackActor ~= nil then
+		LActor.setDenyAttackActor( monster, item.setDenyAttackActor );
+	end
+	return 1
+end
+
+--设置一个怪物血量并让其现身
+MonsterActionImpl.EventCalls[29] = function( monster, monId, item)
+	if item.targetId == nil then
+		return 1;
+	end
+
+	local monsterId , hlmonster ;
+	local monsterPtr = LuaHelp.getSceneMonsterList(monster);
+	local clearId = {};
+	local targetPtr ;
+	local totalHp = 0;
+	local hlScene = LActor.getSceneHandle(monster) ;
+	if monsterPtr == nil then
+		return 1;
+	end
+	--遍历怪物
+	for i=1, #monsterPtr do
+		monsterId = Fuben.getMonsterId( monsterPtr[i] );
+		if monsterId == monId then
+			local now_Hp = LActor.getIntProperty(monsterPtr[i], P_HP);
+			totalHp = totalHp + now_Hp
+			hlmonster = LActor.getHandle(monsterPtr[i]);
+			--没死才加入
+			if now_Hp > 0 then
+				table.insert(clearId, hlmonster) ;
+			end
+		elseif monsterId == item.targetId then
+			targetPtr = monsterPtr[i];
+		end
+	end
+
+	for i=1, #clearId do
+		--需要延迟删除
+		Fuben.clearEntity(clearId[i],true);
+	end
+
+
+	MonsterActionFunc.setMonsterHp(targetPtr, totalHp);
+	LActor.setDenySee(targetPtr, false);
+	LActor.setDenyAttackActor(targetPtr, false);
+	LActor.setDenyBeAttack(targetPtr, false);
+	return 1
+end
+
+--为怪物添加一个额外技能
+MonsterActionImpl.EventCalls[30] = function( monster, monId, item)
+	if item.skillId == nil then
+		return 1;
+	end
+	LActor.addMonsterExtraSkill(monster, item.skillId, item.level or 1, item.event or 0, item.firstDelay or 0, item.cd or 0, item.dist or 1);
+	return 1
+end
+
+--为怪物添加一个定时器(非初始化)
+MonsterActionImpl.EventCalls[31] = function( monster, monId, item, actionId, info_pos, itemId)
+	--是否配置了时间
+	if item.interval == nil
+	   or item.times == nil then
+		return 1;
+	end
+	--是否配置了行为
+	if item.items == nil or #item.items < 1 then
+		return 1;
+	end
+	MonsterActionFunc.postMonsterTimeCall(monster, 1, item.interval, item.times, monId, actionId, info_pos, itemId);
+	return 1
+end
+
+--清空时间回调器
+MonsterActionImpl.EventCalls[32] = function( monster, monId, item )
+	LActor.clearMonsterActionTimeCall(monster);
+	return 1
+end
+
+--设置不能移动和被移动
+MonsterActionImpl.EventCalls[33] = function( monster, monId, item )
+	if item.DenyMove ~= nil then
+		LActor.setDenyMove( monster, item.DenyMove );
+	end
+
+	if item.DenyBeMove ~= nil then
+		LActor.setDenyBeMove( monster, item.DenyBeMove );
+	end
+	return 1
+end
+
+--为怪物添加一个定时器(初始化时)
+MonsterActionImpl.EventCalls[34] = function( monster, monId, item, actionId, itemId )
+	--是否配置了时间
+	if item.interval == nil
+	   or item.times == nil then
+		return 1;
+	end
+	--是否配置了行为
+	if item.items == nil or #item.items < 1 then
+		return 1;
+	end
+	MonsterActionFunc.postMonsterTimeCall(monster, 4, item.interval, item.times, monId, actionId, itemId);
+	return 1
+end
+
+--根据有多少个指定怪物为自己添加多少次buff(自己除外-如果自己和指定怪物相同)
+MonsterActionImpl.EventCalls[35] = function( monster, monId, item)
+	if item.monsterId == nil
+	   or item.addBuffConfigId == nil then
+		return 1;
+	end
+
+	local monsterId ;
+	local monsterPtr = LuaHelp.getSceneMonsterList(monster);
+	if monsterPtr == nil then
+		return 1;
+	end
+
+	local buffInfo = getActionBuffConfigByIndex(item.addBuffConfigId);
+	if buffInfo == nil then
+		return 1;
+	end
+
+	for i=1, #monsterPtr do
+		monsterId = Fuben.getMonsterId( monsterPtr[i] );
+		if monsterId == monId and monster ~= monsterPtr[i] then
+			MonsterActionFunc.addBuffByActionBuffConfig( monster, buffInfo) ;
+		end
+	end
+	return 1
+end
+
+--怪物周围放下一特效
+MonsterActionImpl.EventCalls[36] = function( monster, monId, item)
+	if item.EffectConfigId == nil
+	   or item.EffectRange == nil
+	   or item.position == nil
+	   or #item.position < 1 then
+		return 1;
+	end
+
+	local rand = System.getRandomNumber(#item.position) + 1;
+	local x = item.position[rand].x ;
+	local y = item.position[rand].y ;
+	local effectInfo = getActionEffectConfigByIndex(item.EffectConfigId);
+	if effectInfo == nil then
+		return 1;
+	end
+	MonsterActionFunc.addEffectByActionEffectConfig(monster, x, y, effectInfo);
+
+	local var_d = LActor.getDyanmicVar(monster) ;
+	var_d.blackHallTime = 0 ;
+	var_d.blackHallTotalTime = effectInfo.time/1000 ;
+	MonsterActionFunc.postMonsterTimeCall(monster, 5, 1, effectInfo.time/1000, x, y, item.EffectRange, item.addBuffConfigId );
+	return 1
+end
+
+--释放光圈，光圈消失后，分摊伤害,否则怪物加buff
+MonsterActionImpl.EventCalls[37] = function( monster, monId, item)
+	if item.EffectConfigId == nil
+		or item.EffectRange == nil
+		or item.damage == nil
+		or item.addBuffConfigId == nil then
+		return 1;
+	end
+	--获取坐标
+	local x = 0 ;
+	local y = 0 ;
+	local result = false ;
+	reuslt,x,y = LActor.getPositionByDir(monster,3,x,y);
+	--获取特效
+	local effectInfo = getActionEffectConfigByIndex(item.EffectConfigId);
+	if effectInfo == nil then
+		return 1;
+	end
+	MonsterActionFunc.addEffectByActionEffectConfig(monster, x, y, effectInfo);
+
+	MonsterActionFunc.postMonsterTimeCall(monster, 6, effectInfo.time/1000, 1, x, y, item.EffectRange, item.damage, item.addBuffConfigId );
+	return 1
+end
+
+--场景position随机一个位置产生特效，范围内玩家添加buff
+MonsterActionImpl.EventCalls[38] = function( monster, monId, item)
+	if item.EffectConfigId == nil
+		or item.EffectRange == nil
+		or item.addBuffConfigId == nil
+		or item.position == nil
+		or #item.position < 1 then
+		return 1;
+	end
+
+	local rand = System.getRandomNumber(#item.position) + 1;
+	local x = item.position[rand].x ;
+	local y = item.position[rand].y ;
+	local effectInfo = getActionEffectConfigByIndex(item.EffectConfigId);
+	if effectInfo == nil then
+		return 1;
+	end
+	MonsterActionFunc.addEffectByActionEffectConfig(monster, x, y, effectInfo);
+
+	MonsterActionFunc.postMonsterTimeCall(monster, 7, 1, effectInfo.time/1000, x, y, item.EffectRange, item.addBuffConfigId);
+	return 1
+end
+
+--场景(x,y)，范围内对怪物自身添加buff
+MonsterActionImpl.EventCalls[39] = function( monster, monId, item)
+	if item.addBuffConfigId == nil
+		or item.x == nil
+		or item.y == nil
+		or item.EffectRange == nil
+		or item.Interval == nil then
+		return 1;
+	end
+	MonsterActionFunc.postMonsterTimeCall(monster, 8, item.Interval, -1, item.x, item.y, item.EffectRange, item.addBuffConfigId );
+	return 1
+end
+
+--对范围内某种类型的实体加buff
+MonsterActionImpl.EventCalls[40] = function( monster, monId, item)
+	local entitys = {}
+	if item.targetType == 0 then --玩家
+		--全场景
+		if item.range == 0 then
+			entitys = LuaHelp.getSceneActorList(monster)
+			if entitys == nil then
+				return 1
+			end
+		else
+			local tmplist = LuaHelp.getNearEntityList(monster, item.range)
+			if tmplist == nil then return end
+			for i=1,#tmplist do
+				if LActor.getEntityType(tmplist[i]) == EntityType_Actor then
+					table.insert(entitys, tmplist[i])
+				end
+			end
+		end
+	elseif item.targetType == -1 then
+		--怪物 TODO
+	elseif item.targetType == -2 then
+		--宠物 TODO
+	end
+
+	local rand = System.getRandomNumber(#entitys) + 1
+	if rand < 1 or rand > #entitys then return end
+	local buffInfo = getActionBuffConfigByIndex(item.addBuffConfigId)
+	MonsterActionFunc.addBuffByActionBuffConfig(entitys[rand], buffInfo)
+	return 1
+end
+
+--使怪物进入下一阶段
+MonsterActionImpl.EventCalls[41] = function( monster, monId, item)
+	print("MonsterActionImpl.EventCalls[41]");
+	if item.monsterId == nil
+	   or item.step == nil then
+		return 1;
+	end
+
+	local monster_ptr = LuaHelp.getSceneMonsterList(monster);
+	if monster_ptr == nil or #monster_ptr < 1 then
+		return 1;
+	end
+	local monsterId = 0;
+	for i=1 , #monster_ptr do
+		monsterId = Fuben.getMonsterId(monster_ptr[i]) ;
+		if monsterId == item.monsterId then
+			LActor.setMonsterActionCurParamNext(monster_ptr[i], item.step);
+			break;
+		end
+	end
+	return 1
+end
+
+--向某怪物添加buff，且需要判断怪物是否存在可以添加标识
+MonsterActionImpl.EventCalls[42] = function( monster, monId, item)
+	if item.monsterId == nil
+		or item.addBuffConfigId == nil then
+		return 1;
+	end
+
+	local buffInfo = getActionBuffConfigByIndex(item.addBuffConfigId);
+	if buffInfo == nil then
+		return 1;
+	end
+	local monster_ptr = LuaHelp.getSceneMonsterList(monster);
+	if monster_ptr == nil or #monster_ptr < 1 then
+		return 1;
+	end
+	local var_d  ;
+	local monsterId = 0 ;
+	for i=1 , #monster_ptr do
+		monsterId = Fuben.getMonsterId(monster_ptr[i]);
+		if monsterId == item.monsterId then
+			var_d = LActor.getDyanmicVar(monster_ptr[i]);
+			if var_d.refuseAdd == nil or var_d.refuseAdd == 0 then
+				MonsterActionFunc.addBuffByActionBuffConfig(monster_ptr[i], buffInfo);
+				break ;
+			end
+		end
+	end
+	return 1
+end
+
+--设置不允许添加buff,针对EventCalls[42]
+MonsterActionImpl.EventCalls[43] = function( monster, monId, item)
+	if item.refuseAdd == nil then
+		return 1;
+	end
+	local var_d = LActor.getDyanmicVar(monster);
+	var_d.refuseAdd = item.refuseAdd ;
+	return 1
+end
+
+--释放光圈，光圈消失后，圈内分摊伤害，圈外直接伤害
+MonsterActionImpl.EventCalls[44] = function( monster, monId, item)
+	if item.EffectConfigId == nil
+		or item.EffectRange == nil
+		or item.damage == nil then
+		return 1;
+	end
+	--获取坐标
+	local x = 0 ;
+	local y = 0 ;
+	local result = false ;
+	reuslt,x,y = LActor.getPositionByDir(monster,3,x,y);
+	--获取特效
+	local effectInfo = getActionEffectConfigByIndex(item.EffectConfigId);
+	if effectInfo == nil then
+		return 1;
+	end
+	MonsterActionFunc.addEffectByActionEffectConfig(monster, x, y, effectInfo);
+
+	MonsterActionFunc.postMonsterTimeCall(monster, 9, effectInfo.time/1000, 1, x, y, item.EffectRange, item.damage );
+	return 1
+end
+
+--向某怪物目标移动
+MonsterActionImpl.EventCalls[45] = function( monster, monId, item)
+	if item.EffectRange == nil
+		or item.monsterId == nil
+		or item.addBuffConfigId == nil then
+		return 1;
+	end
+	local hlScene = LActor.getSceneHandle(monster);
+	local pMonster = Fuben.getMonsterPtrById(hlScene, item.monsterId);
+	if pMonster == nil then
+		return 1;
+	end
+	local curr_x , curr_y = LActor.getEntityPosition(monster)
+	local target_x , target_y = LActor.getEntityPosition(pMonster)
+
+	if MonsterActionFunc.isInRange(curr_x, curr_y, target_x, target_y, item.EffectRange) == true then
+		Fuben.clearEntity(LActor.getHandle(monster),true);
+		local buffInfo = getActionBuffConfigByIndex(addBuffConfigId);
+		MonsterActionFunc.addBuffByActionBuffConfig(pMonster,buffInfo);
+	else
+		LActor.ActionPathToTarget(monster, target_x, target_y);
+	end
+	return 1
+end
+
+--对范围内所有怪物加buff，除了自己和设置了不能添加buff的信息 即type = 43的标识
+MonsterActionImpl.EventCalls[46] = function( monster, monId, item)
+	if item.addBuffConfigId == nil
+		or item.range == nil then
+		return 1;
+	end
+	local buffInfo = getActionBuffConfigByIndex(item.addBuffConfigId);
+	local entitys = { } ;
+	if item.range == 0 then
+		entitys = LuaHelp.getSceneMonsterList(monster);
+	else
+		local tmplist = LuaHelp.getNearEntityList(monster, item.range);
+		for i=1, #tmplist do
+			if LActor.getEntityType(tmplist[i]) == EntityType_Monster then
+				table.insert(entitys, tmplist[i]);
+			end
+		end
+	end
+	for i=1, #entitys do
+		local var_d = LActor.getDyanmicVar(entitys[i]);
+		if not var_d.refuseAdd then
+			MonsterActionFunc.addBuffByActionBuffConfig(entitys[i], buffInfo);
+		end
+	end
+	return 1
+end
+
+--怪物range范围内向怪物添加buff
+MonsterActionImpl.EventCalls[47] = function( monster, monId, item )
+	if item.addBuffConfigId == nil
+		or item.range == nil
+		or item.monsterId == nil then
+		return 1;
+	end
+	local buffInfo = getActionBuffConfigByIndex(item.addBuffConfigId);
+	local entitys = LuaHelp.getNearEntityList(monster, item.range);
+	if entitys == nil then
+		return 1;
+	end
+	for i=1, #entitys do
+		for j=1, #item.monsterId do
+			local monsterId = Fuben.getMonsterId(entitys[i]) ;
+			if monsterId == item.monsterId[j] then
+				MonsterActionFunc.addBuffByActionBuffConfig(entitys[i], buffInfo);
+			end
+		end
+	end
+	return 1
+end
+
+--将全地图玩家拉到一点，并且随机找一玩家加buff
+MonsterActionImpl.EventCalls[48] = function( monster, monId, item)
+	if item.addBuffConfigId == nil
+		or item.delayBuffConfigId == nil then
+		return 1;
+	end
+
+	local actor_ptrs = LuaHelp.getSceneActorList(monster);
+	if actor_ptrs == nil or #actor_ptrs < 1 then
+		return 1;
+	end
+	local x, y = LActor.getEntityPosition(monster)
+	local rand = System.getRandomNumber(#actor_ptrs) + 1;
+	for i=1, #actor_ptrs do
+		LActor.catchTargetToXY( actor_ptrs[i], x, y);
+	end
+	local buffInfo = getActionBuffConfigByIndex(item.addBuffConfigId);
+	if buffInfo then
+		MonsterActionFunc.addBuffByActionBuffConfig(actor_ptrs[rand], buffInfo);
+		LActor.regScriptCallback( actor_ptrs[rand], nil, buffInfo.Interval, 0, 1, "DelayBuffEffect", item.delayBuffConfigId);
+	end
+	return 1
+end
+
+--从刷怪配置中随机抽出一个刷出
+MonsterActionImpl.EventCalls[49] = function(monster, monId, item)
+	if item.monsterList == nil
+		or item.posX == nil
+		or item.posY == nil
+		or item.liveTime == nil
+		or item.relative == nil then
+		return 1;
+	end
+	local x = 0;
+	local y = 0;
+	if item.relative == true then
+		x, y = LActor.getEntityPosition(monster)
+		x = x + item.posX ;
+		y = y + item.posY ;
+	else
+		x = item.posX ;
+		y = item.posY ;
+	end
+	local hlScene = LActor.getSceneHandle(monster);
+
+	local rand = System.getRandomNumber(#item.monsterList) + 1;
+	local monsterId = item.monsterList[rand];
+	Fuben.createMonster( hlScene, monsterId , x, y, item.liveTime );
+	return 1
+end
+
+--与某个怪物交换位置，如果无法交换，则加buff
+MonsterActionImpl.EventCalls[50] = function(monster, monId, item)
+	if item.monsterId == nil
+		or item.addBuffConfigId == nil then
+		return 1;
+	end
+
+	local hlScene = LActor.getSceneHandle(monster);
+	local target = Fuben.getMonsterPtrById(hlScene, item.monsterId);
+	--如果需要换位的怪物不存在，则加buff
+	if target == nil then
+		local buffInfo = getActionBuffConfigByIndex(item.addBuffConfigId);
+		MonsterActionFunc.addBuffByActionBuffConfig(monster, buffInfo);
+	else
+		--调换位置
+		local x, y = LActor.getEntityPosition(monster)
+		local tx, ty = LActor.getEntityPosition(target)
+		LActor.catchTargetToXY(monster, tx, ty);
+		LActor.catchTargetToXY(target, x, y );
+	end
+	return 1
+end
+
+MonsterActionImpl.EventCalls[51] = function(monster, monId, item)
+	if item.EffectConfigId == nil
+		or item.range == nil
+		or item.BeforeEffectConfigId == nil
+		or item.otherEffectConfigId == nil then
+		return 1;
+	end
+
+	--找到救世主
+	local actor_ptrs = LuaHelp.getSceneActorList(monster);
+	if actor_ptrs == nil then
+		return 1;
+	end
+	local target ;
+	for i=1, #actor_ptrs do
+		if LActor.hasState(actor_ptrs[i], esStateJiuShiZhu) then
+			target = actor_ptrs[i];
+			break ;
+		end
+	end
+	--没有救世主，随机一个
+	if target == nil then
+		local rand = System.getRandomNumber(#actor_ptrs) + 1 ;
+		target = actor_ptrs[rand];
+	end
+	--确实没目标
+	if target == nil then
+		return 1;
+	end
+
+	local beforeEffect = getActionEffectConfigByIndex(item.BeforeEffectConfigId) ;
+	if beforeEffect == nil then
+		return 1;
+	end
+	local effectInfo = getActionEffectConfigByIndex(item.EffectConfigId);
+	if effectInfo == nil then
+		return 1;
+	end
+	local otherEffectInfo = getActionEffectConfigByIndex(item.otherEffectConfigId);
+	if otherEffectInfo == nil then
+		return 1;
+	end
+	--目标定身(预判+掉落火)
+	LActor.addBuff(target, 104, 0, 0, (beforeEffect.delay + beforeEffect.time)/1000 , 1, "定身", false, monster, 0, false );
+	local x , y = LActor.getEntityPosition(target)
+	--地上判定
+	MonsterActionFunc.addEffectByActionEffectConfig(target, x, y, beforeEffect);
+	--掉火
+	MonsterActionFunc.addEffectByActionEffectConfig(target, x, y, effectInfo );
+
+	MonsterActionFunc.addEffectByActionEffectConfig(target, x, y, otherEffectInfo);
+
+	--延时回调击中逻辑
+	LActor.postEntityScriptCallbackMsg(monster, EntityCallbackMsg.MonsterYunShiEffect, effectInfo.delay + effectInfo.time, x, y, item.range );
+	return 1
+end
+
+--待实现，随机走动
+MonsterActionImpl.EventCalls[52] = function(monster, monId, item)
+	--[[local tx,ty = item.randomPosX,item.randomPosY
+	if not cx or not cy then return
+	if item.relative == true then
+		local bx, by = LActor.getMonsterBornPoint(monster)
+		tx = math.random(1,tx)	+ bx
+		ty = math.random(1,ty)	+ by
+	else
+		local mx, my = LActor.getEntityPosition(monster)
+		tx = math.random(1,tx)	+ mx
+		ty = math.random(1,ty)	+ my
+	end
+	--todo需要加个移动状态标记
+	if ?? == tx and ?? == ty then
+		return 1
+	end
+
+	LActor.pathToTarget(monster, tx, ty)
+	--print("monster move to ("..tx..","..ty..")\n")
+	return 2
+	--]]
+	return 1
+end
+
+--掉落特殊物品
+--drops = {{id = 123, rate=80, count={1,5}},{id=456,rate=20,count={1}}
+MonsterActionImpl.EventCalls[53] = function(monster, monId, item)
+	if item.drops == nil then return end
+	local rate = math.random(0,99)
+	for _, drop in ipairs(item.drops) do
+		if rate < drop.rate then
+			local sceneHdl = LActor.getSceneHandle(monster);
+			if drop.count == nil or #drop.count ~= 2 then print("action 53 param error") return end
+			local count = math.random(drop.count[1], drop.count[2])
+			for i= 1,count do
+				--todo 随机位置
+				local x, y = LActor.getEntityPosition(monster)
+				dropsys.createDropById(sceneHdl, drop.id, x, y, monster)
+			end
+		end
+	end
+	return 1
+end
+
+------------------------以下为怪物行为定义--------------------------
+
+--定义一些列怪物行为function
+--范围虚弱
+function DelayBuffEffect(sysarg, buffConfigId)
+	local entitys = LuaHelp.getNearEntityList(sysarg, 5);
+	if entitys == nil then
+		return ;
+	end
+	local buffInfo = getActionBuffConfigByIndex(buffConfigId);
+	for i=1 , #entitys do
+		if LActor.getEntityType(entitys[i]) == EntityType_Actor then
+			MonsterActionFunc.addBuffByActionBuffConfig(entitys[i], buffInfo);
+		end
+	end
+end
+
+--黑洞效果时间回调函数
+MonsterActionFunc.MonsterBlackHallTimerFunc = function(monster, x, y, EffectRange, addBuffConfigId )
+	--print("[ MonsterActionFunc.MonsterBlackHallTimerFunc ]");
+	if monster == nil then
+		return ;
+	end
+	local var_d = LActor.getDyanmicVar(monster)
+	if var_d.blackHallTotalTime == nil or var_d.blackHallTotalTime <= 0 then
+		print("[ MonsterBlackHallTimerFunc ] Ended");
+		return ;
+	end
+	local pScene = LActor.getScenePtr(monster);
+	if pScene == nil then
+		return ;
+	end
+	local actor_ptrs = LuaHelp.getSceneActorListByPtr(pScene);
+	if actor_ptrs == nil or #actor_ptrs < 1 then
+		return ;
+	end
+	local count = 0;
+	local curr_x = 0;
+	local curr_y = 0;
+	for i=1 , #actor_ptrs do
+		curr_x, curr_y = LActor.getEntityPosition(actor_ptrs[i])
+		if MonsterActionFunc.isInRange(curr_x, curr_y, x, y, EffectRange) == true then
+			count = count + 1;
+		end
+	end
+
+	if count >= 2 then
+		var_d.blackHallTime = var_d.blackHallTime + 1 ;
+	else
+		if var_d.blackHallTime < 2 then
+			var_d.blackHallTime = 0 ;
+		end
+	end
+
+	var_d.blackHallTotalTime = var_d.blackHallTotalTime - 1;
+
+	--作用次数已经完,产生AOE效果
+	if var_d.blackHallTotalTime <= 0 then
+		if var_d.blackHallTime < 2 then
+			local buffInfo = getActionBuffConfigByIndex(addBuffConfigId);
+			for i=1 , #actor_ptrs do
+				MonsterActionFunc.addBuffByActionBuffConfig(actor_ptrs[i], buffInfo);
+			end
+		end
+	end
+end
+
+MonsterActionFunc.setMonsterHp = function(monster, hp)
+	if monster == nil then
+		return ;
+	end
+	LActor.setIntProperty(monster, P_HP, hp);
+end
+
+
+--向怪物投递一个循环执行事件
+MonsterActionFunc.postMonsterTimeCall = function( monster, funcType, interval, times, p1, p2, p3, p4, p5 )
+	if monster == nil or interval == nil or times == nil then
+		print("[ postMonsterTimeCall ] error !");
+		return ;
+	end
+
+	LActor.postMonsterActionTimeCall(monster,funcType, interval, times , (p1 or 0), (p2 or 0), (p3 or 0), (p4 or 0), (p5 or 0) );
+end
+
+--天火掉下撞人
+MonsterActionFunc.MonsterTianhuoCrashActor = function(pScene, actionType, EffectConfigId, EffectRange, BeforeEffectConfigId)
+	--print("[ MonsterActionFunc.MonsterTianhuoCrashActor ]");
+	if pScene == nil then
+		return ;
+	end
+
+	local hlScene = Fuben.getSceneHandleByPtr(pScene);
+	if not hlScene then
+		return ;
+	end
+
+	local actor_ptrs = LuaHelp.getSceneActorListByPtr(pScene);
+	if actor_ptrs == nil or #actor_ptrs < 1 then
+		return ;
+	end
+
+	local rand = math.random(#actor_ptrs);
+	local pActor = actor_ptrs[rand];
+	if pActor == nil then
+		return ;
+	end
+	--第一步
+	local x = LActor.getIntProperty(pActor, P_POS_X);
+	local y = LActor.getIntProperty(pActor, P_POS_Y);
+	local effectInfo = getActionEffectConfigByIndex(EffectConfigId);
+
+	MonsterActionFunc.addEffectByActionEffectConfigId(pActor, x, y, BeforeEffectConfigId);
+	MonsterActionFunc.addEffectByActionEffectConfig(pActor,x,y,effectInfo);
+
+	--延时回调击中逻辑
+	LActor.postEntityScriptCallbackMsg(pActor, EntityCallbackMsg.MonsterTianhuoEffect , effectInfo.delay ,  actionType, effectInfo.BuffConfigId, x, y) ;
+
+	--调用第二个效果
+	if effectInfo.AfterEffectConfigId ~= 0 then
+		local afterEffectInfo = getActionEffectConfigByIndex(effectInfo.AfterEffectConfigId);
+		if afterEffectInfo.BuffEffectTime ~= 0 then
+			--第二步
+			Fuben.postSceneTimeCall(hlScene, TimerMsg.MonsterTianHuoEffectTimer, (effectInfo.time + effectInfo.delay)/1000 + 1, 1, effectInfo.AfterEffectConfigId, x, y);
+		end
+	end
+end
+
+--天火掉下(范围内随机点撞)
+MonsterActionFunc.MonsterTianhuoRandomCrash = function(pScene, actionType, EffectConfigId, EffectRange, BeforeEffectConfigId )
+	--print("[ MonsterActionFunc.MonsterTianhuoRandomCrash ]");
+	if pScene == nil then
+		return ;
+	end
+	local hlScene = Fuben.getSceneHandleByPtr(pScene);
+	if not hlScene then
+		return ;
+	end
+
+	local monsterPtr = LuaHelp.getSceneMonsterListByScene(pScene);
+	if monsterPtr == nil or #monsterPtr < 1 then
+		return ;
+	end
+	local pMonster = monsterPtr[1];
+	if pMonster == nil then
+		return ;
+	end
+	--第一步
+	local x, y = LActor.getEntityPosition(pMonster)
+	x = math.random(x-EffectRange,x+EffectRange);
+	y = math.random(y-EffectRange,y+EffectRange);
+
+	local effectInfo = getActionEffectConfigByIndex(EffectConfigId);
+
+	MonsterActionFunc.addEffectByActionEffectConfigId(pActor, x, y, BeforeEffectConfigId);
+	MonsterActionFunc.addEffectByActionEffectConfig(pMonster, x, y, effectInfo);
+
+	--延时回调击中效果
+	LActor.postEntityScriptCallbackMsg(pMonster, EntityCallbackMsg.MonsterTianhuoEffect, effectInfo.delay , actionType, effectInfo.BuffConfigId, x, y);
+
+	--调用第二个效果
+	if effectInfo.AfterEffectConfigId ~= 0 then
+		local afterEffectInfo = getActionEffectConfigByIndex(effectInfo.AfterEffectConfigId);
+		if afterEffectInfo.BuffEffectTime ~= 0 then
+			--第二步
+			Fuben.postSceneTimeCall(hlScene, TimerMsg.MonsterTianHuoEffectTimer, (effectInfo.time + effectInfo.delay)/1000 + 1, 1,effectInfo.AfterEffectConfigId, x, y);
+		end
+	end
+end
+
+MonsterActionFunc.OnYunShiEffect = function(entity, x, y, range)
+	if entity == nil then
+		return ;
+	end
+
+	local actor_ptrs = LuaHelp.getSceneActorList(entity);
+	if actor_ptrs == nil then
+		return ;
+	end
+	local curr_x = 0 ;
+	local curr_y = 0 ;
+	local count = 0 ;
+	local target = {} ;
+	for i=1 , #actor_ptrs do
+		curr_x , curr_y = LActor.getEntityPosition(actor_ptrs[i])
+		if MonsterActionFunc.isInRange(curr_x, curr_y, x, y, range) == true then
+			count = count + 1;
+			table.insert(target, actor_ptrs[i]) ;
+		end
+	end
+	if count == 0 then
+		count = 1 ;
+	end
+	local realDamage = 100 / (count*100) ;
+	for i=1 , #target do
+		--todo buff修改
+		--LActor.addBuff(target[i], 12, 0, -realDamage, 1, 1, "扣血", false, target[i], 0, false );
+	end
+end
+
+MonsterActionFunc.MonsterTianhuoEffectTimerFunc = function(msgId, pScene,  EffectConfigId, x, y )
+	--print("[ MonsterActionFunc.MonsterTianhuoEffectTimerFunc ]");
+	if pScene == nil then
+		return
+	end
+	local hlScene = Fuben.getSceneHandleByPtr(pScene);
+	if not hlScene then
+		return ;
+	end
+
+	local monsterPtr = LuaHelp.getSceneMonsterListByScene(pScene);
+	if monsterPtr == nil or #monsterPtr < 1 then
+		return ;
+	end
+	local pMonster = monsterPtr[1];
+	if pMonster == nil then
+		return ;
+	end
+
+	local effectInfo = getActionEffectConfigByIndex(EffectConfigId);
+	MonsterActionFunc.addEffectByActionEffectConfig(pMonster, x, y, effectInfo);
+
+	Fuben.postSceneTimeCall( hlScene, TimerMsg.MonsterTianHuoBuffTimer, 1, effectInfo.BuffEffectTime, effectInfo.BuffConfigId, x, y)
+end
+
+MonsterActionFunc.MonsterTianhuoBuffTimerFunc = function(msgId, pScene, BuffConfigId, x, y)
+	--print("[ MonsterActionFunc.MonsterTianhuoBuffTimerFunc ]");
+	if pScene == nil then
+		return ;
+	end
+	local buffInfo = getActionBuffConfigByIndex(BuffConfigId);
+	local entitys = LuaHelp.getNearEntityListFromXY( pScene, x, y ) ;
+	if entitys == nil or #entitys < 1 then
+		return ;
+	end
+	for i=1 , #entitys do
+		if LActor.getEntityType(entitys[i]) == EntityType_Actor then
+			MonsterActionFunc.addBuffByActionBuffConfig(entitys[i], buffInfo);
+		end
+	end
+
+end
+
+MonsterActionFunc.MonsterTianhuoOnHit = function(entity, actionType, BuffConfigId, x, y)
+	if entity == nil then
+		return ;
+	end
+
+	local pResultActor ;
+	if actionType == 1 then
+		local curr_x, curr_y = LActor.getEntityPosition(entity)
+		if curr_x ~= x or curr_y ~= y then
+			print("[ MonsterActionFunc.MonsterTianhuoOnHit ] , dodge");
+			return ;
+		end
+		pResultActor = entity ;
+	else
+		local pScene = LActor.getScenePtr(entity);
+		if pScene == nil then
+			return ;
+		end
+		local actor_ptrs = LuaHelp.getNearEntityListFromXY( pScene, x, y) ;
+		if actor_ptrs == nil or #actor_ptrs < 1 then
+			return ;
+		end
+		pResultActor = actor_ptrs[1];
+	end
+
+	local buffInfo = getActionBuffConfigByIndex(BuffConfigId);
+	MonsterActionFunc.addBuffByActionBuffConfig(pResultActor, buffInfo);
+end
+
+--怪物重生时间器回调
+MonsterActionFunc.MonsterActionTimerCallBack = function(msgId, pScene, monsterId, resurrectId, x, y, liveTime)
+	local hlScene = Fuben.getSceneHandleByPtr(pScene);
+	if hlScene == nil then
+		return ;
+	end
+	local monsterPtr = Fuben.getMonsterPtrById(hlScene, monsterId);
+	if monsterPtr == nil then
+		return ;
+	end
+	--重生逻辑
+	local pMonster = Fuben.createMonster( hlScene, resurrectId , x, y, liveTime );
+	if pMonster == nil then
+		return ;
+	end
+	LActor.monsterSay(pMonster,Lang.Actions.ma001,1);
+end
+
+--向指定目标添加或删除buff
+MonsterActionFunc.TargetBuffAction = function(monster ,monId, item, AddOrDel)
+	if item.target == nil or #item.target < 1 then
+		return ;
+	end
+	local monsterId ;
+	local monsterPtr = LuaHelp.getSceneMonsterList(monster);
+	if monsterPtr == nil then
+		return ;
+	end
+	--遍历怪物
+	for i=1, #monsterPtr do
+		--遍历target
+		for j=1, #item.target do
+			if item.target[j].monsterId and item.target[j].addBuffConfigId then
+				monsterId = Fuben.getMonsterId(monsterPtr[i]);
+				if monsterId == item.target[j].monsterId then
+					local buffInfo = getActionBuffConfigByIndex(item.target[j].addBuffConfigId);
+					if buffInfo then
+						if AddOrDel == 1 then
+							MonsterActionFunc.addBuffByActionBuffConfig(monsterPtr[i],buffInfo);
+						else
+							MonsterActionFunc.delBuffByActionBuffConfig(monsterPtr[i],buffInfo);
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
+--根据ActionBuffConfig添加为entity删除buff
+MonsterActionFunc.delBuffByActionBuffConfig = function(entity,buffInfo)
+	if entity == nil or buffInfo == nil  or buffInfo.buffs == nil then
+		return ;
+	end
+	for i=1, #buffInfo.buffs do
+		LActor.delBuff(entity, buffInfo.buffs[i].buffType, buffInfo.buffs[i].groupId);
+	end
+end
+--根据ActionBuffConfig添加为entity添加buff
+MonsterActionFunc.addBuffByActionBuffConfig = function(entity,buffInfo)
+	if entity == nil or buffInfo == nil or buffInfo.buffs == nil then
+		return ;
+	end
+	for i=1, #buffInfo.buffs do
+		local timeOverlay = buffInfo.buffs[i].timeOverlay or false ;
+		local valueOverlay = buffInfo.buffs[i].valueOverlay or false ;
+		--todo buff修改
+		-- LActor.addBuff(entity, buffInfo.buffs[i].buffType, buffInfo.buffs[i].groupId, buffInfo.buffs[i].value, buffInfo.buffs[i].times, buffInfo.buffs[i].interval, buffInfo.buffs[i].buffName, timeOverlay, entity, 0, valueOverlay);
+	end
+end
+
+--根据ActionEffectConfigId为entity添加场景特效
+MonsterActionFunc.addEffectByActionEffectConfigId = function(entity, x, y, effectConfigId)
+	local effectInfo = getActionEffectConfigByIndex(effectConfigId);
+	MonsterActionFunc.addEffectByActionEffectConfig(entity,x,y,effectInfo);
+end
+
+--根据ActionEffectConfig为entity添加场景特效
+MonsterActionFunc.addEffectByActionEffectConfig = function(entity,x,y,effectInfo)
+	if entity == nil or effectInfo == nil then
+		return ;
+	end
+	LActor.addSceneEffect(entity, effectInfo.effectId, effectInfo.effectType, effectInfo.time, effectInfo.delay, x, y, false);
+end
+
+--判断是否在区域内
+MonsterActionFunc.isInRange = function(curr_x, curr_y, limit_x, limit_y, range )
+	if curr_x < limit_x - range or curr_x > limit_x + range or curr_y < limit_y - range or curr_y > limit_y + range then
+		return false
+	end
+	return true;
+end
+
+--保护罩效果
+MonsterActionFunc.BaoHuZhao = function(monster,args)
+	--print("call relayScript [baohuzhao]....");
+	if monster == nil or args == nil then
+		return ;
+	end
+	if #args ~= 5 then
+		print("参数数量不对!");
+		return ;
+	end
+	local x = args[2];
+	local y = args[3] ;
+	local range = args[4];
+	local buffConfigId = args[5];
+	local buffInfo = getActionBuffConfigByIndex(buffConfigId);
+	if buffInfo == nil then
+		return ;
+	end
+	local actor_ptrs = LuaHelp.getSceneActorList(monster);
+	if actor_ptrs == nil or #actor_ptrs < 1 then
+		return ;
+	end
+
+	local px=0;
+	local py=0;
+	local flag = false ;
+	for i=1 , #actor_ptrs do
+		px,py = LActor.getEntityPosition(actor_ptrs[i])
+		--不在范围内
+		if MonsterActionFunc.isInRange(px,py,x,y,range) == false then
+			print("[ baohuzhao ] someone not in range");
+			flag = true ;
+		end
+	end
+	if flag == true then
+		MonsterActionFunc.addBuffByActionBuffConfig(monster,buffInfo);
+	end
+end
+
+MonsterActionFunc.OnTianHuoTimer = function(msgId, pScene, actionType, EffectConfigId, EffectRange, BeforeEffectConfigId)
+	--print("[ MonsterActionFunc.OnTianHuoTimer ]");
+	if pScene == nil then
+		return ;
+	end
+	if actionType == 1 then
+		MonsterActionFunc.MonsterTianhuoCrashActor(pScene, actionType, EffectConfigId, 0, BeforeEffectConfigId);
+	else
+		local effectRange = EffectRange or 1 ;
+		MonsterActionFunc.MonsterTianhuoRandomCrash(pScene, actionType, EffectConfigId, EffectRange, BeforeEffectConfigId);
+	end
+
+	local hlScene = Fuben.getSceneHandleByPtr(pScene);
+	if hlScene ~= 0 then
+		--每隔5秒掉一次
+		Fuben.postSceneTimeCall(hlScene, TimerMsg.MonsterTianHuoTimer, 10, 1, actionType, EffectConfigId, EffectRange, BeforeEffectConfigId);
+	end
+end
+
+------------------------以下为怪物行为条件定义--------------------------
+MonsterActionCondition.Judge = function(monster,conditions)
+	--没条件
+	if conditions == nil or #conditions < 1 then
+		return true ;
+	end
+	local JudgeCall ;
+	for i=1, #conditions do
+		if conditions[i].conditionType == nil then
+			print("[ MonsterActionCondition ] config error : conditionType !");
+			return false ;
+		end
+
+		JudgeCall = MonsterActionCondition[ conditions[i].conditionType ] ;
+		if JudgeCall == nil then
+			print("[ MonsterActionCondition ] function error !");
+			return false ;
+		end
+
+		if JudgeCall(monster, conditions[i]) == false then
+			return false ;
+		end
+	end
+
+	return true ;
+end
+
+--是否存在某些怪物
+--HaveOrNot = 0 则判断是否不存在,
+--HaveOrNot = 1 则判断是否存在
+MonsterActionCondition.checkConditionTarget = function(monster, singleCondition, HaveOrNot)
+	if singleCondition == nil or singleCondition.targetMonster == nil or #singleCondition.targetMonster < 1 then
+		return false ;
+	end
+	local monsterPtr = LuaHelp.getSceneMonsterList(monster) ;
+	for i=1, #monsterPtr do
+		for j=1, #singleCondition.targetMonster do
+			local monsterId = Fuben.getMonsterId(monsterPtr[i]) ;
+			if monsterId == singleCondition.targetMonster[j] and monsterPtr[i] ~= monster then
+				if HaveOrNot == 1 then
+					return true ;
+				else
+					return false;
+				end
+			end
+		end
+	end
+	if HaveOrNot == 1 then
+		return false ;
+	else
+		return true ;
+	end
+end
+
+--是否目标怪物已经在该场景不存在了
+MonsterActionCondition[1] = function(monster, singleCondition)
+	return MonsterActionCondition.checkConditionTarget(monster, singleCondition, 0);
+end
+
+--是否目标怪物在该场景存在
+MonsterActionCondition[2] = function(monster, singleCondition)
+	return MonsterActionCondition.checkConditionTarget(monster, singleCondition, 1);
+end
+
+----------------------------特殊怪物--------------------------------
+MonsterActionFunc.OnBoss5Effect = function(monster, actionType)
+	if monster == nil then
+		return ;
+	end
+	if LActor.getEntityType(monster) ~= EntityType_Monster then
+		return ;
+	end
+	if actionType == 1 then
+		LActor.addBuff(monster, 81, 0, 1, -1, 1, "免伤", false, monster, 0, false);
+		LActor.addBuff(monster, 82, 0, 1, -1, 1, "免伤", false, monster, 0, false);
+	else
+		LActor.delBuff(monster, 81, 0);
+		LActor.delBuff(monster, 82, 0);
+	end
+end
+
+MonsterActionFunc.OnBoss5EffectActor = function(actor, actionType)
+	if actor == nil then
+		return ;
+	end
+	if LActor.getEntityType(actor) ~= EntityType_Actor then
+		return ;
+	end
+	if actionType == 1 then
+		LActor.addState(actor, esStateJiuShiZhu) ;
+		LActor.addBuff(actor, 11, 0, 100000, 300, 1, "救世主", false, actor, 0, false);
+	else
+		LActor.removeState( actor, esStateJiuShiZhu);
+		LActor.delBuff(actor, 11, 0);
+	end
+end
+
+--怪物行为
+--返回整数,-1表示结束，0表示不延时继续执行下一个行为
+function OnMonsterAction( monster, monId, actionId, squeId, itemId, all )
+	return MonsterActionImpl.dispatch( monster, monId, actionId, squeId, itemId, all )
+end
+
+function registerMonsterFunc( funcName, func )
+	if MonsterActionFunc[funcName] ~= nil then
+		print( "registerMonsterFunc error:"..funcName )
+		return false
+	end
+	MonsterActionFunc[funcName] = func
+	return true
+end
+
+function OnMonsterInitAction( monster, monId, actionId) 
+	return MonsterActionImpl.InitDispatch(monster, monId, actionId);
+end
+
+function OnMonsterEvadeAction( monster, monId, actionId )
+	return MonsterActionImpl.EvadeDispatch(monster, monId, actionId);
+end
+
+function OnMonsterTimeCall( funcType, monster, p1, p2, p3, p4, p5) 
+	return MonsterActionTimer.dispatch(funcType, monster, p1, p2, p3, p4, p5)
+end
+

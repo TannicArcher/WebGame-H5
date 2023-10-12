@@ -1,0 +1,39 @@
+{
+	id = 112,
+	aggressive = 1,
+	home_range = 12,
+	vision = 7,
+	skills = {
+       {id=901,cd=0,first_delay=0}, 
+     },
+	battle = {--战斗状态 
+  {
+   conditions ={ --进入战斗时说话
+    {type= 1, min = 0 },-- 进入战斗的时间为0 
+   },
+
+   actions = {
+       { type= 1, duration =0, interval=0, talk="哪来的野小子,受死吧(小怪说话)", talkType=2 },
+   } 
+  },
+  {
+   conditions ={ --血量80%的时候说话和使用技能
+    {type= 2, min = 50, max = 80},-- 自身血量为80%时 
+   },
+   actions = {
+       { type=1, talk="说好的不打脸的。(小怪说话)", talkType=2 }, --说话
+    { type = 11, id = 10000 }, --使用技能
+   } 
+  }, 
+  {
+   conditions ={ --血量80%的时候说话和使用技能
+    {type= 2, min = 10, max = 40},-- 自身血量为40%时 
+   },
+   actions = {
+       { type=1, talk="说好的不打脸的(小怪说话)", talkType=2 }, --说话
+    { type = 11, id = 10000 }, --使用技能
+   } 
+  }
+
+},
+},

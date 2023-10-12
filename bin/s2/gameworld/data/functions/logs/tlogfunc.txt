@@ -1,0 +1,84 @@
+﻿-- 独立经分系统相关处理
+--#include "data\functions\globaldefine.txt" once
+
+TLogFunc = {}
+
+-- 玩家登陆
+TLogFunc.OnTLogLogin = function(sysarg)
+	if not System.openTlog() then return end
+
+	local create_t = LActor.getCreateTime(sysarg)
+	local year, month, day, hour, minute, sec = System.timeDecode(create_t)
+	local timestr = string.format("%02d-%02d-%02d %02d:%02d:%02d", year, month, day, hour, minute, sec)
+
+	-- 获取在线总时长
+	local totalonline = 0
+	local var = LActor.getStaticVar(sysarg)
+	if var ~= nil then
+		totalonline = var.totalonline
+		if totalonline == nil then
+			totalonline = 0
+		end
+	end
+
+	-- RoleLogin|iEventId|vUin|dtEventTime|iWorldId|vClientIp|iRoleId|vRoleName|iRoleLevel|iRoleExp|iRoleSpe|iGamePoints|dtCreateTime|iOnlineTotalTime|iLoginWay
+	local logstr = string.format("RoleLogin|%s|%s|%s|%d|%s|%d|%s|%d|%d|%d|%d|%s|%d|%d"
+		, System.getEventId(), LActor.getAccountName(sysarg), System.getTLogTime(), System.getServerId(), LActor.getLastLoginIp(sysarg)
+		, LActor.getActorId(sysarg), System.tlogReplace(LActor.getName(sysarg)), LActor.getLevel(sysarg), LActor.getIntProperty(sysarg, P_EXP)
+		, LActor.getIntProperty(sysarg, P_SHENGWANG), LActor.getMoneyCount(sysarg, mtYuanbao), timestr, totalonline, TcLogFunc.getPfId(sysarg) )
+	System.logTLog(logstr)
+end
+
+-- 玩家登出
+TLogFunc.OnTLogLogout = function(sysarg)
+	if not System.openTlog() then return end
+
+	local login_t = LActor.getLoginTime(sysarg)
+	local online_t = System.getNowTime() - login_t
+	local year, month, day, hour, minute, sec = System.timeDecode(login_t)
+	local loginstr = string.format("%02d-%02d-%02d %02d:%02d:%02d", year, month, day, hour, minute, sec)
+
+	-- RoleLogout|iEventId|vUin|dtEventTime|iWorldId|dtLoginTime|vClientIp|iRoleId|vRoleName|iRoleLevel|iRoleExp|iRoleSpe|iGamePoints|iOnlineTime|iLoginWay
+	local logstr = string.format("RoleLogout|%s|%s|%s|%d|%s|%s|%d|%s|%d|%d|%d|%d|%d|%d"
+		, System.getEventId(), LActor.getAccountName(sysarg), System.getTLogTime(), System.getServerId(), loginstr, LActor.getLastLoginIp(sysarg)
+		, LActor.getActorId(sysarg), System.tlogReplace(LActor.getName(sysarg)), LActor.getLevel(sysarg), LActor.getIntProperty(sysarg, P_EXP)
+		, LActor.getIntProperty(sysarg, P_SHENGWANG), LActor.getMoneyCount(sysarg, mtYuanbao), online_t, TcLogFunc.getPfId(sysarg) )
+	System.logTLog(logstr)
+
+	-- 统计在线总时长
+	local var = LActor.getStaticVar(sysarg)
+	if var ~= nil then
+		local totalonline = var.totalonline
+		if totalonline == nil then
+			totalonline = 0
+		end
+		totalonline = totalonline + online_t
+		var.totalonline = totalonline
+	end
+end
+
+-- 角色升级
+TLogFunc.OnLevelUp = function(sysarg)
+	if not System.openTlog() then return end
+
+	-- 获取在线总时长
+	local totalonline = 0
+	local var = LActor.getStaticVar(sysarg)
+	if var ~= nil then
+		totalonline = var.totalonline
+		if totalonline == nil then
+			totalonline = 0
+		end
+	end
+
+	-- iEventId|vUin|dtEventTime|iWorldId|vClientIp|iRoleId|vRoleName|iJobId|iGender|iRoleLevel|iRoleExp|lTotalOnlineTime
+	local logstr = string.format("RoleLevelUp|%s|%s|%s|%d|%s|%d|%s|%d|%d|%d|%d|%d", 
+		System.getEventId(), LActor.getAccountName(sysarg), System.getTLogTime(), System.getServerId(), LActor.getLastLoginIp(sysarg), LActor.getActorId(sysarg),
+		System.tlogReplace(LActor.getName(sysarg)), LActor.getIntProperty(sysarg, P_VOCATION), LActor.getIntProperty(sysarg, P_SEX), 
+		LActor.getLevel(sysarg), LActor.getIntProperty(sysarg, P_EXP), totalonline)
+	System.logTLog(logstr)
+end
+
+actorevent.reg(aeUserLogin, TLogFunc.OnTLogLogin)
+actorevent.reg(aeUserLogout, TLogFunc.OnTLogLogout)
+actorevent.reg(aeLevel, TLogFunc.OnLevelUp)

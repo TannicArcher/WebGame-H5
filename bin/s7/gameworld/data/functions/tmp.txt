@@ -1,0 +1,18 @@
+local sysarg = ... 
+-- local var = LActor.getDyanmicVar(sysarg)
+-- if var.aaa == nil then 
+-- 	print("var.aaa is nil") 
+-- else
+-- 	print("var.aaa = " .. var.aaa)
+-- end
+-- var.aaa = 1
+local fo = io.open("./data/functions/_G.lua", "w+")
+fo:write("--自动生成的文件，不要修改!!\n")
+for k,v in pairs(_G) do
+	if (type(v) == "number") then
+		fo:write(string.format("_G[\"%s\"] = %d\n", k, v))
+	end
+end
+fo:flush()
+fo:close()
+print("create _G ok")

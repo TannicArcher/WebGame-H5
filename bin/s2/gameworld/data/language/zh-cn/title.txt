@@ -1,0 +1,92 @@
+﻿Title =
+{
+	--称号的名称
+	name001 = "傲视苍穹",
+	name002 = "巅峰传说",
+	name003 = "风华绝世",
+	name004 = "至尊伙伴",
+	name005 = "逍遥城主",
+	name006 = "钓鱼高手",
+	name007 = "逍遥皇主",
+
+	name021 = "威震八荒",
+	name022 = "纵横四方",
+	name023 = "超神入化",
+	name024 = "非同凡响",
+	name025 = "天下知君",
+	name026 = "魅力倾城",
+	name027 = "完美伙伴",
+	name028 = "卓越伙伴",
+	name029 = "逍遥王帮",
+	name030 = "至尊",    
+	name031 = "逍遥皇帮", 
+	name032 = "逍遥bug王", 
+	name033 = "逍遥攻略王", 
+
+	--称号的描述
+	desc001 = "<font color='#32ff67'>战力排行榜排名第一</font> 可获得",
+	desc002 = "<font color='#32ff67'>等级排行榜排名第一</font> 可获得",
+	desc003 = "<font color='#32ff67'>魅力排行榜排名第一</font> 可获得",
+	desc004 = "<font color='#32ff67'>伙伴排行榜排名第一</font> 可获得",
+	desc005 = "<font color='#32ff67'>逍遥争霸获得第一名</font>的帮主可获得",
+	desc006 = "<font color='#32ff67'>钓鱼大赛第一名</font> 可获得",
+	desc007 = "<font color='#32ff67'>皇城争霸获得第一名</font>的帮主可获得",
+
+	desc021 = "<font color='#32ff67'>战力排行榜排名第二</font> 可获得",
+	desc022 = "<font color='#32ff67'>战力排行榜排名第三</font> 可获得",
+	desc023 = "<font color='#32ff67'>等级排行榜排名第二</font> 可获得",
+	desc024 = "<font color='#32ff67'>等级排行榜排名第三</font> 可获得",
+	desc025 = "<font color='#32ff67'>魅力排行榜排名第二</font> 可获得",
+	desc026 = "<font color='#32ff67'>魅力排行榜排名第三</font> 可获得",
+	desc027 = "<font color='#32ff67'>伙伴排行榜排名第二</font> 可获得",
+	desc028 = "<font color='#32ff67'>伙伴排行榜排名第三</font> 可获得",
+	desc029 = "<font color='#32ff67'>逍遥争霸获得第一名</font>的帮众可获得",
+    desc030 = "成为<font color='#32ff67'>至尊</font>后自动获得",
+	desc031 = "<font color='#32ff67'>皇城争霸获得第一名</font>的帮众可获得",    
+	desc032 = "封测期间找到bug最多的玩家可获得",  
+	desc033 = "封测期间发布攻略最多的玩家可获得",  
+
+    --称号属性描述
+    attrsDesc001 = "",
+    attrsDesc002 = "",
+    attrsDesc003 = "",
+    attrsDesc004 = "", 
+    attrsDesc005 = "生命+2000 攻击+120\n物防+80 法防+80",
+    attrsDesc006 = "命中+40 闪避+40\n暴击+40 抗爆+40", 
+    attrsDesc007 = "生命+4000 攻击+240\n物防+160 法防+160",     
+         
+    attrsDesc021 = "",
+    attrsDesc022 = "",
+    attrsDesc023 = "",
+    attrsDesc024 = "",
+    attrsDesc025 = "",
+    attrsDesc026 = "",
+    attrsDesc027 = "",
+    attrsDesc028 = "",
+    attrsDesc029 = "生命+1000 攻击+60\n物防+40 法防+40",  
+    attrsDesc030 = "", 
+    attrsDesc031 = "生命+2000 攻击+120\n物防+80 法防+80",
+    attrsDesc032 = "",
+    attrsDesc033 = "",
+
+	--称号分类
+	label001 = "我的称号",
+	label002 = "排行称号",
+	label003 = "战力榜",
+	label004 = "等级榜",
+	label005 = "魅力榜",
+	label006 = "伙伴榜",
+
+	label007 = "竞技称号",
+	label008 = "王城争霸",
+
+	label009 = "仙尊称号",
+	label010 = "至尊",
+
+	label011 = "活动",
+	label012 = "皇城争霸",
+
+	label013 = "封测称号",
+
+
+}

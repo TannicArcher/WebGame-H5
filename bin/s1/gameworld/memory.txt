@@ -1,0 +1,32 @@
+GameClientAlloc, alloc total:0, used:0 
+GameConnAlloc, alloc total:0, used:0 
+GameConnMgr, alloc total:0, used:0 
+ActorMgr, alloc total:0, used:0 
+randnameAlloc, alloc total:0, used:0 
+namelist_Alloc, alloc total:0, used:0 
+alloc_gameserver, alloc total:0, used:0 
+ActorIdPacket, alloc total:0, used:0 
+0, total:262148 
+1, total:264 
+2, total:1250056 
+3, total:1552 
+4, total:1544 
+5, total:6057424 
+6, total:634016 
+7, total:704 
+
+mbcsFilter, alloc total:0, used:0 
+mapAlloc, alloc total:484720, used:0 
+bzhashtable, alloc total:0, used:0 
+bzhashtable, alloc total:0, used:0 
+appear_data, alloc total:1082, used:0 
+datapacket, alloc total:88, used:0 
+SendMsgToAllGameClient, alloc total:0, used:0 
+dynamic ranking first cache , alloc total:0, used:0 
+startOneGameClient, alloc total:0, used:0 
+actorret, alloc total:18, used:0 
+ActorMgr::alloc, alloc total:64, used:0 
+enter scene packet, alloc total:66, used:0 
+appear_data, alloc total:975, used:0 
+GlobalVarMgr::Save, alloc total:0, used:0 
+all: alloc total:8694721, used:0

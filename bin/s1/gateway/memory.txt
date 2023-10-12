@@ -1,0 +1,7 @@
+Gateway_allocator, alloc total:1581056, used:0 
+filelogger, alloc total:13440, used:0 
+Gateway, alloc total:0, used:0 
+Gateway, alloc total:49753, used:0 
+WorkSock_Alloc, alloc total:20971520, used:0 **
+gate_alloc_, alloc total:0, used:0 
+all: alloc total:22615769, used:0

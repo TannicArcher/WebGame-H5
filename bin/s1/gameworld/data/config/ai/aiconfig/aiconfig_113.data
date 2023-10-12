@@ -1,0 +1,16 @@
+{
+	id = 113,
+	aggressive = 1,
+	home_range = 12,
+	vision = 7,
+	skills = {
+       {id=901,cd=0,first_delay=0}, 
+     },
+	idle = {--非战斗状态
+        {
+            actions = { -- 巡逻
+                { type=52, duration=3, randomPosX=6, randomPosY=6, relative=true},
+            }
+        },
+} ,
+},

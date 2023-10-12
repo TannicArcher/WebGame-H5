@@ -1,0 +1,468 @@
+﻿--#include "data/config/globalconfig.txt" once
+
+local NOERR				= 0			--正确
+local ERR_SQL			= -1		--sql错误
+local ERR_SESS			= -2		--用户没登陆
+local ERR_GAMESER		= -3		--游戏服务没准备好
+local ERR_DATASAVE		= -4		--角色上一次保存数据是否出现异常
+local ERR_SELACTOR		= -5		--客户端选择角色的常规错误
+local ERR_SAMENAME		= -6		--角色名称重复
+local ERR_NOUSER		= -7		--角色不存在
+local ERR_SEX			= -8		--错误的性别
+local ERR_NORANDOMNAME	= -9		--随机生成的名字已经分配完
+local ERR_ZY			= -10		--客户端上传的角色阵营参数错误
+local ERR_JOB			= -11		--客户端上传的角色职业参数错误
+local ERR_NAME			= -12		--名称无效，名称中包含非法字符或长度不合法
+local ERR_GUID			= -13     	--如果玩家是帮主，不能删除该角色，需要玩家退帮
+local ERR_CROSSWAR		= -14		-- 已经登陆到其他服务器
+local ERR_MAXACTOR		= -15		--已经超过最大可建角色数量
+
+local cLoginKey = 1
+local sLoginKey = 1
+
+local cCreateActor = 2
+local sCreateActor = 2
+local cDelete = 3
+local sDelete = 3
+local cQueryList = 4
+local sQueryList = 4
+local cEnterGame = 5
+local sEnterGame = 5
+local cRandName = 6	--自动生成名
+local sRandName = 6
+local cLessJob = 7		--查询最少人使用的职
+local sLessJob = 7
+local cLessCamp = 8		--查询最少人使用的阵
+local sLessCamp = 8
+
+
+-- 当用户查询角色列表的时候触发
+function onQueryActorList(accountname, sid, loginip)
+	local updateactorlogin = "call updateactorlogin('%s', %d)";
+
+	if accountname == nil then return end
+	local db = LActorMgr.getDbConn()
+	if db == nil then return end
+	local sql = string.format(updateactorlogin, accountname, sid)
+	local err = System.dbQuery(db, sql)
+	if err ~= 0 then
+		print("sql query error:"..sql)
+		return
+	end
+	local row = System.dbCurrentRow(db)
+	row = System.dbGetRow(row, 0)
+	local ret = tonumber(row)
+	System.dbResetQuery(db)
+	if ret == 0 then
+		System.logInstall(accountname, "", " ", "", "pre_role_choice")
+		System.logDau(accountname, "", "", "", "", "", loginip or "")
+	elseif ret == 2 then
+		System.logDau(accountname, "", "", "", "", "", loginip or "")
+	end
+end
+
+function queryLessJobDb(serverid)
+	-- local getlessjob = "call getlessjob(%d)"
+	-- local db = LActorMgr.getDbConn()
+	-- local sql = string.format(getlessjob, serverid)
+	-- local err = System.dbQuery(db, sql)
+	-- if err ~= 0 then
+	-- 	return -1
+	-- end
+	-- local row = System.dbCurrentRow(db)
+	-- local job = 0
+	-- if row == nil then
+	-- 	job = 2
+	-- else
+	-- 	job = tonumber(System.dbGetRow(row, 0))
+	-- end
+	-- System.dbResetQuery(db)
+
+	-- return 0, job
+	return 0, 0
+end
+
+function queryActorCount( accountid, serverid )
+	local ret = 0
+	local db = LActorMgr.getDbConn()
+	local sql = string.format("select count(*) from actors where accountid=%d and serverindex=%d", accountid, serverid)
+	local err = System.dbQuery(db, sql)
+	if err ~= 0 then
+		return 0
+	end
+
+	local row = System.dbCurrentRow(db)
+	if row == nil then
+		ret = 2
+	else
+		ret = tonumber(System.dbGetRow(row, 0))
+	end
+	System.dbResetQuery(db)
+	return ret
+end
+
+function queryZyList(serverid)
+	local ret = 7
+	local db = LActorMgr.getDbConn()
+	local sql = string.format("call queryzylist(%d)", serverid)
+	local err = System.dbQuery(db, sql)
+	if err ~= 0 then
+		return ret
+	end
+	local row = System.dbCurrentRow(db)
+	if row ~= nil then
+		for i=0,2 do
+			local t = tonumber(System.dbGetRow(row, i))
+			if t == 0 then
+				local tmp = System.bitOpRig(1, i)
+				tmp = System.bitOpNot(tmp)
+				ret = System.bitOpAnd(ret, tmp)
+			end
+		end
+	end
+	System.dbResetQuery(db)
+	return ret
+end
+
+function queryDbZY(serverid)
+	local camp = 1
+	local db = LActorMgr.getDbConn()
+	local sql = string.format("select zy from zycount where serverindex=%d order by usercount asc limit 1", serverid)
+	local err = System.dbQuery(db, sql)
+	if err ~= 0 then
+		return -1, 0
+	end
+	local row = System.dbCurrentRow(db)
+	if row ~= nil then
+		camp = tonumber(System.dbGetRow(row, 0))
+	end
+	System.dbResetQuery(db)
+	return 0,camp
+end
+
+function queryActorList(dp, serverid, accountid, accountname, actorid, netid, loginip)
+	if (accountid == 0) then
+		print("user has not login, recv a query request")
+		return
+	end
+
+	-- 后面的status不是特别清楚做什么，旧代码里还调用了查询角色数量的语句没有判断status的
+	local selectActorSql = "select `actorid`,`actorname`,`job`,`zhuansheng_lv`,`level`,`totalpower`,`vip_level`,`sex` from actors where accountname='%s' and serverindex=%d;"--and (status & 2)=2;"
+	--local loadactorlistbyaccountid = "call loadactorlistbyaccountid('%s',%d)"
+	--local sql = string.format(loadactorlistbyaccountid, accountname, serverid)
+	local sql = string.format(selectActorSql, accountname, serverid)
+	local db = LActorMgr.getDbConn()
+	local err = System.dbQuery(db, sql)
+	local senddp = LActorMgr.getDataPacket()
+	LDataPack.writeByte(senddp, 255)
+	LDataPack.writeByte(senddp, 4)
+	LDataPack.writeInt(senddp, accountid)
+
+	if err ~= 0 then
+        LDataPack.writeChar(senddp, -1)
+		LDataPack.writeInt(senddp, 0)
+		LActorMgr.SendToGate(netid, senddp)
+		return
+	end
+
+	local count = System.dbGetRowCount(db)
+	if count == 0 then
+        LDataPack.writeChar(senddp, 0)
+		LDataPack.writeInt(senddp, 0)
+
+	else
+		local row = System.dbCurrentRow(db)
+        LDataPack.writeChar(senddp, 1)
+        LDataPack.writeInt(senddp, count)
+
+        for i=1, count do
+			LDataPack.writeInt(senddp, tonumber(System.dbGetRow(row, 0)))
+			LDataPack.writeString(senddp, System.dbGetRow(row, 1))
+			LDataPack.writeInt(senddp, tonumber(System.dbGetRow(row, 2)))
+			LDataPack.writeInt(senddp, tonumber(System.dbGetRow(row, 3)))
+			LDataPack.writeInt(senddp, tonumber(System.dbGetRow(row, 4)))
+			LDataPack.writeInt64(senddp, tonumber(System.dbGetRow(row, 5)))
+			LDataPack.writeInt(senddp, tonumber(System.dbGetRow(row, 6)))
+			LDataPack.writeInt(senddp, tonumber(System.dbGetRow(row, 7)))
+
+			row = System.dbNextRow(db)
+		end
+	end
+
+	System.dbResetQuery(db)
+	LActorMgr.SendToGate(netid, senddp)
+
+	onQueryActorList(accountname, serverid, loginip)
+end
+
+function createActor(dp, serverid, accountid, accountname, actorid, netid, gateuser, gateIp)
+	local ret = NOERR
+	local sex, job, pf, pfid, appid
+
+	local name = LDataPack.readString(dp)
+	name = LActorMgr.lowerCaseNameStr(name)
+	local nameLen = System.getStrLenUtf8(name)
+	if nameLen <= 0 or nameLen > 6 or not LActorMgr.checkNameStr(name) then
+		ret = ERR_NAME
+	elseif LActorMgr.nameHasUser(name) then
+		ret = ERR_SAMENAME
+	else
+		sex = LDataPack.readChar(dp)
+		job = LDataPack.readChar(dp)
+		pf = LDataPack.readString(dp)
+		pfid = LDataPack.readString(dp)
+		appid = LDataPack.readString(dp)
+
+		-- 腾讯开平注册上报
+		--System.logEnconomy(0, accountname, serverid, "tx_install_report", pf, gateIp, via)
+		print("actormgr.createActor pf:" .. (pf or "") .. ", pfid:" .. (pfid or "")..", appid:"..(appid or ""))
+
+		if (job <= JobType_None or job >= JobType_Max) then
+			ret = ERR_JOB
+		end
+
+		if (sex ~= 0 and sex ~= 1) then
+			ret = ERR_SEX
+		end
+	end
+
+	local aid = 0
+	if ret == NOERR then
+		ret, aid = LActorMgr.createActor(accountid, accountname, name, sex, job, aid, pfid or "", gateuser)
+		System.logInstall(accountname, "", "", "", "role_choice")
+	end
+
+	local senddp = LActorMgr.getDataPacket()
+	LDataPack.writeByte(senddp, 255)
+	LDataPack.writeByte(senddp, sCreateActor)
+	LDataPack.writeInt(senddp, aid)
+	LDataPack.writeByte(senddp, ret)
+	LActorMgr.SendToGate(netid, senddp)
+end
+
+-- 删除角色
+function deleteActor(dp, serverid, accountid, accountname, actorid, netid)
+	local senddp = LActorMgr.getDataPacket()
+	LDataPack.writeByte(senddp, 255)
+	LDataPack.writeByte(senddp, sDelete)
+	if accountid == 0 then
+		print("未发送查询包就开始删除角色！")
+		LDataPack.writeInt(senddp, 0)
+		LDataPack.writeChar(senddp, ERR_SESS)
+		LActorMgr.SendToGate(netid, senddp)
+		return
+	end
+
+	local aid = LDataPack.readInt(dp)
+	LDataPack.writeInt(senddp, aid)
+	local db = LActorMgr.getDbConn()
+	local social_sql = string.format("call getactorssocial(%d)", aid)
+	local err = System.dbQuery(db, social_sql)
+	if err ~= 0 then
+		return -1
+	end
+	local row = System.dbCurrentRow(db)
+	local social = 0
+	if row ~= nil then
+		social = tonumber(System.dbGetRow(row, 0))
+	end
+	System.dbResetQuery(db)
+	if  social == smGuildLeader then
+		print("您是宗主，解散玩帮派，才能删除！")
+		LDataPack.writeChar(senddp, ERR_GUID)
+	    LActorMgr.SendToGate(netid, senddp)
+		return
+	end
+
+	--删除竞技台信息
+	local fight_sql = string.format("call delfightinfo(%d)", aid)
+	local err = System.dbQuery(db, fight_sql)
+	if err ~= 0 then
+		return -1
+	end
+
+	System.dbResetQuery(db)
+	FightFun.deleteActorData(aid)
+
+	local sql = string.format("call clientdeletecharactor(%d,'%s')", aid, accountname)
+	local err = System.dbExe(db, sql)
+	if err ~= 0 then
+		LDataPack.writeChar(senddp, ERR_SQL)
+	else
+		LDataPack.writeChar(senddp, 0)
+	end
+	LActorMgr.SendToGate(netid, senddp)
+end
+
+function userSelCharEntryGame(serverid, aid, accountname, accountid, ipstring)
+	local db = LActorMgr.getDbConn()
+	local sql = string.format("call clientstartplay(%d,%d,'%s',%d,0);",
+        serverid, aid, accountname, accountid, ipstring)
+	local err = System.dbQuery(db, sql)
+	if err == 0 then
+		local row = System.dbCurrentRow(db)
+		if row ~= nil and tonumber(System.dbGetRow(row, 0)) ~= 0 then
+			err = NOERR
+		else
+			err = ERR_NOUSER
+		end
+		System.dbResetQuery(db)
+	else
+		print("选择角色错误")
+		return ERR_SELACTOR
+	end
+	return err
+end
+
+local function updatePfidAndAppIid(serverid, actorid, pfid, appid)
+	local db = LActorMgr.getDbConn()
+	local sql = string.format("update actors set `appid`='%s',`pfid`='%s' where `actorid`=%d and `serverindex`=%d;",
+        appid, pfid, actorid, serverid)
+	local err = System.dbQuery(db, sql)
+	print(sql)
+	if err == 0 then
+		System.dbResetQuery(db)
+	end
+end
+
+function enterGame(cmd, dp, serverid, accountid, accountname, actorid, netid, gateuser, loginip)
+	print("actor enterGame:" .. actorid .. ",account:" .. accountname..",loginip:"..tostring(loginip))
+	local senddp = LActorMgr.getDataPacket()
+	LDataPack.writeByte(senddp, 255)
+	LDataPack.writeByte(senddp, sEnterGame)
+	if accountid == 0 then
+		print("未登陆就发送进入游戏包！")
+		LDataPack.writeByte(senddp, ERR_SESS)
+		LActorMgr.SendToGate(netid, senddp)
+		return
+	end
+
+	actorid = LDataPack.readInt(dp)
+
+
+	local sid = LActorMgr.isLogoutBattle(actorid)
+	if sid ~= 0 then
+		if LActorMgr.LoginOtherSrv(gateuser, sid, actorid) then
+			return
+		end
+	end
+
+	local pf = LDataPack.readString(dp)
+	local pfid = LDataPack.readString(dp)
+	local appid = LDataPack.readString(dp)
+
+	local err = userSelCharEntryGame(serverid, actorid, accountname, accountid, "")
+	LDataPack.writeByte(senddp, err)
+	LActorMgr.SendToGate(netid, senddp)
+
+	print("actormgr.enterGame err:" .. err .. "account:" .. accountname)
+	updatePfidAndAppIid(serverid, actorid, pfid or "", appid or "")
+	if err == NOERR then
+		if System.isBattleSrv() then
+			print(string.format("[Lua]enterGame:battle server should never call this (accountid[%d], actorid[%d])", accountid, actorid))
+        end
+		print("actormgr.enterGame aid:"..actorid..",account:"..accountname..",pf:".. (pf or "")..",pfid:"..(pfid or "")..",appid:"..(appid or ""))
+		LActorMgr.enterGame(gateuser, actorid, pf, pfid, appid)
+	end
+
+	if pf ~= nil then
+		if string.sub(pf, 1, 5) == "union" then
+			System.logInstall(accountname, "union", "", appid, "enter_game")
+		else
+			System.logInstall(accountname, pf, "", appid, "enter_game")
+		end
+	else
+		System.logInstall(accountname, "", "", appid, "enter_game")
+	end
+end
+
+function randNameReq(cmd, dp, serverid, accountid, accountname, actorid, netid, gateuser)
+	local senddp = LActorMgr.getDataPacket()
+	LDataPack.writeByte(senddp, 255)
+	LDataPack.writeByte(senddp, sRandName)
+
+	local symbol = LDataPack.readByte(dp) --
+	local err = NOERR
+	local times = 0
+	local actorname = ""
+	if accountid == 0 then
+		err = ERR_SESS
+	else
+		while true do
+			if times >= 10000 then break end
+
+			actorname = LActorMgr.getRandomName(symbol)
+			if actorname == nil then
+				err = ERR_NORANDOMNAME
+				break
+			end
+			local used = LActorMgr.nameHasUser(actorname)
+			if not used then
+				local len = System.getStrLenUtf8(actorname)
+				if len <= 0 or len > 6 or not LActorMgr.checkNameStr(actorname) then
+					--continue
+				else
+					break
+				end
+			end
+
+			times = times + 1
+		end
+	end
+
+	LDataPack.writeByte(senddp, err)
+	if err == NOERR then
+		LDataPack.writeByte(senddp, symbol)
+		LDataPack.writeString(senddp, actorname)
+	end
+	LActorMgr.SendToGate(netid, senddp)
+end
+
+function queryLessJobReq(cmd, dp, serverid, accountid, accountname, actorid, netid, gateuser)
+	local senddp = LActorMgr.getDataPacket()
+	LDataPack.writeByte(senddp, 255)
+	LDataPack.writeByte(senddp, sLessJob)
+	if accountid == 0 then
+		LDataPack.writeByte(senddp, ERR_SESS)
+	else
+		local ret, job = queryLessJobDb(serverid)
+		LDataPack.writeByte(senddp, ret)
+		LDataPack.writeByte(senddp, job)
+	end
+	LActorMgr.SendToGate(netid, senddp)
+end
+
+function queryZYReq(cmd, dp, serverid, accountid, accountname, actorid, netid, gateuser)
+	local senddp = LActorMgr.getDataPacket()
+	LDataPack.writeByte(senddp, 255)
+	LDataPack.writeByte(senddp, sLessCamp)
+	if accountid == 0 then
+		LDataPack.writeByte(senddp, ERR_SESS)
+	else
+		local ret, camp = queryDbZY(serverid)
+		LDataPack.writeByte(senddp, ret)
+		LDataPack.writeByte(senddp, camp)
+	end
+	LActorMgr.SendToGate(netid, senddp)
+end
+
+-- 处理actormgr的网络数据
+function actorMgrEvent(cmd, dp, serverid, accountid, accountname, actorid, netid, gateuser, loginip)
+	if cmd == cQueryList then
+		queryActorList(dp, serverid, accountid, accountname, actorid, netid, loginip)
+	elseif cmd == cCreateActor then
+		createActor(dp, serverid, accountid, accountname, actorid, netid, gateuser, loginip)
+	elseif cmd == cDelete then
+		deleteActor(dp, serverid, accountid, accountname, actorid, netid)
+	elseif cmd == cEnterGame then
+		enterGame(cmd, dp, serverid, accountid, accountname, actorid, netid, gateuser, loginip)
+	elseif cmd == cRandName then
+		randNameReq(cmd, dp, serverid, accountid, accountname, actorid, netid, gateuser)
+	elseif cmd == cLessJob then
+		queryLessJobReq(cmd, dp, serverid, accountid, accountname, actorid, netid, gateuser)
+	elseif cmd == cLessCamp then
+		queryZYReq(cmd, dp, serverid, accountid, accountname, actorid, netid, gateuser)
+	end
+end
+
+

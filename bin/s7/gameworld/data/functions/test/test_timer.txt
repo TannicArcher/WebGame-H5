@@ -1,0 +1,23 @@
+--#ifdef _UNIT_TEST_
+--#include "data/functions/test/test_common.txt"
+
+local test_timer_func = {}
+
+test_timer_func.test_base = function(sysarg)
+	local hdl = LActor.postScriptEvent(sysarg, 1000, "test_timer_base_callback", 0, 1, 1023)
+	-- LActor.cancelScriptTimer(sysarg, hdl)
+	LActor.nextScriptEvent(sysarg, "test_timer_base_callback", 1023)
+
+	local s = LActor.getScenePtr(sysarg)
+	if s ~= nil then
+		Fuben.postScriptEvent(s, 1000, "test_timer_base_callback", 0, 1, 1024)
+	end
+end
+
+function test_timer_base_callback(sysarg, p)
+	print("test_timer_base_callback:"..p)
+end
+
+TEST("timer", "test_base", test_timer_func.test_base)
+
+--#endif

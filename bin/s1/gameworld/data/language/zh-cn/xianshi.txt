@@ -1,0 +1,33 @@
+﻿xianshi =
+{
+	--仙尊卡
+	desc0001 = "使用成为<font color='#FFFF00'>仙尊</font>，独享<font color='#FFFF00'>[无限传送]</font>、<font color='#FFFF00'>[专属标识和表情]</font>等特权。",
+	desc0002 = "使用成为<font color='#FFFF00'>至尊</font>，尊享<font color='#FFFF00'>[强力BUFF]、[华丽称号]、[挂机经验加成]</font>等特权。",
+
+	--8888绑定金币档次
+	desc0003 = "金币秒杀，每日必买",
+
+	--8元宝档次
+	desc0004 = "海量金币，等您来拿",
+
+	--58元宝档次
+	desc0005 = "<font color='#FFFF00'>超低折扣</font>，为您精打细算",
+
+	--88元宝档次
+	desc0006 = "材料丰富，<font color='#FFFF00'>经济实惠</font>，逍遥热销",
+
+	--288、388元宝档次
+	desc0007 = "伙伴坐骑材料丰富，更有机会额外获得<font color='#FFFF00'>提品材料</font>",
+
+	--时装描述（198元宝档次）
+	desc0008 = "时装-头饰：使用后激活<font color='#FFFF00'>独特发型</font>，获得不凡<font color='#FFFF00'>战斗力</font>",											--【发间雪】、【隐红尘】头饰描述
+	desc0009 = "时装-外套：使用后激活<font color='#FFFF00'>独特外形</font>，专属<font color='#FFFF00'>打坐形象</font>，获得不凡<font color='#FFFF00'>战斗力</font>",						--【狐影】、【相忘江湖】时装描述
+	desc0010 = "时装-足迹：使用后激活<font color='#FFFF00'>独特脚印</font>，获得不凡<font color='#FFFF00'>战斗力</font>",								--【步步生莲】、【冰心寒霜】足迹描述
+	desc0011 = "时装-聊天泡泡：使用后激活<font color='#FFFF00'>独特聊天泡泡</font>，获得不凡<font color='#FFFF00'>战斗力</font>",							--【浪漫沙滩】泡泡描述
+
+	--随机时装礼包（268元宝档次）
+	desc0012 = "五大时装限时购买，超高<font color='#FFFF00'>战力与性价比</font>，激活<font color='#FFFF00'>套装</font>更能获得特殊属性效果",	
+
+	--588元宝档次
+	desc0013 = "海量元宝道具，助您<font color='#FFFF00'>战力飙升</font>，更有机会额外获得珍稀道具<font color='#FFFF00'>百年材料</font>",
+}

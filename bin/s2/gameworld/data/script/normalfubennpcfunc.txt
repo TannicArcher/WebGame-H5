@@ -1,0 +1,290 @@
+﻿--给场景中的npc用的脚本
+function NormalNpcFubenFunc(sysarg, conf)
+	if table.getn(NPCFubenTable) == 0 then 
+		return "" 
+	end
+	local str = ""
+	for i=1,#NPCFubenTable do
+		local fbid = NPCFubenTable[i]
+		local fbdata = FuBen[fbid]
+		if fbdata == nil then return "" end
+		local level = LActor.getIntProperty(sysarg, P_LEVEL) 
+		if level >= fbdata.minLevel then 
+			str = str.."<#BL"..fbdata.fbname
+
+			--单人模式或组队
+			if FuBen[fbid].minPlayCount ~= nil and fbdata.minPlayCount > 1 then
+				str = str..Lang.ScriptTips.f00066
+			else
+				str = str..Lang.ScriptTips.f00067
+			end
+
+			-- 显示进入次数
+			local restCount = 0 ;
+			local daycount = fbdata.daycount
+			if daycount == nil then daycount = 0 end
+			if daycount > 0 then
+				local enterCount, addCount = Fuben.getEnterFubenInfo( sysarg, fbid )
+				if enterCount ~= nil and addCount ~= nil then
+					str = str.."	("..enterCount.."/"..daycount+addCount..")"
+					restCount = daycount+addCount - enterCount ;
+				end
+			end
+			str = str.."/@OnEnterFubenFunc,"..fbid..">"
+		end
+	end
+	return str
+end
+
+function fubenenter(sysarg,fbid,isUseAllFubenTimes)
+	LActor.exitTeam(sysarg)
+	OnEnterFubenFunc(sysarg,fbid,isUseAllFubenTimes);
+end
+
+function fubenCancel(sysarg)
+end
+
+--加入一个参数
+--isUseAllFubenTimes 是否使用全部次数(正常进入不传入或0)
+function OnEnterFubenFunc(sysarg,fbid,isUseAllFubenTimes) 
+	local fbid = tonumber(fbid)
+	local fbdata = FuBen[fbid]
+	if fbdata == nil then
+		print( "fbdata is nil:"..fbid )
+		return 
+	end
+
+	if isUseAllFubenTimes then 
+		isUseAllFubenTimes = tonumber(isUseAllFubenTimes);
+	end
+
+	if LActor.hasState(sysarg, esProtection) then
+		LActor.sendTipmsg(sysarg, Lang.ScriptTips.sx019, ttMessage)
+		return 
+	end
+
+	--判断副本人数
+	local players = nil
+	local minPlayer = fbdata.minPlayCount
+	local maxPlayer = fbdata.maxPlayCount
+	local minLevel = fbdata.minLevel			--等级
+	local daycount = fbdata.daycount			--当天进入次数
+	local restEnterCount = 0 ;
+	if daycount == nil then daycount = 0 end
+	if minPlayer == nil or minPlayer < 1 then
+		minPlayer = 1
+	end
+	if minPlayer == 1 then	--单人副本
+		players = { sysarg }
+		-- 判断等级
+		if minLevel ~= nil and minLevel > 0 then
+			local playerlevel = LActor.getIntProperty(sysarg,P_LEVEL)
+			if playerlevel < minLevel then
+				LActor.sendTipmsg( sysarg, Lang.ScriptTips.f00011, ttDialog )
+				return 
+			end
+		end
+		-- 判断次数
+		if daycount > 0 then
+			local enterCount, addCount = Fuben.getEnterFubenInfo( sysarg, fbid )
+			if enterCount == nil or addCount == nil or enterCount >= daycount+addCount then
+				LActor.sendTipmsg( sysarg, Lang.ScriptTips.f00015, ttDialog )
+				return 
+			end
+			restEnterCount = daycount + addCount - enterCount ;
+		end
+		local teamid = LActor.getTeamId(sysarg)
+		if teamid > 0 then
+			LActor.messageBox(sysarg,LActor.getNpc(sysarg),0,Lang.TaskTalk.ShJin002,Lang.TaskTalk.ShJin003.."/fubenenter,"..fbid..",".. ((isUseAllFubenTimes ~= nil) and isUseAllFubenTimes or 0),Lang.TaskTalk.ShJin004.."/fubenCancel",nil)
+			return
+		end
+	else	--多人副本
+		if not LActor.isInTeam( sysarg ) then
+			LActor.sendTipmsg( sysarg, Lang.ScriptTips.f00062, ttWarmTip )
+			return 
+		end
+		-- 队长才能点击进入
+		if not TeamFun.isCaptain(sysarg) then
+			LActor.sendTipmsg( sysarg, Lang.ScriptTips.f00068, ttWarmTip )
+			return 
+		end
+		local nplayer = LActor.getTeamMemberCount(sysarg) -- TODO: 这个可能要获取在线玩家个数
+		-- 判断人数
+		if nplayer < minPlayer then
+			local tips = string.format( Lang.ScriptTips.f00001, minPlayer )
+			LActor.sendTipmsg( sysarg, tips, ttDialog)
+			return 
+		elseif nplayer > maxPlayer then
+			 local tips = string.format( Lang.ScriptTips.f00002, maxPlayer )
+			LActor.sendTipmsg( sysarg, tips, ttDialog)
+			return 
+		end
+		players = LuaHelp.getTeamMemberList(sysarg)	 --获取队伍玩家列表
+		if players == nil or #players ~= nplayer then
+			LActor.sendTipmsg(sysarg,Lang.ScriptTips.f00010,ttDialog)
+			return 
+		end
+
+		local timeoutSecond = 10	--队长邀请超时时间
+		local lastInviteTime = TeamFun.getTeamMemberMsgTime(sysarg) -- 能执行到此，那么本人一定是队长，获取队长上一次发出邀请的时间
+		local nowTime = System.getNowTime()
+		local allready = true
+		for i = 1,table.getn(players) do
+			local player = players[i]
+			local status = TeamFun.getTeamMemberStatus(player, fbid)
+			if status ~= 1 then
+				allready = false
+				break
+			end
+		end
+		if (nowTime - lastInviteTime < timeoutSecond)	and not allready then
+			return
+		end
+		TeamFun.setTeamMemberStatus(sysarg, fbid, 1) --队长 设置为确认状态
+
+		-- 判断每个玩家是否满足条件
+		local noNearText = nil -- 不在附近的玩家名称
+		local notComfirmText = nil --未确认是否参加多人副本的玩家名称
+		for i = 1,table.getn(players) do
+			local player = players[i]
+			-- 等级
+			if minLevel ~= nil and minLevel > 0 then
+				local playerlevel = LActor.getIntProperty(player,P_LEVEL)
+				if playerlevel < minLevel then
+					LActor.sendTipmsg( sysarg, Lang.ScriptTips.f00069, ttDialog )
+					return 
+				end
+			end
+			-- 天数
+			if daycount > 0 then
+				local enterCount, addCount = Fuben.getEnterFubenInfo(player, fbid)
+				if enterCount == nil or addCount == nil or enterCount >= daycount+addCount then
+					LActor.sendTipmsg( sysarg, Lang.ScriptTips.f00006, ttDialog )
+					return 
+				end
+				restEnterCount = daycount + addCount - enterCount ;
+			end
+			-- 护送任务状态
+			if LActor.hasState(player, esProtection) then
+				LActor.sendTipmsg(sysarg, Lang.ScriptTips.f00070, ttMessage)
+				return 
+			end
+			-- 是否跟NPC同屏
+			if thisNPC ~= nil and not LActor.isInSameScreen( thisNPC, player ) then
+				if noNearText == nil then
+					noNearText = LActor.getName( player )
+				else
+					noNearText = noNearText.."/"..LActor.getName( player )
+				end
+			end
+			
+			-- 是否确定参加副本
+			if not TeamFun.isCaptain(player) then
+				local status = TeamFun.getTeamMemberStatus(player, fbid)	 --获取队伍玩家列表
+				if status ~= 1 then
+					TeamFun.setTeamMemberStatus(player, fbid, 0) --初始化为未确认状态
+					if notComfirmText == nil then
+						notComfirmText = LActor.getName( player )
+					else
+						notComfirmText = notComfirmText.."/"..LActor.getName( player )
+					end
+					-- 发送确认信息
+					local npcHandle = LActor.getHandle( thisNPC )
+					local tips = string.format( Lang.ScriptTips.f00071,	fbdata.fbname)
+					LActor.messageBox(player,npcHandle,0,tips,Lang.ScriptTips.x00050.."/joinIntoFubenOk,"..fbid,Lang.ScriptTips.x00051.."/joinIntoFubenCancel,"..fbid,"",timeoutSecond*1000, 0, "", 0, 2)
+				end
+			end
+		end
+
+		if noNearText ~= nil then -- 判断有没有不在附近的玩家
+			local tips = string.format( Lang.ScriptTips.f00064, noNearText )
+			LActor.sendTipmsg( sysarg, tips, ttDialog )
+			return 
+		end
+
+		if notComfirmText ~= nil then -- 判断是否有玩家未确认进入
+			local tips = string.format( Lang.ScriptTips.f00072, notComfirmText )
+			LActor.sendTipmsg( sysarg, tips, ttMessage )
+			return
+		else
+			for i = 1,table.getn(players) do
+				TeamFun.setTeamMemberStatus(players[i], fbid, 0) -- 副本状态设为 0，（策划要求每次进入副本都要确认）
+			end
+		end
+	end
+
+	LActor.closeNPCDialog( sysarg ) --关闭NPC窗口
+
+	-- 创建副本
+	local hFuben = Fuben.createFuBen(fbid)
+	if hFuben == nil then
+		LActor.sendTipmsg( sysarg, Lang.ScriptTips.f00065, ttDialog )
+		return 
+	end
+
+	-- 进入副本
+	local enterFunc = NPCFunc.OnEnterCopyMap[fbid]
+	if enterFunc == nil then
+		--默认处理将队伍的成员逐个传送到副本场景
+		for i = 1,table.getn( players ) do
+			LActor.enterFuBen( players[i], hFuben, -1, -1, -1 )
+		end
+	else
+		-- 自己处理进入副本
+		if #players == 1 then
+			enterFunc( players[1], hFuben ) -- 单人副本传入玩家指针
+		elseif #players > 1 then
+			enterFunc( players, hFuben ) -- 多人副本传人玩家指针列表 TODO: 传人队伍句柄会不会好点
+		end
+	end
+
+	for i = 1,table.getn( players ) do
+		print(string.format("%d enter fuben %d", LActor.getActorId(players[i]), fbid)) -- 输出进入副本消息到日志文件
+		if daycount > 0 then -- 限制次数的副本则增加进入副本的次数,TODO: 不限次数的要不要设置
+			if isUseAllFubenTimes and isUseAllFubenTimes == 1 and restEnterCount > 0 then 
+				--添加buff加成
+				--todo buff修改
+				-- LActor.addBuff(players[i],103,140, restEnterCount-1, 7200 , 1, "副本次数加成", false);
+				Fuben.changeEnterCount( players[i], fbid, restEnterCount)
+			else
+				Fuben.changeEnterCount( players[i], fbid, 1)
+			end
+		end
+		LActor.triggerAchieveEvent(sysarg, 14, fbid) -- 触发进入副本成就
+	end
+
+end
+
+function joinIntoFubenOk(sysarg, fbid)
+	TeamFun.setTeamMemberStatus(sysarg, fbid, 1) --设置为确认状态
+	local players = LuaHelp.getTeamMemberList(sysarg)	 --获取队伍玩家列表
+	if players == nil then -- 已经不在队伍中
+		LActor.sendTipmsg(sysarg, Lang.ScriptTips.f00074, ttMessage)
+		return 
+	end
+	for i = 1,table.getn(players) do
+		local player = players[i]
+		if TeamFun.isCaptain(player) then
+			OnEnterFubenFunc(player, fbid)
+			break
+		end
+	end
+end
+
+function joinIntoFubenCancel(sysarg, fbid)
+	TeamFun.setTeamMemberStatus(sysarg, fbid, 0) --设置为未确认状态
+	local players = LuaHelp.getTeamMemberList(sysarg)	 --获取队伍玩家列表
+	if players == nil then -- 已经不在队伍中
+		LActor.sendTipmsg(sysarg, Lang.ScriptTips.f00074, ttMessage)
+		return 
+	end
+	for i = 1,table.getn(players) do
+			local player = players[i]
+			if LActor.getActorId( player ) ~= LActor.getActorId( sysarg ) then
+				local tips = string.format( Lang.ScriptTips.f00073, LActor.getName( sysarg ) )
+				LActor.sendTipmsg( player, tips, ttMessage )
+			end
+	end
+end
+
+-- table.insert(MainFnTable, NormalNpcFubenFunc)

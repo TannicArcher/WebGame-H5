@@ -1,0 +1,270 @@
+﻿Miji =
+{
+
+--附带说明
+	fudaiRule = "#99999#1.秘籍是镇妖塔掉落的珍贵物品，对技能有极大的增益效果！<br>2.选择左方的技能或秘籍可进行秘籍附带操作。<br>3.每个秘籍只能附在对应的技能上，一个技能最多只能同时附带一个秘籍，即八个技能分别附带八个秘籍。<br>4.秘籍可随时拿回背包。",
+
+--升级说明
+	shengjiRule = "#99999#1.只能对左方附带在技能上的秘籍进行升级操作。<br>2.升级会提升秘籍对技能的增强效果，最高99级，等级满了经验不会再增加。<br>3.经验值通过吞噬经验丹增加，经验丹可在镇妖塔获得，此外也可以吞噬其他秘籍。<br>4.吞噬秘籍时会把材料秘籍的经验全部转移到要升级的秘籍上，材料秘籍被吞噬后会消失。<br>5.吞噬秘籍不会改变重数，升级也不会影响重数。",
+
+--仙炼说明
+	hechengRule = "#99999#1.只有橙色秘籍才可以进行仙法熔炼。<br>2.选择左方附带了橙色秘籍的技能后，再选择界面右下方背包中与选择的秘籍同种类的橙色秘籍进行仙炼。<br>3.每1本橙色秘籍被仙炼后可增加1点仙炼值，高重数秘籍被仙炼到低重数秘籍上，得到的新的秘籍仙炼值是二者之和，不会损失仙炼值。<br>4.每增加1点仙炼值，都可以增加人物固定属性，每提升1重都可以大大提升特殊效果，当秘籍的每一重的仙炼值满了以后，即可升至下一重。",
+
+	tt001 = "秘籍不符合条件",
+	tt002 = "没有学习秘籍对应的技能",
+	tt003 = "致命错误，附带秘籍失败",
+	tt004 = "技能上没有附带该秘籍",
+	tt005 = "货币数量不够",
+	tt006 = "找不到该物品",
+	tt007 = "该材料没有经验",
+	tt008 = " 材料数量不足",
+	tt009 = " 技能上没有附带该秘籍",
+	tt0010 = " 待升级物品不是秘籍",
+	tt0011 = " 待合成物品不是秘籍",
+	tt0012 = "待合成秘籍不是同一类型秘籍",
+	tt0013 = " 待合成物品不是同重数",
+	tt0014 = "已是最高重数",
+	tt0015 = "待合成物品数量错误",
+
+	tt0016 = "<(c0x%s)%s%s>的 %s 修炼至满级,又一位战神诞生!",
+	tt0017 = "<(c0x%s)%s%s>的 %s 提升到九重阶段,十八般武艺今非昔比!",
+
+	tt0018 = " 已经是最高级",
+	tt0019 = " 已经是最高重数",
+	tt0020 = "找不到该物品",
+
+--界面提示
+
+	mjDescShort=
+	{
+		--天雷1
+i19600="秘籍效果：使突雷技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19601="秘籍效果：使突雷技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19602="秘籍效果：使突雷技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19603="秘籍效果：使突雷技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19604="秘籍效果：使突雷技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+
+--蜀山1
+i19605="秘籍效果：使穿云技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19606="秘籍效果：使穿云技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19607="秘籍效果：使穿云技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19608="秘籍效果：使穿云技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19609="秘籍效果：使穿云技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+
+--圆月1
+i19610="秘籍效果：使逐月技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19611="秘籍效果：使逐月技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19612="秘籍效果：使逐月技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19613="秘籍效果：使逐月技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i19614="秘籍效果：使逐月技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+
+--天雷2
+i19615="秘籍效果：使离恨刺技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用离恨刺技能时，将有$valueS0$%的概率标记目标，持续6秒，期间对被标记的目标造成的伤害增加$valueS2$%。>",
+i19616="秘籍效果：使离恨刺技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用离恨刺技能时，将有$valueS0$%的概率标记目标，持续6秒，期间对被标记的目标造成的伤害增加$valueS2$%。>",
+i19617="秘籍效果：使离恨刺技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用离恨刺技能时，将有$valueS0$%的概率标记目标，持续6秒，期间对被标记的目标造成的伤害增加$valueS2$%。>",
+i19618="秘籍效果：使离恨刺技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用离恨刺技能时，将有$valueS0$%的概率标记目标，持续6秒，期间对被标记的目标造成的伤害增加$valueS2$%。>",
+i19619="秘籍效果：使离恨刺技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用离恨刺技能时，将有$valueS0$%的概率标记目标，持续6秒，期间对被标记的目标造成的伤害增加$valueS2$%。>",
+
+--蜀山2
+i19620="秘籍效果：使化元斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用化元斩技能时，将有$valueS0$%的概率给对手附带化元效果，使目标6秒内每2秒受到$valueS1$%自身攻击力伤害，并给自身恢复相同血量。>",
+i19621="秘籍效果：使化元斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用化元斩技能时，将有$valueS0$%的概率给对手附带化元效果，使目标6秒内每2秒受到$valueS1$%自身攻击力伤害，并给自身恢复相同血量。>",
+i19622="秘籍效果：使化元斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用化元斩技能时，将有$valueS0$%的概率给对手附带化元效果，使目标6秒内每2秒受到$valueS1$%自身攻击力伤害，并给自身恢复相同血量。>",
+i19623="秘籍效果：使化元斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用化元斩技能时，将有$valueS0$%的概率给对手附带化元效果，使目标6秒内每2秒受到$valueS1$%自身攻击力伤害，并给自身恢复相同血量。>",
+i19624="秘籍效果：使化元斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用化元斩技能时，将有$valueS0$%的概率给对手附带化元效果，使目标6秒内每2秒受到$valueS1$%自身攻击力伤害，并给自身恢复相同血量。>",
+
+--圆月2
+i19625="秘籍效果：使皓月斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用皓月斩技能时，将有$valueS0$%的概率给对手附带中毒效果，使目标6秒内每2秒受到$valueS1$%自身攻击力伤害。>",
+i19626="秘籍效果：使皓月斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用皓月斩技能时，将有$valueS0$%的概率给对手附带中毒效果，使目标6秒内每2秒受到$valueS1$%自身攻击力伤害。>",
+i19627="秘籍效果：使皓月斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用皓月斩技能时，将有$valueS0$%的概率给对手附带中毒效果，使目标6秒内每2秒受到$valueS1$%自身攻击力伤害。>",
+i19628="秘籍效果：使皓月斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用皓月斩技能时，将有$valueS0$%的概率给对手附带中毒效果，使目标6秒内每2秒受到$valueS1$%自身攻击力伤害。>",
+i19629="秘籍效果：使皓月斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用皓月斩技能时，将有$valueS0$%的概率给对手附带中毒效果，使目标6秒内每2秒受到$valueS1$%自身攻击力伤害。>",
+
+--天雷3
+i19630="秘籍效果：使擒龙手技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在每次使用擒龙手技能后，将提升自身攻击力$valueS0$%，持续5秒。>",
+i19631="秘籍效果：使擒龙手技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在每次使用擒龙手技能后，将提升自身攻击力$valueS0$%，持续5秒。>",
+i19632="秘籍效果：使擒龙手技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在每次使用擒龙手技能后，将提升自身攻击力$valueS0$%，持续5秒。>",
+i19633="秘籍效果：使擒龙手技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在每次使用擒龙手技能后，将提升自身攻击力$valueS0$%，持续5秒。>",
+i19634="秘籍效果：使擒龙手技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在每次使用擒龙手技能后，将提升自身攻击力$valueS0$%，持续5秒。>",
+
+--蜀山3
+i19635="秘籍效果：使酒仙斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在每次使用酒仙斩技能后，增加自身攻击速度$valueS0$%，持续5秒。>",
+i19636="秘籍效果：使酒仙斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在每次使用酒仙斩技能后，增加自身攻击速度$valueS0$%，持续5秒。>",
+i19637="秘籍效果：使酒仙斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在每次使用酒仙斩技能后，增加自身攻击速度$valueS0$%，持续5秒。>",
+i19638="秘籍效果：使酒仙斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在每次使用酒仙斩技能后，增加自身攻击速度$valueS0$%，持续5秒。>",
+i19639="秘籍效果：使酒仙斩技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在每次使用酒仙斩技能后，增加自身攻击速度$valueS0$%，持续5秒。>",
+
+--圆月3
+i19640="秘籍效果：隐遁的隐身效果消失后5秒内额外增加额外攻击力$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用隐遁技能后，第一次攻击有$valueS0$%的概率破除目标$valueS1$%的护甲，持续$valueS2$秒。>",
+i19641="秘籍效果：隐遁的隐身效果消失后5秒内额外增加额外攻击力$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用隐遁技能后，第一次攻击有$valueS0$%的概率破除目标$valueS1$%的护甲，持续$valueS2$秒。>",
+i19642="秘籍效果：隐遁的隐身效果消失后5秒内额外增加额外攻击力$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用隐遁技能后，第一次攻击有$valueS0$%的概率破除目标$valueS1$%的护甲，持续$valueS2$秒。>",
+i19643="秘籍效果：隐遁的隐身效果消失后5秒内额外增加额外攻击力$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用隐遁技能后，第一次攻击有$valueS0$%的概率破除目标$valueS1$%的护甲，持续$valueS2$秒。>",
+i19644="秘籍效果：隐遁的隐身效果消失后5秒内额外增加额外攻击力$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用隐遁技能后，第一次攻击有$valueS0$%的概率破除目标$valueS1$%的护甲，持续$valueS2$秒。>",
+
+--天雷4
+i19645="秘籍效果：使天威煌炎技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用天威煌炎技能时，降低被攻击者的攻击力$valueS0$%，持续5秒，若同时有标记一个目标，则在标记目标周围同时也施放一个天威煌炎。>",
+i19646="秘籍效果：使天威煌炎技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用天威煌炎技能时，降低被攻击者的攻击力$valueS0$%，持续5秒，若同时有标记一个目标，则在标记目标周围同时也施放一个天威煌炎。>",
+i19647="秘籍效果：使天威煌炎技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用天威煌炎技能时，降低被攻击者的攻击力$valueS0$%，持续5秒，若同时有标记一个目标，则在标记目标周围同时也施放一个天威煌炎。>",
+i19648="秘籍效果：使天威煌炎技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用天威煌炎技能时，降低被攻击者的攻击力$valueS0$%，持续5秒，若同时有标记一个目标，则在标记目标周围同时也施放一个天威煌炎。>",
+i19649="秘籍效果：使天威煌炎技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用天威煌炎技能时，降低被攻击者的攻击力$valueS0$%，持续5秒，若同时有标记一个目标，则在标记目标周围同时也施放一个天威煌炎。>",
+
+--蜀山4
+i19650="秘籍效果：使万剑归宗技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：使用万剑归宗后有$valueS0$%概率获得剑阵效果，持续8秒，期间使用化元斩会造成额外100%伤害，使用后剑阵效果消失。>",
+i19651="秘籍效果：使万剑归宗技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：使用万剑归宗后有$valueS0$%概率获得剑阵效果，持续8秒，期间使用化元斩会造成额外100%伤害，使用后剑阵效果消失。>",
+i19652="秘籍效果：使万剑归宗技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：使用万剑归宗后有$valueS0$%概率获得剑阵效果，持续8秒，期间使用化元斩会造成额外100%伤害，使用后剑阵效果消失。>",
+i19653="秘籍效果：使万剑归宗技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：使用万剑归宗后有$valueS0$%概率获得剑阵效果，持续8秒，期间使用化元斩会造成额外100%伤害，使用后剑阵效果消失。>",
+i19654="秘籍效果：使万剑归宗技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：使用万剑归宗后有$valueS0$%概率获得剑阵效果，持续8秒，期间使用化元斩会造成额外100%伤害，使用后剑阵效果消失。>",
+
+--圆月4
+i19655="秘籍效果：使环定乾坤技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用环定乾坤技能时，除了该次群攻伤害外，还将对选定目标额外造成$valueS0$%的伤害。>",
+i19656="秘籍效果：使环定乾坤技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用环定乾坤技能时，除了该次群攻伤害外，还将对选定目标额外造成$valueS0$%的伤害。>",
+i19657="秘籍效果：使环定乾坤技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用环定乾坤技能时，除了该次群攻伤害外，还将对选定目标额外造成$valueS0$%的伤害。>",
+i19658="秘籍效果：使环定乾坤技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用环定乾坤技能时，除了该次群攻伤害外，还将对选定目标额外造成$valueS0$%的伤害。>",
+i19659="秘籍效果：使环定乾坤技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用环定乾坤技能时，除了该次群攻伤害外，还将对选定目标额外造成$valueS0$%的伤害。>",
+
+--天雷5
+i19660="秘籍效果：使用苍雷狂啸技能时额外降低目标的防御值$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用苍雷狂啸技能后可获得吸血效果，$valueS0$秒内每次造成伤害可吸取伤害的$valueS1$%的生命。>",
+i19661="秘籍效果：使用苍雷狂啸技能时额外降低目标的防御值$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用苍雷狂啸技能后可获得吸血效果，$valueS0$秒内每次造成伤害可吸取伤害的$valueS1$%的生命。>",
+i19662="秘籍效果：使用苍雷狂啸技能时额外降低目标的防御值$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用苍雷狂啸技能后可获得吸血效果，$valueS0$秒内每次造成伤害可吸取伤害的$valueS1$%的生命。>",
+i19663="秘籍效果：使用苍雷狂啸技能时额外降低目标的防御值$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用苍雷狂啸技能后可获得吸血效果，$valueS0$秒内每次造成伤害可吸取伤害的$valueS1$%的生命。>",
+i19664="秘籍效果：使用苍雷狂啸技能时额外降低目标的防御值$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用苍雷狂啸技能后可获得吸血效果，$valueS0$秒内每次造成伤害可吸取伤害的$valueS1$%的生命。>",
+
+--蜀山5
+i19665="秘籍效果：使用傲天剑意后可以给自身和队友额外增加攻击力$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：使用傲天剑意后，增加免伤$valueS0$%，持续6秒。>",
+i19666="秘籍效果：使用傲天剑意后可以给自身和队友额外增加攻击力$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：使用傲天剑意后，增加免伤$valueS0$%，持续6秒。>",
+i19667="秘籍效果：使用傲天剑意后可以给自身和队友额外增加攻击力$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：使用傲天剑意后，增加免伤$valueS0$%，持续6秒。>",
+i19668="秘籍效果：使用傲天剑意后可以给自身和队友额外增加攻击力$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：使用傲天剑意后，增加免伤$valueS0$%，持续6秒。>",
+i19669="秘籍效果：使用傲天剑意后可以给自身和队友额外增加攻击力$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：使用傲天剑意后，增加免伤$valueS0$%，持续6秒。>",
+
+--圆月5
+i19670="秘籍效果：使用踏云无痕技能后额外增加免伤值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用踏云无痕技能后可获得踏云效果，$valueS0$秒内，皓月斩技能可造成额外$valueS1$%伤害。>",
+i19671="秘籍效果：使用踏云无痕技能后额外增加免伤值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用踏云无痕技能后可获得踏云效果，$valueS0$秒内，皓月斩技能可造成额外$valueS1$%伤害。>",
+i19672="秘籍效果：使用踏云无痕技能后额外增加免伤值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用踏云无痕技能后可获得踏云效果，$valueS0$秒内，皓月斩技能可造成额外$valueS1$%伤害。>",
+i19673="秘籍效果：使用踏云无痕技能后额外增加免伤值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用踏云无痕技能后可获得踏云效果，$valueS0$秒内，皓月斩技能可造成额外$valueS1$%伤害。>",
+i19674="秘籍效果：使用踏云无痕技能后额外增加免伤值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用踏云无痕技能后可获得踏云效果，$valueS0$秒内，皓月斩技能可造成额外$valueS1$%伤害。>",
+
+--天雷6
+i19675="秘籍效果：使用诛心仙殇技能后增加自身免伤$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用诛心仙殇后免疫时间和攻击提高时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19676="秘籍效果：使用诛心仙殇技能后增加自身免伤$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用诛心仙殇后免疫时间和攻击提高时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19677="秘籍效果：使用诛心仙殇技能后增加自身免伤$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用诛心仙殇后免疫时间和攻击提高时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19678="秘籍效果：使用诛心仙殇技能后增加自身免伤$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用诛心仙殇后免疫时间和攻击提高时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19679="秘籍效果：使用诛心仙殇技能后增加自身免伤$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用诛心仙殇后免疫时间和攻击提高时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+
+--蜀山6
+i19680="秘籍效果：使用天道有情技能后增加自身攻击值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用天道有情后免疫时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19681="秘籍效果：使用天道有情技能后增加自身攻击值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用天道有情后免疫时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19682="秘籍效果：使用天道有情技能后增加自身攻击值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用天道有情后免疫时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19683="秘籍效果：使用天道有情技能后增加自身攻击值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用天道有情后免疫时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19684="秘籍效果：使用天道有情技能后增加自身攻击值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用天道有情后免疫时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+
+--圆月6
+i19685="秘籍效果：使用镜花水月技能后额外增加暴击值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用镜花水月，镜花水月效果时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19686="秘籍效果：使用镜花水月技能后额外增加暴击值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用镜花水月，镜花水月效果时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19687="秘籍效果：使用镜花水月技能后额外增加暴击值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用镜花水月，镜花水月效果时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19688="秘籍效果：使用镜花水月技能后额外增加暴击值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用镜花水月，镜花水月效果时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i19689="秘籍效果：使用镜花水月技能后额外增加暴击值$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用镜花水月，镜花水月效果时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+
+--天雷7
+i19690="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i19691="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i19692="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i19693="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i19694="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+
+--蜀山7
+i19695="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i19696="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i19697="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i19698="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i19699="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+
+--圆月7
+i29600="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29601="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29602="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29603="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29604="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+
+--天雷8
+i29605="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29606="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29607="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29608="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29609="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+
+--蜀山8
+i29610="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29611="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29612="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29613="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29614="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+
+--圆月8
+i29615="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29616="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29617="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29618="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29619="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+
+--云华1
+i29620="秘籍效果：使离炎引技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i29621="秘籍效果：使离炎引技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i29622="秘籍效果：使离炎引技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i29623="秘籍效果：使离炎引技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+i29624="秘籍效果：使离炎引技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于处于眩晕，减速，定身，沉默的目标，造成额外伤害$valueS0$%。>",
+
+--云华2
+i29625="秘籍效果：使玄冰掌技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用玄冰掌技能时，将有$valueS0$%的概率，重置苍澜吟技能的冷却时间。>",
+i29626="秘籍效果：使玄冰掌技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用玄冰掌技能时，将有$valueS0$%的概率，重置苍澜吟技能的冷却时间。>",
+i29627="秘籍效果：使玄冰掌技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用玄冰掌技能时，将有$valueS0$%的概率，重置苍澜吟技能的冷却时间。>",
+i29628="秘籍效果：使玄冰掌技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用玄冰掌技能时，将有$valueS0$%的概率，重置苍澜吟技能的冷却时间。>",
+i29629="秘籍效果：使玄冰掌技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用玄冰掌技能时，将有$valueS0$%的概率，重置苍澜吟技能的冷却时间。>",
+
+--云华3
+i29630="秘籍效果：使冰龙天道技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用冰龙天道技能时，将有$valueS0$%的概率增加自身攻击速度$valueS1$%，持续5秒。>",
+i29631="秘籍效果：使冰龙天道技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用冰龙天道技能时，将有$valueS0$%的概率增加自身攻击速度$valueS1$%，持续5秒。>",
+i29632="秘籍效果：使冰龙天道技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用冰龙天道技能时，将有$valueS0$%的概率增加自身攻击速度$valueS1$%，持续5秒。>",
+i29633="秘籍效果：使冰龙天道技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用冰龙天道技能时，将有$valueS0$%的概率增加自身攻击速度$valueS1$%，持续5秒。>",
+i29634="秘籍效果：使冰龙天道技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用冰龙天道技能时，将有$valueS0$%的概率增加自身攻击速度$valueS1$%，持续5秒。>",
+
+--云华4
+i29635="秘籍效果：使苍澜吟技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用苍澜吟技能时，除了该次群攻伤害外，还将对选定目标额外造成$valueS0$%的伤害。>",
+i29636="秘籍效果：使苍澜吟技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用苍澜吟技能时，除了该次群攻伤害外，还将对选定目标额外造成$valueS0$%的伤害。>",
+i29637="秘籍效果：使苍澜吟技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用苍澜吟技能时，除了该次群攻伤害外，还将对选定目标额外造成$valueS0$%的伤害。>",
+i29638="秘籍效果：使苍澜吟技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用苍澜吟技能时，除了该次群攻伤害外，还将对选定目标额外造成$valueS0$%的伤害。>",
+i29639="秘籍效果：使苍澜吟技能的伤害提高$valueB0$%，并额外附加$valueB1$点。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：每次使用苍澜吟技能时，除了该次群攻伤害外，还将对选定目标额外造成$valueS0$%的伤害。>",
+
+--云华5
+i29640="秘籍效果：使太虚灵盾吸收的伤害增加$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：当太虚灵盾破碎时(被击破或者持续15秒后)，将增加自身$valueS0$%的免伤，持续6秒。>",
+i29641="秘籍效果：使太虚灵盾吸收的伤害增加$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：当太虚灵盾破碎时(被击破或者持续15秒后)，将增加自身$valueS0$%的免伤，持续6秒。>",
+i29642="秘籍效果：使太虚灵盾吸收的伤害增加$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：当太虚灵盾破碎时(被击破或者持续15秒后)，将增加自身$valueS0$%的免伤，持续6秒。>",
+i29643="秘籍效果：使太虚灵盾吸收的伤害增加$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：当太虚灵盾破碎时(被击破或者持续15秒后)，将增加自身$valueS0$%的免伤，持续6秒。>",
+i29644="秘籍效果：使太虚灵盾吸收的伤害增加$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：当太虚灵盾破碎时(被击破或者持续15秒后)，将增加自身$valueS0$%的免伤，持续6秒。>",
+
+--云华6
+i29645="秘籍效果：每次使用云海飘渺后，将会增加自身攻击力$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：云海飘渺后免疫时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i29646="秘籍效果：每次使用云海飘渺后，将会增加自身攻击力$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：云海飘渺后免疫时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i29647="秘籍效果：每次使用云海飘渺后，将会增加自身攻击力$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：云海飘渺后免疫时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i29648="秘籍效果：每次使用云海飘渺后，将会增加自身攻击力$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：云海飘渺后免疫时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+i29649="秘籍效果：每次使用云海飘渺后，将会增加自身攻击力$valueB0$%，并额外附加$valueB1$点，持续10秒。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：云海飘渺后免疫时间将延长$valueS0$秒，并减少该技能冷却时间$valueS1$秒。>",
+
+--云华7
+i29650="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29651="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29652="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29653="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+i29654="秘籍效果：增加自身的法术免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：对于血量低于$valueS0$%的目标造成伤害增加$valueS1$%。>",
+
+--云华8
+i29655="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29656="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29657="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29658="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+i29659="秘籍效果：增加自身的物理免伤值$valueB0$。\n<(c0xffffff00)仙炼属性>：$multiAttrs$\n<(c0xff$color$)特殊效果：在自身血量低于$valueS0$%时，受到的伤害减少$valueS1$%。>",
+		
+		
+		
+	},
+
+	descJoint="，并额外附加",
+
+}

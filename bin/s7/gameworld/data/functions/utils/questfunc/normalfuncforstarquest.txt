@@ -1,0 +1,525 @@
+﻿--含刷星任务的通用任务函数
+
+--#include "data\functions\GlobalDefine.txt"
+--#include "data\config\quest\MiscQuest.txt" once	--任务相关    
+
+MISSION_RTV_IDX_MISSIONID	 = 0	 -- 任务ID的存储位置
+MISSION_RTV_IDX_MISSIONIDX	= 1	 -- 人物在NPC当前表的索引位置
+MISSION_RTV_IDX_MISSIONSTEP = 2	 -- 玩家对话的步骤存储的位置（初始值为 1）
+
+--[[
+    函数名称：continueQuestTalk
+    函数描述：继续与NPC进行任务对话，如果没有任务状态则关闭对话窗口 
+    参数 sysarg 的描述：
+]]
+local function continueQuestTalk(sysarg)
+	--如果交任务后还有可继续的任务状态，则返回主界面
+	local newState = LActor.getQuestStateType( sysarg, thisNPC )
+	if newState == 1 or newState == 2 then
+		return main(sysarg)
+	else
+		LActor.closeNPCDialog( sysarg )
+	end
+end
+
+--显示一个任务的内容，ms是任务的配置表，state 0： 可接 1： 可完成 	2： 进行中
+function ShowQuestDetail(ms,state,starQuest)
+	local content = nil
+	local btnstr = ""
+	if starQuest == nil then starQuest = "" end
+	if state == 0 then
+		content = ms.PromMsTalks[table.getn(ms.PromMsTalks)]
+		btnstr = "<#BN"..Lang.Event.e00003.."/@commonAcceptMissions," .. ms.id .. ",".. starQuest.. ">"
+	elseif state == 1 then
+		content = ms.CompMsTalks[table.getn(ms.CompMsTalks)]
+		if ms.AnswerTip ~= nil then
+			content = content .. "\\<#BQ"..ms.AnswerTip[1].."/@onclickdisappear>"
+			content = content .. "\\<#BQ"..ms.AnswerTip[2].."/@CompleteMession,"..ms.id.. ","..starQuest..">"
+		else
+			btnstr = "<#BN"..Lang.Event.e00003A.."/@CompleteMession," .. ms.id ..  ","..starQuest.. ">"
+		end
+	else
+		content = ms.CompMsTip[table.getn(ms.CompMsTip)]
+		-- btnstr = "<#BN"..Lang.Event.e00010.."/@exit>" -- 取消退出按钮
+	end
+	local str = Lang.Event.e00029..ms.name.."\\<(idecoLine#0)D->"..content.."<@QuestAwardDesc,"..ms.id..">\\"..btnstr
+	return str
+end
+--------------------------------------------------------------------------------
+function ForwardPromMsMission(sysarg)
+	local idx = LActor.getRTIntValue( sysarg, MISSION_RTV_IDX_MISSIONIDX )
+	local step = LActor.getRTIntValue( sysarg, MISSION_RTV_IDX_MISSIONSTEP ) + 1
+	local ms = PromMs[idx]
+	local count = table.getn(ms.PromMsTalks)
+	if step > count then
+		return ShowQuestDetail(ms,0)
+	else
+		LActor.setRTIntValue( sysarg, MISSION_RTV_IDX_MISSIONSTEP, step )     
+		return ShowQuestDetail(ms,0)
+	end
+end
+
+function ForwardCompMsMission(sysarg)
+	local idx = LActor.getRTIntValue( sysarg, MISSION_RTV_IDX_MISSIONIDX )
+	local step = LActor.getRTIntValue( sysarg, MISSION_RTV_IDX_MISSIONSTEP ) + 1
+	local ms = CompMs[idx]
+	local count = table.getn(ms.CompMsTalks)
+	if step > count then
+		return ShowQuestDetail(ms,1)
+	else 
+		LActor.setRTIntValue( sysarg, MISSION_RTV_IDX_MISSIONSTEP, step )
+		return ShowQuestDetail(ms,1)
+	end
+end
+
+-- 判断身上有没有这个刷星任务
+function hasStarQuest(sysarg, questId)
+	local task = StarMs[1]	--刷星任务ID，暂时只能配一个
+
+	local id = task.id
+	if id == nil then return false end
+
+	local var = LActor.getStaticVar( sysarg )
+	local starVar = var.star --刷星任务相关变量
+	if starVar == nil then return false end
+
+	local info = starVar[id]
+	if info == nil then return false end
+
+	return (info.quest and info.quest == questId)
+end
+
+function commonAcceptMissions(sysarg, mission, starQuest)
+
+	-- local idx = LActor.getRTIntValue( sysarg, MISSION_RTV_IDX_MISSIONIDX )
+	local mid = tonumber(mission)
+	local ms = nil
+	if starQuest == nil or starQuest == "" then
+		for i,v in pairs(PromMs) do
+			if v.id == mid then
+				ms = v
+				break
+			end
+		end
+	else
+		-- 如果是刷星任务，判断能否接这个任务
+		local questId = tonumber(starQuest)
+		if hasStarQuest(sysarg, questId) then
+			ms = StarQuest[questId]
+		end
+	end	
+
+	if ms == nil then
+		return "ms is nil"
+	end
+
+	local ck = true,id  
+	if ms.PromCheck then
+		ck,id = ms.PromCheck(sysarg,mission)
+		if not ck then
+			LActor.sendTipmsg(sysarg,id,ttDialog)
+		end
+	end
+  
+	if ck then
+		if  LActor.getQuestCount(sysarg) >= 30 then
+			LActor.sendTipmsg(sysarg,Lang.ScriptTips.x00044,ttTipmsgWindow)
+		else
+			if LActor.addQuest( sysarg, mission ) then
+				if ms.PromCallBack then
+					ms.PromCallBack(sysarg,mission)
+				end
+				return continueQuestTalk( sysarg )
+			end
+		end
+	end
+	LActor.closeNPCDialog( sysarg )
+end
+
+
+
+function CompleteMession(sysarg, mission, starQuest, ...)
+	-- local idx = LActor.getRTIntValue( sysarg, MISSION_RTV_IDX_MISSIONIDX )
+	local mid = tonumber(mission)
+	local ms = nil
+	if starQuest == nil or starQuest == "" then
+		for i,v in pairs(CompMs) do
+			if v.id == mid then			
+				ms = v
+				break
+			end
+		end
+	else
+		ms = StarQuest[tonumber(starQuest)]
+	end
+	-- if ms == nil then return end
+	
+	local award = -1
+	if arg.n > 0 then 
+		award = arg[1]
+	end
+ 
+	local ck,rt
+	if ms.CompCheck then
+		ck,rt = ms.CompCheck(sysarg,mission)
+		if not ck then
+			return rt
+		end
+	end
+
+	if LActor.finishQuest( sysarg, mission, award ) then
+		rt = nil
+		if ms.CompCallBack then
+			 --这个函数用于完成任务后的特别处理，比如回收某个物品等
+			rt = ms.CompCallBack(sysarg,mission)
+		end
+		if not rt or type(rt) ~= "string" then
+			return continueQuestTalk( sysarg )
+		end
+	end
+	LActor.closeNPCDialog( sysarg )
+end
+
+--------------------------------------------------------------------------------
+-- 过程任务暂时为空 
+--------------------------------------------------------------------------------
+
+function getCompMissionIndex(missionid)
+  local i
+  for i = 1, table.getn(CompMs) do
+    if CompMs[i].id == missionid then
+      return i
+    end
+  end
+  return 0
+end
+
+--------------------------------------------------------------------------------
+
+function ShowQuestTalk(sysarg, mission, state)
+	local MyMission = tonumber(mission)
+	local Mystate = tonumber(state)
+	local mslist = nil
+	if Mystate == 0 then
+		mslist = PromMs
+	elseif Mystate == 1 or Mystate == 2 then		
+		mslist = CompMs
+	end  
+	
+	for i,v in pairs(mslist) do
+		if v.id == MyMission then
+			return ShowQuestDetail(v, Mystate)
+		end
+	end
+end
+
+--这里执行放弃任务时候的操作
+function GiveUpQuest(sysarg,questid)	
+	local qid = tonumber(questid)
+	local idx = getCompMissionIndex(qid)
+	--有这个任务
+	if idx > 0 then	
+		local ms = CompMs[idx]
+		--执行放弃任务的处理
+		if ms.GiveUpCallBack then		
+    		ms.GiveUpCallBack( sysarg, qid )
+    	end
+	end
+end
+---------------------------------------------------------------------------------------
+-- 过程任务（对话任务）
+function talkWithNPC(sysarg,qid,tid)
+	local tid = tonumber(tid)
+	qid = tonumber(qid)
+	for qidx=1,#PassMs do
+		if PassMs[qidx].id == qid then
+			local q = PassMs[qidx]
+			local index = 0
+			for i = 1,#q.target do
+				if q.target[i].id == tid then	
+					index = i
+					LActor.setQuestValue(sysarg,qid,tid,1)
+					return q.PassMsTip[index]
+				end
+			end 
+		end
+	end
+end
+----------------------------------------------------------------------------------------
+function enterFubenForQuestFunc(sysarg,fbid,Sceneid)
+	local fbid = tonumber(fbid)
+	local Hfuben = Fuben.createFuBen(fbid)
+	LActor.enterFuBen(sysarg,Hfuben,-1,-1,-1)	
+end
+
+function commonQuestNpcMain2(sysarg,func)		
+	local qc = 0
+	local state = 0
+	local qid = 0
+	local tp = 0	
+	local mission,qc,qid,state = LActor.formatQuestState( sysarg,qc,qid,state, tp )        --通过引擎格式化任务状态
+
+	if qc == 1 then	--只有一个任务，则直接显示这个任务的内容
+		if  func == nil then
+			return ShowQuestTalk( sysarg, qid, state ),false
+		elseif (state == 0 or state == 1) and tp == 0 then -- 主线任务
+			return ShowQuestTalk( sysarg, qid, state ),true
+		end
+	end
+	
+	local str = ""
+	local dialog_count = table.getn(NpcDialogue)
+	if (dialog_count > 0) then
+		local rand = System.getRandomNumber(dialog_count)	
+		str = NpcDialogue[rand +1].say
+	end	
+	if mission then     --如果有任务状态描述		
+		str = str..mission
+	end
+	
+	for i = 1, table.getn(MainFnTable) do
+		str = str .. MainFnTable[i](sysarg)
+	end
+
+	return str,false
+end
+
+function ShowStarTask( sysarg, id, grade, star, quest, questState, times )
+	LActor.closeNPCDialog( sysarg )
+	id = tonumber( id )
+	grade = tonumber( grade )
+	star = tonumber( star )
+	quest = tonumber( quest )
+	questState = tonumber( questState )
+	-- times = tonumber(times)
+
+	local task = StarMs[1]	--刷星任务ID，暂时只能配一个
+
+	--今天剩余刷星任务次数
+	local times
+	local vipLevel = LActor.getVIPLevel( sysarg ) -- VIP用户和普通任务的总次数
+	if vipLevel > 0 then
+		times = task.timesVips[vipLevel]
+	else
+		times = task.times
+	end
+
+	local var = LActor.getStaticVar( sysarg )
+	local starVar = var.star --刷星任务相关变量
+	if starVar == nil then 
+		var.star = {}
+		starVar = var.star
+	end
+
+	local info = starVar[id]
+	if info == nil then
+		starVar[id] = {}
+		info = starVar[id]
+	end
+
+	if info ~= nil and info.count ~= nil then -- 减去已经使用的次数
+		times = times - info.count
+	end
+
+	if questState == 0 and times < 1 then -- 任务未接且次数已经用完
+		return Lang.ScriptTips.sx013
+	end
+
+	info.grade = grade
+	info.star = star
+	info.quest = quest
+
+	-- 不能刷星的任务，直接显示普通任务对话框
+	if task.refreshRate == nil then
+		return ShowQuestDetail( StarQuest[quest], questState, quest )
+	end
+
+	--计算剩余免费刷星次数
+	local refreshCount = info.refresh
+	if refreshCount == nil then
+		refreshCount = 0
+	end
+	refreshCount = task.refreshFree - refreshCount
+	if refreshCount < 0 then refreshCount = 0 end
+
+	local npcName = LActor.getTalkNpcName( sysarg )
+
+	local params = string.format( "%s,%d,%d,%d,%d,%d,%d,%d", npcName,id, grade, star, quest, questState, times, refreshCount )
+	--print( params )
+	if task.type ~= nil and task.type == 2 then
+		LActor.openDialogs(sysarg, diProtection, params)
+	else
+		LActor.openDialogs(sysarg, diRefreshTask, params)
+	end
+end
+
+function CalcGradeByLevel( grades, level )
+	local ret = 0
+	for i = 1, #grades do
+		if level < grades[i].miniLevel then
+			break
+		end
+		ret = i
+	end
+	return ret
+end
+
+--
+function commonQuestNpcWithStarMain(sysarg,func)
+	if StarMs == nil or #StarMs < 1 then
+		return commonQuestNpcMain2( sysarg, func )
+	end
+
+	local str = ""
+	local task = StarMs[1]	--刷星任务配置信息，暂时只支持一个
+	
+	local info = nil
+
+	local var = LActor.getStaticVar( sysarg )
+	if var ~= nil and var.star ~= nil then
+		info = var.star[task.id]
+	end
+
+	--今天剩余刷星任务次数
+	local times
+	local vipLevel = LActor.getVIPLevel( sysarg ) -- VIP用户和普通任务的总次数
+	if vipLevel > 0 then
+		times = task.timesVips[vipLevel]
+	else
+		times = task.times
+	end
+	if info ~= nil and info.count ~= nil then -- 减去已经使用的次数
+		times = times - info.count
+	end
+
+	--print(info.count)
+	--print( "refresh star quest left times:"..times )
+
+	-- 任务状态
+	local state = 0
+	local grade = nil
+	local star = nil
+	local quest = nil
+
+	-- 上次任务信息
+	if info ~= nil then
+		grade = info.grade -- 等级段
+		star = info.star -- 星级
+		quest = info.quest -- 任务id
+
+		if grade ~= nil and grade < 1 then
+			info.grade = nil
+			grade = nil
+		end
+	end
+
+	--处理上次的任务
+	--state 0：可接 1： 可完成 2：进行中
+	if quest ~= nil then
+		if LActor.hasQuest( sysarg, quest ) then
+			if LActor.canFinishQuest( sysarg, quest ) then
+				state = 1
+			else
+				state = 2
+			end
+		else --任务已经完成或放弃
+			state = 0
+		end
+	end
+
+	--[[
+	if state == 0 then
+		grade = nil
+		star = nil
+		quest = nil
+	end
+	]]
+
+
+
+	-- 如果上次没有任务，或任务已经完成或放弃，重新计算等级，星级和任务ID
+	if grade == nil then
+		local playerLevel = LActor.getRealLevel( sysarg )
+		grade = CalcGradeByLevel( task.grades, playerLevel )
+	end
+	--print( grade )
+	if grade > 0 then
+		if star == nil then
+			star = 1
+		end
+		if quest == nil then
+			local quests = task.grades[grade].starLevels[star]
+			if task.randomQuest == nil or task.randomQuest == true then
+				quest =  quests[System.getRandomNumber(#quests)+1]--随机分配一个任务
+			else -- 顺序分配任务
+				if info == nil then
+					if var.star == nil then
+						var.star = {}
+					end
+					var.star[task.id] = {}
+					info = var.star[task.id]
+				end
+				local qidx
+				if info.lastgrade ~= nil and info.lastgrade ~= grade then -- 新的阶段,索引重新开始
+					qidx = 1
+				else
+					qidx = (info.qidx or 0) + 1
+					if qidx > #quests then
+						print("seq quest error")
+						qidx = #quests
+					end
+				end
+				quest = quests[qidx]
+				info.qidx = qidx
+				info.lastgrade = grade
+			end
+		end
+
+		--print(state)
+
+		--根据任务状态显示刷星任务菜单
+		if state == 0 and times < 1 then -- 如果还没接任务且剩余可接次数为0，则不显示菜单
+			str = ""
+		elseif state == 2 and ( not task.quickFinish ) then 	--已经接受任务且不能立即完成
+			str = string.format( Lang.ScriptTips.sx008, times, task.name, task.name )
+		else
+			if state == 0 and (not LActor.addQuest(sysarg, quest, false)) then -- 未接状态，先判断能否接该任务
+				--str = ""
+			else
+				str = str..string.format( Lang.ScriptTips.sx001, task.name, times, task.id, grade, star, quest, state, times )
+			end
+		end	
+	end
+
+	--print(str)
+
+	--print( grade )
+	--print( star )
+	--print( quest )
+
+	-- 普通任务信息
+	local newState = LActor.getQuestStateType(sysarg, thisNPC, false)
+
+	--print("newState:"..newState)
+	--print(func)
+	--grade == nil or grade < 1 : 没达到刷星等级
+	--print(grade)
+	if grade == nil or grade < 1 or newState ~= 0 or func then	--没有可接任务或可完成任务直接弹窗刷星任务窗口
+		local comstr, show = commonQuestNpcMain2(sysarg, 1) -- 直接弹出对话窗口的情况
+		if show then
+			return comstr
+		end
+		str = comstr..str --因为还有刷星任务，所以传个1进去
+		return str
+	else
+		return ShowStarTask( sysarg, task.id, grade, star, quest, state, times )
+	end
+	
+	for i = 1, table.getn(MainFnTable) do
+		str = str .. MainFnTable[i](sysarg)
+	end
+
+	--print( str )
+
+	return str,false
+end

@@ -1,0 +1,151 @@
+shortKeyConfig =
+{
+	jobList =
+	{
+		{
+			jobId = 0,   --职业ID，小孩是0，战士是1，猎人是2，法师是3
+			skill=
+			{
+				{skillId = 911, useState = true}, --技能id；挂机设置中默认状态是否释放，true=释放，false=不释放
+			},
+		},
+		
+		{
+			jobId = 1,
+			skill=
+			{
+				{skillId = 11, useState = true},
+				{skillId = 12, useState = true},
+				{skillId = 13, useState = true},
+				{skillId = 14, useState = true},
+				{skillId = 15, useState = true},
+				{skillId = 16, useState = true},
+			},
+		},
+
+		{
+			jobId = 2,
+			skill=
+			{
+				{skillId = 21, useState = true},
+				{skillId = 22, useState = true},
+				{skillId = 23, useState = true},
+				{skillId = 24, useState = true},
+				{skillId = 25, useState = true},
+				{skillId = 26, useState = true},
+			},
+		},
+
+		{
+			jobId = 3,
+			skill=
+			{
+				{skillId = 31, useState = true},
+				{skillId = 32, useState = true},
+				{skillId = 33, useState = true},
+				{skillId = 34, useState = true},
+				{skillId = 35, useState = true},
+				{skillId = 36, useState = true},
+			},
+		},
+	},
+	shortKey=
+	{
+		{
+			name="角色",
+			key='C'
+		},
+		{
+			name='背包',
+			key='B'
+		},
+		{
+			name='技能',
+			key='K'
+		},
+		{
+			name='锻造',
+			key='L'
+		},
+		{
+			name='伙伴',
+			key='H'
+		},
+		{
+			name='坐骑',
+			key='W'
+		},
+		{
+			name='翅膀',
+			key='V'
+		},
+		{
+			name='精灵',
+			key='N'
+		},
+		{
+			name='神器',
+			key='U'
+		},
+		{
+			name='帮派',
+			key='G'
+		},
+		{
+			name='好友',
+			key='F'
+		},
+		{
+			name='寻宝',
+			key='X'
+		},
+		{
+			name='商城',
+			key='Y'
+		},
+		{
+			name='排行榜',
+			key='P'
+		},
+		{
+			name='市场',
+			key='J'
+		},
+		{
+			name='地图',
+			key='M'
+		},
+		{
+			name='邮件',
+			key='E'
+		},
+		{
+			name='打坐',
+			key='D'
+		},
+		{
+			name='兑换',
+			key='R'
+		},
+		{
+			name='怒气技',
+			key='A'
+		},
+		{
+			name='拾取物品',
+			key='S'
+		},
+		{
+			name='攻击列表',
+			key='Q'
+		},
+		{
+			name='上/下坐骑',
+			key='T'
+		},
+		{
+			name='开始/结束挂机',
+			key='Z'
+		},
+	},
+}

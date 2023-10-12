@@ -1,0 +1,46 @@
+
+SystemIdList = {
+	dongfu	= 1,
+	goldore = 2,
+}
+
+SystemVarDispatcher = {}
+
+local tbFunc = {}
+local tmpTbFunc = {}
+
+SystemVarDispatcher.register = function(sysId, func)
+	if tbFunc[sysId] == nil then
+		tbFunc[sysId] = func
+	end
+end
+
+SystemVarDispatcher.registerTmpVar = function(sysId, func)
+	if tmpTbFunc[sysId] == nil then
+		tmpTbFunc[sysId] = func
+	end
+end
+
+SystemVarDispatcher.loadTmpVar = function()
+	local tb = System.loadSysTmpVar()
+	for _, data in ipairs(tb) do
+		local func = tmpTbFunc[tonumber(data.sysId)]
+		if func ~= nil then
+			func(data)
+		end
+	end
+end
+
+function OnSysVarDbReturnData(charId, charName, sysId, hdlVar)
+	if tbFunc[sysId] ~= nil then
+		tbFunc[sysId](charId, charName, hdlVar)
+	end
+end
+
+SystemVarDispatcher.onInit = function()
+	System.reloadSysVar()
+	local st = tonumber(System.getUnixTime())
+	SystemVarDispatcher.loadTmpVar()
+end
+
+table.insert(InitFnTable, SystemVarDispatcher.onInit)

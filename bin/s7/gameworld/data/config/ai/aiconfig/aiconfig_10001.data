@@ -1,0 +1,7 @@
+{
+	id = 10001,
+	aggressive = 1,
+	home_range = 500,
+	vision = 500,
+	skills = {{id=10001,cd=1500}},
+},

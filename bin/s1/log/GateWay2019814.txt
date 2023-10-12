@@ -1,0 +1,26 @@
+[2019-08-14 14:29:25]GateWay[GameWorld] Started 
+[2019-08-14 14:29:25]================================================ 
+[2019-08-14 14:29:25]Gateway start ok,kernal 2.0, Select Mode 
+[2019-08-14 14:29:25]spf:view status 
+[2019-08-14 14:29:25]quit:stop server and exit 
+[2019-08-14 14:29:25]================================================ 
+[2019-08-14 14:29:26]connect fail! GameWorld  10061 由于目标计算机积极拒绝，无法连接。
+[2019-08-14 14:29:26]Free Sesssion Memory!count:8192 
+[2019-08-14 14:29:26]Free Sesssion Memory:free memory size:0, processed session count=8192 
+[2019-08-14 14:29:31]GameWorld Connected 
+[2019-08-14 14:29:31]GameWorld server succ 
+[2019-08-14 14:30:47]accept new user:127.0.0.1, socket:136 
+[2019-08-14 14:30:47]gateway active user 1, new user socket:136, ip:127.0.0.1 
+[2019-08-14 14:30:47]SendOpenSession: socket=136 sessionId=8191 
+[2019-08-14 14:34:27]Free Sesssion Memory!count:8191 
+[2019-08-14 14:34:27]Free Sesssion Memory:free memory size:0, processed session count=8191 
+[2019-08-14 14:39:28]Free Sesssion Memory!count:8191 
+[2019-08-14 14:39:28]Free Sesssion Memory:free memory size:0, processed session count=8191 
+[2019-08-14 14:40:25]recv error websocket packet!!!len=1 
+[2019-08-14 14:40:25]Close Sess,ip:127.0.0.1,reason:2004, socket err = 0, gate_ptr:1057248, socket=136 
+[2019-08-14 14:40:25]closesocket 136 
+[2019-08-14 14:40:44]GameWorld Socket Error  10054 远程主机强迫关闭了一个现有的连接。
+[2019-08-14 14:40:44]GameWorld Connection Closed 
+[2019-08-14 14:40:44]GameWorld server disconnect! 
+[2019-08-14 14:40:44]GameWorld client socket error! 10054 远程主机强迫关闭了一个现有的连接。
+[2019-08-14 14:40:45]connect fail! GameWorld  10061 由于目标计算机积极拒绝，无法连接。

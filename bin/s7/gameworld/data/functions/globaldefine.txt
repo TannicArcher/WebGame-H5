@@ -1,0 +1,18 @@
+--#ifndef _GLOBAL_DEFINES_INCLUDED_
+--#define _GLOBAL_DEFINES_INCLUDED_
+
+--#include "data\language\langcode.txt" once
+
+--这里定义全局的常量
+
+--通用活动的开启状态
+commActivityStat =
+{
+	casUnopened = 0,	--未开启
+	casOpen = 1,		--开启
+	casEnd = 2,			--已结束
+}
+
+RANK_MIN_LEVEL = 60
+
+--#endif //end of _GLOBAL_DEFINES_INCLUDED_

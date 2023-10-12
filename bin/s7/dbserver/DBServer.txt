@@ -1,0 +1,24 @@
+﻿DBServer =
+{
+	--服务器名称
+	ServerName = "DBServer2",
+
+	--数据服务绑定地址和端口
+	DBService = 
+	{ 
+		Address = "0.0.0.0",
+		Port = 5007,
+	},
+
+	--数据库连接配置
+	SQL = 
+	{ 
+		Host = "127.0.0.1",
+
+		Port = 3306, 
+		DBName = "actor7", 
+		DBUser = "root", 
+		--DBPass = "jdusVRPm8XI+vYJb5gNZiw==" 
+		DBPass = "jdusVRPm8XI+vYJb5gNZiw==", 
+	}, --0987abc123
+}

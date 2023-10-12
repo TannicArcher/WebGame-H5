@@ -1,0 +1,13 @@
+--样品模块配置
+{
+	--模块路径
+	url="modules/SampleModule.swf",
+	--模块名 
+	name="SampleModule",
+	--预加载资源路径
+	resourceUrls=
+	{
+		"assets/effect/ui/0000034.skf",
+		"assets/images/title/00003.png"
+	},
+},

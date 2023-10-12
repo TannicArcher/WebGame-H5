@@ -1,0 +1,22 @@
+﻿--定义游戏中加载配置以及脚本的全局常量定义
+
+--SPID（运营商ID）定义
+SPID = unr
+
+--语言定义
+LANGUAGE = zh-CN
+
+--游戏名称定义
+GAMENAME = 《rpg》
+
+--绑定钱币名称
+BINDCOINNAME = 绑定银两
+
+--流通钱币名称
+COINNAME = 银两
+
+--绑定元宝名称
+BINDYBNAME = 绑定元宝
+
+--元宝名称
+YBNAME = 元宝

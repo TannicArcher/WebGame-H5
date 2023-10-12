@@ -1,0 +1,43 @@
+--G-公会战.xlsx 个人排名奖励
+GuildBattlePersonalRankAward={
+[1] = {
+	rank = 1,
+	award = {{type=1,id=200318,count=25},{type=1,id=200167,count=500},{type=0,id=5,count=2000},{type=1,id=201017,count=1}},
+},
+[2] = {
+	rank = 2,
+	award = {{type=1,id=200318,count=22},{type=1,id=200167,count=450},{type=0,id=5,count=1900}},
+},
+[3] = {
+	rank = 3,
+	award = {{type=1,id=200318,count=20},{type=1,id=200167,count=400},{type=0,id=5,count=1800}},
+},
+[4] = {
+	rank = 4,
+	award = {{type=1,id=200318,count=18},{type=1,id=200167,count=350},{type=0,id=5,count=1700}},
+},
+[5] = {
+	rank = 5,
+	award = {{type=1,id=200318,count=16},{type=1,id=200167,count=300},{type=0,id=5,count=1600}},
+},
+[6] = {
+	rank = 6,
+	award = {{type=1,id=200318,count=14},{type=1,id=200167,count=270},{type=0,id=5,count=1500}},
+},
+[7] = {
+	rank = 7,
+	award = {{type=1,id=200318,count=12},{type=1,id=200167,count=240},{type=0,id=5,count=1400}},
+},
+[8] = {
+	rank = 8,
+	award = {{type=1,id=200318,count=10},{type=1,id=200167,count=210},{type=0,id=5,count=1300}},
+},
+[9] = {
+	rank = 9,
+	award = {{type=1,id=200318,count=9},{type=1,id=200167,count=180},{type=0,id=5,count=1200}},
+},
+[10] = {
+	rank = 10,
+	award = {{type=1,id=200318,count=8},{type=1,id=200167,count=150},{type=0,id=5,count=1100}},
+},
+}

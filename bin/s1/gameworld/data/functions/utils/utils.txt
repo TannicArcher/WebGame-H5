@@ -1,0 +1,12 @@
+--#if OSTYPE == WIN
+require("utils.plus.export_G")
+--#endif
+require("utils.actorfunc")
+require("utils.luaex")
+--_G.centercommon = require("utils.centercommon")
+require("utils.rankfunc")
+
+--require("utils.questfunc.customquestfunc")
+--local ChangeHpDispatcher = require("utils.changehpdispatcher")
+--require("utils.cross.battlesceneutils")
+require("utils.JSON")

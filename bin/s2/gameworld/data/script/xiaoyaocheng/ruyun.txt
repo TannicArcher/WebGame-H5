@@ -1,0 +1,92 @@
+﻿--lua script
+package.path = package.path .. ";./data/config/?.lua;./data/functions/?.lua"
+local actormisc = require("systems.actorsystem.actormisc")
+require("escort.escortconf")
+local EscortConf = EscortConf
+
+--[[键入'ss'并按分号即可按模板生成脚本]]--
+--[[当前脚本内的全局变量]]--
+thisNPC = nil
+InitFnTable = {}
+FinaFnTable = {}
+MainFnTable = {}
+
+--[[如果此NPC包含标准任务，请将下面一行的最前面的'-'去掉！]]
+--#include "data\language\LangCode.txt" once          -- 语言表  once
+
+--#include "data\functions\utils\questfunc\normalfuncforquest.txt" once   -- 普通任务通用脚本函数  once
+
+--[[此NPC中标准任务发行表]]
+PromMs =
+{
+  --键入mp+分号，根据模板生成发行任务脚本模板
+--#include "data\config\quest\quests\299.txt" once 
+--#include "data\config\quest\quests\9101.txt" once 
+--#include "data\config\quest\quests\9102.txt" once 
+--#include "data\config\quest\quests\9103.txt" once 
+--#include "data\config\quest\quests\9104.txt" once 
+--#include "data\config\quest\quests\9100.txt" once 
+
+
+}
+
+--[[此NPC中标准任务受理表]]
+CompMs =
+{
+  --键入mc+分号，根据模板生成受理任务脚本模板
+--#include "data\config\quest\quests\298.txt" once 
+--#include "data\config\quest\quests\8117.txt" once 
+--#include "data\config\quest\quests\8325.txt" once
+
+
+}
+
+--[[此NPC中标准任务过程表]]
+PassMs =
+{
+  --键入ma+分号，根据模板生成过程任务脚本模板
+}
+
+--[[此处为NPC对白]]
+NpcDialogue = {  --如果NPC随机对白数多与三个或少于三个，可适当增加或减少此表内的子表
+   25,38,91
+
+}
+
+--[[脚本主函数]]--
+function main(actor)
+  if LActor.getQuestList(actor) then
+    return commonQuestNpcMain(actor)
+  else
+    local level = LActor.getRealLevel(actor)
+    if level < EscortConf.openLevel then
+      return commonQuestNpcMain(actor)
+    end
+    actormisc.openDialog(actor, diEscort)
+  end
+end
+
+--[[注销任务的系统回调函数]]
+function OnAbortMessions(sysarg, mission)
+  local messionid = tonumber(mission)
+
+end
+
+--[[初始化函数]]--
+function initialization(npcobj)
+  local i
+  thisNPC = npcobj
+  --SPID = TSystem.getGlobalVariant( "spid" )
+  for i = 1, table.getn(InitFnTable) do
+    InitFnTable[i]( npcobj )
+  end
+end
+
+--[[析构化函数]]--
+function finalization(npcobj)
+  local i
+  for i = 1, table.getn(FinaFnTable) do
+    FinaFnTable[i]( npcobj )
+  end
+  thisNPC = nil
+end

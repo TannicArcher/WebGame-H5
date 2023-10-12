@@ -1,0 +1,17 @@
+{
+	id = 2,
+	aggressive = 1,
+	home_range = 0,
+	vision = 500,
+	skills = {{id=25000,cd=8000},{id=24000,cd=6000},{id=22000,cd=2000},{id=2100,cd=700}},
+	battle = {--非战斗状态
+   { interval=5, --技能cd5秒
+     conditions ={ --自己角色血量少于90时
+       {type= 9, min=0,max=2},-- 列表中有离自己距离0-2格的敌人
+     },
+     actions = {
+       { type = 1, id = 23000 }, --使用技能加血
+     } 
+   },
+} ,
+},

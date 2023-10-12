@@ -1,0 +1,553 @@
+--#include "data/functions/globaldefine.txt"
+--#include "data/config/globalconfig.txt" --全局配置
+--#include "data/dataconfig.txt"
+
+--#include "data/config/crossserver/crossserverconf.lua" once --跨服配置
+
+--#include "data/config/drop/dropgroup.config" once
+--#include "data/config/drop/droptable.config" once
+--#include "data/config/auction/auctiondroptable.config" once
+--#include "data/config/auction/auctiondropgroup.config" once
+--#include "data/config/chapters/chapters.config" once
+--#include "data/config/chapters/chapters_reward.config" once
+--#include "data/config/chapters/world_reward.config" once
+--#include "data/config/actor/exp.config" once
+--#include "data/config/actor/newrole.config"
+--#include "data/config/skirmish/base.config" once
+--#include "data/config/skirmish/reward.config" once
+--#include "data/config/skirmish/fame.config" once
+--#include "data/config/skirmish/rank.config" once
+--#include "data/config/skirmish/fieldplayer.config" once
+-----#include "data/config/activity/qqplatform/qqplatformactivityconf.lua" once
+
+--#include "data/config/wing/wingcommon.config"
+--#include "data/config/wing/winglevel.config"
+--#include "data/config/wing/godwingitem.config"
+--#include "data/config/wing/godwingsuit.config"
+--#include "data/config/wing/godwinglevel.config"
+
+--#include "data/config/forge/forgeindex.config"
+
+--#include "data/config/enhance/enhanceattr.config"
+--#include "data/config/enhance/enhancecost.config"
+
+--#include "data/config/mail/mail.config"
+--#include "data/config/mail/levelmail.config"
+--#include "data/config/mail/logindaymail.config"
+
+----#include "data/config/fieldboss/fieldboss.config"
+--#include "data/config/fuben/dailyfuben.config"
+--#include "data/config/fuben/expfuben.config"
+--#include "data/config/fuben/actorexringfubenconfig.config"
+--#include "data/config/fuben/expfubenbase.config"
+
+--#include "data/config/teamfuben/teamfubenbase.config"
+--#include "data/config/teamfuben/teamfuben.config"
+
+----#include "data/config/publicboss/base.config"
+----#include "data/config/publicboss/boss.config"
+--#include "data/config/worldboss/worldboss.config"
+--#include "data/config/worldboss/worldbossbase.config"
+--#include "data/config/worldboss/worldbosskillmsg.config"
+--#include "data/config/worldboss/bosshome.config"
+--#include "data/config/worldboss/bossbless.config"
+--#include "data/config/worldboss/hideboss.config"
+--#include "data/config/newworldboss/newworldbossbase.config"
+--#include "data/config/newworldboss/newworldbosslv.config"
+--#include "data/config/newworldboss/newworldbossrank.config"
+--#include "data/config/newworldboss/newworldbossattr.config"
+--#include "data/config/newworldboss/newworldbossred.config"
+
+
+--#include "data/config/task/achievementtask.config"
+--#include "data/config/task/dailyaward.config"
+--#include "data/config/task/daily.config"
+
+--#include "data/config/stone/stonelevel.config"
+--#include "data/config/stone/stonelevelcost.config"
+--#include "data/config/stone/stoneopen.config"
+
+--#include "data/config/jingmai/jingmailevel.config"
+--#include "data/config/jingmai/jingmaistage.config"
+--#include "data/config/jingmai/jingmaicommon.config"
+
+--#include "data/config/neigong/neigongbase.config"
+--#include "data/config/neigong/neigongstage.config"
+
+--#include "data/config/zhuansheng/zhuansheng.config"
+--#include "data/config/zhuansheng/zhuanshenglevel.config"
+--#include "data/config/zhuansheng/zhuanshengexp.config"
+
+--#include "data/config/skill/skillopen.config"
+--#include "data/config/skill/skillsupgrade.config"
+
+--#include "data/config/skill/skillsbreakupgrade.config"
+
+--#include "data/config/zhuling/zhulingattr.config"
+--#include "data/config/zhuling/zhulingcost.config"
+
+--#include "data/config/tupo/tupoattr.config"
+--#include "data/config/tupo/tupocost.config"
+
+--#include "data/config/exring/exring.config"
+--#include "data/config/exring/exring0.config"
+--#include "data/config/exring/exring1.config"
+
+--#include "data/config/store/equipgroup.config"
+--#include "data/config/store/equipitem.config"
+--#include "data/config/store/itemstore.config"
+--#include "data/config/store/storecommon.config"
+--#include "data/config/store/firstbooklist.config"
+--#include "data/config/store/integralstore.config"
+--#include "data/config/store/featsstore.config"
+
+
+--#include "data/config/vip/vip.config"
+--#include "data/config/vip/vipgift.config"
+
+--#include "data/config/notice/notice.config"
+--#include "data/config/rank/morship.config"
+
+--#include "data/config/loongsoul/loongsoulbase.config"
+--#include "data/config/loongsoul/loongsoul.config"
+--#include "data/config/shield/shield.config"
+--#include "data/config/shield/shieldstage.config"
+--#include "data/config/loongsoul/loongsoulstage.config"
+--#include "data/config/xueyu/xueyustage.config"
+--#include "data/config/xueyu/xueyu.config"
+
+
+
+
+--#include "data/config/treasurehunt/treasurehunt.config"
+--#include "data/config/treasurehunt/treasurehuntlevel.config"
+--#include "data/config/treasurehunt/treasurehunthefu.config"
+--#include "data/config/treasurehunt/thsequencepool.config"
+--#include "data/config/treasurehunt/thsequenceserverpool.config"
+
+--#include "data/config/train/trainlevel.config"
+--#include "data/config/train/guanyinaward.config"
+----#include "data/config/train/trainstage.config"
+--#include "data/config/train/trainlevelaward.config"
+--#include "data/config/train/traindayaward.config"
+--#include "data/config/train/trainbase.config"
+
+--#include "data/config/fbchallenge/fbchallenge.config"
+--#include "data/config/fbchallenge/fbchallengelottery.config"
+--#include "data/config/fbchallenge/fbchallengebase.config"
+
+--#include "data/config/loginrewards/basic.config"
+--#include "data/config/loginrewards/loginrewards.config"
+--#include "data/config/loginrewards/nextloginrewards.config"
+
+--开服活动，节日活动等
+--#include "data/config/activity/activity.config"
+--#include "data/config/activity/type1.config"
+--#include "data/config/activity/type2.config"
+--#include "data/config/activity/type3.config"
+--#include "data/config/activity/type4.config"
+--#include "data/config/activity/type5.config"
+--#include "data/config/activity/type6.config"
+--#include "data/config/activity/type7.config"
+--#include "data/config/activity/type8.config"
+--#include "data/config/activity/type9.config"
+--#include "data/config/activity/type10.config"
+--#include "data/config/activity/type11_1.config"
+--#include "data/config/activity/type11_2.config"
+--#include "data/config/activity/type12.config"
+--#include "data/config/activity/type13.config"
+--#include "data/config/activity/type14.config"
+--#include "data/config/activity/type15.config"
+--#include "data/config/activity/type16.config"
+
+--#include "data/config/activity/type18.config"
+--#include "data/config/activity/type19.config"
+--#include "data/config/activity/type20.config"
+--#include "data/config/activity/type21.config"
+--#include "data/config/activity/type22_1.config"
+--#include "data/config/activity/type22_2.config"
+
+--个人活动
+--#include "data/config/pactivity/pactivity.config"
+--#include "data/config/pactivity/ptype1.config"
+--#include "data/config/pactivity/ptype2.config"
+--#include "data/config/pactivity/ptype3.config"
+--#include "data/config/pactivity/ptype9.config"
+
+--历练系统 
+--#include "data/config/knighthood/knighthoodbasic.config"
+--#include "data/config/knighthood/knighthood.config"
+
+--玉佩系统
+----#include "data/config/yupei/yupeibasic.config"
+----#include "data/config/yupei/yupei.config"
+
+--神器
+--#include "data/config/artifacts/artifactsbasic.config"
+--#include "data/config/artifacts/artifacts.config"
+--#include "data/config/artifacts/artifactsrank.config"
+--充值配置
+--#include "data/config/pay/payitems.config"
+--#include "data/config/recharge/firstrechargeconfig.config"
+--#include "data/config/recharge/dailyrechargeconfig.config"
+--#include "data/config/recharge/looprechargeconfig.config"
+--#include "data/config/recharge/rechargedaysawards.config"
+--#include "data/config/recharge/rechargeitems.config"
+--#include "data/config/recharge/multidayrecharge.config"
+--#include "data/config/recharge/chongzhi2.config"
+--#include "data/config/recharge/base.config"
+--#include "data/config/recharge/chargemail.config"
+
+--经验 金币练制
+--#include "data/config/refinesystem/refinesystembasic.config"
+--#include "data/config/refinesystem/refinesystemexp.config"
+
+-- 月卡   
+--#include "data/config/monthcard/monthcardconfig.config"
+--礼包兑换码
+--#include "data/config/giftcode/giftcode.config"
+--#include "data/config/giftcode/channelgiftcode.config"
+
+-- 装备点 
+--#include "data/config/equippoint/equippointconst.config"
+--#include "data/config/equippoint/equippointbasic.config"
+--#include "data/config/equippoint/equippointgrowup.config"
+--#include "data/config/equippoint/equippointrank.config"	
+--#include "data/config/equippoint/equippointresolve.config"
+
+--其他boss
+--#include "data/config/otherboss/otherboss1.config"
+--#include "data/config/otherboss/otherboss1base.config"
+--#include "data/config/otherboss/otherboss2.config"
+
+-- 玩吧礼包
+--#include "data/config/platformactivit/wanbagiftbagconst.config"
+--#include "data/config/platformactivit/wanbagiftbagbasic.config"
+
+
+-- 微信关注 
+--#include "data/config/platformactivit/weixiguanzhuconst.config"
+
+-- 秘籍
+--#include "data/config/miji/grid.config"
+--#include "data/config/miji/skill.config"
+--#include "data/config/miji/transform.config"
+--#include "data/config/miji/mijibaseconfig.config"
+
+-- 天梯
+--#include "data/config/tianti/tianticonst.config"
+--#include "data/config/tianti/tiantidan.config"
+--#include "data/config/tianti/tiantirankaward.config"
+--#include "data/config/tianti/tiantirobot.config"
+
+--开光
+--#include "data/config/equipbless/blesscost.config"
+--#include "data/config/equipbless/blessattr.config"
+
+-- 摇钱树
+--#include "data/config/cashcow/cashcowbasic.config"
+--#include "data/config/cashcow/cashcowlimit.config"
+--#include "data/config/cashcow/cashcowamplitude.config"
+--#include "data/config/cashcow/cashcowbox.config"
+
+--宝箱
+--#include "data/config/treasurebox/treasurebox.config"
+--#include "data/config/treasurebox/treasureboxbase.config"
+--#include "data/config/treasurebox/treasureboxgrid.config"
+--#include "data/config/treasurebox/treasureboxrate.config"
+
+--月签到
+--#include "data/config/dailysign/monthsignbaseconfig.config"
+--#include "data/config/dailysign/monthsignconfig.config"
+--#include "data/config/dailysign/monthsigndaysconfig.config"
+
+--称号
+--#include "data/config/title/title.config"
+
+--新玉佩配置
+--#include "data/config/jadeplate/jadeplatebase.config"
+--#include "data/config/jadeplate/jadeplatelevel.config"
+
+--排行榜发放称号配置
+--#include "data/config/title/ranktitle.config"
+
+--平台相关
+--#include "data/config/sdk/sdk.config"
+
+--公会
+--#include "data/config/guild/guild.config"
+--#include "data/config/guild/guildbonfire.config"
+--#include "data/config/guild/guildcreate.config"
+--#include "data/config/guild/guildcommonskill.config"
+--#include "data/config/guild/guildpracticeskill.config"
+
+--改名卡功能
+--#include "data/config/changename/renamedcardconf.config" once
+
+--公会boss
+--#include "data/config/guild/guildboss.config"
+--#include "data/config/guild/guildbossinfo.config"
+--#include "data/config/guild/guildbosshpawards.config"
+--#include "data/config/guild/guildbossrank.config"
+
+--公会副本
+--#include "data/config/fuben/guildfb.config"
+--#include "data/config/fuben/guildfbaward.config"
+--#include "data/config/fuben/guildfbdayaward.config"
+
+--引导副本
+--#include "data/config/leadfuben/leadfuben.config"
+--#include "data/config/leadfuben/leadfubenbase.config"
+--#include "data/config/leadfuben/leadrobot.config"
+--#include "data/config/leadfuben/leadfbmonsterdrop.config"
+
+--熔炉属性
+--#include "data/config/ronglu/level.config"
+--#include "data/config/ronglu/exp.config"
+
+--公会活动
+--#include "data/config/guild/guildactivity.config"
+
+--公会强盗
+----#include "data/config/fuben/robberfb.config"
+----#include "data/config/fuben/robberaward.config"
+
+
+--公会战
+--#include "data/config/guild/guildbattleconst.confg"
+--#include "data/config/guild/guildbattledayaward.confg"
+--#include "data/config/guild/guildbattledistributionaward.confg"
+--#include "data/config/guild/guildbattlepersonalaward.confg"
+--#include "data/config/guild/guildbattlelevel.confg"
+--#include "data/config/guild/guildbattlemultikill.confg"
+--#include "data/config/guild/guildbattlepersonalrankaward.confg"
+--#include "data/config/guild/guildbattleintegralphase.confg"
+--#include "data/config/guild/guildbattleresurgence.confg"
+
+--聊天 
+--#include "data/config/chat/chatconst.config"
+--#include "data/config/chat/chatlevel.config"
+
+--战灵
+--#include "data/config/zhanling/zhanling.config"
+--#include "data/config/zhanling/zhanlingbase.config"
+--#include "data/config/zhanling/zhanlinglevel.config"
+--#include "data/config/zhanling/zhanlingequip.config"
+--#include "data/config/zhanling/zhanlingsuit.config"
+--#include "data/config/zhanling/zhanlingtalent.config"
+--#include "data/config/zhanling/zhanlingskill.config"
+
+--魂骨
+--#include "data/config/hungu/hungu.config"
+--#include "data/config/hungu/hunguequip.config"
+--#include "data/config/hungu/hunyu.config"
+--#include "data/config/hungu/hungusuit.config"
+--#include "data/config/hungu/hsfbconfig.config"
+
+--装扮
+--#include "data/config/zhuangban/zhuangban.config"
+--#include "data/config/zhuangban/zhuangbanid.config"
+--#include "data/config/zhuangban/zhuangbanlevelup.config"
+
+--黄钻
+--#include "data/config/platformactivit/huangzuan.config"
+--#include "data/config/platformactivit/huangzuandaygift.config"
+--#include "data/config/platformactivit/huangzuanlevelgift.config"
+
+--合服
+--#include "data/config/hefu/hefu.config"
+
+--开服激活角色奖励
+--#include "data/config/loginactivate/loginactivate.config"
+
+-- 好友
+--#include "data/config/friend/friendlimit.config"
+
+-- 采矿
+--#include "data/config/caikuang/caikuang.config"
+--#include "data/config/caikuang/kuangyuan.config"
+
+--玩家特戒
+--#include "data/config/actorexring/actorexring.config"
+--#include "data/config/actorexring/actorexringcommon.config"
+--#include "data/config/actorexring/actorexring0.config"
+--#include "data/config/actorexring/actorexring1.config"
+--#include "data/config/actorexring/actorexring2.config"
+--#include "data/config/actorexring/actorexring3.config"
+--#include "data/config/actorexring/actorexring4.config"
+--#include "data/config/actorexring/actorexring5.config"
+--#include "data/config/actorexring/actorexring6.config"
+--#include "data/config/actorexring/actorexring7.config"
+--#include "data/config/actorexring/actorexringbook.config"
+--#include "data/config/actorexring/actorexringitem.config"
+
+--限时任务
+--#include "data/config/task/limittime.config"
+--#include "data/config/task/limittimetask.config"
+
+--合击技能
+--#include "data/config/togetherhit/togetherhit.config"
+--#include "data/config/togetherhit/togetherhitequipexchange.config"
+--#include "data/config/togetherhit/togetherhitequipqm.config"
+--#include "data/config/togetherhit/togerherhitbase.config"
+--#include "data/config/togetherhit/punchequip.config"
+--#include "data/config/togetherhit/punchequipmaster.config"
+
+--符文
+--#include "data/config/rune/rune_base.config"
+--#include "data/config/rune/rune_other.config"
+--#include "data/config/rune/rune_lock_pos.config"
+--#include "data/config/rune/runeconver.config"
+--#include "data/config/rune/runecompose.config"
+--#include "data/config/fuwentreasure/fuwentreasure.config"
+--#include "data/config/fuwentreasure/fuwentreasurelevel.config"
+--#include "data/config/fuwentreasure/fuwentreasurereward.config"
+--#include "data/config/fuwentreasure/fuwensequencepool.config"
+
+--#include "data/config/imba/imba.config"
+--#include "data/config/imba/imbajigsaw.config"
+
+--图鉴
+--#include "data/config/tujian/card.config"
+--#include "data/config/tujian/decompose.config"
+--#include "data/config/tujian/suit.config"
+
+--传世装备
+--#include "data/config/heirloom/heirloomequip.config"
+--#include "data/config/heirloom/heirloomequipitem.config"
+--#include "data/config/heirloom/heirloomequipfire.config"
+--#include "data/config/heirloom/heirloomequipset.config"
+
+--可选择礼包
+--#include "data/config/item/optionalgift.config"
+
+--传世装备寻宝
+--#include "data/config/heirloomtreasure/heirloomtreasure.config"
+--#include "data/config/heirloomtreasure/heirloomtreasurereward.config"
+--#include "data/config/heirloomtreasure/hlsequencepool.config"
+
+--兵魂
+--#include "data/config/weaponsoul/weaponsoulbase.config"
+--#include "data/config/weaponsoul/weaponsoul.config"
+--#include "data/config/weaponsoul/weaponsoulpos.config"
+--#include "data/config/weaponsoul/weaponsoulsuit.config"
+--#include "data/config/weaponsoul/weaponsoulitemattr.config"
+
+--大富翁(藏宝阁大冒险)
+--#include "data/config/richman/richmanbase.config"
+--#include "data/config/richman/richmangrid.config"
+--#include "data/config/richman/richmanroundaward.config"
+
+--主城玩法
+--#include "data/config/city/citybase.config"
+--#include "data/config/city/cityboss.config"
+
+--神兵
+--#include "data/config/item/godweaponitem.config"
+--#include "data/config/godweapon/baseconfig.config"
+--#include "data/config/godweapon/levelconfig.config"
+--#include "data/config/godweapon/lineconfig.config"
+--#include "data/config/godweapon/fubenconfig.config"
+--#include "data/config/godweapon/taskconfig.config"
+
+--激情泡点
+--#include "data/config/passionpoint/passionpoint.config"
+--#include "data/config/passionpoint/passionpointaward.config"
+
+--圣物合成
+--#include "data/config/holycompose/diffholycompose.config"
+--#include "data/config/holycompose/sameholycompose.config"
+--#include "data/config/holycompose/holyfuse.config"
+
+--轮回系统
+--#include "data/config/reincarnation/reincarnationbase.config"
+--#include "data/config/reincarnation/reincarnationexchange.config"
+--#include "data/config/reincarnation/reincarnationlevel.config"
+--#include "data/config/reincarnation/reincarnateequipcompose.config"
+
+--轮回装备
+--#include "data/config/reincarnation/reincarnatespirit.config"
+--#include "data/config/reincarnation/reincarnatesuit.config"
+--#include "data/config/reincarnation/reincarnateequip.config"
+
+--轮回装备锁链
+--#include "data/config/reincarnationsoul/reincarnationsoullevel.config"
+--#include "data/config/reincarnationsoul/reincarnationdemonlevel.config"
+--#include "data/config/reincarnationsoul/reincarnationlinklevel.config"
+
+--阵营战
+--#include "data/config/campbattle/campbattle.config"
+--#include "data/config/campbattle/campbattlepersonalaward.config"
+--#include "data/config/campbattle/campbattlepersonalrankaward.config"
+--#include "data/config/campbattle/campbattlemultikillconfig.config"
+
+-- 特权月卡   
+--#include "data/config/privilege/privilegeconfig.config"
+
+--至尊装备
+--#include "data/config/zhizunequip/zhizunequiplevel.config"
+--#include "data/config/zhizunequip/zhizunlinklevel.config"
+
+--威望系统
+--#include "data/config/prestige/prestigebase.config"
+--#include "data/config/prestige/prestigelevel.config"
+--#include "data/config/prestige/prestigefind.config"
+
+--无极战场
+--#include "data/config/wuji/wujibase.config"
+--#include "data/config/wuji/wujiweekreward.config"
+--#include "data/config/wuji/wujievenkill.config"
+--#include "data/config/wuji/wujimatchpool.config"
+--#include "data/config/wuji/wujimatchgroup.config"
+
+--巅峰赛季
+--#include "data/config/peakrace/peakracebase.confg"
+--#include "data/config/peakrace/peakracetime.config"
+--#include "data/config/peakrace/peakracecrosstime.config"
+
+--跨服boss
+--#include "data/config/crossboss/crossbossbase.config"
+--#include "data/config/crossboss/crossbossconfig.config"
+--#include "data/config/crossboss/crossbossbless.config"
+
+--恶魔入侵
+--#include "data/config/devilboss/devilboss.config"
+--#include "data/config/devilboss/devilbossbase.config"
+
+--跨服3v3
+--#include "data/config/crossarena/crossarenabase.config"
+--#include "data/config/crossarena/crossarenascore.config"
+
+--烈焰印记
+--#include "data/config/flamestamp/flamestamp.config"
+--#include "data/config/flamestamp/flamestamplevel.config"
+--#include "data/config/flamestamp/flamestampeffect.config"
+--#include "data/config/flamestamp/flamestampmat.config"
+
+--#include "data/config/guardgodweapon/guardgodweapon.config"
+--#include "data/config/guardgodweapon/ggwwave.config"
+
+--心法系统
+--#include "data/config/heartmethod/heartmethodlevel.config"
+--#include "data/config/heartmethod/heartmethodbase.config"
+--#include "data/config/heartmethod/heartmethod.config"
+--#include "data/config/heartmethod/heartmethodstage.config"
+--#include "data/config/heartmethod/heartmethodpos.config"
+--#include "data/config/heartmethod/heartmethodstar.config"
+--#include "data/config/heartmethod/heartmethodsuit.config"
+
+--神兽系统
+--#include "data/config/shenshou/shenshou.config"
+--#include "data/config/shenshou/shenshoubase.config"
+--#include "data/config/shenshou/shenshouequip.config"
+--#include "data/config/shenshou/shenshouskill.config"
+--#include "data/config/shenshou/shenshousmelt.config"
+
+--拍卖系统
+--#include "data/config/auction/auction.config"
+--#include "data/config/auction/auctionitem.config"
+
+--传送门坐标
+--#include "data/config/instance/transferpoint.config"
+
+--#include "data/config/scripttimer/scripttimerconf.lua" once

@@ -1,0 +1,40 @@
+ActorSys = {
+	tpGetMultiplyRootExp       = "获得<(c0xFFFFF000)灵气 x %d>, 额外加成 <(c0xFFFFF000) %d 点> ",
+	tpAddRootExp               = "获得<(c0xFF36EE3A)灵气 x %d >",
+
+	tpJobMakeToolItem          = "当前在线时间超过5小时，为不健康游戏时间，您",
+	tpJobMakeAssistItem        = "当前在线时间超过3小时，为防沉迷状态，您",
+
+	tpSkillGetExp              = "获得<(c0xFF17E6FF)经验 x %d >",
+	tpSkillGetMultiplyExp      = "获得经验 %d 点，额外加成 %d 点 ",
+	tpSuperExpRate             = "疯狂挂机额外获得经验 %d 点",
+
+	tpLollipopsExp             = "武器时装经验加成 %d 点 ",
+	tpTeamBuffExp              = "组队经验加成 %d 点 ",
+
+	tpWorldLevelExp            = "世界等级加成 <(c0xFFFFF000)经验 x %d>  ",
+	tpTotalExpRate             = "副本次数经验加成 %d",
+
+	tpGetBindCoin              = "获得 <(c0xFFFFF000)绑定金币 x %d>  ",
+	tpLostBindCoin             = "失去 <(c0xFFFFF000)绑定金币 x %d>  ",
+	tpGetCoin                  = "获得 <(c0xFFFFF000)金币 x %d>  ",
+	tpLostCoin                 = "失去 <(c0xFFFFF000)金币 x %d>  ",
+	tpGetBindYuanbao           = "获得 <(c0xFFFFF000)绑定元宝 x %d>  ",
+	tpLostBindYuanbao          = "失去 <(c0xFFFFF000)绑定元宝 x %d>  ",
+	tpGetYuanbao               = "获得 <(c0xFFFFF000)元宝 x %d>  ",
+	tpLostYuanbao              = "失去 <(c0xFFFFF000)元宝 x %d>  ",
+
+	tpAddRenowFail             = "您当前的历练已经达到了上限，本次添加的 %d 历练失败 ",
+	tpAddRenown                = "获得历练 %d  ",
+	tpDelRenown                = "失去历练 %d  ",
+
+	tpAddHonor                 = "获得荣誉值 %d  ",
+	tpDelHonor                 = "失去荣誉值 %d  ",
+
+	tpAddReputation            = "获得声望 %d  ",
+	tpDelReputation            = "失去声望 %d  ",
+
+	tpCampGetCampContributeVal = "获得阵营贡献值 %d  ",
+
+	tpFcmNotifyBeFcm           = "\\<(c0xFFFFCE9D)抵制不良游戏 拒绝盗版游戏>\\<(c0xFFFFCE9D)注意自我保护 谨防上当受骗>\\<(c0xFFFFCE9D)适度游戏益脑 沉迷游戏伤身>\\<(c0xFFFFCE9D)合理安排时间 享受健康生活>\\<(c0xFFFFCE9D)欢迎进入$GAMENAME$！> ",				--tpFcmNotifyBeFcm, //您已经被纳入了防沉迷，抵制不良游戏,拒绝盗版游戏,...
+}

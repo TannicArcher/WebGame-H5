@@ -1,0 +1,65 @@
+require("test.gunit")
+-- require("test.test_lottery")
+require("test.test_entrust")
+require("test.test_npc_trade")
+require("test.test_dailysign")
+require("test.test_roots")
+require("test.test_worldboss")
+require("test.test_scripttimer")
+require("test.test_activitytimer")
+require("test.test_algorithm")
+require("test.test_engine")
+require("test.test_supertimer")
+require("test.test_msg")
+require("test.test_mailsystem")
+require("test.test_userbag")
+require("test.test_centerserver")
+require("test.test_gathersystem")
+require("test.test_skill")
+require("test.test_word_filter")
+require("test.test_gtest")
+require("test.test_dyanmic")
+require("test.test_itemcrc")
+require("test.test_team")
+require("test.test_msgbox")
+require("test.test_checkitem")
+require("test.test_spirit")
+require("test.test_friend")
+require("test.test_actorexp")
+require("test.test_actormoney")
+require("test.test_actorrep")
+require("test.test_actormisc")
+require("test.test_mount")
+require("test.test_wing")
+require("test.test_mingke")
+require("test.test_misc")
+--require("test.test_centercommon")
+--require("test.test_eq_eqsign")
+require("test.test_worldboss_npc")
+require("test.test_offlinepratice")
+require("test.test_wyyj")
+require("test.test_ziyousai")
+require("test.test_buff")
+require("test.test_jobsystem")
+require("test.test_question")
+require("test.test_enhance")
+
+_G.main_test_co = nil
+
+function gm_runalltest(actor, args)
+	if main_test_co ~= nil then
+		print("error:one test is runing")
+		return
+	end
+	local actorid = LActor.getActorId(actor)
+
+	local caseName = nil
+	local testName = nil
+	if args ~= nil then
+		caseName = args[1]
+		testName = args[2]
+	end
+	main_test_co = coroutine.create(RUN_ALL_TEST)
+	coroutine.resume(main_test_co, actorid, caseName, testName)
+end
+
